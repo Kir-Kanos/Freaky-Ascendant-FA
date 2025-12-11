@@ -106,12 +106,15 @@ SubclassesForClass6
 {
 	Subclass1	"h10_Obi"
 	Subclass2	"h10_PloK"
-	Subclass3	"h10_JTradition"
-	Subclass4	"h10_JHeal"
+	Subclass3	"asg10_JTradition"
+	Subclass4	"asg10_JHeal"
 	Subclass5	"h10_LukeSky"
 	Subclass6	"h10_Starkiller"
 	Subclass7	"h10_JSavant"
 	Subclass8	"h10_JApostate"
 	Subclass9	"h10_Rosh"
 	Subclass10	"h10_Grogu"
+	Subclass11	"asg10_JKindredProtect"
+	Subclass12	"asg10_JKindredAbsorb"
+
 }
