@@ -1,0 +1,58 @@
+When i started on May 16 2014 09:25 PM, to create this model no one seems to care about it !
+Until the help come from @RevanKnight then later in 2016 the sounds come from @Kylo Ren.
+The beta model is no longer available (the black color). Maybe some users from JKhub still 
+have it because i give it for testing, long time ago.
+The actual model is finish (silver/metallic color) but my animations are not ! 
+Because of many requests of the costume i will release for free, 
+without the animations and other force effects.
+
+The costume inspiration is from TFU2. 
+In my opinion this costume is the best for StarKiller/Galen Marek. 
+
+For StarKiller's lightsaber you can try this:
+https://jkhub.org/files/file/1686-starkillers-lightsaber-ashuradx/
+
+For single backhand animation you can try this:
+https://jkhub.org/files/file/732-tfu-push/
+
+For double backhand animation you can try this:
+https://jkhub.org/files/file/1641-katanamaru-backhand-styles/
+
+Instructions to play this MOD:
+
+1. Download my file: Xeby-Dark-Marek.pk3
+2. Copy and paste the pk3 file from this zip file to your "base" folder,
+the default path is "C:/Program Files/Lucas Arts/Star Wars Jedi Knight Jedi Academy/GameData/Base".
+3. In the JKA game press [Shift]+[~] then in the console write: 
+
+playermodel xeby_dark_marek (without the hood)
+playermodel xeby_dark_marek_h (with the hood)
+playermodel xeby_dark_marek2 (without the hood)
+playermodel xeby_dark_marek2_h (with the hood)
+
+
+What's New:
+v1.1 - Chest Update
+v1.2 - Seven's Hood fix
+v1.3 - Legs Texture fix
+v1.4 - Adding black color from beta version
+V1.5 - New black texture from Dark Appretince's model
+v1.6 - Updating NPC file and GLM file
+v1.7 - Voice Sound fix
+v1.9 - Adding 4 selectable skins
+v2   - New Black skin and Silver skin update
+
+
+Enjoy my MOD ! :)
+
+And now the Credits:
+
+Xeby
+RevanKnight
+Hapslash (for the hood of Anakin's costume)
+DarthPhae (for the head of Galen Marek)
+Kylo Ren (for the Sounds)
+Dark Apprentice (for the new black texture)
+Seven (fixing the hood glitch)
+
+Any modifications on this costume is not allowed without My and @RevanKnight permission.

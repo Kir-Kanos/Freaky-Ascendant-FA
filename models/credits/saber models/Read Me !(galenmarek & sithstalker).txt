@@ -1,0 +1,24 @@
+GALEN MAREK SABER HILT MODEL
+****************************
+MODELS : AshuraDX(AshurathehedgehogDX)
+TEXTURES : AshuraDX(AshurathehedgehogDX)
+E-MAIL : ashuradx@yahoo.de
+VERSION: 2.0
+*****************************************
+Description :
+many of you have allready downloaded V1 of my galen Marek(aka Starkiller) lightsaber hilt and now here's V2 !!!!!!!!!
+
+CHANGES AND ADDITIONS FOR V2 :
+-I've added the Sith Stalker lightsaber hilt
+-a regular sinle saber version of Galens lightsaber was added
+-File size has been reduced by converting the TGA textures to JPEG/PNG files
+-all included lightsabers have single player support now !!! (SP support is in a seeperate PK3 cause people who use a SP TC ,like KOTF, will have trouble with the SP support)
+
+INSTALL : put thePk3 in your base folder , remove the PK3 of v1 since this pk3 has a different name
+
+ASK FOR PERMISSIoN BEFORE YOU USE IT IN ANY MODS !!!
+*******************************************
+THIS PRODUCT IS NOT MADE, DISTRIBUTED, OR SUPPORTED BY ACTIVISION, RAVEN,
+LUCASARTS ENTERTAINMENT COMPANY LLC.
+© LUCASARTS ENTERTAINMENT COMPANY LLC. AND/OR ITS LICENSORS.
+

@@ -1,0 +1,26 @@
+TFU2 Lightsaber
+****************************
+MODELS : AshuraDX(AshurathehedgehogDX)
+TEXTURES : AshuraDX(AshurathehedgehogDX)
+E-MAIL : ashuradx@yahoo.de
+VERSION: 1.0
+*****************************************
+Description :
+just Starkillers new lightsabers from TFU2 
+I highly recommand to use Katanamaru's Backhand saber animations with my sabers
+get them here : http://jediknight3.filefront.com/file/Katanamaru_Backhand_Styles;117204
+for those of you who dont like backhand sabers I included a normal single saber version
+the spawn codes are :
+saber TFU2
+saber TFU2_bh
+
+and now : have fun !
+
+INSTALL : put  thePk3 in your base folder 
+UNINSTAL : remove the Pk3 from your base folder
+
+*******************************************
+THIS PRODUCT IS NOT MADE, DISTRIBUTED, OR SUPPORTED BY ACTIVISION, RAVEN,
+LUCASARTS ENTERTAINMENT COMPANY LLC.
+© LUCASARTS ENTERTAINMENT COMPANY LLC. AND/OR ITS LICENSORS.
+

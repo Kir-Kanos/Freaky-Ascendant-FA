@@ -1,0 +1,11 @@
+torso_belt,models/players/sith_stalker/hips.tga
+hips,models/players/sith_stalker/hips.tga
+l_leg,models/players/sith_stalker/hips.tga
+r_leg,models/players/sith_stalker/hips.tga
+hips_armor,models/players/sith_stalker/extras.tga
+hips_tabs,models/players/sith_stalker/tabs_blue.tga
+hips_cap_torso_off,models/players/stormtrooper/caps.tga
+hips_cap_l_leg_off,models/players/stormtrooper/caps.tga
+hips_cap_r_leg_off,models/players/stormtrooper/caps.tga
+l_leg_cap_hips_off,models/players/stormtrooper/caps.tga
+r_leg_cap_hips_off,models/players/stormtrooper/caps.tga

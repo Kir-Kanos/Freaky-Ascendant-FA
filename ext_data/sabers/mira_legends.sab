@@ -1,0 +1,20 @@
+saber_mira_legends
+{
+	name		"Mira (KOTOR II)"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_rooxon/saber_kshrt.glm"
+	soundOn		"sound/weapons/saber/saberon_v5.wav"
+	soundOff	"sound/weapons/saber/saberoff_luke.wav"
+	soundLoop	"sound/weapons/saber/saberhumluke.wav"
+	saberLength	27
+	disarmable		1
+	noCartwheels 1
+	throwable	0	
+	spinsound	"s/w/s/spin.wav"
+	hitSound1	"s/w/s/hit1.mp3"
+    hitSound2	"s/w/s/hit2.mp3"
+    hitSound3	"s/w/s/hit3.mp3"
+	bounceSound1	"s/w/s/bounce1.mp3"	
+	bounceSound2	"s/w/s/bounce2.mp3"
+	bounceSound3	"s/w/s/bounce3.mp3"
+}
