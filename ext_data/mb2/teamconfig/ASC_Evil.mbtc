@@ -6,7 +6,7 @@ EUAllowed 0
 
 Classes
 {
-	class1	"v1_ImpSold"
+	class1	"s_1em_sold"
 	class2	"v3_FOMarsh"
 	class3	"v6_ScoutTr"
 	Class4	"v8_GamoPig" 
@@ -117,4 +117,8 @@ SubclassesForClass6
 	Subclass8	"ase10_TrayaTrio"
 	Subclass9	"v10_Traya"
 	Subclass10	"ase10_Abeloth"
+	Subclass11	"s_d_krayt"
+	Subclass12	"s_13vo_bru"
+	Subclass13	"s_16ie_gs3"
+	Subclass14	"s_16ie_vet"
 }

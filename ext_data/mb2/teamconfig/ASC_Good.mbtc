@@ -6,7 +6,7 @@ EUAllowed 0
 
 Classes
 {
-	class1	"h1_Rebel"
+	class1	"s_1re_sold"
 	class2	"h3_Clone"
 	class3	"h5_CloneJet"
 	class4	"h7_Scavenge"
@@ -116,5 +116,5 @@ SubclassesForClass6
 	Subclass10	"h10_Grogu"
 	Subclass11	"asg10_JKindredProtect"
 	Subclass12	"asg10_JKindredAbsorb"
-
+	Subclass13	"s_d_mohrgan"
 }
