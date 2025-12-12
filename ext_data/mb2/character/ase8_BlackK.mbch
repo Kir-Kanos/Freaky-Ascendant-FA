@@ -1,0 +1,130 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name				"ase8_BlackK"
+	weapons 			WP_BOWCASTER|WP_MELEE|WP_FRAG_NADE|WP_CONC_NADE|WP_AMBAN
+	attributes  		MB_ATT_WOOKIE_HEALTH,3|MB_ATT_WOOKIE_STRENGTH,3|MB_ATT_WOOKIEE_FURY,1|MB_ATT_FRAGS,1|MB_ATT_BLAST_ARMOUR,1|MB_ATT_BOWCASTER,2|MB_ATT_MICRO_GRENADES,3|MB_ATT_AMBAN,1
+	maxhealth			400
+	maxarmor			100
+	modelscale  		1.15
+	model 				"krrsantan2"
+	skin  				"default"
+	uishader  			"models/players/krrsantan2/mb2_icon_default"
+	MBClass 			MB_CLASS_WOOKIE
+	classNumberLimit	1
+	rageSoundOverride 	"sound/chars/BlackKrr/misc/BKrage.mp3"
+	bargeSoundOverride 	"sound/chars/BlackKrr/misc/Scream2BK.mp3"
+	speed               1.05067
+	damageTaken         0.95
+	damageGiven         1.05
+	rateoffire          0.90
+	rateoffire_melee	1.05
+	skilltimermod 0.90
+	
+	resource	resource_rage
+	forcepool 110
+	
+	WP_MeleeFlags HELD_PULSE
+	
+	//respawncustomtime 75000
+	
+	special1	EAS_HI_FURY
+	special2	EAS_HI_BARGE
+	
+	
+	flourishAnim BOTH_WOOKIEE_ENRAGE
+	
+	uioverlay_l	"gfx/icons/scout"
+	uioverlay_r "gfx/icons/brawler"
+	
+	meleeMoves M_UPPERCUT|M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_PUNCH|M_RLKICK
+}
+
+WeaponInfo0
+{
+    WeaponToReplace        WP_BOWCASTER
+    WeaponBasedOff        WP_BOWCASTER
+    NewWorldModel        "models/weapons2/bowcaster/bowcaster_w.glm"
+    CorrectedWorldModel "models/weapons2/blaster_pistol/blaster_pistol_corrected.glm"
+    NewViewModel        "models/weapons2/bowcaster/bowcaster.md3"
+    FlashSound0         "sound/weapons/cw-w5/fire_scope.mp3"
+    AltFlashSound0         "sound/weapons/cw-w5/fire_scope.mp3"
+    ChargeSound            "sound/weapons/leia_pistol/altcharge.mp3"
+    Icon                "gfx/hud/w_icon_bowcaster"
+    WeaponName            "Bowcaster"
+    customammo 700
+}
+WeaponInfo1 
+{
+    WeaponToReplace            WP_CONC_NADE
+    WeaponBasedOff            WP_CONC_NADE
+    NewWorldModel                "models/weapons2/thermal/thermal_w.glm"
+    NewViewModel                "models/weapons2/thermal/thermal_hand.md3"
+    Icon                        "gfx/hud/w_thermal_grenade"
+    MissileModel                 "models/weapons2/thermal/thermal_proj.md3"
+    AltMissileModel            "models/weapons2/thermal/thermal_proj.md3"
+    MissileEffect             "stone/missile1"
+    AltMissileEffect             "stone/missile1"
+    MissileMissEffect            "smokenadeleg/explode_vol"
+    MissileHitHumanEffect    "smokenadeleg/explode_vol"
+    MissileHitDroidEffect    "smokenadeleg/explode_vol"
+    AltMissileMissEffect        "smokenadeleg/explode_vol"
+    AltMissileHitHumanEffect    "smokenadeleg/explode_vol"
+    AltMissileHitDroidEffect    "smokenadeleg/explode_vol"
+    FlashSound0        "sound/weapons/smokenade/select.mp3"
+    AltFlashSound0     "sound/weapons/smokenade/select.mp3"
+    WeaponName                  "Smoke Grenades"
+    primFireEnabled 1
+    hasAnimOverrides 1
+    animReady  BOTH_SABERDUAL_STANCE //upper
+    animReadyWalk  BOTH_SABERDUAL_STANCE
+    animReadyNoAmmo  BOTH_SABERDUAL_STANCE
+    animAttack NADE_SECONDARY
+    animAttackWalk NADE_SECONDARY
+    animStand BOTH_STAND1 //lower
+    damagemod 0.001
+}
+WeaponInfo2
+{
+    WeaponToReplace WP_AMBAN
+    WeaponBasedOff  WP_AMBAN
+    NewWorldModel "models/weapons2/mando_rifle/mando_rifle.glm"
+    NewViewModel  "models/weapons2/mando_rifle/mando_rifle.md3"
+    Icon  "gfx/hud/w_icon_mandorifle"
+    WeaponName  "Amban Phase-Pulse Blaster"
+    velocityMod 1.05
+    damageMod .75
+}
+
+description	"Black Krrsantan aka 'BK'
+
+Class: Wookiee
+Brief Overview: 
+A large but swift Wookiee / Gunner hybrid with Smoke Grenades, a Bowcaster, and the ability to shock enemies upon punches.
+
+^2Weaponry:
+- Wookiee-style Melee
+- 5% Faster Swings
+- BK's Bowcaster
+-- Based on Bowcaster (2)
+- Amban Phase-Pulse Blaster
+-- Based on Amban (1)
+-- 5% faster projectiles
+-- 25% less damage
+- Frag Grenades (1)
+- Smoke Grenades (3)
+-- Based on Concussion Grenades
+-- Spreads an obscuring cloud on detonation
+-- 99.9% less damage
+
+^8Attributes:
+- 10% faster skill cooldown
+- Strength (3)
+- Fury (1)
+- Blast Armor
+
+
+^3Abilities:
+- Rage ^3[CS1 in Melee]
+- Shoulder Barge ^3[CS2 in Melee]"
