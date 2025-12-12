@@ -1,4 +1,3 @@
-//credit: MARSHALL
 ClassInfo
 {
 name "asg2_RebelSabo"
@@ -29,7 +28,7 @@ skin "default"
 uishader "models/players/nrmarine/mb2_icon_default"
 model_1 "rebel_heavy"
 skin_1 "default"
-uishader_1		"models/players/rebel_heavy/mb2_icon_default"
+uishader_1	"models/players/rebel_heavy/mb2_icon_default"
 model_2 "rebel_partisan"
 skin_2 "default"
 uishader_2 "models/players/rebel_partisan/mb2_icon_default"
@@ -135,7 +134,7 @@ NewWorldModel "models/weapons2/kotor_ionpistol/kotor_ionpistol_w.glm"
 NewViewModel "models/weapons2/kotor_ionpistol/kotor_ionpistol.md3"
 Icon "gfx/hud/w_icon_kotor_ionpistol"
 WeaponName "Tranquilizer Pistol"
-CustomAmmo 24 //12 prim, 9 bounce
+CustomAmmo 24
 clipSize 3
 FlashSound0 "sound/weapons/mgun/alt_fire.wav"
 AltFlashSound0 "sound/weapons/mgun/alt_fire.wav"
@@ -146,7 +145,7 @@ AltMissileEffect "blaster/Shot04B"
 FPMult 0.2
 damageMod 0.2
 velocityMod 0.5
-reloadTimeModifier 4 //so you cant infinite chainstun
+reloadTimeModifier 4
 }
 WeaponInfo3
 {
@@ -252,7 +251,6 @@ ForceInfo0
  ForcePowerName "Sensory Scrambler"
 }
 description "Rebel Saboteur
-
 Class: Hero
 An elite saboteur with damage over time weapons and getaway tools.
 ^8Default Equipment:
