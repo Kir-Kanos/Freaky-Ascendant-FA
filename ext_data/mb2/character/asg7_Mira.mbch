@@ -1,0 +1,218 @@
+ClassInfo
+{
+	name			"asg7_Mira"
+	MBClass			MB_CLASS_BOUNTY_HUNTER
+	weapons WP_MELEE|WP_SABER|WP_CONC_NADE|WP_CRYO_NADE|WP_TRIP_MINE|WP_PULSE_NADE|WP_DET_PACK|WP_THROWER|WP_BOWCASTER|WP_CLONE_PISTOL|WP_DC_CARBINE
+	maxhealth		120
+	maxarmor		85
+	modelscale 		0.933
+	resource		resource_stamina
+	attributes		MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_WHISTLINGBIRD,1|MB_ATT_WRISTLASER,1|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_POISON_DART,2|MB_ATT_BLAST_ARMOUR,1||MB_ATT_BESKAR,1|MB_ATT_AMMO,3|MB_ATT_HEALING,2|MB_ATT_TRACKING_BEACON|MB_ATT_DET_PACK,4|MB_ATT_MICRO_GRENADES,2|MB_ATT_CRYOBAN_GRENADES,1|MB_ATT_PULSE_GRENADES,1|MB_ATT_STAMINA,3|MB_ATT_CLONE_PISTOL,1|MB_ATT_DC_CARBINE,2|MB_ATT_THROWER_LIGHTNING|MB_ATT_BOWCASTER,1|MB_ATT_DEXTERITY,3
+	forcepowers		FP_SEE,1|FP_SABER_DEFENSE,1|FP_SABER_OFFENSE,3|FP_PROTECT,1
+	classNumberLimit	1
+	BPmultiplier		.9
+	APmultiplier		1.1
+	saberMaxChain 2
+	rateoffire		.75 //swap to/from and deploy nades/detpacks/trip mines faster
+	model 			"mira"
+	skin 			"default"
+	uishader 		"models/players/mira/mb2_icon_default"
+	model_1			"jedipack_f"
+	skin_1			"mira"
+	uishader_1		"models/players/jedipack_f/mb2_icon_mira"
+	saber1         saber_mira_legends
+	saberstyle		SS_FAST|SS_TAVION
+	sabercolor		1
+	WP_ClonePistolFlags HELD_SLOWPROJ|HELD_KNOCKDOWN|HELD_EXPLOSIVE|HELD_KNOCKBACK|HELD_ALTRELOAD|HELD_FLAME
+	WP_ThrowerFlags		HELD_ALTRELOAD|HELD_HIGHDAMAGE //idk if highdmg works here honestly, seems not to
+	WP_BowcasterFlags	HELD_ALTRELOAD|HELD_POISON
+	WP_DCCarbineFlags	HELD_SLOW
+	holdables		HI_BINOCULARS
+	flourishAnim BOTH_STAND10_TALK1
+	saberStanceAnim	BOTH_DESANN_BL
+	uioverlay_l "gfx/icons/tactician"
+	uioverlay_r "gfx/icons/hybrid"
+	special1		EAS_HI_POISON
+	special2		EAS_HI_WRIST
+	special3		EAS_HI_WHISTLING_BIRDS
+	special4		EAS_HI_GRAPPLEHOOK
+	respawnCustomTime  50000
+}
+ForceInfo0
+{
+	ForceToReplace	FP_PROTECT
+	Icon			"gfx/hud/w_icon_sithshield.png"
+	ForcePowerName	"Energy Shield"
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_CLONE_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	FlashSound0          	"sound/weapons/rocket/alt_fire.mp3"
+	NewWorldModel		"models/weapons2/dummyblaster/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon			"gfx/hud/w_icon_wristrocket"
+	WeaponName		"Plasma Wrist Rockets" //in game rocket in Kotor 2 for Mira's wrist rocket launcher
+	MissileMissEffect        "firegrenade/prim_explode"
+    MissileHitHumanEffect    "firegrenade/prim_explode"
+    MissileHitDroidEffect    "firegrenade/prim_explode"
+	MissileEffect		 "rockets/missile"
+	MuzzleEffect "null"
+	clipSize 			2
+	CustomAmmo 			8 //25% less raw dmg than Boba, but 25% more ammo (5 vs 4)
+	altfireenabled		0
+	damageMod 1.5
+	rateMod	1.1333 //counteracts global .75 rof and ends up as .8499(near same as Boba)
+	ReloadTimeModifier 	1.4
+	hasAnimOverrides 1
+	animReady BOTH_JET_FORWARD //upper
+	animReadyWalk BOTH_MAND_FLAME_READY 
+	animReadyNoAmmo BOTH_JET_FORWARD
+	animAttack BOTH_MAND_FLAME_READY 
+	animAttackWalk BOTH_MAND_FLAME_READY 
+	animStand BOTH_STAND1 //lower
+}
+WeaponInfo1
+{
+	WeaponToReplace		WP_DC_CARBINE    			
+	WeaponBasedOff		WP_BLASTER_PISTOL      			
+	NewWorldModel		"models/weapons2/kotor_hpistol/kotor_hpistol_w.glm"  
+	NewViewModel		"models/weapons2/kotor_hpistol/kotor_hpistol.md3"
+	FlashSound0          	"sound/weapons/stun_blaster/fire.mp3"
+	Icon			"gfx/hud/w_icon_kotor_hpistol"
+	WeaponName		"Modified Mandalorian Stun Pistol" //Mira is nonlethal and brings targets in alive if possible
+	hasAnimOverrides 1
+	animReady BOTH_STAND4TOATTACK2
+	animReadyWalk BOTH_STAND4TOATTACK2
+	animReadyNoAmmo BOTH_PISTOL_ATTACK
+	animAttack BOTH_PISTOL_ATTACK
+	animAttackWalk BOTH_PISTOL_ATTACK
+	animStand BOTH_STAND9
+	primfireenabled 0
+	damageMod  3.75 //seems insane, but stun mode does 8 dmg so x3.75 the dmg is 30
+	ClipSize	120 //6 shots
+	ReloadTimeModifier 	1.1
+	FPMult 				1.15
+	rateMod	1.3333 //counteracts global .75 rof, ends as .9999
+	CustomAmmo			999 //sec fire is expensive af, this isn't even 9 clips
+}
+WeaponInfo2
+{           
+	WeaponToReplace        WP_TRIP_MINE
+	WeaponBasedOff         WP_TRIP_MINE
+	NewWorldModel		"models/weapons2/laser_trap/laser_trap_w.glm"  	
+	NewViewModel	  "models/weapons2/laser_trap/laser_trap.md3"  	
+	Icon             "gfx/hud/w_icon_tripmine"
+	altMissileMissEffect		"Grenades/EXP_Flash"
+	MissileMissEffect			"Grenades/EXP_Flash"
+	altMissileHitHumanEffect	"Grenades/EXP_Flash"
+	missileHitHumanEffect		"Grenades/EXP_Flash"
+	altMissileHitDroidEffect	"Grenades/EXP_Flash"
+	missileHitDroidEffect		"Grenades/EXP_Flash"
+	WeaponName		"Deadly Flash Mines" //actual item in Kotor 2
+	altFireEnabled 1
+	customAmmo    4
+}
+WeaponInfo3
+{
+	WeaponToReplace		WP_THROWER
+	WeaponBasedOff		WP_THROWER
+	NewWorldModel		"models/weapons2/dummyblaster/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	CorrectedWorldModel	"models/weapons2/dummyblaster/model.glm"
+	Icon			"gfx/hud/w_icon_cr-24_flamerifle"
+	WeaponName		"Ion Blast MK III" //High voltage discharge, in game kotor item typically used by droids
+	clipsize 113 //25% larger clip to offset dmg loss from RoF inc
+	customammo 678
+	hasAnimOverrides	1
+	animReady BOTH_JET_FORWARD //upper
+	animReadyWalk BOTH_MAND_FLAME_READY 
+	animReadyNoAmmo BOTH_JET_FORWARD
+	animAttack BOTH_MAND_FLAME_READY 
+	animAttackWalk BOTH_MAND_FLAME_READY 
+	animStand BOTH_STAND1 //lower
+}
+WeaponInfo4 
+{
+    WeaponToReplace    WP_BOWCASTER 
+    WeaponBasedOff     WP_BLASTER_PISTOL    
+	FlashSound0          	"sound/weapons/darts/fire.mp3"
+	NewWorldModel		"models/weapons2/dummyblaster/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon			"gfx/hud/Alpha/HUD_Icon_WhistlingBird"
+	WeaponName		"Kyber Darts" //in game Kotor 2 ammo for Mira's dart launcher, poison darts like the one that Jango killed Zam with
+	MissileMissEffect		 "flechette/wall_impact"
+    MissileHitHumanEffect    "flechette/flesh_impact"
+    MissileHitDroidEffect    "flechette/wall_impact"
+	MissileEffect		 "rockets/whistlingbird"
+	MuzzleEffect "null"
+	clipSize 			6 //3 shots per clip
+	CustomAmmo 			400
+	altfireenabled		0
+	damageMod 1.3847 //54.0033 dmg per shot, near = to p3 and then ~12 more from poison
+	FPMult	1.6 
+	ReloadTimeModifier 	.75
+	rateMod	2 //counteracts global .75 rof and ends up as 1.5, RoF is very close to the speed that you can rapid fire poison/tracking darts
+	hasAnimOverrides 1
+	animReady BOTH_JET_FORWARD //upper
+	animReadyWalk BOTH_MAND_FLAME_READY 
+	animReadyNoAmmo BOTH_JET_FORWARD
+	animAttack BOTH_MAND_FLAME_READY 
+	animAttackWalk BOTH_MAND_FLAME_READY
+	animStand BOTH_STAND1 //lower
+}
+description	"Mira
+
+Class: Bounty Hunter
+Brief Overview:
+a Mandalorian Neo-Crusader with demolitions/gadget expertise, a lightdagger, and minor Force Sensitivity
+
+^2Weaponry:
+- Melee
+- Shoto Lightsaber (Blue and Cyan)
+-- 32.5% shorter reach
+-- Chain Limit: 2
+-- Saber/Blaster Defense (1)
+-- Cannot Saber Throw
+-- Slap ^3[Gunbash]
+- Modified Mandalorian Stun Pistol (Clone Carbine 2)
+-- 30 DMG per shot/15% more FP DMG
+-- 10%/15% slower reload/movement
+-- Sec. Only
+- Plasma Wrist Rockets (Clone Pistol 1)
+-- Explosive Rounds
+-- Ignites, pushes, and knocks down targets on direct hits
+-- 50% more damage
+-- 75%/40% slower projectiles/mag reload
+- Ion Blast Mark III (Lightning Thrower)
+-- Mag Reload
+- Kyber Darts (Bowcaster 1)
+-- Poisons targets
+-- 50% more DMG/slower ROF
+-- 60%/25% more FP DMG/faster mag reload
+- Concussion Grenades (2)
+- Pulse Grenades (1)
+- Cryoban Grenades (1)
+- Det Packs (4)
+- Deadly Flash Mines (4)
+-- Blind everyone
+
+^5Force Powers:
+- Sense (1)
+- Energy Shield (Protect) (1)
+
+^6Inventory:
+- Electrobinoculars
+
+^8Attributes:
+- Healing (2)
+- Dexterity (3)
+- Durasteel Underlay (Beskar 1)
+- Demolitions Expert (Blast Armor)
+- Tracking Beacon (See Tracked players)
+
+^3Abilities:
+- Poison Darts (2) ^3[CS1 in melee]
+- Wrist Laser ^3[CS2]
+- Whistling Birds ^3[CS3]
+- Grappling Hook (2) ^3[CS4 in melee]"

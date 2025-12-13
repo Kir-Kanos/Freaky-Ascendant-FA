@@ -1,0 +1,170 @@
+//Should make custom at some point
+//Wish granted!
+
+ClassInfo
+{
+	name			"asg2_Carth"
+	weapons			WP_MELEE|WP_FRAG_NADE
+	attributes		MB_ATT_FRAGS,2|MB_ATT_HEALING,2|MB_ATT_AMMO,3|MB_ATT_DASH,2|MB_ATT_QUICKTHROW,1|MB_ATT_DODGE,3|MB_ATT_SHIELD_RECHARGE,1|MB_ATT_BLAST_ARMOUR|MB_ATT_WOOKIE_STRENGTH,1
+	maxhealth	125
+	maxarmor	125
+	basespeed 230
+	rankbasespeed	250
+	modelscale	1.02
+	rateOfFire	1.05
+	MBClass			MB_CLASS_HERO
+	classNumberLimit			1
+	
+	resource RESOURCE_ENERGY
+	forcepool 120
+	
+	skilltimermod 1.33 // 4 sec dash 2, ~8 sec barge
+	bargeSoundOverride "sound/chars/carth/misc/victory3.mp3" //Down you go!
+	//bargeSoundOverride "sound/chars/carth/misc/taunt.mp3" //You asked for this!
+	//bargeSoundOverride "sound/chars/carth/misc/anger2.mp3" //Time to rumble!
+	//bargeSoundOverride "sound/chars/carth/misc/death1.mp3" //autistic scream
+	
+	WP_RepeaterFlags HELD_SLOW|HELD_ALTRELOAD
+	WP_E_22Flags HELD_STUN
+	holdables HI_MEDPAC_BIG
+	
+	model "carth"
+	skin "default"
+	uishader "models/players/carth/mb2_icon_default"
+	
+	//respawncustomtime  50000	
+	
+	special1 EAS_HI_DODGE
+	special2 EAS_HI_DASH
+	special3 EAS_HI_QUICKTOSS
+	special4 EAS_HI_BARGE
+	
+	uioverlay_l "gfx/icons/spec_infantry"
+	uioverlay_r "gfx/icons/brawler"
+	
+	isCustomBuild	1
+	mbPoints	5
+	c_att_skill_0	MB_ATT_MANDO_PISTOL
+	c_att_names_0	"Onasi Blaster Pistols(WESTARs)" //actual kotor weapon(s), wood handle family heirlooms or some shit not really explained
+	c_att_ranks_0	0,0,1
+	c_att_descs_0 "15% more DMG, 10% more FP DMG,
+	30% more charged FP DMG"
+	c_att_skill_1	MB_ATT_E_22
+	c_att_names_1	"Baragwin Assault Gun(E-22)" //actual kotor weapon
+	c_att_ranks_1	1,0,0
+	c_att_descs_1 "Staggers on hit, 10% higher FP DMG,
+	15% slower RoF"
+	c_att_skill_2	MB_ATT_REPEATER
+	c_att_names_2	"Baragwin Heavy Repeater" //actual kotor weapon
+	c_att_ranks_2	1,0,0
+	c_att_descs_2 "Prim. fire Repeater, 8% faster RoF,
+	15% faster velocity, 15% slower movement, 100% slower mag reload"
+
+	c_att_skill_4	MB_ATT_MAGNETIC_PLATING
+	c_att_names_4	"Armorweave Underlay(M. Pla)"
+	c_att_ranks_4 3
+	c_att_descs_4 "Armorweave Underlay grants Magnetic Plating" //kotor 2 armor enhancement vs energy weapons
+	c_att_skill_5	MB_ATT_CORTOSIS
+	c_att_names_5	"Durasteel Underlay(Cort)" 
+	c_att_ranks_5 3
+	c_att_descs_5 "Durasteel Underlay grants Cortosis 1" //kotor 2 armor enhancement vs phys dmg
+	c_att_skill_6	MB_ATT_WOOKIE_STRENGTH
+	c_att_names_6	"GNS Strength Enhancer(Str)"
+	c_att_ranks_6 0,4
+	c_att_descs_6 "GNS Strength Enhancer grants Strength 2" //actual kotor belt item
+	c_att_skill_7	MB_ATT_BASESPEED
+	c_att_names_7	"Adrenaline Stimulator(250)" //actual kotor implant
+	c_att_ranks_7	1
+	c_att_descs_7 "Adrenaline Stimulator grants 250 base speed"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace	WP_MANDO_PISTOL
+	WeaponBasedOff	WP_MANDO_PISTOL				
+	NewWorldModel		"models/weapons2/kotor_bpistol1/kotor_bpistol1_w.glm"
+	NewViewModel		"models/weapons2/kotor_bpistol1/kotor_bpistol1.md3"
+	Icon				"gfx/hud/w_icon_kotor_bpistol2_dual"
+	WeaponName		"Dual Onasi Blaster Pistols"
+	FlashSound0		"sound/weapons/kotor/fire_light.wav" 			
+	AltFlashSound0	"sound/weapons/kotor/fire_power1.mp3"
+	ChargeSound			"sound/weapons/leia_pistol/altcharge.mp3"
+	MuzzleEffect		"Blaster/MuzzleCharge01R"
+	AltMuzzleEffect	"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot02r"
+	AltMissileEffect	"Blaster/Shot04r"
+	PowerupShotEffect	"Blaster/Shot04r"
+	ChargeEffect		"gfx/effects/bryarfrontflash"
+	MissileMissEffect "effects/blaster/Impact_Wall01R"
+	customammo 950
+	Clipsize 60
+	FPMult 1.1
+	FPChargeMult 1.3
+	damageMod 1.15
+	rateMod 1.05
+}
+WeaponInfo1
+{
+	WeaponToReplace		WP_E_22  			
+	WeaponBasedOff		WP_E_22   			
+	NewWorldModel		"models/weapons2/kotor_reprifle/kotor_reprifle_w.glm"
+	NewViewModel		"models/weapons2/kotor_reprifle/kotor_reprifle.md3"
+	NewHandsModel		"models/weapons2/heavy_repeater/heavy_repeater_hand.md3"
+	Icon				"gfx/hud/w_icon_kotor_reprifle"
+	WeaponName			"Baragwin Assault Gun"
+	AltWallImpact "Blaster/Impact_Wall01R"
+	AltMissileEffect	"Blaster/Shot07R"
+	FlashSound0			"sound/weapons/kotor/fire_power1.wav"
+	AltFlashSound0		"sound/weapons/kotor/fire_hvy.wav"
+	FPMult				1.1
+	rateMod 1.15
+	clipsize 60
+	customAmmo 900
+}
+WeaponInfo2
+{
+	WeaponToReplace		WP_REPEATER
+	WeaponBasedOff		WP_REPEATER
+	NewWorldModel		"models/weapons2/kotor_repeater/model_w.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_kotor_repeater"
+	WeaponName			"Baragwin Heavy Repeater"
+	MissileEffect		"Blaster/Shot01R"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	AltMuzzleEffect "Blaster/MuzzleFlash01B"
+	altMissileMissEffect "repeater/concussion"
+	altMissileHitHumanEffect "repeater/concussion"
+	altMissileHitDroidEffect "repeater/concussion"
+	MissileMissEffect "Blaster/Impact_Wall01R_E"
+	FlashSound0			"sound/weapons/kotor/fire_power2.wav"
+	clipsize			120 //2x
+	customAmmo 960
+	altfireEnabled	0
+	//FPMult	.8
+	rateMod 1.08
+	velocityMod 1.15
+	ReloadTimeModifier  2
+}
+
+description	"Carth Onasi [Hero]
+ 
+I'm going to put you over my knee and teach you a lesson! (real quote, I will get this voiceline eventually..)
+
+^2Default Weaponry:
+- Melee
+- Frag Grenades (2)
+
+^6Default Inventory:
+- Big Bacta (50 HP) ^3[CS4]
+
+^8Default Attributes:
+- Strength (1)
+- Blast Armor
+- Armor Regen (1)
+- Healing (2)
+
+^3Default Abilities:
+- Dodge (3) ^3[CS1]
+- Dash (2) ^3[CS2]
+- Quick-Throw (1) ^3[CS3 outside ^3of Grenades]
+- Shoulder Barge ^3[CS4 Melee]"
