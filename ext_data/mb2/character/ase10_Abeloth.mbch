@@ -76,11 +76,12 @@ WeaponInfo1
 	NewViewModel		"models/weapons2/dummy/dummy.md3"
 	Icon				"gfx/menus/Alpha/Icon_Weap_ExpRadius" 			
 	WeaponName			"Force Scream"    			
-	MissileHitHumanEffect "effects/geo_sonic/hit"
-	MissileHitDroidEffect "effects/geo_sonic/hit"
-	MissileMissEffect 	"effects/sonic_pistol/wall_impact"
-	MissileEffect		"effects/sonic_pistol/projectile"  					
-	MuzzleEffect		"effects/sonic_pistol/muzzle_flash"   	
+	 MissileMissEffect "grenade_heal/explosion"
+	 MissileHitHumanEffect "grenade_heal/grenade_heal"
+	 MissileHitDroidEffect "grenade_heal/grenade_heal_hit"
+	 AltMissileMissEffect "grenade_heal/explosion"
+	 AltMissileHitHumanEffect "grenade_heal/grenade_heal"
+	 AltMissileHitDroidEffect "grenade_heal/grenade_heal_hit"	
 	FlashSound0		"sound/weapons/force_scream/fire.mp3"
 	velocityMod 0.8
 	CustomAmmo 	40
@@ -88,7 +89,12 @@ WeaponInfo1
 	FPmult              1.25
 	altfireenabled 0
 	hasAnimOverrides 1
-	animStand BOTH_STAND1 //lower
+	animReady BOTH_SONICPAIN_START
+	animReadyWalk BOTH_SONICPAIN_START
+	animReadyNoAmmo BOTH_SONICPAIN_START
+	animAttack BOTH_MELEE6
+	animAttackWalk BOTH_MELEE6
+	animStand BOTH_SONICPAIN_START
 }
 WeaponInfo2
 {
