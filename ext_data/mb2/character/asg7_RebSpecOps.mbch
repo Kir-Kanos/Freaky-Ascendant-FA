@@ -1,0 +1,260 @@
+ClassInfo
+{
+	name			"asg7_RebSpecOps"
+	MBClass				MB_CLASS_JEDI
+	classNumberLimit	2
+	weapons			WP_MELEE|WP_SABER
+	attributes		MB_ATT_TRACKING_BEACON|MB_ATT_TRACKING_DART,3|MB_ATT_DEXTERITY,3|MB_ATT_STAMINA,3|MB_ATT_FLOAT_HOP|MB_ATT_BUNNY_HOP,1|MB_ATT_STRONGBLOBS,10|MB_ATT_AMMO,3|MB_ATT_BLAST_ARMOUR
+	maxhealth	90
+	MaxArmor	100
+	resource	RESOURCE_STAMINA
+	forceregen	1.2
+	forcepool	80
+	rankForcepool	110,140
+	saberMaxChain 1
+	saberDamage	60
+	saber1	energyshield_as2
+	saberstyle	SS_FAST|SS_TAVION
+	saber1_1	ct_shield1
+	saberstyle_1	SS_FAST|SS_TAVION
+	saber1_2	ct_shield4
+	saberstyle_2	SS_FAST|SS_TAVION
+	APmultiplier	0	//no bp dmg but can mb and parry
+	BPmultiplier 	1.2
+	classflags	CFL_HEAVYMELEE|CFL_SEEING_STEALTH
+	holdables	HI_SEEKER|HI_STIMPACK|HI_MEDPAC_BIG
+	special1	EAS_HI_TRACKING
+	special2	EAS_HI_DEX
+	special3	EAS_HI_DASH
+	special4 	EAS_HI_GRAPPLEHOOK
+	uioverlay "gfx/icons/tactician"
+	WP_CloneRifleFlags	HELD_KNOCKDOWN
+	WP_MandoPistolFlags	HELD_ALTRELOAD|HELD_FREEZE
+	WP_BlasterPistolFlags	HELD_ALTRELOAD|HELD_POISON
+	model			"rebel_marine"
+	skin			"default"
+	uishader		"gfx\um_icons\PrisonRaidPack\SpecForce_Marine"
+	//model_1			"reb_infiltrator"
+	//skin_1			"default"
+	//uishader_1		"models/players/reb_infiltrator/mb2_icon_default"
+	//model_2			"rebel_gag"
+	//skin_2			"model_default"
+	//uishader_2		"models/players/rebel_gag/mb2_icon_default"
+	//model_3			"jedi_hm"
+	//skin_3			"merc_rax"
+	//uishader_3		"models/players/sith_ol/mb2_icon_merc_rax"
+	//model_4			"jedi_hm"
+	//skin_4			"merc2_rax"
+	//uishader_4		"models/players/sith_ol/mb2_icon_merc2_rax"
+	//model_5			"jedi_zf"
+	//skin_5			"ascended"
+	//uishader_5		"models/players/jedi_zora2/mb2_icon_merc_rax"
+	model_1			"splintercell_blue"
+	skin_1			"ascended"
+	uishader_1		"gfx/um_icons/PrisonRaidPack/Infiltrator"
+	(will add the extra skins at later date, needs refining)
+	isCustomBuild	1
+	mbPoints		58
+	c_att_skill_0	MB_ATT_INVALID
+	c_att_names_0	"^2SH-9 Slugthrower Pistol"
+	c_att_ranks_0	-1
+	c_att_skill_1	MB_ATT_MANDO_PISTOL
+	c_att_names_1	"Cryo-Ban Projectile Rounds:"
+	c_att_ranks_1	10,0
+	c_att_descs_1	"Freezes on hit, 44.5% more DMG, 35% more FP DMG,
+20% slower RoF, hitscan alt fire, mag reload"
+	c_att_skill_2	MB_ATT_PISTOL
+	c_att_names_2	"Borless Acid Rounds:"
+	c_att_ranks_2	10,0
+	c_att_descs_2	"Poisons on hit, 18% more DMG, 35% more FP DMG,
+50% more charged FP DMG, 20% slower RoF, hitscan alt fire, mag reload"
+	c_att_skill_4	MB_ATT_WESTARM5
+	c_att_names_4	"^2Modified E-22(M5):"
+	c_att_ranks_4	10,0
+	c_att_descs_4	"30% more DMG, 67% more FP DMG,
+30% more velocity, 150% less RoF"
+	40% slower RoF"
+	c_att_skill_5	MB_ATT_ARC_RIFLE_SCOPE
+	c_att_names_5	"E-22 Sniper Configuration:"
+	c_att_ranks_5	5
+	c_att_skill_7	MB_ATT_CLONERIFLE
+	c_att_names_7	"^2A180 Electro-mag Pulse Con.:"
+	c_att_ranks_7	15
+	c_att_descs_7	"Clone Rifle with 20 Ion Blobs, knockdown on direct hit,
+100% more velocity, 70% faster swap speed"
+	c_att_skill_8	MB_ATT_FRAGS
+	c_att_names_8	"Smoke Grenades:"
+	c_att_ranks_8	1
+	c_att_skill_9	MB_ATT_INVALID
+	c_att_names_9	"^8Attributes^7/^3Abilities"
+	c_att_ranks_9	-1
+	c_att_skill_10	MB_ATT_FP_SABER_DEFENSE
+	c_att_names_10	"Saber Defense:"
+	c_att_ranks_10	10,10
+	c_att_skill_11	MB_ATT_GUN_DEFENSE
+	c_att_names_11	"Blaster Defense:"
+	c_att_ranks_11	10,10,10
+	c_att_skill_12	MB_ATT_POWER
+	c_att_names_12	"Stamina Pool:"
+	c_att_ranks_12	2,3
+	c_att_descs_12	"110, 140"
+	c_att_skill_13	MB_ATT_GRAPPLE_HOOK
+	c_att_names_13	"Grappling Hook ^3[CS3]:"
+	c_att_ranks_13	2,3
+	c_att_skill_14  MB_ATT_RESPAWNS
+	c_att_names_14  "Reinforcement"
+	c_att_ranks_14  25
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_MANDO_PISTOL
+	WeaponBasedOff		WP_MANDO_PISTOL
+	NewWorldModel		"models/weapons2/usp_match/usp_match.glm"
+	NewViewModel		"models/weapons2/usp_match/usp_match.md3"
+	MuzzleEffect		"null"
+	AltMuzzleEffect		"halo_smg/Muzzle_Flash"
+	ChargeEffect		"null"
+	MissileEffect		"halo_pistol/shot"
+	MissileMissEffect "halo_smg/wall_impact"
+	altMissileMissEffect	"halo_smg/wall_impact"
+	Icon				"gfx/mplevels/ultimate_showdown/usp_match"
+	WeaponName			"SH-9 Slugthrower Pistol(Freeze)"
+	SelectSound		"sound/css_wep/buttonclickrelease.wav"
+	FlashSound0			"s/w/pistol/silencer.wav"
+	AltFlashSound0 		"sound/weapons/silencedpistol/alt_fire.wav"
+	ChargeSound			"sound/weapons/silencedpistol/altcharge.wav"
+	primGore			1
+	altGore				1
+	altHitscanShot		1
+	altHitscanTracer	10
+	ClipSize			20
+	rateMod				1.2
+	damageMod			1.445
+	FpMult				1.35
+}
+WeaponInfo1
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/usp_match/usp_match.glm"
+	NewViewModel		"models/weapons2/usp_match/usp_match.md3"
+	MuzzleEffect		"null"
+	AltMuzzleEffect		"halo_smg/Muzzle_Flash"
+	ChargeEffect		"null"
+	MissileEffect		"halo_pistol/shot"
+	MissileMissEffect "halo_smg/wall_impact"
+	altMissileMissEffect	"halo_smg/wall_impact"
+	Icon				"gfx/mplevels/ultimate_showdown/usp_match"
+	WeaponName			"SH-9 Slugthrower Pistol(Acid)"
+	SelectSound		"sound/css_wep/buttonclickrelease.wav"
+	FlashSound0			"s/w/pistol/silencer.wav"
+	AltFlashSound0 		"sound/weapons/silencedpistol/alt_fire.wav"
+	ChargeSound			"sound/weapons/silencedpistol/altcharge.wav"
+	primGore			1
+	altGore				1
+	altHitscanShot		1
+	altHitscanTracer	10
+	ClipSize			10
+	rateMod				1.2
+	damageMod			1.18
+	FpMult				1.35
+}
+WeaponInfo2
+{
+	WeaponToReplace	WP_M5
+	WeaponBasedOff	WP_M5
+	NewWorldModel	"models/weapons2/e_22/e_22_w.glm"
+	NewViewModel	"models/weapons2/e_22/e_22.md3"
+	NewHandsModel	"models/weapons2/e_22/e_22_hand.md3"
+	Icon	"gfx/hud/w_icon_e_22"
+	WeaponName	"Modified E-22"
+	MuzzleEffect	"Blaster/MuzzleFlash01R"
+	AltMuzzleEffect	"Blaster/MuzzleFlash01R"
+	MissileEffect	"Blaster/Shot09R"
+	altMissileEffect	"Blaster/Shot12R"
+	FlashSound0	"sound/weapons/e_22/fire.mp3"
+	altFlashSound0	"sound/weapons/e_22/alt_fire.mp3"
+	clipSize 30
+	velocityMod	1.45
+	rateMod 2.5
+	damageMod	1.305 //40.4 prim / 90 sniper
+	FpMult	1.67 //10.02 - 23.38 prim / 16.7 - 28.39 sniper
+}
+WeaponInfo3
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff      WP_SABER
+	NewWorldModel		"models/weapons2/dummy/dummy.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon            	"gfx/hud/w_icon_gunganshield"
+	WeaponName			"Personal Shield"
+}
+WeaponInfo4
+{
+	WeaponToReplace	WP_FRAG_NADE
+	WeaponBasedOff	WP_FRAG_NADE
+	NewWorldModel	"models/weapons2/smokenade/thermal_w.glm"
+	NewViewModel	"models/weapons2/smokenade/thermal.md3"
+	NewHandsModel 	"models/weapons2/smokenade/thermal_hand.md3"
+	Icon	"Models/Weapons2/smokenade/icon"
+	WeaponName	"Smoke Grenades"
+	AltMissileModel	"models/weapons2/smokenade/thermal_proj.md3"
+	altMissileMissEffect	"smokenadeleg/explode_vol"
+	altFlashSound0	"Sound/css_wep/smokegrenade_explode.wav"
+	hasAnimOverrides 1
+	animReady BOTH_STAND5TOSTAND8
+	animReadyWalk BOTH_STAND5TOSTAND8
+	//animReadyNoAmmo BOTH_STAND5TOSTAND8
+	animAttack NADE_SECONDARY
+	animAttackWalk NADE_SECONDARY
+	animStand BOTH_STAND1
+	primFireEnabled	0
+	customAmmo	4
+	damageMod	.1
+}
+WeaponInfo5
+{
+	WeaponToReplace	WP_CLONE_RIFLE
+	WeaponBasedOff	WP_CLONE_RIFLE
+	NewWorldModel	"models/weapons2/a180/a180_ion.glm"
+	NewViewModel	"models/weapons2/a180/model_ion.md3"
+	AltMissileEffect	"arc_caster/ArcCasterShock"
+	AltMuzzleEffect	"arc_caster/ArcCasterMuzzle"
+	//AltFlashSound0	"vehicles/weapons/common/IonCannon.mp3"
+	AltFlashSound0	"Sound/Weapons/plasma_sword/impact.wav"
+	Icon	"gfx/hud/w_icon_a180_ion"
+	WeaponName	"A180 Electro-mag Pulse Conversion"
+	ClipSize	-1
+	CustomAmmo	-1
+	velocityMod	2
+	rateMod	.3
+}
+description	"Rebel SpecOps(WIP)
+Brief Overview:
+An elite with access to special x, y and z.
+
+^2Default Weaponry:
+- Heavy Melee
+- Personal Shield
+
+^6Default Inventory:
+- Seeker Droid
+- Stimpack
+- Bacta (Instant 50 HP)
+
+^8Default Attributes:
+- Repulsor Assisted Movement
+-- Slowfall
+-- Bunny Hop (1)
+-- Dash (1)
+-- Dexterity (3)
+-- Jedi Getups
+- Force Sense Immunity
+- Blast Armour
+- Tracking Beacon
+
+^3Abilities:
+- Tracking Darts ^3[CS1]
+- Dex Roll ^3[CS2]
+- Dash ^3[CS3]
+- Grapplehook ^3[CS4]"

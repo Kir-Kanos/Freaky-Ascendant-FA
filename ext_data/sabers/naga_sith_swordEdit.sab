@@ -1,0 +1,96 @@
+naga_sadow_sword_v2
+{
+	name		"Naga Sadow's Shortsword"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/naga_sadow_sword/naga_sadow_sword_v2.glm"
+	soundOn		"sound/weapons/naga_sadow_sword/draw4.mp3"
+	soundLoop	"sound/weapons/naga_sadow_sword/hum1.mp3"
+	soundOff	"sound/weapons/naga_sadow_sword/sheith4.mp3"
+	swingSound1	"sound/weapons/naga_sadow_sword/swing10.mp3"
+	swingSound2	"sound/weapons/naga_sadow_sword/swing11.mp3"
+	swingSound3	"sound/weapons/naga_sadow_sword/swing12.mp3"
+	hitSound1	"sound/weapons/naga_sadow_sword/slash10.mp3"
+	hitSound2	"sound/weapons/naga_sadow_sword/slash11.mp3"
+	hitSound3	"sound/weapons/naga_sadow_sword/slash12.mp3"
+	blockSound1	"sound/weapons/naga_sadow_sword/block10.mp3"
+	blockSound2	"sound/weapons/naga_sadow_sword/block11.mp3"
+	blockSound3	"sound/weapons/naga_sadow_sword/block12.mp3"
+	spinSound	"sound/weapons/naga_sadow_sword/spin.mp3"
+	bounceSound1	"sound/weapons/naga_sadow_sword/bounce1.mp3"
+	bounceSound2	"sound/weapons/naga_sadow_sword/bounce2.mp3"
+	bounceSound3	"sound/weapons/naga_sadow_sword/bounce3.mp3"
+	saberLength	35
+	saberRadius 4
+	returnDamage 1
+	saberColor	random
+	numBlades	1
+	throwable	1	
+	noDlight	1
+	noBlade		1
+	trailStyle	1
+	idleInBack	"1"
+	onInWater	1
+	bounceOnWalls	1
+	noWallMarks	1
+	readyAnim BOTH_TRIPLE3_STAFFSTANCE
+	bladeEffect	efx/effects/sith_sword_lightning.efx
+	blockEffect	effects/force/lightning.efx
+	hitPersonEffect	effects/force/lightning.efx
+	hitOtherEffect	effects/demp2/wall_impact.efx
+	bowAnim		BOTH_FORCE_PROTECT_FAST
+	flourishAnim	BOTH_T1_TR_TL
+	gloatAnim	BOTH_FORCE_RAGE
+}
+naga_sadow_sword_v2_duals
+{
+	name		"Sadow's Sword & Nadd's Shoto"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/naga_sadow_sword/naga_sadow_sword_v2.glm"
+	soundOn		"sound/weapons/naga_sadow_sword/draw4.mp3"
+	soundLoop	"sound/weapons/naga_sadow_sword/hum1.mp3"
+	soundOff	"sound/weapons/naga_sadow_sword/sheith4.mp3"
+	swingSound1	"sound/weapons/naga_sadow_sword/swing10.mp3"
+	swingSound2	"sound/weapons/naga_sadow_sword/swing11.mp3"
+	swingSound3	"sound/weapons/naga_sadow_sword/swing12.mp3"
+	hitSound1	"sound/weapons/naga_sadow_sword/slash10.mp3"
+	hitSound2	"sound/weapons/naga_sadow_sword/slash11.mp3"
+	hitSound3	"sound/weapons/naga_sadow_sword/slash12.mp3"
+	blockSound1	"sound/weapons/naga_sadow_sword/block10.mp3"
+	blockSound2	"sound/weapons/naga_sadow_sword/block11.mp3"
+	blockSound3	"sound/weapons/naga_sadow_sword/block12.mp3"
+	spinSound	"sound/weapons/naga_sadow_sword/spin.mp3"
+	bounceSound1	"sound/weapons/naga_sadow_sword/bounce1.mp3"
+	bounceSound2	"sound/weapons/naga_sadow_sword/bounce2.mp3"
+	bounceSound3	"sound/weapons/naga_sadow_sword/bounce3.mp3"
+	saberLength	35
+	saberRadius 4
+	saberColor	random
+	numBlades	1
+	throwable	1	
+	noDlight	1
+	noBlade		1
+	trailStyle	1
+	idleInBack	"1"
+	onInWater	1
+	bounceOnWalls	1
+	noWallMarks	1
+	readyAnim BOTH_DOOKU_STANCE
+	bladeEffect	efx/effects/sith_sword_lightning.efx
+	blockEffect	effects/force/lightning.efx
+	hitPersonEffect	effects/force/lightning.efx
+	hitOtherEffect	effects/demp2/wall_impact.efx
+	bowAnim		BOTH_FORCE_PROTECT_FAST
+	flourishAnim	BOTH_T1_TR_TL
+	gloatAnim	BOTH_FORCE_RAGE
+}
+freedon_shoto_legends
+{
+	name  		"Freedon's Shortsaber"
+	saberType 	SABER_SINGLE
+	saberModel	"models/weapons2/saber_rooxon/saber_kshrt.glm"
+    soundOn		"sound/weapons/saber/saberon.wav"
+	soundLoop	"sound/weapons/saber/saberhumkotor.wav"
+	soundOff	"sound/weapons/saber/saberoff.wav"
+	saberLength 27
+	saberColor  .07
+}

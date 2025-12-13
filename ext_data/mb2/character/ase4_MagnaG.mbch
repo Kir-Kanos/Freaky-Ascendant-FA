@@ -1,0 +1,120 @@
+
+ClassInfo
+{
+	name			"ase4_MagnaG"
+	MBClass	MB_CLASS_SITH
+	classNumberLimit	2
+	extralives	1
+	
+	weapons		WP_MELEE|WP_SABER|WP_MANDO_PISTOL
+	attributes	MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_MAGNETIC_PLATING,1|MB_ATT_FORCEBLOCK,3|MB_ATT_MANDO_PISTOL,2|MB_ATT_AMMO,2|MB_ATT_ASSEMBLE,3|MB_ATT_SHIELD_RECHARGE,1|MB_ATT_ANTI_MT,2|MB_ATT_SABER_COMBO,2|MB_ATT_DEFLECT,0|MB_ATT_DASH,2|MB_ATT_DEXTERITY,3|MB_ATT_INAIR_FORCE_REGEN
+	
+	forcepowers	FP_LEVITATION,3
+	
+	maxhealth	80
+	maxarmor    10
+ 	basespeed 	250
+	damageTaken  1
+	saberDamage 150
+	forcepool	80
+	
+	saber1		electrostaff_legends
+	sabercolor	5
+	saberstyle	SS_STAFF
+	//saberStanceAnim BOTH_SPEAR_STANCE
+	BPmultiplier	1.1
+	ASmultiplier	1.15
+	CSmultiplier	1.20
+	APmultiplier	1.20
+	classflags CFL_STRONGAGAINSTPHYSICAL|CFL_BPFREEJUMPS
+	special1 EAS_NONE
+	special2 EAS_MELEE
+	//meditateAnim BOTH_SBD_DEAD1
+	deathAnim	BOTH_SBD_DEATH1
+	
+	WP_SaberFlags HELD_PULSE|HELD_STUN
+	
+	special3 EAS_HI_DASH
+	
+	modelscale 	1.13
+	
+	uioverlay_l "gfx/icons/hybrid"
+	uioverlay_r "gfx/icons/infantry"
+
+	model	"magnaguard"
+	skin	"default"
+	uishader "models/players/magnaguard/mb2_icon_default"
+
+	model_1	"magnaguard"
+	skin_1	"default_cape"
+	uishader_1 "models/players/magnaguard/mb2_icon_default_cape"
+
+	model_2	"magnaguard"
+	skin_2		"default_magutapau"
+	uishader_2	"models/players/magnaguard/mb2_icon_default_magutapau"
+
+	model_3	"magnaguard"
+	skin_3	"bedlam"
+	uishader_3 "models/players/magnaguard/mb2_icon_bedlam"
+
+	model_4	"magnaguard"
+	skin_4	"bedlam_cape"
+	uishader_4 "models/players/magnaguard/mb2_icon_bedlam_cape"
+	
+	//respawncustomtime 30000
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel			"models/weapons2/electrostaff/electrostaff.glm" 
+	NewViewModel			"models/weapons2/dummy/dummy.md3"
+	Icon					"gfx/hud/w_icon_electrostaff"
+	WeaponName			"MagnaGuard Electrostaff"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_MANDO_PISTOL
+	WeaponBasedOff		WP_BLASTER
+	NewWorldModel			"models/weapons2/e5/e5_w.glm"
+	NewViewModel			"models/weapons2/e5/e5.md3"
+	Icon					"gfx/hud/w_icon_e5.tga"
+	WeaponName			"Droid Pistol"
+	FlashSound0			"sound/weapons/lvl3pistol/fire.mp3" 			
+	AltFlashSound0		"sound/weapons/lvl3pistol/fire.mp3"
+	ChargeSound			"sound/weapons/leia_pistol/altcharge.mp3"
+	rateMod 0.8
+}
+
+description 	"IG-100 MagnaGuard [Sith]
+
+Mobile saberist with high dueling stats and armor regen. 
+
+^2Weaponry:
+- Melee
+- MagnaGuard Electrostaff (Staff Saber)
+-- Saber Defense (2)
+-- Blaster Defense (1)
+-- Saber Deflect (0)
+-- EX Saber Training (2)
+-- 50% less DMG
+-- Slap ^3[CS2]
+- Droid Pistol (WESTAR 2)
+-- 20% faster RoF
+
+^5Powers:
+- Energized Jump (3)
+
+^8Attributes:
+- Reinforcement (1)
+- Magnetic Plating
+- Physical Resist
+- Armor Regen (1)
+- Force Block (3)
+- Anti-Mind Trick (2)
+- Assemble (3)
+- Dexterity (3)
+- Dash (2) ^3[CS3]
+- Mid-Air Force Regen"

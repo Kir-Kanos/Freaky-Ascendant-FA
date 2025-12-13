@@ -1,0 +1,145 @@
+energyshield_as2
+{
+	name		"Personal Energy Shield"
+	saberType	SABER_SINGLE
+	saberModel 	"models/weapons2/energyshield/energyshield.glm"
+	soundOn		"sound/chars/droideka/shieldon.mp3"
+	soundLoop	"sound/ambience/prototype/forcefieldhum.wav"
+	soundOff		"sound/chars/droideka/shieldoff.mp3"
+	saberLength	35
+	saberRadius	5
+	throwable	0
+	disarmable	0
+	noDlight		1
+	noManualDeactivate 	1
+	noBlade		1
+	noIdleEffect	0
+	onInWater	1
+	noWallMarks	1
+	trailStyle		2
+	bounceOnWalls	0
+	idleInBack	0
+	numBlades	1
+	boltToWrist 	1
+	damageScale   1
+	knockbackScale  1.5
+	blasterblocking 1
+	drawAnim	DUAL_DRAW
+	putawayAnim 	BOTH_A2_TL_BR
+	readyAnim	BOTH_MELEE_BLOCK_C	//THIS LOOKS REALLY GOOD
+	lungeAtkMove 	LS_HILT_BASH
+	g2MarksShader		"gfx/damage/bloodcutmark"
+	g2WeaponMarkShader	"gfx/effects/bloodsplat"
+	spinsound	"s/w/s/spin.wav"
+	swingSound1 "sound/weapons/saber/darksaberhup1.wav"
+	swingSound2 "sound/weapons/saber/darksaberhup2.wav"
+	swingSound3 "sound/weapons/saber/darksaberhup3.wav"
+	hitSound1	"sound/weapons/saber_plasma/saberhit1.wav"
+    hitSound2	"sound/weapons/saber_plasma/saberhit2.wav"
+    hitSound3	"sound/weapons/saber_plasma/saberhit3.wav"
+	bounceSound1	"sound/weapons/saber_plasma/saberbounce1.wav"
+	bounceSound2	"sound/weapons/saber_plasma/saberbounce2.wav"
+	bounceSound3	"sound/weapons/saber_plasma/saberbounce3.wav"
+}
+
+ct_shield1
+{
+	name		"Wrist Plate Shield(Green)"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/ct_weapon/ct_shield.glm"
+	soundOn		"s/w/a/swing2.wav"
+	soundLoop	none
+	soundOff	"s/w/v/swish2.mp3"
+	saberLength	70
+	saberRadius	 3
+	blasterBlocking 1
+	throwable		0
+	disarmable	0
+	notInMP		0
+	noDlight		1
+	noManualDeactivate 	1
+	noBlade		1
+	noIdleEffect	1
+	onInWater	1
+	noWallMarks	1
+	trailStyle		2
+	bounceOnWalls	0
+	idleInBack	1
+	numBlades	1
+	boltToWrist 1
+	damageScale  1
+	drawAnim	DUAL_DRAW
+	putawayAnim 	BOTH_A2_TL_BR
+	readyAnim	BOTH_MELEE_BLOCK_C	//THIS LOOKS REALLY GOOD
+	lungeAtkMove 	LS_HILT_BASH
+	spinsound	"s/w/b/spin.mp3"
+	swingSound1	"s/w/v/swish1.mp3"
+	swingSound2	"s/w/v/swish2.mp3"
+	swingSound3	"s/w/v/swish1.mp3"
+	fallSound1	"s/w/v/fall1.mp3"
+	fallSound2	"s/w/v/fall1.mp3"
+	fallSound3	"s/w/v/fall1.mp3"
+	hitSound1	"sound/weapons/blunt/hit1.mp3"
+	hitSound2	"sound/weapons/blunt/hit2.mp3"
+	hitSound3	"sound/weapons/blunt/hit3.mp3"
+	blockSound1	"sound/weapons/plasma_sword/impact.wav"
+	blockSound2	"sound/weapons/hit/hit8.wav"
+	blockSound3	"sound/weapons/hit/hit6.wav"
+	bounceSound1	"sound/weapons/blunt/hit1.mp3"
+	bounceSound2	"sound/weapons/blunt/hit2.mp3"
+	bounceSound3	"sound/weapons/blunt/hit3.mp3"
+	g2MarksShader "gfx/damage/bloodcutmark"
+	g2WeaponMarkShader "gfx/effects/bloodsplat"
+	blockEffect	"melee_weap/block.efx"
+}
+
+ct_shield4
+{
+	name		"Makeshift Wrist Shield"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/ct_weapon/ct_shield4.glm"
+	soundOn		"s/w/a/swing2.wav"
+	soundLoop	none
+	soundOff	"s/w/v/swish2.mp3"
+	saberLength	35
+	saberRadius	 3
+	blasterBlocking 1
+	throwable		0
+	disarmable	0
+	notInMP		0
+	noDlight		1
+	noManualDeactivate 	1
+	noBlade		1
+	noIdleEffect	1
+	onInWater	1
+	noWallMarks	1
+	trailStyle		2
+	bounceOnWalls	0
+	idleInBack	1
+	numBlades	1
+	boltToWrist 1
+	damageScale  1
+	drawAnim	DUAL_DRAW
+	putawayAnim 	BOTH_A2_TL_BR
+	readyAnim	BOTH_MELEE_BLOCK_C	//THIS LOOKS REALLY GOOD
+	lungeAtkMove 	LS_HILT_BASH
+	spinsound	"s/w/b/spin.mp3"
+	swingSound1	"s/w/v/swish1.mp3"
+	swingSound2	"s/w/v/swish2.mp3"
+	swingSound3	"s/w/v/swish1.mp3"
+	fallSound1	"s/w/v/fall1.mp3"
+	fallSound2	"s/w/v/fall1.mp3"
+	fallSound3	"s/w/v/fall1.mp3"
+	hitSound1	"sound/weapons/blunt/hit1.mp3"
+	hitSound2	"sound/weapons/blunt/hit2.mp3"
+	hitSound3	"sound/weapons/blunt/hit3.mp3"
+	blockSound1	"sound/weapons/plasma_sword/impact.wav"
+	blockSound2	"sound/weapons/hit/hit8.wav"
+	blockSound3	"sound/weapons/hit/hit6.wav"
+	bounceSound1	"sound/weapons/blunt/hit1.mp3"
+	bounceSound2	"sound/weapons/blunt/hit2.mp3"
+	bounceSound3	"sound/weapons/blunt/hit3.mp3"
+	g2MarksShader "gfx/damage/bloodcutmark"
+	g2WeaponMarkShader "gfx/effects/bloodsplat"
+	blockEffect	"melee_weap/block.efx"
+}

@@ -265,9 +265,8 @@ ForceInfo0
 	LoopSound "sound/ambience/cp_02_lp.wav"
 }
 
-description	"Moff Gideon 
+description	"Moff Gideon [Mandalorian]
 
-Class: Mandalorian
 A Rally commander that can spec into a support gunner, gadget saberist, or flying tank.
 
 ^2Default Weaponry:
