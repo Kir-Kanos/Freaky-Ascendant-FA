@@ -40,7 +40,7 @@ SubclassesForClass1
 SubclassesForClass2
 {
 	Subclass1	"v4_BX"
-	Subclass2	"v4_MagnaG"
+	Subclass2	"ase4_MagnaG"
 	Subclass3	"v4_PurgeTr"	
 	Subclass4	"v4_RoyalPr"
 	Subclass5	"v4_CarnorJax"
@@ -81,7 +81,7 @@ SubclassesForClass3
 
 SubclassesForClass4
 {
-	Subclass1 	"v8_SBD"	
+	Subclass1 	"ase8_SBD"	
 	Subclass2	"v8_HuttW"
 	Subclass3	"v8_Burg"
 	Subclass4	"v8_Galak"
@@ -92,7 +92,7 @@ SubclassesForClass4
 
 SubclassesForClass5
 {
-	Subclass1	"v9_ShadowG"
+	Subclass1	"ase9_ShadowG"
 	Subclass2	"v9_Maul"
 	Subclass3	"v9_SDuel"
 	Subclass4	"v9_Ventres"
