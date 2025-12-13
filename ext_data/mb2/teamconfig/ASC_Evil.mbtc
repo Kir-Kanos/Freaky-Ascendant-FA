@@ -34,6 +34,7 @@ SubclassesForClass1
 	Subclass16	"v3_Bossk"
 	Subclass17	"v3_IG88"
 	Subclass18	"ase3_SithTr"
+	Subclass19	"ase3_RakatanInfantry"
 }
 
 SubclassesForClass2
@@ -86,6 +87,7 @@ SubclassesForClass4
 	Subclass4	"v8_Galak"
 	Subclass5	"v8_Snoova"
 	Subclass6	"ase8_BlackK"
+	Subclass7	"ase8_RakatanInfantry"
 }
 
 SubclassesForClass5

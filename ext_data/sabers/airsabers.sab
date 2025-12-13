@@ -397,7 +397,7 @@ saber_maw_legends
 }
 rakatan_saberpike_legends
 {
-	name		"Rakatan Forcesaber Pike"
+	name		"Rakatan Saberpike"
 	saberType	SABER_SINGLE
 	saberModel	"models/weapons2/lightsaber_pike/saber.glm"
 	soundOn		"sound/weapons/saber/saberon.wav"
@@ -422,7 +422,7 @@ rakatan_chopper
 	soundLoop	none
 	soundOff	none
 	numBlades	2
-	saberLength	40
+	saberLength	32
 	saberRadius	2
 	maxChain	3
 	disarmable	1
@@ -462,7 +462,7 @@ rakatan_chopper
 }
 rakatan_forceblade_staff
 {
-	name		"Rakatan Staff Forceblades"
+	name		"Rakatan Staffblade"
 	saberType	SABER_STAFF
 
 	numBlades	2
@@ -488,7 +488,7 @@ rakatan_forceblade_staff
 	noManualDeactivate	0
 	bounceOnWalls	1
  
-	animspeedscale	.90
+	animspeedscale	1
 
 	spinsound	"s/w/t/swing3.wav"
 	swingSound1	"s/w/v/swish1.mp3"
@@ -517,4 +517,5 @@ rakatan_forceblade_staff
 	hitPersonEffect "melee_weap/attack.efx"
 	hitOtherEffect	"melee_weap/other.efx"
 }
+
 
