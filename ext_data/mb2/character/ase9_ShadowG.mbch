@@ -28,7 +28,7 @@ ClassInfo
 	APmultiplier 1.1
 	BPmultiplier 1.1
 	CSmultiplier 1.1
-	ASmultiplier 1.1
+	ASmultiplier 1.05
 	modelscale   1.01
 	uioverlay_r 		"gfx/icons/frontline"
 	model			"royal"
@@ -137,3 +137,4 @@ Highly mobile saberists that can choose between a versatile one-life or speciali
 - Dexterity (3)
 - Healing (1)
 - Force Block/Focus (2)"
+
