@@ -145,10 +145,10 @@ c_att_skill_39 MB_ATT_DEFLECT
 c_att_names_39 "Saber Deflect:"
 c_att_ranks_39 5
 c_att_skill_40 MB_ATT_GUN_DEFENSE
-c_att_names_40: "Blaster Defense"
+c_att_names_40 "Blaster Defense"
 c_att_ranks_40 2,2,2
 c_att_skill_41 MB_ATT_FP_SABER_DEFENSE
-c_att_names_41: "Saber Defense"
+c_att_names_41 "Saber Defense"
 c_att_ranks_41 2
 c_att_skill_42 MB_ATT_POWER
 c_att_names_42 "Force Pool (130):"

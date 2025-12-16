@@ -33,7 +33,7 @@ ClassInfo
 	
 	model_2		"monmothma" 				
 	skin_2		"default"					
-	uishader_2	"models/players/monmothma/icon_default"
+	uishader_2	"models/players/monmothma/mb2_icon_default"
 	
 	respawnCustomTime  50000	
 	special1		EAS_HI_DODGE

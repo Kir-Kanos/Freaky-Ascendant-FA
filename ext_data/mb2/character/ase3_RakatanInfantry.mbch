@@ -67,75 +67,76 @@ ClassInfo
 	customSpecName_1 "Soldier"
 	customSpecIcon_1 "gfx/menus/alpha/icon_Weap_Accuracy"
 	customSpecDesc_1 "^7A frontliner with ranged or melee options."
-	c_att_skill_0	MB_ATT_RESPAWNS
-	c_att_ranks_0	0,0
-	c_att_names_0	"Reinforcements"
-	c_att_skill_1	
-	c_att_ranks_1	
-	c_att_names_1	""
-	c_att_skill_2	MB_ATT_CLONERIFLE
-	c_att_ranks_2	15,0
-	c_att_names_2	"Rakatan Blaster (Clone Rifle)"
-	c_att_descs_2	"^72 Ion Blobs, +35% DMG, 40% Longer Reload, 100% Slower RoF"
-	c_att_skill_3	MB_ATT_ARMOUR
-	c_att_ranks_3	5
-	c_att_names_3	"Armor (35)"
-	c_att_skill_4
-	c_att_ranks_4
-	c_att_names_4	""
-	c_att_skill_5	MB_ATT_SABER_DAMAGE
-	c_att_ranks_5	4
-	c_att_names_5	"Saber Damage (235)"
-	c_att_skill_6	MB_ATT_FP_SABER_DEFENSE
-	c_att_ranks_6	4,0
-	c_att_names_6	"Saber Defense"
-	c_att_skill_7	MB_ATT_BP_MULTIPLIER
-	c_att_ranks_7	4
-	c_att_names_7	"Saber BP (100%)"
-	c_att_skill_8	MB_ATT_POWER
-	c_att_ranks_8	4
-	c_att_names_8	"Rage Pool (100)"
-	
+c_att_skill_0	MB_ATT_RESPAWNS
+c_att_ranks_0	0,0
+c_att_names_0	"Reinforcements"
+
+c_att_skill_1	MB_ATT_CLONERIFLE
+c_att_ranks_1	15,0
+c_att_names_1	"Rakatan Blaster (Clone Rifle)"
+c_att_descs_1	"^72 Ion Blobs, +35% DMG, 40% Longer Reload, 100% Slower RoF"
+
+c_att_skill_2	MB_ATT_ARMOUR
+c_att_ranks_2	5
+c_att_names_2	"Armor (35)"
+
+c_att_skill_3	MB_ATT_SABER_DAMAGE
+c_att_ranks_3	4
+c_att_names_3	"Saber Damage (235)"
+
+c_att_skill_4	MB_ATT_FP_SABER_DEFENSE
+c_att_ranks_4	4,0
+c_att_names_4	"Saber Defense"
+
+c_att_skill_5	MB_ATT_BP_MULTIPLIER
+c_att_ranks_5	4
+c_att_names_5	"Saber BP (100%)"
+
+c_att_skill_6	MB_ATT_POWER
+c_att_ranks_6	4
+c_att_names_6	"Rage Pool (100)"
+
 	
 	customSpecName_2 "Sorcerer"
 	customSpecIcon_2 "gfx/menus/alpha/Icon_SaberCustom"
 	customSpecDesc_2 "^7A backliner with force power options."
 	
-	c_att_skill_15	MB_ATT_RESPAWNS
-	c_att_ranks_15	0
-	c_att_names_15	"Reinforcements"
-	c_att_skill_16
-	c_att_ranks_16
-	c_att_names_16	""
-	c_att_skill_17	MB_ATT_FP_PUSH
-	c_att_ranks_17  0,5
-	c_att_names_17  "Push"
-	c_att_skill_18	MB_ATT_FP_PULL
-	c_att_ranks_18	0,5
-	c_att_names_18	"Pull"
-	c_att_skill_19	MB_ATT_FP_REPULSE
-	c_att_ranks_19	10
-	c_att_names_19 	"Repulse"
-	c_att_descs_19	"^3[CS3]"
-	
-	c_att_skill_21	MB_ATT_PISTOL
-	c_att_ranks_21	0
-	c_att_names_21	"Lightning Zap (Pistol)"
-	c_att_descs_21	"^7-40% Velocity, 700% Longer Reload, +40% FP DMG, +15% DMG,
-	35% Slower RoF"
-	c_att_skill_22	MB_ATT_REPEATER
-	c_att_ranks_22	0
-	c_att_names_22	"Lightning Blast (Repeater)"
-	c_att_descs_22	"^720% Faster RoF, 8000% Longer Reload,
-	+220% DMG, +250% Velocity, Alt-Fire Only"
-	c_att_skill_23	MB_ATT_HEALING
-	c_att_ranks_23	0,0,10
-	c_att_names_23	"Healing"
-	c_att_skill_24	MB_ATT_POWER
-	c_att_ranks_24  0,0
-	c_att_names_24  "Rage Pool (100/125)"
-	
-	
+c_att_skill_15	MB_ATT_RESPAWNS
+c_att_ranks_15	0
+c_att_names_15	"Reinforcements"
+
+c_att_skill_16	MB_ATT_FP_PUSH
+c_att_ranks_16	0,5
+c_att_names_16	"Push"
+
+c_att_skill_17	MB_ATT_FP_PULL
+c_att_ranks_17	0,5
+c_att_names_17	"Pull"
+
+c_att_skill_18	MB_ATT_FP_REPULSE
+c_att_ranks_18	10
+c_att_names_18	"Repulse"
+c_att_descs_18	"^3[CS3]"
+
+c_att_skill_19	MB_ATT_PISTOL
+c_att_ranks_19	0
+c_att_names_19	"Lightning Zap (Pistol)"
+c_att_descs_19	"^7-40% Velocity, 700% Longer Reload, +40% FP DMG, +15% DMG,
+35% Slower RoF"
+
+c_att_skill_20	MB_ATT_REPEATER
+c_att_ranks_20	0
+c_att_names_20	"Lightning Blast (Repeater)"
+c_att_descs_20	"^720% Faster RoF, 8000% Longer Reload,
++220% DMG, +250% Velocity, Alt-Fire Only"
+
+c_att_skill_21	MB_ATT_HEALING
+c_att_ranks_21	0,0,10
+c_att_names_21	"Healing"
+
+c_att_skill_22	MB_ATT_POWER
+c_att_ranks_22	0,0
+c_att_names_22	"Rage Pool (100/125)"
 	// point buy between lightning 3 and sd3
 	//Rally
 	// give bd2, better duelling stats
@@ -268,4 +269,5 @@ A Rakatan soldier hailing from the Infinite Empire era with front and backline o
 - Assemble (2)
 - Strength (2)
 - Fury (2)
+
 - 300% Longer Skill CD"
