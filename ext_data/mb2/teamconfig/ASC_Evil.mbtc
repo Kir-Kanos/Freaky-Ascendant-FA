@@ -35,7 +35,6 @@ SubclassesForClass1
 	Subclass17	"v3_Bossk"
 	Subclass18	"v3_IG88"
 	Subclass19	"ase3_RakatanInfantry"
-	Subclass20	"ase2_engineer"
 }
 
 SubclassesForClass2
@@ -57,30 +56,28 @@ SubclassesForClass2
 	Subclass15	"v5_Cad"
 	Subclass16	"v5_Boba"
 	Subclass17	"v5_Watto"
-	Subclass18	"ase5_AstroR2"
 }
 
 SubclassesForClass3
 {
-	Subclass1	"ase6_Gideon"
-	Subclass2	"ase6_federation"
-	Subclass3	"v6_Tusk"
-	Subclass4	"v6_Aurra"
-	Subclass5	"v6_Zam"
-	Subclass6	"v6_Dengar"
-	Subclass7	"v6_MercSh"
-	Subclass8	"v7_ImpAgent"
-	Subclass9	"ase7_Garindan"
-	Subclass10	"v7_ImpSpec"
-	Subclass11	"v7_Noghri"
-	Subclass12	"v7_WatTam"
-	Subclass13	"v7_Tarkin"
-	Subclass14	"v7_Krennic"
-	Subclass15	"v7_Veers"
-	Subclass16	"v7_Zuck"
-	Subclass17	"v7_Enoch"
-	Subclass18	"v7_Thrawn"
-	Subclass19	"v7_Reelo"
+	Subclass1	"ase6_federation"
+	Subclass2	"v6_Tusk"
+	Subclass3	"v6_Aurra"
+	Subclass4	"v6_Zam"
+	Subclass5	"v6_Dengar"
+	Subclass6	"v6_MercSh"
+	Subclass7	"v7_ImpAgent"
+	Subclass8	"ase7_Garindan"
+	Subclass9	"v7_ImpSpec"
+	Subclass10	"v7_Noghri"
+	Subclass11	"v7_WatTam"
+	Subclass12	"v7_Tarkin"
+	Subclass13	"v7_Krennic"
+	Subclass14	"v7_Veers"
+	Subclass15	"v7_Zuck"
+	Subclass16	"v7_Enoch"
+	Subclass17	"v7_Thrawn"
+	Subclass18	"v7_Reelo"
 }
 
 SubclassesForClass4
@@ -91,8 +88,7 @@ SubclassesForClass4
 	Subclass4	"v8_Galak"
 	Subclass5	"v8_Snoova"
 	Subclass6	"v8_Wampa"
-	Subclass7	"ase8_BlackK"
-	Subclass8	"ase8_RakatanInfantry"
+	Subclass7	"ase8_RakatanInfantry"
 }
 
 SubclassesForClass5
@@ -126,7 +122,7 @@ SubclassesForClass6
 	Subclass8	"v10_Nihilus"
 	Subclass9	"ase10_TrayaTrio"
 	Subclass10	"v10_Traya"
-	Subclass11	"ase10_Abeloth"
+	Subclass11	"ase10_kallig"
 	Subclass12	"ase10_Nadd"
 	Subclass13	"ase10_yun"
 	Subclass14	"ase10_Sariss"
@@ -134,7 +130,6 @@ SubclassesForClass6
 	Subclass16	"ase10_x1"
 	subclass17	"ase10_pic"
 	Subclass18	"ase10_gorc"
-	Subclass19	"ase10_kallig"
 }
 
 
