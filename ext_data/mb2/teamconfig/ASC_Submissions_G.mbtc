@@ -39,6 +39,7 @@ SubclassesForClass1
 SubclassesForClass2
 {
 	Subclass1    "asg3_Arc"
+	Subclass2	 "asg3_ReconClone"
 	Subclass2    "asg3_AlphaArc"
 	Subclass3    "asg3_CloneSpec"
 	Subclass4    "asg3_CloneCom"
@@ -47,22 +48,23 @@ SubclassesForClass2
 	Subclass7    "h3_Delta"
 	Subclass8    "asg3_Hunter"
 	Subclass9    "asg3_Echo"
-	Subclass10   "h3_BossNass"
+	Subclass10	 "asg3_AlphaArc"
 	Subclass11   "asg3_Cara"
 	Subclass12   "asg3_Baze"
 	Subclass13   "h3_Cander"
 	Subclass14   "asg3_Baodur"
 	Subclass15   "asg3_Itsatrap"
 	Subclass16   "asg3_Saw"
-	Subclass17   "asg4_Ewok"
-	Subclass18   "asg4_SenGuard"
-	Subclass19   "h4_Chir"
+	Subclass17   "h3_BossNass"
+	Subclass18   "asg4_Ewok"
+	Subclass19   "asg4_SenGuard"
+	Subclass19   "asg4_SkirataMedic"
 	Subclass20   "h4_Kyle"
 	Subclass21   "h4_Atton"
 	Subclass22   "h4_Finn"
 	Subclass23   "h4_MrB"
 	Subclass24   "asg4_KirKanos"
-	Subclass25   "asg4_SkirataMedic"
+	Subclass25   "h4_Chir"
 }
 
 SubclassesForClass3
