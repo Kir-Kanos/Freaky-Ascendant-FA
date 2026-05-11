@@ -1,0 +1,136 @@
+//Legends Mode character file - Created by MARSHALL (And Stromboli King for edits and additions)
+
+ClassInfo
+{
+	name				"asg3_ReconClone"
+	weapons				WP_MELEE|WP_DC_CARBINE|WP_PROJ|WP_TRIP_MINE|WP_DET_PACK|WP_FRAG_NADE
+	attributes			MB_ATT_DC_CARBINE,2|MB_ATT_AMMO,3|MB_ATT_BLAST_ARMOUR,1|MB_ATT_STAMINA,1|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_PROJECTILE_RIFLE,1|MB_ATT_DET_PACK,2|MB_ATT_FRAGS,1|MB_ATT_QUICKTHROW,1|MB_ATT_TRACKING_BEACON|MB_ATT_RESPAWNS,1|MB_ATT_TRIP_MINES,2
+	maxhealth			80
+	maxarmor			80
+	resource			resource_stamina
+	speed               1.09
+	MBClass				MB_CLASS_ARCTROOPER
+	classNumberLimit	2
+	modelscale      	1.02
+	WP_FragNadeFlags HELD_TRACKING
+	WP_DetPackFlags	HELD_PULSE|HELD_FLAME|HELD_DISRUPTIFY|HELD_LOWDAMAGE|HELD_KNOCKBACK|HELD_KNOCKDOWN
+	WP_TripMineFlags HELD_SONIC|HELD_LOWDAMAGE|HELD_TRACKING
+	flourishAnim 		TORSO_HANDSIGNAL4
+	gloatAnim 			BOTH_STAND5TOAIM
+	
+	model				"clonetrooper_p2"
+	skin				"91"
+	uishader			"models/players/clonetrooper_p2/mb2_icon_91"
+	model_1				"clonetrooper_p2"
+	skin_1				"41g"
+	uishader_1			"models/players/clonetrooper_p2/mb2_icon_41g"
+	model_2				"clonekeller"
+	skin_2				"rgb"
+	uishader_2			"models/players/clonekeller/mb2_icon_rgb"
+	userRGB_2			1
+
+	special1			EAS_HI_SPRINT
+	special3			EAS_HI_QUICKTHROW
+	special4			EAS_HI_GRAPPLEHOOK
+	
+	uioverlay 			"gfx/icons/scout"
+}
+
+WeaponInfo0
+{
+WeaponToReplace		WP_PROJ					 
+WeaponBasedOff      WP_PROJ
+NewWorldModel "models/weapons2/dlt-18_repeater/dlt-18_repeater_w.glm"
+NewViewModel  "models/weapons2/dlt-18_repeater/dlt-18_repeater.md3"
+Icon  "gfx/hud/w_icon_dlt-18"
+FlashSound0  "sound/weapons/Glie-44/alt_fire.wav"		
+WeaponName			"Valken-38x Projectile Rifle"    				 
+MuzzleEffect		"Blaster/MuzzleFlash01B"
+MissileEffect		"Blaster/Shot10B"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace			WP_DET_PACK
+	WeaponBasedOff			WP_DET_PACK
+	NewWorldModel "models/weapons2/detpack/det_pack_w.glm"
+NewViewModel "models/weapons2/detpack/det_pack.md3"
+Icon "gfx/hud/w_icon_detpack"
+	WeaponName  				"Overcharged Ion Bomb"
+}
+
+WeaponInfo2
+{
+WeaponToReplace			WP_TRIP_MINE
+WeaponBasedOff			WP_TRIP_MINE
+NewWorldModel	"models/weapons2/thermal/thermal_w.glm"
+NewViewModel "models/weapons2/thermal/thermal.md3"
+NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
+	Icon						"gfx/hud/w_thermal_grenade"
+	MissileModel 				"models/weapons2/thermal/thermal_proj.md3"
+	AltMissileModel			"models/weapons2/thermal/thermal_proj.md3"
+	MissileEffect 			"stone/missile1"
+	AltMissileEffect 			"stone/missile1"
+	MissileMissEffect			"smokenadeleg/explode_vol"
+	MissileHitHumanEffect	"smokenadeleg/explode_vol"
+	MissileHitDroidEffect	"smokenadeleg/explode_vol"
+	AltMissileMissEffect		"smokenadeleg/explode_vol"
+	AltMissileHitHumanEffect	"smokenadeleg/explode_vol"
+	AltMissileHitDroidEffect	"smokenadeleg/explode_vol"
+	FlashSound0		"sound/weapons/smokenade/select.mp3"
+	AltFlashSound0 	"sound/weapons/smokenade/select.mp3"
+	WeaponName			"Disruptor Mine"
+}
+
+WeaponInfo3
+{
+	WeaponToReplace	WP_FRAG_NADE
+	WeaponBasedOff	WP_FRAG_NADE
+	NewWorldModel	"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel	"models/weapons/Grenade_Concussion/viewmodel.md3"
+	Icon	"gfx/hud/w_icon_stungrenade"
+	MissileModel	"models/weapons/Grenade_Concussion/proj.md3"
+	MissileMissEffect			"force/destruction"
+	MissileHitHumanEffect	"mustafar/volcano1"
+	MissileHitDroidEffect	"mustafar/volcano1"
+	Weaponname			"Spotting Flare"
+	altfireenabled 0
+	damageMod 0.01
+	splashRadius 500
+}
+
+
+
+description	"Recon Clone
+
+Class: ARC Trooper
+Brief Overview:
+A backline sniper with a projectile rifle, dexterity, auxillary gadgets and a backup carbine.
+
+^2Weaponry:
+- Melee
+- DC-15c Carbine (2)
+- Valken-38x Projectile Rifle
+-- Based on Proj
+- Disruptor Mines (2 Tripmines)
+-- 50% Less Damage
+-- Applies Sonic/Smoke/Tracks
+- Overcharged Ion Bomb (2 Detpacks)
+-- Applies Burn/Pulse/Knockdown 
+-- 50% Less Damage
+-- Extra Knockback
+- Spotting Flare (Frag Grenade 1)
+-- Applies Tracking/Blind
+-- Low Damage/Large Radius
+
+^8Attributes:
+- Stamina (1)
+- Tracking Beacon
+- Reinforcements (1)
+- Blast Armor
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Grappling Hook (2) ^3[CS4 in ^3Melee]"
+- Quickthrow (1) ^3[CS3]
+
