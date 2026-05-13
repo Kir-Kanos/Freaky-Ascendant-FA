@@ -1,0 +1,160 @@
+ClassInfo
+{
+	name			"asg5_Skirata"
+	MBClass			MB_CLASS_MANDALORIAN
+	classNumberLimit	1
+
+	weapons			WP_MELEE|WP_CR2|WP_SABER|WP_PROJ|WP_ROCKET_LAUNCHER
+
+	attributes		MB_ATT_ROCKET_LAUNCHER|MB_ATT_JETPACK|MB_ATT_AMMO,3|MB_ATT_CR2,2|MB_ATT_DEXTERITY,3|MB_ATT_HEALING,2|MB_ATT_BLAST_ARMOUR|MB_ATT_BESKAR,3|MB_ATT_TRACKING_DART,3|MB_ATT_TRACKING_BEACON
+	WP_ProjFlags	HELD_DISRUPTIFY	
+	WP_CR2Flags	HELD_ALTRELOAD
+ 	WP_RocketLauncherFlags HELD_POISON|HELD_ALTRELOAD
+
+	maxhealth	125
+	maxarmor		115
+	
+	basespeed 193
+
+	customred		0.8
+	customgreen	0.751
+	customblue		0.6
+
+	forcepool 			125
+	resourceRegenCap 	40
+    resourceRegenAmount 8
+    resourceRegenRate 5000
+	resource			RESOURCE_FUEL
+	knockbackgiven 1.1
+
+
+	special2 EAS_HI_DEX
+	special3 EAS_HI_TRACKER
+	special4 EAS_HI_KICK
+	
+	saber1 				arc_shiv_legends
+	saberstyle	SS_TAVION
+	APmultiplier 1.25
+	BPmultiplier		0
+	saberdamage 100
+	saberStanceAnim	BOTH_STAND9
+
+	special1HUD HUD_TRACKINGDART
+	
+	flourishAnim BOTH_SHOWOFF_FAST
+	
+	uioverlay "gfx/icons/aerial"
+	model			"jangofett"
+	skin				"orange"
+	uishader 		"models/players/jangofett/mb2_icon_orange"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_CR2
+	WeaponBasedOff		WP_CR2	
+    NewWorldModel		"models/weapons2/mandoAR/mandoAR.glm"  
+    NewViewModel		"models/weapons2/mandoAR/mandoAR.md3"
+    Icon				"gfx/hud/w_icon_mandoAr"
+    WeaponName			"Concordian Repeater" 
+	MissileEffect		"Blaster/Shot02Y"  
+	MuzzleEffect		"Blaster/MuzzleFlash01Y"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01Y"
+	customammo 	800
+	FPMult		1.1
+	velocityMod 	1.1
+	clipsize 16
+	ratemod	1.10
+	reloadtimemodifier 1.1
+}
+WeaponInfo1
+{           
+	WeaponToReplace        WP_SABER
+	WeaponBasedOff         WP_SABER
+	NewWorldModel		"models/weapons2/arc_shiv_short/shiv_short_w.glm"  	
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  	
+	Icon             	"gfx/hud/w_icon_arc_shiv_short"
+	WeaponName		"Knuckle Plate Vibroblade"
+}
+WeaponInfo2
+{
+	WeaponToReplace 	WP_PROJ
+	WeaponBasedOff	WP_PROJ
+	NewWorldModel	"models/weapons2/me3-widow/disruptor_w.glm"
+	NewViewModel	"models/weapons2/me3-widow/disruptor.md3"
+	Icon		"Gfx\MPLevels\ultimate_showdown\widow_na.png"
+	WeaponName 	"Kingpin Projectile Rifle"
+	MuzzleEffect	"Blaster/MuzzleFlash01Y"
+	AltMuzzleEffect	"Blaster/MuzzleFlash01Y"
+	FlashSound0	"sound/weapons/halo_beamrifle/fire.mp3"
+	FlashSound1	"sound/weapons/halo_beamrifle/fire1.mp3"
+	FlashSound2	"sound/weapons/halo_beamrifle/fire2.mp3"
+	FlashSound3	"sound/weapons/halo_beamrifle/fire3.mp3"
+	CustomAmmo 	10
+	clipsize		2
+	FPMult 	1.15
+	ReloadTimeModifier 1.3
+	damageMod	0.7
+}
+WeaponInfo3
+{
+	WeaponToReplace		WP_ROCKET_LAUNCHER
+	WeaponBasedOff		WP_ROCKET_LAUNCHER
+	MissileMissEffect "slime_explosion_new"
+	MissileEffect 	"rockets/missile"
+	NewWorldModel		"models/weapons2/dummyblaster/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon			"gfx/hud/w_icon_wristrocket"
+	WeaponName		"Poison-Tipped Wrist Rockets"
+	clipSize 1
+	CustomAmmo 4
+	hasAnimOverrides 1
+	animReady BOTH_FORCE_2HANDEDLIGHTNING_START
+	animReadyWalk BOTH_FORCE_2HANDEDLIGHTNING_START
+	animReadyRun BOTH_FORCE_2HANDEDLIGHTNING_START
+	animReadyNoAmmo BOTH_FORCE_2HANDEDLIGHTNING
+	animStand BOTH_FORCE_2HANDEDLIGHTNING_START
+	animAttack BOTH_MAND_FLAME_READY
+	animAttackWalk BOTH_MAND_FLAME_READY
+	animAttackRun BOTH_MAND_FLAME_READY
+	ReloadTimeModifier  1.4
+	velocityMod 1.1
+	splashdamage 15
+	splashradius 150
+	altFireEnabled 0
+}
+description	"Kal Skirata - Marshall
+
+A dexterous Mandalorian with an array of bounty hunting tools.
+
+^2Weaponry:
+- Melee
+- Knuckle Plate Vibroblade (Cyan Saber)
+-- No Saber/Blaster Block
+-- 75% more Kb
+-- 57% less Reach
+-- 33% more Radius
+- Concordian Repeater (CR2 2)
+-- 10% more Velocity, 10% more FP Dmg, 10% slower RoF
+- Kingpin Projectile Rifle (Proj)
+-- 2 shot capacity
+-- +15% FP Dmg, -30% HP Dmg, 130% slower reload
+- Poison-Tipped Wrist Rockets
+-- Based on Rocket Launcher
+-- Prim fire only
+-- Poisons on hit
+-- Low Splash Damage
+
+^8Attributes:
+- 10% more Kb Given
+- Dexterity (3)
+- Blast Armor
+- Beskar (3)
+- Healing (2)
+- Fuel Regen
+
+^3Abilities:
+- Jetpack
+- Dex Roll ^3[CS2]
+- Tracking Darts (6) ^3[CS3 Melee]
+- Gun Kick ^3[CS4]"
