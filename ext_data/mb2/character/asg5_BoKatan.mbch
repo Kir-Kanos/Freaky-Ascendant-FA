@@ -1,34 +1,36 @@
 ClassInfo
 {
 	name				"asg5_BoKatan"
-	MBClass			MB_CLASS_BOUNTY_HUNTER
+	MBClass			MB_CLASS_MANDALORIAN
 	classNumberLimit	1
 	
-	weapons				WP_MELEE|WP_MANDO_PISTOL|WP_FRAG_NADE|WP_SABER
+	weapons				WP_MELEE|WP_MANDO_PISTOL|WP_SABER
 	
-	attributes			MB_ATT_BESKAR,3|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_JETPACK|MB_ATT_AMMO,3|MB_ATT_MANDO_PISTOL,3|MB_ATT_FUEL,2|MB_ATT_WRISTLASER,1|MB_ATT_ROCKET,1|MB_ATT_POISON_DART,3|MB_ATT_FUELREGEN,1|MB_ATT_BUNNY_HOP,1|MB_ATT_FRAGS,1|MB_ATT_FORCEBLOCK,1|MB_ATT_HEALING,1
+	attributes			MB_ATT_BESKAR,3|MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_JETPACK|MB_ATT_AMMO,3|MB_ATT_MANDO_PISTOL,1|MB_ATT_FUEL,2|MB_ATT_FUELREGEN,1|MB_ATT_BUNNY_HOP,1|MB_ATT_FORCEBLOCK,1|MB_ATT_HEALING,1
 	
-	maxhealth		85
+	maxhealth		125
 	maxarmor			100
-	damageTaken		0.65
 	rateoffire	1
 	speed       	1
-	
 	special1		EAS_HI_ROCKET
 	special2 	EAS_HI_WRIST
-	special3		EAS_HI_POISON
-	special4 	EAS_MELEE
 
+	special4 	EAS_HI_WHISTLING_BIRDS
+	WP_BlasterFlags HELD_ALTRELOAD|HELD_PULSE
+	WP_BowcasterFlags HELD_ALTRELOAD|HELD_IGNOREBLOCK|HELD_STUN //ignoreblock not working, more ammo instead
 	resource			resource_fuel
-	forcepool 		35
-	
+	forcepool 		20
+	rankForcePool	35,60,85
+
 	saber1			legends_darksaber
-	saberstyle  		SS_MEDIUM|SS_DESANN|SS_STRONG
-	forcepowers		FP_SABER_OFFENSE,1
-	APmultiplier		1.20
-	BPmultiplier 		1.1
+	saber2			energyshield_leg_paz
+	saberstyle  		SS_STRONG
+	BPmultiplier		0.8
+	APmultiplier		0.8
+	rankAP		1.05,1.1,1.15
 	saberDamage 		240
-	
+	saberMaxChain 1
+	rankSaberMaxChain 2,3,4	
 	modelscale   1.01
 	model		"BoKatan"
 	skin			"default"
@@ -37,6 +39,72 @@ ClassInfo
 	uioverlay_l 	"gfx/icons/hybrid"
 	
 	//respawncustomtime  50000	
+	isCustomBuild		1
+	mbPoints			35
+	
+	hasCustomSpec 2
+	isOnlyOneSpec 1
+	customSpecName_1 "The Nite Owl"
+	customSpecIcon_1 "gfx/menus/alpha/icon_weap_stun"
+	customSpecDesc_1 "Gadget Gun Build"
+	
+	customSpecName_2 "The Mandalore"
+	customSpecIcon_2 "gfx/2d/hud/hlp_desert_arm"
+	customSpecDesc_2 "Darksaber Build"
+
+c_att_skill_0	MB_ATT_MANDO_PISTOL
+c_att_names_0	"Mando Pistols"
+c_att_ranks_0	3,3,3
+c_att_skill_1	MB_ATT_DEXTERITY
+c_att_names_1	"Dexterity"
+c_att_ranks_1	3,3,3
+c_att_skill_2	MB_ATT_BLASTER
+c_att_names_2	"Pulse Bolts"
+c_att_ranks_2	3
+c_att_descs_2 	"Based on E11 1. Shocks on hit, prim only."
+c_att_skill_3	MB_ATT_BOWCASTER
+c_att_names_3	"Throwing Knives"
+c_att_ranks_3	4
+c_att_descs_3 	"Based on Bowcaster 1. Staggers on hit, prim only."
+c_att_skill_4	MB_ATT_ROCKET
+c_att_names_4	"Jetpack Rocket ^3[CS1]"
+c_att_ranks_4	2
+c_att_skill_5 	MB_ATT_WRISTLASER
+c_att_names_5 	"Wrist Laser ^3[CS2]"
+c_att_ranks_5 	2
+c_att_skill_6 	MB_ATT_POWER
+c_att_names_6 	"Fuel Pool (35/60/85):"
+c_att_ranks_6 	2,2,2
+c_att_skill_7 	MB_ATT_WOOKIE_STRENGTH
+c_att_names_7 	"Beskar Gauntlets (Strength):"
+c_att_ranks_7 	2
+//saber
+c_att_skill_15	MB_ATT_FP_SABER_DEFENSE
+c_att_names_15	"Saber Defense"
+c_att_ranks_15	2,5,10
+c_att_skill_16	MB_ATT_GUN_DEFENSE
+c_att_names_16	"Blaster Defense"
+c_att_ranks_16	10
+c_att_skill_17	MB_ATT_AP_MULTIPLIER
+c_att_names_17	"Saber AP (1.1/1.15/1.2)"
+c_att_ranks_17	2,2,5
+c_att_descs_17	"Default 0.8"
+c_att_skill_18	MB_ATT_SABER_MAXCHAIN
+c_att_names_18	"Saber Chain Limit (2/3/4)"
+c_att_ranks_18	2,2,2
+c_att_descs_18	"Default 1"
+c_att_skill_19	MB_ATT_POWER
+c_att_names_19	"Fuel Pool (35/60/85):"
+c_att_ranks_19	5,5,5
+c_att_skill_20	MB_ATT_KNOCKDOWN_ROLL
+c_att_names_20	"Knockdown Roll"
+c_att_ranks_20	10
+c_att_skill_21	MB_ATT_WHISTLINGBIRD
+c_att_names_21	"Whistling Birds ^3[CS4]"
+c_att_ranks_21	2
+c_att_skill_22	MB_ATT_POWER
+c_att_names_22	"Fuel Pool (35/60/85):"
+c_att_ranks_22	2,5,5
 }
 
 WeaponInfo0
@@ -65,31 +133,81 @@ WeaponInfo1
 	AltMissileEffect	"Blaster/Shot04Y"
 	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
 	ChargeEffect		"gfx/effects/yellow_bryarFrontFlash" 
-	fpmult	1.1
-	rateMod 1.1
+	fpmult	1.15
+	rateMod 1.6
+	damageMod 1.15
 }
-
-description	"Bo-Katan Kryze [Bounty Hunter] ^3Reworked
+WeaponInfo2
+{
+WeaponToReplace WP_BLASTER
+WeaponBasedOff WP_BLASTER
+NewWorldModel "models/weapons2/dummyblaster/model.glm"
+NewViewModel "models/weapons2/dummy/dummy.md3"
+Icon "gfx/marvel/maghand"
+WeaponName "Pulse Bolts"
+clipSize 2
+customAmmo 8
+hasAnimOverrides 1
+animReady BOTH_FORCE_2HANDEDLIGHTNING_START
+animReadyWalk BOTH_FORCE_2HANDEDLIGHTNING_START
+animReadyNoAmmo BOTH_FORCE_2HANDEDLIGHTNING
+animStand BOTH_FORCE_2HANDEDLIGHTNING_START
+animReadyRun BOTH_FORCE_2HANDEDLIGHTNING_START
+animAttack BOTH_WRISTSHOT
+animAttackWalk BOTH_WRISTSHOT
+animAttackRun BOTH_WRISTSHOT
+FlashSound0 "sound/weapons/mgun/alt_fire.wav"
+MuzzleEffect "Blaster/MuzzleFlash01B
+MissileEffect "blaster/Shot03B"
+altfireenabled 0
+}
+WeaponInfo3
+{
+WeaponToReplace WP_BOWCASTER
+WeaponBasedOff WP_BOWCASTER
+NewWorldModel "models/weapons2/Kunai/saber_w.glm"
+NewViewModel "models/weapons2/dummy/dummy.md3"
+MissileEffect "bow/whoosh"
+MissileMissEffect "needler/wall_impact"
+MissileHitHumanEffect "needler/shot"
+FlashSound0 "sound/weapons/knife/knifeswing2.wav"
+MuzzleEffect "null"
+Icon "gfx/hud/w_icon_kunai"
+WeaponName "Throwing Knives"
+hasAnimOverrides 1
+animReady BOTH_SABER_OBIWAN_STANCE
+animReadyWalk BOTH_SABER_OBIWAN_STANCE
+animReadyNoAmmo BOTH_TUSKENTAUNT1
+animAttack BOTH_THERMAL_THROW2
+animAttackWalk BOTH_THERMAL_THROW2
+animStand BOTH_THERMAL_READY2
+animReadyRun BOTH_SABER_OBIWAN_STANCE
+animAttackRun BOTH_THERMAL_THROW2
+clipSize 2
+customAmmo 8
+reloadTimeModifier 2
+primGore 1
+altfireenabled 0
+}
+description	"Bo-Katan Kryze [Bounty Hunter] ^3Reworked - Marshall
  
-A speedy Jetpack user who wields a Saber and Dual Pistols. Surprisingly tanky.
+A speedy Jetpack user who wields a Saber and Dual Pistols.
 
 ^2Weaponry:
 - Melee
-- The Darksaber (Yellow/Red/Purple)
--- Saber Defense (1)
+- The Darksaber (Yellow)
+-- Saber Defense (0)
 -- No Blaster Block
 -- Blocking resists Force Powers
--- 53/40% less Red/Purple DMG
 -- Slap ^3[CS4]
-- Dual WESTAR-35 Blaster Pistols (3)
--- 10% more FP DMG
--- 10% slower RoF
-- Frag Grenade (1)
+- Dual WESTAR-35 Blaster Pistols (1)
+-- 15% more FP DMG, 15% more HP DMG
+-- 50% slower RoF
 
 ^8Attributes:
 - Bunny Hop (1)
 - Fuel Regen (1)
-- Beskar (2)
+- Beskar (3)
 - Healing (1)
 - Force Block (1)
 
@@ -97,4 +215,4 @@ A speedy Jetpack user who wields a Saber and Dual Pistols. Surprisingly tanky.
 - Jetpack
 - Rocket ^3[CS1]
 - Wrist Laser ^3[CS2]
-- Poison Darts (3) ^3[CS3 Melee]"
+- Whistling Birds ^3[CS4]"
