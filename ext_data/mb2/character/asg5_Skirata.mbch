@@ -14,7 +14,7 @@ ClassInfo
 	maxhealth	125
 	maxarmor		115
 	
-	basespeed 193
+	basespeed 215
 
 	customred		0.8
 	customgreen	0.751
@@ -63,7 +63,7 @@ WeaponInfo0
 	customammo 	800
 	FPMult		1.1
 	velocityMod 	1.1
-	clipsize 16
+	clipsize 20
 	ratemod	1.10
 	reloadtimemodifier 1.1
 }
@@ -92,8 +92,8 @@ WeaponInfo2
 	FlashSound3	"sound/weapons/halo_beamrifle/fire3.mp3"
 	CustomAmmo 	10
 	clipsize		2
-	FPMult 	1.15
-	ReloadTimeModifier 1.3
+	FPMult 	1.3
+	ReloadTimeModifier 1.1
 	damageMod	0.7
 }
 WeaponInfo3
@@ -119,8 +119,8 @@ WeaponInfo3
 	animAttackRun BOTH_MAND_FLAME_READY
 	ReloadTimeModifier  1.4
 	velocityMod 1.1
-	splashdamage 15
-	splashradius 150
+	splashdamage 25
+	splashradius 225
 	altFireEnabled 0
 }
 description	"Kal Skirata - Marshall
@@ -138,7 +138,7 @@ A dexterous Mandalorian with an array of bounty hunting tools.
 -- 10% more Velocity, 10% more FP Dmg, 10% slower RoF
 - Kingpin Projectile Rifle (Proj)
 -- 2 shot capacity
--- +15% FP Dmg, -30% HP Dmg, 130% slower reload
+-- +30% FP Dmg, -30% HP Dmg, 110% slower reload
 - Poison-Tipped Wrist Rockets
 -- Based on Rocket Launcher
 -- Prim fire only
