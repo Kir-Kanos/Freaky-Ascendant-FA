@@ -90,7 +90,7 @@ WeaponInfo3
 	NewViewModel	"models/weapons/Grenade_Concussion/viewmodel.md3"
 	Icon	"gfx/hud/w_icon_stungrenade"
 	MissileModel	"models/weapons/Grenade_Concussion/proj.md3"
-	MissileMissEffect			"force/destruction"
+	MissileMissEffect			"mustafar/volcano1"
 	MissileHitHumanEffect	"mustafar/volcano1"
 	MissileHitDroidEffect	"mustafar/volcano1"
 	Weaponname			"Spotting Flare"
