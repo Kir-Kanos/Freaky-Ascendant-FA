@@ -43,7 +43,7 @@ ClassInfo
 	c_att_descs_1    "-25% Damage & FP Damage, +10% Fire Rate, +20% Velocity"
 
 	c_att_skill_2    MB_ATT_MINIGUN
-	c_att_names_2    "Phase II Assault Cannon"
+	c_att_names_2    "Phase II Siege Cannon"
 	c_att_ranks_2    4,0,0
 	c_att_descs_2    "-150% Fire Rate & Reload Speed, +150% FP Damage, +90% Damage"
 
@@ -52,13 +52,14 @@ ClassInfo
 	c_att_ranks_3    4
 
 	c_att_skill_4    MB_ATT_MAGNETIC_PLATING
-	c_att_names_4    "Deflector Shield"
+	c_att_names_4    "Deflector Plating"
 	c_att_ranks_4    8
 	c_att_descs_4    "Mag Plating"
 
 	c_att_skill_5    MB_ATT_CORTOSIS
 	c_att_names_5    "Cortosis Infused Phrik"
 	c_att_ranks_5    8
+	c_att_descs_5	 "Cortosis"
 
 	c_att_skill_6    MB_ATT_RESPAWNS
 	c_att_names_6    "Reinforcement"
@@ -133,7 +134,7 @@ WeaponInfo1
 	MuzzleEffect		"Blaster/MuzzleFlash01G"
 	AltMuzzleEffect		"Blaster/MuzzleFlash01G"
 	MissileEffect		"Blaster/Shot04G"
-	MissileMissEffect	"Blaster/Impact_Wall01G.efx"
+	MissileMissEffect	"Grenades/EXP_BaseThermal.efx"
 	Missile3Effect		"Blaster/Shot03G"
 	AltMissileEffect	"Blaster/Shot03G"
 	PowerupShotEffect	"Blaster/Shot04G"
@@ -142,15 +143,14 @@ WeaponInfo1
 	selectSound "sound/weapons/phase2_cannon/ready.wav"
 	isMinigun 0
 	Icon	 "gfx/hud/w_icon_rotary_cannon"
-	WeaponName	"Dark Trooper Assault Cannon"
-	FPMult	2.50
-	rateMod 2.50
-	damageMod 1.9 //1.1 dmg given
-	velocityMod	0.92
-	ReloadTimeModifier 2.5
-	altFireEnabled	1
-	clipSize	100
-	customAmmo 		700
+	WeaponName	"Phase II Siege Cannon"
+	FPMult	4
+	rateMod 8.88
+	damageMod 4
+	velocityMod	.76
+	ReloadTimeModifier 2
+	clipsize	10
+	customAmmo	350
 }
 
 WeaponInfo2
