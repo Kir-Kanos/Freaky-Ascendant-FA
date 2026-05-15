@@ -53,13 +53,14 @@ ClassInfo
 	c_att_ranks_3    2
 
 	c_att_skill_4    MB_ATT_MAGNETIC_PLATING
-	c_att_names_4    "Deflector Shield"
+	c_att_names_4    "Deflector Plating"
 	c_att_ranks_4    6
 	c_att_descs_4    "Mag Plating"
 
 	c_att_skill_5    MB_ATT_CORTOSIS
 	c_att_names_5    "Cortosis Infused Phrik"
 	c_att_ranks_5    7
+	c_att_descs_5	 "Cortosis"
 
 	c_att_skill_6    MB_ATT_RESPAWNS
 	c_att_names_6    "Reinforcement"
