@@ -475,7 +475,7 @@ rakatan_forceblade_staff
 	alwaysblock 	0
 	disarmable 		1
 	
-	saberModel	"models\weapons2\rakst\rakatanstaff.glm"
+	saberModel	"models/weapons2/rakst/rakatanstaff.glm"
 	soundOn	"s/w/d/draw1.mp3"
 	soundLoop	"sound/effects/null.wav"
 	soundOff	"s/w/t/saberoff.wav"
