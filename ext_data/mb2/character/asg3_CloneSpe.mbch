@@ -9,8 +9,9 @@ WP_StunBatonFlags HELD_FLAME
 attributes MB_ATT_AMMO,3|MB_ATT_CLONE_PISTOL,2|MB_ATT_STAMINA,3|MB_ATT_DEXTERITY,1|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_ASSEMBLE,1|MB_ATT_ENV_PROT,1|MB_ATT_BACTA,1
 Forcepool 110
 knockbacktaken .88
-maxhealth 100
+maxhealth 110
 maxarmor 80
+RankArmor 110
 RankDmgGiven 1.2
 basespeed 189
 special3 EAS_HI_MEDPAC
@@ -71,6 +72,9 @@ c_att_ranks_6	4,4
 c_att_skill_7	MB_ATT_DMG_GIVEN_MULTIPLIER
 c_att_names_7	"Dmg Given (120%)"
 c_att_ranks_7	3
+c_att_skill_8	MB_ATT_ARMOUR
+c_att_names_8	"Armor (110)"
+c_att_ranks_8	3
 c_att_skill_15 MB_ATT_CLONE_PISTOL
 c_att_names_15 "DC-17 Clone Pistol(s)"
 c_att_ranks_15 0,0,6
