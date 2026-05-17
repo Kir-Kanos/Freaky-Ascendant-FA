@@ -23,7 +23,7 @@ ClassInfo
 	forcepool 		20
 	rankForcePool	35,60,85
 
-	saber1	darksaber_ascendancy
+	saber1	legends_darksaber
 	saberstyle SS_DUAL
 	saber2	energyshield_leg
 
