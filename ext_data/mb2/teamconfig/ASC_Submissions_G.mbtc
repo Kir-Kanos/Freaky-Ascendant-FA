@@ -44,7 +44,7 @@ SubclassesForClass2
 	Subclass1    "asg3_Arc"
 	Subclass2	 "asg3_ReconClone"
 	Subclass2    "asg3_AlphaArc"
-	Subclass3    "asg3_CloneSpec"
+	Subclass3    "asg3_CloneSpe"
 	Subclass4    "asg3_CloneCom"
 	Subclass5    "asg3_CloneLead"
 	Subclass6    "h3_Rex"
