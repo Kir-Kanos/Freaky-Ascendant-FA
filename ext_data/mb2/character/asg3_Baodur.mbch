@@ -22,7 +22,7 @@ ClassInfo
 	MBClass			MB_CLASS_MANDALORIAN
 	classNumberLimit 	1
 	WP_SaberFlags		HELD_KNOCKBACK|HELD_STUN|HELD_PULSE
-	WP_BowcasterFlags	HELD_ALTRELOAD|HELD_LOWDMG|HELD_SLOW|HELD_PULSE
+	WP_BowcasterFlags	HELD_ALTRELOAD|HELD_LOWDAMAGE|HELD_SLOW|HELD_PULSE
 	hackrate			0.6
 	damagetaken			1.05
 	damagegiven			0.95
