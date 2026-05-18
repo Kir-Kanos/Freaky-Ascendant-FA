@@ -117,7 +117,7 @@ c_att_names_15	"Improved Hydraulics (Jump)"
 c_att_ranks_15	0,5,0
 c_att_skill_16	MB_ATT_BP_MULTIPLIER
 c_att_names_16	"Saber BP (.8/1/1.4)"
-c_att_ranks_16	2,2,5
+c_att_ranks_16	2,3,5
 c_att_skill_17	MB_ATT_AS_MULTIPLIER
 c_att_names_17	"Saber AS (1.1)"
 c_att_ranks_17	6
@@ -132,7 +132,7 @@ c_att_names_20	"Red Saber Style"
 c_att_ranks_20	0
 c_att_skill_21 MB_ATT_SABER_COMBO
 c_att_names_21 "EX Saber Training"
-c_att_ranks_21 2,6
+c_att_ranks_21 2,2
 c_att_skill_22	MB_ATT_FP_SEE
 c_att_names_22	"Thermal Vision"
 c_att_ranks_22	5,0,0
@@ -148,7 +148,7 @@ c_att_names_25	"Skill CD (.9/.75)"
 c_att_ranks_26	1,1
 c_att_skill_26	MB_ATT_SPY_DISGUISE
 c_att_names_26 "Disguise"
-c_att_ranks_26 0,1,2
+c_att_ranks_26 0,1,1
 
 //assassin
 c_att_skill_30 MB_ATT_PROJECTILE_RIFLE
