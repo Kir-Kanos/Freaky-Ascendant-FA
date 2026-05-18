@@ -50,32 +50,32 @@ HELD_KNOCKDOWN|HELD_KNOCKBACK|HELD_FLAME|HELD_EXPLOSIVE|HELD_DISRUPTIFY|HELD_SLO
 	mbPoints		40
 
 	c_att_skill_0 	MB_ATT_MANDO_PISTOL
-	c_att_names_0 	"Repeating Blaster Pistols (Mando Pistol)"
+	c_att_names_0 	"Repeating Blaster Pistols"
 	c_att_ranks_0 	2,2,8
-	c_att_descs_0	"35% Faster RoF, 30% Lower Damage, Large Clip Size"
+	c_att_descs_0	"Based on Mando Pistol, +35% RoF, -30% Damage"
 
 	c_att_skill_1	MB_ATT_DC_CARBINE	
-	c_att_names_1	"Modified Wanton Blaster (Clone Carbine)" 	
+	c_att_names_1	"Modified Wanton Blaster" 	
 	c_att_ranks_1	4,0,2
-	c_att_descs_1	"Alt Fire Disabled, Mag Reload, 60% Faster Rof, 40% Lower Damage"
+	c_att_descs_1	"Based on Clone Carbine, Prim only, Mag Reload, +60% RoF, -40% Damage"
 
 	c_att_skill_2	MB_ATT_EE4	
-	c_att_names_2	"Droid Butchers Rifle (EE-4)"	
+	c_att_names_2	"Droid Butchers Rifle"	
 	c_att_ranks_2	6,2,4	
-	c_att_descs_2	"50% Faster RoF, 60% Less Damage, 25% Less Velocity, Mag Reload"
+	c_att_descs_2	"Based on EE-4, +50% Faster RoF, -60% Damage, -25% Velocity, Mag Reload"
 
 	c_att_skill_3	MB_ATT_FIRE_GRENADES	
 	c_att_names_3	"Fire Grenade"	
 	c_att_ranks_3	8	
 
-	c_att_skill_4	MB_ATT_DET_PACK	
-	c_att_names_4	"Thermal Charge (Detpack)"	
-	c_att_ranks_4	4,4	
+	c_att_skill_4	MB_ATT_DET_PACK
+	c_att_names_4	"Thermal Charge (Detpack)"
+	c_att_ranks_4	4,4
 	c_att_descs_4	"Det Pack, Ignites, Knocks Back, Extra Damage and Radius"
 
-	c_att_skill_5	MB_ATT_BASE_TD	
-	c_att_names_5	"Plasma Grenade (Thermal Grenade)"	
-	c_att_ranks_5	2,1,1	
+	c_att_skill_5	MB_ATT_BASE_TD
+	c_att_names_5	"Plasma Grenade"
+	c_att_ranks_5	2,1,1
 	c_att_descs_5	"Base Thermal Grenade, +150% Damage"
 
 	c_att_skill_6	MB_ATT_PLX1
