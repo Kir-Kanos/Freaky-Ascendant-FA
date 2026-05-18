@@ -68,10 +68,10 @@ Classinfo
 	skin_4		"vandar"
 	uishader_4	"models/players/t_yoda/mb2_icon_vandar"
 	
-	saber1			saber_yodarework_legends
+	saber1			saber_yoda_legends
 	sabercolor		3
 	
-	saber1_1			saber_vandarrework_legends
+	saber1_1			saber_vandar_legends
 	sabercolor_1		4
 
 }
