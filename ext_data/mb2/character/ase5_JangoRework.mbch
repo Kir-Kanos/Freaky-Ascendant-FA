@@ -1,6 +1,6 @@
 ClassInfo
 {
-	name			"v5_Jango"
+	name			"ase5_JangoRework"
 	MBClass			MB_CLASS_MANDALORIAN
 	classNumberLimit	1
 	weapons		WP_MANDO_PISTOL|WP_SABER|WP_THROWER
