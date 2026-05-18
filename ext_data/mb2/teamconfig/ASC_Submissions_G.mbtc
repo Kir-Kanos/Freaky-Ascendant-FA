@@ -34,6 +34,10 @@ SubclassesForClass1
 	Subclass16	"asg2_Carth"
 	Subclass17	"asg2_NicoOkarr"
   	Subclass18	"asg2_RebelSabo"
+	Subclass19	"asg1_RebGuerrillaHeavyGunner"
+	Subclass20	"asg1_RebGuerrillaSpotter"
+	Subclass21	"asg1_RebGuerrillaMechanic"
+	Subclass22	"asg2_RebGuerrillaSalvagedDroid"
 }
 
 SubclassesForClass2
