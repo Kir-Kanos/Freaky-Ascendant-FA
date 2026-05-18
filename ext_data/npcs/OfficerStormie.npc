@@ -4,6 +4,7 @@
 	weapon		WP_BLASTER
 	MB_ATT_BLASTER 2
 	health		50
+	altFire 1
 	armor 15
 	headPitchRangeDown 30
 	reactions	3
@@ -15,7 +16,6 @@
 	rank		crewman
 	playerTeam	TEAM_PLAYER
 	enemyTeam	TEAM_ENEMY
-//	race		klingon
 	class		CLASS_STORMTROOPER
 	height		64
 	crouchheight 38
@@ -28,8 +28,8 @@
 	walkSpeed	55
 	runSpeed	200
 	dismemberProbHead	0
-	dismemberProbArms	10
+	dismemberProbArms	0
 	dismemberProbLegs	0
-	dismemberProbHands	20
+	dismemberProbHands	0
 	dismemberProbWaist	0
 }
