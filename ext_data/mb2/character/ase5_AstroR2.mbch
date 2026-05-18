@@ -51,10 +51,13 @@ ClassInfo
 	modelscale	.91
 	model		"r2-d2" 				
 	skin			"default"					
-	uishader		"gfx/hud/FA_icons/mb2_icon_r2d2"
-	model_1			"r2-d2"
-skin_1			"arclabse2"
-uishader_1		"icons/FA/cmppack/icon_e2m6"
+	uishader		"models/players/r2-d2/mb2_icon_default"
+	model_1	"chopper"
+	skin_1		"default"
+	uishader_1	"models/players/chopper/mb2_icon_default"
+	model_2		"r2-d2"
+	skin_2 		"bespin_r5"
+	uishader_2 	"gfx/um_icons/r5_unit"
 	
 	//respawncustomtime 40000
 }
