@@ -39,9 +39,9 @@ ClassInfo
 	uioverlay_l "gfx/icons/heavy"
 	uioverlay_r "gfx/icons/infantry"
 	modelscale  1.02
-	model "clonetrooper_p1"
-	skin  "arc"
-	uishader "models/players/clonetrooper_p1/mb2_icon_arc"
+	model "clonepac"
+	skin  "rgb"
+	uishader "models/players/clonepac/mb2_icon_rgb"
 	userRGB 		1
 	customred	0.709
 	customgreen	0.12
