@@ -19,8 +19,6 @@ ClassInfo
   
   basespeed 190
   rankbasespeed 210
-
-  damageTaken 	0.95
   
   WP_BLASTERFlags HELD_ALTRELOAD
   
@@ -80,7 +78,7 @@ ClassInfo
   c_att_names_15 "DLT-19D Heavy Blaster Rifle"
   c_att_ranks_15 5,0,0
   c_att_skill_16 MB_ATT_SONIC_DETONATOR
-  c_att_names_16 "Sonic Deontators"
+  c_att_names_16 "Sonic Detonators"
   c_att_ranks_16 0,0
   c_att_skill_17 MB_ATT_RESPAWNS
   c_att_names_17 "Reinforcement (1)"
