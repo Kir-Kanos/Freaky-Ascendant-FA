@@ -60,11 +60,9 @@ ClassInfo
 	uishader_2	"models/players/aayla/mb2_icon_default"
 }
 
-description	"Defensive Jedi Kindred [Jedi]
+description	"Defensive Jedi Kindred [Jedi] - Air
 
-Air
-
-		A single jedi from a typical pair. 
+A single jedi from a typical pair. 
 Defensive support that can protect others from physical harm whilst being vulnerable to the force.
 
 ^2Weaponry:
