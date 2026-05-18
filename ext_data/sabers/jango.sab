@@ -1,10 +1,10 @@
-jangoblade
+jangobladeyes
 {
 	name "Beskar Armblade"
 	saberType	SABER_DUAL
 
 	numBlades	1
-	saberLength	13
+	saberLength	15
 	throwable		0
 
 	saberColor	random
@@ -13,7 +13,7 @@ jangoblade
 	disarmable 		0
 	BoltToWrist 1
 	
-	saberModel "models/weapons2/jangoblade/jangoblade.glm"
+	saberModel	"models\weapons2\jangoblade\jangoblade.glm"
 	soundOn	"s/w/d/draw1.mp3"
 	soundLoop	"sound/effects/null.wav"
 	soundOff	"s/w/t/saberoff.wav"
@@ -34,6 +34,8 @@ jangoblade
 
  
 	animspeedscale	1
+	jumpAtkFwdMove LS_A_BACKFLIP_ATK
+	lungeAtkMove LS_KICK_F
 
 	spinsound	"s/w/t/swing3.wav"
 	swingSound1	"s/w/v/swish1.mp3"
