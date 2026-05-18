@@ -110,7 +110,6 @@ WeaponInfo2
 	NewViewModel		"models/weapons2/dc-15_ext/dc-15_ext.md3"
 	Icon				"gfx/hud/w_icon_clonerifle"
 	WeaponName		"DC-15a UGL"
-	damageMod 0.25
 }
 description	"Alpha-Class ARC Trooper
 
@@ -125,7 +124,6 @@ A highly mobile elite trooper. Best of the best.
 --25% Faster RoF
 --10% More Damage
 - DC-15a UGL
--- 75% less damage
 -- Pulse Nades (3)
 
 
