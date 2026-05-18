@@ -135,8 +135,6 @@ WeaponInfo2
 
 	missileHitHumanEffect		"Grenades/EXP_Explosion"
 	missileHitDroidEffect		"Grenades/EXP_Explosion"
- MissileEffect "repeater/projectile"
-	
 	Icon						"gfx/hud/w_icon_fraggrenade"
 	WeaponName					"Micro-Frag Grenade"
 splashRadius 250
