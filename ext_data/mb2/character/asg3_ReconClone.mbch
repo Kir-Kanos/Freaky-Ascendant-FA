@@ -38,15 +38,15 @@ ClassInfo
 
 WeaponInfo0
 {
-WeaponToReplace		WP_PROJ					 
-WeaponBasedOff      WP_PROJ
-NewWorldModel "models/weapons2/dlt-18_repeater/dlt-18_repeater_w.glm"
-NewViewModel  "models/weapons2/dlt-18_repeater/dlt-18_repeater.md3"
-Icon  "gfx/hud/w_icon_dlt-18"
-FlashSound0  "sound/weapons/Glie-44/alt_fire.wav"		
-WeaponName			"Valken-38x Projectile Rifle"    				 
-MuzzleEffect		"Blaster/MuzzleFlash01B"
-MissileEffect		"Blaster/Shot10B"
+	WeaponToReplace		WP_PROJ					 
+	WeaponBasedOff      WP_PROJ
+	NewWorldModel "models/weapons2/dlt-18_repeater/dlt-18_repeater_w.glm"
+	NewViewModel  "models/weapons2/dlt-18_repeater/dlt-18_repeater.md3"
+	Icon  "gfx/hud/w_icon_dlt-18"
+	FlashSound0  "sound/weapons/Glie-44/alt_fire.wav"		
+	WeaponName			"Valken-38x Projectile Rifle"    				 
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	MissileEffect		"Blaster/Shot10B"
 }
 
 WeaponInfo1
@@ -54,18 +54,18 @@ WeaponInfo1
 	WeaponToReplace			WP_DET_PACK
 	WeaponBasedOff			WP_DET_PACK
 	NewWorldModel "models/weapons2/detpack/det_pack_w.glm"
-NewViewModel "models/weapons2/detpack/det_pack.md3"
-Icon "gfx/hud/w_icon_detpack"
+	NewViewModel "models/weapons2/detpack/det_pack.md3"
+	Icon "gfx/hud/w_icon_detpack"
 	WeaponName  				"Overcharged Ion Bomb"
 }
 
 WeaponInfo2
 {
-WeaponToReplace			WP_TRIP_MINE
-WeaponBasedOff			WP_TRIP_MINE
-NewWorldModel	"models/weapons2/thermal/thermal_w.glm"
-NewViewModel "models/weapons2/thermal/thermal.md3"
-NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
+	WeaponToReplace			WP_TRIP_MINE
+	WeaponBasedOff			WP_TRIP_MINE
+	NewWorldModel	"models/weapons2/thermal/thermal_w.glm"
+	NewViewModel "models/weapons2/thermal/thermal.md3"
+	NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
 	Icon						"gfx/hud/w_thermal_grenade"
 	MissileModel 				"models/weapons2/thermal/thermal_proj.md3"
 	AltMissileModel			"models/weapons2/thermal/thermal_proj.md3"
