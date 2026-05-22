@@ -38,7 +38,7 @@ ClassInfo
 	meleeMoves M_UPPERCUT|M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_PUNCH|M_RLKICK
 
 	uioverlay "gfx/icons/tactician"
- modelscale  1.09
+ 	modelscale  1.09
 	model		"hk47"
 	skin			"hk50"
 	uishader		"models/players/hk47/mb2_icon_hk50"
@@ -88,16 +88,12 @@ ClassInfo
 	c_att_names_8	"Tracking Darts"
 	c_att_ranks_8	2,2,2
 	c_att_descs_8	"CS1 Melee Out"
-	
-	
-
 }
 WeaponInfo0
 {
 	WeaponToReplace		WP_EE4
 	WeaponBasedOff		WP_EE4		
-
-		NewWorldModel		"models/weapons2/kotor_brifle2/kotor_brifle2_w.glm"
+	NewWorldModel		"models/weapons2/kotor_brifle2/kotor_brifle2_w.glm"
 	NewViewModel		"models/weapons2/kotor_brifle2/kotor_brifle2.md3"
 	Icon				"gfx/hud/w_icon_kotor_brifle2"
 	WeaponName			"Droid Butcher's Rifle"
@@ -171,7 +167,6 @@ WeaponInfo2
 	animAttack BOTH_ATTACK3 
 	animAttackWalk BOTH_ATTACK3 
 	animStand BOTH_WOOKIEE_RAGE_STAND
-	//animStand BOTH_SPEAR_STANCE
 	MuzzleEffect		"Blaster/MuzzleFlash01R"
 	MissileEffect		"Blaster/Shot01R"
 	altfireenabled		0
@@ -180,10 +175,10 @@ WeaponInfo3
 {
 	WeaponToReplace			WP_THERMAL
 	WeaponBasedOff			WP_THERMAL
-	NewWorldModel				"models/weapons2/thermal/thermal_w.glm"
-	NewViewModel				"models/weapons2/thermal/thermal_hand.md3"
-	Icon						"gfx/hud/w_thermal_grenade"
-	WeaponName  				"Plasma Grenades"
+	NewWorldModel			"models/weapons2/thermal/thermal_w.glm"
+	NewViewModel			"models/weapons2/thermal/thermal_hand.md3"
+	Icon					"gfx/hud/w_thermal_grenade"
+	WeaponName  			"Plasma Grenades"
 	damagemod 2.5
 }
 WeaponInfo4
@@ -191,12 +186,8 @@ WeaponInfo4
 	WeaponToReplace	WP_DET_PACK
 	WeaponBasedOff	WP_DET_PACK
 	NewWorldModel "models/weapons2/detpack/det_pack_w.glm"
-NewViewModel "models/weapons2/detpack/det_pack.md3"
-Icon "gfx/hud/w_icon_detpack"
-MissileEffect    "firegrenade/prim_explode_enhanced2"
-AltMissileEffect    "firegrenade/prim_explode_enhanced2"
-MissileMissEffect    "firegrenade/prim_explode_enhanced2"
-altMissileMissEffect    "firegrenade/prim_explode_enhanced2"
+	NewViewModel "models/weapons2/detpack/det_pack.md3"
+	Icon "gfx/hud/w_icon_detpack"
 	WeaponName	"Thermal Charge"
 	splashRadius 400
 }
