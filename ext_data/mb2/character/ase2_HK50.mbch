@@ -1,7 +1,7 @@
 ClassInfo
 {
 	name				"ase2_HK50"
- classNumberLimit   	3
+	classNumberLimit   	3
 	MBClass   MB_CLASS_WOOKIE
 
  weapons   WP_MELEE|WP_THERMAL
@@ -11,22 +11,19 @@ ClassInfo
  classflags      	CFL_SEEING_STEALTH|CFL_BLOODYMELEE|CFL_ACIDBLOOD
  WP_DCCarbineFlags	HELD_ALTRELOAD|HELD_SLOW
  WP_EE4Flags	HELD_ALTRELOAD
- WP_PLX1Flags
-HELD_KNOCKDOWN|HELD_KNOCKBACK|HELD_FLAME|HELD_EXPLOSIVE|HELD_DISRUPTIFY|HELD_SLOW|HELD_STUN
+ WP_PLX1Flags HELD_KNOCKDOWN|HELD_KNOCKBACK|HELD_FLAME|HELD_EXPLOSIVE|HELD_DISRUPTIFY|HELD_SLOW|HELD_STUN
  WP_DetPackFlags HELD_FLAME|HELD_KNOCKBACK|HELD_EXPLOSIVE|HELD_KNOCKDOWN
  
 
 	knockbacktaken .90
+	maxhealth   70
+	maxarmor  80
 
- holdables 
- maxhealth   70
- maxarmor  80
-
- basespeed 189
+	basespeed 189
  
-	Resource			RESOURCE_BATTERY
+	resource			RESOURCE_BATTERY
 	forceregen			1.2
- forcepool	50
+	forcepool	50
 	hackRate 0.95
 	
 	special1HUD HUD_POISONDART
@@ -98,7 +95,7 @@ HELD_KNOCKDOWN|HELD_KNOCKBACK|HELD_FLAME|HELD_EXPLOSIVE|HELD_DISRUPTIFY|HELD_SLO
 WeaponInfo0
 {
 	WeaponToReplace		WP_EE4
-	WeaponBasedOff		WP_DISRUPTOR		
+	WeaponBasedOff		WP_EE4		
 
 		NewWorldModel		"models/weapons2/kotor_brifle2/kotor_brifle2_w.glm"
 	NewViewModel		"models/weapons2/kotor_brifle2/kotor_brifle2.md3"
