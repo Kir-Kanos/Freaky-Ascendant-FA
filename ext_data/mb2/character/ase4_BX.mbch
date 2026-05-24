@@ -102,8 +102,8 @@ c_att_skill_1	MB_ATT_BP_MULTIPLIER
 c_att_names_1	"Saber BP (.8/1)"
 c_att_ranks_1	3,5
 c_att_skill_2	MB_ATT_AS_MULTIPLIER
-c_att_names_2	"Saber AS (1.05/1.1)"
-c_att_ranks_2	2,3
+c_att_names_2	"Saber AS (1.1)"
+c_att_ranks_2	6
 c_att_skill_3	MB_ATT_POWER
 c_att_names_3	"Resource (100/125)"
 c_att_ranks_3	4,4
