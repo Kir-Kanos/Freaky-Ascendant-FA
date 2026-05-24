@@ -24,9 +24,9 @@ ClassInfo
 	saberMaxChain 3
 	rankSaberMaxChain 4,5,6
 	CSmultiplier	1
-	rankCS 1.05,1.1,1.15
+	rankCS 1.1
 	ASmultiplier	0.95
-	rankAS	1.05,1.1,1.15
+	rankAS	1.1
 	BPmultiplier	0.5
 	rankBP 	0.8,1,1.4
 	skilltimermod 1
@@ -79,7 +79,6 @@ WP_EE4Flags HELD_ALTRELOAD
 	special2	EAS_HI_DEX
 	special3	EAS_HI_DASH
 	special4	EAS_HI_QUICKTHROW
-	meleespecial4 EAS_HI_TRACKER
 	
 	hasCustomSpec 3
 	isOnlyOneSpec 1
@@ -118,35 +117,38 @@ c_att_names_15	"Improved Hydraulics (Jump)"
 c_att_ranks_15	0,5,0
 c_att_skill_16	MB_ATT_BP_MULTIPLIER
 c_att_names_16	"Saber BP (.8/1/1.4)"
-c_att_ranks_16	2,2,5
+c_att_ranks_16	2,3,5
 c_att_skill_17	MB_ATT_AS_MULTIPLIER
-c_att_names_17	"Saber AS (1.05/1.1/1.15)"
-c_att_ranks_17	2,2,3
+c_att_names_17	"Saber AS (1.1)"
+c_att_ranks_17	6
 c_att_skill_18	MB_ATT_CS_MULTIPLIER
-c_att_names_18	"Saber CS (1.05/1.1/1.15)"
-c_att_ranks_18	2,1,3
+c_att_names_18	"Saber CS (1.1)"
+c_att_ranks_18	6
 c_att_skill_19	MB_ATT_SABER_MAXCHAIN
 c_att_names_19	"Saber Chain Limit (4/5/6)"
 c_att_ranks_19	1,1,1
 c_att_skill_20	MB_ATT_SS_REDSTYLE
 c_att_names_20	"Red Saber Style"
 c_att_ranks_20	0
-c_att_skill_21	MB_ATT_FP_SEE
-c_att_names_21	"Thermal Vision"
-c_att_ranks_21	5,0,0
-c_att_skill_22	MB_ATT_FRAGS
-c_att_names_22	"Smokes Grenades"
-c_att_ranks_22	0
-c_att_descs_22 "Quickthrow only ^3[CS4]"
-c_att_skill_23	MB_ATT_EE4
-c_att_names_23	"E-5 Blaster (EE-4)"
-c_att_ranks_23	3
-c_att_skill_24	MB_ATT_STM_MULTIPLIER
-c_att_names_24	"Skill CD (.9/.75)"
-c_att_ranks_24	1,1
-c_att_skill_25	MB_ATT_SPY_DISGUISE
-c_att_names_25 "Disguise"
-c_att_ranks_25 0,1,2
+c_att_skill_21 MB_ATT_SABER_COMBO
+c_att_names_21 "EX Saber Training"
+c_att_ranks_21 2,2
+c_att_skill_22	MB_ATT_FP_SEE
+c_att_names_22	"Thermal Vision"
+c_att_ranks_22	5,0,0
+c_att_skill_23	MB_ATT_FRAGS
+c_att_names_23	"Smokes Grenades"
+c_att_ranks_23	0
+c_att_descs_24 "Quickthrow only ^3[CS4]"
+c_att_skill_24	MB_ATT_EE4
+c_att_names_24	"E-5 Blaster (EE-4)"
+c_att_ranks_25	3
+c_att_skill_25	MB_ATT_STM_MULTIPLIER
+c_att_names_25	"Skill CD (.9/.75)"
+c_att_ranks_26	1,1
+c_att_skill_26	MB_ATT_SPY_DISGUISE
+c_att_names_26 "Disguise"
+c_att_ranks_26 0,1,1
 
 //assassin
 c_att_skill_30 MB_ATT_PROJECTILE_RIFLE
@@ -161,9 +163,6 @@ c_att_ranks_32	2,3
 c_att_skill_33	MB_ATT_STM_MULTIPLIER
 c_att_names_33	"Skill CD (.9/.75)"
 c_att_ranks_33	3,2
-c_att_skill_34	MB_ATT_TRACKING_DART
-c_att_names_34 "Tracking Darts ^3[CS1]"
-c_att_ranks_34 0,1,1
 }
 
 WeaponInfo0
@@ -220,13 +219,6 @@ WeaponInfo3
 	altMissileMissEffect	"smokenadeleg/explode_vol"
 	FlashSound0	"Sound/css_wep/smokegrenade_explode.wav"
 	altFlashSound0	"Sound/css_wep/smokegrenade_explode.wav"
-	hasAnimOverrides 1
-	animReady BOTH_STAND5TOSTAND8
-	animReadyWalk BOTH_STAND5TOSTAND8
-	animReadyNoAmmo BOTH_STAND5TOSTAND8
-	animAttack NADE_SECONDARY
-	animAttackWalk NADE_SECONDARY
-	animStand BOTH_STAND1
 	primFireEnabled	0
 	altFireEnabled	0
 	damageMod 0.001
@@ -262,12 +254,10 @@ Exceptionally agile and durable commando units that excel at infiltration and as
 - Dexterity (3)
 - Beskar (3)
 - Tracking Beacon
-- 
 
 ^3Abilities:
 -Flipkick (1) ^3[Contact Jump]
 -Dodge (3) ^3[CS1]
 -Dexterity Roll ^3[CS2]
 -Dash (2) ^3[CS3]
--Quickthrow (3) ^3[CS4] ^5Infiltrator
--Tracking Darts ^3[CS4 Melee] ^5Assassin"
+-Quickthrow (3) ^3[CS4] ^5Infiltrator"
