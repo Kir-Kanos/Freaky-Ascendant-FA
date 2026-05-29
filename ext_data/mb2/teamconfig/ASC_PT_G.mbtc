@@ -1,0 +1,81 @@
+name "ASC_PT_G"
+
+ClassesAllowed 6
+TimePeriod 5
+EUAllowed 0
+
+Classes
+{
+	class1	"asg2_Panaka"
+	class2	"asg3_Clone"
+	class3	"asg5_CloneJet"
+	class4	"asg7_Scavenge"
+	class5	"asg9_JYoung"
+	class6	"asg10_JForce"
+}
+
+SubclassesForClass1
+{
+	Subclass1	"asg2_Padme"
+	Subclass2	"h2_JarJar"
+}
+
+SubclassesForClass2
+{
+	Subclass1    "asg3_ReconClone"
+	Subclass2    "asg3_Arc"
+	Subclass3    "asg3_AlphaArc"
+	Subclass4    "asg3_CloneSpe"
+	Subclass5    "asg3_CloneCom"
+	Subclass6    "asg3_CloneLead"
+	Subclass7    "h3_Rex"
+	Subclass8    "h3_Delta"
+	Subclass9    "asg3_Hunter"
+	Subclass10   "asg3_Echo"
+	Subclass11   "asg3_Saw"
+	Subclass12   "h3_BossNass"
+	Subclass13   "asg4_SenGuard"
+	Subclass14   "asg4_SkirataMedic"
+}
+
+SubclassesForClass3
+{
+	Subclass1 "asg5_NiteOwl"
+	Subclass2	"h5_AstroR2"
+	Subclass3	"asg5_Skirata"
+	Subclass4	"asg5_BoKatan"
+}
+
+SubclassesForClass4
+{
+	Subclass1	"asg7_CloneAss"
+	Subclass2	"asg7_Senator"
+	Subclass3	"asg7_TSeries"
+	Subclass4	"h8_Wreck"
+	Subclass5	"h8_Tarfful"
+	Subclass6	"h8_WookWarr"
+}
+
+SubclassesForClass5
+{
+	Subclass1	"asg9_JKnight"
+	Subclass2 "asg9_JediTG"
+	Subclass3	"asg9_Anakin"
+	Subclass4	"asg9_Windu"
+	Subclass5	"asg9_JSageRework"
+	Subclass6	"asg9_Yarael"
+	Subclass7	"asg9_JSword"
+	Subclass8	"asg9_JAcrobat"
+	Subclass9	"asg9_JBrute"
+}
+
+SubclassesForClass6
+{
+	Subclass1	"asg10_Obi"
+	Subclass2	"asg10_PloK"
+	Subclass3	"asg10_JTradition"
+	Subclass4	"asg10_JHeal"
+	Subclass5	"asg10_JSavant"
+	Subclass6	"asg10_JKindredAbs"
+	Subclass7	"asg10_JKindredProt"
+}
