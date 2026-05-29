@@ -1,0 +1,64 @@
+name "ASC_PT_E"
+
+ClassesAllowed 6
+TimePeriod 5
+EUAllowed 0
+
+Classes
+{
+	class1	"ase1_B1"
+	class2	"ase4_BX"
+	class3	"ase5_JangoRework"
+	class4	"ase8_SBD"
+	class5	"ase9_Maul"
+	class6	"ase10_PalpPlagNovel"
+}
+
+SubclassesForClass1
+{
+	Subclass1	"ase1_Thug"
+	Subclass2	"ase2_KMonkeyL"
+	Subclass3	"v2_Hondo"
+}
+
+SubclassesForClass2
+{
+	Subclass1	"ase5_GadgetMando"
+	Subclass2	"ase5_AstroR2"
+	Subclass3	"ase5_Geonos"
+	Subclass4	"ase5_MaulMando"
+	Subclass5	"ase5_JangoRework"
+	Subclass6	"v5_Durge"
+	Subclass7	"ase5_CadRe"
+	Subclass8	"v5_Watto"
+	Subclass9	"ase4_MagnaG"
+}
+
+SubclassesForClass3
+{
+	Subclass1	"v6_Aurra"
+	Subclass2	"v6_Zam"
+	Subclass3	"v7_WatTam"
+}
+
+SubclassesForClass4
+{
+	Subclass1	"ase8_SBD"
+}
+
+SubclassesForClass5
+{
+	Subclass1	"ase9_Maul"
+	Subclass2	"ase9_SDuel"
+	Subclass3	"ase9_Ventres"
+	Subclass4	"ase9_Grievous"
+	Subclass5	"ase9_Savage"
+	Subclass6	"ase9_SJugger"
+	Subclass7	"ase9_SAssass"
+	Subclass8	"ase9_SWarr"
+}
+
+SubclassesForClass6
+{
+	Subclass1	"ase10_Plagueis"
+}
