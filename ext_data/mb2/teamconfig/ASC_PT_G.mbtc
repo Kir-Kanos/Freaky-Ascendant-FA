@@ -6,51 +6,51 @@ EUAllowed 0
 
 Classes
 {
-	class1	"asg2_Panaka"
-	class2	"asg3_Clone"
-	class3	"asg5_CloneJet"
-	class4	"asg7_Scavenge"
-	class5	"asg9_JYoung"
-	class6	"asg10_JForce"
+	class1	"ptg2_Panaka"
+	class2	"ptg3_Clone"
+	class3	"ptg5_CloneJet"
+	class4	"ptg7_Scavenge"
+	class5	"ptg9_JYoung"
+	class6	"ptg10_JForce"
 }
 
 SubclassesForClass1
 {
-	Subclass1	"asg2_Padme"
+	Subclass1	"ptg2_Padme"
 	Subclass2	"h2_JarJar"
 }
 
 SubclassesForClass2
 {
-	Subclass1    "asg3_ReconClone"
-	Subclass2    "asg3_Arc"
-	Subclass3    "asg3_AlphaArc"
-	Subclass4    "asg3_CloneSpe"
-	Subclass5    "asg3_CloneCom"
-	Subclass6    "asg3_CloneLead"
+	Subclass1    "ptg3_ReconClone"
+	Subclass2    "ptg3_Arc"
+	Subclass3    "ptg3_AlphaArc"
+	Subclass4    "ptg3_CloneSpe"
+	Subclass5    "ptg3_CloneCom"
+	Subclass6    "ptg3_CloneLead"
 	Subclass7    "h3_Rex"
 	Subclass8    "h3_Delta"
-	Subclass9    "asg3_Hunter"
-	Subclass10   "asg3_Echo"
-	Subclass11   "asg3_Saw"
+	Subclass9    "ptg3_Hunter"
+	Subclass10   "ptg3_Echo"
+	Subclass11   "ptg3_Saw"
 	Subclass12   "h3_BossNass"
-	Subclass13   "asg4_SenGuard"
-	Subclass14   "asg4_SkirataMedic"
+	Subclass13   "ptg4_SenGuard"
+	Subclass14   "ptg4_SkirataMedic"
 }
 
 SubclassesForClass3
 {
-	Subclass1 "asg5_NiteOwl"
+	Subclass1	"ptg5_NiteOwl"
 	Subclass2	"h5_AstroR2"
-	Subclass3	"asg5_Skirata"
-	Subclass4	"asg5_BoKatan"
+	Subclass3	"ptg5_Skirata"
+	Subclass4	"ptg5_BoKatan"
 }
 
 SubclassesForClass4
 {
-	Subclass1	"asg7_CloneAss"
-	Subclass2	"asg7_Senator"
-	Subclass3	"asg7_TSeries"
+	Subclass1	"ptg7_CloneAss"
+	Subclass2	"ptg7_Senator"
+	Subclass3	"ptg7_TSeries"
 	Subclass4	"h8_Wreck"
 	Subclass5	"h8_Tarfful"
 	Subclass6	"h8_WookWarr"
@@ -58,24 +58,24 @@ SubclassesForClass4
 
 SubclassesForClass5
 {
-	Subclass1	"asg9_JKnight"
-	Subclass2 "asg9_JediTG"
-	Subclass3	"asg9_Anakin"
-	Subclass4	"asg9_Windu"
-	Subclass5	"asg9_JSageRework"
-	Subclass6	"asg9_Yarael"
-	Subclass7	"asg9_JSword"
-	Subclass8	"asg9_JAcrobat"
-	Subclass9	"asg9_JBrute"
+	Subclass1	"ptg9_JKnight"
+	Subclass2	"ptg9_JediTG"
+	Subclass3	"ptg9_Anakin"
+	Subclass4	"ptg9_Windu"
+	Subclass5	"ptg9_JSageRework"
+	Subclass6	"ptg9_Yarael"
+	Subclass7	"ptg9_JSword"
+	Subclass8	"ptg9_JAcrobat"
+	Subclass9	"ptg9_JBrute"
 }
 
 SubclassesForClass6
 {
-	Subclass1	"asg10_Obi"
-	Subclass2	"asg10_PloK"
-	Subclass3	"asg10_JTradition"
-	Subclass4	"asg10_JHeal"
-	Subclass5	"asg10_JSavant"
-	Subclass6	"asg10_JKindredAbs"
-	Subclass7	"asg10_JKindredProt"
+	Subclass1	"ptg10_Obi"
+	Subclass2	"ptg10_PloK"
+	Subclass3	"ptg10_JTradition"
+	Subclass4	"ptg10_JHeal"
+	Subclass5	"ptg10_JSavant"
+	Subclass6	"ptg10_JKindredAbs"
+	Subclass7	"ptg10_JKindredProt"
 }
