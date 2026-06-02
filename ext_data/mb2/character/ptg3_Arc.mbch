@@ -1,7 +1,7 @@
 
 ClassInfo
 {
-	name	"asg3_Arc"
+	name	"ptg3_Arc"
 	MBClass	MB_CLASS_ARCTROOPER
 	classNumberLimit	3
 	weapons	WP_MELEE
