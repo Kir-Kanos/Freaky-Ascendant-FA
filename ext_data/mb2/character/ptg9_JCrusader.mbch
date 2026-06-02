@@ -2,7 +2,7 @@
 
 ClassInfo
 {
-	name				"asg9_JCrusader"
+	name				"ptg9_JCrusader"
 	MBClass	MB_CLASS_JEDI
 	classNumberLimit	1
 
@@ -80,14 +80,7 @@ ClassInfo
 	model_7		"kitfisto"
 	skin_7 		"tcw"
 	uishader_7 	"models/players/kitfisto/mb2_icon_tcw"
-	
-	model_8	"jedipack_hb"
-	skin_8		"default"
-	uishader_8	"models/players/jedipack_hb/mb2_icon_default"
-	
-	model_9	"jedi_revan"
-	skin_9		"default"
-	uishader_9	"models/players/jedi_revan/mb2_icon_default"
+
 }
 
 description	"Jedi Crusader 
