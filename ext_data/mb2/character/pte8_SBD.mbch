@@ -1,7 +1,7 @@
 
 ClassInfo
 {
-	name		"ase8_SBD"
+	name		"pte8_SBD"
 	weapons	WP_MELEE|WP_SBD
 
 	attributes	MB_ATT_AMMO,3|MB_ATT_ZOOM|MB_ATT_RECHARGE,2|MB_ATT_ANTI_MT,1|MB_ATT_RADAR
