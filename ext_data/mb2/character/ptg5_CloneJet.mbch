@@ -2,7 +2,7 @@
 
 ClassInfo
 {
-	name		"asg5_CloneJet"
+	name		"ptg5_CloneJet"
 	MBClass	MB_CLASS_CLONETROOPER
 	classNumberLimit	4
 	
