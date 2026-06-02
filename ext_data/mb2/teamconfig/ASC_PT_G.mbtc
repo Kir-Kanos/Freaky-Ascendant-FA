@@ -32,10 +32,9 @@ SubclassesForClass2
 	Subclass8    "h3_Delta"
 	Subclass9    "ptg3_Hunter"
 	Subclass10   "ptg3_Echo"
-	Subclass11   "ptg3_Saw"
+	Subclass11   "ptg4_SkirataMedic"
 	Subclass12   "h3_BossNass"
 	Subclass13   "ptg4_SenGuard"
-	Subclass14   "ptg4_SkirataMedic"
 }
 
 SubclassesForClass3
@@ -49,11 +48,9 @@ SubclassesForClass3
 SubclassesForClass4
 {
 	Subclass1	"ptg7_CloneAss"
-	Subclass2	"ptg7_Senator"
-	Subclass3	"ptg7_TSeries"
-	Subclass4	"h8_Wreck"
-	Subclass5	"h8_Tarfful"
-	Subclass6	"h8_WookWarr"
+	Subclass2	"h8_Wreck"
+	Subclass3	"h8_Tarfful"
+	Subclass4	"h8_WookWarr"
 }
 
 SubclassesForClass5
@@ -75,7 +72,6 @@ SubclassesForClass6
 	Subclass2	"ptg10_PloK"
 	Subclass3	"ptg10_JTradition"
 	Subclass4	"ptg10_JHeal"
-	Subclass5	"ptg10_JSavant"
-	Subclass6	"ptg10_JKindredAbs"
-	Subclass7	"ptg10_JKindredProt"
+	Subclass5	"ptg10_JKindredAbs"
+	Subclass6	"ptg10_JKindredProt"
 }
