@@ -1,6 +1,6 @@
 ClassInfo
 {
-name "asg3_CloneCom"
+name "ptg3_CloneCom"
 MBClass	MB_CLASS_CLONETROOPER
 classNumberLimit 4
 extralives 1
