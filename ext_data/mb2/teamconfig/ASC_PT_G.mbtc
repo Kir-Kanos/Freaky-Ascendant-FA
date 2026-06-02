@@ -1,0 +1,73 @@
+name "ASC_PT_G"
+
+ClassesAllowed 6
+TimePeriod 5
+EUAllowed 0
+
+Classes
+{
+	class1	"ptg2_Panaka"
+	class2	"ptg3_Clone"
+	class3	"ptg5_CloneJet"
+	class4	"h8_WookWarr"
+	class5	"ptg9_JYoung"
+	class6	"ptg10_JHeal"
+}
+
+SubclassesForClass1
+{
+	Subclass1	"ptg2_Padme"
+	Subclass2	"h2_JarJar"
+}
+
+SubclassesForClass2
+{
+	Subclass1    "ptg3_ReconClone"
+	Subclass2    "ptg3_Arc"
+	Subclass3    "ptg3_AlphaArc"
+	Subclass4    "ptg3_CloneSpe"
+	Subclass5    "ptg3_CloneCom"
+	Subclass6    "ptg3_CloneLead"
+	Subclass7    "h3_Rex"
+	Subclass8    "h3_Delta"
+	Subclass9    "ptg3_Hunter"
+	Subclass10   "ptg3_Echo"
+	Subclass11   "ptg4_SenGuard"
+	Subclass12   "h3_BossNass"
+}
+
+SubclassesForClass3
+{
+	Subclass1	"ptg5_NiteOwl"
+	Subclass2	"h5_AstroR2"
+	Subclass3	"ptg5_Skirata"
+	Subclass4	"ptg5_BoKatan"
+}
+
+SubclassesForClass4
+{
+	Subclass1	"ptg7_CloneAss"
+	Subclass2	"h8_Wreck"
+	Subclass3	"h8_Tarfful"
+}
+
+SubclassesForClass5
+{
+	Subclass1	"ptg9_JBrute"
+	Subclass2	"ptg9_JediTG"
+	Subclass3	"ptg9_Anakin"
+	Subclass4	"ptg9_Windu"
+	Subclass5	"ptg9_Yoda"
+	Subclass6	"ptg9_Yarael"
+	Subclass7	"ptg9_JSword"
+	Subclass8	"ptg9_Ahsoka"
+}
+
+SubclassesForClass6
+{
+	Subclass1	"ptg10_Obi"
+	Subclass2	"ptg10_PloK"
+	Subclass3	"ptg10_JTradition"
+	Subclass4	"ptg10_JKindredAbs"
+	Subclass5	"ptg10_JKindredProt"
+}

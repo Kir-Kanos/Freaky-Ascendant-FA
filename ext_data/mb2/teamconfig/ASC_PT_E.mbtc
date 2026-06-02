@@ -1,0 +1,57 @@
+name "Asc_PT_E"
+
+ClassesAllowed 6
+TimePeriod 5
+EUAllowed 0
+
+Classes
+{
+	class1	"pte1_B1"
+	class2	"pte4_BX"
+	class3	"pte5_JangoRework"
+	class4	"pte8_SBD"
+	class5	"pte9_Maul"
+	class6	"pte10_PalpPlagNovel"
+}
+
+SubclassesForClass1
+{
+	Subclass1	"v2_Hondo"
+}
+
+SubclassesForClass2
+{
+	Subclass1	"pte4_RoyalPr"
+	Subclass2	"pte4_MagnaG"
+	Subclass3	"pte5_Geonos"
+	Subclass4	"pte5_MaulMando"
+	Subclass5	"v5_Durge"
+	Subclass6	"pte5_CadRe"
+	Subclass7	"v5_Watto"
+}
+
+SubclassesForClass3
+{
+	Subclass1	"v6_Aurra"
+	Subclass2	"v6_Zam"
+	Subclass3	"v7_WatTam"
+}
+
+SubclassesForClass4
+{
+	Subclass1	"pte8_SBD"
+}
+
+SubclassesForClass5
+{
+	Subclass1	"pte9_Barriss"
+	Subclass2	"pte9_Dooku"
+	Subclass3	"pte9_Ventres"
+	Subclass4	"pte9_Grievous"
+	Subclass5	"pte9_Savage"
+}
+
+SubclassesForClass6
+{
+	Subclass1	"pte10_Plagueis"
+}

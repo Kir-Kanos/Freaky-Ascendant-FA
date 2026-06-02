@@ -1,0 +1,96 @@
+//CONVERTED BY MARSHALL
+
+ClassInfo
+{
+	name			"ptg9_JYoung"
+	MBClass					MB_CLASS_JEDI
+	classNumberLimit		3
+	extralives				2
+	weapons			WP_SABER|WP_MELEE
+
+	forcepowers		FP_SABER_OFFENSE,2|FP_LEVITATION,2|FP_PUSH,1|FP_PULL,1|FP_SEE,1
+
+	attributes		MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_FORCEBLOCK,2|MB_ATT_DEFLECT,1|MB_ATT_ASSEMBLE,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_BASESEEKER,1
+
+	maxhealth		50
+	forcepool		80
+
+	special2 EAS_HI_BASESEEKER
+
+
+	//flourishAnim BOTH_COWER1
+	classflags CFL_NOPICKUPS
+	speed  0.95
+ knockbackTaken 1.1
+ saberThrowDamage 35
+	saberstyle		SS_MEDIUM|SS_FAST
+ rateOfFire_Melee .8
+ saberSpecialDamage 1.2
+	BPmultiplier 			0.8
+
+	uioverlay_l "gfx/icons/frontline"
+	uioverlay_r "gfx/icons/infantry"
+	modelscale				0.62
+	model	"youngling"					
+ skin		"default"	
+	uishader	"models/players/youngling/mb2_icon_default"	
+	
+	model_1 "youngling"					
+ skin_1		"default_macekid"	
+	uishader_1	"models/players/youngling/mb2_icon_default_macekid"	
+	
+	model_2 "youngfem"					
+ skin_2		"default"	
+	uishader_2	"models/players/youngfem/mb2_icon_default"
+	
+	model_3 "youngfem"					
+ skin_3		"default_babyswan"	
+	uishader_3	"models/players/youngfem/mb2_icon_default_babyswan"
+	
+	model_4 "youngshak"					
+ skin_4		"default"
+	uishader_4	"models/players/youngshak/mb2_icon_default"	
+
+	model_5		"youngrosh"
+	skin_5 		"default"
+	uishader_5	"models/players/youngrosh/mb2_icon_default"
+	
+	saber1		saber_youngling_legends
+	sabercolor	4
+	
+	saber1_1			saber_youngling2_legends
+	sabercolor_1		3
+	
+	saber1_2 		saber_roshyoung
+	sabercolor_2		2
+}
+
+description	"Jedi Youngling 
+
+A tiny 3-life Jedi-in-training; they don't know what they're going to do.
+
+^2Weaponry:
+- Melee
+-- 20% faster RoF
+- Training Lightsaber (Yellow/Blue)
+-- Saber/Blaster Defense (1)
+-- Blaster Deflect (1)
+-- 120% Spec Dmg mult
+-- 25% less Reach
+-- Saber Throw ^3[CS1]
+--- 16% more Dmg
+
+^5Force Powers:
+- Jump (2) 
+- Push (1)
+- Pull (1)
+- Sense (1)
+
+^6Inventory:
+- Defense Seeker ^3[CS2]
+
+^8Attributes:
+- Reinforcements (2)
+- 10% more Kb Taken
+- Force Block (2)
+- Assemble (2)"

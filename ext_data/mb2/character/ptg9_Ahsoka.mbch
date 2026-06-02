@@ -1,0 +1,98 @@
+//CONVERTED BY MARSHALL
+
+ClassInfo
+{
+	name				"ptg9_Ahsoka"
+	MBClass			MB_CLASS_JEDI
+	classNumberLimit	1
+	
+	weapons				WP_SABER|WP_MELEE
+	attributes			MB_ATT_SABER_FAST,1|MB_ATT_DEFLECT,3|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,1|MB_ATT_BUNNY_HOP,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_DEXTERITY,3|MB_ATT_FLIPKICK,1
+
+	forcepowers			FP_SEE,1|FP_LEVITATION,3|FP_PUSH,2|FP_PULL,1|FP_SPEED,3|FP_SABER_OFFENSE,2
+
+	speed			1.08
+	rateOfFire_Melee	0.88
+	maxhealth 	125
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+	forcepool		110
+	forceregen 1.2
+ damageGiven 1.1
+	saberstyle		SS_DUAL|SS_FAST
+	saberDamageStyle SS_FAST,130
+ saberSpecialDamage 1.35
+ saberThrowDamage 45
+	BPmultiplier		0.90
+	ASmultiplier	    1.15
+	CSmultiplier	    1.10
+
+	classflags CFL_NOPICKUPS|CFL_SEEING_STEALTH|CFL_BPFREEJUMPS
+	
+	flourishanim BOTH_JUMPATTACK7
+	
+	//special1	EAS_FP_SABERTHROW
+	special2 EAS_HI_DEX
+	special3 EAS_FP_SPEED
+
+
+	uioverlay "gfx/icons/frontline"
+	
+	model		"ahsoka"
+	skin			"default"
+	uishader		"models/players/ahsoka/mb2_icon_default"
+	
+	model_1		"ahsoka"
+	skin_1			"padawan"
+	uishader_1		"models/players/ahsoka/mb2_icon_padawan"
+	
+	saber1			saber_ahsoka_legends
+	sabercolor		3
+	saber2			saber_ahsoka2_shoto
+	saber2color		0.265000
+
+	saber1_1			saber_ahsoka_2_legends
+	sabercolor_1		4
+	saber2_1			saber_ahsoka2_shoto
+	saber2color_1		4
+
+
+}
+
+description	"Ahsoka Tano 
+
+A speedster that excels at flanking, ambushing, and aerial combat.
+
+^2Weaponry:
+- Melee
+-- 12% faster RoF
+- Lightsaber (Dual/Blue)
+-- Saber Defense (3)
+--- BP-Free Jumps
+-- Blaster Defense (2)
+-- Blaster Deflect (3)
+-- 8% more Blue Dmg
+-- 135% Spec Dmg mult
+-- Saber Throw ^3[CS1]
+--- 50% more Dmg
+
+^5Force Powers:
+- Jump (3)
+- Push (2)
+- Pull (1)
+- Sense (1)
+- Speed (3) ^3[CS3]
+
+^8Attributes:
+- Bunny Hop (1)
+- Dexterity (3)
+- Heal capped at 35hp
+- Force Block (2)
+- Force Focus (1)
+- Aerial Force Regen
+- Sense Immunity
+
+^3Abilities:
+- Flipkick (1) ^3[Contact Jump]
+- Dex Roll ^3[CS2]"

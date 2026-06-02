@@ -1,0 +1,263 @@
+ClassInfo
+{
+	name				"pte4_BX"
+	MBClass				MB_CLASS_ARCTROOPER
+	weapons				WP_SABER|WP_MELEE
+	saber1				Vibro_bx_legends
+	saberstyle			SS_TAVION|SS_MEDIUM
+	attributes			MB_ATT_AMMO,3|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_FLIPKICK,1|MB_ATT_DASH,2|MB_ATT_DODGE,3|MB_ATT_DEXTERITY,3|MB_ATT_BESKAR,3|MB_ATT_TRACKING_BEACON|MB_ATT_QUICKTHROW,3
+	classflags			CFL_HEAVYMELEE|CFL_BPFREEJUMPS|CFL_DISMEMBERFRAGILE|CFL_SEEING_STEALTH
+	classNumberLimit 	3
+	knockbackTaken		0.8
+	modelscale 	        1.035
+	basespeed	255
+	maxhealth	100
+	maxarmor	100
+	
+	resource		RESOURCE_FORCE
+	forcepool	75
+	rankForcePool 100,125
+	forcepowers	FP_LEVITATION,1
+	forceregen	2.5
+	
+	saberDamage 120
+	saberMaxChain 3
+	rankSaberMaxChain 4,5,6
+	CSmultiplier	1
+	rankCS 1.1
+	ASmultiplier	0.95
+	rankAS	1.1
+	BPmultiplier	0.5
+	rankBP 	0.8,1,1.4
+	skilltimermod 1
+	rankSTM   .9,0.75
+	
+  	uioverlay_r "gfx/icons/infantry"
+	uioverlay_l "gfx/icons/spec_infantry"
+	uioverlay_c "gfx/icons/hybrid"
+	gloatAnim BOTH_FJSS_TL_BR
+	special1HUD HUD_FRAGNADE
+	special2HUD HUD_FIRENADE
+
+WP_ProjFlags HELD_ALTRELOAD|HELD_DISRUPTIFY
+WP_EE4Flags HELD_ALTRELOAD
+
+	model			"bxdroid"
+	skin			"default"
+	uishader		"models/players/bxdroid/mb2_icon_default"
+	model_1			"bxdroid"
+	skin_1			"capt"
+	uishader_1		"models/players/bxdroid/mb2_icon_capt"
+	model_2			"bxdroid"			
+	skin_2			"melee"
+	uishader_2		"models/players/bxdroid/mb2_icon_melee"
+	model_3			"bxdroid"			
+	skin_3			"citadel"
+	uishader_3		"models/players/bxdroid/mb2_icon_citadel"
+	model_4			"bxdroid"
+	skin_4			"rifle"
+	uishader_4		"models/players/bxdroid/mb2_icon_rifle"
+	model_5			"bxdroid"
+	skin_5			"hybrid"
+	uishader_5		"models/players/bxdroid/mb2_icon_hybrid"
+	model_6			"bxdroid"
+	skin_6			"bs"
+	uishader_6		"models/players/bxdroid/mb2_icon_bs"
+	model_7			"bxdroid"
+	skin_7			"bscapt"
+	uishader_7		"models/players/bxdroid/mb2_icon_bscapt"
+	model_8			"bxdroid"
+	skin_8			"Dip"
+	uishader_8		"models/players/bxdroid/mb2_icon_dip"
+	model_9			"bxdroid"
+	skin_9			"proto"
+	uishader_9		"models/players/bxdroid/mb2_icon_proto"
+	isCustomBuild		1
+	mbPoints			35
+
+	special1	EAS_HI_DODGE
+	special2	EAS_HI_DEX
+	special3	EAS_HI_DASH
+	special4	EAS_HI_QUICKTHROW
+	
+	hasCustomSpec 3
+	isOnlyOneSpec 1
+	customSpecName_1 "Commando"
+	customSpecIcon_1 "gfx/menus/alpha/icon_weap_stun"
+	customSpecDesc_1 "Generalist Hybrid"
+	
+	customSpecName_2 "Infiltrator"
+	customSpecIcon_2 "gfx/2d/hud/hlp_desert_arm"
+	customSpecDesc_2 "Acrobatic Ambusher"
+	
+	customSpecName_3 "Assassin"
+	customSpecIcon_3 "gfx/menus/alpha/icon_weap_accuracy"
+	customSpecDesc_3 "Sniper Assassin"
+
+//commando
+c_att_skill_0	MB_ATT_EE4
+c_att_names_0	"E-5 Blaster Rifle (EE-4)"
+c_att_ranks_0	2,5,8
+c_att_skill_1	MB_ATT_BP_MULTIPLIER
+c_att_names_1	"Saber BP (.8/1)"
+c_att_ranks_1	3,5
+c_att_skill_2	MB_ATT_AS_MULTIPLIER
+c_att_names_2	"Saber AS (1.1)"
+c_att_ranks_2	6
+c_att_skill_3	MB_ATT_POWER
+c_att_names_3	"Resource (100/125)"
+c_att_ranks_3	4,4
+c_att_skill_4	MB_ATT_STM_MULTIPLIER
+c_att_names_4	"Skill CD (.9/.75)"
+c_att_ranks_4	3,5
+
+//infiltrator
+c_att_skill_15	MB_ATT_FP_LEVITATION
+c_att_names_15	"Improved Hydraulics (Jump)"
+c_att_ranks_15	0,5,0
+c_att_skill_16	MB_ATT_BP_MULTIPLIER
+c_att_names_16	"Saber BP (.8/1/1.4)"
+c_att_ranks_16	2,3,5
+c_att_skill_17	MB_ATT_AS_MULTIPLIER
+c_att_names_17	"Saber AS (1.1)"
+c_att_ranks_17	6
+c_att_skill_18	MB_ATT_CS_MULTIPLIER
+c_att_names_18	"Saber CS (1.1)"
+c_att_ranks_18	6
+c_att_skill_19	MB_ATT_SABER_MAXCHAIN
+c_att_names_19	"Saber Chain Limit (4/5/6)"
+c_att_ranks_19	1,1,1
+c_att_skill_20	MB_ATT_SS_REDSTYLE
+c_att_names_20	"Red Saber Style"
+c_att_ranks_20	0
+c_att_skill_21 MB_ATT_SABER_COMBO
+c_att_names_21 "EX Saber Training"
+c_att_ranks_21 2,2
+c_att_skill_22	MB_ATT_FP_SEE
+c_att_names_22	"Thermal Vision"
+c_att_ranks_22	5,0,0
+c_att_skill_23	MB_ATT_FRAGS
+c_att_names_23	"Smokes Grenades"
+c_att_ranks_23	0
+c_att_descs_23 "Quickthrow only ^3[CS4]"
+c_att_skill_24	MB_ATT_EE4
+c_att_names_24	"E-5 Blaster (EE-4)"
+c_att_ranks_24	3
+c_att_skill_25	MB_ATT_STM_MULTIPLIER
+c_att_names_25	"Skill CD (.9/.75)"
+c_att_ranks_25	1,1
+c_att_skill_26	MB_ATT_SPY_DISGUISE
+c_att_names_26 "Disguise"
+c_att_ranks_26 0,1,1
+
+//assassin
+c_att_skill_30 MB_ATT_PROJECTILE_RIFLE
+c_att_names_30 "BX-series Sniper Rifle"
+c_att_ranks_30 15
+c_att_skill_31 MB_ATT_EE4
+c_att_names_31 "E-5 Blaster Rifle (EE-4)"
+c_att_ranks_31 2,8
+c_att_skill_32	MB_ATT_POWER
+c_att_names_32	"Resource (100/125)"
+c_att_ranks_32	2,3
+c_att_skill_33	MB_ATT_STM_MULTIPLIER
+c_att_names_33	"Skill CD (.9/.75)"
+c_att_ranks_33	3,2
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_vibroswordBX"
+	WeaponName		"Vibrosword" 
+	SelectSound 		"s/w/d/draw1.mp3"
+}
+WeaponInfo1
+{
+	WeaponToReplace	WP_EE4
+	WeaponBasedOff	WP_BLASTER
+	NewWorldModel 	"models/weapons2/e5/e5_w.glm"
+	NewViewModel 	"models/weapons2/e5/e5.md3"
+	Icon			"gfx/hud/w_icon_e5"
+	FlashSound0		"sound/weapons/bx_e5/fire.mp3"  
+	altFlashSound0   "sound/weapons/ee3/sniperfire.mp3"
+	WeaponName		"E-5 Blaster BX Custom"
+	customAmmo		750
+	clipSize		26
+	reloadTimeModifier 1.5
+}
+WeaponInfo2
+{
+	WeaponToReplace 	WP_PROJ
+	WeaponBasedOff	WP_PROJ
+	NewWorldModel	"models/weapons2/me3-widow/disruptor_w.glm"
+	NewViewModel	"models/weapons2/me3-widow/disruptor.md3"
+	Icon		"Gfx\MPLevels\ultimate_showdown\widow_na.png"
+	WeaponName 	"BX-series Sniper Rifle"
+	MuzzleEffect		"Blaster/MuzzleFlash01Y"
+	AltMuzzleEffect	"Blaster/MuzzleFlash01Y"
+	FlashSound0	"sound/weapons/halo_beamrifle/fire.mp3"
+	FlashSound1	"sound/weapons/halo_beamrifle/fire1.mp3"
+	FlashSound2	"sound/weapons/halo_beamrifle/fire2.mp3"
+	FlashSound3	"sound/weapons/halo_beamrifle/fire3.mp3"
+	CustomAmmo 	10
+}
+WeaponInfo3
+{	
+	WeaponToReplace	WP_FRAG_NADE
+	WeaponBasedOff	WP_FRAG_NADE
+	NewWorldModel	"models/weapons2/ninja_smoke/smokepellet.glm"
+	NewViewModel	"models/weapons2/ninja_smoke/smokepellet.md3"
+	Icon	"gfx/hud/w_icon_blackegg"
+	WeaponName	"Smoke Grenades"
+	MissileModel	"models/weapons2/ninja_smoke/smokepellet_proj.md3"
+	AltMissileModel	"models/weapons2/ninja_smoke/smokepellet_proj.md3"
+	MissileMissEffect	"smokenadeleg/explode_vol"
+	altMissileMissEffect	"smokenadeleg/explode_vol"
+	FlashSound0	"Sound/css_wep/smokegrenade_explode.wav"
+	altFlashSound0	"Sound/css_wep/smokegrenade_explode.wav"
+	primFireEnabled	0
+	altFireEnabled	0
+	damageMod 0.001
+	customAmmo 6
+}
+
+ForceInfo0
+{
+	ForceToReplace FP_SEE
+	Icon	"gfx/forcepowers/radar"
+	ForcePowerName "Thermal Vision"
+	StartSound 	"sound/ambience/kotor/consolebeep03.mp3"
+	LoopSound "sound/ambience/cp_02_lp.wav"
+}
+description	"BX-series Commando Droid 
+
+Exceptionally agile and durable commando units that excel at infiltration and assassination. 
+
+^2Weaponry:
+- Heavy Melee
+- Vibrosword (Yellow/Cyan Saber)
+-- Saber Defense (1)
+--- BP-Free Jumps
+-- No Blaster Block
+-- Chain Limit: 3
+-- 38% less Reach
+
+^5Powers:
+- Hydraulic Legs (Jump 1)
+
+^8Attributes:
+- 20% less Kb Taken
+- Dexterity (3)
+- Beskar (3)
+- Tracking Beacon
+
+^3Abilities:
+-Flipkick (1) ^3[Contact Jump]
+-Dodge (3) ^3[CS1]
+-Dexterity Roll ^3[CS2]
+-Dash (2) ^3[CS3]
+-Quickthrow (3) ^3[CS4] ^5Infiltrator"

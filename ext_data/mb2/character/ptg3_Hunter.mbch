@@ -1,0 +1,173 @@
+ClassInfo
+{
+	name "ptg3_Hunter"
+	weapons WP_MELEE|WP_SABER|WP_BLASTER_PISTOL|WP_BRYAR_OLD
+	attributes MB_ATT_STAMINA,3|MB_ATT_DEXTERITY,2|MB_ATT_AMMO,3|MB_ATT_TRACKING_BEACON|MB_ATT_TRACKING_DART,4|MB_ATT_PISTOL,3|MB_ATT_GRAPPLE_HOOK,3|MB_ATT_BRYAR_OLD|MB_ATT_BLAST_ARMOUR|MB_ATT_FLIPKICK,1
+	
+	MBClass		MB_CLASS_ARCTROOPER
+	classNumberLimit	1
+	maxhealth	125
+	maxarmor		125
+
+	basespeed 225
+	modelscale   1.03
+	rateOfFire   1
+	rateoffire_melee	1
+	
+	resource RESOURCE_STAMINA
+	forcepool 125
+        
+	BPmultiplier	1
+	saber1		hunter_knife
+        forcepowers     FP_SABER_DEFENSE,1|FP_SABERTHROW,0
+	saberstyle	SS_TAVION
+	saberdamage 	100
+        saberSpecialDamage 2
+	saberThrowDamage 70
+	saberMaxChain 3
+	
+    holdables HI_STIMPACK
+
+    special1	EAS_FP_SABERTHROW
+    special2	EAS_HI_DEX
+    special3    EAS_HI_TRACKER
+    special4    EAS_HI_GRAPPLEHOOK
+
+    WP_BlasterPistolFlags HELD_HIGHDAMAGE|HELD_ALTRELOAD|HELD_KNOCKDOWN
+    WP_MeleeFlags HELD_TRACKING
+
+	model 		"clonerc2"
+	skin  		"hunter"
+	uishader  	"models/players/clonerc2/mb2_icon_hunter"
+	uioverlay "gfx/icons/aerial"
+        saberStanceAnim	BOTH_STAND9
+	tauntAnim BOTH_SHOWOFF_MEDIUM
+	gloatAnim BOTH_SHOWOFF_STRONG
+	flourishAnim BOTH_SPINATTACK7
+	meditateAnim 	BOTH_KNOCKDOWN4
+}
+
+WeaponInfo0
+{
+	WeaponToReplace	WP_SABER
+	WeaponBasedOff	WP_SABER
+	NewWorldModel		"models/weapons2/ct_weapon/ct_knife_F.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_prisonknife"
+	WeaponName		"Hunter's Vibroknife"
+}
+
+WeaponInfo1
+{	
+        WeaponToReplace	WP_BLASTER_PISTOL
+	WeaponBasedOff	WP_BLASTER_PISTOL
+        NewWorldModel    "models/weapons2/dc-17/dc-17_w.glm"
+	NewViewModel     "models/weapons2/dc-17/dc-17.md3"
+	NewHandsModel   "models/weapons2/dc-17/dc-17_hand.md3"
+	Icon            "gfx/hud/w_icon_dc-17"
+	FlashSound0 "sound/weapons/crosshair/dc17.wav"
+	altFlashSound0  "sound/weapons/crosshair/dc17.wav"
+	ChargeSound   "sound/weapons/demp2/altCharge.wav"
+	WeaponName		"Quickdraw" 
+	MuzzleEffect "Blaster/MuzzleFlash01B"
+	altMuzzleEffect "Blaster/MuzzleFlash01B"
+	ChargeEffect		"gfx/effects/cloneFrontFlash"
+	OverchargeEffect	"gfx/effects/cloneFrontFlash"
+	missileEffect "Blaster/Shot01B"
+	altMissileEffect "Blaster/Shot01B"
+        Missile3Effect "Blaster/Shot01B"
+	WeaponName	"Quickdraw"                      
+	CustomAmmo      15
+        clipsize 3
+	velocityMod 1.2
+        damageMod 1.25
+        ratemod 0.3
+	ReloadTimeModifier 	2
+	AltFireEnabled 		0
+	hasAnimOverrides 1
+	animReadyRun TORSO_WEAPONIDLE2
+	animReady TORSO_WEAPONIDLE2
+	animReadyWalk TORSO_WEAPONIDLE2
+	animReadyNoAmmo BOTH_ATTACK2 
+	animAttackRun BOTH_ATTACK2 
+	animAttack BOTH_ATTACK2 
+	animAttackWalk BOTH_ATTACK2 
+}
+
+
+
+WeaponInfo2
+{
+        WeaponToReplace	WP_BRYAR_OLD
+	WeaponBasedOff	WP_BRYAR_OLD
+	NewWorldModel    "models/weapons2/dc-17/dc-17_w.glm"
+	NewViewModel     "models/weapons2/dc-17/dc-17.md3"
+	NewHandsModel   "models/weapons2/dc-17/dc-17_hand.md3"
+	Icon            "gfx/hud/w_icon_dc-17"
+	FlashSound0 "sound/weapons/crosshair/dc17.wav"
+	altFlashSound0  "sound/weapons/crosshair/dc17.wav"
+	ChargeSound   "sound/weapons/demp2/altCharge.wav"
+	WeaponName		"Hunter's DC-17 Hand Blaster" 
+	MuzzleEffect "Blaster/MuzzleFlash01B"
+	altMuzzleEffect "Blaster/MuzzleFlash01B"
+	ChargeEffect "Blaster/MuzzleCharge01B"		
+	OverchargeEffect "Blaster/MuzzleCharge01B"   
+	MissileEffect "Blaster/Shot01B"
+        Missile3Effect "Blaster/Shot01B"
+	altMissileEffect "Blaster/Shot01B"
+        PowerupShotEffect "Blaster/Shot01B"
+        hasAnimOverrides 1
+	animReadyRun BOTH_PISTOL_READY
+	animReady BOTH_PISTOL_IDLE2
+	animReadyWalk BOTH_PISTOL_READY
+	animReadyNoAmmo BOTH_PISTOL_IDLE
+	animAttackRun BOTH_PISTOL_ATTACK
+	animAttack BOTH_PISTOL_ATTACK 
+	animAttackWalk BOTH_PISTOL_ATTACK
+        animCharge BOTH_PISTOL_ATTACK
+	customAmmo	825
+	clipsize 100
+	damageMod 1.35 
+	rateMod 0.85
+	CustomAmmo 660
+}
+
+description	"CT-9901 aka 'Hunter'
+
+
+Leader of Clone Force 99 aka 'The Bad Batch'. A Grappling Hook equipped pistoleer with Quickdraw capabilities. 
+
+^2Weaponry:
+- Melee
+-- Tracks on hit
+- Hunter's Vibroknife (Cyan Saber)
+-- Saber Defence 1
+-- No Blaster Block
+-- Chain Limit: 3
+-- 100 DMG
+-- -60% Reach
+-- Saber Throw ^3[CS1]
+--- 70 DMG
+- Hunter's DC-17 Hand Blaster (Bryar Pistol)
+-- +35% DMG
+-- +15% ROF
+- Quickdraw (Blaster Pistol 3)
+-- +20% velocity
+-- +125% Dmg
+-- Knockdown on hit
+-- Mag reload
+-- (6 shots per round)
+-- +70% Swap Speed
+-- -200% Reload Speed
+
+^8Attributes:
+- Stamina (3)
+- Dexterity (2)
+- Tracking Beacon 
+- Blast Armor
+- Flipkick (1)
+
+^3Abilities:
+- Dex Roll ^3[CS2]
+- Tracking Darts (8) ^3[CS3]
+- Grappling Hook (3) ^3[CS4 Melee]"

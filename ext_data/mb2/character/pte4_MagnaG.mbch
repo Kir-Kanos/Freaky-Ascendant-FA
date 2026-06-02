@@ -1,0 +1,199 @@
+ClassInfo
+{
+	name			"pte4_MagnaG"
+	MBClass	MB_CLASS_ELITETROOPER
+	classNumberLimit	2
+	extralives	1
+	
+	weapons		WP_MELEE|WP_SABER|WP_EE3
+
+	WP_SaberFlags HELD_PULSE
+ WP_RocketLauncherFlags HELD_POISON|HELD_TRACKING|HELD_ALTRELOAD
+
+
+	attributes	MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_FORCEBLOCK,1|MB_ATT_EE3,3|MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,3|MB_ATT_ANTI_MT,2|MB_ATT_SABER_COMBO,1|MB_ATT_DEFLECT,0|MB_ATT_TRACKING_BEACON|MB_ATT_DASH,1|MB_ATT_DEXTERITY,2|MB_ATT_GRAPPLE_HOOK,1|MB_ATT_BESKAR,3|MB_ATT_GETUPS,4
+	
+	forcepowers	FP_LEVITATION,2
+
+	maxhealth	80
+	maxarmor  10
+
+	armourRegenAmount 2
+	armourRegenRate 1000
+	armourRegenCap 10
+
+	resource RESOURCE_BATTERY
+	resourceRegenAmount 1
+	resourceRegenRate 150
+	forceregen 0.01
+
+ basespeed 	236
+	skilltimermod 		1
+	forcepool	80
+ knockbackTaken 0.85
+ saberDamage 80
+ saberSpecialDamage 3
+	saber1		electrostaff_magnaguard
+	sabercolor	5
+	saberstyle	SS_STAFF
+
+	BPmultiplier	1.1
+	ASmultiplier	1.1
+	CSmultiplier	1.1
+	APmultiplier	1.1
+
+	classflags CFL_DISMEMBERFRAGILE|CFL_BPFREEJUMPS|CFL_NOLOCATIONALDAMAGE
+
+	special1 EAS_NONE
+	special2 EAS_HI_DASH 
+	meleespecial4 EAS_HI_GRAPPLEHOOK
+
+	deathAnim	BOTH_SBD_DEATH1
+	
+	modelscale 	1.13
+	uioverlay_l "gfx/icons/hybrid"
+	uioverlay_r "gfx/icons/infantry"
+	model	"magnaguard"
+	skin	"default"
+	uishader "models/players/magnaguard/mb2_icon_default"
+
+	model_1	"magnaguard"
+	skin_1	"default_cape"
+	uishader_1 "models/players/magnaguard/mb2_icon_default_cape"
+
+	model_2	"magnaguard"
+	skin_2		"default_magutapau"
+	uishader_2	"models/players/magnaguard/mb2_icon_default_magutapau"
+
+	model_3	"magnaguard"
+	skin_3	"bedlam"
+	uishader_3 "models/players/magnaguard/mb2_icon_bedlam"
+
+	model_4	"magnaguard"
+	skin_4	"bedlam_cape"
+	uishader_4 "models/players/magnaguard/mb2_icon_bedlam_cape"
+
+ isCustomBuild	1
+ mbPoints	1
+
+	c_att_skill_0	MB_ATT_ROCKET_LAUNCHER
+	c_att_names_0	"RD-4 Rocket Launcher (3)"
+	c_att_ranks_0	1
+ c_att_descs_0 "Poisons/tracks on det, 35% slower Mag Reload"
+
+	c_att_skill_1	MB_ATT_PLX1
+	c_att_names_1	"RPS-6 Rocket Launcher (PLX)"
+	c_att_ranks_1	1
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel			"models/weapons2/electrostaff/electrostaff.glm" 
+	NewViewModel			"models/weapons2/dummy/dummy.md3"
+	Icon					"gfx/hud/w_icon_electrostaff"
+	WeaponName			"MagnaGuard Electrostaff"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_EE3
+	WeaponBasedOff		WP_BLASTER
+	NewWorldModel			"models/weapons2/e5/e5_w.glm"
+	NewViewModel			"models/weapons2/e5/e5.md3"
+	Icon					"gfx/hud/w_icon_e5.tga"
+	WeaponName			"Modified E-5 Blaster Rifle"
+	FlashSound0 		"sound/weapons/blasterMB/fire.mp3"
+	FlashSound1 		"sound/weapons/blasterMB/fire.mp3"
+	FlashSound2 		"sound/weapons/blasterMB/fire.mp3"
+	FlashSound3 		"sound/weapons/blasterMB/fire.mp3"
+	AltFlashSound0	   "sound/weapons/blasterMB/fire.mp3"
+	AltFlashSound1   "sound/weapons/blasterMB/fire.mp3"
+	AltFlashSound2	   "sound/weapons/blasterMB/fire.mp3"
+	AltFlashSound3	   "sound/weapons/blasterMB/fire.mp3"
+	ChargeSound			"sound/weapons/leia_pistol/altcharge.mp3"
+	hasAnimOverrides 1
+	animReadyRun TORSO_WEAPONIDLE2
+	animReady TORSO_WEAPONIDLE2
+	animReadyWalk TORSO_WEAPONIDLE2
+	animReadyNoAmmo BOTH_ATTACK2 
+	animAttackRun BOTH_ATTACK2 
+	animAttack BOTH_ATTACK2 
+	animAttackWalk BOTH_ATTACK2
+}
+
+WeaponInfo2
+{
+WeaponToReplace WP_ROCKET_LAUNCHER
+WeaponBasedOff WP_ROCKET_LAUNCHER
+Icon	"gfx/hud/w_icon_upl"
+NewWorldModel	"models/weapons2/upl/upl_w.glm"
+NewViewModel	"models/weapons2/upl/upl.md3"
+NewHandsModel "models/weapons2/upl/upl_hand.md3"
+NewBarrelModel "models/weapons2/upl/upl_barrel.md3"
+WeaponName "RD-4 Radiation Rocket Launcher"
+flashSound0 "sound/weapons/upl/fire_radiation.wav"
+altFlashSound0 "sound/weapons/upl/fire_radiation.wav"
+ MuzzleEffect "noghri_stick/flesh_impact"
+	MissileMissEffect	"slime_explosion_new"
+	MissileHitDroidEffect	"slime_explosion_new"
+	MissileHitHumanEffect "slime_explosion_new"
+	MissileEffect		"hutt/toxic_breath"
+ altMuzzleEffect "noghri_stick/flesh_impact" //"sbd/cortosis_green"
+	altMissileMissEffect	"slime_explosion_new"
+	altMissileHitDroidEffect	"slime_explosion_new"
+	altMissileHitHumanEffect	"slime_explosion_new"
+	altMissileEffect		"hutt/toxic_breath"
+ customAmmo 2
+ clipSize 1
+ reloadTimeModifier 1.35
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_PLX1
+	WeaponBasedOff		WP_PLX1
+	NewWorldModel		"models/weapons2/e60r_launcher/e60r_launcher_w.glm"
+	NewViewModel		"models/weapons2/e60r_launcher/e60r_launcher.md3"
+	Icon				"gfx/hud/w_icon_e60r_launcher"
+	WeaponName			"RPS-6 Rocket Launcher"
+flashSound0 "sound/weapons/upl/fire_rocket.wav"
+altFlashSound0 "sound/weapons/upl/fire_rocket.wav"
+}
+
+
+description 	"IG-100 MagnaGuard 
+
+Mobile hybrids with disabling weaponry.
+
+^2Weaponry:
+- Melee
+- MagnaGuard Electrostaff (Shocks on hit)
+-- Saber Defense (2)
+-- Blaster Defense (1)
+--- BP-Free Jumps
+-- EX Saber Training (1)
+-- Shocks on hit
+-- 3% more Kb
+-- 6% less Reach
+-- 66% less Dmg
+-- 200% more Special damage.
+- Modified E-5 Blaster Rifle (EE-3 3)
+
+^5Powers:
+- Energized Jump (2)
+
+^8Attributes:
+- Reinforcement (1)
+- Dexterity (2)
+- Beskar (3)
+- Battery (0)
+- Armor Regen (1)
+- Force Block (1)
+- Anti-Mind Trick (2)
+- Assemble (3)
+
+^3Abilities:
+- Dash (1) ^3[CS2]
+- Grappling Hook (1) ^3[CS4 Melee]"

@@ -1,10 +1,10 @@
-jangoblade
+jangobladeyes
 {
 	name "Beskar Armblade"
 	saberType	SABER_DUAL
 
 	numBlades	1
-	saberLength	13
+	saberLength	15
 	throwable		0
 
 	saberColor	random
@@ -34,6 +34,8 @@ jangoblade
 
  
 	animspeedscale	1
+	jumpAtkFwdMove LS_A_BACKFLIP_ATK
+	lungeAtkMove LS_KICK_F
 
 	spinsound	"s/w/t/swing3.wav"
 	swingSound1	"s/w/v/swish1.mp3"

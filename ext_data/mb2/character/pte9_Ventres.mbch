@@ -1,0 +1,108 @@
+ClassInfo
+ {
+ name 			"pte9_Ventres"
+	MBClass 			MB_CLASS_SITH
+ classNumberLimit	1
+	
+	weapons			WP_SABER|WP_MELEE
+	
+ attributes		MB_ATT_DEFLECT,1|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_BUNNY_HOP,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_TRACKING_BEACON|MB_ATT_DEXTERITY,3
+
+ forcepowers 	FP_PUSH,2|FP_LEVITATION,3|FP_SEE,2|FP_SPEED,3|FP_PULL,2|FP_SABERTHROW,3|FP_GRIP,2|FP_SABER_OFFENSE,2|FP_TELEPATHY,1
+	
+ maxhealth 		120
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+ forcepool		 120
+	forceregen		1.04
+	resource resource_force
+	
+	saber1		saber_asajj_legacy
+	sabercolor	0
+	saberstyle	SS_DUAL|SS_FAST	
+	saber2		saber_asajj2_legacy
+	saber2color	0	
+	
+	saber1_1 	staff_asajj_legd
+	sabercolor_1 	0
+	saberstyle_1	SS_STAFF|SS_FAST
+	
+	saber1_2 	staff_asajj_legl
+	sabercolor_2 	0 
+	saberstyle_2	SS_STAFF|SS_FAST
+
+	saber1_3		starblades_legd
+	sabercolor_3	0
+	saberstyle_3	SS_DUAL
+	saber2_3 	starblades_legl
+	saber2color_3 0
+
+ 	BPmultiplier  1.1
+ 	APmultiplier  1
+ 	ASmultiplier		1.10
+ 	CSmultiplier		1.15
+	 saberThrowDamage 90
+ saberDamageStyle SS_FAST,130
+	
+ 	basespeed    247
+	 rateOfFire_Melee 0.88
+	
+ 	classflags		CFL_NOPICKUPS|CFL_SEEING_STEALTH
+
+ flourishAnim	BOTH_ALORA_TAUNT
+ //runForward BOTH_SABERSTAFF_RUN
+	//special1 EAS_FP_SABERTHROW
+	special2 EAS_FP_SPEED
+	special3 EAS_FP_GRIP
+	special4 EAS_FP_TELEPATHY
+
+ uioverlay "gfx/icons/frontline"
+ 
+	model		"assajv"
+	skin			"default"
+	uishader 	"models/players/assajv/mb2_icon_default"
+	
+	model_1		"asajj_cw"
+	skin_1		 "default"
+	uishader_1 	"models/players/asajj_cw/mb2_icon_default"
+}
+
+description "Asajj Ventress
+
+A fast Sith who can wield unique Starblades designed for massive throw damage, as well as Dual or Staff sabers.
+
+^2Weaponry:
+- Melee
+-- 12% faster RoF
+- Asajj's Lightsabers
+-- Saber/Blaster Defense (2)
+-- Blaster Deflect (1)
+-- Slap ^3[GB]
+> Double (Dual/Blue)
+-- 8% less/more DMG
+> Staff (Staff/Blue)
+-- 8% less/more DMG
+> Starblades (Dual)
+-- 25% less reach
+-- 10% less AS
+-- 55% less DMG
+-- EX Saber Throw (3) ^3[CS1]
+--- 200% more DMG
+
+^5Force Powers:
+- Jump (3)
+- Push (2) 
+- Pull (2) 
+- Sense (2) 
+- Grip (2) ^3[CS3]
+- Mind Trick (1) ^3[CS4]
+- Speed (3) ^3[CS2]
+
+^8Attributes:
+- Bunny Hop (1)
+- Dexterity (3)
+- Heal capped at 35hp
+- Force Block/Focus (2)
+- Sense Immunity
+- Tracking Beacon"

@@ -1,0 +1,87 @@
+ClassInfo
+{
+	name 			"pte9_Barriss"
+	MBClass 			MB_CLASS_SITH
+	classNumberLimit	1
+	
+	weapons			WP_SABER|WP_MELEE
+	
+	attributes		MB_ATT_DEFLECT,3|MB_ATT_FORCEBLOCK,3|MB_ATT_FORCEFOCUS,2|MB_ATT_BUNNY_HOP,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_SABER_FAST,1|MB_ATT_TRACKING_BEACON|MB_ATT_DEXTERITY,3|MB_ATT_FLIPKICK,1|MB_ATT_INAIR_FORCE_REGEN,1|
+
+	forcepowers 	FP_LEVITATION,3|FP_SEE,2|FP_SPEED,3|FP_PULL,2|FP_SABERTHROW,3|FP_GRIP,3|FP_SABER_OFFENSE,2|FP_TELEPATHY,1
+	
+	maxhealth 	125
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+	forcepool		115
+	forceregen	1.10
+	
+	saberstyle		SS_DUAL|SS_FAST
+ saberSpecialDamage 1.35
+	BPmultiplier  0.8
+	APmultiplier  1
+	ASmultiplier		1.15
+	CSmultiplier		1.05
+	saberThrowDamage 40
+	
+    blockRegenRate		0.9
+	speed   1.07
+	rateOfFire_Melee 0.88
+ damageGiven 1.1
+	
+	classflags		CFL_SEEING_STEALTH|CFL_NOPICKUPS
+
+	special2 EAS_HI_DEX
+	special3 EAS_FP_GRIP
+	special4 EAS_FP_TELEPATHY
+	
+	uioverlay "gfx/icons/frontline"
+	
+	model		"barriss_offee"
+	skin		 "nocape"
+	uishader 	"models/players/barriss_offee/mb2_icon_nocape_sith"
+		
+	saber1		saber_asajj_legacy
+	sabercolor	0
+	saberstyle	SS_DUAL|SS_FAST	
+	saber2		saber_asajj2_legacy
+	saber2color	0	
+}
+
+description "Barriss Offee
+
+A fast Sith with Force Sense immunity, specializing in ambushes and surprise attacks. Lacks the defensive strength for prolonged duels.
+
+^2Weaponry:
+- Melee
+-- +12% Rate of Fire
+- Lightsaber (Dual/Blue)
+-- Saber Defense (3)
+-- Blaster Defense (2)
+-- Blaster Deflect (3)
+-- +135% Special Damage Multiplier
+-- EX Saber Throw (3) ^3[CS1]
+--- +33% Damage
+
+^5Force Powers:
+- Jump (3)
+- Pull (2) 
+- Sense (2) 
+- Grip (3) ^3[CS3]
+- Mind Trick (1) ^3[CS4]
+- Speed (3)
+
+^8Attributes:
+- Bunny Hop (1)
+- Dexterity (3)
+- Heal capped at 35hp
+- Force Block (3)
+- Force Focus (2)
+- Aerial Force Regen
+- Sense Immunity
+- Tracking Beacon
+
+^3Abilities:
+- Flipkick (1) ^3[Contact Jump]
+- Dex Roll ^3[CS2]"
