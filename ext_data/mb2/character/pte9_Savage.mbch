@@ -2,7 +2,7 @@
 
 ClassInfo
 {
-	name				"ase9_Savage"
+	name				"pte9_Savage"
 
 	MBClass				MB_CLASS_SITH
 	classNumberLimit	1
