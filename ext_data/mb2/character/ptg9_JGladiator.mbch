@@ -2,7 +2,7 @@
 
 ClassInfo
 {
-	name			"asg9_JGladiator"
+	name			"ptg9_JGladiator"
 	MBClass			MB_CLASS_JEDI
 	classNumberLimit	1
 	weapons			WP_SABER|WP_MELEE
