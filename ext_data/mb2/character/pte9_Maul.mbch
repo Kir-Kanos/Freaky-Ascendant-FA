@@ -7,15 +7,15 @@ ClassInfo
 	classNumberLimit  	1
 	weapons				WP_SABER|WP_MELEE
 
-	attributes			MB_ATT_SABER_STRONG,2|MB_ATT_DEFLECT,2|MB_ATT_FORCEBLOCK,3|MB_ATT_FORCEFOCUS,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,3
+	attributes			MB_ATT_SABER_STRONG,2|MB_ATT_DEFLECT,2|MB_ATT_FORCEBLOCK,1|MB_ATT_FORCEFOCUS,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,3
 
-	forcepowers			FP_SABER_OFFENSE,2|FP_LEVITATION,3|FP_PUSH,2|FP_GRIP,2|FP_PULL,2|FP_SABERTHROW,1|FP_SEE,1
+	forcepowers			FP_SABER_OFFENSE,2|FP_LEVITATION,3|FP_PUSH,2|FP_GRIP,2|FP_PULL,2|FP_SABERTHROW,3|FP_SEE,2
 
-	maxhealth			135
+	maxhealth			130
 	healthRegenAmount 1
 	healthRegenRate 1500
 	healthRegenCap	35
-	forcepool			125
+	forcepool			120
 	forceregen  1.05
  resource RESOURCE_FORCE
 
@@ -84,23 +84,11 @@ ClassInfo
 	model_8			"maul_cw"
 	skin_8 			"solo_hood"
 	uishader_8		"models/players/maul_cw/mb2_icon_solo_hood"
-	
-	model_9		"maul_rebels"
-	skin_9			"default"
-	uishader_9		"models/players/maul_rebels/mb2_icon_default"
-	
-	model_10		"maul_rebels"
-	skin_10			"noshirt"
-	uishader_10		"models/players/maul_rebels/mb2_icon_noshirt"
-	
-	model_11		"maul_rebels"
-	skin_11			"noshirt_hood"
-	uishader_11		"models/players/maul_rebels/mb2_icon_noshirt_hood"
 }
 
-description	"Maul 
+description	"Darth Maul 
 
-A highly aggressive Sith that excels in flanking due to enhanced movement and swings.
+A highly aggressive Sith Lord that excels in fighting multiple opponents with enhanced movement and swings.
 
 ^2Weaponry:
 - Heavy Melee
@@ -118,10 +106,10 @@ A highly aggressive Sith that excels in flanking due to enhanced movement and sw
 - Jump (3)
 - Push (2)
 - Pull (2)
-- Sense (1)
+- Sense (2)
 - Grip (2) ^3[CS3]
 
 ^8Attributes:
 - Heal capped at 35hp
-- Force Block (3)
+- Force Block (1)
 - Force Focus (1)"
