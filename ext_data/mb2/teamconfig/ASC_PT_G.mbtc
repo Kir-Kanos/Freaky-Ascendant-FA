@@ -16,8 +16,9 @@ Classes
 
 SubclassesForClass1
 {
-	Subclass1	"ptg2_Padme"
-	Subclass2	"h2_JarJar"
+	Subclass1	"ptg1_P1Clone"
+	Subclass2	"ptg2_Padme"
+	Subclass3	"h2_JarJar"
 }
 
 SubclassesForClass2
