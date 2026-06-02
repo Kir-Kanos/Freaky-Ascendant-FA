@@ -2,7 +2,7 @@
 
 ClassInfo
 {
-	name			"asg9_JSword"
+	name			"ptg9_JSword"
 	classNumberLimit	1
 	MBClass		MB_CLASS_JEDI
 
@@ -48,14 +48,6 @@ ClassInfo
 	model_2		"Dooku_totj"
 	skin_2			"default"
 	uishader_2		"models/players/dooku_totj/mb2_icon_default"
-
-	model_3 	"jedi_tor"
-	skin_3 		"default"
-	uishader_3 	"models/players/jedi_tor/mb2_icon_default"
-	
-	model_4 	"jedi_tor"
-	skin_4 		"ven"
-	uishader_4 	"models/players/jedi_tor/mb2_icon_ven"
 
 	
 	saber1			saber_cin
