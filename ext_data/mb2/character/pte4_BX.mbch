@@ -1,6 +1,6 @@
 ClassInfo
 {
-	name				"ase4_BX"
+	name				"pte4_BX"
 	MBClass				MB_CLASS_ARCTROOPER
 	weapons				WP_SABER|WP_MELEE
 	saber1				Vibro_bx_legends
