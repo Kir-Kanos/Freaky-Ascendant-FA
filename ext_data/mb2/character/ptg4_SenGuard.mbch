@@ -1,7 +1,7 @@
 
 ClassInfo
 {
-	name				"asg4_SenGuard"
+	name				"ptg4_SenGuard"
 	MBClass			MB_CLASS_CLONETROOPER
 	extralives		1
 	weapons			WP_SABER|WP_MELEE
