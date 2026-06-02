@@ -1,7 +1,7 @@
 // Air
 ClassInfo
 {
-	name			"asg10_JKindredAbs"
+	name			"ptg10_JKindredAbs"
 	weapons			WP_MELEE|WP_SABER
 	saberstyle		SS_MEDIUM|SS_STRONG
 	forcepowers		FP_SABER_OFFENSE,2|FP_LEVITATION,3|FP_PUSH,1|FP_PULL,3|FP_ABSORB,1|FP_SEE,1|FP_SABERTHROW,2|FP_SPEED,1
