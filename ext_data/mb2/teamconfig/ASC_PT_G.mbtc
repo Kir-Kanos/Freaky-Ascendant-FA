@@ -9,7 +9,7 @@ Classes
 	class1	"ptg2_Panaka"
 	class2	"ptg3_Clone"
 	class3	"ptg5_CloneJet"
-	class4	"ptg7_Scavenge"
+	class4	"h8_WookWarr"
 	class5	"ptg9_JYoung"
 	class6	"ptg10_JForce"
 }
@@ -49,20 +49,18 @@ SubclassesForClass4
 	Subclass1	"ptg7_CloneAss"
 	Subclass2	"h8_Wreck"
 	Subclass3	"h8_Tarfful"
-	Subclass4	"h8_WookWarr"
 }
 
 SubclassesForClass5
 {
-	Subclass1	"ptg9_JKnight"
+	Subclass1	"ptg9_JBrute"
 	Subclass2	"ptg9_JediTG"
 	Subclass3	"ptg9_Anakin"
 	Subclass4	"ptg9_Windu"
 	Subclass5	"ptg9_Yoda"
 	Subclass6	"ptg9_Yarael"
 	Subclass7	"ptg9_JSword"
-	Subclass8	"ptg9_JAcrobat"
-	Subclass9	"ptg9_JBrute"
+	Subclass8	"ptg9_Ahsoka"
 }
 
 SubclassesForClass6
