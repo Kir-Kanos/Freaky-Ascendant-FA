@@ -45,12 +45,11 @@ SubclassesForClass4
 
 SubclassesForClass5
 {
-	Subclass1	"pte9_Maul"
+	Subclass1	"pte9_Barriss"
 	Subclass2	"pte9_Dooku"
 	Subclass3	"pte9_Ventres"
 	Subclass4	"pte9_Grievous"
 	Subclass5	"pte9_Savage"
-	Subclass6	"pte9_Barriss"
 }
 
 SubclassesForClass6
