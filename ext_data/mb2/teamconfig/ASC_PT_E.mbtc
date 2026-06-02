@@ -25,10 +25,9 @@ SubclassesForClass2
 	Subclass2	"pte4_MagnaG"
 	Subclass3	"pte5_Geonos"
 	Subclass4	"pte5_MaulMando"
-	Subclass5	"pte5_JangoRework"
-	Subclass6	"v5_Durge"
-	Subclass7	"pte5_CadRe"
-	Subclass8	"v5_Watto"
+	Subclass5	"v5_Durge"
+	Subclass6	"pte5_CadRe"
+	Subclass7	"v5_Watto"
 }
 
 SubclassesForClass3
