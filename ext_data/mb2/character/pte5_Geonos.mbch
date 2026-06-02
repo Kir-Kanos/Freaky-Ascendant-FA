@@ -2,7 +2,7 @@
 
 ClassInfo
 {
-	name			"ase5_Geonos"
+	name			"pte5_Geonos"
 	weapons		WP_MELEE|WP_BOWCASTER|WP_CONC_NADE|WP_SABER
 	maxhealth	80
 	maxarmor        80
