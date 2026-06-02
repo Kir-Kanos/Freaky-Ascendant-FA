@@ -1,6 +1,6 @@
 ClassInfo
 {
-	name			"ase4_MagnaG"
+	name			"pte4_MagnaG"
 	MBClass	MB_CLASS_ELITETROOPER
 	classNumberLimit	2
 	extralives	1
