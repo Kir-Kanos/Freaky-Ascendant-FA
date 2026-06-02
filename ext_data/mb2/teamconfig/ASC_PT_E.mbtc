@@ -50,6 +50,7 @@ SubclassesForClass5
 	Subclass3	"pte9_Ventres"
 	Subclass4	"pte9_Grievous"
 	Subclass5	"pte9_Savage"
+	Subclass6	"pte9_Barriss"
 }
 
 SubclassesForClass6
