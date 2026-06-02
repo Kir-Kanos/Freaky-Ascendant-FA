@@ -21,16 +21,14 @@ SubclassesForClass1
 
 SubclassesForClass2
 {
-	Subclass1	"pte5_GadgetMando"
-	Subclass2	"pte5_AstroR2"
+	Subclass1	"pte4_RoyalPr"
+	Subclass2	"pte4_MagnaG"
 	Subclass3	"pte5_Geonos"
 	Subclass4	"pte5_MaulMando"
 	Subclass5	"pte5_JangoRework"
 	Subclass6	"v5_Durge"
 	Subclass7	"pte5_CadRe"
 	Subclass8	"v5_Watto"
-	Subclass9	"pte4_MagnaG"
-	Subclass10	"pte4_RoyalPr"
 }
 
 SubclassesForClass3
