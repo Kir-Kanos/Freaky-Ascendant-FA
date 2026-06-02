@@ -139,13 +139,13 @@ c_att_ranks_22	5,0,0
 c_att_skill_23	MB_ATT_FRAGS
 c_att_names_23	"Smokes Grenades"
 c_att_ranks_23	0
-c_att_descs_24 "Quickthrow only ^3[CS4]"
+c_att_descs_23 "Quickthrow only ^3[CS4]"
 c_att_skill_24	MB_ATT_EE4
 c_att_names_24	"E-5 Blaster (EE-4)"
-c_att_ranks_25	3
+c_att_ranks_24	3
 c_att_skill_25	MB_ATT_STM_MULTIPLIER
 c_att_names_25	"Skill CD (.9/.75)"
-c_att_ranks_26	1,1
+c_att_ranks_25	1,1
 c_att_skill_26	MB_ATT_SPY_DISGUISE
 c_att_names_26 "Disguise"
 c_att_ranks_26 0,1,1
