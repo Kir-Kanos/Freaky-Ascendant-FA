@@ -6,7 +6,7 @@ EUAllowed 0
 
 Classes
 {
-	class1	"ptg2_Panaka"
+	class1	"ptg1_P1Clone"
 	class2	"ptg3_Clone"
 	class3	"ptg5_CloneJet"
 	class4	"h8_WookWarr"
@@ -16,7 +16,7 @@ Classes
 
 SubclassesForClass1
 {
-	Subclass1	"ptg1_P1Clone"
+	Subclass1	"ptg2_Panaka"
 	Subclass2	"ptg2_Padme"
 	Subclass3	"h2_JarJar"
 }
