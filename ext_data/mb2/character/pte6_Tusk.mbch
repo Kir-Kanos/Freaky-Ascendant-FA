@@ -2,7 +2,7 @@
 
 ClassInfo
 {
-	name			"ase6_Tusk"
+	name			"pte6_Tusk"
 	MBClass			MB_CLASS_WOOKIE
 	extralives			1
 	classNumberLimit		4
