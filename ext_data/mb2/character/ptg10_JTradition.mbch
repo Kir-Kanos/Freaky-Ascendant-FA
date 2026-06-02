@@ -2,7 +2,7 @@
 
 ClassInfo
 {
-	name			"asg10_JTradition"
+	name			"ptg10_JTradition"
 	weapons			WP_MELEE|WP_SABER
 	saberstyle		SS_MEDIUM|SS_STRONG|SS_TAVION
 	forcepowers		FP_SABER_OFFENSE,3|FP_LEVITATION,2|FP_PUSH,3|FP_PULL,2|FP_PROTECT,3|FP_SEE,3|FP_SABERTHROW,2
