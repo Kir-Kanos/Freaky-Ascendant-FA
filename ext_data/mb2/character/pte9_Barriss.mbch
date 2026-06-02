@@ -38,9 +38,9 @@ ClassInfo
 	
 	uioverlay "gfx/icons/frontline"
 	
-	model		"barriss_offee_inq"
-	skin		"default"
-	uishader	"models/players/barriss_offee_inq/mb2_icon_default"
+	model		"barriss_offee"
+	skin		 "nocape"
+	uishader 	"models/players/barriss_offee/mb2_icon_nocape_sith"
 		
 	saber1		saber_asajj_legacy
 	sabercolor	0
