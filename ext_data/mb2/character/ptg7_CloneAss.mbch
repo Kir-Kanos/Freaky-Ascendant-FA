@@ -2,7 +2,7 @@
 
 ClassInfo
 {
-	name			"asg7_CloneAss"
+	name			"ptg7_CloneAss"
 	weapons		WP_MELEE|WP_SABER
 	saber1		assassin_shiv_legends
 	saber2		assassin_shiv_dual_legends
