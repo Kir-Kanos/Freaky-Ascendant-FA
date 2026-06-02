@@ -1,7 +1,6 @@
-//CONVERTED BY MARSHALL REWORKED BY AIR
 Classinfo
 {
-	name				"asg9_JSageRework"
+	name				"ptg9_Yoda"
 	MBclass				MB_CLASS_JEDI
 	classNumberLimit	1
 
@@ -56,29 +55,15 @@ Classinfo
 	skin_1		"cw"
 	uishader_1	"models/players/t_yoda/mb2_icon_cw"
 	
-	model_2		"t_yoda"
-	skin_2		"hr"
-	uishader_2	"models/players/t_yoda/mb2_icon_hr"
-	
-	model_3		"t_yoda"
-	skin_3		"ghost"
-	uishader_3	"models/players/t_yoda/mb2_icon_ghost"
-
-	model_4		"t_yoda"
-	skin_4		"vandar"
-	uishader_4	"models/players/t_yoda/mb2_icon_vandar"
-	
 	saber1			saber_yodarework_legends
 	sabercolor		3
 	
-	saber1_1			saber_vandarrework_legends
-	sabercolor_1		4
 
 }
 
-Description 	"Jedi Sage - ^3Reworked - Air
+Description 	"Yoda - ^3Reworked - Air
 
-A glass cannon duelist and Force user with exceptional offensive and evasive skills.
+Renowned Jedi Master with exceptional offensive and evasive skills.
 
 ^2Weaponry:
 - Melee
