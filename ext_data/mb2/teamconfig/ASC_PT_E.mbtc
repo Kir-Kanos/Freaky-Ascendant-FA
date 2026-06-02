@@ -16,9 +16,7 @@ Classes
 
 SubclassesForClass1
 {
-	Subclass1	"pte1_Thug"
-	Subclass2	"pte2_KMonkeyL"
-	Subclass3	"v2_Hondo"
+	Subclass1	"v2_Hondo"
 }
 
 SubclassesForClass2
