@@ -2,7 +2,7 @@
 
 ClassInfo
 {
-	name			"asg5_NiteOwl"
+	name			"ptg5_NiteOwl"
 	classNumberLimit	2
 	MBClass		MB_CLASS_MANDALORIAN
 	weapons			WP_MELEE|WP_SONIC_NADE|WP_SABER|WP_BLASTER_PISTOL
