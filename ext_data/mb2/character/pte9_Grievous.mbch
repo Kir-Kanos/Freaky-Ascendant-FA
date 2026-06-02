@@ -1,8 +1,8 @@
-//Legends Mode character file - Created by Frenzy & Leos
+//CONVERTED BY MARSHALL
 
 Classinfo
 {
-	name			"ase9_Grievous"
+	name			"pte9_Grievous"
 	MBclass		MB_CLASS_CLONETROOPER
 	classNumberLimit	1
 	
