@@ -2,7 +2,7 @@
 
 ClassInfo
 {
-	name			"ase1_B1"
+	name			"pte1_B1"
 	extralives	2
 	MBClass		MB_CLASS_SOLDIER
 	weapons			WP_MELEE
