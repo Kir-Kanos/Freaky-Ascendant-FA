@@ -2,7 +2,7 @@
 
 ClassInfo
 {
-	name				"asg10_JHeal"
+	name				"ptg10_JHeal"
 	MBClass				MB_CLASS_JEDI
 	weapons				WP_MELEE|WP_SABER
 	forcepowers			FP_LEVITATION,3|FP_SEE,3|FP_SABERTHROW,2|FP_TELEPATHY,1|FP_PUSH,1|FP_PULL,1
@@ -28,25 +28,10 @@ ClassInfo
 	skin_1		"default"
 	uishader_1 	"models/players/adigallia/mb2_icon_default"
 	
-	model_2		"rey"
-	skin_2		"default"
-	uishader_2	"models/players/rey/mb2_icon_default"
-	
-	model_3		"rey"
-	skin_3		"jedi"
-	uishader_3	"models/players/rey/mb2_icon_jedi"
 
 	saber1			saber_adi
 	sabercolor		3
-	
-	saber1_1			kotorsab
-	sabercolor_1		1
 
-	saber1_2			saber_rey
-	sabercolor_2		4
-	
-	saber1_3			saber_rey5
-	sabercolor_3		1
 
 	holdables			HI_MEDPAC_BIG
 
