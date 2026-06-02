@@ -32,9 +32,8 @@ SubclassesForClass2
 	Subclass8    "h3_Delta"
 	Subclass9    "ptg3_Hunter"
 	Subclass10   "ptg3_Echo"
-	Subclass11   "ptg4_SkirataMedic"
+	Subclass11   "ptg4_SenGuard"
 	Subclass12   "h3_BossNass"
-	Subclass13   "ptg4_SenGuard"
 }
 
 SubclassesForClass3
