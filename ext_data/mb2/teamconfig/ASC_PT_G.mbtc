@@ -11,7 +11,7 @@ Classes
 	class3	"ptg5_CloneJet"
 	class4	"h8_WookWarr"
 	class5	"ptg9_JYoung"
-	class6	"ptg10_JForce"
+	class6	"ptg10_JHeal"
 }
 
 SubclassesForClass1
@@ -68,7 +68,6 @@ SubclassesForClass6
 	Subclass1	"ptg10_Obi"
 	Subclass2	"ptg10_PloK"
 	Subclass3	"ptg10_JTradition"
-	Subclass4	"ptg10_JHeal"
-	Subclass5	"ptg10_JKindredAbs"
-	Subclass6	"ptg10_JKindredProt"
+	Subclass4	"ptg10_JKindredAbs"
+	Subclass5	"ptg10_JKindredProt"
 }
