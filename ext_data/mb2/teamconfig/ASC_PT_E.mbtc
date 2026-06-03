@@ -16,7 +16,10 @@ Classes
 
 SubclassesForClass1
 {
-	Subclass1	"v2_Hondo"
+	Subclass1	"pte1_B1OOM"
+	Subclass2	"pte1_B1Heavy"
+	Subclass3 	"pte1_B1Spec"
+	Subclass4	"v2_Hondo"
 }
 
 SubclassesForClass2
