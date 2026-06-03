@@ -104,7 +104,7 @@ ClassInfo
 	c_att_skill_2	MB_ATT_FRAGS
 	c_att_names_2	"Frag Grenade"
 	c_att_ranks_2	5
-	c_att_descs_2	"40% Less Damage"
+	c_att_descs_2	"50% Less Damage"
 	
 	c_att_skill_3	MB_ATT_RESPAWNS
 	c_att_names_3	"Reinforcements"
@@ -150,7 +150,7 @@ WeaponInfo1
 	altMissileMissEffect	"grenades/EXP_alt"
 	Icon					"gfx/hud/w_icon_oldfraggrenade"
 	WeaponName			"Frag Grenade"
-	damagemod	0.6
+	damagemod	0.5
 }
 
 description	"B1-series Battle Droid 
