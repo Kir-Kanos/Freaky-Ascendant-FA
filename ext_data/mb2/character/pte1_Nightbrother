@@ -12,22 +12,19 @@ ClassInfo
 	WP_SaberFlags			HELD_STUN|HELD_POISON
 
 
-	attributes		MB_ATT_ASSEMBLE,3|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_WOOKIEE_FURY,3|MB_ATT_T21,3|MB_ATT_GETUPS,2|MB_ATT_HEALING,2|MB_ATT_DEXTERITY,2|MB_ATT_STAMINA,3|MB_ATT_INAIR_FORCE_REGEN
+	attributes		MB_ATT_ASSEMBLE,3|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_WOOKIEE_FURY,3|MB_ATT_T21,3|MB_ATT_GETUPS,2|MB_ATT_DEXTERITY,2|MB_ATT_STAMINA,3
 
 	classflags	CFL_STRONGAGAINSTPHYSICAL
-	
-	special1HUD HUD_REPEATERNADE
-	special2HUD HUD_FRAGNADE
 
 	saberDamage 100
-	saber1  		nb_mace
+	saber1  		nb_mace_asc
 	saberstyle  		SS_STRONG
 	BPmultiplier		0
-	APmultiplier		1.30
+	APmultiplier		1.25
 	ASmultiplier 	1.1
- CSmultiplier  1.2
+ 	CSmultiplier  1.1
 
- forcepowers FP_RAGE,3
+ 	forcepowers FP_RAGE,3
 	
 	special1 EAS_HI_SPRINT
 	special2 EAS_HI_RAGE
@@ -35,7 +32,6 @@ ClassInfo
 	
 
 	maxhealth		150
- maxarmor   0
 
 	resource 		RESOURCE_STAMINA
 	forcepool 		120
@@ -45,7 +41,7 @@ ClassInfo
  knockbackGiven 1.10
  knockbackTaken 0.5
 
-	baseSpeed 230
+	baseSpeed 220
  tauntAnim BOTH_ENGAGETAUNT
 	gloatAnim  BOTH_VICTORY_FAST
 
@@ -62,9 +58,6 @@ ClassInfo
 	skin_1				 "2"
 	uishader_1		 "models/players/nightbrother/mb2_icon_2"
 	modelscale 		1.04
-
-	
-
 
 	saber1		nb_mace
 	saberstyle	SS_STRONG|SS_DESANN
@@ -108,8 +101,8 @@ WeaponInfo1
 	MissileHitDroidEffect "effects/impacts/ImpactMediumRed2"
 	altWallImpact "effects/Blaster/Impact_Wall01R.efx"
 	customAmmo		88
- reloadTimeModifier 1.5
- rateMod 0.65
+	reloadTimeModifier 1.5
+	rateMod 0.65
 	altFireEnabled	0
 	hasAnimOverrides 	1
 	animReadyRun BOTH_DC15_IDLE
@@ -154,9 +147,7 @@ Melee Infantry with specialized energy bows and poisoned weapons along with mart
 - Strength (1)
 - Fury (3)
 - Getup (2)
-- Healing (2)
 - Assemble (3)
-- Aerial Stamina Regen
 
 ^3Abilities:
 - Sprint ^3[CS1]
