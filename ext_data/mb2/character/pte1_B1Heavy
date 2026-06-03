@@ -7,9 +7,9 @@ ClassInfo
 	MBClass		MB_CLASS_SOLDIER
 	weapons			WP_MELEE
 
-	classnumberlimit	3
+	classnumberlimit	2
 
-	attributes		MB_ATT_AMMO,1|MB_ATT_RECHARGE,3|MB_ATT_ASSEMBLE,1
+	attributes		MB_ATT_AMMO,1|MB_ATT_RECHARGE,2|MB_ATT_ASSEMBLE,1
 
 	WP_RepeaterFlags	HELD_SLOW|HELD_ALTRELOAD
 	WP_MinigunFlags		HELD_SLOW
@@ -18,18 +18,17 @@ ClassInfo
 	knockbackTaken	1.05 	
 	knockbackGiven 0.9
 
-	MaxHealth		45
+	MaxHealth		40
 
-	MaxArmor		65
+	MaxArmor		40
 	
-	forcepool	40
+	forcepool	30
 	forceregen	1.5
 	resource	 RESOURCE_BATTERY
 
 	damageGiven	1
 
 	special1HUD HUD_FRAGNADE
-	special2HUD HUD_PLX1ROCKETS
 	
 	classflags CFL_DISMEMBERFRAGILE
 	
@@ -69,7 +68,7 @@ ClassInfo
 	isCustomBuild	1
 	mbPoints		24
 
-	c_att_skill_0	MB_ATT_REPEATER
+	c_att_skill_0	MB_ATT_CR2
 	c_att_names_0	"E-5C Heavy Repeater"
 	c_att_ranks_0	0,2,2
 	c_att_descs_0	"Repeater, 15%+ Velocity, 5%+ Damage, 5%+ RoF"
@@ -113,14 +112,14 @@ WeaponInfo0
 	NewViewModel		"models/weapons2/e60r_launcher/e60r_launcher.md3"
 	Icon				"gfx/hud/w_icon_e60r_launcher"
 	WeaponName			"E-60R Missile Launcher"
- Damagemod .75
- reloadTimeModifier 1.35
+	Damagemod .75
+	reloadTimeModifier 1.35
 }
 
 WeaponInfo1
 {
-	WeaponToReplace		WP_REPEATER
-	WeaponBasedOff		WP_REPEATER 
+	WeaponToReplace		WP_CR2
+	WeaponBasedOff		WP_CR2 
 	NewWorldModel 		"models/weapons2/e5/e5_w.glm"
 	NewViewModel 		"models/weapons2/e5/e5.md3"
 	Icon				"gfx/hud/w_icon_e5"
@@ -139,9 +138,8 @@ WeaponInfo1
 	MuzzleEffect  		"Blaster/MuzzleFlash01R"
 	MissileEffect		"Blaster/Shot01R"
 	altfireenabled 0
-	Velocitymod 1.15
-	Damagemod 1.05
-	Ratemod	1.05
+	clipSize 	40
+	Ratemod 0.8
 }
 
 WeaponInfo2
@@ -177,16 +175,14 @@ WeaponInfo3
 	WeaponName			"Z-6 Rotary Blaster Cannon"
 	customammo		900
 	clipSize	300
-	altFireEnabled	1
 	damageMod .95
 	rateMod 0.62
- velocityMod .76
-isMinigun 1
+    velocityMod .76
 }
 
 description	"B1-series Heavy Battle Droid 
 
-Mass-produced, combantants with expanded heavy weapons and superior reinforcement potential.
+Mass-produced combantants with expanded heavy weapons and superior reinforcement potential.
 
 ^2Weaponry:
 - Melee
@@ -195,5 +191,5 @@ Mass-produced, combantants with expanded heavy weapons and superior reinforcemen
 - Reinforcements (1)
 - 10% less Kb Given
 - 5% more Kb Taken
-- Battery Recharge (3)
+- Battery Recharge (2)
 - Assemble (1)"
