@@ -133,6 +133,9 @@ WeaponInfo1
 	animStand BOTH_WOOKIEE_RAGE_STAND
 	//animStand BOTH_SPEAR_STANCE
 	FlashSound0			"sound/weapons/DLT19/fire.wav"	
+	FlashSound1			"sound/weapons/DLT19/fire.wav"	
+	FlashSound2			"sound/weapons/DLT19/fire.wav"
+	FlashSound3			"sound/weapons/DLT19/fire.wav"	
 	MuzzleEffect  		"Blaster/MuzzleFlash01R"
 	MissileEffect		"Blaster/Shot01R"
 	altfireenabled 0
