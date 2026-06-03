@@ -72,7 +72,7 @@ Fast Movement, Mag Reload"
 	c_att_skill_2	MB_ATT_WESTARM5
 	c_att_names_2	"E-5s Sniper Rifle (M5)"
 	c_att_ranks_2	6
-	c_att_descs_2 "50% faster RoF, 45% more Velocity, 20% less Dmg,
+	c_att_descs_2 "50% faster RoF, 45% more Velocity, 25% less Dmg,
 50% less FP Dmg, 50% slower Reload, Slow Movement"
 
 	c_att_skill_3	MB_ATT_ARC_RIFLE_SCOPE
@@ -206,7 +206,7 @@ WeaponInfo3
 	animStand BOTH_STAND8
 	rateMod 0.5
 	velocityMod 1.45
-	damageMod 0.80
+	damageMod 0.75
 	FPMult  0.5
 	reloadTimeModifier 1.5
 	clipsize 36
