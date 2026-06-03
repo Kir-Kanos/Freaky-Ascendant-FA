@@ -19,23 +19,17 @@ ClassInfo
 
 	speed .97
 
-	Maxhealth		40
+	Maxhealth		30
+	MaxArmor		40
 
 	special1	EAS_HI_DODGE
 	special2	EAS_HI_TRACKER
-
-	MaxArmor		45
 	
 	forcepool	30
 	forceregen	1.5
 	resource	 RESOURCE_BATTERY
 
-	damageGiven	1
-
-	
-
 	special1HUD HUD_FRAGNADE
-	special2HUD HUD_PLX1ROCKETS
 	
 	classflags CFL_DISMEMBERFRAGILE
 	
