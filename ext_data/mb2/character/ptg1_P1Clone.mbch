@@ -65,8 +65,8 @@ WeaponInfo0
 	AltMuzzleEffect		"Blaster/MuzzleFlash01B"
 	MissileEffect		"blaster/Shot04B"
 	AltMissileEffect	"Blaster/Shot03B"
-	FlashSound0			"sound/weapons/repeater/alt_fire_old.mp3"
-    AltFlashSound0      "sound/weapsup/sup/wpn_rep_blaster_fire.wav"
+	FlashSound0			"sound/weapons/dc17m/alt_fire.wav"
+    AltFlashSound0      "sound/weapons/Bf2005Cr/fire.wav"
 	Icon				"gfx/hud/w_icon_clonerifle"
 	WeaponName			"DC-15LE Heavy Repeater"
     rateMod             0.9
