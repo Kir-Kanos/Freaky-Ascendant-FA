@@ -9,25 +9,24 @@ ClassInfo
 
 	classnumberlimit	3
 
-	attributes		MB_ATT_AMMO,1|MB_ATT_RECHARGE,2|MB_ATT_ASSEMBLE,1|MB_ATT_AMMO,3|MB_ATT_BINOCULARS|MB_ATT_FORCEFIELD,1|MB_ATT_RALLY|MB_ATT_CCTRAINING,3|MB_ATT_TRACKING_BEACON
+	attributes		MB_ATT_AMMO,1|MB_ATT_RECHARGE,2|MB_ATT_ASSEMBLE,1|MB_ATT_AMMO,3|MB_ATT_BINOCULARS|MB_ATT_RALLY|MB_ATT_CCTRAINING,3|MB_ATT_TRACKING_BEACON|MB_ATT_USE_DISTANCE,1
 
 	classflags	CFL_STATVIEWER
 
 	knockbackTaken	1.10 	
 	knockbackGiven 0.9
 
-	Maxhealth		50
-
-	MaxArmor		45
+	Maxhealth		30
+	MaxArmor		40
 	
-	forcepool	40
-	forceregen	2
+	forcepool	30
+	forceregen	1.5
 	resource	 RESOURCE_BATTERY
 
 	damageGiven	1
 
 	special1HUD HUD_FRAGNADE
-	special2HUD HUD_PLX1ROCKETS
+
 
 	special1	EAS_HI_BASESEEKER
 	special2	EAS_HI_SENTRY
@@ -94,9 +93,6 @@ ClassInfo
 	c_att_names_7	"Sentry Turret"
 	c_att_ranks_7	8
 	c_att_descs_7	"CS2"
-
-
-	
 
 }
 WeaponInfo0
