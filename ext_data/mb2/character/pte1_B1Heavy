@@ -26,8 +26,6 @@ ClassInfo
 	forceregen	1.5
 	resource	 RESOURCE_BATTERY
 
-	damageGiven	1
-
 	special1HUD HUD_FRAGNADE
 	
 	classflags CFL_DISMEMBERFRAGILE
@@ -71,7 +69,7 @@ ClassInfo
 	c_att_skill_0	MB_ATT_CR2
 	c_att_names_0	"E-5C Heavy Repeater"
 	c_att_ranks_0	0,2,2
-	c_att_descs_0	"Repeater, 15%+ Velocity, 5%+ Damage, 5%+ RoF"
+	c_att_descs_0	"CR-2,+20% ROF"
 	
 	c_att_skill_1	MB_ATT_AMMO
 	c_att_names_1	"Ammo"
