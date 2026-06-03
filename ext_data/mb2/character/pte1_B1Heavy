@@ -27,7 +27,7 @@ ClassInfo
 	resource	 RESOURCE_BATTERY
 
 	special1HUD HUD_FRAGNADE
-	
+	special2HUD HUD_PLX1ROCKETS	
 	classflags CFL_DISMEMBERFRAGILE
 	
 	flourishAnim BOTH_PAIN17
@@ -89,7 +89,7 @@ ClassInfo
 	c_att_skill_4	MB_ATT_FRAGS
 	c_att_names_4	"Frag Grenade"
 	c_att_ranks_4	4
-	c_att_descs_4	"30% Less Damage"
+	c_att_descs_4	"50% Less Damage"
 	
 	c_att_skill_5	MB_ATT_DET_PACK
 	c_att_names_5	"Det Pack"
@@ -152,7 +152,7 @@ WeaponInfo2
 	altMissileMissEffect	"grenades/EXP_alt"
 	Icon					"gfx/hud/w_icon_oldfraggrenade"
 	WeaponName			"Frag Grenade"
-	damagemod .70
+	damagemod .50
 }
 
 WeaponInfo3
