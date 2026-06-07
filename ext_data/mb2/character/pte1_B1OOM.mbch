@@ -67,7 +67,7 @@ ClassInfo
 	c_att_descs_1	"20%+ RoF, 10%- Damage, 10%- Velocity"
 
 	c_att_skill_2	MB_ATT_FRAGS
-	c_att_names_2	"Seeker Flare (Flare"
+	c_att_names_2	"Seeker Flare (Flare)"
 	c_att_ranks_2	2
 	c_att_descs_2	"Large Radius, Tracks, Low Damage"
 	
