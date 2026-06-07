@@ -113,16 +113,19 @@ WeaponInfo0
 
 WeaponInfo1
 {
-	WeaponToReplace		WP_FRAG_NADE 
-	WeaponBasedOff		WP_FRAG_NADE 
-	NewWorldModel 	"models/weapons2/oldfraggrenade/thermal_w.glm"
-	NewViewModel 		"models/weapons2/oldfraggrenade/thermal.md3"
-	NewHandsModel		"models/weapons2/oldfraggrenade/thermal_hand.md3"
-	MissileModel			"models/weapons2/oldfraggrenade/thermal_proj.md3"
-	AltMissileModel		"models/weapons2/oldfraggrenade/thermal_proj.md3"
-	altMissileMissEffect	"grenades/EXP_alt"
-	Icon					"gfx/hud/w_icon_oldfraggrenade"
-	WeaponName			"Seeker Flare"
+	WeaponToReplace	WP_FRAG_NADE
+	WeaponBasedOff	WP_FRAG_NADE
+	NewWorldModel	"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel	"models/weapons/Grenade_Concussion/viewmodel.md3"
+	Icon	"gfx/hud/w_icon_stungrenade"
+	MissileModel	"models/weapons/Grenade_Concussion/proj.md3"
+	MissileMissEffect			"mustafar/volcano1"
+	MissileHitHumanEffect	"mustafar/volcano1"
+	MissileHitDroidEffect	"mustafar/volcano1"
+	Weaponname			"Seeker Flare"
+	altfireenabled 0
+	damageMod 0.01
+	splashRadius 500
 }
 WeaponInfo2
 {
