@@ -9,7 +9,7 @@ ClassInfo
 
 	classnumberlimit	3
 
-	attributes		MB_ATT_AMMO,1|MB_ATT_RECHARGE,2|MB_ATT_ASSEMBLE,1|MB_ATT_AMMO,3|MB_ATT_BINOCULARS|MB_ATT_RALLY|MB_ATT_CCTRAINING,3|MB_ATT_TRACKING_BEACON|MB_ATT_USE_DISTANCE,1
+	attributes		MB_ATT_AMMO,1|MB_ATT_RECHARGE,2|MB_ATT_ASSEMBLE,1|MB_ATT_AMMO,3|MB_ATT_BINOCULARS|MB_ATT_RALLY|MB_ATT_CCTRAINING,2|MB_ATT_TRACKING_BEACON|MB_ATT_QUICKTHROW,1
 
 	classflags	CFL_STATVIEWER
 
@@ -30,7 +30,7 @@ ClassInfo
 
 	special1	EAS_HI_BASESEEKER
 	special2	EAS_HI_SENTRY
-	special3	EAS_HI_SHIELD
+	special3	EAS_HI_QUICKTHROW
 	special4	EAS_HI_BINOCULARS
 	
 	classflags CFL_DISMEMBERFRAGILE
@@ -54,7 +54,7 @@ ClassInfo
 	customblue_1	0.0 //defaults to Open y
 	
 	isCustomBuild	1
-	mbPoints		24
+	mbPoints		20
 		
 
 	c_att_skill_0	MB_ATT_BLASTER
@@ -67,32 +67,28 @@ ClassInfo
 	c_att_descs_1	"20%+ RoF, 10%- Damage, 10%- Velocity"
 
 	c_att_skill_2	MB_ATT_FRAGS
-	c_att_names_2	"Frag Grenade"
-	c_att_ranks_2	4
+	c_att_names_2	"Seeker Flare"
+	c_att_ranks_2	2
+	c_att_descs_2	"Large Radius, Tracks, Low Damage"
 	
 	c_att_skill_3	MB_ATT_MICRO_GRENADES
 	c_att_names_3	"Smoke Grenades (Conc)"
 	c_att_ranks_3	2
-	c_att_descs_3 "Obscures vision on det, 99.9% less Dmg, 40% faster RoF"
+	c_att_descs_3	"Obscures vision on det, 99.9% less Dmg, 40% faster RoF"
 
 	c_att_skill_4	MB_ATT_ASSEMBLE
 	c_att_names_4	"Assemble"
 	c_att_ranks_4	0,2,2
 
-	c_att_skill_5	MB_ATT_DISP_ARMOR
-	c_att_names_5	"Repair Protocol"
-	c_att_ranks_5	10
-	c_att_descs_5	"Armor Dispenser, Use Key In Melee"
+	c_att_skill_5	MB_ATT_BASESEEKER
+	c_att_names_5	"Defense Droid"
+	c_att_ranks_5	8
+	c_att_descs_5	"CS1"
 
-	c_att_skill_6	MB_ATT_BASESEEKER
-	c_att_names_6	"Defense Droid"
+	c_att_skill_6	MB_ATT_SENTRY
+	c_att_names_6	"Sentry Turret"
 	c_att_ranks_6	8
-	c_att_descs_6	"CS1"
-
-	c_att_skill_7	MB_ATT_SENTRY
-	c_att_names_7	"Sentry Turret"
-	c_att_ranks_7	8
-	c_att_descs_7	"CS2"
+	c_att_descs_6	"CS2"
 
 }
 WeaponInfo0
@@ -126,7 +122,7 @@ WeaponInfo1
 	AltMissileModel		"models/weapons2/oldfraggrenade/thermal_proj.md3"
 	altMissileMissEffect	"grenades/EXP_alt"
 	Icon					"gfx/hud/w_icon_oldfraggrenade"
-	WeaponName			"Frag Grenade"
+	WeaponName			"Seeker Flare"
 }
 WeaponInfo2
 {
@@ -201,7 +197,7 @@ Specially produced lieutenants with superior utility and leadership potential.
 ^8Attributes:
 - Reinforcements (2)
 - Rally
-- Close Combat (3)
+- Close Combat (2)
 - Integrated Commlink (Tracking Beacon)
 - 10% less Kb Given
 - 10% more Kb Taken
@@ -210,4 +206,4 @@ Specially produced lieutenants with superior utility and leadership potential.
 
 ^8Abilities:
 - Binoculars ^3[CS4]
-- Energy Shield ^3[CS3]"
+- Quickthrow ^3[CS3]"
