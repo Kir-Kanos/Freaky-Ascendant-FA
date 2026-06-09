@@ -1,0 +1,156 @@
+//CONVERTED BY MARSHALL
+
+ClassInfo
+{
+	name				"ptg9_Kit"
+	MBClass	MB_CLASS_JEDI
+	classNumberLimit	1
+
+	weapons				WP_SABER|WP_MELEE|WP_ROCKET_LAUNCHER|WP_DC_CARBINE
+
+	attributes			MB_ATT_DEFLECT,1|MB_ATT_FORCEBLOCK,3|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_WATER_BREATHING|MB_ATT_DC_CARBINE,3
+
+	forcepowers			FP_LEVITATION,3|FP_PUSH,1|FP_SEE,3
+	WP_RocketLauncherFlags HELD_ALTRELOAD|HELD_STUN
+	WP_DCCarbineFlags HELD_STUN|HELD_ALTRELOAD|HELD_IGNOREBLOCK
+	damageGiven  1.1
+	maxhealth			135
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+	forcepool			100
+	resource RESOURCE_FORCE
+ 	rateOfFire_melee .9
+	APmultiplier		1.05
+	ASmultiplier 	1.1
+	CSmultiplier 	1.1
+	saberstyle			SS_TAVION|SS_MEDIUM|SS_FAST
+	saberThrowDamage 40
+	saberSpecialDamage 1.25
+	special3 EAS_FP_SPEED
+	special4 EAS_FP_TELEPATHY
+
+	classflags CFL_NOPICKUPS
+
+	flourishanim 	BOTH_CROUCH3
+
+	saber1		saber_fisto
+	sabercolor	3
+
+	uioverlay "gfx/icons/frontline"
+	modelScale    1.06
+	model		"kitfisto"
+	skin			"default"
+	uishader	"models/players/kitfisto/mb2_icon_default"
+	
+	model_1	"kitfisto"
+	skin_1		"robed"
+	uishader_1	"models/players/kitfisto/mb2_icon_robed"
+	
+	model_2	"kitfisto_cw"
+	skin_2		"default"
+	uishader_2 	"models/players/kitfisto_cw/mb2_icon_default"
+		
+	model_3	"kitfisto"
+	skin_3		"tcw"
+	uishader_3 "models/players/kitfisto/mb2_icon_tcw"
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_ROCKET_LAUNCHER
+	WeaponBasedOff		WP_ROCKET_LAUNCHER
+	NewWorldModel		"models/weapons2/dummyblaster/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	MuzzleEffect		"gfx/effects/forceflare"
+	MissileEffect		"effects\env\water_splash_missile.efx" 
+	FlashSound0			"sound/weapons/saberot/hitwater.mp3"
+	MissileMissEffect	"effects\Geysers\geyser_medium_water.efx" //effects/crazyrace2/waterfall
+	MissileHitHumanEffect "effects/dtf_waterfall"
+	MissileHitDroidEffect "effects/dtf_waterfall"
+	hasAnimOverrides 	1
+	animReady 			BOTH_MELEE_BLOCK_BLASTER_L 
+	animReadyWalk 		BOTH_MELEE_BLOCK_BLASTER_L
+	animReadyRun 		BOTH_MELEE_BLOCK_BLASTER_L
+	animReadyNoAmmo 	BOTH_PISTOL_IDLE
+	animAttack 			BOTH_SUPERPUSH
+	animAttackRun		BOTH_SUPERPUSH
+	animAttackWalk 		BOTH_SUPERPUSH
+	animStand 			BOTH_MELEE_BLOCK_BLASTER_L 
+	Icon				"gfx/hud/w_icon_merrsonn"
+	WeaponName			"Aquatic Blasts"
+	clipSize 			2
+	CustomAmmo 			6
+	velocityMod 0.4
+	rateMod	2
+	ReloadTimeModifier 2
+	damageMod	0.7
+	altfireenabled 0
+}
+WeaponInfo1
+{
+WeaponToReplace WP_DC_CARBINE
+WeaponBasedOff WP_DC_CARBINE
+NewWorldModel "models/weapons2/dummyblaster/model.glm"
+NewViewModel "models/weapons2/noweap/noweap.md3"
+altMuzzleEffect "gfx/effects/forceflare"
+altMissileEffect "Force/inv_wave"
+AltMissileMissEffect "effects\env\powerbolt_dxun.efx"
+AltMissileHitHumanEffect "force/kothos_recharge"
+AltMissileHitDroidEffect "force/kothos_recharge"
+Icon "gfx/hud/HUD_body_blue.tga"
+WeaponName "Sonic Scream"
+altFlashSound0 "sound/chars/glm_howler/misc/death2.mp3"
+ReloadTimeModifier 5
+rateMod 5
+velocityMod 0.2
+clipsize 20
+CustomAmmo 40
+primFireEnabled 0
+hasAnimOverrides 1
+animReady BOTH_SONICPAIN_START
+animReadyWalk BOTH_SONICPAIN_START
+animReadyNoAmmo BOTH_SONICPAIN_START
+animReadyRun BOTH_SONICPAIN_START
+animAttack BOTH_SUPERPUSH
+animAttackWalk BOTH_SUPERPUSH
+animAttackRun BOTH_SUPERPUSH
+animStand BOTH_SONICPAIN_START
+}
+description	"Kit Fisto - Marshall
+
+An aggressive and masterful Jedi duelist, but lacking reliable tools for dealing with blaster pressure.
+
+^2Weaponry:
+- Melee
+-- 10% faster RoF
+- Lightsaber (Yellow/Cyan/Blue)
+-- Saber Defense (3)
+-- Blaster Defense (1)
+-- Deflect (1)
+-- 125% Spec Dmg mult
+-- Saber Throw ^3[CS1]
+--- 33% more Dmg
+
+- Aquatic Blasts
+-- Based off Rocket Launcher, prim only 
+-- 200% slower ROF and reload
+-- 60% slower velocity
+-- 30% less damage
+-- Stuns on hit 
+
+- Sonic Scream
+-- Based off DC15, sec fire only 
+-- Stuns on hit. ignores block
+-- 500% slower rof, 80% slower velocity
+
+^5Force Powers:
+- Jump (3)
+- Push (1)
+- Sense (3)
+
+^8Attributes:
+- Aerial Force Regen
+- Heal capped at 35hp
+- Force Block (3)
+- Force Focus (2)
+- Water Breathing"
