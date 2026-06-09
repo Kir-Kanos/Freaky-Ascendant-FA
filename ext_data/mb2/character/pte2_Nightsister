@@ -1,10 +1,9 @@
-//Siege class def file. Created by "Goose" Goosto
-
 ClassInfo
 {
 	name		"pte2_Nightsister"
 	extralives 1
  MBClass			MB_CLASS_JEDI
+	classNumberLimit	3
 
 	weapons			WP_MELEE|WP_SABER|WP_T21|WP_CLONE_RIFLE|WP_FRAG_NADE|WP_THERMAL
 
@@ -14,63 +13,40 @@ ClassInfo
 	WP_FragNadeFlags		HELD_POISON
 
 
-	attributes		MB_ATT_ASSEMBLE,1|MB_ATT_T21,3|MB_ATT_GETUPS,2|MB_ATT_HEALING,2|MB_ATT_DEXTERITY,2|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_CLONERIFLE,2|MB_ATT_FRAGS,3|MB_ATT_POISON_DART,6|MB_ATT_THROWER_POISON|MB_ATT_QUICKTHROW,1|MB_ATT_DODGE,3|MB_ATT_CLONEBLOBS,5|MB_ATT_FP_SABER_DEFENSE,1
+	attributes		MB_ATT_ASSEMBLE,1|MB_ATT_T21,3|MB_ATT_GETUPS,2|MB_ATT_HEALING,1|MB_ATT_DEXTERITY,2|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_CLONERIFLE,2|MB_ATT_FRAGS,3|MB_ATT_POISON_DART,6|MB_ATT_THROWER_POISON|MB_ATT_QUICKTHROW,1|MB_ATT_DODGE,3|MB_ATT_CLONEBLOBS,5|MB_ATT_FP_SABER_DEFENSE,1
 
-	forcepowers	FP_TELEPATHY,1|FP_PULL,1|FP_PUSH,1|FP_SENSE,1|FP_LIGHTNING,1|FP_BLIND,1
+	forcepowers	FP_TELEPATHY,1|FP_PULL,1|FP_PUSH,1|FP_SEE,1|FP_LIGHTNING,1|FP_BLIND,1|FP_LEVITATION,2
 
-	
-	special1HUD HUD_REPEATERNADE
-	special2HUD HUD_FRAGNADE
-
-	saberDamage 120
-	saber1  		Cutlass_legends
-	saberstyle  		SS_TAVION
-	BPmultiplier		.7
-	APmultiplier		1.10
-	ASmultiplier 	1.1
- CSmultiplier  1.1
+	saberDamage 	120
+	BPmultiplier	.7
+	APmultiplier	1.10
+	ASmultiplier  	1.1
+	CSmultiplier  	1.1
 
 	
-	special1 EAS_HI_DODGE
-	special2 EAS_HI_POISONTHROWER
-	special3 EAS_HI_QUICKTHROW
-	special4 EAS_HI_POISON
-	
-	
-
+	special1 	EAS_HI_DODGE
+	special2 	EAS_HI_POISONTHROWER
+	special3 	EAS_HI_QUICKTHROW
+	special4 	EAS_HI_POISON
 	maxhealth		125
- maxarmor   0
-
 	resource 		RESOURCE_FORCE
-	forcepool 		140
-	forceregen		.6
+	forcepool 		90
+	forceregen		.4
 
-	
- rateOfFire_Melee .95
- knockbackGiven 1.05
- knockbackTaken 1
+	rateOfFire_Melee .95
+	knockbackGiven 1.05
+	knockbackTaken 1
 
 	baseSpeed 235
- tauntAnim BOTH_ENGAGETAUNT
+ 	tauntAnim BOTH_ENGAGETAUNT
 	gloatAnim  BOTH_VICTORY_FAST
 
 	uioverlay_r "gfx/icons/infantry"
-	uioverlay_l "gfx/icons/brawler"
- uioverlay_c "gfx/icons/hybrid"
+ 	uioverlay_c "gfx/icons/hybrid"
 	
 	model			 "nightsister"
 	skin				 "default"
 	uishader "models/players/nightsister/mb2_icon_default"
-	modelscale 		1.01
-
-	model_1			 "nightsister_anyssa"
-	skin_1				 "default"
-	uishader_1		 "models/players/nightsister_anyssa/mb2_icon_default"
-	modelscale 		1.01
-	
-
-	
-
 
 	saber1		Cutlass_legends
 	saberstyle	SS_TAVION|SS_FAST
@@ -78,9 +54,9 @@ ClassInfo
 	saber1_1	Cutlass_legends
 	saber2_1	Cutlass_legends
 	saberstyle_1	SS_DUAL
-}
 
-
+	saber1_2	ns_sword
+	saberstyle_2	SS_STRONG
 }
 ForceInfo0
 {
@@ -90,8 +66,6 @@ ForceInfo0
 	ConeEffect	"effects/weather/smoke_plo"
 	startSound "sound/effects/woosh10.mp3"
 }
-
-}
 ForceInfo1
 {
 	ForceToReplace	FP_PUSH
@@ -100,16 +74,13 @@ ForceInfo1
 	ConeEffect	"effects/weather/smoke_plo"
 	startSound "sound/effects/woosh10.mp3"
 }
-
 ForceInfo2
 {
-ForceToReplace  FP_LIGHTNING
-Icon  "gfx/forcepowers/lightning_judge"
-ForcePowerName "Magik Pulse"
-ConeEffect  "effects/force/lightning_judge_el"
+	ForceToReplace  FP_LIGHTNING
+	Icon  "gfx/forcepowers/lightning_judge"
+	ForcePowerName "Magik Pulse"
+	ConeEffect  "effects/force/lightning_judge_el"
 }
-
-
 WeaponInfo0
 {
 	WeaponToReplace	WP_SABER
@@ -119,7 +90,6 @@ WeaponInfo0
 	Icon				"gfx/hud/w_icon_hondocutlass"
 	WeaponName		"Nightsister Enchanted Sword"
 }
-
 WeaponInfo1
 {
 	WeaponToReplace 	WP_T21
@@ -139,8 +109,8 @@ WeaponInfo1
 	MissileHitDroidEffect "effects/impacts/ImpactMediumRed2"
 	altWallImpact "effects/Blaster/Impact_Wall01R.efx"
 	customAmmo		120
- reloadTimeModifier 1
- rateMod 0.65
+	reloadTimeModifier 1
+	rateMod 0.65
 	altFireEnabled	0
 	hasAnimOverrides 	1
 	animReadyRun BOTH_DC15_IDLE
@@ -152,7 +122,6 @@ WeaponInfo1
 	animAttackWalk BOTH_ATTACK4
 	animStand TORSO_DROPWEAP4
 }
-
 WeaponInfo2
 {
 
@@ -164,11 +133,11 @@ WeaponInfo2
 	WeaponName 		"Nightsister Casting Staff"
 	FlashSound0	"sound/underground/steamPushfast.mp3"
 	altflashsound0	"sound/underground/steamPushfast.mp3"
-MissileMissEffect	"noghri_stick/flesh_impact"
-MissileHitHumanEffect	"noghri_stick/flesh_impact"
-MissileHitDroidEffect	"noghri_stick/flesh_impact"
-MissileEffect	"sonic_pistol/projectile"
-MuzzleEffect	"Blaster/MuzzleFlash01G"
+	MissileMissEffect	"noghri_stick/flesh_impact"
+	MissileHitHumanEffect	"noghri_stick/flesh_impact"
+	MissileHitDroidEffect	"noghri_stick/flesh_impact"
+	MissileEffect	"sonic_pistol/projectile"
+	MuzzleEffect	"Blaster/MuzzleFlash01G"
 	hasAnimOverrides 1
 	animReadyRun BOTH_STAND3
 	animReady BOTH_STAND3
@@ -178,37 +147,35 @@ MuzzleEffect	"Blaster/MuzzleFlash01G"
 	animAttack BOTH_ATTACK3 
 	animAttackWalk BOTH_ATTACK3 
 	animStand BOTH_WOOKIEE_RAGE_STAND
-	//animStand BOTH_SPEAR_STANCE
-altMissileEffect "Blaster/Shot04G"
-altMuzzleEffect	"Blaster/MuzzleFlash01G"
+	altMissileEffect "Blaster/Shot04G"
+	altMuzzleEffect	"Blaster/MuzzleFlash01G"
 	altMissileMissEffect "noghri_stick/flesh_impact"
 	altMissileHitHumanEffect "noghri_stick/flesh_impact"
 	altMissileHitDroidEffect "noghri_stick/flesh_impact"
 	altWallImpact "slime_explosion_new"
-	damagemod 4
+	damagemod 3
 	ratemod	5
-	velocitymod .5
+	velocitymod .4
 	clipsize 10
 }
-WeaponInfo3{
-WeaponToReplace WP_FRAG_NADE
-WeaponBasedOff WP_THERMAL
-Icon						"gfx/hud/w_thermal_grenade"
-NewWorldModel	"models/weapons/Grenade_Concussion/model.glm"
-NewViewModel	"models/weapons/Grenade_Concussion/viewmodel.md3"
-WeaponName	"Poison Concoction"
-MissileModel "models/weapons/Grenade_Concussion/proj.md3"
-MissileMissEffect	"slime_explosion_new"
-MissileEffect "sonic_pistol/projectile"
-altMissileModel "models/weapons/Grenade_Concussion/proj.md3"
-altMissileMissEffect	"slime_explosion_new"
-altMissileEffect "sonic_pistol/projectile"
-damageMod 0.25
+WeaponInfo3
+{
+	WeaponToReplace WP_FRAG_NADE
+	WeaponBasedOff WP_THERMAL
+	Icon						"gfx/hud/w_thermal_grenade"
+	NewWorldModel	"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel	"models/weapons/Grenade_Concussion/viewmodel.md3"
+	WeaponName	"Poison Concoction"
+	MissileModel "models/weapons/Grenade_Concussion/proj.md3"
+	MissileMissEffect	"slime_explosion_new"
+	MissileEffect "sonic_pistol/projectile"
+	altMissileModel "models/weapons/Grenade_Concussion/proj.md3"
+	altMissileMissEffect	"slime_explosion_new"
+	altMissileEffect "sonic_pistol/projectile"
+	damageMod 0.25
 }
 
-
-
-description	"Nightsister 
+description	"Nightsister -Stromboli
 
 Magik wielding casters who utilize enchanted weapons, poison and deception to fell their enemies
 
@@ -218,6 +185,7 @@ Magik wielding casters who utilize enchanted weapons, poison and deception to fe
 - Nightsister Enchanted Sword
 - Single Sword (Cyan/Blue)
 - Dual Swords (Dual)
+- Nightsister Blade (Red)
 -- No Blaster Block
 -- Saber Defense (1)
 -- Poisons
@@ -230,23 +198,25 @@ Magik wielding casters who utilize enchanted weapons, poison and deception to fe
 - Poison Concoction (Frag 3)
 -- Poisons/75% Less Damage
 - Nightsister Casting Staff (Clone Rifle 2)
--- 400%+ Damage, 500%- RoF, 50% Less Velocity, Inflict Poison
+-- 300%+ Damage, 500%- RoF, 60% Less Velocity, Inflict Poison
 -- 5 Concussion Blobs
 
 
 ^5Powers:
-- Blind
+- Blind (1)
 - Mist Push (Push 1)
 - Gust Of Wind (Pull 1)
 - Magik Pulse (Lightning 1)
 - Mind Trick (1)
+- Farsight (Sense 1) 
+- Magik Enhanced Jump (2)
 
 ^8Attributes:
 - Reinforcement (1)
 - 5% more Kb Given
 - Dexterity (2) 
 - Getup (2)
-- Healing (2)
+- Healing (1)
 - Assemble (1)
 - Aerial Force Regen
 
