@@ -27,8 +27,6 @@ ClassInfo
 	saberstyle			SS_TAVION|SS_MEDIUM|SS_FAST
 	saberThrowDamage 40
 	saberSpecialDamage 1.25
-	special3 EAS_FP_SPEED
-	special4 EAS_FP_TELEPATHY
 
 	classflags CFL_NOPICKUPS
 
