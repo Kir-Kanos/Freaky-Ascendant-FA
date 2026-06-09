@@ -6,7 +6,7 @@ ClassInfo
 	extralives	1
 	MBClass		MB_CLASS_SOLDIER
 	weapons			WP_MELEE
-
+	classnumberlimit	3
 	WP_MeleeFlags	HELD_FAST
 	WP_ClonePistolFlags HELD_FAST|HELD_ALTRELOAD
 	WP_BlasterFlags	HELD_ALTRELOAD
