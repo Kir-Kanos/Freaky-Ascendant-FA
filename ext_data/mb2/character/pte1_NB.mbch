@@ -1,0 +1,155 @@
+//Siege class def file. Created by "Goose" Goosto
+
+ClassInfo
+{
+	name		"pte1_NB"
+	extralives 3
+ MBClass			MB_CLASS_BOUNTY_HUNTER
+
+	weapons			WP_MELEE|WP_SABER|WP_T21
+
+	WP_T21Flags			HELD_ALTRELOAD|HELD_STUN|HELD_FLAME
+	WP_SaberFlags			HELD_STUN|HELD_POISON
+
+
+	attributes		MB_ATT_ASSEMBLE,3|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_WOOKIEE_FURY,3|MB_ATT_T21,3|MB_ATT_GETUPS,2|MB_ATT_DEXTERITY,2|MB_ATT_STAMINA,3
+
+	classflags	CFL_STRONGAGAINSTPHYSICAL
+
+	saberDamage 100
+	saber1  		nb_mace_asc
+	saberstyle  		SS_STRONG
+	BPmultiplier		0
+	APmultiplier		1.25
+	ASmultiplier 	1.1
+ 	CSmultiplier  1.1
+
+ 	forcepowers FP_RAGE,3
+	
+	special1 EAS_HI_SPRINT
+	special2 EAS_HI_RAGE
+	
+	
+
+	maxhealth		150
+
+	resource 		RESOURCE_STAMINA
+	forcepool 		120
+
+	
+ rateOfFire_Melee .90
+ knockbackGiven 1.10
+ knockbackTaken 0.5
+
+	baseSpeed 220
+ tauntAnim BOTH_ENGAGETAUNT
+	gloatAnim  BOTH_VICTORY_FAST
+
+	uioverlay_r "gfx/icons/infantry"
+	uioverlay_l "gfx/icons/brawler"
+ uioverlay_c "gfx/icons/hybrid"
+	
+	model			 "nightbrother"
+	skin				 "default"
+	uishader "models/players/nightbrother/mb2_icon_default"
+	modelscale 		1.04
+
+	model_1			 "nightbrother"
+	skin_1				 "2"
+	uishader_1		 "models/players/nightbrother/mb2_icon_2"
+	modelscale 		1.04
+
+	saber1		nb_mace
+	saberstyle	SS_STRONG|SS_DESANN
+
+	saber1_1	Legends_Knife_Spy_Dual
+	saber2_1	Legends_Knife_Spy_Dual
+	saberstyle_1	SS_TAVION|SS_DUAL
+
+	saber1_2  		talz_spear
+	saberstyle_2 		SS_STAFF|SS_FAST
+
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace	WP_SABER
+	WeaponBasedOff	WP_SABER
+	NewWorldModel		"models/weapons2/ewok_spear/ewok_spear.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"models/weapons2/ewok_spear/w_icon_ewok_spear"
+	WeaponName		"Nightbrother Melee Weapon"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace 	WP_T21
+	WeaponBasedOff 	WP_T21
+	NewWorldModel 	"models/weapons2/bow/bowcaster_w.glm"
+	NewViewModel 		"models/weapons2/bow/bowcaster.md3"
+	Icon 			"gfx/hud/w_icon_bow"
+	WeaponName 		"Energy Bow"
+	FlashSound0 		"sound/weapons/explosions/coolexplode1.wav"
+	FlashSound1 		"sound/weapons/explosions/coolexplode1.wav"
+	FlashSound2 		"sound/weapons/explosions/coolexplode1.wav"
+	clipSize			8
+	MissileEffect "effects/Force/destruction.efx"
+	MuzzleEffect "Blaster/MuzzleFlash01R"
+	MissileMissEffect "effects/impacts/ImpactMediumRed2"
+	MissileHitHumanEffect "effects/impacts/ImpactMediumRed2"
+	MissileHitDroidEffect "effects/impacts/ImpactMediumRed2"
+	altWallImpact "effects/Blaster/Impact_Wall01R.efx"
+	customAmmo		88
+	reloadTimeModifier 1.5
+	rateMod 0.65
+	altFireEnabled	0
+	hasAnimOverrides 	1
+	animReadyRun BOTH_DC15_IDLE
+	animReady BOTH_DC15_IDLE
+	animReadyWalk TORSO_WEAPONREADY4
+	animReadyNoAmmo TORSO_WEAPONREADY4
+	animAttackRun BOTH_ATTACK4
+	animAttack BOTH_ATTACK4
+	animAttackWalk BOTH_ATTACK4
+	animStand TORSO_DROPWEAP4
+}
+
+
+description	"Nightbrother Warrior 
+
+Melee Infantry with specialized energy bows and poisoned weapons along with martial art skills.
+
+^2Weaponry:
+- Heavy Melee
+-- 10% faster RoF
+- Nightbrother Melee Weapon
+- Dual Knives (Duals/Cyan)
+- Mace (Red/Purple)
+- Spear (Staff/Blue)
+-- No Saber/Blaster Block
+-- Poisons/Staggers
+-- Lower Damage
+- Energy Bow (T-21 3)
+-- Staggers/Ignites on hit
+-- 35% faster Shot Swap
+-- 50% slower Mag Reload
+-- Prim only
+
+^5Powers:
+- Dark Rage (3) ^3[CS4]
+
+^8Attributes:
+- Reinforcement (3)
+- 50% less Kb Taken
+- 10% more Kb Given
+- Dexterity (2)
+- Strength (1)
+- Fury (3)
+- Getup (2)
+- Assemble (3)
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Dark Rage ^3[CS2]
+- Bowkick ^3[CS3]"
