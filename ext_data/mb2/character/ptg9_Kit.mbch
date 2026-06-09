@@ -21,7 +21,7 @@ ClassInfo
 	forcepool			100
 	resource RESOURCE_FORCE
  	rateOfFire_melee .9
-	APmultiplier		1.05
+	BPmultiplier		1.15
 	ASmultiplier 	1.1
 	CSmultiplier 	1.1
 	saberstyle			SS_TAVION|SS_MEDIUM|SS_FAST
