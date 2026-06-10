@@ -11,8 +11,9 @@ ClassInfo
 
 	attributes		MB_ATT_AMMO,1|MB_ATT_RECHARGE,2|MB_ATT_ASSEMBLE,1
 
-	WP_RepeaterFlags	HELD_SLOW|HELD_ALTRELOAD
+	WP_CR2Flags			HELD_SLOW|HELD_ALTRELOAD
 	WP_MinigunFlags		HELD_SLOW
+	WP_PLX1Flags		HELD_SLOW
 
 	speed	.95
 	knockbackTaken	1.05 	
@@ -68,8 +69,8 @@ ClassInfo
 
 	c_att_skill_0	MB_ATT_CR2
 	c_att_names_0	"E-5C Heavy Repeater"
-	c_att_ranks_0	0,2,2
-	c_att_descs_0	"CR-2,+20% ROF"
+	c_att_ranks_0	2,2,2
+	c_att_descs_0	"CR-2, +15% ROF, Slow Movement, Mag Reload"
 	
 	c_att_skill_1	MB_ATT_AMMO
 	c_att_names_1	"Ammo"
@@ -79,12 +80,12 @@ ClassInfo
 	c_att_skill_2	MB_ATT_MINIGUN
 	c_att_names_2	"Z-6 Rotary Cannon (Minigun)"
 	c_att_ranks_2	6
-	c_att_descs_2	"24% higher RoF, 5% less Dmg"
+	c_att_descs_2	"20% higher RoF, 5% less Dmg, 30% Slower Velocity, Slow Movement"
 	
 	c_att_skill_3	MB_ATT_PLX1
 	c_att_names_3	"E-60R Missile Launcher (PLX)"
 	c_att_ranks_3	8
-	c_att_descs_3	"25% less dmg, 35% slower reload"
+	c_att_descs_3	"30% less dmg, 35% slower reload"
 
 	c_att_skill_4	MB_ATT_FRAGS
 	c_att_names_4	"Frag Grenade"
@@ -98,7 +99,7 @@ ClassInfo
 	c_att_skill_6	MB_ATT_RESPAWNS
 	c_att_names_6	"Reinforcements"
 	c_att_ranks_6	6,8
-	c_att_descs_6	"2 default"
+	c_att_descs_6	"1 default"
 
 }
 
@@ -110,7 +111,7 @@ WeaponInfo0
 	NewViewModel		"models/weapons2/e60r_launcher/e60r_launcher.md3"
 	Icon				"gfx/hud/w_icon_e60r_launcher"
 	WeaponName			"E-60R Missile Launcher"
-	Damagemod .75
+	Damagemod .70
 	reloadTimeModifier 1.35
 }
 
@@ -137,7 +138,7 @@ WeaponInfo1
 	MissileEffect		"Blaster/Shot01R"
 	altfireenabled 0
 	clipSize 	40
-	Ratemod 0.8
+	Ratemod 0.85
 }
 
 WeaponInfo2
@@ -174,8 +175,8 @@ WeaponInfo3
 	customammo		900
 	clipSize	300
 	damageMod .95
-	rateMod 0.62
-    velocityMod .76
+	rateMod 0.65
+    velocityMod .70
 }
 
 description	"B1-series Heavy Battle Droid 
