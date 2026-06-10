@@ -13,6 +13,8 @@ ClassInfo
 
 	classflags	CFL_STATVIEWER|CFL_DISMEMBERFRAGILE
 
+	WP_FragNadeFlags	HELD_TRACKING
+
 	knockbackTaken	1.10 	
 	knockbackGiven 0.9
 
