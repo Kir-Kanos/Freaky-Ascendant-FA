@@ -51,6 +51,7 @@ SubclassesForClass4
 	Subclass1	"ptg7_CloneAss"
 	Subclass2	"h8_Wreck"
 	Subclass3	"h8_Tarfful"
+	Subclass4 	"h8_Chewie"
 }
 
 SubclassesForClass5
