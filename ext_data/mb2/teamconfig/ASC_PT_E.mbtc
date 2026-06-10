@@ -1,4 +1,4 @@
-name "Asc_PT_E"
+name "ASC_PT_E"
 
 ClassesAllowed 6
 TimePeriod 5
@@ -21,6 +21,7 @@ SubclassesForClass1
 	Subclass3 	"pte1_B1Spec"
 	Subclass4	"pte1_NB"
 	Subclass5	"v2_Hondo"
+	Subclass6	"pte2_Nightsister"
 }
 
 SubclassesForClass2
@@ -39,6 +40,7 @@ SubclassesForClass3
 	Subclass1	"v6_Aurra"
 	Subclass2	"v6_Zam"
 	Subclass3	"v7_WatTam"
+	Subclass4	"pte6_OuterRimBH"
 }
 
 SubclassesForClass4

@@ -63,6 +63,8 @@ SubclassesForClass5
 	Subclass6	"ptg9_Yarael"
 	Subclass7	"ptg9_JSword"
 	Subclass8	"ptg9_Ahsoka"
+	Subclass9	"ptg9_Kit"
+	Subclass10	"ptg9_QuiGon"
 }
 
 SubclassesForClass6
