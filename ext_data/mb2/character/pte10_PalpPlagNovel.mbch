@@ -68,21 +68,9 @@ Classinfo
 	skin_5		"sidious_bf2"
 	uishader_5	"models/players/palpatine/mb2_icon_sidious_bf2"
 	
-	model_6		"palpatine"
-	skin_6		"emperor"
-	uishader_6	"models/players/palpatine/mb2_icon_emperor"
-	
-	model_7		"palpatine_tros"
-	skin_7		"default"
-	uishader_7	"models/players/palpatine_tros/mb2_icon_default"
-	
-	model_8		"palpatine"
-	skin_8		"darkempire"
-	uishader_8	"models/players/palpatine/mb2_icon_darkempire"
-	
-	model_9		"palpatine_plagnovel"
-	skin_9		"default"
-	uishader_9	"models/players/palpatine_plagnovel/mb2_icon_apprentice"
+	model_6		"palpatine_plagnovel"
+	skin_6	"default"
+	uishader_6	"models/players/palpatine_plagnovel/mb2_icon_apprentice"
 	
 	
 	
