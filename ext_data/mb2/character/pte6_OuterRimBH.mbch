@@ -1,12 +1,12 @@
 ClassInfo
 {
-	name		"pte6_OuterRimBounty"
+	name		"pte6_OuterRimBH"
 	weapons		WP_MELEE
 	
 	attributes	MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_BEACON
 	
 	maxhealth		100
-	maxarmor		100
+	maxarmor		80
 	extralives		1
 	
 	special1	EAS_HI_WRIST
@@ -54,7 +54,7 @@ ClassInfo
 
 
 	isCustomBuild		1
-	mbPoints			50
+	mbPoints			40
 	
 	c_att_skill_0	MB_ATT_PISTOL
 	c_att_names_0	"DL-44 Blaster Pistol"
@@ -63,10 +63,12 @@ ClassInfo
 	c_att_skill_1	MB_ATT_BLASTER
 	c_att_names_1	"Smuggled E-5 Blaster"
 	c_att_ranks_1	2,2,2
+	c_att_descs_1 	"Based on E11"
 
 	c_att_skill_2   MB_ATT_DLT20A
-	c_att_names_2	"Overcharged EE-3"
+	c_att_names_2	"EE-3 Burst Carbine"
 	c_att_ranks_2	4,2,4
+	c_att_descs_2 	"Based on DLT-20a"
 
 	c_att_skill_3	MB_ATT_DISRUPTOR
 	c_att_names_3	"Disruptor Rifle"
@@ -141,12 +143,12 @@ WeaponInfo1
 	NewWorldModel		"models/weapons2/ee-3/ee-3_w.glm"
 	NewViewModel		"models/weapons2/ee-3/ee-3.md3"
 	Icon			"gfx/hud/w_icon_ee-3" 
-	WeaponName		"Overcharged EE-3"
+	WeaponName		"EE-3 Burst Carbine"
 }
 
 description	"Outer Rim Bounty Hunter
 
-A multi-life class bounty hunter who is equipped to take down any target.
+A two-life bounty hunter equipped to take down a variety of targets.
 
 ^2Weaponry:
 - Melee
