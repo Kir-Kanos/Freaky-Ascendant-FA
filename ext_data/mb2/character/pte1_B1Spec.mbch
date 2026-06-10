@@ -55,7 +55,7 @@ ClassInfo
 	uishader_3	"models/players/battledroid/mb2_icon_galaxies"
 	
 	isCustomBuild	1
-	mbPoints		50
+	mbPoints		20
 		
 
 	c_att_skill_0	MB_ATT_BLASTER
