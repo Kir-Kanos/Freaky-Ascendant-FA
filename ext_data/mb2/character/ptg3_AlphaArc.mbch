@@ -5,7 +5,7 @@ ClassInfo
 	MBClass	MB_CLASS_ARCTROOPER
 	classNumberLimit	2
 	weapons	WP_MELEE|WP_CLONE_PISTOL|WP_EE3|WP_PULSE_NADE|WP_CONC_NADE|WP_UGL
-	attributes		MB_ATT_AMMO,3|MB_ATT_CLONE_PISTOL,3|MB_ATT_EE3,3|MB_ATT_UGL_IMPACT,1|MB_ATT_GRAPPLE_HOOK,3|MB_ATT_WHISTLINGBIRD,2|MB_ATT_TRACKING_BEACON|MB_ATT_PULSE_GRENADES,3|MB_ATT_DEXTERITY,3|MB_ATT_STAMINA,3|MB_ATT_FLOAT_HOP
+	attributes		MB_ATT_AMMO,3|MB_ATT_CLONE_PISTOL,3|MB_ATT_EE3,3|MB_ATT_UGL_IMPACT,1|MB_ATT_GRAPPLE_HOOK,3|MB_ATT_WHISTLINGBIRD,2|MB_ATT_TRACKING_BEACON|MB_ATT_MICRO_GRENADES,3|MB_ATT_DEXTERITY,3|MB_ATT_STAMINA,3|MB_ATT_FLOAT_HOP
 	
 	resource RESOURCE_STAMINA
 	forcepool 150
@@ -23,6 +23,8 @@ ClassInfo
 	
 	WP_ClonePistolFlags HELD_ALTRELOAD
 	AB_WBirdsFlags	HELD_TRACKING
+	AB_GHookFlags HELD_PULSE
+	WP_UGLFlags HELD_FLASH
 	
 	holdables HI_MEDPAC_BIG
 	special1    EAS_HI_KICK
@@ -110,6 +112,27 @@ WeaponInfo2
 	NewViewModel		"models/weapons2/dc-15_ext/dc-15_ext.md3"
 	Icon				"gfx/hud/w_icon_clonerifle"
 	WeaponName		"DC-15a UGL"
+	damageMod .1
+}
+
+WeaponInfo3
+{
+	WeaponToReplace	WP_CONC_NADE
+	WeaponBasedOff	WP_CONC_NADE
+	NewWorldModel	"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel	"models/weapons/Grenade_Concussion/viewmodel.md3"
+	MissileModel 	"models/weapons/Grenade_Concussion/proj.md3"
+	altMissileMissEffect		"MB_Effects/effects/Grenades/EXP_Flash"
+	MissileMissEffect		"MB_Effects/effects/Grenades/EXP_Flash"
+	altMissileHitHumanEffect	"MB_Effects/effects/Grenades/EXP_Flash"
+	missileHitHumanEffect		"MB_Effects/effects/Grenades/EXP_Flash"
+	altMissileHitDroidEffect	"MB_Effects/effects/Grenades/EXP_Flash"
+	missileHitDroidEffect		"MB_Effects/effects/Grenades/EXP_Flash"
+	Icon		"gfx/hud/w_icon_stungrenade"
+	WeaponName	"UGL Flashbang Rounds"
+	primfireenabled 0
+	altFireEnabled 0
+	customAmmo 6
 }
 description	"Alpha-Class ARC Trooper
 
@@ -124,7 +147,7 @@ A highly mobile elite trooper. Best of the best.
 --25% Faster RoF
 --10% More Damage
 - DC-15a UGL
--- Pulse Nades (3)
+-- Flashbang Rounds (6)
 
 
 ^6Inventory:
@@ -143,4 +166,5 @@ A highly mobile elite trooper. Best of the best.
 - Dexterity Roll ^3[CS2]
 - Whistling Birds (36) ^3[CS3]
 --Tracks on hit
-- Grappling Hook (3) ^3[CS4 Melee]"
+- Grappling Hook (3) ^3[CS4 Melee]
+-- Shocks on hit"
