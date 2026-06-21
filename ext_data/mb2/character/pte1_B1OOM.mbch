@@ -31,7 +31,7 @@ ClassInfo
 
 
 	special1	EAS_HI_BASESEEKER
-	special2	EAS_HI_SENTRY
+	special2	EAS_HI_SENTRY_GUN
 	special3	EAS_HI_QUICKTHROW
 	special4	EAS_HI_BINOCULARS
 	
