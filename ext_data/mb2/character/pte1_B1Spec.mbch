@@ -7,8 +7,8 @@ ClassInfo
 	MBClass		MB_CLASS_SOLDIER
 	weapons			WP_MELEE
 	classnumberlimit	3
-	WP_MeleeFlags	HELD_FAST
-	WP_ClonePistolFlags HELD_FAST|HELD_ALTRELOAD
+	WP_MeleeFlags	HELD_SPEED
+	WP_ClonePistolFlags HELD_SPEED|HELD_ALTRELOAD
 	WP_BlasterFlags	HELD_ALTRELOAD
 	WP_M5Flags	HELD_SLOW
 
