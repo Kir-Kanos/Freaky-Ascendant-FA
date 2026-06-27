@@ -1,0 +1,96 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name			"ptg3_Clone501"
+	weapons		WP_MELEE|WP_CLONE_PISTOL
+	attributes	MB_ATT_AMMO,3|MB_ATT_CLONE_PISTOL,1|MB_ATT_BACTA,1|MB_ATT_STAMINA,3|MB_ATT_ASSEMBLE,2|MB_ATT_DEXTERITY,1
+	
+	MBClass		MB_CLASS_CLONETROOPER
+	WP_PLX1Flags	HELD_PULSE
+	resource RESOURCE_STAMINA
+	forcepool 100
+	
+	modelscale 1.02
+	extralives	1
+	maxhealth	80
+	maxArmor	40
+	
+
+	special1		EAS_HI_SPRINT
+	special2		EAS_HI_MEDPAC
+	special3		EAS_HI_DEX
+	special4 		EAS_HI_GRAPPLEHOOK
+	
+	flourishAnim BOTH_MELEE1
+	
+	uioverlay_l "gfx/icons/heavy"
+	uioverlay_r "gfx/icons/infantry"
+	
+	model       "clonetrooper_p2"
+	skin        "501"
+	uishader    "models/players/clonetrooper_p2/mb2_icon_501"
+
+	isCustomBuild	 1
+	mbPoints		 11
+	
+	c_att_skill_0	MB_ATT_CLONE_PISTOL
+	c_att_names_0	"DC-15s/17 Clone Pistol"
+	c_att_ranks_0	0,1
+
+	c_att_skill_1	MB_ATT_CLONERIFLE
+	c_att_names_1	"DC-15A Clone Rifle"
+	c_att_ranks_1	0,1
+
+	c_att_skill_2	MB_ATT_CLONEBLOBS
+	c_att_names_2	"> Clone Rifle Conc Blobs"
+	c_att_ranks_2	1,1
+
+	c_att_skill_3	MB_ATT_STRONGBLOBS
+	c_att_names_3	"> Clone Rifle Ion Blobs"
+	c_att_ranks_3	1,1
+
+	c_att_skill_4	MB_ATT_PLX1
+	c_att_names_4	"Pulse Rockets"
+	c_att_ranks_4	5
+	c_att_descs_4	"Based on PLX1, pulses on hit"
+
+	c_att_skill_5	MB_ATT_PULSE_GRENADES
+	c_att_names_5	"Pulse Grenade"
+	c_att_ranks_5	1,1
+	
+	c_att_skill_6	MB_ATT_FRAGS
+	c_att_names_6	"Frag Grenades"
+	c_att_ranks_6	1,1
+
+	c_att_skill_7	MB_ATT_RESPAWNS
+	c_att_names_7	"Respawns"
+	c_att_ranks_7	4
+	c_att_descs_7	"One by default"
+
+	c_att_skill_8	MB_ATT_GRAPPLE_HOOK
+	c_att_names_8	"Grappling Hook ^3[CS4 Melee]"
+	c_att_ranks_8	1,1
+}
+
+description	"501st Clone Trooper
+
+Clone troopers characterized by offensive weaponry choices and higher mobility.
+
+^2Weaponry:
+- Melee
+- DC-15s Clone Pistol (1)
+
+^6Inventory:
+- Medpac ^3[CS3]
+
+^8Attributes:
+- Reinforcement (1)
+- 10% less Kb Taken
+- Stamina (3)
+- Assemble (2)
+- Dexterity (1)
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Dex Roll ^3[CS3]"
