@@ -1,0 +1,156 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name				"pte5_PreVizsla"
+	MBClass			MB_CLASS_BOUNTY_HUNTER
+	classNumberLimit	1
+	
+	weapons				WP_MELEE|WP_MANDO_PISTOL|WP_SABER|WP_E_22|WP_THERMAL
+	
+	attributes			MB_ATT_BESKAR,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_JETPACK|MB_ATT_AMMO,3|MB_ATT_MANDO_PISTOL,3|MB_ATT_FUEL,2|MB_ATT_WRISTLASER,1|MB_ATT_ROCKET,1|MB_ATT_FLAMETHROWER|MB_ATT_FUELREGEN,2|MB_ATT_HEALING,1|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_ENV_PROT,1|MB_ATT_DEXTERITY,1|MB_ATT_ANTI_MT,1|MB_ATT_BLAST_ARMOUR|MB_ATT_E_22,1|MB_ATT_BASE_TD,5|MB_ATT_RALLY
+
+WP_E22Flags	HELD_ALTRELOAD
+AB_GHookFlags	HELD_SLOW|HELD_KNOCKDOWN|HELD_CRIPPLE
+	
+	maxhealth		125
+	maxarmor			125
+	rateoffire_melee 0.95
+	
+	special1		EAS_HI_ROCKET
+	special2 	EAS_HI_WRIST
+	special3		EAS_HI_FLAME
+	special4	EAS_HI_GRAPPLEHOOK
+
+	resource			resource_fuel
+	forcepool 		35
+	
+	saber1			legends_darksaber
+	saberstyle  	SS_TAVION|SS_DESANN|SS_STRONG
+ saberDamageStyle SS_MEDIUM,120|SS_DESANN,240|SS_STRONG,240
+
+	forcepowers		FP_SABER_OFFENSE,1
+	APmultiplier		1.15
+	BPmultiplier 	1.20
+
+	skilltimermod 4
+	
+	modelscale  1.02
+
+	knockbacktaken .75
+
+	model		"deathwatch"
+	skin 		"vizsla2"
+	uishader	"models/players/deathwatch/mb2_icon_vizsla2"
+
+
+	uioverlay_r 	"gfx/icons/aerial"
+	uioverlay_l 	"gfx/icons/hybrid"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace 		WP_SABER
+	WeaponBasedOff  		WP_SABER
+	NewWorldModel  		"models/weapons2/saber_plasma/saber_darksaber3.glm"
+	NewViewModel  		"models/weapons2/dummy/dummy.md3"
+	Icon  				"gfx/hud/w_icon_darksaber"
+	WeaponName  			"The Darksaber"
+}
+
+WeaponInfo1
+{
+ WeaponToReplace		WP_MANDO_PISTOL       			
+ WeaponBasedOff		WP_MANDO_PISTOL      			
+ NewWorldModel		"models/weapons2/westar35/westar35.glm"  
+ NewViewModel		"models/weapons2/westar35/model.md3"
+ Icon				"gfx/hud/w_icon_westar35_dual"
+ WeaponName		"Dual WESTAR-35 Blaster Pistols"   
+	MuzzleEffect		"Blaster/MuzzleFlash01Y"
+	AltMuzzleEffect	"Blaster/MuzzleFlash01Y"
+	MissileEffect		"Blaster/Shot02Y"
+	Missile3Effect	"Blaster/Shot03Y"
+	PowerupShotEffect	"Blaster/Shot04Y"
+	AltMissileEffect	"Blaster/Shot04Y"
+	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
+	ChargeEffect		"gfx/effects/yellow_bryarFrontFlash" 
+ damageMod 1.05
+	fpmult	1.05
+	rateMod 1.05
+	customammo 750
+}
+
+WeaponInfo2
+
+{
+
+	WeaponToReplace		WP_E_22
+	WeaponBasedOff		WP_E_22
+	NewWorldModel	"models/weapons2/dummyblaster/model.glm"
+	NewViewModel	"models/weapons2/dummy/dummy.md3" 	 
+	Icon			"gfx/hud/w_icon_sbdarm"
+	WeaponName		"Wrist Microsaws"
+	clipSize 8
+	CustomAmmo 32
+	hasAnimOverrides 1
+	primgore 	1
+	FlashSound0		"sound/weapons/halo_needler/fire.wav"
+	FlashSound1		"sound/weapons/halo_needler/fire.wav"
+	FlashSound2		"sound/weapons/halo_needler/fire.wav"
+	FlashSound3		"sound/weapons/halo_needler/fire.wav"
+	MissileMissEffect "effects/flechette/wall_impact"
+	MissileEffect		"effects/flechette/shot"
+	MuzzleEffect		null
+	hasAnimOverrides 1
+	animReady BOTH_MAND_FLAME_READY  //upper
+	animReadyWalk BOTH_MAND_FLAME_READY 
+	animReadyNoAmmo BOTH_MAND_FLAME_READY 
+	animReadyRun	BOTH_MAND_FLAME_READY
+	animAttackRun	BOTH_MAND_FLAME_READY
+	animAttack BOTH_MAND_FLAME_READY 
+	animAttackWalk BOTH_MAND_FLAME_READY
+	animStand BOTH_MAND_FLAME_READY  //lower
+	ReloadTimeModifier  1.3
+	velocityMod 2
+	FPMult 	 	2
+	damagemod 	1.4
+}
+
+description	"Pre Vizsla 
+ 
+A fearsome Deathwatch leader with many integrated weapons and martial skills.
+
+^2Weaponry:
+- Melee
+-- 5% faster RoF
+- The Darksaber (Cyan/Purple/Red)
+-- Saber Defense (1)
+-- No Blaster Block
+- Dual WESTAR-35 Blaster Pistols (3)
+-- 5% more Dmg/FP Dmg
+-- 10% slower RoF
+- Thermal Grenades (5)
+- Wrist Microsaws (E-22 1)
+-- 100% FP Drain
+-- 40% More Damage
+-- 2 Shots Per Mag, Mag Reload
+
+^8Attributes:
+- Fuel Regen (2)
+- 25% Less Knockback Taken
+- Beskar (2)
+- Healing (1)
+- Knockdown Roll
+- Dexterity (1)
+- Anti Mindtrick (1)
+- Env Protect (1)
+- Rally
+- 400%+ Cooldown on Abilities
+
+^3Abilities: 
+- Jetpack
+- Rocket ^3[CS1]
+- Wrist Laser ^3[CS2]
+- Wrist Flamethrower ^3[CS3]
+- Grapple Hook (2) ^3[CS4]
+-- Knocks down/Slows on Hit"
