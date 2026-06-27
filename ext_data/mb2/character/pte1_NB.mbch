@@ -27,7 +27,7 @@ ClassInfo
  	forcepowers FP_RAGE,3
 	
 	special1 EAS_HI_SPRINT
-	special2 EAS_HI_RAGE
+	special2 EAS_FP_RAGE
 	
 	
 
