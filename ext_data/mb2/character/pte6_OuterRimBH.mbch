@@ -10,8 +10,8 @@ ClassInfo
 	extralives		1
 	
 	special1	EAS_HI_WRIST
-	special2	EAS_HI_TRACKER
-	special3	EAS_HI_POISON
+	meleespecial2	EAS_HI_TRACKER
+	meleespecial3	EAS_HI_POISON
 	special4 	EAS_HI_GRAPPLEHOOK
 	
 	resource RESOURCE_STAMINA
@@ -30,28 +30,17 @@ ClassInfo
 	WalkBackward BOTH_WALKBACK_DUAL
 	WalkForward BOTH_WALK_DUAL
 
+	model		"bounty_hunter"
+	skin 		"default"
+	uishader	"models/players/bounty_hunter/mb2_icon_default"
 
+	model_1			"human_merc"
+	skin_1			"arcona"
+	uishader_1	 	"models/players/human_merc/mb2_icon_arcona"
 
-	model			"human_merc"
-	skin 			"arcona"
-	uishader	 	"models/players/human_merc/mb2_icon_arcona"
-
-	model_1			"weequay"				
-	skin_1			"abyssin"					
-	uishader_1		"models/players/weequay/mb2_icon_abyssin"
-
-	model_2			"weequay" 				
-	skin_2			"nikto"					
-	uishader_2		"models/players/weequay/mb2_icon_nikto"
-
-	model_3			"barada"
-	skin_3 			"default"
-	uishader_3 		"models/players/barada/mb2_icon_default"
-
-	model_4			"pyke2"
-	skin_4			"default3"
-	uishader_4		"models/players/pyke2/mb2_icon_default3"
-
+	model_2			"weequay"				
+	skin_2			"abyssin"					
+	uishader_2		"models/players/weequay/mb2_icon_abyssin"
 
 	isCustomBuild		1
 	mbPoints			40
@@ -148,7 +137,7 @@ WeaponInfo1
 
 description	"Outer Rim Bounty Hunter
 
-A two-life bounty hunter equipped to take down a variety of targets.
+A custom two-life bounty hunter equipped to take down a variety of targets.
 
 ^2Weaponry:
 - Melee
