@@ -24,7 +24,8 @@ SubclassesForClass1
 	Subclass6	"pte2_Nightsister"
 	Subclass7	"v2_Greedo"
 	Subclass8 	"v3_Trando"
-	Subclass9	"v3_Bossk" 
+	Subclass9	"v3_Bossk"
+	Subclass10	"pte3_HondoGang"
 
 }
 
