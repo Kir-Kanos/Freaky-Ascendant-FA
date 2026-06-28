@@ -1,0 +1,150 @@
+ClassInfo
+{
+	name		"pte6_OuterRimBH"
+	weapons		WP_MELEE
+	
+	attributes	MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_BEACON
+	
+	maxhealth		100
+	maxarmor		80
+	extralives		1
+	
+	special1	EAS_HI_WRIST
+	meleespecial2	EAS_HI_TRACKER
+	meleespecial3	EAS_HI_POISON
+	special4 	EAS_HI_GRAPPLEHOOK
+	
+	resource RESOURCE_STAMINA
+	forcepool 120
+	
+	MBClass			MB_CLASS_BOUNTY_HUNTER
+	classNumberLimit	4
+	modelscale       1
+	speed           1.01
+		
+	uioverlay_r "gfx/icons/infantry"
+	uioverlay_l "gfx/icons/hybrid"
+
+	gloatAnim       BOTH_VICTORY_FAST
+	flourishAnim BOTH_STAND5TOAIM
+	WalkBackward BOTH_WALKBACK_DUAL
+	WalkForward BOTH_WALK_DUAL
+
+	model		"bounty_hunter"
+	skin 		"default"
+	uishader	"models/players/bounty_hunter/mb2_icon_default"
+
+	model_1			"human_merc"
+	skin_1			"arcona"
+	uishader_1	 	"models/players/human_merc/mb2_icon_arcona"
+
+	model_2			"weequay"				
+	skin_2			"abyssin"					
+	uishader_2		"models/players/weequay/mb2_icon_abyssin"
+
+	isCustomBuild		1
+	mbPoints			40
+	
+	c_att_skill_0	MB_ATT_PISTOL
+	c_att_names_0	"DL-44 Blaster Pistol"
+	c_att_ranks_0	2,2,6
+
+	c_att_skill_1	MB_ATT_BLASTER
+	c_att_names_1	"Smuggled E-5 Blaster"
+	c_att_ranks_1	2,2,2
+	c_att_descs_1 	"Based on E11"
+
+	c_att_skill_2   MB_ATT_DLT20A
+	c_att_names_2	"EE-3 Burst Carbine"
+	c_att_ranks_2	4,2,4
+	c_att_descs_2 	"Based on DLT-20a"
+
+	c_att_skill_3	MB_ATT_DISRUPTOR
+	c_att_names_3	"Disruptor Rifle"
+	c_att_ranks_3	5,5
+
+	c_att_skill_4	MB_ATT_PROJECTILE_RIFLE
+	c_att_names_4 	"Projectile Rifle"
+	c_att_ranks_4 	12
+	
+	c_att_skill_5	MB_ATT_THERMALS
+	c_att_names_5 	"Thermal Detonator"
+	c_att_ranks_5	8
+
+	c_att_skill_6	MB_ATT_STUN_BATON
+	c_att_names_6	"Stun Baton"
+	c_att_ranks_6	2,4
+	
+	c_att_skill_7	MB_ATT_MICRO_GRENADES
+	c_att_names_7	"Concussion Grenade"
+	c_att_ranks_7	2,4
+
+	c_att_skill_8	MB_ATT_HEALING
+	c_att_names_8	"Healing"
+	c_att_ranks_8	6
+
+	c_att_skill_9	MB_ATT_ANTI_MT
+	c_att_names_9	"Anti Mind Trick"
+	c_att_ranks_9	4
+
+	c_att_skill_10	MB_ATT_TRACKING_DART
+	c_att_names_10	"Tracking Darts"
+	c_att_ranks_10	2,2,2
+	c_att_descs_10	"^3[CS2]"
+
+	c_att_skill_11	MB_ATT_POISON_DART
+	c_att_names_11	"Poison Darts"
+	c_att_ranks_11	2,2,2
+	c_att_descs_11	"^3[CS3]"
+
+	c_att_skill_12	MB_ATT_GRAPPLE_HOOK
+	c_att_names_12	"Grapple Hook"
+	c_att_ranks_12	2,6
+	c_att_descs_12	"^3[CS4]"
+
+	c_att_skill_13	MB_ATT_WRISTLASER
+	c_att_names_13	"Wrist Laser"
+	c_att_ranks_13	6
+	c_att_descs_13	"^3[CS1]"
+
+	c_att_skill_14	MB_ATT_WOOKIE_STRENGTH
+	c_att_names_14	"Hunter Strength"
+	c_att_ranks_14	4
+
+	
+}
+
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER
+	WeaponBasedOff		WP_BLASTER 
+	NewWorldModel 		"models/weapons2/e5/e5_w.glm"
+	NewViewModel 		"models/weapons2/e5/e5.md3"
+	Icon				"gfx/hud/w_icon_e5"
+	WeaponName			"Smuggled E-5 Blaster"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_DLT20A
+	WeaponBasedOff		WP_DLT20A
+	NewWorldModel		"models/weapons2/ee-3/ee-3_w.glm"
+	NewViewModel		"models/weapons2/ee-3/ee-3.md3"
+	Icon			"gfx/hud/w_icon_ee-3" 
+	WeaponName		"EE-3 Burst Carbine"
+}
+
+description	"Outer Rim Bounty Hunter
+
+A custom two-life bounty hunter equipped to take down a variety of targets.
+
+^2Weaponry:
+- Melee
+
+^8Attributes:
+- Reinforcement (1)
+- Tracking Beacon
+- Stamina (2)
+- Assemble (2)
+- Dexterity (1)"

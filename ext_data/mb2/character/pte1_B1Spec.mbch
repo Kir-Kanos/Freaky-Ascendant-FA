@@ -1,0 +1,230 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name			"pte1_B1Spec"
+	extralives	1
+	MBClass		MB_CLASS_SOLDIER
+	weapons			WP_MELEE
+	classnumberlimit	3
+	WP_MeleeFlags	HELD_SPEED
+	WP_ClonePistolFlags HELD_SPEED|HELD_ALTRELOAD
+	WP_BlasterFlags	HELD_ALTRELOAD
+	WP_M5Flags	HELD_SLOW
+
+	attributes		MB_ATT_AMMO,1|MB_ATT_RECHARGE,2|MB_ATT_ASSEMBLE,1
+
+	knockbackTaken	1.10 	
+	knockbackGiven 0.9
+
+	speed .97
+
+	Maxhealth		30
+	MaxArmor		40
+
+	special1	EAS_HI_DODGE
+	special2	EAS_HI_TRACKER
+	
+	forcepool	30
+	forceregen	1.5
+	resource	 RESOURCE_BATTERY
+
+	special1HUD HUD_FRAGNADE
+	
+	classflags CFL_DISMEMBERFRAGILE
+	
+	flourishAnim BOTH_PAIN17
+
+	modelScale   1.035		
+	uioverlay "gfx/icons/infantry"
+
+	model			"battledroid" 		
+	skin			"assassin"				
+	uishader		"models/players/battledroid/mb2_icon_assassin"
+	
+	model_1		"battledroid" 				
+	skin_1		"sniper"			
+	uishader_1	"models/players/battledroid/mb2_icon_sniper"
+
+	model_2		"battledroid" 				
+	skin_2		"geonosis_sniper"			
+	uishader_2	"models/players/battledroid/mb2_icon_geonosis_sniper"
+
+	model_3			"battledroid" 				
+	skin_3		"galaxies"				
+	uishader_3	"models/players/battledroid/mb2_icon_galaxies"
+	
+	isCustomBuild	1
+	mbPoints		20
+		
+
+	c_att_skill_0	MB_ATT_BLASTER
+	c_att_names_0	"E-5 Specialist Rifle"
+	c_att_ranks_0	4
+	c_att_descs_0	"E-11, 30%+ Damage, 30%- RoF, 10%+ Velocity, Mag Reload"
+	
+	c_att_skill_1	MB_ATT_CLONE_PISTOL
+	c_att_names_1	"RG-4D Blaster Pistol"
+	c_att_ranks_1	0,2
+	c_att_descs_1	"Clone Pistol, 20%+ Damage, 30%- RoF, 20%+ Velocity,
+Fast Movement, Mag Reload"
+
+	c_att_skill_2	MB_ATT_WESTARM5
+	c_att_names_2	"E-5s Sniper Rifle (M5)"
+	c_att_ranks_2	6
+	c_att_descs_2 "50% faster RoF, 45% more Velocity, 20% less Dmg,
+50% less FP Dmg, 50% slower Reload, Slow Movement"
+
+	c_att_skill_3	MB_ATT_ARC_RIFLE_SCOPE
+	c_att_names_3	"> E-5s Scope Upgrade"
+	c_att_ranks_3	2
+	
+	c_att_skill_4	MB_ATT_AMMO
+	c_att_names_4	"> Ammo"
+	c_att_ranks_4 	0,2,3
+	c_att_descs_4	"240, 360, 480"
+
+	c_att_skill_5	MB_ATT_MICRO_GRENADES
+	c_att_names_5	"Concussion Grenade"
+	c_att_ranks_5	2
+
+	c_att_skill_6	MB_ATT_TRIP_MINES
+	c_att_names_6	"Trip Mine"
+	c_att_ranks_6	2	
+
+	c_att_skill_7	MB_ATT_TRACKING_DART
+	c_att_names_7	"Tracking Dart"
+	c_att_ranks_7	2,2
+	c_att_descs_7	"CS2"
+	
+	c_att_skill_8	MB_ATT_RESPAWNS
+	c_att_names_8	"Reinforcements"
+	c_att_ranks_8	4,4
+	c_att_descs_8	"1 default"
+
+	c_att_skill_9	MB_ATT_ASSEMBLE
+	c_att_names_9	"Assemble"
+	c_att_ranks_9	0,2
+
+	c_att_skill_10	MB_ATT_DODGE
+	c_att_names_10	"Dodge"
+	c_att_ranks_10	2
+	c_att_descs_10	"CS1"
+
+
+}
+WeaponInfo0
+{
+	WeaponToReplace	WP_CLONE_PISTOL
+	WeaponBasedOff	WP_BLASTER_PISTOL
+	NewWorldModel	"models/weapons2/imp_pistol/pistol_w.glm"
+	NewViewModel	"models/weapons2/imp_pistol/pistol_fpv.md3"
+	Icon		"gfx/hud/w_icon_imp_pistol"	
+	WeaponName	"RG-4D Blaster Pistol"
+	customAmmo 700
+	clipSize 21
+	velocitymod 1.20
+	damagemod 1.20
+	ratemod	1.30
+	FlashSound0			"sound/weapons/SE-14c/fire.mp3" 		
+	altFlashSound0		"sound/weapons/SE-14c/fire.mp3"   	
+	MuzzleEffect  "Blaster/MuzzleFlash01R"
+	MissileEffect	 "Blaster/Shot01R"
+	AltMuzzleEffect  "Blaster/MuzzleFlash01R"
+	ChargeEffect		"gfx/effects/bryarfrontflash"
+	hasAnimOverrides 1
+	animReadyRun BOTH_STAND3
+	animReady BOTH_STAND3
+	animReadyWalk BOTH_STAND3
+	animReadyNoAmmo BOTH_ATTACK3 
+	animAttackRun BOTH_ATTACK3 
+	animAttack BOTH_ATTACK3 
+	animCharge 	BOTH_ATTACK3
+	animAttackWalk BOTH_ATTACK3 
+	animStand BOTH_WOOKIEE_RAGE_STAND
+
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_BLASTER
+	WeaponBasedOff		WP_BLASTER 
+	NewWorldModel 		"models/weapons2/e5/e5_w.glm"
+	NewViewModel 		"models/weapons2/e5/e5.md3"
+	Icon				"gfx/hud/w_icon_e5"
+	WeaponName			"E-5 Specialist Rifle"
+	hasAnimOverrides 1
+	animReadyRun BOTH_STAND3
+	animReady BOTH_STAND3
+	animReadyWalk BOTH_STAND3
+	animReadyNoAmmo BOTH_ATTACK3 
+	animAttackRun BOTH_ATTACK3 
+	animAttack BOTH_ATTACK3 
+	animAttackWalk BOTH_ATTACK3 
+	animStand BOTH_WOOKIEE_RAGE_STAND
+	velocitymod 1.10
+	damagemod 1.30
+	ratemod	1.30
+}
+WeaponInfo2
+{
+	WeaponToReplace		WP_CONC_NADE 
+	WeaponBasedOff		WP_CONC_NADE 
+	NewWorldModel 	"models/weapons2/oldfraggrenade/thermal_w.glm"
+	NewViewModel 		"models/weapons2/oldfraggrenade/thermal.md3"
+	NewHandsModel		"models/weapons2/oldfraggrenade/thermal_hand.md3"
+	MissileModel			"models/weapons2/oldfraggrenade/thermal_proj.md3"
+	AltMissileModel		"models/weapons2/oldfraggrenade/thermal_proj.md3"
+	altMissileMissEffect	"grenades/EXP_alt"
+	Icon					"gfx/hud/w_icon_oldfraggrenade"
+	WeaponName			"Concussion Grenade"
+	damagemod	0.6
+}
+WeaponInfo3
+{
+	WeaponToReplace		WP_M5
+	WeaponBasedOff		WP_PLX1
+	NewWorldModel		"models/weapons2/som3_rifle/som3_rifle_w.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 
+	Icon				"gfx/hud/w_icon_som3_rifle"
+	WeaponName			"E-5s Sniper Rifle"
+	FlashSound0 		"sound/weapons/E-5s/fire.mp3"
+	AltFlashSound0	    "sound/weapons/E-5s/alt_fire.mp3"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"blaster/Shot01R"
+	altMuzzleEffect		"Blaster/MuzzleFlash01R"
+	altMissileEffect		"blaster/Shot01R"
+	hasAnimOverrides 1
+	animReadyRun BOTH_STAND3
+	animReady BOTH_STAND3
+	animReadyWalk TORSO_WEAPONREADY4
+	//animReadyWalk BOTH_TORSO_WEAPONREADY4
+	animReadyNoAmmo BOTH_ATTACK4 
+	animAttackRun BOTH_ATTACK4 
+	animAttack BOTH_ATTACK4 
+	animAttackWalk BOTH_ATTACK4 
+	animStand BOTH_STAND8
+	rateMod 0.5
+	velocityMod 1.45
+	damageMod 0.80
+	FPMult  0.5
+	reloadTimeModifier 1.5
+	clipsize 36
+	customAmmo 360 
+}
+
+
+description	"B1-series Battle Droid Specialist
+
+Mass-produced, fragile combatants with long ranged weaponry and high reinforcement potential.
+
+^2Weaponry:
+- Melee
+-- 15%+ Movement Speed
+
+^8Attributes:
+- Reinforcements (1)
+- 10% less Kb Given
+- 10% more Kb Taken
+- Battery Recharge (2)
+- Assemble (1)"

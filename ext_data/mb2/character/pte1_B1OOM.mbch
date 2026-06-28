@@ -1,0 +1,212 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name			"pte1_B1OOM"
+	extralives	2
+	MBClass		MB_CLASS_SOLDIER
+	weapons			WP_MELEE
+
+	classnumberlimit	3
+
+	attributes		MB_ATT_AMMO,1|MB_ATT_RECHARGE,2|MB_ATT_ASSEMBLE,1|MB_ATT_AMMO,3|MB_ATT_BINOCULARS|MB_ATT_RALLY|MB_ATT_CCTRAINING,2|MB_ATT_TRACKING_BEACON|MB_ATT_QUICKTHROW,1
+
+	classflags	CFL_STATVIEWER|CFL_DISMEMBERFRAGILE
+
+	WP_FragNadeFlags	HELD_TRACKING
+
+	knockbackTaken	1.10 	
+	knockbackGiven 0.9
+
+	Maxhealth		30
+	MaxArmor		40
+	
+	forcepool	30
+	forceregen	1.5
+	resource	 RESOURCE_BATTERY
+
+	damageGiven	1
+
+	special1HUD HUD_FRAGNADE
+
+
+	special1	EAS_HI_BASESEEKER
+	special2	EAS_HI_SENTRY_GUN
+	special3	EAS_HI_QUICKTHROW
+	special4	EAS_HI_BINOCULARS
+	
+	flourishAnim BOTH_PAIN17
+
+	modelScale   1.035		
+	uioverlay "gfx/icons/infantry"
+
+	
+	model			"battledroid" 				
+	skin			"ep1_comm"				
+	uishader		"models/players/battledroid/mb2_icon_ep1_comm"
+	
+	model_1			"battledroid" 				
+	skin_1		"point_rain_rgb"				
+	uishader_1	"models/players/battledroid/mb2_icon_point_rain_rgb"
+	userRGB_1 	0
+	customred_1	0.945
+	customgreen_1	0.785
+	customblue_1	0.0 //defaults to Open y
+	
+	isCustomBuild	1
+	mbPoints		20
+		
+
+	c_att_skill_0	MB_ATT_BLASTER
+	c_att_names_0	"E-5 Blaster Rifle"
+	c_att_ranks_0	2,2,2
+	
+	c_att_skill_1	MB_ATT_CLONE_PISTOL
+	c_att_names_1	"RG-4D Command Pistol"
+	c_att_ranks_1	0,2
+	c_att_descs_1	"20%+ RoF, 10%- Damage, 10%- Velocity"
+
+	c_att_skill_2	MB_ATT_FRAGS
+	c_att_names_2	"Seeker Flare (Flare)"
+	c_att_ranks_2	2
+	c_att_descs_2	"Large Radius, Tracks, Low Damage"
+	
+	c_att_skill_3	MB_ATT_MICRO_GRENADES
+	c_att_names_3	"Smoke Grenades (Conc)"
+	c_att_ranks_3	2
+	c_att_descs_3	"Obscures vision on det, 99.9% less Dmg, 40% faster RoF"
+
+	c_att_skill_4	MB_ATT_ASSEMBLE
+	c_att_names_4	"Assemble"
+	c_att_ranks_4	0,2,2
+
+	c_att_skill_5	MB_ATT_BASESEEKER
+	c_att_names_5	"Defense Droid"
+	c_att_ranks_5	8
+	c_att_descs_5	"CS1"
+
+	c_att_skill_6	MB_ATT_SENTRY
+	c_att_names_6	"Sentry Turret"
+	c_att_ranks_6	8
+	c_att_descs_6	"CS2"
+
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER
+	WeaponBasedOff		WP_BLASTER 
+	NewWorldModel 		"models/weapons2/e5/e5_w.glm"
+	NewViewModel 		"models/weapons2/e5/e5.md3"
+	Icon				"gfx/hud/w_icon_e5"
+	WeaponName			"E-5 Blaster Rifle"
+	hasAnimOverrides 1
+	animReadyRun BOTH_STAND3
+	animReady BOTH_STAND3
+	animReadyWalk BOTH_STAND3
+	animReadyNoAmmo BOTH_ATTACK3 
+	animAttackRun BOTH_ATTACK3 
+	animAttack BOTH_ATTACK3 
+	animAttackWalk BOTH_ATTACK3 
+	animStand BOTH_WOOKIEE_RAGE_STAND
+	//animStand BOTH_SPEAR_STANCE
+}
+
+WeaponInfo1
+{
+	WeaponToReplace	WP_FRAG_NADE
+	WeaponBasedOff	WP_FRAG_NADE
+	NewWorldModel	"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel	"models/weapons/Grenade_Concussion/viewmodel.md3"
+	Icon	"gfx/hud/w_icon_stungrenade"
+	MissileModel	"models/weapons/Grenade_Concussion/proj.md3"
+	MissileMissEffect			"mustafar/volcano1"
+	MissileHitHumanEffect	"mustafar/volcano1"
+	MissileHitDroidEffect	"mustafar/volcano1"
+	Weaponname			"Seeker Flare"
+	altfireenabled 0
+	damageMod 0.01
+	splashRadius 500
+}
+WeaponInfo2
+{
+	WeaponToReplace	WP_CLONE_PISTOL
+	WeaponBasedOff	WP_BLASTER_PISTOL
+	NewWorldModel	"models/weapons2/imp_pistol/pistol_w.glm"
+	NewViewModel	"models/weapons2/imp_pistol/pistol_fpv.md3"
+	Icon		"gfx/hud/w_icon_imp_pistol"	
+	WeaponName	"RG-4D Command Pistol"
+	customAmmo 700
+	clipSize 21
+	ratemod	.80
+	damagemod .90
+	velocitymod .90
+	FlashSound0			"sound/weapons/SE-14c/fire.mp3" 		
+	altFlashSound0		"sound/weapons/SE-14c/fire.mp3"   	
+	MuzzleEffect  "Blaster/MuzzleFlash01R"
+	MissileEffect	 "Blaster/Shot01R"
+	AltMuzzleEffect  "Blaster/MuzzleFlash01R"
+	ChargeEffect		"gfx/effects/bryarfrontflash"
+	hasAnimOverrides 1
+	animReadyRun BOTH_STAND3
+	animReady BOTH_STAND3
+	animReadyWalk BOTH_STAND3
+	animReadyNoAmmo BOTH_ATTACK3 
+	animAttackRun BOTH_ATTACK3 
+	animAttack BOTH_ATTACK3 
+	animAttackWalk BOTH_ATTACK3 
+	animCharge 	BOTH_ATTACK3 
+	animStand BOTH_WOOKIEE_RAGE_STAND
+}
+
+WeaponInfo3
+{
+	WeaponToReplace			WP_CONC_NADE
+	WeaponBasedOff			WP_CONC_NADE
+NewWorldModel	"models/weapons2/thermal/thermal_w.glm"
+NewViewModel "models/weapons2/thermal/thermal.md3"
+NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
+	Icon						"gfx/hud/w_thermal_grenade"
+	MissileModel 				"models/weapons2/thermal/thermal_proj.md3"
+	AltMissileModel			"models/weapons2/thermal/thermal_proj.md3"
+	MissileEffect 			"stone/missile1"
+	AltMissileEffect 			"stone/missile1"
+	MissileMissEffect			"smokenadeleg/explode_vol"
+	MissileHitHumanEffect	"smokenadeleg/explode_vol"
+	MissileHitDroidEffect	"smokenadeleg/explode_vol"
+	AltMissileMissEffect		"smokenadeleg/explode_vol"
+	AltMissileHitHumanEffect	"smokenadeleg/explode_vol"
+	AltMissileHitDroidEffect	"smokenadeleg/explode_vol"
+	FlashSound0		"sound/weapons/smokenade/select.mp3"
+	AltFlashSound0 	"sound/weapons/smokenade/select.mp3"
+	WeaponName  				"Smoke Grenades"
+	hasAnimOverrides 1
+	animAttackRun BOTH_THERMAL_THROW2
+	animAttack BOTH_THERMAL_THROW2
+	animAttackWalk BOTH_THERMAL_THROW2
+	animReadyRun BOTH_THERMAL_READY2
+	animReady BOTH_THERMAL_READY2
+	animReadyWalk BOTH_THERMAL_READY2
+	damageMod 0.001
+	ratemod 0.6
+}
+
+description	"OOM-series Battle Droid 
+
+Specially produced lieutenants with superior utility and leadership potential.
+
+^2Weaponry:
+- Melee
+
+^8Attributes:
+- Reinforcements (2)
+- Rally
+- Close Combat (2)
+- Integrated Commlink (Tracking Beacon)
+- 10% less Kb Given
+- 10% more Kb Taken
+- Battery Recharge (2)
+- Assemble (1)
+
+^8Abilities:
+- Binoculars ^3[CS4]
+- Quickthrow ^3[CS3]"

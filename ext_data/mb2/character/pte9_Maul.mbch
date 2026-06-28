@@ -37,9 +37,6 @@ ClassInfo
 	
 	saber1_1		saber_maul3_legends
 	sabercolor_1	0
-	
-	saber1_2		saber_maul2_legends
-	sabercolor_2	0
 
 	tauntAnim		BOTH_MAUL_TAUNT
 	saberStanceAnim BOTH_TRIPLE3_STAFFSTANCE
@@ -77,13 +74,6 @@ ClassInfo
 	skin_6 			"default"
 	uishader_6		"models/players/maul_cw/mb2_icon_default"
 	
-	model_7			"maul_cw"
-	skin_7 			"solo"
-	uishader_7		"models/players/maul_cw/mb2_icon_solo"
-	
-	model_8			"maul_cw"
-	skin_8 			"solo_hood"
-	uishader_8		"models/players/maul_cw/mb2_icon_solo_hood"
 }
 
 description	"Darth Maul 

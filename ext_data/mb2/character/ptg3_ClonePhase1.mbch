@@ -1,0 +1,97 @@
+//Created by MARSHALL
+
+ClassInfo
+{
+	name			    "ptg3_ClonePhase1"
+	weapons		        WP_MELEE|WP_T21
+	attributes	        MB_ATT_AMMO,1|MB_ATT_ASSEMBLE,3|MB_ATT_BESKAR,2|MB_ATT_STAMINA,1|MB_ATT_T21,2
+	
+	MBClass		        MB_CLASS_CLONETROOPER
+	
+	resource        RESOURCE_STAMINA
+	forcepool       50 
+	modelscale      	1.02
+	classNumberLimit	10
+
+	extralives		    4
+	maxhealth		    60
+	maxArmor			25
+	
+	special1			EAS_HI_SPRINT
+	
+    WP_T21Flags     	HELD_SLOW
+
+    model       "clonetrooper_p1"
+    skin        "shiny"
+    uishader    "models/players/clonetrooper_p1/mb2_icon_shiny"
+
+    model_1     "clonetrooper_p1"
+    skin_1      "default"
+    uishader_1  "models/players/clonetrooper_p1/mb2_icon_default"
+
+    model_2     "clonetrooper_p1"
+    skin_2      "poncho"
+    uishader_2  "models/players/clonetrooper_p1/mb2_icon_poncho"
+
+    model_3     "clonetrooper_p1"
+    skin_3      "rgb"
+    uishader_3  "models/players/clonetrooper_p1/mb2_icon_rgb"
+    userRGB_3   1
+    customred_3 1
+    customgreen_3 1
+    customblue_3 1
+
+    model_4     "clonetrooper_p1"
+    skin_4      "filsquad"
+    uishader_4  "models/players/clonetrooper_p1/mb2_icon_filsquad"
+
+    model_5     "clonetrooper_p1"
+    skin_5      "horncompany"
+    uishader_5  "models/players/clonetrooper_p1/mb2_icon_horncompany"
+
+    model_6     "clonetrooper_p1"
+    skin_6      "ordinance"
+    uishader_6  "models/players/clonetrooper_p1/mb2_icon_ordinance"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_T21
+	WeaponBasedOff		WP_T21
+	NewWorldModel		"models/weapons2/dc-15a/dc-15a_w.glm"
+	NewViewModel		"models/weapons2/dc-15a/dc-15a.md3"
+	NewHandsModel       "models/weapons2/dc-15a/dc-15a_hand.md3"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01B"
+	MissileEffect		"blaster/Shot04B"
+	AltMissileEffect	"Blaster/Shot03B"
+	FlashSound0			"sound/weapons/dc17m/alt_fire.wav"
+    AltFlashSound0      "sound/weapons/Bf2005Cr/fire.wav"
+	Icon				"gfx/hud/w_icon_clonerifle"
+	WeaponName			"DC-15LE Heavy Repeater"
+    rateMod             0.9
+	velocityMod			0.9
+	damagemod			0.85
+}
+
+description	"Clone Trooper (Phase I)
+
+Brief Overview: 
+A Phase I Clone Trooper built for sustained frontline combat. Slow and dangerous. Equipped with a DC-15LE Heavy Repeater.
+
+^2Default Weaponry:
+- Melee
+- DC-15LE Heavy Repeater 
+-- Based on T21
+-- 10% faster ROF 
+-- 10% slower velocity
+-- 15% less damage
+
+^8Default Attributes:
+- Reinforcement (4)
+- Stamina 1
+- Beskar 2
+- Assemble 3 (Respawn at rally point)
+
+^3Default Abilities:
+- Sprint ^3[CS1]"

@@ -6,8 +6,8 @@ EUAllowed 0
 
 Classes
 {
-	class1	"ptg2_Panaka"
-	class2	"ptg3_Clone"
+	class1	"h1_Militia"
+	class2	"ptg3_ClonePhase1"
 	class3	"ptg5_CloneJet"
 	class4	"h8_WookWarr"
 	class5	"ptg9_JYoung"
@@ -16,24 +16,31 @@ Classes
 
 SubclassesForClass1
 {
-	Subclass1	"ptg2_Padme"
-	Subclass2	"h2_JarJar"
+	Subclass1	"ptg2_Panaka"
+	Subclass2	"ptg2_Padme"
+	Subclass3	"h2_JarJar"
+	Subclass4	"ptg1_Talz"
 }
 
 SubclassesForClass2
 {
-	Subclass1    "ptg3_ReconClone"
-	Subclass2    "ptg3_Arc"
-	Subclass3    "ptg3_AlphaArc"
-	Subclass4    "ptg3_CloneSpe"
-	Subclass5    "ptg3_CloneCom"
-	Subclass6    "ptg3_CloneLead"
-	Subclass7    "h3_Rex"
-	Subclass8    "h3_Delta"
-	Subclass9    "ptg3_Hunter"
-	Subclass10   "ptg3_Echo"
-	Subclass11   "ptg4_SenGuard"
-	Subclass12   "h3_BossNass"
+	Subclass1    "ptg3_ClonePhase2"
+	Subclass2    "ptg3_CloneMarine"
+	Subclass3    "ptg3_Clone212"
+	Subclass4    "ptg3_Clone501"
+	Subclass5    "ptg3_CloneGuard"
+	Subclass6    "ptg3_ReconClone"
+	Subclass7    "ptg3_AlphaArc"
+	Subclass8    "ptg3_CloneSpe"
+	Subclass9    "ptg3_CloneCom"
+	Subclass10   "ptg3_Arc"
+	Subclass11   "ptg3_CloneLead"
+	Subclass12   "h3_Rex"
+	Subclass13   "h3_Delta"
+	Subclass14   "ptg3_Hunter"
+	Subclass15   "ptg3_Echo"
+	Subclass16   "ptg4_SenGuard"
+	Subclass17   "h3_BossNass"
 }
 
 SubclassesForClass3
@@ -49,6 +56,7 @@ SubclassesForClass4
 	Subclass1	"ptg7_CloneAss"
 	Subclass2	"h8_Wreck"
 	Subclass3	"h8_Tarfful"
+	Subclass4 	"h8_Chewie"
 }
 
 SubclassesForClass5
@@ -61,6 +69,9 @@ SubclassesForClass5
 	Subclass6	"ptg9_Yarael"
 	Subclass7	"ptg9_JSword"
 	Subclass8	"ptg9_Ahsoka"
+	Subclass9	"ptg9_Kit"
+	Subclass10	"ptg9_QuiGon"
+	Subclass11 	"ptg10_RahmKota"
 }
 
 SubclassesForClass6

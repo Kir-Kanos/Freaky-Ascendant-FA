@@ -1,4 +1,4 @@
-name "Asc_PT_E"
+name "ASC_PT_E"
 
 ClassesAllowed 6
 TimePeriod 5
@@ -16,7 +16,17 @@ Classes
 
 SubclassesForClass1
 {
-	Subclass1	"v2_Hondo"
+	Subclass1	"pte1_B1OOM"
+	Subclass2	"pte1_B1Heavy"
+	Subclass3 	"pte1_B1Spec"
+	Subclass4	"pte1_NB"
+	Subclass5	"v2_Hondo"
+	Subclass6	"pte2_Nightsister"
+	Subclass7	"v2_Greedo"
+	Subclass8 	"v3_Trando"
+	Subclass9	"v3_Bossk"
+	Subclass10	"pte3_HondoGang"
+
 }
 
 SubclassesForClass2
@@ -28,6 +38,7 @@ SubclassesForClass2
 	Subclass5	"v5_Durge"
 	Subclass6	"pte5_CadRe"
 	Subclass7	"v5_Watto"
+	Subclass8	"pte5_PreVizsla"
 }
 
 SubclassesForClass3
@@ -35,11 +46,16 @@ SubclassesForClass3
 	Subclass1	"v6_Aurra"
 	Subclass2	"v6_Zam"
 	Subclass3	"v7_WatTam"
+	Subclass4	"v6_Dengar"
+	Subclass5	"pte6_OuterRimBH"
+	Subclass6	"v6_Tusk"
+	Subclass7	"pte7_Slick"
+
 }
 
 SubclassesForClass4
 {
-	Subclass1	"pte8_SBD"
+	Subclass1	"v8_HuttW"
 }
 
 SubclassesForClass5

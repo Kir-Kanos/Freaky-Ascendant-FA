@@ -1,0 +1,196 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name			"pte1_B1Heavy"
+	extralives	1
+	MBClass		MB_CLASS_SOLDIER
+	weapons			WP_MELEE
+
+	classnumberlimit	2
+
+	attributes		MB_ATT_AMMO,1|MB_ATT_RECHARGE,2|MB_ATT_ASSEMBLE,1
+
+	WP_RepeaterFlags	HELD_SLOW|HELD_ALTRELOAD
+	WP_MinigunFlags		HELD_SLOW
+
+	speed	.95
+	knockbackTaken	1.05 	
+	knockbackGiven 0.9
+
+	MaxHealth		40
+
+	MaxArmor		40
+	
+	forcepool	30
+	forceregen	1.5
+	resource	 RESOURCE_BATTERY
+
+	special1HUD HUD_FRAGNADE
+	special2HUD HUD_PLX1ROCKETS	
+	classflags CFL_DISMEMBERFRAGILE
+	
+	flourishAnim BOTH_PAIN17
+
+	modelScale   1.035		
+	uioverlay "gfx/icons/infantry"
+	
+	model			"battledroid"				
+	skin			"r2d2_rgb"					
+	uishader		"models/players/battledroid/mb2_icon_r2d2_rgb"
+	userRGB			1
+	customred		0.5
+	customgreen		0.5
+	customblue		0.5
+		
+	model_1			"battledroid" 		
+	skin_1			"citadel_rgb"				
+	uishader_1		"models/players/battledroid/mb2_icon_citadel_rgb"
+	userRGB_1 		1
+	customred_1 		0.5
+	customgreen_1	0.5
+	customblue_1 	0.5
+	
+	model_2		"battledroid" 				
+	skin_2		"point_rain_rgb"				
+	uishader_2	"models/players/battledroid/mb2_icon_point_rain_rgb"
+	userRGB_2 	1
+	customred_2	0.5
+	customgreen_2	0.5
+	customblue_2	0.5 
+	
+	model_3		"battledroid" 				
+	skin_3		"grenadier2"				
+	uishader_3	"models/players/battledroid/mb2_icon_grenadier2"
+	
+	isCustomBuild	1
+	mbPoints		24
+
+	c_att_skill_0	MB_ATT_CR2
+	c_att_names_0	"E-5C Heavy Repeater"
+	c_att_ranks_0	0,2,2
+	c_att_descs_0	"CR-2,+20% ROF"
+	
+	c_att_skill_1	MB_ATT_AMMO
+	c_att_names_1	"Ammo"
+	c_att_ranks_1 	0,0,2
+	c_att_descs_1	"240, 360, 480"
+
+	c_att_skill_2	MB_ATT_MINIGUN
+	c_att_names_2	"Z-6 Rotary Cannon (Minigun)"
+	c_att_ranks_2	6
+	c_att_descs_2	"24% higher RoF, 5% less Dmg"
+	
+	c_att_skill_3	MB_ATT_PLX1
+	c_att_names_3	"E-60R Missile Launcher (PLX)"
+	c_att_ranks_3	8
+	c_att_descs_3	"25% less dmg, 35% slower reload"
+
+	c_att_skill_4	MB_ATT_FRAGS
+	c_att_names_4	"Frag Grenade"
+	c_att_ranks_4	4
+	c_att_descs_4	"50% Less Damage"
+	
+	c_att_skill_5	MB_ATT_DET_PACK
+	c_att_names_5	"Det Pack"
+	c_att_ranks_5	2,2
+
+	c_att_skill_6	MB_ATT_RESPAWNS
+	c_att_names_6	"Reinforcements"
+	c_att_ranks_6	6,8
+	c_att_descs_6	"2 default"
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_PLX1
+	WeaponBasedOff		WP_PLX1
+	NewWorldModel		"models/weapons2/e60r_launcher/e60r_launcher_w.glm"
+	NewViewModel		"models/weapons2/e60r_launcher/e60r_launcher.md3"
+	Icon				"gfx/hud/w_icon_e60r_launcher"
+	WeaponName			"E-60R Missile Launcher"
+	Damagemod .75
+	reloadTimeModifier 1.35
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_CR2
+	WeaponBasedOff		WP_CR2 
+	NewWorldModel 		"models/weapons2/e5/e5_w.glm"
+	NewViewModel 		"models/weapons2/e5/e5.md3"
+	Icon				"gfx/hud/w_icon_e5"
+	WeaponName			"E-5C Heavy Repeater"
+	hasAnimOverrides 1
+	animReadyRun BOTH_STAND3
+	animReady BOTH_STAND3
+	animReadyWalk BOTH_STAND3
+	animReadyNoAmmo BOTH_ATTACK3 
+	animAttackRun BOTH_ATTACK3 
+	animAttack BOTH_ATTACK3 
+	animAttackWalk BOTH_ATTACK3 
+	animStand BOTH_WOOKIEE_RAGE_STAND
+	//animStand BOTH_SPEAR_STANCE
+	FlashSound0			"sound/weapons/DLT19/fire.wav"	
+	FlashSound1			"sound/weapons/DLT19/fire.wav"	
+	FlashSound2			"sound/weapons/DLT19/fire.wav"
+	FlashSound3			"sound/weapons/DLT19/fire.wav"	
+	MuzzleEffect  		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+	altfireenabled 0
+	clipSize 	40
+	Ratemod 0.8
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_FRAG_NADE 
+	WeaponBasedOff		WP_FRAG_NADE 
+	NewWorldModel 	"models/weapons2/oldfraggrenade/thermal_w.glm"
+	NewViewModel 		"models/weapons2/oldfraggrenade/thermal.md3"
+	NewHandsModel		"models/weapons2/oldfraggrenade/thermal_hand.md3"
+	MissileModel			"models/weapons2/oldfraggrenade/thermal_proj.md3"
+	AltMissileModel		"models/weapons2/oldfraggrenade/thermal_proj.md3"
+	altMissileMissEffect	"grenades/EXP_alt"
+	Icon					"gfx/hud/w_icon_oldfraggrenade"
+	WeaponName			"Frag Grenade"
+	damagemod .50
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_MINIGUN
+	WeaponBasedOff		WP_MINIGUN
+	NewWorldModel		"models/weapons2/z6_rotary/model.glm"
+	NewViewModel		"models/weapons2/z6_rotary/rotary_cannon.md3"
+	NewHandsModel		"models/weapons2/z6_rotary/rotary_cannon_hand.md3"
+	NewBarrelModel		"models/weapons2/z6_rotary/rotary_cannon_barrel.md3"
+	MuzzleEffect  		"Blaster/MuzzleFlash01R"
+	altMuzzleEffect  		"Blaster/MuzzleFlash01R"
+	MissileEffect 		"Blaster/Shot02R"
+	MissileMissEffect		"Blaster/Impact_Wall01R.efx"
+	FlashSound0			"sound/weapons/minigun/fire.wav"
+	isMinigun			1
+	Icon				"gfx/hud/w_icon_rotary_cannon"
+	WeaponName			"Z-6 Rotary Blaster Cannon"
+	customammo		900
+	clipSize	300
+	damageMod .95
+	rateMod 0.62
+    velocityMod .76
+}
+
+description	"B1-series Heavy Battle Droid 
+
+Mass-produced combantants with expanded heavy weapons and superior reinforcement potential.
+
+^2Weaponry:
+- Melee
+
+^8Attributes:
+- Reinforcements (1)
+- 10% less Kb Given
+- 5% more Kb Taken
+- Battery Recharge (2)
+- Assemble (1)"
