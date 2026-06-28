@@ -17,8 +17,6 @@ ClassInfo
 	classflags	CFL_STRONGAGAINSTPHYSICAL
 
 	saberDamage 100
-	saber1  		nb_mace_asc
-	saberstyle  		SS_STRONG
 	BPmultiplier		0
 	APmultiplier		1.25
 	ASmultiplier 	1.1
@@ -103,6 +101,7 @@ WeaponInfo1
 	customAmmo		88
 	reloadTimeModifier 1.5
 	rateMod 0.65
+	damagemod	.9
 	altFireEnabled	0
 	hasAnimOverrides 	1
 	animReadyRun BOTH_DC15_IDLE
@@ -133,6 +132,7 @@ Melee Infantry with specialized energy bows and poisoned weapons along with mart
 - Energy Bow (T-21 3)
 -- Staggers/Ignites on hit
 -- 35% faster Shot Swap
+-- 10% Less Damage
 -- 50% slower Mag Reload
 -- Prim only
 
