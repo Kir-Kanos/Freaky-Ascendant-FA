@@ -17,12 +17,10 @@ rankbasespeed 180,190
 
 	attributes				MB_ATT_AMMO,3|MB_ATT_JETPACK,1|MB_ATT_FUEL,3|MB_ATT_ASSEMBLE,3
 
-	maxhealth			60
-	maxarmor				30
+	maxhealth			55
+	maxarmor				25
 
 	resource			RESOURCE_FUEL
-	forcepool 110
-	forceregen 0.2
 	
 	special3 EAS_HI_WRIST
 	special2 EAS_HI_FLAME
@@ -31,34 +29,25 @@ rankbasespeed 180,190
 	
 	jetpackJetTag			*jet1		
 	jetpackJet2Tag		*jet2	
-	modelscale			1
 	uioverlay_l "gfx/icons/aerial"
 	uioverlay_c "gfx/icons/spec_infantry"
 	uioverlay_r "gfx/icons/infantry"
 	
-	
-	model		"stormie"
- skin		"jet"
- uishader 	"models/players/stormie/mb2_icon_jet"
+	model			"stormie"
+ skin		"jet_legacy"
+ uishader	 	"models/players/stormie/mb2_icon_jet_legacy"
 	
 	model_1		"stormie"
- skin_1		"jet_legacy"
- uishader_1 	"models/players/stormie/mb2_icon_jet_legacy"
-	
-	model_2		"stormie"
- skin_2		"jetcom_legacy"
- uishader_2 	"models/players/stormie/mb2_icon_jetcom_legacy"
+ skin_1		"jetcom_legacy"
+ uishader_1	"models/players/stormie/mb2_icon_jetcom_legacy"
 
-	model_3		"stormie"
- skin_3		"jetcom"
- uishader_3 	"models/players/stormie/mb2_icon_jetcom"
 
 isCustomBuild	1
 mbPoints	24
 
 c_att_skill_0	MB_ATT_BLASTER
 c_att_names_0	"E-11 Blaster Rifle"
-c_att_ranks_0	0,4,2
+c_att_ranks_0	2,2,2
 
 c_att_skill_1	MB_ATT_DISRUPTOR
 c_att_names_1	"Disruptor Rifle"
@@ -81,23 +70,19 @@ c_att_skill_5	MB_ATT_WRISTLASER
 c_att_names_5	"Wrist Laser"
 c_att_ranks_5	6
 
-c_att_skill_6	MB_ATT_PLX1
-c_att_names_6	"PLX Missile Launcher"
-c_att_ranks_6	"12"
+c_att_skill_6	MB_ATT_BASE_TD
+c_att_names_6	"Micro Thermal Grenade"
+c_att_ranks_6	0,2
 
-c_att_skill_7	MB_ATT_BASE_TD
-c_att_names_7	"Micro Thermal Grenade"
-c_att_ranks_7	0,2
+c_att_skill_7	MB_ATT_BASESPEED
+c_att_names_7	"Enhanced Conditioning"
+c_att_ranks_7	4,4
+c_att_descs_7	"Improves speed from 170 to 180, 190."
 
-c_att_skill_8	MB_ATT_BASESPEED
-c_att_names_8	"Enhanced Conditioning"
-c_att_ranks_8	4,4
-c_att_descs_8	"Improves speed from 170 to 180, 190."
-
-c_att_skill_9	MB_ATT_RESPAWNS
-c_att_names_9	"Reinforcements"
-c_att_ranks_9	4,12
-c_att_descs_9	"1 Default"
+c_att_skill_8	MB_ATT_RESPAWNS
+c_att_names_8	"Reinforcements"
+c_att_ranks_8	4,12
+c_att_descs_8	"1 Default"
 }
 WeaponInfo0
 {
@@ -107,7 +92,6 @@ NewWorldModel	"models/weapons2/scout_pistol/blaster_pistol_w.glm"
 NewViewModel	"models/weapons2/scout_pistol/blaster_pistol.md3"
 Icon	"gfx/hud/w_icon_scout_pistol"
 WeaponName	"EC-17 Hold-out Blaster Pistol"
-ChargeSound	"sound/weapons/leia_pistol/altcharge.mp3"
 clipSize 14
 customAmmo 500
 FPChargeMult	1.0
@@ -115,7 +99,7 @@ FPChargeMult	1.0
 
 description	"Imperial Jet-Trooper
 
-An Agile And Versatile Imperial Jetpack Infantry Equipped With A Wide Variety Of Tools Meant For Flanking Or Supporting Your Allies From The Skies.
+An agile and versatile jetpack infantry equipped With A wide variety of tools
 
 ^2Weaponry:
 - Melee (15 Percent Faster Movement)
