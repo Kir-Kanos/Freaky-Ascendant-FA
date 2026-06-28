@@ -12,10 +12,13 @@ ClassInfo
 	MBClass				MB_CLASS_ARCTROOPER
 	
 	saber1      	Cutlass_legends
-	saberstyle 	SS_TAVION
+	saberstyle 	SS_DESANN
+	saberDamageStyle	SS_DESANN,80
 	
 	CSmultiplier      .9
 	ASmultiplier      .85
+	APmultiplier  		.9
+	BPmultiplier		.85
 
  saberDamageStyle SS_TAVION, 100
 
@@ -94,10 +97,11 @@ WeaponInfo1
 	animAttack BOTH_ATTACK2 
 	animAttackWalk BOTH_ATTACK2 
 	clipsize   12
-	customAmmo     80
+	customAmmo     48
 	AltFireEnabled 		0
 	ReloadTimeModifier  	1.2
 	FPMult				0.8
+	damagemod			0.8
 	MuzzleEffect 		"Blaster/MuzzleFlash01Y"
 	MissileEffect 		"flechette/shot"
 	velocitymod 2.2
@@ -141,7 +145,7 @@ WeaponInfo3
 	animAttack BOTH_ATTACK2
 	animAttackWalk BOTH_ATTACK2
 	animCharge BOTH_ATTACK2
-	damageMod 1
+	damageMod 1.2
 	FPMult 1.1
 	customAmmo 700
 	clipSize 26
