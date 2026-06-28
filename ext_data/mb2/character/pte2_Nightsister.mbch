@@ -30,14 +30,14 @@ ClassInfo
 	special3 EAS_HI_QUICKTHROW
 	special4 EAS_HI_POISON
 	
-	
+	special1HUD HUD_CONCBLOB
 
 	maxhealth		125
  maxarmor   0
 
 	resource 		RESOURCE_FORCE
-	forcepool 		90
-	forceregen		1.2
+	forcepool 		80
+	forceregen		1.15
 
 	
  rateOfFire_Melee .95
@@ -193,8 +193,8 @@ WeaponInfo4
 	CorrectedWorldModel	"models/weapons2/dummyblaster/model.glm"
 	Icon			"models/weapons2/halo_melee/icon.png"
 	WeaponName		"Conjure Poison Mist"
-	clipsize 25
-	customammo 200
+	clipsize 18
+	customammo 80
 	hasAnimOverrides	1
 	animReady BOTH_MAND_FLAME_READY 
 	animReadyWalk BOTH_MAND_FLAME_READY 
