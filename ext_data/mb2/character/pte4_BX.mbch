@@ -1,11 +1,11 @@
 ClassInfo
 {
 	name				"pte4_BX"
-	MBClass				MB_CLASS_ARCTROOPER
+	MBClass				MB_CLASS_BATTLEDROID
 	weapons				WP_SABER|WP_MELEE
 	saber1				Vibro_bx_legends
 	saberstyle			SS_TAVION|SS_MEDIUM
-	attributes			MB_ATT_AMMO,3|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_FLIPKICK,1|MB_ATT_DASH,2|MB_ATT_DODGE,3|MB_ATT_DEXTERITY,3|MB_ATT_BESKAR,3|MB_ATT_TRACKING_BEACON|MB_ATT_QUICKTHROW,3
+	attributes			MB_ATT_AMMO,3|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_FLIPKICK,1|MB_ATT_DASH,2|MB_ATT_DODGE,3|MB_ATT_DEXTERITY,3|MB_ATT_BESKAR,3|MB_ATT_TRACKING_BEACON|MB_ATT_QUICKTHROW,3|MB_ATT_CCTRAINING,3
 	classflags			CFL_HEAVYMELEE|CFL_BPFREEJUMPS|CFL_DISMEMBERFRAGILE|CFL_SEEING_STEALTH
 	classNumberLimit 	3
 	knockbackTaken		0.8
@@ -221,7 +221,7 @@ WeaponInfo3
 	altFlashSound0	"Sound/css_wep/smokegrenade_explode.wav"
 	primFireEnabled	0
 	altFireEnabled	0
-	damageMod 0.001
+	damageMod 0
 	customAmmo 6
 }
 
@@ -235,7 +235,7 @@ ForceInfo0
 }
 description	"BX-series Commando Droid 
 
-Exceptionally agile and durable commando units that excel at infiltration and assassination. 
+Exceptionally agile and durable commando units designed for infiltration and assassination. 
 
 ^2Weaponry:
 - Heavy Melee
