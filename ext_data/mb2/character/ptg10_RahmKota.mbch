@@ -34,20 +34,12 @@ ClassInfo
 	forceregen       1.1
 	
 	model	"kota"
-	skin		"default"
+	skin	 "default"
 	uishader	"models/players/kota/mb2_icon_default"
-	
-	model_1		"kota"
-	skin_1		"blind"
-	uishader_1	"models/players/kota/mb2_icon_blind"	
-	
-	model_2		"kota_drunk"
-	skin_2		"default"
-	uishader_2	"models/players/kota_drunk/mb2_icon_default"
-	
-	model_3		"kota_tfu2"
-	skin_3		"default"
-	uishader_3	"models/players/kota_tfu2/mb2_icon_default"
+
+	model_1	"kota_drunk"
+	skin_1	 "default"
+	uishader_1	"models/players/kota_drunk/mb2_icon_default"
 		
 	saber1			kota_tfu1
 	sabercolor		3	
