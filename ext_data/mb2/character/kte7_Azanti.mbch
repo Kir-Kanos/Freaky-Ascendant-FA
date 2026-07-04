@@ -1,0 +1,170 @@
+// Siege class definition file for KotOR II: Azanti Zhug
+ClassInfo
+{
+	name				"kte7_Azanti"
+	MBClass				MB_CLASS_CLONETROOPER
+	weapons				WP_MELEE|WP_BLASTER_PISTOL|WP_DISRUPTOR|WP_PROJ|WP_BLASTER|WP_FRAG_NADE
+
+	maxhealth			125
+	maxarmor			80
+
+	attributes			MB_ATT_PISTOL,3|MB_ATT_DISRUPTOR,3|MB_ATT_PROJ,1|MB_ATT_BLASTER,1|MB_ATT_AMMO,3|MB_ATT_ANTI_MT,2|MB_ATT_FRAGS,3|MB_ATT_RALLY,1|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_TRACKING_BEACON|MB_ATT_HEALING,2|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_DART,3|MB_ATT_DODGE,2|MB_ATT_CLOAK,1|MB_ATT_ENEMYSCANNER
+
+	basespeed			215
+	modelscale			1.01
+
+	WP_BlasterPistolFlags	HELD_ALTRELOAD|HELD_KNOCKBACK
+	WP_DisruptorFlags		HELD_ALTRELOAD
+	WP_ProjFlags		HELD_ALTRELOAD|HELD_FLASH|HELD_BACTA
+	WP_BlasterFlags		HELD_BACTA|HELD_TRACKING|HELD_ALTRELOAD
+	WP_FragNadeFlags		HELD_TRACKING|HELD_FLASH
+	AB_TDartFlags			HELD_FORCEFOCUS|HELD_SLIPPERY
+
+	model		"human_merc"
+	skin		"azanti"
+	uishader	"models/players/human_merc/mb2_icon_azanti"
+
+	classflags			CFL_STATVIEWER
+
+	special1			EAS_HI_DODGE
+	special2			EAS_HI_ENEMYSCANNER
+	special3			EAS_HI_TRACKER
+	special4			EAS_HI_GRAPPLEHOOK
+
+	resource		resource_energy
+
+	forcepool 120
+	forceregen 1.5
+
+	classNumberLimit	1
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_PROJ
+	WeaponBasedOff		WP_PROJ
+	NewWorldModel		"models/weapons2/proj_rifle/proj_rifle_w.glm"
+	NewViewModel		"models/weapons2/proj_rifle/proj_rifle.md3"
+	Icon				"gfx/hud/w_icon_proj_rifle"
+	WeaponName			"Zhug Dart Rifle"
+	clipsize			2
+	customAmmo			40
+	damagemod			.25
+	MuzzleEffect null
+		MissileMissEffect		"noghri_stick/flesh_impact"
+ MissileHitHumanEffect 	"noghri_stick/flesh_impact"
+ MissileHitDroidEffect 	"noghri_stick/flesh_impact"
+	FlashSound0	"sound/weapons/silencedpistol/fire.wav"
+	AltMissileEffect	"halo_shotgun/shot"
+	MissileEffect	"halo_shotgun/shot"
+	primGore	1
+}
+WeaponInfo1
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel			"models/weapons2/kotor_hpistol/kotor_hpistol_w.glm"
+	NewViewModel			"models/weapons2/kotor_hpistol/kotor_hpistol.md3"
+	Icon				"gfx/hud/w_icon_kotor_hpistol"
+	flashsound0			"sound/weapons/kotor/fire_hvy.wav"
+	WeaponName			"Zhug Heavy Blaster Pistol"
+	damageMod			1.15
+	rateMod				1.20
+	hasAnimOverrides 1
+	MuzzleEffect null
+animReadyRun BOTH_JANGO_PISTOL_IDLE
+animReady BOTH_JANGO_PISTOL_IDLE
+animReadyWalk TORSO_WEAPONIDLE2
+animReadyNoAmmo BOTH_ATTACK2 
+animAttackRun BOTH_ATTACK2 
+animAttack BOTH_ATTACK2 
+animAttackWalk BOTH_ATTACK2 
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_BLASTER
+	WeaponBasedOff		WP_BLASTER
+ 	NewWorldModel "models/weapons2/sonic_emitter/gunz_w.glm" 
+ 	NewViewModel "models/weapons2/sonic_emitter/gunz.md3" 
+	NewHandsModel "models/weapons2/sonic_emitter/gunz_hand.md3" 
+ 	Icon    "gfx/hud/w_icon_emitsonic2"
+	FlashSound0	"sound/weapons/silencedpistol/fire.wav"
+	WeaponName			"Zhug Dart Pistol"
+	clipsize			6
+	customAmmo			32
+	velocity			.80
+	ratemod				3
+	damageMod			0.40
+		MissileMissEffect		"noghri_stick/flesh_impact"
+ MissileHitHumanEffect 	"noghri_stick/flesh_impact"
+ MissileHitDroidEffect 	"noghri_stick/flesh_impact"
+	Muzzleeffect			null
+	MissileEffect	"halo_shotgun/shot"
+	primGore	1
+		 hasAnimOverrides 1
+ animReadyNoAmmo BOTH_PISTOL_ATTACK
+ animAttackRun BOTH_PISTOL_ATTACK
+ animAttack BOTH_PISTOL_ATTACK
+ animAttackWalk BOTH_PISTOL_ATTACK
+ animStand BOTH_STAND1
+ animReadyRun BOTH_PISTOL_IDLE2
+ animReady BOTH_PISTOL_IDLE2
+ animReadyWalk BOTH_PISTOL_READY
+
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_FRAG_NADE
+	WeaponBasedOff		WP_FRAG_NADE
+	NewWorldModel		"models/weapons2/kotor_gfrag/thermal_w.glm"
+	NewViewModel		"models/weapons2/kotor_gfrag/thermal.md3"
+	MissileModel		"models/weapons2/kotor_gfrag/thermal_proj_1.md3"
+	AltMissileModel		"models/weapons2/kotor_gfrag/thermal_proj_2.md3"
+	Icon				"gfx/hud/w_icon_kotor_fraggrenade"
+	WeaponName			"Tracking Flash Grenade"
+	damagemod .5
+}
+
+description	"Azanti Zhug
+
+Half of the Zhug Leadership, Azanti Focused on deception and staying far away from the Zhug Street Combat as possible as he informs and supports from from afar.
+
+^2Weaponry:
+- Melee
+- Zhug Heavy Blaster Pistol (3)
+-- Knocks Back
+-- 15%+ Damage, 20%- RoF
+-- Mag Reload
+- Zhug Dart Pistol
+-- Blaster Rifle (1)
+-- Tracks / Heals Allies On Hit
+-- 60% Less Damage
+-- Mag Reload
+- Zhug Dart Rifle
+-- Projectile Rifle
+-- 75% Less Damage
+-- Blinds On Enemy Hit / Heals On Ally Hit
+-- 2 Shots / Mag Reload
+- Disruptor Rifle (3)
+-- Mag Reload
+- Tracking Flash Grenades (3)
+-- Outlines Targets / Flashes on Hit
+-- Half Damage
+
+^8Attributes:
+- Rally
+- Paranoid (Anti Mind Trick 2)
+- Zhug Unity (Stat Viewer)
+- Personal Stealth Generator (Cloak 1)
+- Dexterity (1)
+- Healing (2)
+- Bounty Board (Tracking Beacon)
+
+^3Abilities:
+- Spotter (Enemy Scanner) ^3[CS2]
+- Grapple Hook (2) ^3[CS4]
+- Dodge (2) ^3[CS1]
+- Confusion Tracking Darts (6) ^3[CS3]
+-- Applies Force Focus And Slippery"

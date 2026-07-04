@@ -1,0 +1,193 @@
+ClassInfo
+{
+	name			"kte7_ExInfil"
+	weapons			WP_MELEE|WP_SABER|WP_CLONE_PISTOL
+	
+	attributes		MB_ATT_STAMINA,2|MB_ATT_AMMO,3|MB_ATT_CLONE_PISTOL,2
+	
+	maxhealth		100
+	maxarmor		25
+
+	extralives		2
+	classNumberLimit	2
+	
+	special1		EAS_HI_SPRINT
+	special2		EAS_HI_WRIST
+	special3		EAS_HI_POISON
+	special4		EAS_HI_GRAPPLEHOOK
+	
+	saber1		Legends_Knife_Spy_B
+	saberstyle	SS_TAVION
+
+	saberdamage	60
+	saberMaxChain 2
+
+	CSmultiplier	1.05
+	ASmultiplier	1.05
+	APmultiplier	.5
+	BPmultiplier	0
+	
+	resource		RESOURCE_STAMINA
+
+	forcepool 80
+	forceregen	2
+
+	basespeed		195
+	
+	AB_PDartFlags	HELD_CRIPPLE|HELD_FORCEFOCUS|HELD_SLIPPERY
+	AB_WLaserFlags	HELD_PULSE|HELD_LOWDAMAGE|HELD_CRIPPLE|HELD_DISRUPTIFY
+	WP_BowcasterFlags HELD_CRIPPLE|HELD_ALTRELOAD|HELD_SLOW
+	WP_ClonePistolFlags	HELD_ALTRELOAD|HELD_DISRUPTIFY|HELD_SPEED
+	WP_MeleeFlags	HELD_CRIPPLE|HELD_SPEED
+	WP_SaberFlags HELD_POISON|HELD_SPEED
+	WP_BlasterFlags HELD_ALTRELOAD
+
+	classflags		CFL_SEEING_STEALTH
+
+	MBClass			MB_CLASS_CLONETROOPER
+	classNumberLimit	2
+
+	model			"human_merc"
+	skin			"nug_racto"
+	uishader		"models/players/human_merc/mb2_icon_racto"
+
+
+	isCustomBuild		1
+	mbPoints			30
+	
+	c_att_skill_0	MB_ATT_WRISTLASER
+	c_att_names_0	"Tech-Jammer Wristlaser"
+	c_att_ranks_0	4
+	c_att_descs_0	"Pulses/Low Damage/Cripples ^3[CS1]"
+
+	c_att_skill_1	MB_ATT_BLASTER
+	c_att_names_1	"Exchange Blaster Rifle"
+	c_att_ranks_1	2,4,2
+	c_att_descs_1	"Blaster, Mag Reload, 10% Slower RoF"
+
+	c_att_skill_2	MB_ATT_BOWCASTER
+	c_att_names_2	"Exchange Bowcaster"
+	c_att_ranks_2	6,2,2
+	c_att_descs_2	"125% Slower RoF, 25%+ Damage, Slow Movement"
+
+	c_att_skill_3	MB_ATT_CLONE_PISTOL
+	c_att_names_3	"Blackmarket Disintegrator"
+	c_att_ranks_3	0,0,8
+
+	c_att_skill_4	MB_ATT_WOOKIE_STRENGTH
+	c_att_names_4	"Infiltrator Takedown"
+	c_att_ranks_4	4
+	c_att_descs_4	"Strength"
+
+	c_att_skill_5	MB_ATT_POISON_DART
+	c_att_names_5	"Deathstick Darts"
+	c_att_ranks_5	2,4,2
+	c_att_descs_5	"Poison Darts, Causes Slippery/Force Focus/Cripples ^3[CS3]"
+
+	c_att_skill_6	MB_ATT_SPY_DISGUISE
+	c_att_names_6	"Holo-Mask Disguise"
+	c_att_ranks_6	0,2,2
+	c_att_descs_6	"^3[Style Swap In Melee]"
+	
+	c_att_skill_7	MB_ATT_CLOAK
+	c_att_names_7	"Stealth Field"
+	c_att_ranks_7	2,4
+
+	c_att_skill_8	MB_ATT_GRAPPLE_HOOK
+	c_att_names_8	"Grapple Hook"
+	c_att_ranks_8	2,4
+	c_att_descs_8 	"^3[Melee CS4]"
+
+	c_att_skill_9	MB_ATT_DET_PACK
+	c_att_names_9	"Det Packs"
+	c_att_ranks_9	2,2,2
+
+	c_att_skill_10	MB_ATT_DEXTERITY
+	c_att_names_10	"Dexterity"
+	c_att_ranks_10	2
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_CLONE_PISTOL
+	WeaponBasedOff		WP_CLONE_PISTOL
+	NewWorldModel	"models/weapons2/kotor_pistol1/pistol_w.GLM"
+	NewViewModel	"models/weapons2/kotor_pistol1/model.md3"
+	Icon	"gfx/hud/w_icon_disruptorpistols_dual"
+	WeaponName			"Blackmarket Disintegrator"
+	clipSize			48
+	customAmmo			800
+	velocityMod			1.10
+	reloadtimeModifier	1.40
+	MuzzleEffect		"Blaster/MuzzleFlash01Y"
+	altMuzzleEffect		"Blaster/MuzzleFlash01Y"
+	MissileEffect		"Blaster/Shot02Y"
+	ChargeEffect		"gfx/effects/yellow_bryarFrontFlash"
+ MissileMissEffect "Blaster/Impact_Wall01R.efx"
+ MissileHitHumanEffect "Blaster/Impact_Wall01R.efx"
+ MissileHitDroidEffect "Blaster/Impact_Wall01R.efx"
+ altMissileMissEffect "Blaster/Impact_Wall01R.efx"
+ altMissileHitHumanEffect "Blaster/Impact_Wall01R.efx"
+ altMissileHitDroidEffect "Blaster/Impact_Wall01R.efx"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_oldrepswords"
+	WeaponName			"Poisoned Vibro-Knife"
+	SelectSound 		"sound/weapons/blade/slash2.mp3"
+}
+WeaponInfo2
+{
+    	WeaponToReplace		WP_BOWCASTER
+    	WeaponBasedOff		WP_BOWCASTER
+    	NewWorldModel		"models/weapons2/kotor_bowcaster1/kotor_bowcaster1_w.glm"
+    	NewViewModel		"models/weapons2/kotor_bowcaster1/kotor_bowcaster1.md3"  
+          FlashSound0		"sound/weapons/bowcaster/fire.mp3"
+	altFlashSound0		"sound/weapons/bowcaster/fire.mp3"
+    	Icon			"gfx/hud/w_icon_kotor_bowcaster1" 
+    	WeaponName		"Exchange Bowcaster"
+	customAmmo           700
+	rateMod 2.25
+	clipsize 42
+	damagemod	1.25
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_BLASTER  			
+	WeaponBasedOff		WP_BLASTER    			
+	NewWorldModel		"models/weapons2/kotor_brifle1/kotor_brifle1_w.glm"
+	NewViewModel		"models/weapons2/kotor_brifle1/kotor_brifle1.md3"
+	Icon				"gfx/hud/w_icon_kotor_brifle1"
+	WeaponName			"Exchange Blaster Rifle"
+	FlashSound0			"sound/weapons/kotor/fire_med.wav"
+	AltFlashSound0		"sound/weapons/kotor/fire_med.wav"
+	MuzzleEffect  		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+	ratemod	1.10
+}
+
+description	"Exchange Infiltrator
+
+A high-stakes corporate spy and saboteur. Lightly armored but equipped with cutting-edge espionage tech to disable targets and vanish.
+
+^2Weaponry:
+- Poisoned Vibro-Knife
+-- No Saber/Blaster Block
+-- Low Damage/Poisons
+-- Cyan Style
+- Blackmarket Disintegrator (Clone Pistol 2)
+-- Long Reload, Mag Reload, 10%+ Velocity
+
+^8Attributes:
+- Reinforcement (2)
+- Force Sense Immunity
+- Stamina (2)
+
+^3Abilities:
+- Sprint ^3[CS1]"

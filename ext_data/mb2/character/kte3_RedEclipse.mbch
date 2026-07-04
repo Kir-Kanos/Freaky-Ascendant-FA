@@ -1,0 +1,149 @@
+ClassInfo
+{
+	name			"kte3_RedEclipse"
+	MBClass			MB_CLASS_BOUNTY_HUNTER
+	weapons			WP_MELEE|WP_DC_CARBINE|WP_TRIP_MINE|WP_SABER|WP_PROJ
+
+	maxhealth		80
+	maxarmor		40
+
+	attributes		MB_ATT_DC_CARBINE,2|MB_ATT_PROJECTILE_RIFLE,1|MB_ATT_TRIP_MINES,2|MB_ATT_AMMO,3|MB_ATT_CORTOSIS,1|MB_ATT_DODGE,2|MB_ATT_DEXTERITY,1|MB_ATT_GRAPPLE_HOOK,2
+
+	WP_Meleeflags	HELD_SPEED
+	WP_SaberFlags HELD_STUN|HELD_CRIPPLE|HELD_DISARM|HELD_PULSE|HELD_SPEED
+	WP_DCCarbineFlags HELD_SONIC|HELD_CRIPPLE|HELD_ALTRELOAD|HELD_SLOW
+	WP_ProjFlags	HELD_PULSE|HELD_ALTRELOAD|HELD_SLOW|HELD_FLAME|HELD_KNOCKBACK|HELD_CRIPPLE|HELD_STUN
+	WP_TripMineFlags	HELD_PULSE|HELD_CRIPPLE|HELD_STUN|HELD_LOWDAMAGE|HELD_TRACKING
+	AB_GHookFlags	HELD_PULSE|HELD_FLASH|HELD_STUN|HELD_CRIPPLE
+
+	forcepool	90
+
+	resource	RESOURCE_ENERGY
+
+	forceregen	1.4
+
+	special1	EAS_HI_DODGE
+	special2	EAS_HI_DEX
+	special4	EAS_HI_GRAPPLEHOOK
+
+	skilltimermod	3
+	
+	saber1			soldierbaton_legends
+	saberstyle		SS_STRONG
+
+	sabermaxchain	2
+
+	saberDamage 		60
+
+	ASmultiplier	1.1
+
+	CSmultiplier	1.1
+
+	APmultiplier	.8
+
+	BPmultiplier	0
+
+	extralives		2
+
+	basespeed 190
+
+	model				"trandoshan"
+	skin				"tra1"
+	uishader			"models/players/trandoshan/mb2_icon_tra1"
+
+	model_1				"weequay" 
+	skin_1				"red"					
+	uishader_1			"models/players/weequay/mb2_icon_red"
+
+	classNumberLimit	3
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_DC_CARBINE
+	WeaponBasedOff		WP_DC_CARBINE
+	NewWorldModel		"models/weapons2/kotor_sonicrifle/kotor_sonicrifle_w.glm"
+	NewViewModel		"models/weapons2/kotor_sonicrifle/kotor_sonicrifle.md3"
+	Icon				"gfx/hud/w_icon_kotor_sonicrifle"
+	WeaponName			"Red Eclipse Sonic Rifle"
+	 MissileMissEffect  "sonic_pistol/k_wall_impact"
+ MissileHitHumanEffect "sonic_pistol/k_wall_impact"
+ MissileHitDroidEffect  "sonic_pistol/k_wall_impact"
+ MissileEffect  "sonic_pistol/k_projectile"      
+ MuzzleEffect  "sonic_pistol/k_muzzle_flash"     
+ FlashSound0 "sound/weapons/kotor/fire_sonic.wav"
+	damagemod	.55
+	ratemod		1
+	velocitymod	.55
+	clipsize	20
+	hasAnimOverrides 1
+	animReadyRun BOTH_STAND3
+	animReady BOTH_STAND3
+	animReadyWalk BOTH_STAND3
+	animReadyNoAmmo BOTH_ATTACK3 
+	animAttackRun BOTH_ATTACK3 
+	animAttack BOTH_ATTACK3 
+	animAttackWalk BOTH_ATTACK3 
+	animStand BOTH_WOOKIEE_RAGE_STAND
+	//animStand BOTH_SPEAR_STANCE
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/stunbaton/stun_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon			"gfx/hud/w_icon_soldierbaton"
+	WeaponName			"Shock-Pulse Stun Baton"
+}
+
+WeaponInfo2
+{
+	WeaponToReplace			WP_PROJ
+	WeaponBasedOff			WP_PROJ
+	NewWorldModel			"models/weapons2/kotor_drifle/kotor_drifle_w.glm"
+	NewViewModel			"models/weapons2/kotor_drifle/kotor_drifle.md3"
+	Icon					"gfx/hud/w_icon_kotor_drifle"
+	WeaponName				"Super-Heated Projectile Rifle"
+	FlashSound0				"sound/weapons/amban_phase_rifle/fire.wav"
+	MissileEffect			"Blaster/Shot04Y"
+	damagemod	.2
+	velocitymod	2
+}
+
+description	"Red Eclipse Slaver
+
+A slaver intent on capturing their enemy in traps, by grappling them or other special gear. They will take you alive.
+
+^2Weaponry:
+- Melee
+-- 15%+ Movement Speed
+- Red Eclipse Sonic Rifle
+-- DC Carbine 2, 45%- Damage/15%+ RoF/45%- Velocity
+-- Low Clipsize/Sonic Shots/Mag Reload/Cripples
+- Capture Tripmines (2)
+-- Shocks/Cripples/Stuns/Tracks
+-- Low Damage
+- Shock-Pulse Stun Baton
+-- 2 Hit Combo
+-- Red Style
+-- Disarms/Cripples/Pulses/Stuns
+-- Fast Movement
+- Super-Heated Projectile Rifle
+-- 80%- Damage/100%+ Velocity
+-- Cripples/Pulses/Mag Reload/Ignites/Knocksback/Stuns/Cripples
+-- Slow Movement Speed
+
+^8Attributes:
+- Reinforcements (2)
+- Cortosis Lined Armor (1)
+- 200%+ Skill Cooldown
+- Dexterity (1)
+
+^8Abilities:
+- Dodge (2) ^3[CS1]
+- Dexterity Roll ^3[CS2]
+- Gunkick ^3[CS3]
+- Zap Cord (Grapplehook 2) ^3[CS4]
+-- Pulses/Stuns/Cripple/Blinds"

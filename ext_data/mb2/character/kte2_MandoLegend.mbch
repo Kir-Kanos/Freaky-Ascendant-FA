@@ -1,0 +1,191 @@
+ClassInfo
+{
+	name		"kte2_MandoLegend"
+	MBClass	MB_CLASS_BOUNTY_HUNTER 
+	classNumberLimit	1
+	
+	weapons	WP_MELEE|WP_SABER|WP_BLASTER_PISTOL
+
+	WP_BlasterPistolFlags	HELD_ALTRELOAD|HELD_KNOCKBACK
+	WP_FragNadeFlags	HELD_FLAME|HELD_DISRUPTIFY
+	WP_PulseNadeFlags	HELD_STUN|HELD_FREEZE
+
+	classflags	CFL_BLOODYMELEE
+
+	attributes	MB_ATT_AMMO,3|MB_ATT_TRACKING_BEACON|MB_ATT_DEXTERITY,1|MB_ATT_BESKAR,2|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,1|MB_ATT_DODGE,2|MB_ATT_STIMPACK
+	
+	maxhealth 120
+
+	maxarmor		100
+
+	baseSpeed 220
+
+	Resource	RESOURCE_STAMINA
+	forcepool	100
+	forceregen	2.7
+	
+ rankSTM 0.75
+	
+	special1	EAS_HI_DODGE
+	special2	EAS_HI_QUICKTHROW
+	special4	EAS_HI_STIMPACK
+ 
+ 	special1HUD HUD_FRAGNADE
+	special2HUD HUD_CONCNADE
+
+	idleAnim BOTH_SCEPTER_HOLD
+	flourishAnim BOTH_SCEPTER_HOLD
+
+	uioverlay "gfx/icons/spec_infantry"
+
+	modelscale   1.09
+
+	model				"manda_et"
+	skin				"rgb"
+	customred			1
+	customgreen			0.863
+	customblue			0
+	uishader			"models/players/manda_et/mb2_icon_gold"
+
+	saber1			kotor_vibrosword
+	saberstyle		SS_STRONG
+	saberdamage 150
+	
+	ASMultiplier 1.02
+	BPmultiplier			.6
+	rankBP				.9
+	
+	APmultiplier			1
+	rankAP				1.1
+	
+
+	isCustomBuild	1
+	mbPoints	0
+	hasCustomSpec 2
+	customSpecName_1 "Bendak (Duelist)"
+	customSpecIcon_1 "gfx/menus/alpha/icon_weap_accuracy"
+	customSpecDesc_1 "Death Match Duelist With Grenades And Finesse"
+	customSpecName_3 "Field Marshal"
+	customSpecIcon_3 "gfx/menus/alpha/icon_playermodel"
+	customSpecDesc_3 "Custom Elite Mandalorian General"
+
+	c_att_skill_0	MB_ATT_FRAGS
+	c_att_names_0	"Plasma Grenade"
+	c_att_ranks_0	0,0,0
+	c_att_descs_0	"20%+ Damage, Ignites"
+
+	c_att_skill_1	MB_ATT_PULSE_GRENADES
+	c_att_names_1	"Carbonite Expander"
+	c_att_ranks_1	0,0,0
+	c_att_descs_1	"Freezes on hit, Staggers"
+
+	c_att_skill_2 	MB_ATT_BP_MULTIPLIER
+	c_att_names_2 	"Saber BP (90%)"
+	c_att_ranks_2 	0
+		
+	c_att_skill_3 	MB_ATT_AP_MULTIPLIER
+	c_att_names_3 	"Saber AP (110%)"
+	c_att_ranks_3 	0
+
+	c_att_skill_4 	MB_ATT_PISTOL
+	c_att_names_4 	"Bendak's Blaster Pistol"
+	c_att_ranks_4 	0
+
+	c_att_skill_4 	MB_ATT_QUICKTHROW
+	c_att_names_4 	"Quick Throw"
+	c_att_ranks_4 	0
+
+	
+}
+WeaponInfo0
+{
+	WeaponToReplace 	WP_BLASTER_PISTOL
+	WeaponBasedOff  	WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/kotor_bpistol3/kotor_bpistol3_w.glm"  
+    NewViewModel		"models/weapons2/kotor_bpistol3/kotor_bpistol3.md3"
+	Icon				"gfx/hud/w_icon_kotor_bpistol3"
+	flashsound0		"sound/weapons/kotor/fire_light.wav"
+	Altflashsound0	"sound/weapons/kotor/fire_power1.wav"
+	WeaponName			"Bendak's Blaster Pistol"
+	clipSize       		36
+	FPMult     			1.2
+	rateMod 	.80
+	velocityMod 1.1
+	Damagemod 1.3
+	ReloadTimeModifier 	1
+	CustomAmmo			1500
+	ChargeSound "sound/weapons/leia_pistol/altcharge.mp3"
+	hasAnimOverrides 1
+	animReadyRun BOTH_MAND_PISTOL_READY
+	animReady BOTH_MAND_PISTOL_READY
+	animReadyWalk BOTH_MAND_PISTOL_READY
+	animReadyNoAmmo BOTH_MAND_PISTOL_ATTACK
+	animAttackRun BOTH_MAND_PISTOL_ATTACK
+	animAttack BOTH_MAND_PISTOL_ATTACK
+	animAttackWalk BOTH_MAND_PISTOL_ATTACK
+	animStand BOTH_MAND_PISTOL_READY
+	animCharge BOTH_MAND_PISTOL_ATTACK
+}
+WeaponInfo1
+{
+WeaponToReplace				WP_PULSE_NADE
+	WeaponBasedOff			WP_PULSE_NADE
+	NewWorldModel			"models/weapons2/kes_pgren/laser_trap_w.glm"
+	NewViewModel	"models/weapons2/kes_pgren/laser_trap.md3"
+	MissileModel 	"models/weapons2/kes_pgren/laser_trap_proj.md3"
+	Icon						"gfx/hud/w_icon_rpgren"
+	WeaponName					"Carbonite Expander"
+}
+WeaponInfo2
+{
+WeaponToReplace			WP_FRAG_NADE
+	WeaponBasedOff			WP_FRAG_NADE
+NewWorldModel	"models/weapons2/thermal/thermal_w.glm"
+NewViewModel "models/weapons2/thermal/thermal.md3"
+NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
+	Icon						"gfx/hud/w_thermal_grenade"
+	MissileModel 				"models/weapons2/thermal/thermal_proj.md3"
+	AltMissileModel			"models/weapons2/thermal/thermal_proj.md3"
+Weaponname	"Plasma Grenade"
+Damagemod	1.20
+}
+
+}
+WeaponInfo3
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_oldrepswords"
+	WeaponName			"Vibrosaber" 
+	SelectSound "sound/weapons/blade/slash2.mp3"
+}
+
+description	"Mandalorian Legend
+
+Pick between a high ranking Mandalorian Warlord, or an Ex Mandolorian Duelist (Bendak Starkiller).
+
+^2Weaponry:
+- Melee
+- Bendak's Blaster Pistol (Pistol 3)
+-- Knocks Down
+-- Mag Reload
+-- 30%+ Damage, 20%+ FP Drain
+-- 20%+ RoF
+-- 10%+ Velocity
+- Vibrosword (Saber Defense 1)
+-- Red Style
+
+^8Attributes:
+- Beskar (2)
+- Strength (1)
+- Blast Armor
+- Tracking Beacon
+- Anti-Mind Trick (1)
+
+^3Abilities:
+- Quickthrow (1) ^3[CS4]
+- Stimpack ^3[CS2]
+- Gunkick ^3[CS3]
+- Dodge (2) ^3[CS1]"

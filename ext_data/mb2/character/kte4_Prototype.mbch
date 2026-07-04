@@ -1,0 +1,152 @@
+
+ClassInfo
+{
+    name                "kte4_Prototype"
+    classNumberLimit    1
+
+    MBClass             MB_CLASS_BATTLEDROID
+
+    weapons             WP_SABER|WP_DC_CARBINE|WP_SONIC_NADE|WP_THROWER|WP_TRIP_MINE
+   
+    maxhealth           80
+    maxarmor            80
+    resource            RESOURCE_BATTERY
+    forcepool		80
+    speed               .94
+    knockbacktaken .85
+    
+	attributes          MB_ATT_BESKAR,1|MB_ATT_CORTOSIS,1|MB_ATT_MAGNETIC_PLATING,1|MB_ATT_CCTRAINING,3|MB_ATT_DC_CARBINE,3|MB_ATT_THROWER_FLAME|MB_ATT_SONIC_DETONATOR,3|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_ANTI_MT,1|MB_ATT_ENV_PROT,3|MB_ATT_TRACKING_BEACON|MB_ATT_BLAST_ARMOUR|MB_ATT_HEALING,2|MB_ATT_RECHARGE,2|MB_ATT_SHIELD_RECHARGE,1|MB_ATT_TRIP_MINES,3
+
+forcepowers	FP_SEE,2
+    
+    classflags          CFL_BLOODYMELEE
+
+    WP_ThrowerFlags     HELD_SLOW|HELD_ALTRELOAD
+    WP_DCCarbineFlags   HELD_SPEED|HELD_ALTRELOAD
+    WP_SonicNadeFlags   HELD_SPEED
+    WP_MeleeFlags       HELD_SPEED|HELD_CRIPPLE
+    WP_SaberFlags       HELD_SPEED
+    WP_TripMineFlags	HELD_SPEED|HELD_SONIC
+
+  saber1				Vibro_bx_legends
+saberstyle			SS_STRONG
+    sabercolor          0
+
+	model		"rogue_ass_droid"
+	skin		"default"
+	uishader	"models/players/rogue_ass_droid/icon_default"
+
+    	CSmultiplier	1.35
+	ASmultiplier	1.20
+	BPmultiplier	0.25
+
+saberMaxChain 2
+
+}
+ForceInfo0
+{
+	ForceToReplace FP_SEE
+	Icon	"gfx/forcepowers/radar"
+	ForcePowerName "Radar Scanner"
+	StartSound 	"sound/ambience/kotor/consolebeep03.mp3"
+	LoopSound "sound/ambience/cp_02_lp.wav"
+}
+
+}
+WeaponInfo0
+{
+
+    WeaponToReplace     WP_SABER
+    WeaponBasedOff      WP_SABER
+    NewWorldModel       "models/weapons2/dummyblaster/model.glm"
+    NewViewModel        "models/weapons2/dummy/dummy.md3"
+    Icon				"gfx/hud/w_icon_vibroswordBX"
+    WeaponName          "Prototype Sword"
+
+}
+WeaponInfo1
+{
+
+WeaponToReplace WP_THROWER
+WeaponBasedOff WP_THROWER
+NewWorldModel		"models/weapons2/kotor_reprifle/kotor_reprifle_w.glm"
+	NewViewModel		"models/weapons2/kotor_reprifle/kotor_reprifle.md3"
+	NewHandsModel		"models/weapons2/heavy_repeater/heavy_repeater_hand.md3"
+	Icon				"gfx/hud/w_icon_kotor_reprifle"
+WeaponName "Crafted Flamethrower"
+customAmmo 700
+clipsize 140
+ReloadTimeModifier 1.5
+hasAnimOverrides 1
+
+}
+WeaponInfo2
+{
+
+	WeaponToReplace WP_DC_CARBINE
+	WeaponBasedOff  WP_DC_CARBINE
+	NewWorldModel		"models/weapons2/kotor_drifle/kotor_drifle_w.glm"
+	NewViewModel		"models/weapons2/kotor_drifle/kotor_drifle.md3"
+	Icon				"gfx/hud/w_icon_altdisruptor"
+	WeaponName  	"Jury-Rigged Blaster Rifle"
+	MissileEffect		"Blaster/Shot02Y"
+	MuzzleEffect 	 "Blaster/MuzzleFlash01Y"
+	Missile3Effect 		"Blaster/Shot04Y"
+	AltMuzzleEffect  null
+	FlashSound0	    "sound/weapons/f-11d/fire.mp3"
+	customAmmo 800
+	clipSize	50
+	ReloadTimeModifier 1.2
+	rateMod 0.5
+	velocitymod	1.6
+	damageMod 0.65
+	fpmult 0.65
+
+}
+
+WeaponInfo3
+
+{
+	WeaponToReplace	WP_TRIP_MINE
+	WeaponBasedOff	WP_TRIP_MINE
+	NewWorldModel		"models/weapons2/laser_trap/laser_trap_w.glm"
+	NewViewModel		"models/weapons2/laser_trap/laser_trap.md3"
+ NewHandsModel "models/weapons2/laser_trap/laser_trap_hand.md3"
+	Icon			"gfx/hud/w_icon_tripmine"
+	WeaponName		"Sonic Tripmines"
+ rateMod 0.8
+
+}
+
+description "Prototype Rogue Assassin Droid
+
+A highly experimental, highly insane, sound-sensitive combat unit engineered for elite hunting.
+
+^2Weaponry:
+- Droid Melee 
+-- Cripples On Hit
+- Prototype Sword (Red Style Only)
+-- No Blaster Defense, Saber Defense (1)
+-- Low BP, High Swing Speed, 2 Limit Combo
+- Frenzied Blaster Fire (DC Carbine 3)
+-- 50%+ RoF, 35%- Damage/FP Drain
+- Sonic Detonators (3)
+- Sonic Trip Mines (3)
+-- Tripmines, 20%+ RoF, Causes Sonic
+- Crafted Flamethrower
+-- Slow Movement, Mag Reload
+
+^8Attributes:
+- CC Training (3)
+- 15% Less KB Taken
+- Droid Strength (1)
+- Beskar Plating (1)
+- Cortosis Lining (1)
+- Mag Plating 
+- Armor Regen (1)
+- Blast Armor
+- Anti-Mind Trick (1)
+- Environmential Protection (3)
+- Echo-Location (Force Sense 2)
+- Tracking Beacon
+- Battery Recharge (2)"

@@ -1,0 +1,374 @@
+ClassInfo
+{
+name	"kte4_Cognus"
+
+classNumberLimit	1
+
+MBClass	MB_CLASS_SITH
+
+weapons	WP_SABER|WP_MELEE
+
+attributes	MB_ATT_AMMO,3|MB_ATT_HEALING,1|MB_ATT_FORCEBLOCK,1|MB_ATT_GETUPS,3|MB_ATT_DEXTERITY,3|MB_ATT_FORCEFOCUS,1|MB_ATT_BUNNY_HOP,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_TRACKING_BEACON|MB_ATT_FLIPKICK,1|MB_ATT_INAIR_FORCE_REGEN,1|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_ANTI_MT,1|MB_ATT_FLOAT_HOP
+
+
+WP_MandoPistolFlags	HELD_ALTRELOAD
+WP_T21Flags	HELD_ALTRELOAD|HELD_FREEZE|HELD_SLOW
+WP_ConcNadeFlags	HELD_FLASH|HELD_CRIPPLE
+
+classflags	CFL_SEEING_STEALTH|CFL_NOPICKUPS
+
+forcepowers 	FP_LEVITATION,1|FP_SEE,1|FP_PULL,1|FP_SABERTHROW,1|FP_SABER_OFFENSE,2|FP_SPEED,1
+
+maxhealth 120
+
+rateOfFire_Melee 0.9
+
+basespeed 225
+
+rankbasespeed	240
+
+rankHack .85
+
+forcepool 75
+rankForcepool	120
+
+forceregen	1
+rankForceregen 	1.15
+
+saber1			saber_kshrt
+saber2			saber_kshrt
+sabercolor		0
+saber2color		0
+saberstyle		SS_DUAL|SS_FAST
+
+saber1_1		royal_pike_legends
+saber2_1		royal_pike_legends
+sabercolor_1		0
+saber2color_1		0
+saberstyle_1		SS_DUAL|SS_FAST
+
+saber1_2 		selk_vibro
+saber2_2 		selk_vibro
+sabercolor_2		0
+saber2color_2		0
+saberstyle_2		SS_DUAL|SS_FAST
+
+saber1_3 		Legends_Knife_Spy_Dual
+saber2_3 		Legends_Knife_Spy_Dual
+sabercolor_3		0
+saber2color_3		0
+saberstyle_3		SS_DUAL|SS_FAST
+
+	special1	EAS_FP_SABERTHROW
+	special2	EAS_HI_DEX
+	special3	EAS_HI_TRACKER
+	special4	EAS_HI_GRAPPLEHOOK
+
+	saberstyle		SS_DUAL
+ 	saberSpecialDamage 	1.35
+ 	saberDamageStyle 	SS_DUAL,220|SS_FAST,130
+
+	BPmultiplier  		0.50
+	rankBP			0.75
+
+	APmultiplier  		1
+
+	ASmultiplier		1.12
+
+	CSmultiplier		1.12
+
+	saberThrowDamage	40
+
+	model		"darthcognus"
+	skin		"default"
+	uishader	"models/players/darthcognus/mb2_icon_default"
+
+tauntAnim BOTH_HAN_TAUNT
+
+isCustomBuild	1
+mbPoints	0
+hasCustomSpec 2
+isOnlyOneSpec 1
+customSpecName_1 "Hunter"
+customSpecIcon_1 "gfx/menus/alpha/icon_weap_firerate"
+customSpecName_2 "Sith Lord"
+customSpecIcon_2 "gfx/menus/alpha/icon_weap_saber"
+
+c_att_skill_0	MB_ATT_MANDO_PISTOL
+c_att_names_0	"Dual Blaster Pistols"
+c_att_ranks_0	0,0,0
+c_att_descs_0	"10%+ Velocity, 75% Slower Mag Reload, 5%- Damage/RoF/FP Drain"
+
+c_att_skill_1	MB_ATT_SONIC_DETONATOR
+c_att_names_1	"Sonic Detonators"
+c_att_ranks_1	0,0
+
+c_att_skill_2	MB_ATT_T21
+c_att_names_2	"Carbonite Rifle"
+c_att_ranks_2	0,0,0
+c_att_descs_2	"Freezes On Hit, Mag Reload, Low Damage, High FP Mult"
+
+c_att_skill_3	MB_ATT_BASESPEED
+c_att_names_3	"Speed (250)"
+c_att_ranks_3	0
+
+c_att_skill_4	MB_ATT_GRAPPLE_HOOK
+c_att_names_4	"Grapple Hook"
+c_att_ranks_4	0,0
+c_att_descs_4	"^3[Melee CS4]"
+
+c_att_skill_5	MB_ATT_TRACKING_DART
+c_att_names_5	"Tracking Darts"
+c_att_ranks_5	0,0
+c_att_descs_5	"^3[CS3]"
+
+c_att_skill_6	MB_ATT_HEALING
+c_att_names_6	"Healing"
+c_att_ranks_6	0,0
+
+c_att_skill_7	MB_ATT_ARMOUR
+c_att_names_7	"Armor (15)"
+c_att_ranks_7	0
+
+c_att_skill_8	MB_ATT_HACK_MULTIPLIER
+c_att_names_8	"Faster Hack Speed (115%)"
+c_att_ranks_8	0
+
+c_att_skill_9	MB_ATT_GRAPPLE_HOP
+c_att_names_9	"Grapple Hop"
+c_att_ranks_9	0
+
+c_att_skill_10	MB_ATT_BLAST_ARMOUR
+c_att_names_10	"Blast Armor"
+c_att_ranks_10	0
+
+c_att_skill_11	MB_ATT_STUN_BATON
+c_att_names_11	"Stun Baton"
+c_att_ranks_11	0
+
+c_att_skill_12	MB_ATT_MICRO_GRENADES
+c_att_names_12	"Flash Bang"
+c_att_ranks_12	0,0
+c_att_descs_12	"Large Radius, No Damage, Flashes/Cripples"
+
+c_att_skill_13	MB_ATT_FRAGS
+c_att_names_13	"Smoke Grenade"
+c_att_ranks_13	0
+c_att_descs_13	"Low Damage, Creates Smoke Screen"
+
+
+c_att_skill_15 	MB_ATT_BP_MULTIPLIER
+c_att_names_15 	"Saber BP (75%)"
+c_att_ranks_15 	0
+
+c_att_skill_16 	MB_ATT_FP_SABER_DEFENSE
+c_att_names_16	"Saber Defense"
+c_att_ranks_16 	0,0,0
+
+c_att_skill_17 	MB_ATT_GUN_DEFENSE
+c_att_names_17 	"Blaster Defense"
+c_att_ranks_17	0,0
+
+c_att_skill_18 	MB_ATT_DEFLECT
+c_att_names_18 	"Blaster Deflect"
+c_att_ranks_18 	0,0,0
+
+c_att_skill_19 	MB_ATT_FP_PULL
+c_att_names_19 	"Force Pull"
+c_att_ranks_19 	0,0
+
+c_att_skill_20 	MB_ATT_FP_TELEPATHY
+c_att_names_20 	"Force Mind Trick"
+c_att_ranks_20 	0
+
+c_att_skill_21 	MB_ATT_FP_LEVITATION
+c_att_names_21 	"Force Jump"
+c_att_ranks_21 	0,0,0
+
+c_att_skill_22  MB_ATT_FP_DRAIN
+c_att_names_22 	"Force Drain"
+c_att_ranks_22 	0,0
+
+c_att_skill_23  MB_ATT_FP_GRIP
+c_att_names_23 	"Force Grip"
+c_att_ranks_23 	0,0
+
+c_att_skill_24 	MB_ATT_FP_SEE
+c_att_names_24 	"Force Sense"
+c_att_ranks_24 	0,0,0
+
+c_att_skill_25 	MB_ATT_POWER
+c_att_names_25 	"Force Pool (120)"
+c_att_ranks_25 	0
+
+c_att_skill_26 	MB_ATT_REGEN
+c_att_names_26 	"Force Regen (115%)"
+c_att_ranks_26 	0
+
+c_att_skill_27 	MB_ATT_FORCEBLOCK
+c_att_names_27 	"Force Block"
+c_att_ranks_27 	0,0
+
+c_att_skill_28 	MB_ATT_FORCEFOCUS
+c_att_names_28 	"Force Focus"
+c_att_ranks_28 	0,0
+
+c_att_skill_29 	MB_ATT_ANTI_MT
+c_att_names_29 	"Anti Mind Trick"
+c_att_ranks_29 	0,0
+
+}
+WeaponInfo0
+{
+
+WeaponToReplace WP_MANDO_PISTOL
+WeaponBasedOff WP_MANDO_PISTOL
+NewWorldModel	"models/weapons2/kotor_pistol1/pistol_w.GLM"
+NewViewModel	"models/weapons2/kotor_pistol1/model.md3"
+Icon	"gfx/hud/w_icon_disruptorpistols_dual"
+WeaponName "Dual Blaster Pistols"
+Clipsize	48
+velocityMod 1.10
+reloadtimeModifier 1.75
+damagemod	.9
+fpmult		.9
+ratemod		1.1
+customammo 800
+MuzzleEffect	"Blaster/MuzzleFlash01Y"
+MissileEffect	"Blaster/Shot02Y"
+Missile3Effect	"Blaster/Shot03Y"
+AltMissileEffect	"Blaster/Shot04Y"
+ChargeEffect	"gfx/effects/yellow_bryarFrontFlash"
+FlashSound0 "sound/weapons/kotor/fire_power1.wav"
+
+}
+WeaponInfo1
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/dummyblaster/model.glm"    
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_forcepike" 	
+	WeaponName			"Cognus' Melee Weapon"
+
+}
+WeaponInfo2
+{
+
+	WeaponToReplace		WP_T21
+	WeaponBasedOff		WP_CONCUSSION
+	NewWorldModel		"models/weapons/W-90_Concussion/w-90_w.glm"
+	NewViewModel		"models/weapons/W-90_Concussion/w-90.md3"
+	FlashSound0			"sound/weapons/base_conc/fire.wav"
+	MuzzleEffect  		"Flamethrower/ice"
+	MissileEffect 		"materials/snow"
+	MissileMissEffect "wat_leg/beaker_det/impact"
+	MissileHitHumanEffect "wat_leg/beaker_det/impact"
+	MissileHitDroidEffect "wat_leg/beaker_det/impact"
+	Icon				"gfx/hud/w_icon_w90conc"
+	WeaponName			"Carbonite Rifle"
+	customAmmo   260
+	clipsize     24
+	rateMod 1.1
+ 	damageMod 0.75
+	FPmult   1.5
+	altfireenabled 0
+ 	hasAnimOverrides 1
+	animReadyRun BOTH_DC15_IDLE
+	animReady BOTH_DC15_IDLE
+	animReadyWalk TORSO_WEAPONREADY4
+	animReadyNoAmmo TORSO_WEAPONREADY4
+	animAttackRun BOTH_ATTACK4
+	animAttack BOTH_ATTACK4
+	animAttackWalk BOTH_ATTACK4
+	animStand TORSO_DROPWEAP4
+
+}
+
+WeaponInfo3
+{
+	WeaponToReplace			WP_FRAG_NADE
+	WeaponBasedOff			WP_FRAG_NADE
+NewWorldModel	"models/weapons2/thermal/thermal_w.glm"
+NewViewModel "models/weapons2/thermal/thermal.md3"
+NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
+	Icon						"gfx/hud/w_thermal_grenade"
+	MissileModel 				"models/weapons2/thermal/thermal_proj.md3"
+	AltMissileModel			"models/weapons2/thermal/thermal_proj.md3"
+	MissileEffect 			"stone/missile1"
+	AltMissileEffect 			"stone/missile1"
+	MissileMissEffect			"smokenadeleg/explode_vol"
+	MissileHitHumanEffect	"smokenadeleg/explode_vol"
+	MissileHitDroidEffect	"smokenadeleg/explode_vol"
+	AltMissileMissEffect		"smokenadeleg/explode_vol"
+	AltMissileHitHumanEffect	"smokenadeleg/explode_vol"
+	AltMissileHitDroidEffect	"smokenadeleg/explode_vol"
+	FlashSound0		"sound/weapons/smokenade/select.mp3"
+	AltFlashSound0 	"sound/weapons/smokenade/select.mp3"
+	WeaponName  				"Smoke Grenades"
+	hasAnimOverrides 1
+	animAttackRun BOTH_THERMAL_THROW2
+	animAttack BOTH_THERMAL_THROW2
+	animAttackWalk BOTH_THERMAL_THROW2
+	animReadyRun BOTH_THERMAL_READY2
+	animReady BOTH_THERMAL_READY2
+	animReadyWalk BOTH_THERMAL_READY2
+	damageMod 0.001
+	ratemod 0.6
+
+}
+WeaponInfo4
+{
+	WeaponToReplace			WP_CONC_NADE
+	WeaponBasedOff			WP_CONC_NADE
+	NewWorldModel			"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel			"models/weapons/Grenade_Concussion/viewmodel.md3"
+	MissileModel 			"models/weapons/Grenade_Concussion/proj.md3"
+	Icon						"gfx/hud/w_icon_stungrenade"
+	WeaponName					"Flashbang Grenades"
+	damagemod	0
+	SplashRadius	400
+}
+
+
+
+
+description "Darth Cognus
+
+The Huntress, an agile force powered assassin. Has a duo spec for either her force powered Sith years or her earlier bounty hunting days.
+
+^2Weaponry:
+- Melee
+- 10% Faster Swings
+- Cognus' Melee Weapon (Saber, Duals/Fast Style)
+-- Saber Defense (1)
+-- Blaster Deflect (0)
+-- Blaster Defense (0)
+> Dual Lightsabers 
+> Dual Force Pikes 
+> Dual Vibro-Blades 
+> Dual Knives
+- Saber Throw (3) ^3[CS1]
+
+^5Force Powers:
+- Force Jump (2)
+- Force Pull (1)
+- Force Sense (1)
+- Force Speed (1)
+
+^8Attributes:
+- Dexterity (3)
+- Healing (1)
+- Sense Immunity
+- Force Block (1)
+- Getup (3)
+- Knockdown Roll
+- Force Focus (1)
+- Bunny Hop
+- Slow Faller
+- Aerial Force Regen
+- Anti Mind Trick (1)
+- Tracking Beacon
+
+^3Abilities:
+- Dex Roll ^3[CS2]"
