@@ -1,0 +1,284 @@
+ClassInfo
+{
+	name			"kte3_NeoWarrior"
+	MBClass			MB_CLASS_MANDALORIAN
+	weapons			WP_MELEE|WP_SABER|WP_MANDO_PISTOL
+
+	extralives	2
+
+	maxhealth		50
+	maxarmor        50	
+
+	attributes		MB_ATT_ASSEMBLE,2|MB_ATT_AMMO,3|MB_ATT_FUEL,1|MB_ATT_BESKAR,1|MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_MANDO_PISTOL,1|MB_ATT_GRAPPLE_HOOK,1|MB_ATT_ENV_PROT,1|MB_ATT_BLAST_ARMOUR|MB_ATT_TRACKING_BEACON
+
+	modelscale  	1.02
+
+	forcepowers		FP_SABER_OFFENSE,2
+
+	saber1		kotor_shortsword
+	saberstyle	SS_STRONG|SS_MEDIUM 
+
+	saber1_1	kotor_shortsword
+	saber2_1	kotor_shortsword
+	saberstyle_1	SS_DUAL
+	
+	
+	extralives		2
+	
+	WP_MandoPistolFlags HELD_ALTRELOAD|HELD_SPEED
+	WP_MeleeFlags	HELD_SPEED
+	WP_EE4Flags		HELD_ALTRELOAD
+	WP_SaberFlags	HELD_SPEED
+	WP_BlasterFlags HELD_ALTRELOAD|HELD_CRIPPLE|HELD_TRACKING|HELD_POISON|HELD_FORCEFOCUS|HELD_FLASH|HELD_NODISARM|HELD_SPEED
+	WP_E22Flags	HELD_ALTRELOAD|HELD_SLOW
+	
+
+	knockbacktaken	0.85
+	
+	resource	RESOURCE_FUEL
+	forcepool	40
+	
+	saberDamage 100
+	saberMaxChain 3
+
+	CSmultiplier	1.0
+	ASmultiplier	0.96
+	BPmultiplier	0.60
+
+	skilltimermod 1.30
+
+	basespeed	190
+
+	APMultiplier	0.90
+	
+  	uioverlay_r "gfx/icons/infantry"
+	uioverlay_l "gfx/icons/spec_infantry"
+	uioverlay_c "gfx/icons/hybrid"
+	
+	model			"manda_et"			
+	skin			"rgb"
+	customred		0.286
+	customgreen		0.557
+	customblue		0.824
+	uishader		"models/players/manda_et/mb2_icon_blue"
+ 	
+	special1	EAS_HI_PSHIELD
+	special2	EAS_HI_MEDPAC
+	special3	EAS_HI_CLOAK
+	special4	EAS_HI_GRAPPLEHOOK
+
+	classNumberLimit	5
+
+	classflags		CFL_STRONGAGAINSTPHYSICAL|CFL_BLOODYMELEE
+	
+	iscustombuild	1
+	mbpoints		46
+
+
+c_att_skill_0 	MB_ATT_FP_SABER_DEFENSE
+c_att_names_0 	"Saber Defense"
+c_att_ranks_0 	4
+
+c_att_skill_1	MB_ATT_MANDO_PISTOL
+c_att_names_1	"Mandalorian Blaster Pistol"
+c_att_ranks_1	0,2
+c_att_descs_1	"10%+ Damage, 15%- RoF, 15%+ Velocity, Mag Reload, Lightweight"
+
+c_att_skill_2	MB_ATT_EE4
+c_att_names_2	"Mandalorian Blaster Rifle"
+c_att_ranks_2	6,4
+c_att_descs_2	"EE-4 Rifle, Mag Reload"
+
+c_att_skill_3	MB_ATT_BLASTER
+c_att_names_3	"Wrist Multi-Purpose Darts"
+c_att_ranks_3	8
+c_att_descs_3	"E-11, Cripples/Poisons/Blinds/Tracks/Focuses, Low Ammo/Damage"
+
+c_att_skill_4	MB_ATT_E_22
+c_att_names_4	"Mandalorian Repeater Rifle"
+c_att_ranks_4	8
+c_att_descs_4	"E-22, 10%+ Faster RoF, 20%- Damage/FP Drain, 10%- Velocity"
+
+c_att_skill_5	MB_ATT_BESKAR
+c_att_names_5	"Beskar"
+c_att_ranks_5	0,4
+
+c_att_skill_6	MB_ATT_DEXTERITY
+c_att_names_6	"Dexterity"
+c_att_ranks_6	2
+
+c_att_skill_7	MB_ATT_TRACKING_BEACON
+c_att_names_7	"Tracking Beacon"
+c_att_ranks_7	2
+
+c_att_skill_8	MB_ATT_ANTI_MT
+c_att_names_8	"Steeled Mind"
+c_att_ranks_8	2
+c_att_descs_8	"Anti Mind Trick"
+
+c_att_skill_9	MB_ATT_WOOKIE_STRENGTH
+c_att_names_9	"Mandalorian Strength"
+c_att_ranks_9	4
+
+c_att_skill_10	MB_ATT_BACTA
+c_att_names_10	"Bacta Vial"
+c_att_ranks_10	4
+c_att_descs_10	"^3[CS2]"
+
+c_att_skill_11	MB_ATT_PSHIELD
+c_att_names_11	"Mandalorian Combat Shield"
+c_att_ranks_11	6
+c_att_descs_11	"^3[CS1]"
+
+c_att_skill_12	MB_ATT_CLOAK
+c_att_names_12	"Personal Stealth Generator"
+c_att_ranks_12	2
+c_att_descs_12	"^3[CS3]"
+
+c_att_skill_13	MB_ATT_GRAPPLE_HOOK
+c_att_names_13	"Grapple Hook"
+c_att_ranks_13	0,4
+c_att_descs_13	"^3[CS4]"
+
+c_att_skill_14	MB_ATT_RESPAWNS
+c_att_names_14	"Reinforcements"
+c_att_ranks_14	10
+c_att_descs_14  "2 default"
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_EE4  			
+	WeaponBasedOff		WP_BLASTER 		
+	NewWorldModel		"models/weapons2/MandoAR/MandoAR.glm"
+	NewViewModel		"models/weapons2/MandoAR/MandoAR.md3"
+	Icon			"gfx/hud/w_icon_MandoAr"
+	WeaponName		"Mandalorian Assault Rifle"
+	FlashSound0		"sound/weapons/kotor/fire_med.wav"
+	altFlashSound0			"sound/weapons/kotor/fire_med.wav""
+	MuzzleEffect  			"Blaster/MuzzleFlash01R"
+	MissileEffect 			"Blaster/Shot02R"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace			WP_MANDO_PISTOL
+	WeaponBasedOff			WP_MANDO_PISTOL					
+	NewWorldModel			"models/weapons2/kotor_hpistol/kotor_hpistol_w.glm"
+	NewViewModel			"models/weapons2/kotor_hpistol/kotor_hpistol.md3"
+	Icon            		"gfx/hud/w_icon_kotor_hpistol_dual"	
+	WeaponName				"Mandalorian Heavy Blaster Pistol"
+	FlashSound0				"sound/weapons/kotor/fire_light.wav" 			
+	AltFlashSound0			"sound/weapons/kotor/fire_power1.mp3"
+	ChargeSound				"sound/weapons/leia_pistol/altcharge.mp3"
+	MuzzleEffect			"Blaster/MuzzleCharge01R"
+	AltMuzzleEffect			"Blaster/MuzzleFlash01R"
+	MissileEffect			"Blaster/Shot02r"
+	Missile3Effect			"Blaster/Shot04r"
+	AltMissileEffect		"Blaster/Shot04r"
+	PowerupShotEffect		"Blaster/Shot04r"
+	ChargeEffect			"gfx/effects/bryarfrontflash"
+	MissileMissEffect 		"effects/blaster/Impact_Wall01R"
+	customammo 				950
+	Clipsize				30
+	damagemod 1.10
+	ratemod	1.15
+	velocitymod	1.15
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_oldrepswords"
+	WeaponName			"Mandalorian Vibrosaber" 
+	SelectSound "sound/weapons/blade/slash2.mp3"
+}
+
+WeaponInfo3
+{
+
+	WeaponToReplace		WP_BLASTER
+	WeaponBasedOff		WP_BLASTER
+	NewWorldModel	"models/weapons2/dummyblaster/model.glm"
+	NewViewModel	"models/weapons2/dummy/dummy.md3" 	 
+	Icon			"gfx/hud/w_icon_sbdarm"
+	WeaponName		"Wrist Multi-purpose Darts"
+	clipSize 2
+	CustomAmmo 12
+	hasAnimOverrides 1
+	primgore 	1
+	FlashSound0		"sound/weapons/halo_needler/fire.wav"
+	FlashSound1		"sound/weapons/halo_needler/fire.wav"
+	FlashSound2		"sound/weapons/halo_needler/fire.wav"
+	FlashSound3		"sound/weapons/halo_needler/fire.wav"
+	MissileMissEffect "effects/flechette/wall_impact"
+	MissileEffect		"effects/flechette/shot"
+	MuzzleEffect		null
+	hasAnimOverrides 1
+	animReady BOTH_MAND_FLAME_READY  //upper
+	animReadyWalk BOTH_MAND_FLAME_READY 
+	animReadyNoAmmo BOTH_MAND_FLAME_READY 
+	animReadyRun	BOTH_MAND_FLAME_READY
+	animAttackRun	BOTH_MAND_FLAME_READY
+	animAttack BOTH_MAND_FLAME_READY 
+	animAttackWalk BOTH_MAND_FLAME_READY
+	animStand BOTH_MAND_FLAME_READY  //lower
+	ReloadTimeModifier  1.2
+	velocityMod 3
+	FPMult 	 	.1
+	damagemod 	.2
+}
+
+WeaponInfo4
+{
+	WeaponToReplace		WP_E_22  			
+	WeaponBasedOff		WP_E_22   			
+	NewWorldModel		"models/weapons2/kotor_reprifle/kotor_reprifle_w.glm"
+	NewViewModel		"models/weapons2/kotor_reprifle/kotor_reprifle.md3"
+	NewHandsModel		"models/weapons2/heavy_repeater/heavy_repeater_hand.md3"
+	Icon				"gfx/hud/w_icon_kotor_reprifle"
+	WeaponName			"Mandalorian Repeater Rifle"
+	AltWallImpact "Blaster/Impact_Wall01R"
+	AltMissileEffect	"Blaster/Shot07R"
+	FlashSound0			"sound/weapons/kotor/fire_power1.wav"
+	AltFlashSound0		"sound/weapons/kotor/fire_hvy.wav"
+	FPMult				.80
+	damagemod			.80
+	rateMod .90
+	velocitymod	.90
+	clipsize 36
+	customAmmo 900
+}
+
+description	"Mandalorian Neo-Crusader Warrior
+
+Standard Neo-Crusader Warriors entrusted with lesser weaponry and equipment as they have lesser skills and abilities compared to their peers.
+
+^2Weaponry:
+- Melee
+-- 15% Faster Movement
+- Mandalorian Vibrosword
+-- 15% Faster Movement Speed
+-- Single Saber
+-- Yellow/Red Style (Or Duals)
+-- Combo Limit (3)
+-- Saber Defense (0)
+- Mandalorian Heavy Blaster Pistol (1)
+-- 15% Faster Movement Speed
+
+^8Attributes:
+- Assemble (3)
+- Physical Resist
+- 15% less Kb Taken
+- Tracking Beacon
+- Environment Protection (1)
+- Blast Armor
+- Beskar (1)
+- 25% slower Skill CD
+
+^8Abilities:
+- Grapple Hook ^3[CS3]"

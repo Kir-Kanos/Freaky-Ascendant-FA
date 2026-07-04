@@ -1,0 +1,86 @@
+//Legends Mode character file - Created by Frenzy & Leos.
+
+ClassInfo
+{
+	name				"kte10_Bandon"
+	MBClass				MB_CLASS_SITH
+	classNumberLimit	1
+	
+	weapons				WP_MELEE|WP_SABER
+
+	attributes			MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_DEFLECT,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_HEALING,1|MB_ATT_FP_REPULSE,1|MB_ATT_ROUNDSPAWNER,1|MB_ATT_SPAWNER,1
+
+	forcepowers			FP_SABER_OFFENSE,2|FP_LEVITATION,2|FP_PUSH,2|FP_SEE,1|FP_DRAIN,3|FP_GRIP,1|FP_LIGHTNING,1|FP_SABERTHROW,3		
+
+spawnerNPC	"DarkJediDual"
+RoundNPC	"DarkJediMage"	
+
+	maxhealth		100
+ maxarmor  25
+
+	resource RESOURCE_FORCE
+	forcepool			100
+	forceregen  0.98
+
+	speed				0.97
+ rateOfFire_Melee .95
+	APmultiplier	0.95
+	BPmultiplier	1.15
+	ASmultiplier	0.95
+	CSmultiplier	1
+
+	saberThrowDamage 40
+	saber1				saber_kdbl
+	sabercolor			0
+	saberstyle			SS_STAFF
+ saberDamageStyle SS_STAFF,160
+
+	saberSpecialDamage 1.25
+
+	special1 EAS_FP_REPULSE
+	special2 EAS_FP_LIGHTNING
+	special3 EAS_FP_DRAIN
+	special4 EAS_HI_SPAWNER
+	
+	classflags CFL_NOPICKUPS
+
+	flourishAnim BOTH_SPINATTACK7
+	saberStanceAnim		BOTH_TRIPLE3_STAFFSTANCE
+
+	modelScale  1.02
+
+	model				"jedi_hm"
+	skin				"darthbandon"
+	uishader			"models/players/jedi_hm/mb2_icon_darthbandon"
+	
+
+	uioverlay "gfx/icons/support"
+}
+
+description	"Darth Bandon
+
+A middling Sith who is hard carried by his specialized Force Drain and Sith Hit-team. Spams drain like a pussy.
+
+^2Weaponry:
+- Melee
+-- 5% faster RoF
+- Lightsaber Staff (Staff)
+-- Saber/Blaster Defense (2)
+-- Blaster Deflect (2)
+-- 125% Spec Dmg Mult
+-- Lower Damage
+-- EX Saber Throw (3) ^3[CS1]
+--- 33% more Dmg
+
+^5Force Powers:
+- Jump (2)
+- Push (2) 
+- Sense (1) 
+- Grip (1)
+- Lightning (1) ^3[CS3]
+- Drain (3) ^3[CS2]
+- Repulse ^3[CS1]
+
+^8Attributes:
+- Healing (1)
+- Force Block/Focus (2)"

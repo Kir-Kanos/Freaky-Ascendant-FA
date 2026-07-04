@@ -1,0 +1,90 @@
+//Legends Mode character file - Created in the Frenzy & Leos Format.
+
+ClassInfo
+{
+	name				"kte10_Uthar"
+	MBClass				MB_CLASS_SITH
+	classNumberLimit	1
+	
+	weapons				WP_MELEE|WP_SABER
+
+	attributes			MB_ATT_FORCEBLOCK,3|MB_ATT_FORCEFOCUS,3|MB_ATT_DEFLECT,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_HEALING,2|MB_ATT_RALLY|MB_ATT_DISP_BLOCK,3|MB_ATT_ANTI_MT,1
+
+	forcepowers			FP_SABER_OFFENSE,2|FP_LEVITATION,1|FP_PUSH,3|FP_ABSORB,2|FP_GRIP,2|FP_DRAIN,2|FP_LIGHTNING,2|FP_SABERTHROW,2|FP_DARKRAGE,3|FP_TEAM_FORCE,3
+
+	WP_SaberFlags		HELD_STUN|HELD_CRIPPLE
+	WP_MeleeFlags		HELD_SPEED
+
+	maxhealth			130
+	maxarmor			20
+
+	resource			RESOURCE_FORCE
+	forcepool			150
+	forceregen			1.1
+
+	speed				0.94 
+
+	knockbacktaken	.8
+
+	sabermaxchain 		3
+
+	APmultiplier		1.35
+	BPmultiplier		1.25 
+	ASmultiplier		0.80 
+	CSmultiplier		0.90
+
+	saberThrowDamage 	60
+
+	saberDamageStyle 	SS_STAFF,190|SS_STRONG,190
+
+	saber1				saber_kdbl
+	sabercolor			0
+	saberstyle			SS_STAFF|SS_STRONG
+	
+	saberSpecialDamage 	2.5
+
+	special1 			EAS_FP_ABSORB
+	special2 			EAS_FP_LIGHTNING
+	special3 			EAS_FP_DRAIN
+	special4			EAS_FP_DARKRAGE
+	
+	classflags 			CFL_NOPICKUPS
+
+	modelScale  		1.05
+
+	model				"sith_officer"
+	skin				"uthar"
+	uishader			"models/players/sith_officer/mb2_icon_uthar"
+}
+
+description	"Uthar Wynn
+
+Headmaster of the sith academy, he leads by stalwart example and uses his students as meatshields as he advances slowly.
+
+^2Weaponry:
+- Melee
+- Sith Academy Double-Bladed Lightsaber (Staff/Red)
+-- Saber Defense (3)
+-- Blaster Defense (3)
+-- Blaster Deflect (3)
+-- 120 Damage
+-- Stuns and Slows targets on impact
+
+^5Force Powers:
+- Jump (1)
+- Push (3)
+- Force Absorb (2)
+- Force Drain (2)
+- Force Lightning (2)
+- Force Grip (2)
+- Force Energize (3)
+
+^8Attributes:
+- Sith Juggernaut (Healing 2)
+- Absolute Will (Force Block/Focus 3)
+- 20% Less Knockback Taken
+- Kneel Before Me! (Rally)
+- Wary Headmaster (Anti MT 1)
+
+^8Abilities:
+- Sith Bladework Discipline (Block Dispenser 3)"

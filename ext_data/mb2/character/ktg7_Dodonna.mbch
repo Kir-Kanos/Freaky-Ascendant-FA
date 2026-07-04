@@ -1,0 +1,110 @@
+
+ClassInfo
+{
+	name				"ktg7_Dodonna"
+	weapons				WP_MELEE|WP_BLASTER_PISTOL|WP_STUN_BATON
+		
+	attributes			MB_ATT_AMMO,3|MB_ATT_PISTOL,3|MB_ATT_DODGE,3|MB_ATT_RALLY|MB_ATT_DISP_FORCE,3|MB_ATT_SPAWNER,1|MB_ATT_DISP_BLOCK,3|MB_ATT_TRACKING_BEACON|MB_ATT_ANTI_MT,2|MB_ATT_HEALING,2|MB_ATT_STUN_BATON,1|MB_ATT_PSHIELD|MB_ATT_ROUNDSPAWNER,1|MB_ATT_DRONE
+	
+	resource RESOURCE_ENERGY
+	forcepool 120
+
+	forcepowers	FP_TEAM_FORCE,2
+	
+	hackrate .75
+
+	spawnerNPC "RepTRGuard2"
+
+	roundNPC "RepTRGuard1"
+
+	forceregen 1.3
+
+	maxhealth			100
+	maxarmor			60
+	
+	MBClass				MB_CLASS_BOUNTY_HUNTER
+	classNumberLimit	1
+	basespeed			225
+	
+	WP_BlasterPistolFlags	HELD_ALTRELOAD|HELD_DISRUPTIFY|HELD_CRIPPLE|HELD_FLAME
+
+	classflags	CFL_SEEING_STEALTH|CFL_STATVIEWER
+	
+	special1		EAS_HI_DODGE
+	special2		EAS_HI_PSHIELD
+	special3		EAS_HI_SPAWNER
+	special4		EAS_HI_SEEKER
+	
+	uioverlay_r "gfx/icons/infantry"
+	uioverlay_c "gfx/icons/hybrid"
+	uioverlay_l "gfx/icons/spec_infantry"
+	
+	gloatAnim  BOTH_VICTORY_FAST
+
+	model			"sith_officer_fem"
+	skin			"dodonna"
+	uishader		"models/players/sith_officer_fem/mb2_icon_dodonna"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace	WP_BLASTER_PISTOL
+	WeaponBasedOff	WP_BLASTER_PISTOL	
+	NewWorldModel			"models/weapons2/kotor_hpistol/kotor_hpistol_w.glm"
+	NewViewModel			"models/weapons2/kotor_hpistol/kotor_hpistol.md3"
+	Icon            		"gfx/hud/w_icon_kotor_hpistol_dual"	
+	WeaponName			"Modified Service Pistol"
+	FlashSound0			"sound/weapons/kotor/fire_hvy.wav"
+	AltFlashSound0		"sound/weapons/kotor/fire_hvy.wav"
+	MuzzleEffect	"Blaster/MuzzleFlash01Y"
+	AltMuzzleEffect	"Blaster/MuzzleFlash01Y"
+	MissileEffect	"Blaster/Shot02Y"
+	Missile3Effect	"Blaster/Shot03Y"
+	AltMissileEffect	"Blaster/Shot04Y"
+	ChargeEffect	"gfx/effects/yellow_bryarFrontFlash"
+	CustomAmmo			200
+	clipSize			12
+	FPMult				1.35
+	damagemod			1.05
+	ratemod				1.40
+	velocitymod			1.40
+	hasAnimOverrides 1
+	animReadyRun BOTH_JANGO_PISTOL_IDLE
+	animReady BOTH_JANGO_PISTOL_IDLE
+	animReadyWalk TORSO_WEAPONIDLE2
+	animReadyNoAmmo BOTH_ATTACK2 
+	animAttackRun BOTH_ATTACK2 
+	animAttack BOTH_ATTACK2 
+	animAttackWalk BOTH_ATTACK2 
+}
+
+description	"Admiral Dodonna 
+
+Republic Tactician, commands large numbers of troops and droids.
+
+^2Weaponry:
+- Melee
+- Modified Service Pistol (3)
+-- Mag Reload
+-- Disruptify/Flame and Cripple On Hit
+-- 5%+ Damage
+-- 35% more FP Drain
+-- 35% less RoF
+-- 40% More Velocity
+- Stun Baton (1)
+
+^8Attributes:
+- Republic Scanner (Tracking Beacon)
+- 25% Faster Hacking
+- Tactical Oversight (Stat Viewer)
+- Rally
+- Strong Minded (Anti Mind Trick 2)
+- Reinforcement Coordination (On Round Start Summon Republic Soldier)
+- Inspire (Force Team Energize 2)
+
+^3Abilities:
+- Command (Resource/Block Point Dispenser 3) ^3[USE In Melee]
+- Dodge (3) ^3[CS1]
+- P-Shield (1) ^3[CS2]
+- Rally The Republic (Summon Republic Trooper) ^3[CS3]
+- Seeker Droid ^3[CS4]"

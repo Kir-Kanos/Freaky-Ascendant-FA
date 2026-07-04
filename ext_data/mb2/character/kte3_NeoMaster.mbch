@@ -1,0 +1,318 @@
+ClassInfo
+{
+	name			"kte3_NeoMaster"
+	MBClass			MB_CLASS_MANDALORIAN
+	weapons			WP_MELEE|WP_SABER|WP_MANDO_PISTOL
+
+	maxhealth		60
+	maxarmor        60	
+
+	attributes		MB_ATT_ASSEMBLE,2|MB_ATT_AMMO,3|MB_ATT_FUEL,2|MB_ATT_BESKAR,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_MANDO_PISTOL,1|MB_ATT_GRAPPLE_HOOK,1|MB_ATT_ENV_PROT,1|MB_ATT_DEXTERITY,1|MB_ATT_BLAST_ARMOUR|MB_ATT_TRACKING_BEACON|MB_ATT_ANTI_MT,1|MB_ATT_WOOKIE_STRENGTH,1
+
+	modelscale  	1.02
+
+	forcepowers		FP_SABER_OFFENSE,2
+
+	saber1		kotor_longsword
+	saberstyle	SS_STRONG|SS_DESANN
+	
+	saber1_1	kotor_shortsword
+	saber2_1	kotor_shortsword
+	saberstyle_1	SS_DUAL
+
+	saber1_2		kotor_vibrostaff
+	saberstyle_2		SS_STAFF
+	
+	
+	extralives		1
+	
+	WP_MinigunFlags	HELD_EXPLOSIVE|HELD_KNOCKBACK|HELD_CRIPPLE|HELD_ALTRELOAD|HELD_SLOW
+	WP_MandoPistolFlags HELD_ALTRELOAD|HELD_SPEED
+	WP_MeleeFlags	HELD_SPEED
+	WP_FireNadeFlags	HELD_CRIPPLE|HELD_FLASH|HELD_SPEED
+	WP_EE4Flags		HELD_ALTRELOAD
+	WP_SaberFlags	HELD_SPEED
+	WP_BowcasterFlags HELD_CRIPPLE|HELD_FLAME|HELD_ALTRELOAD
+	WP_E22Flags	HELD_ALTRELOAD
+
+	knockbacktaken	0.8
+	
+	resource	RESOURCE_FUEL
+	forcepool	75
+	
+	saberDamage 120
+	saberMaxChain 3
+
+	CSmultiplier	1.05
+	ASmultiplier	0.98
+	BPmultiplier	0.75
+
+	skilltimermod 1.25
+
+	basespeed	200
+
+	APMultiplier	0.95
+	
+  	uioverlay_r "gfx/icons/infantry"
+	uioverlay_l "gfx/icons/spec_infantry"
+	uioverlay_c "gfx/icons/hybrid"
+	
+	model			"manda_et"	
+	skin			"rgb"
+	customred		0.800
+	customgreen		0.122
+	customblue		0.122
+	uishader		"models/players/manda_et/mb2_icon_red"
+ 	
+	special1	EAS_HI_PSHIELD
+	special2	EAS_HI_MEDPAC
+	special3	EAS_HI_CLOAK
+	special4	EAS_HI_GRAPPLEHOOK
+
+	classNumberLimit	3
+
+	classflags		CFL_STRONGAGAINSTPHYSICAL|CFL_STATVIEWER|CFL_BLOODYMELEE
+	
+	iscustombuild	1
+	mbpoints		32
+
+
+c_att_skill_0	MB_ATT_FIRE_GRENADES
+c_att_names_0	"Inferno Grenade"
+c_att_ranks_0	4,6
+c_att_descs_0	"Blinds/Slows Victim, Large Radius, Alt Fire Disabled"
+
+c_att_skill_1	MB_ATT_MANDO_PISTOL
+c_att_names_1	"Mandalorian Blaster Pistol"
+c_att_ranks_1	0,2,4
+c_att_descs_1	"10%+ Damage, 15%- RoF, 15%+ Velocity, Mag Reload, Lightweight"
+
+c_att_skill_2	MB_ATT_MINIGUN
+c_att_names_2	"Annihilator Cannon"
+c_att_ranks_2	4,4
+c_att_descs_2	"Minigun, Explosive/Knocks Back, High Damage, Heavy, Low RoF"
+
+c_att_skill_3	MB_ATT_EE4
+c_att_names_3	"Mandalorian Blaster Rifle"
+c_att_ranks_3	4,2
+c_att_descs_3	"EE-4 Rifle, Mag Reload"
+
+c_att_skill_4	MB_ATT_BOWCASTER
+c_att_names_4	"Modifed Bowcaster"
+c_att_ranks_4	4,4,2
+c_att_descs_4	"65%- RoF, 10%+ Damage, 15%+ Velocity, Ignites/Cripples on Hit"
+
+c_att_skill_5	MB_ATT_E_22
+c_att_names_5	"Mandalorian Repeater Rifle"
+c_att_ranks_5	4,2,2
+c_att_descs_5	"E-22, 10%+ Faster RoF, 20%- Damage/FP Drain, 10%- Velocity"
+
+c_att_skill_6	MB_ATT_BESKAR
+c_att_names_6	"Beskar"
+c_att_ranks_6	0,2,4
+
+c_att_skill_7	MB_ATT_BACTA
+c_att_names_7	"Bacta Vial"
+c_att_ranks_7	6
+c_att_descs_7	"^3[CS2]"
+
+c_att_skill_8	MB_ATT_PSHIELD
+c_att_names_8	"Mandalorian Combat Shield"
+c_att_ranks_8	6
+c_att_descs_8	"^3[CS1]"
+
+c_att_skill_9	MB_ATT_CLOAK
+c_att_names_9	"Personal Stealth Generator"
+c_att_ranks_9	2,6
+c_att_descs_9	"^3[CS3]"
+
+c_att_skill_10	MB_ATT_GRAPPLE_HOOK
+c_att_names_10	"Grapple Hook"
+c_att_ranks_10	0,2,2
+c_att_descs_10	"^3[CS4]"
+
+c_att_skill_11	MB_ATT_RALLY
+c_att_names_11	"Rally"
+c_att_ranks_11	4
+
+c_att_skill_12	MB_ATT_RESPAWNS
+c_att_names_12	"Reinforcements"
+c_att_ranks_12	14
+c_att_descs_12  "1 default"
+
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_EE4  			
+	WeaponBasedOff		WP_BLASTER 		
+	NewWorldModel		"models/weapons2/MandoAR/MandoAR.glm"
+	NewViewModel		"models/weapons2/MandoAR/MandoAR.md3"
+	Icon			"gfx/hud/w_icon_MandoAr"
+	WeaponName		"Mandalorian Assault Rifle"
+	FlashSound0		"sound/weapons/kotor/fire_med.wav"
+	FlashSound0			"sound/weapons/kotor_carbine/fire.wav"
+	altFlashSound0			"sound/weapons/kotor_carbine/fire.wav"
+	MuzzleEffect  			"Blaster/MuzzleFlash01R"
+	MissileEffect 			"Blaster/Shot02R"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_MINIGUN
+	WeaponBasedOff		WP_MINIGUN
+	NewWorldModel		"models/weapons2/kotor_repeater/model_w.glm"
+	NewViewModel			"models/weapons2/kotor_repeater/model.md3"
+	Icon				"gfx/hud/w_icon_kotor_repeater"
+	NewBarrelModel		"models/weapons2/z6_rotary/rotary_cannon_barrel.md3"
+	MuzzleEffect  	"Blaster/MuzzleFlash01R"
+	altMuzzleEffect  "Blaster/MuzzleFlash01R"
+	MissileEffect 		"Blaster/Shot04R"
+	missileMissEffect 	"effects/Grenades/EXP_BaseThermal"
+	MissileHitHumanEffect	"effects/Grenades/EXP_BaseThermal"
+	MissileHitDroidEffect 	"effects/Grenades/EXP_BaseThermal"
+	FlashSound0	"sound/weapons/explosions/coolexplode1.wav"
+	AltFlashSound0 "sound/weapons/explosions/coolexplode1.wav"
+	isMinigun 1
+	WeaponName	"Annihilator Cannon"
+	FPMult	2
+	rateMod 9
+	damageMod 2
+	splashradius 150
+	splashdamage 35
+	velocityMod	.65
+	ReloadTimeModifier 2
+	clipsize	8
+	customAmmo	42
+}
+WeaponInfo2
+{
+	WeaponToReplace			WP_MANDO_PISTOL
+	WeaponBasedOff			WP_MANDO_PISTOL					
+	NewWorldModel			"models/weapons2/kotor_hpistol/kotor_hpistol_w.glm"
+	NewViewModel			"models/weapons2/kotor_hpistol/kotor_hpistol.md3"
+	Icon            		"gfx/hud/w_icon_kotor_hpistol_dual"	
+	WeaponName				"Mandalorian Heavy Blaster Pistol"
+	FlashSound0				"sound/weapons/kotor/fire_light.wav" 			
+	AltFlashSound0			"sound/weapons/kotor/fire_power1.mp3"
+	ChargeSound				"sound/weapons/leia_pistol/altcharge.mp3"
+	MuzzleEffect			"Blaster/MuzzleCharge01R"
+	AltMuzzleEffect			"Blaster/MuzzleFlash01R"
+	MissileEffect			"Blaster/Shot02r"
+	Missile3Effect			"Blaster/Shot04r"
+	AltMissileEffect		"Blaster/Shot04r"
+	PowerupShotEffect		"Blaster/Shot04r"
+	ChargeEffect			"gfx/effects/bryarfrontflash"
+	MissileMissEffect 		"effects/blaster/Impact_Wall01R"
+	customammo 				950
+	Clipsize				30
+	damagemod 1.10
+	ratemod	1.15
+	velocitymod	1.15
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_oldrepswords"
+	WeaponName			"Mandalorian Vibrosaber" 
+	SelectSound "sound/weapons/blade/slash2.mp3"
+}
+
+WeaponInfo4
+{
+	WeaponToReplace		WP_FIRE_NADE
+	WeaponBasedOff		WP_FIRE_NADE
+	NewWorldModel		"models/weapons2/kotor_gfrag/thermal_w.glm"  	
+	NewViewModel		"models/weapons2/kotor_gfrag/thermal.md3" 
+	MissileModel "models/weapons2/kotor_gfrag/thermal_proj_1.md3" 
+	AltMissileModel "models/weapons2/kotor_gfrag/thermal_proj_2.md3" 
+	Icon				"gfx/hud/w_icon_kotor_fraggrenade" 					
+	WeaponName			"Inferno Grenade"    
+	splashradius	200
+	altfireenabled 0
+}
+
+WeaponInfo5
+{
+    	WeaponToReplace		WP_BOWCASTER
+    	WeaponBasedOff		WP_BOWCASTER
+    	NewWorldModel		"models/weapons2/kotor_bowcaster2/kotor_bowcaster2_w.glm"
+    	NewViewModel		"models/weapons2/kotor_bowcaster2/kotor_bowcaster2.md3"  
+    	MuzzleEffect		"Blaster/MuzzleFlash01Y" 		   
+	AltMuzzleEffect		"Blaster/MuzzleFlash01Y" 		  		 
+    	MissileEffect	"Blaster/Shot04Y"
+Missile3Effect	"Blaster/Shot04Y"
+	AltMissileEffect	"Blaster/Shot04Y"
+PowerupShotEffect	"Blaster/Shot04Y"
+        FlashSound0		"sound/weapons/bowcaster/fire.mp3"
+		altFlashSound0		"sound/weapons/bowcaster/fire.mp3"
+		ChargeSound 		"sound/weapons/bowcaster/altcharge.mp3"
+		ChargeEffect		"gfx/effects/YellowFrontFlash"
+		OverchargeEffect	"Blaster/MuzzleCharge01Y"	
+    	Icon			"gfx/hud/w_icon_kotor_bowcaster2" 
+    	WeaponName		"Modifed Bowcaster"
+		customAmmo           700
+		rateMod 1.80
+		damagemod 1.10
+		velocitymod 1.15
+}
+
+WeaponInfo6
+{
+	WeaponToReplace		WP_E_22  			
+	WeaponBasedOff		WP_E_22   			
+	NewWorldModel		"models/weapons2/kotor_reprifle/kotor_reprifle_w.glm"
+	NewViewModel		"models/weapons2/kotor_reprifle/kotor_reprifle.md3"
+	NewHandsModel		"models/weapons2/heavy_repeater/heavy_repeater_hand.md3"
+	Icon				"gfx/hud/w_icon_kotor_reprifle"
+	WeaponName			"Mandalorian Repeater Rifle"
+	AltWallImpact "Blaster/Impact_Wall01R"
+	AltMissileEffect	"Blaster/Shot07R"
+	FlashSound0			"sound/weapons/kotor/fire_power1.wav"
+	AltFlashSound0		"sound/weapons/kotor/fire_hvy.wav"
+	FPMult				.80
+	damagemod			.80
+	rateMod .90
+	velocitymod	.90
+	clipsize 36
+	customAmmo 900
+}
+
+description	"Mandalorian Neo-Crusader Rally-Master
+
+Battle proven Mandalorians who is entrusted with specialized weaponry, armor and potential command over warriors.
+
+^2Weaponry:
+- Heavy Melee
+-- 15% Faster Movement
+- Mandalorian Vibrosword
+-- 15% Faster Movement Speed
+-- Single Saber
+-- Purple/Red Style
+-- Dual Saber
+-- Duals Style
+-- Saber Defense (1)
+- Mandalorian Heavy Blaster Pistol (1)
+-- 15% Faster Movement Speed
+
+^8Attributes:
+- Assemble (2)
+- Strength (1)
+- Stat Viewer
+- Physical Resist
+- 20% less Kb Taken
+- Environment Protection (1)
+- Dexterity (1)
+- Tracking Beacon
+- Blast Armor
+- Beskar (1)
+- 25% slower Skill CD
+- Anti Mind Trick (1)
+
+^8Abilities:
+- Grapple Hook ^3[CS3]"

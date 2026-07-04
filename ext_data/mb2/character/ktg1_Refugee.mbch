@@ -1,0 +1,154 @@
+//Siege class def file
+ClassInfo
+{
+	name			"ktg1_Refugee"
+	MBClass			MB_CLASS_SOLDIER
+	
+	weapons			WP_MELEE|WP_BLASTER_PISTOL|WP_PULSE_NADE|WP_CR2|WP_SABER
+	
+	attributes		MB_ATT_AMMO,2|MB_ATT_ASSEMBLE,3|MB_ATT_HEALING,1|MB_ATT_STAMINA,1|MB_ATT_PISTOL,1|MB_ATT_CR2,1|MB_ATT_DODGE,1|MB_ATT_PULSE_GRENADES,1|MB_ATT_DEXTERITY,1
+
+	maxhealth		80
+	maxarmor		20
+	
+	WP_MeleeFlags		HELD_SPEED
+	WP_PulseNadeFlags	HELD_DISARM|HELD_LOWDAMAGE
+	WP_BlasterPistolFlags	HELD_ALTRELOAD
+	WP_CR2Flags		HELD_ALTRELOAD|HELD_SLOW
+	WP_SaberFlags		HELD_CRIPPLE
+	
+	extralives		4
+
+	forcepool	75
+	forceregen	.80
+	
+	basespeed 162
+
+	special1	EAS_HI_SPRINT
+	special2	EAS_HI_DODGE
+	special4	EAS_HI_DEX
+
+
+	saber1		Legends_Knife_Spy_T
+	saberstyle	SS_TAVION|SS_FAST
+
+	ASmultiplier 1.10
+
+	CSmultiplier 1.15
+
+	APmultiplier .3
+
+	BPmultiplier 0
+
+	saberdamage	40
+
+	saberMaxChain	2
+
+	model			"jedi_tm"
+	skin			"citizen"
+	uishader		"models/players/jedi_tm/mb2_icon_citizen"
+
+	model_1			"prisoner"
+	skin_1			"togruta"
+	uishader_1		"models/players/prisoner/mb2_icon_togruta"
+
+	model_2			"prisoner"
+	skin_2			"elder"
+	uishader_2		"models/players/prisoner/mb2_icon_elder"
+
+}
+
+WeaponInfo0
+
+{
+
+	WeaponToReplace	WP_SABER
+	WeaponBasedOff	WP_SABER
+	NewWorldModel		"models/weapons2/vibroknife/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_prisonknife"
+	WeaponName		"Jagged Vibroknife"
+
+}
+
+WeaponInfo1
+
+{
+	WeaponToReplace		WP_CR2
+	WeaponBasedOff		WP_CR2
+	NewWorldModel		"models/weapons2/MandoAR/MandoAR.glm"
+	NewViewModel		"models/weapons2/MandoAR/MandoAR.md3"
+	Icon			"gfx/hud/w_icon_MandoAr"
+	WeaponName			"Cheap Blaster Rifle"
+	FlashSound0			"sound/weapons/kotor_carbine/fire.wav"
+	FlashSound1			"sound/weapons/kotor_carbine/fire.wav"
+	FlashSound2			"sound/weapons/kotor_carbine/fire.wav"
+	FlashSound3			"sound/weapons/kotor_carbine/fire.wav"
+	AltFlashSound0		"sound/weapons/kotor_carbine/fire.wav"
+	AltFlashSound1		"sound/weapons/kotor_carbine/fire.wav"
+	AltFlashSound2		"sound/weapons/kotor_carbine/fire.wav"
+	AltFlashSound3		"sound/weapons/kotor_carbine/fire.wav"
+	MuzzleEffect  		"Blaster/MuzzleFlash01R"
+	MissileEffect 		"Blaster/Shot02R"
+	clipSize			36
+	ReloadTimeModifier  0.9
+	FPMult     			0.9
+	damageMod 0.9
+	rateMod 1.15
+
+}
+
+WeaponInfo2
+
+{
+
+	WeaponToReplace	WP_BLASTER_PISTOL
+	WeaponBasedOff	WP_BLASTER_PISTOL	
+	NewWorldModel		"models/weapons2/kotor_bpistol1/kotor_bpistol1_w.glm"  
+ NewViewModel		"models/weapons2/kotor_bpistol1/kotor_bpistol1.md3"
+	Icon				"gfx/hud/w_icon_kotor_bpistol1"
+	flashsound0		"sound/weapons/kotor/fire_light.wav"
+	Altflashsound0	"sound/weapons/kotor/fire_hvy.wav"
+ WeaponName		"Old Blaster Pistol"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	hasAnimOverrides 1
+animReadyRun BOTH_JANGO_PISTOL_IDLE
+animReady BOTH_JANGO_PISTOL_IDLE
+animReadyWalk TORSO_WEAPONIDLE2
+animReadyNoAmmo BOTH_ATTACK2 
+animAttackRun BOTH_ATTACK2 
+animAttack BOTH_ATTACK2 
+animAttackWalk BOTH_ATTACK2 
+
+}
+
+
+description	"War Refugee
+
+Displaced citizens of the galaxy, forced into the fray. They aren't soldiers, but they are survivors.
+
+^2Weaponry: 
+- Melee
+- 15% Faster Movement
+- Old Blaster Pistol (1)
+-- Mag Reload
+- Cheap Blaster Rifle (1)
+-- CR2, 15% Slower Rof, 10% Less Damage/FP Drain
+-- Mag Reload, 15% Slower Movement
+- Vibro-Knife
+-- No Saber/Blaster Block
+-- Cripples/Low Damage
+- EMP Grenade (1)
+-- Pulse Grenade, Disarms, Low Damage
+
+^8Attributes:
+- Reinforcement (4)
+- Assemble (3)
+- Healing (1)
+- Stamina (1)
+- Dexterity (1)
+
+^3Abilities:
+- Dex Roll ^3[CS4]
+- Dodge (1) ^3[CS2]
+- Sprint ^3[CS1]"

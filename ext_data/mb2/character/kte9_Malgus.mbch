@@ -1,0 +1,94 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name			"kte9_Malgus"
+	MBClass			MB_CLASS_SITH
+	classNumberLimit	1
+	
+	weapons		WP_SABER|WP_MELEE
+
+	attributes	MB_ATT_FORCEBLOCK,1|MB_ATT_DEFLECT,2|MB_ATT_FORCEFOCUS,1|MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_HEALING,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GETUPS,3|MB_ATT_BESKAR,1|MB_ATT_DEXTERITY,1
+
+ saberDamageStyle SS_STRONG,300|SS_DESANN,300
+	saberstyle	SS_DESANN|SS_STRONG
+	APmultiplier	1.10
+	BPmultiplier	1.20
+	CSmultiplier	1.05
+	ASmultiplier	1.05
+ saberThrowDamage 40
+	 saberSpecialDamage 1.25
+	forcepowers	FP_SABER_OFFENSE,3|FP_LEVITATION,2|FP_LIGHTNING,2|FP_PUSH,2|FP_SABERTHROW,3|FP_DARKRAGE,3|FP_GRIP,2
+	
+	maxhealth	135
+	maxarmor		45
+	forcepool	125
+	forceregen 1.10
+	rateOfFire_Melee .9
+	damageGiven	1.12
+
+	speed  0.96
+	//special1	EAS_FP_SABERTHROW game chooses spec1 if not defined, leave as is
+	special2 EAS_NONE
+
+	special4 EAS_FP_LIGHTNING
+	
+	classflags 		CFL_NOPICKUPS
+
+	uioverlay "gfx/icons/frontline"
+	modelscale	1.16
+	
+	saber1			saber_malgus_legends
+	sabercolor		0
+	
+	saber1_1			saber_malgus_broken_leg
+	sabercolor_1		0
+
+	model	"Darthmalgus"
+	skin		"default"
+	uishader	"models/players/darthmalgus/mb2_icon_default"
+	
+	model_1	"Darthmalgus"
+	skin_1		"hood"
+	uishader_1	"models/players/darthmalgus/mb2_icon_hood"
+
+	model_2	"Darthmalgus"
+	skin_2		"nomask"
+	uishader_2	"models/players/darthmalgus/mb2_icon_nomask"
+
+	model_3	"Darthmalgus"
+	skin_3		"undamaged"
+	uishader_3	"models/players/darthmalgus/mb2_icon_undamaged"
+
+	}
+
+description	"Darth Malgus
+
+A massive, tanky Sith with high-powered and long-reaching Lightsaber attacks.
+
+^2Weaponry:
+- Melee
+-- 10% faster RoF
+- Lightsaber (Red/Purple)
+-- Saber Defense (3)
+-- Blaster Defense/Deflect (2)
+-- 125% Spec Dmg mult
+-- 25% more Reach
+-- 33% more Radius
+-- EX Saber Throw (2) ^3[CS1]
+--- 33% more Dmg
+
+^5Force Powers:
+- Jump (2)
+- Push (3)
+- Grip (2)
+- Dark Rage (3)
+- Lightning (2) ^3[CS4]
+
+^8Attributes:
+- Strength (2)
+- Getup (3)
+- Dexterity (1)
+- Healing (1)
+- Beskar (1)
+- Force Block/Focus (1)"

@@ -1,0 +1,242 @@
+ClassInfo
+{
+	name				"ktg2_Ithorian"
+	weapons				WP_SABER|WP_MELEE|WP_CONC_NADE
+
+	attributes			MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_BLAST_ARMOUR|MB_ATT_MICRO_GRENADES,4|MB_ATT_WOOKIE_STRENGTH,2
+
+	maxhealth			145
+	maxarmor			15
+	
+	ASmultiplier 		.95
+	CSmultiplier		.95
+	BPmultiplier		1.1
+	APmultiplier		1.1
+	
+	MBClass				MB_CLASS_WOOKIE	
+	
+	resource 			RESOURCE_STAMINA
+	forcepool 			70
+	
+	speed               0.82
+	extralives			1
+
+	knockbacktaken		.70
+
+	WP_BlasterFlags		HELD_ALTRELOAD|HELD_CRIPPLE
+	WP_SaberFlags		HELD_SPEED
+	WP_DisruptorFlags	HELD_ALTRELOAD|HELD_SLOW|HELD_BACTA
+	WP_PLX1Flags		HELD_SLOW|HELD_BACTA|HELD_FLASH
+	WP_ConcNadeFlags	HELD_BACTA
+	
+	uioverlay_r			"gfx/icons/infantry"
+	uioverlay_c			"gfx/icons/hybrid"
+	uioverlay_l			"gfx/icons/spec_infantry"
+	
+	modelScale          1.04
+
+	classNumberLimit	3
+	
+	saber1			kotor_vibrostaff
+	saberstyle		SS_STAFF
+	
+	saberdamage 		135
+	
+	special1			EAS_HI_SPRINT
+	special2 			EAS_HI_PSHIELD
+		
+	model				"ithorian"
+	skin				"default"
+	uishader			"models/players/ithorian/mb2_icon_oldrep_legends"
+		
+	isCustomBuild		1
+	mbPoints			60
+	
+	c_att_skill_0 		MB_ATT_FP_SABER_DEFENSE
+	c_att_names_0 		"Saber Defense"
+	c_att_ranks_0 		8
+
+	c_att_skill_1		MB_ATT_DISRUPTOR
+	c_att_names_1		"Bio-Restorative Beam"
+	c_att_ranks_1		6
+	c_att_descs_1 		"Disruptor, 0 Damage, Heals Allies On Shot, Fast RoF"
+	
+	c_att_skill_2		MB_ATT_CRYOBAN_GRENADES
+	c_att_names_2		"Cryo Grenade"
+	c_att_ranks_2		4,4
+	
+	c_att_skill_3		MB_ATT_BLASTER
+	c_att_names_3		"Pacification Blaster Rifle"
+	c_att_ranks_3		2,2,2
+	c_att_descs_3		"E-11, 20%- Damage, 10%- RoF, Mag Reload, Cripples On Hit"
+	
+	c_att_skill_4		MB_ATT_RESPAWNS
+	c_att_names_4		"Reinforcements"
+	c_att_ranks_4		16
+	c_att_descs_4		"1 default"
+	
+	c_att_skill_5 		MB_ATT_STAMINA
+	c_att_names_5		"Stamina ^3[CS1]"
+	c_att_ranks_5		2,2,2
+
+	c_att_skill_6 		MB_ATT_BESKAR
+	c_att_names_6		"Hardened Ithorian Hide"
+	c_att_ranks_6		8
+	c_att_descs_6		"Beskar"
+
+	c_att_skill_7		MB_ATT_ENV_PROT
+	c_att_names_7		"Ecological Protection"
+	c_att_ranks_7		2,2
+	c_att_descs_7		"Environment Protection"
+	
+	c_att_skill_8		MB_ATT_PSHIELD
+	c_att_names_8		"Atmospheric Personal Shield"
+	c_att_ranks_8		6
+	c_att_descs_8		"Personal Shield ^3[CS3]"
+
+	c_att_skill_9		MB_ATT_PLX1
+	c_att_names_9		"Rejuvenation Spore Launcher"
+	c_att_ranks_9		4,4
+	c_att_descs_9		"PLX, 0 Damage, Heals Allies, Blinds"
+
+}
+
+WeaponInfo0
+
+{
+
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3"      
+	Icon				"gfx/hud/w_icon_oldrepswords"
+	WeaponName			"Vibrosaber" 
+	SelectSound 		"sound/weapons/blade/slash2.mp3"
+
+}
+
+WeaponInfo1
+
+{
+
+	WeaponToReplace		WP_BLASTER          
+	WeaponBasedOff		WP_BLASTER              
+	NewWorldModel		"models/weapons2/kotor_brifle1/kotor_brifle1_w.glm"
+	NewViewModel		"models/weapons2/kotor_brifle1/kotor_brifle1.md3"
+	Icon				"gfx/hud/w_icon_kotor_brifle1"
+	WeaponName			"Pacification Blaster Rifle"
+	FlashSound0			"sound/weapons/kotor/fire_med.wav"
+	AltFlashSound0		"sound/weapons/kotor/fire_med.wav"
+	MuzzleEffect        "Blaster/MuzzleFlash01G"
+	AltMuzzleEffect        "Blaster/MuzzleFlash01G"
+	MissileEffect		"Blaster/Shot02G"
+	AltMissileEffect		"Blaster/Shot02G"
+	damageMod			0.8
+	rateMod				1.1
+
+}
+
+WeaponInfo2
+
+{
+
+	WeaponToReplace		WP_DISRUPTOR
+	WeaponBasedOff		WP_MANDO_PISTOL
+	NewWorldModel		"models/weapons2/canderous_blaster/cand_blaster_w.glm"
+	NewViewModel		"models/weapons2/canderous_blaster/cand_blaster.md3"
+	Icon				"gfx/hud/w_icon_cand_blaster"
+	MissileMissEffect		"noghri_stick/flesh_impact"
+ 	MissileHitHumanEffect 	"noghri_stick/flesh_impact"
+ 	MissileHitDroidEffect 	"noghri_stick/flesh_impact"
+	AltMissileMissEffect		"noghri_stick/flesh_impact"
+ 	AltMissileHitHumanEffect 	"noghri_stick/flesh_impact"
+ 	AltMissileHitDroidEffect 	"noghri_stick/flesh_impact"
+	AltFlashSound0 "sound/weapons/demp2/altfire.mp3"
+ 	FlashSound0 "sound/weapons/demp2/altfire.mp3"
+	DisruptorBeam1 "gfx/beam/superlaserpulse"
+	DisruptorBeam2 "gfx/beam/superlaserpulse"
+	muzzleEffect "Blaster/MuzzleFlash01G"
+	altMuzzleEffect "Blaster/MuzzleFlash01G"
+	selectSound			"sound/weapons/dc17m/select.mp3"
+	WeaponName			"Bio-Restorative Beam"
+	clipSize			300
+	customAmmo			2000
+	damageMod			0
+	FPmult				0
+	rateMod				0.1
+	ReloadTimeModifier	1.75
+
+}
+
+WeaponInfo3
+
+{
+
+	WeaponToReplace		WP_PLX1
+	WeaponBasedOff		WP_PLX1
+	NewWorldModel		"models/weapons2/e60r_launcher/e60r_launcher_w.glm"
+	NewViewModel		"models/weapons2/e60r_launcher/e60r_launcher.md3"
+	Icon				"gfx/hud/w_icon_e60r_launcher"
+	WeaponName			"Rejuvenation Spore Launcher"
+	damageMod 			0
+	MissileEffect		"force/pushblur"
+	MissileMissEffect	"grenades/exp_heal"
+	MissileHitHumanEffect "grenades/exp_heal"
+	MissileHitDroidEffect "grenades/exp_heal"
+	altMissileEffect	"force/pushblur"
+	altMissileMissEffect "droideka/shieldimpact"
+	altMissileHitHumanEffect "droideka/shieldimpact"
+	altMissileHitDroidEffect "droideka/shieldimpact"
+	MuzzleEffect "Blaster/MuzzleFlash01B"
+altMuzzleEffect "Blaster/MuzzleFlash01B"
+
+}
+
+WeaponInfo4
+
+{
+
+	WeaponToReplace		WP_CONC_NADE
+	WeaponBasedOff		WP_CONC_NADE
+	NewWorldModel		"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel		"models/map_objects/mp/bacta.md3"
+	MissileModel		"models/map_objects/mp/bacta.md3"
+	MissileEffect		"force/pushblur"
+	MissileMissEffect	"grenades/exp_heal"
+	MissileHitHumanEffect "grenades/exp_heal"
+	MissileHitDroidEffect "grenades/exp_heal"
+	altMissileModel		"models/map_objects/mp/bacta.md3"
+	altMissileEffect	"force/pushblur"
+	altMissileMissEffect "droideka/shieldimpact"
+	altMissileHitHumanEffect "droideka/shieldimpact"
+	altMissileHitDroidEffect "droideka/shieldimpact"
+	Icon				"gfx/hud/w_icon_stungrenade"
+	WeaponName			"Kolto Grenades"
+	damageMod			0
+
+}
+
+
+description	"Ithorian Environmentialist
+
+Multi-Life Healing Specialists, prefers to look after their team.
+
+^2Weaponry:
+- Heavy Melee
+-- 15% Faster Movement
+-- 15% Slower Swings
+- Vibrosaber
+-- Saber Defense (0)
+-- 15% faster Movement
+- Kolto Grenades (4)
+-- Conc Grenades, Heal, 0 Damage
+
+^8Attributes:
+- Ithorian Strength
+- Reinforcement (1)
+- Stamina (0)
+- Blast Armor
+- Assemble (2)
+
+^3Abilities:
+- Sprint ^3[CS1]"

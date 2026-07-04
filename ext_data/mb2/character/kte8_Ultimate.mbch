@@ -1,0 +1,141 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name		"kte8_Ultimate"
+	MBClass	MB_CLASS_WOOKIE
+	classNumberLimit	1
+	
+	weapons 	WP_MELEE|WP_SABER|WP_MINIGUN
+	
+	attributes MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_WOOKIE_STRENGTH,3|MB_ATT_AMMO,3|MB_ATT_HEALING,1|MB_ATT_BLAST_ARMOUR|MB_ATT_BESKAR,3|MB_ATT_CORTOSIS|MB_ATT_ANTI_MT,1|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_BEACON|MB_ATT_ENV_PROT,2|MB_ATT_WRISTLASER|MB_ATT_MINIGUN,1|MB_ATT_STIMPACK|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_BARGE|MB_ATT_RALLY
+
+WP_MinigunFlags	HELD_ALTRELOAD|HELD_SLOW
+WP_SaberFlags	HELD_PULSE|HELD_STUN|HELD_KNOCKBACK	
+AB_WLaserFlags  HELD_CRIPPLE
+
+forcepowers	FP_TEAM_FORCE,2
+
+classflags	CFL_BLOODYMELEE|CFL_BPFREEJUMPS|CFL_STATVIEWER
+	
+saber1	gamo_axe_legends
+saberstyle	SS_STRONG
+
+saber1_1  		ispdvba
+saberstyle_1 	SS_STAFF
+
+saberDamageStyle SS_STRONG,250|SS_STAFF,150
+
+	APmultiplier   1.5
+	BPmultiplier 	.50
+	CSMultiplier	.95
+	ASMultiplier	.95
+	
+ maxhealth 180
+ maxarmor 200
+	Forcepool 115
+	forceregen 0.7
+
+knockbacktaken .4
+knockbackgiven 1.1
+
+	speed   1.03
+	rateoffire_melee	.90
+	
+	skilltimermod 1.25
+	
+	special1	EAS_HI_WRIST
+	special2	EAS_HI_BARGE
+	special3	EAS_HI_STIMPACK
+	special4	EAS_HI_GRAPPLEHOOK
+	
+	resource	RESOURCE_STAMINA
+	
+	saberStanceAnim	BOTH_TRIPLE3_REDSTANCE
+	gloatAnim		BOTH_VICTORY_MEDIUM
+	flourishAnim 		BOTH_FORCE_DRAIN_GRAB_START
+	//gloatAnim       BOTH_VICTORY_FAST
+	
+	meleeMoves M_UPPERCUT|M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_PUNCH|M_RLKICK
+	
+	modelscale	1.3
+	uioverlay "gfx/icons/brawler"
+
+	model	"mandalorian_ultimate"
+	skin		"default"
+	uishader	"models/players/mandalorian_ultimate/icon_default"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace	WP_SABER
+	WeaponBasedOff	WP_SABER
+  	NewWorldModel		"models/weapons2/dummyblaster/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon		"gfx/hud/w_icon_ryykA"
+	WeaponName	"Mandalore's Melee Weapon"
+}
+WeaponInfo1
+{
+	WeaponToReplace		WP_MINIGUN 			
+	WeaponBasedOff		WP_MINIGUN 			
+	NewWorldModel		"models/weapons2/kotor_reprifle/kotor_reprifle_w.glm"
+	NewViewModel		"models/weapons2/kotor_reprifle/kotor_reprifle.md3"
+	NewHandsModel		"models/weapons2/heavy_repeater/heavy_repeater_hand.md3"
+	Icon				"gfx/hud/w_icon_kotor_reprifle"
+	WeaponName			"Warrior's Repeater"
+	AltWallImpact "Blaster/Impact_Wall01R"
+	MuzzleEffect  		"Blaster/MuzzleFlash01R"
+	altMuzzleEffect  		"Blaster/MuzzleFlash01R"
+	MissileEffect 		"Blaster/Shot02R"
+	MissileMissEffect		"Blaster/Impact_Wall01R.efx"
+	FlashSound0			"sound/weapons/kotor/fire_power1.wav"
+	AltFlashSound0		"sound/weapons/kotor/fire_hvy.wav"
+	FPMult				1.1
+	rateMod 1.65
+	velocitymod	1.20
+	damagemod 1.45
+	clipsize 40
+	customAmmo 200
+}
+
+description	"Mandalore The Ultimate
+
+Leader of the Mandalorian Neocrusaders, A tank of a man who wields heavy armor and extreme combat abilities.
+
+^2Weaponry:
+- Heavy Melee
+-- 10% faster RoF
+- Mandalore Melee Weapon (Red Saber)
+-- Saber Defense (1)
+-- No Blaster Block
+-- Pulses/Knockback/Knockdown
+- Warrior's Repeater (Minigun 1)
+-- Small Mag Size (Mag Reload)
+-- 65% Slower RoF
+-- 20% Faster Velocity
+-- 45% More Damage
+
+^3Powers:
+- For Mandalore! (Team Energize 2)
+
+^8Attributes:
+- 60% Less Knockback Taken
+- 10% More Knockback Given
+- 25% Slower Skill Cd
+- Strength (3)
+- Fury (2)
+- Blast Armor
+- Beskar (3)
+- Env Protect (2)
+- Tracking Beacon
+- Dexterity (1)
+- Anti MT (1)
+- Cortosis Armor
+- Healing (1)
+
+^3Abilities:
+- Wrist Laser (Slows on Hit) ^3[CS1]
+- Shoulder Barge ^3[CS2 Melee]
+- Stimpack ^3[CS3]
+- Grapplehook ^3[CS4]"

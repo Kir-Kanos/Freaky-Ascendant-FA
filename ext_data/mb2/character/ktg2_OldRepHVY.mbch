@@ -1,0 +1,251 @@
+egends Mode character file - Created by Frenzy & Leos
+//Converted to Old Republic Heavy Variant
+
+ClassInfo
+{
+	name				"ktg2_OldRepHVY"
+	weapons				WP_SABER|WP_MELEE|WP_CONC_NADE
+
+	attributes			MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_BLAST_ARMOUR|MB_ATT_UGL_IMPACT|MB_ATT_MICRO_GRENADES,8
+
+	maxhealth			80
+	maxarmor			60
+	
+	ASmultiplier 		1.10
+	BPmultiplier		.5
+	APmultiplier		.6
+	
+	MBClass				MB_CLASS_CLONETROOPER	
+	
+	resource 			RESOURCE_STAMINA
+	forcepool 			70
+	
+	speed               0.8
+	extralives			1
+
+	knockbacktaken		.9
+
+	WP_BlasterPistolFlags	HELD_ALTRELOAD
+	WP_BlasterFlags		HELD_ALTRELOAD
+	WP_SaberFlags		HELD_SPEED
+	WP_E22Flags			HELD_ALTRELOAD|HELD_SLOW
+	WP_MinigunFlags		HELD_SLOW
+	WP_PLX1Flags		HELD_SLOW|HELD_FLAME|HELD_LIFT
+	WP_UGLFlags			HELD_ALTRELOAD|HELD_CRIPPLE
+	
+	uioverlay_r "gfx/icons/infantry"
+	uioverlay_c "gfx/icons/hybrid"
+	uioverlay_l "gfx/icons/spec_infantry"
+	
+	modelScale          1.00
+	classNumberLimit	3
+	
+	saber1				kotor_vibrosword
+	saberstyle			SS_STRONG
+	saber1_1			kotor_vibrostaff
+	saberstyle_1		SS_STAFF
+	
+	saberdamage 		140
+	
+	special1			EAS_HI_SPRINT
+	special2 			EAS_HI_PSHIELD
+	special3			EAS_HI_EWEB 
+		
+	model				"prisoner"
+	skin				"oldrepsold_helm"
+	uishader			"models/players/prisoner/mb2_icon_oldrepsold_helm"
+			
+	isCustomBuild		1
+	mbPoints			60
+	
+	c_att_skill_0 		MB_ATT_FP_SABER_DEFENSE
+	c_att_names_0 		"Saber Defense"
+	c_att_ranks_0 		8
+
+	c_att_skill_1		MB_ATT_E_22
+	c_att_names_1		"Republic Repeater Rifle"
+	c_att_ranks_1		4,4,4
+	c_att_descs_1 		"E-22, 25%- Damage/FP Drain, 20%+ RoF, 20%- Velocity"
+
+	c_att_skill_2		MB_ATT_MINIGUN
+	c_att_names_2		"Republic Heavy Repeater"
+	c_att_ranks_2		10
+	c_att_descs_2		"Minigun, 10%+ Damage/FP Drain, 25%+ RoF, 30%- Velocity"
+	
+	c_att_skill_3		MB_ATT_CRYOBAN_GRENADES
+	c_att_names_3		"Cryo Grenade"
+	c_att_ranks_3		4
+	
+	c_att_skill_4		MB_ATT_BLASTER
+	c_att_names_4		"Republic Blaster Rifle"
+	c_att_ranks_4		2,2,2
+	c_att_descs_4		"Based on E-11, Alt Reload"
+	
+	c_att_skill_5		MB_ATT_RESPAWNS
+	c_att_names_5		"Reinforcements"
+	c_att_ranks_5		16
+	c_att_descs_5		"1 default"
+	
+	c_att_skill_6 		MB_ATT_STAMINA
+	c_att_names_6		"Stamina ^3[CS1]"
+	c_att_ranks_6		2,2,2
+
+	c_att_skill_7 		MB_ATT_BESKAR
+	c_att_names_7		"Heavy Chest Armor Plate"
+	c_att_ranks_7		8
+	c_att_descs_7		"Beskar"
+
+	c_att_skill_8		MB_ATT_ENV_PROT
+	c_att_names_8		"Environmental Protection"
+	c_att_ranks_8		4
+
+	c_att_skill_9		MB_ATT_EWEB
+	c_att_names_9		"Republic Emplaced Turret"
+	c_att_ranks_9		6
+	c_att_descs_9		"^3[CS2]"
+	
+	c_att_skill_10		MB_ATT_PSHIELD
+	c_att_names_10		"Republic Personal Shield"
+	c_att_ranks_10		6
+	c_att_descs_10		"^3[CS3]"
+
+	c_att_skill_11		MB_ATT_PLX1
+	c_att_names_11		"Gravitational Rupture Rocket"
+	c_att_ranks_11		6,6
+	c_att_descs_11		"PLX, 50%- Damage, Lifts, Ignites"
+
+	c_att_skill_12		MB_ATT_UGL
+	c_att_names_12		"Republic Grenade Launcher"
+	c_att_ranks_12		6
+	c_att_descs_12		"UGL Impact, 8 Conc Rounds, Slows on hit, 10%+ Damage"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3"      
+	Icon				"gfx/hud/w_icon_oldrepswords"
+	WeaponName			"Vibrosaber" 
+	SelectSound 		"sound/weapons/blade/slash2.mp3"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_BLASTER          
+	WeaponBasedOff		WP_BLASTER              
+	NewWorldModel		"models/weapons2/kotor_brifle1/kotor_brifle1_w.glm"
+	NewViewModel		"models/weapons2/kotor_brifle1/kotor_brifle1.md3"
+	Icon				"gfx/hud/w_icon_kotor_brifle1"
+	WeaponName			"Republic Blaster Rifle"
+	FlashSound0			"sound/weapons/kotor/fire_med.wav"
+	AltFlashSound0		"sound/weapons/kotor/fire_med.wav"
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_MINIGUN
+	WeaponBasedOff		WP_MINIGUN
+	NewWorldModel		"models/weapons2/kotor_repeater/model_w.glm"
+	NewViewModel		"models/weapons2/kotor_repeater/model.md3"
+	Icon				"gfx/hud/w_icon_kotor_repeater"
+	MuzzleEffect        "Blaster/MuzzleFlash01B"
+	altMuzzleEffect     "Blaster/MuzzleFlash01B"
+	MissileEffect 		"Blaster/Shot02B"
+	AltMissileEffect 		"Blaster/Shot02B"
+	MissileMissEffect	"Blaster/Impact_Wall01B.efx"
+	FlashSound0			"sound/weapons/minigun/fire.wav"
+	isMinigun			1
+	WeaponName			"Republic Heavy Repeater"
+	customammo			900
+	clipSize			200
+	altFireEnabled		1
+	FPMult     			1.1
+	damageMod 			1.10
+	rateMod 			0.75
+	velocityMod 		.70
+	isMinigun 			1
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_E_22             
+	WeaponBasedOff		WP_E_22             
+	NewWorldModel		"models/weapons2/kotor_reprifle/kotor_reprifle_w.glm"
+	NewViewModel		"models/weapons2/kotor_reprifle/kotor_reprifle.md3"
+	NewHandsModel		"models/weapons2/heavy_repeater/heavy_repeater_hand.md3"
+	Icon				"gfx/hud/w_icon_kotor_reprifle"
+	WeaponName			"Republic Repeater Rifle"
+	FlashSound0			"sound/weapons/kotor/fire_power1.wav"
+	AltFlashSound0		"sound/weapons/kotor/fire_hvy.wav"
+	FPMult				.75
+	damagemod			.75
+	rateMod 			.80
+	velocitymod			.80
+	clipsize 			60
+	customAmmo 			900
+}
+
+WeaponInfo4
+{
+	WeaponToReplace		WP_PLX1
+	WeaponBasedOff		WP_PLX1
+	NewWorldModel		"models/weapons2/e60r_launcher/e60r_launcher_w.glm"
+	NewViewModel		"models/weapons2/e60r_launcher/e60r_launcher.md3"
+	Icon				"gfx/hud/w_icon_e60r_launcher"
+	WeaponName			"Gravitational Rupture Rocket"
+	Damagemod 			.5
+}
+
+WeaponInfo5
+{
+	WeaponToReplace 	WP_UGL
+	WeaponBasedOff 		WP_UGL
+	NewWorldModel		"models/weapons2/cp-50_repeater/cp-50_repeater_w.glm"
+	NewViewModel		"models/weapons2/cp-50_repeater/cp-50_repeater.md3"
+	FlashSound0 		"sound/weapons/upl/fire_mortar.wav"
+	altFlashSound0 		"sound/weapons/dc17m/alt_fire.wav"
+	Icon				"gfx/hud/w_icon_cp-50_repeater"
+	WeaponName 			"Republic Grenade Launcher"
+	damagemod 			1.10
+}
+
+WeaponInfo6
+{
+	WeaponToReplace 	WP_CONC_NADE
+	WeaponBasedOff 		WP_CONC_NADE
+	NewWorldModel 		"models/weapons2/dummyblaster/model.glm"
+	NewViewModel 		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/mgs/weapon_melee"
+	WeaponName 			"Grenade Launcher Ammo"
+	MissileEffect 		"flechette/alt_shot"
+	altMissileEffect 	"flechette/alt_shot"
+	MissileMissEffect 	"wook_rocket/wall_impact"
+	altMissileMissEffect "wook_rocket/wall_impact"
+	primfireenabled 	0
+	altFireEnabled 		0
+}
+
+description	"Republic Heavy Trooper 
+
+2-life heavy vanguard units with extensive defensive purchase options. 
+
+^2Weaponry:
+- Melee
+- Vibrosaber
+-- Saber Defense (0)
+-- No Blaster Block
+-- 15% faster Movement
+> Vibrosword (Red)
+-- 5% less Reach
+> Vibrostaff (Staff)
+-- 19% more Reach
+
+^8Attributes:
+- Reinforcement (1)
+- Stamina (0)
+- Assemble (2) 
+
+^3Abilities:
+- Sprint ^3[CS1]"

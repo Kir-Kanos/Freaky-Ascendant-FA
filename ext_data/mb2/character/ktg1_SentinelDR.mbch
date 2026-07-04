@@ -1,0 +1,185 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name			"ktg1_SentinelDR"
+	extralives	1
+	MBClass		MB_CLASS_SOLDIER
+	weapons			WP_MELEE|WP_THERMAL
+
+	attributes		MB_ATT_AMMO,2|MB_ATT_RECHARGE,1|MB_ATT_ASSEMBLE,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_BLAST_ARMOUR
+	classflags	CFL_BLOODYMELEE
+	WP_ThermalFlags	HELD_SONIC
+	WP_E22Flags	HELD_SLOW
+	WP_CR2Flags	HELD_ALTRELOAD
+
+	knockbackTaken	1		
+	knockbackGiven 1
+	hackRate 1.50
+
+	basespeed 170
+	Maxhealth		60
+
+	MaxArmor		20
+	
+	forcepool	30
+	forceregen	1.5
+	resource	 RESOURCE_BATTERY
+
+	damageGiven	1
+
+	deathAnim	BOTH_SBD_DEATH1
+
+	special1HUD HUD_FRAGNADE
+	special2HUD HUD_PLX1ROCKETS
+	
+	classflags CFL_DISMEMBERFRAGILE
+	
+	flourishAnim BOTH_PAIN17
+
+	special
+	special2	EAS_FP_RAGE
+	special3	EAS_FP_PROTECT	
+	special4
+
+	modelScale   1.09		
+	uioverlay "gfx/icons/infantry"
+	model			"wardroid" 				
+	skin				"default"				
+	uishader			"models/players/wardroid/mb2_icon_default"
+	
+	isCustomBuild	1
+	mbPoints		60
+	
+	c_att_skill_0	MB_ATT_MAGNETIC_PLATING
+	c_att_names_0	"Magnetic Plating"
+	c_att_ranks_0	10	
+	c_att_descs_0	"Blaster Deflection Plating"
+
+	c_att_skill_1	MB_ATT_ANTI_MT
+	c_att_names_1	"Advanced Logic"
+	c_att_ranks_1	3
+	c_att_descs_1	"Anti Jedi Mind Trick"
+	
+	c_att_skill_2	MB_ATT_FP_PROTECT
+	c_att_names_2	"Energy Shield"
+	c_att_ranks_2 	10
+	c_att_descs_2	"Protect 1"
+
+	c_att_skill_3	MB_ATT_FP_RAGE
+	c_att_names_3	"Battery Overcharge""
+	c_att_ranks_3	8
+	c_att_descs_3	"Dark Rage 1"
+
+	c_att_skill_4	MB_ATT_CR2
+	c_att_names_4	"Republic Blaster Carbine"
+	c_att_ranks_4	3,1,1
+	c_att_descs_4	"CR-2, 10% More FP Drain, 20% More Damage, 10% Higher RoF, Low Clip Size, Mag Reload"
+	
+	c_att_skill_5	MB_ATT_BASE_TD
+	c_att_names_5	"Micro Sonic Grenade"
+	c_att_ranks_5	2,3
+	c_att_descs_5	"Basic Thermal Det, Applies Sonic Grenade Effect"
+
+	c_att_skill_6	MB_ATT_CRYOBAN_GRENADES
+	c_att_names_6	"Cyroban Grenade"
+	c_att_ranks_6	5
+	c_att_descs_6	"Cyro Grenade"
+
+	c_att_skill_7	MB_ATT_RESPAWNS
+	c_att_names_7	"Reinforcements"
+	c_att_ranks_7	15,15
+	c_att_descs_7	"1 default"
+
+	c_att_skill_8	MB_ATT_ENV_PROT
+	c_att_names_8	"Enhanced Shielding"
+	c_att_ranks_8	3,2
+	c_att_descs_8	"Environmental Protection"
+
+	c_att_skill_9	MB_ATT_BESKAR
+	c_att_names_9	"Plated Torso"
+	c_att_ranks_9	10
+	c_att_descs_9	"Beskar 1, Covers Chest Only"
+
+	c_att_skill_10	MB_ATT_E_22
+	c_att_names_10	"Republic Assualt Blaster"
+	c_att_ranks_10	4,0,2
+	c_att_descs_10	"100 Percent Faster Rof, 50% Less Damage, 40% Less FP Drain, 15% Slower Movement"
+
+	c_att_skill_11	MB_ATT_ASSEMBLE
+	c_att_names_11	"Assemble"
+	c_att_ranks_11	0,1
+
+}
+WeaponInfo0
+{
+WeaponToReplace		WP_CR2  			
+	WeaponBasedOff		WP_CR2 			
+	NewWorldModel		"models/weapons2/kotor_carbine/model.glm"
+	NewViewModel		"models/weapons2/kotor_carbine/model.MD3"
+	Icon				"gfx/hud/w_icon_kotorcarbine"
+	WeaponName			"Republic Blaster Carbine"
+	FlashSound0			"sound/weapons/kotor_carbine/fire.wav"
+	MuzzleEffect  		"Blaster/MuzzleFlash01R"
+	MissileEffect 		"Blaster/Shot02R"
+	hasAnimOverrides 1
+	animReadyRun BOTH_STAND3
+	animReady BOTH_STAND3
+	animReadyWalk BOTH_STAND3
+	animReadyNoAmmo BOTH_ATTACK3 
+	animAttackRun BOTH_ATTACK3 
+	animAttack BOTH_ATTACK3 
+	animAttackWalk BOTH_ATTACK3 
+	animStand BOTH_WOOKIEE_RAGE_STAND
+	//animStand BOTH_SPEAR_STANCE
+	FPMult				1.1
+	damagemod			1.3
+	rateMod .9
+	clipsize 18
+	
+
+}
+WeaponInfo1
+{
+	WeaponToReplace		WP_E_22  			
+	WeaponBasedOff		WP_E_22   			
+	NewWorldModel		"models/weapons2/kotor_reprifle/kotor_reprifle_w.glm"
+	NewViewModel		"models/weapons2/kotor_reprifle/kotor_reprifle.md3"
+	NewHandsModel		"models/weapons2/heavy_repeater/heavy_repeater_hand.md3"
+	Icon				"gfx/hud/w_icon_kotor_reprifle"
+	WeaponName			"Republic Assault Blaster"
+	AltWallImpact "Blaster/Impact_Wall01R"
+	AltMissileEffect	"Blaster/Shot07R"
+	FlashSound0			"sound/weapons/kotor/fire_power1.wav"
+	AltFlashSound0		"sound/weapons/kotor/fire_hvy.wav"
+	hasAnimOverrides 1
+	animReadyRun BOTH_DC15_IDLE
+	animReady BOTH_DC15_IDLE
+	animReadyWalk BOTH_DC15_READY
+	animReadyNoAmmo BOTH_DC15_ATTACK
+	animAttackRun BOTH_DC15_ATTACK
+	animAttack BOTH_DC15_ATTACK
+	animAttackWalk BOTH_DC15_ATTACK
+	animStand BOTH_STAND1
+	FPMult				.60
+	damagemod			.50
+	rateMod .5
+	clipsize 90
+	customAmmo 900
+}
+
+description	"MK-1 Sentinel Droid
+
+Mass-produced, Tanky Wardroids equipped with old world technology.
+
+^2Weaponry:
+- Melee
+
+^8Attributes:
+- Strength 1
+- Blast Armor
+- Reinforcements (2)
+- Battery Recharge (1)
+- Assemble (1)
+- 50% Slower Objective Speed
+"

@@ -1,0 +1,113 @@
+ClassInfo
+{
+name                "kte8_Hanharr"
+classNumberLimit    1
+MBClass             MB_CLASS_WOOKIE
+
+weapons             WP_MELEE|WP_TRAD_BOWCASTER|WP_TRIP_MINE|WP_SABER|WP_DET_PACK
+
+WP_SaberFlags       HELD_SPEED
+WP_TradBowcasterFlags	HELD_CRIPPLE|HELD_ALTRELOAD
+    
+attributes          MB_ATT_WOOKIE_STRENGTH,3|MB_ATT_TRAD_BOWCASTER,3|MB_ATT_TRIP_MINES,3|MB_ATT_DET_PACK,3|MB_ATT_WOOKIEE_FURY,2|MB_ATT_DEXTERITY,1|MB_ATT_BLAST_ARMOUR,1|MB_ATT_AMMO,3|MB_ATT_BARGE,1|MB_ATT_HEALING,2|MB_ATT_BINOCULARS,1|MB_ATT_ANTI_MT,1|MB_ATT_TRACKING_BEACON|MB_ATT_TRACKING_DART,4
+
+maxhealth  700
+speed               0.95 
+    
+resource            RESOURCE_RAGE
+forcepool           100
+
+APmultiplier        1.40
+BPmultiplier        0.70
+
+saber1              vibroblade_zaalbar_legends
+saberstyle          SS_STRONG
+
+saber1_1            vibrosword_zaalbar_legends
+saber2_1            vibrosword_zaalbar_legends
+saberstyle_1        SS_DUAL
+
+saber1_2            vibroaxe_new_legends
+saberstyle_2        SS_STRONG
+
+saber1_3            nb_mace
+saberstyle_3        SS_STRONG
+    
+classflags          CFL_BLOODYMELEE|CFL_STRONGAGAINSTPHYSICAL
+
+special1            EAS_FP_RAGE
+special2            EAS_HI_BARGE
+special3            EAS_HI_BINOCULARS
+special4		EAS_HI_TRACKER
+    
+modelscale          1.20
+model               "chewbacca"
+skin                "hanharr"
+uishader            "models/players/hanharr/mb2_icon_default"
+
+uioverlay_l         "gfx/icons/spec_infantry"
+uioverlay_c         "gfx/icons/hybrid"
+uioverlay_r         "gfx/icons/brawler"
+
+}
+WeaponInfo0
+{
+WeaponToReplace     WP_TRAD_BOWCASTER
+WeaponBasedOff      WP_TRAD_BOWCASTER
+NewWorldModel  "models/weapons2/kotor_bowcaster2/kotor_bowcaster2_w.glm"       
+NewViewModel        "models/weapons2/kotor_bowcaster2/kotor_bowcaster2.md3"  
+MuzzleEffect        "Blaster/MuzzleFlash01R"
+AltMuzzleEffect     "Blaster/MuzzleFlash01R"  
+MissileEffect       "Blaster/Shot09R"
+AltMissileEffect    "Blaster/Shot09R"
+FlashSound0         "sound/weapons/bowcaster/fire.mp3"
+altFlashSound0      "sound/weapons/bowcaster/fire.mp3"
+Icon                "gfx/hud/w_icon_kotor_bowcaster2" 
+WeaponName          "Hanharr's Bowcaster"
+MissileMissEffect   "Blaster/Impact_Wall01"
+MissileHitHumanEffect "Blaster/Impact_Wall01"
+MissileHitDroidEffect "Blaster/Impact_Wall01"
+altMissileMissEffect "Blaster/Impact_Wall01"
+altMissileHitHumanEffect "Blaster/Impact_Wall01"
+altMissileHitDroidEffect "Blaster/Impact_Wall01"
+PowerupShotEffect    "Blaster/Shot13R"
+ChargeEffect        "gfx/effects/bryarfrontflash"
+customAmmo          1200
+damagemod           1.30
+ratemod             1.20
+fpmult              1.40
+}
+WeaponInfo1
+{
+WeaponToReplace  WP_SABER   
+WeaponBasedOff  WP_SABER   
+NewWorldModel  "models/weapons2/vibblade/saber_w.glm"
+NewViewModel  "models/weapons2/dummy/dummy.md3"    
+Icon   "gfx/hud/w_icon_zaalbarweps"
+WeaponName  "Hannhar's Melee Weapon"  
+selectSound  "s/w/t/staffswing4.mp3"
+}
+
+description "Hanharr
+
+A bloodthirsty Wookiee bounty hunter. Driven by rage and lethal trap-laying, he is a force of pure physical destruction.
+
+^2Weaponry:
+- Wookiee Melee 
+- Hanharr's Melee Weapon
+- Red/Staff Style Depending On Choice
+- Hanharr's Traditional Bowcaster (3)
+-- 20%- RoF, 30%+ Damage, 40%+ FP Drain
+- Tripmines (3)
+- Detpacks (3)
+
+^8Attributes:
+- Strength (3)
+- Tracking Darts (8)
+- Blast Armor
+- Melee Resist
+- Wookiee Fury (2)
+- Barge
+- Healing (2)
+- Dexterity (1)"
+}

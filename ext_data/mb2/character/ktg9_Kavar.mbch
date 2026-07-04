@@ -1,0 +1,82 @@
+//Siege class def file
+
+ClassInfo
+{
+	name		"ktg9_Kavar"
+	weapons		WP_MELEE|WP_SABER
+	attributes	MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_DEFLECT,3|MB_ATT_FORCEBLOCK,3|MB_ATT_KICKFLIP,2|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_RALLY|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_HEALING,1|MB_ATT_DEXTERITY,1
+
+	extralives	1
+	maxhealth	140
+	maxarmor	10
+
+	MBClass		MB_CLASS_JEDI
+	
+	speed 1.09
+	
+	forcepowers	FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_SPEED,2|FP_PUSH,2|FP_PULL,1|FP_SABERTHROW,3|FP_TEAM_FORCE,1|FP_SEE,1
+
+	classflags CFL_NOPICKUPS
+	
+	WP_SaberFlags	HELD_DISARM
+
+	special2	EAS_HI_DEX
+	
+	saber1		saber_kshrt_shoto
+	sabercolor		4
+	saber2		saber_kshrt
+	saber2color	4
+
+	saberstyle	SS_DUAL|SS_TAVION
+
+	forcepool	110
+	forceregen	1.3
+
+	knockbackTaken .75
+
+	ASmultiplier 1.15
+	CSmultiplier 1.20
+	APmultiplier 1.05
+	BPmultiplier 1.05
+
+rateOfFire_Melee .9
+	
+	model				"jedipack_hb"
+	skin				"kavar"
+	uishader			"models/players/jedipack_hb/mb2_icon_kavar"
+
+	classNumberLimit	1
+}
+
+description	"Jedi Master Kavar
+
+A Master Duelist specializing in high-speed combat and disarming techniques.
+
+^2Weaponry: 
+- Melee
+- 15% Faster Movement
+- 10% Faster Swings
+- Shoto And Lightsaber
+-- Dual Style/Cyan Style
+
+^8Force Powers:
+- Speed (3)
+- Push (2)
+- Pull (1)
+- Jump (3)
+- Saber Throw (3)
+- Team Energize (1)
+
+^8Attributes:
+- Kickflip (2)
+- Knock Down Roll
+- Aerial Force Regen
+- Rally
+- Force Block (3)
+- Dexterity (1)
+- 25% Less Knockback Taken
+- Saber Defense (3)
+- Blaster Defense/Deflect (3)
+
+^8Abilities:
+- Dex Roll ^3[CS2]"

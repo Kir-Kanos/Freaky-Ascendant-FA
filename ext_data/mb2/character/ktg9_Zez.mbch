@@ -1,0 +1,77 @@
+//Siege class def file
+
+ClassInfo
+{
+	name		"ktg9_Zez"
+	weapons		WP_MELEE|WP_SABER
+	attributes	MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_DEFLECT,2|MB_ATT_FORCEBLOCK,2|MB_ATT_CLOAK,2|MB_ATT_DEXTERITY,3|MB_ATT_LIGHTS_BEACON|MB_ATT_ENV_PROT,1
+	extralives	1
+	maxhealth	120
+
+	MBClass		MB_CLASS_JEDI
+	
+	speed 1.05
+
+	haterate	.80
+	
+	forcepowers	FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_SEE,2|FP_MINDTRICK,3|FP_DRAIN,1|FP_SABERTHROW,3|FP_PULL,3|FP_PROTECT,2|FP_BLIND,1
+
+	classflags CFL_NOPICKUPS
+	WP_MeleeFlags	HELD_SPEED
+
+	special2 EAS_HI_CLOAK
+
+	forcepool	125
+
+	rateOfFire_Melee .9
+
+	forceregen	1.1
+
+	ASmultiplier 1.10
+	CSmultiplier 1.15
+	APmultiplier .85
+	
+
+	model				"jedipack_hb"
+	skin				"zezkai"
+	uishader			"models/players/jedipack_hb/mb2_icon_zezkai"
+
+	saber1		saber_kdbl
+	sabercolor	5
+	saberstyle	SS_STAFF
+
+	
+	classNumberLimit	1
+	
+}
+
+description	"Jedi Master Zez-Kai Ell
+
+A Stealth-Oriented Sentinel with a fast saber style and high utility.
+
+^2Weaponry: 
+- Melee
+- 10% Faster Melee
+- 15% Faster Movement Speed
+- Double-Bladed Lightsaber
+-- Staff Style
+
+^8Force Powers:
+- Mind Trick (3)
+- Protect (2)
+- Blind (1)
+- Pull (3)
+- Sense (2)
+- Jump (3)
+- Drain (1)
+- Saber Throw (3)
+
+^8Attributes:
+- Cloak (2) ^3[CS2]
+- Environment Protection (1)
+- Force Block (2)
+- Dexterity (3)
+- 20% Faster Hack Speed
+- Light's Beacon (Share Mindtrick/Protect)
+- Saber Defense (2)
+- Blaster Defense/Deflect (2)"

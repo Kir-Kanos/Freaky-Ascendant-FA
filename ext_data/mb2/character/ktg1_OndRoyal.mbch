@@ -1,0 +1,274 @@
+
+ClassInfo
+{
+	name				"ktg1_OndRoyal"
+	weapons				WP_SABER|WP_MELEE|WP_BLASTER_PISTOL|WP_CONC_NADE|WP_TRIP_MINE
+
+	attributes			MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_PISTOL,1
+
+	maxhealth			70
+	maxarmor			65
+
+	ASmultiplier		1.05
+	BPmultiplier		.4
+	APmultiplier		.6
+	
+	MBClass				MB_CLASS_CLONETROOPER	
+	
+	resource			RESOURCE_STAMINA
+	forcepool			115
+	
+	speed				0.87
+
+	extralives			1
+
+	WP_BlasterPistolFlags	HELD_ALTRELOAD|HELD_SPEED
+	WP_T21Flags			HELD_ALTRELOAD|HELD_SLOW
+	WP_SaberFlags		HELD_SPEED
+	WP_CR2Flags			HELD_ALTRELOAD
+	WP_MeleeFlags		HELD_SPEED
+	WP_ShotgunFlags		HELD_PULSE|HELD_ALTRELOAD
+	WP_TripMineFlags	HELD_CRIPPLE|HELD_LOWDAMAGE|HELD_KNOCKDOWN|HELD_PULSE
+	WP_ConcNadeFlags	HELD_SONIC|HELD_SONIC|HELD_FLASH
+	
+	uioverlay_r			"gfx/icons/infantry"
+	uioverlay_c			"gfx/icons/hybrid"
+	uioverlay_l			"gfx/icons/spec_infantry"
+	
+	modelScale			1.00
+	classNumberLimit	4
+	
+	saber1				kotor_vibrosword
+	saberstyle			SS_MEDIUM
+	saber1_1			kotor_vibrostaff
+	saberstyle_1		SS_STAFF
+	
+	saberdamage			130
+	
+	special1			EAS_HI_SPRINT
+	special2			EAS_HI_DEX
+	
+	gloatAnim			BOTH_VICTORY_FAST
+	flourishAnim		BOTH_STAND5TOAIM
+	
+	model				"onderonian"
+	skin				"royalist"
+	uishader			"models/players/onderonian/mb2_icon_royalist"
+
+	model_1				"onderonian"
+	skin_1				"bostuco"
+	uishader_1			"models/players/onderonian/mb2_icon_bostuco"
+
+	model_2				"onderonian"
+	skin_2				"riiken"
+	uishader_2			"models/players/onderonian/mb2_icon_riiken"
+	
+	isCustomBuild		1
+	mbPoints			50
+	
+	c_att_skill_0		MB_ATT_SABER
+	c_att_names_0		"Vibro-Sword"
+	c_att_ranks_0		8
+	c_att_descs_0		"15% Faster Move Speed, No Blaster Block, Saber Defense 1"
+	
+	c_att_skill_1		MB_ATT_PISTOL
+	c_att_names_1		"Military Blaster Pistol"
+	c_att_ranks_1		0,2,4
+	c_att_descs_1		"Blaster Pistol, 5%+ RoF, 10%- Damage"
+
+	c_att_skill_2		MB_ATT_T21
+	c_att_names_2		"Heavy Royalist Repeater"
+	c_att_ranks_2		4,4,2
+	c_att_descs_2		"T21, 40%- RoF, 20%+ Damage/FP Drain, 30%+ Velocity."
+	
+	c_att_skill_3		MB_ATT_PULSE_GRENADES
+	c_att_names_3		"Pulse Grenade"
+	c_att_ranks_3		4
+
+	c_att_skill_4		MB_ATT_MICRO_GRENADES
+	c_att_names_4		"Sonic Detonators"
+	c_att_ranks_4		4,4
+	c_att_descs_4		"Conc Nade, Inflict Sonic Shock, Blind, Cripple"
+
+	c_att_skill_5		MB_ATT_TRIP_MINES
+	c_att_names_5		"Detainment Trip-Mine"
+	c_att_ranks_5		4,4
+	c_att_descs_5		"Tripmines, Inflicts Pulse, Cripple, Low Damage, Knockdown"
+	
+	c_att_skill_6		MB_ATT_CR2
+	c_att_names_6		"Onderonian Service Rifle"
+	c_att_ranks_6		2,2,2
+	c_att_descs_6		"CR2, Mag Reload"
+	
+	c_att_skill_7		MB_ATT_SHOTGUN
+	c_att_names_7		"Ion Pulse Shotgun"
+	c_att_ranks_7		2,2,4
+	c_att_descs_7		"Pulse Effect, Mag Reload, 1 Shot"
+	
+	c_att_skill_8		MB_ATT_RESPAWNS
+	c_att_names_8		"Reinforcements"
+	c_att_ranks_8		10,14
+	c_att_descs_8		"1 default"
+	
+	c_att_skill_9		MB_ATT_STAMINA
+	c_att_names_9		"Stamina ^3[CS1]"
+	c_att_ranks_9		2,2,2
+	
+	c_att_skill_10		MB_ATT_DODGE
+	c_att_names_10		"Dexterity"
+	c_att_ranks_10		2
+	c_att_descs_10		"Unlocks Dex Roll ^3[CS2]"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3"   
+	Icon				"gfx/hud/w_icon_oldrepswords"
+	WeaponName			"Vibrosaber" 
+	SelectSound			"sound/weapons/blade/slash2.mp3"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_CR2 			
+	WeaponBasedOff		WP_CR2   			
+	NewWorldModel		"models/weapons2/kotor_brifle1/kotor_brifle1_w.glm"
+	NewViewModel		"models/weapons2/kotor_brifle1/kotor_brifle1.md3"
+	Icon				"gfx/hud/w_icon_kotor_brifle1"
+	WeaponName			"Onderonian Service Rifle"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	altMuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot02R"
+	AltMissileEffect	"Blaster/Shot02R"
+	MissileMissEffect	"Blaster/Impact_Wall01"
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL	
+	NewWorldModel		"models/weapons2/kotor_bpistol2/kotor_bpistol2_w.glm"  
+	NewViewModel		"models/weapons2/kotor_bpistol2/kotor_bpistol2.md3"
+	Icon				"gfx/hud/w_icon_kotor_bpistol2"
+	flashsound0			"sound/weapons/kotor/fire_light.wav"
+	Altflashsound0		"sound/weapons/kotor/fire_power1.wav"
+	ChargeSound			"sound/weapons/leia_pistol/altcharge.mp3"
+	WeaponName			"Military Blaster Pistol"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_JANGO_PISTOL_IDLE
+	animReady			BOTH_JANGO_PISTOL_IDLE
+	animReadyWalk		TORSO_WEAPONIDLE2
+	animReadyNoAmmo		BOTH_ATTACK2 
+	animAttackRun		BOTH_ATTACK2 
+	animAttack			BOTH_ATTACK2 
+	animAttackWalk		BOTH_ATTACK2 
+	damageMod			.9
+	rateMod				.95
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_T21 			
+	WeaponBasedOff		WP_T21 
+	NewWorldModel		"models/weapons2/kotor_reprifle/kotor_reprifle_w.glm"
+	NewViewModel		"models/weapons2/kotor_reprifle/kotor_reprifle.md3"
+	NewHandsModel		"models/weapons2/heavy_repeater/heavy_repeater_hand.md3"
+	Icon				"gfx/hud/w_icon_kotor_reprifle"
+	WeaponName			"Heavy Royalist Repeater"
+	rateMod				1.40
+	fpmult				1.20
+	damageMod			1.20
+	velocitymod			1.30
+	customAmmo			700
+	FlashSound0			"sound/weapons/kotor/fire_power1.wav"
+	altFlashSound0		"sound/weapons/kotor/fire_med.wav"
+}
+
+WeaponInfo4
+{
+	WeaponToReplace		WP_SHOTGUN 			
+	WeaponBasedOff		WP_SHOTGUN
+	NewWorldModel 		"models/weapons2/kotor_ionrifle/kotor_ionrifle.glm" 
+	NewViewModel 		"models/weapons2/kotor_ionrifle/kotor_ionrifle.md3"
+	Icon				"gfx/hud/w_icon_kotor_ionrifle"
+	WeaponName			"Ion Pulse Shotgun"``
+	FlashSound0			"sound/weapons/acparray/fire.wav"
+	AltFlashSound0		"sound/weapons/acparray/fire.wav"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01B"
+	MissileEffect		"Blaster/Shot03B"
+	AltMissileEffect	"Blaster/Shot03B"
+	clipsize			12
+	damagemod			.80
+	customammo			48
+}
+
+WeaponInfo5
+{
+	WeaponToReplace		WP_CONC_NADE
+	WeaponBasedOff		WP_CONC_NADE
+	NewWorldModel		"models/weapons2/kotor_gfrag/thermal_w.glm"  	
+	NewViewModel		"models/weapons2/kotor_gfrag/thermal.md3"
+	MissileModel		"models/weapons2/kotor_gfrag/thermal_proj_1.md3" 
+	AltMissileModel		"models/weapons2/kotor_gfrag/thermal_proj_2.md3" 
+	MissileEffect		"force/pushblur"
+	altMissileEffect	"force/pushblur"
+	MissileMissEffect	"grenades/exp_sonic"
+	MissileHitHumanEffect "grenades/exp_sonic"
+	MissileHitDroidEffect "grenades/exp_sonic"
+	altMissileMissEffect "grenades/exp_sonic"
+	altMissileHitHumanEffect "grenades/exp_sonic"
+	altMissileHitDroidEffect "grenades/exp_sonic"
+	FlashSound0			"sound/weapons/sonic_detonator/fire.mp3"
+	Icon				"gfx/hud/w_icon_kotor_fraggrenade" 
+	WeaponName			"Sonic Concussion Grenade"
+}
+
+WeaponInfo6
+{
+	WeaponToReplace 	WP_UGL
+	WeaponBasedOff 		WP_UGL
+	NewWorldModel		"models/weapons2/cp-50_repeater/cp-50_repeater_w.glm"
+	NewViewModel		"models/weapons2/cp-50_repeater/cp-50_repeater.md3"
+	FlashSound0 		"sound/weapons/upl/fire_mortar.wav"
+	altFlashSound0 		"sound/weapons/dc17m/alt_fire.wav"
+	Icon				"gfx/hud/w_icon_cp-50_repeater"
+	WeaponName 			"Onderon Repulsion Launcher"
+	damageMod 			1.00
+	clipSize			2
+	customAmmo			2
+}
+
+WeaponInfo7
+{
+	WeaponToReplace		WP_TRIP_MINE
+	WeaponBasedOff		WP_TRIP_MINE
+	NewWorldModel		"models/weapons2/thermal/thermal_w.glm"
+	NewViewModel		"models/weapons2/thermal/thermal.md3"
+	NewHandsModel		"models/weapons2/thermal/thermal_hand.md3"
+	Icon				"gfx/hud/w_thermal_grenade"
+	MissileModel 		"models/weapons2/thermal/thermal_proj.md3"
+	WeaponName			"Detainment Trip-Mine"
+}
+
+description	"Onderonian Royalist Guards
+
+Defensive 2-life frontline guards loyal to the crown. Has Less-Than-Lethal equipment and Riot Gear.
+
+^2Weaponry:
+- Melee
+- Military Blaster Pistol (1)
+-- Mag Reload
+-- 5% Faster RoF, 10% lower damage.
+
+^8Attributes:
+- Reinforcement (1)
+- Stamina (0)
+- Assemble (2)
+
+^3Abilities:
+- Sprint ^3[CS1]"
+}

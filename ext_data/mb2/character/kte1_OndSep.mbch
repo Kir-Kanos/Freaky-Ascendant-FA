@@ -1,0 +1,249 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name		"kte1_OndSep"
+
+	weapons			WP_SABER|WP_MELEE|WP_BLASTER_PISTOL|WP_THERMAL
+
+	attributes		MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_PISTOL,1
+
+	maxhealth		70
+	
+	maxarmor			40
+
+	ASmultiplier 1.05
+	BPmultiplier		.4
+	APmultiplier		.6
+	
+	MBClass			MB_CLASS_CLONETROOPER	
+	
+	resource RESOURCE_STAMINA
+
+	forcepool 115
+	
+	speed 	0.87
+	
+	special1			EAS_HI_SPRINT
+	special2	EAS_HI_DEX
+
+	extralives		1
+
+	WP_BlasterPistolFlags	HELD_ALTRELOAD|HELD_SPEED
+	WP_T21Flags 	HELD_ALTRELOAD|HELD_SLOW
+	WP_SaberFlags			HELD_SPEED
+	WP_CR2Flags	HELD_ALTRELOAD
+	WP_MeleeFlags	HELD_SPEED
+	WP_ShotgunFlags	HELD_FLAME|HELD_ALTRELOAD
+	
+	uioverlay_r "gfx/icons/infantry"
+	uioverlay_c "gfx/icons/hybrid"
+	uioverlay_l "gfx/icons/spec_infantry"
+	
+	modelScale 	1.00
+
+	classNumberLimit	4
+	
+	saber1			kotor_vibrosword
+	saberstyle		SS_MEDIUM
+
+	saber1_1			kotor_vibrostaff
+	saberstyle_1		SS_STAFF
+	
+	saberdamage 130
+	
+	gloatAnim 	BOTH_VICTORY_FAST
+	flourishAnim BOTH_STAND5TOAIM
+	
+	model	"onderonian"
+	skin		"separatist"
+	uishader	"models/players/onderonian/mb2_icon_separatist"
+
+	model_1	"onderonian"
+	skin_1		"vaklu"
+	uishader_1	"models/players/onderonian/mb2_icon_vaklu"
+	
+		
+ 	isCustomBuild		1
+	mbPoints			50
+	
+	c_att_skill_0 	MB_ATT_SABER
+	c_att_names_0 	"Vibro-Sword"
+	c_att_ranks_0 	8
+	c_att_descs_0	"15% Faster Move Speed, No Blaster Block, Saber Defense 1"
+	
+	c_att_skill_1	MB_ATT_PISTOL
+	c_att_names_1	"Military Blaster Pistol"
+	c_att_ranks_1	0,2,4
+	c_att_descs_1	"Blaster Pistol, 5%+ RoF, 10%- Damage"
+
+	c_att_skill_2	MB_ATT_T21
+	c_att_names_2	"Heavy Onderonian Rifle"
+	c_att_ranks_2	4,4,2
+	c_att_descs_2	"T21, 40%- RoF, 20%+ Damage/FP Drain, 30%+ Velocity."
+	
+	c_att_skill_3	MB_ATT_PULSE_GRENADES
+	c_att_names_3	"Pulse Grenade"
+	c_att_ranks_3	4
+
+	c_att_skill_4	MB_ATT_DET_PACK
+	c_att_names_4	"Det Pack"
+	c_att_ranks_4	4,4
+
+	c_att_skill_5	MB_ATT_BASE_TD
+	c_att_names_5	"Local Thermal Grenades"
+	c_att_ranks_5	2,2,2
+
+	c_att_skill_6	MB_ATT_TRIP_MINES
+	c_att_names_6	"Trip mine"
+	c_att_ranks_6	4
+	
+	c_att_skill_7	MB_ATT_PLX1
+	c_att_names_7	"Outdated Missile Launcher"
+	c_att_ranks_7	10
+	c_att_descs_7	"PLX, 25%- Damage, Long Reload"
+	
+	c_att_skill_8	MB_ATT_CR2
+	c_att_names_8	"Onderonian Blaster Rifle"
+	c_att_ranks_8	2,2,2
+	c_att_descs_8	"CR2, Mag Reload"
+	
+	c_att_skill_9	MB_ATT_SHOTGUN
+	c_att_names_9	"Sapper Shotgun"
+	c_att_ranks_9	2,2,4
+	c_att_descs_9	"Ignite, Mag Reload, 1 Shot"
+	
+	c_att_skill_10	MB_ATT_RESPAWNS
+	c_att_names_10	"Reinforcements"
+	c_att_ranks_10	10,14
+	c_att_descs_10	"1 default"
+	
+	c_att_skill_11 	MB_ATT_STAMINA
+	c_att_names_11	"Stamina ^3[CS1]"
+	c_att_ranks_11	2,2,2
+	
+	c_att_skill_12	MB_ATT_DODGE
+	c_att_names_12	"Dexterity"
+	c_att_ranks_12	2
+	c_att_descs_12	"Unlocks Dex Roll ^3[CS2]"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_PLX1
+	WeaponBasedOff		WP_PLX1
+	NewWorldModel		"models/weapons2/e60r_launcher/e60r_launcher_w.glm"
+	NewViewModel		"models/weapons2/e60r_launcher/e60r_launcher.md3"
+	Icon				"gfx/hud/w_icon_e60r_launcher"
+	WeaponName			"Outdated Missile Launcher"
+ Damagemod .75
+ reloadTimeModifier 1.35
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3"   
+	Icon				"gfx/hud/w_icon_oldrepswords"
+	WeaponName			"Vibrosaber" 
+	SelectSound "sound/weapons/blade/slash2.mp3"
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_CR2 			
+	WeaponBasedOff		WP_CR2   			
+	NewWorldModel		"models/weapons2/kotor_brifle2/kotor_brifle2_w.glm"
+	NewViewModel		"models/weapons2/kotor_brifle2/kotor_brifle2.md3"
+	Icon				"gfx/hud/w_icon_kotor_brifle2"
+	WeaponName			"Onderonian Blaster Rifle"
+	MuzzleEffect  		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+	MuzzleEffect  	"Blaster/MuzzleFlash01R"
+altMuzzleEffect "Blaster/MuzzleFlash01R"
+MissileEffect 	"Blaster/Shot02R"
+AltMissileEffect 	"Blaster/Shot02R"
+MissileMissEffect	"Blaster/Impact_Wall01"
+}
+
+WeaponInfo3
+{
+	WeaponToReplace	WP_BLASTER_PISTOL
+	WeaponBasedOff	WP_BLASTER_PISTOL	
+	NewWorldModel		"models/weapons2/kotor_bpistol2/kotor_bpistol2_w.glm"  
+    NewViewModel		"models/weapons2/kotor_bpistol2/kotor_bpistol2.md3"
+	Icon				"gfx/hud/w_icon_kotor_bpistol2"
+	flashsound0		"sound/weapons/kotor/fire_light.wav"
+	Altflashsound0	"sound/weapons/kotor/fire_power1.wav"
+	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
+    WeaponName		"Military Blaster Pistol"
+	hasAnimOverrides 1
+animReadyRun BOTH_JANGO_PISTOL_IDLE
+animReady BOTH_JANGO_PISTOL_IDLE
+animReadyWalk TORSO_WEAPONIDLE2
+animReadyNoAmmo BOTH_ATTACK2 
+animAttackRun BOTH_ATTACK2 
+animAttack BOTH_ATTACK2 
+animAttackWalk BOTH_ATTACK2 
+	damagemod	.9
+	ratemod	.95
+}
+
+WeaponInfo4
+{
+	WeaponToReplace		WP_T21  			
+	WeaponBasedOff		WP_T21 
+
+	NewWorldModel		"models/weapons2/kotor_reprifle/kotor_reprifle_w.glm"
+	NewViewModel		"models/weapons2/kotor_reprifle/kotor_reprifle.md3"
+	NewHandsModel		"models/weapons2/heavy_repeater/heavy_repeater_hand.md3"
+	Icon				"gfx/hud/w_icon_kotor_reprifle"
+	WeaponName			"Onderonian Blaster Rifle"
+
+	
+	rateMod 1.40
+	fpmult		1.20
+	damagemod	1.20
+	velocitymod	1.30
+	customAmmo 700
+
+	FlashSound0				"sound/weapons/kotor/fire_power1.wav"
+ altFlashSound0		"sound/weapons/kotor/fire_med.wav"
+}
+
+WeaponInfo5
+{
+ WeaponToReplace  WP_SHOTGUN
+ WeaponBasedOff  WP_SHOTGUN
+ NewWorldModel  "models/weapons2/cp-50_repeater/cp-50_repeater_w.glm"
+ NewViewModel  "models/weapons2/cp-50_repeater/cp-50_repeater.md3"
+ MuzzleEffect  "acp_array/muzzle_flash"
+ MissileEffect  "acp_array/shot"
+ FlashSound0   "sound/weapons/acparray/fire.wav"
+ Icon    "gfx/hud/w_icon_cp-50_repeater"
+ WeaponName   "Sapper Shotgun"
+ clipSize           12
+ altFireEnabled  0
+ ReloadTimeModifier  0.95
+ CustomAmmo 48
+}
+
+description	"Onderonian 'Vaklu' Seperatists
+
+2-life units with purchase options including extra lives, defensive weaponry, and other militia weaponry.
+
+^2Weaponry:
+- Melee
+- Military Blaster Pistol (1)
+-- Mag Reload
+-- 5% Faster RoF, 10% lower damage.
+
+^8Attributes:
+- Reinforcement (1)
+- Stamina (0)
+- Assemble (2) 
+
+^3Abilities:
+- Sprint ^3[CS1]"

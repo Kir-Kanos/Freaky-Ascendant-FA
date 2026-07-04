@@ -1,0 +1,147 @@
+ClassInfo
+{
+    name                "kte8_InsaneSelkath"
+    MBClass             MB_CLASS_ELITETROOPER 
+    classNumberLimit    4
+    extralives          3 
+
+    weapons             WP_MELEE|WP_SHOTGUN|WP_SABER
+    
+    WP_ShotgunFlags     HELD_SONIC
+    WP_MeleeFlags	HELD_POISON
+    
+    attributes          MB_ATT_DASH,1|MB_ATT_WATER_BREATHING|MB_ATT_GETUPS,4|MB_ATT_ASSEMBLE,1|MB_ATT_WOOKIEE_FURY,1|MB_ATT_DEXTERITY,1|MB_ATT_ENV_PROT,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_SHOTGUN,2|MB_ATT_GETUPS,4|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_HEALING,1|MB_ATT_PSHIELD|MB_ATT_BARGE
+
+ forcepowers FP_RAGE,2
+
+ resource  RESOURCE_RAGE
+ forcepool 85
+ forceregen 0.4
+ resourceRegenRate 1000
+ resourceRegenAmount 1
+
+    maxhealth           100
+    maxarmor            40
+
+    baseSpeed           190
+    
+    saber1              selk_vibro
+    saber2              selk_vibro
+    saberstyle          SS_DUAL
+    saberDamage         90
+
+	ASmultiplier 1.05
+	BPmultiplier		.35
+	APmultiplier		.75
+
+	speed .96
+
+    saberSpecialDamage  1.5
+
+    meleeMoves          M_UPPERCUT|M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_PUNCH|M_RLKICK
+
+    classflags          CFL_BLOODYMELEE
+    
+    special1            EAS_FP_RAGE
+    special2            EAS_HI_DASH
+    special3		EAS_HI_BARGE
+    special4		EAS_HI_PSHIELD
+
+    
+    modelscale          1.05
+
+    model               "Selkath"
+    skin                "default"
+    uishader            "models/players/Selkath/mb2_icon_default"
+
+    }
+    WeaponInfo0
+    {
+        WeaponToReplace     WP_SHOTGUN
+        WeaponBasedOff      WP_MELEE
+        NewWorldModel       "models/weapons2/dummyblaster/model.glm"     
+        NewViewModel        "models/weapons2/dummy/dummy.md3"
+        NewHandsModel       "models/weapons2/dummy/dummy.md3"
+        NewBarrelModel      "models/weapons2/dummy/dummy.md3"
+        Icon                "models/weapons2/halo_pgren/icon.png"
+        WeaponName          "Progenitor's Call"
+
+        FlashSound0         "sound/chars/firaxa/misc/attack1.wav"
+        AltFlashSound0      "sound/chars/firaxa/misc/attack1.wav"
+
+        MissileEffect       "misc/waterbreath"
+        altMissileEffect    "misc/waterbreath"
+        MissileModel        "models/weapons2/dummy/dummy.md3"
+        altMissileModel     "models/weapons2/dummy/dummy.md3"
+        MissileMissEffect   "env/water_impact"
+        altMissileMissEffect "env/water_impact"
+        MissileHitHumanEffect "env/water_impact"
+        AltMissileHitHumanEffect "env/water_impact"
+        MissileHitDroidEffect "env/water_impact"
+        AltMissileHitDroidEffect "env/water_impact"
+
+        velocityMod         0.8
+        altFireEnabled      0
+        clipSize            12
+        customAmmo          -1
+        hasAnimOverrides    1
+        animReadyRun        BOTH_WOOKIEE_RAGE_RUN
+        animReady           BOTH_WOOKIEE_RAGE_STAND_IDLE
+        animReadyWalk       BOTH_WOOKIEE_RAGE_RUN
+        animReadyNoAmmo     BOTH_WOOKIEE_RAGE_STAND_IDLE
+        animAttackRun       BOTH_WOOKIEE_ENRAGE
+        animAttack          BOTH_WOOKIEE_ENRAGE
+        animAttackWalk      BOTH_WOOKIEE_ENRAGE
+    }
+
+WeaponInfo1
+{
+ WeaponToReplace  WP_SABER
+ WeaponBasedOff  WP_SABER
+ NewWorldModel   "models/weapons2/kotor_vibroswords/vibroblade_w.glm" 
+ NewViewModel   "models/weapons2/dummy/dummy.md3"
+ Icon     "gfx/hud/w_icon_vibrosword_duals"
+ WeaponName   "Double Fira Vibroblades"
+ selectSound null
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_MELEE
+	WeaponBasedOff		WP_MELEE
+	NewWorldModel		"models/weapons2/dummyblaster/model.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon			"gfx/hud/w_icon_melee"
+	WeaponName		"Selkath Claws"
+	primFireEnabled		1
+	AltFireEnabled 		1
+}
+
+description "Insane Selkath
+
+A Selkath driven to primal madness by the Progenitor's sonic wailing. Durable, frenzied, and lethal in close quarters.
+
+^2Weaponry:
+- Selkath Claws
+-- Heavy Melee, Poisons On Hit
+- Double Fira Vibroblades
+-- No Blaster Defense, Saber Defense (1)
+-- Low BP, Low Damage
+- Progenitor's Call (Shotgun)  
+-- Stuns on hit
+
+^5Powers:
+- Insanity (Rage 2)
+
+^8Attributes:
+- Reinforcements (3)
+- Selkath Strength (1)
+- Dash (1)
+- Getups (4)
+- Assemble (1)
+
+^8Abilities:
+- Dash (1) ^3[CS2]
+- Insanity (Rage 2) ^3[CS1]
+- Barge ^3[CS3]
+- Personal Shield ^3[CS4]"
