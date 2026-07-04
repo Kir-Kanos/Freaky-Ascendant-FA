@@ -11,14 +11,9 @@ ClassInfo
  classflags      	CFL_SEEING_STEALTH|CFL_BLOODYMELEE|CFL_ACIDBLOOD
  WP_DCCarbineFlags	HELD_ALTRELOAD|HELD_SLOW
  WP_EE4Flags	HELD_ALTRELOAD
- WP_PLX1Flags
-HELD_KNOCKDOWN|HELD_KNOCKBACK|HELD_FLAME|HELD_EXPLOSIVE|HELD_DISRUPTIFY|HELD_SLOW|HELD_STUN
+ WP_PLX1Flags HELD_KNOCKDOWN|HELD_KNOCKBACK|HELD_FLAME|HELD_EXPLOSIVE|HELD_DISRUPTIFY|HELD_SLOW|HELD_STUN
  WP_DetPackFlags HELD_FLAME|HELD_KNOCKBACK|HELD_EXPLOSIVE|HELD_KNOCKDOWN
- 
-
 	knockbacktaken .90
-
- holdables 
  maxhealth	70
  maxarmor  80
 
@@ -218,9 +213,9 @@ altMissileMissEffect    "firegrenade/prim_explode_enhanced2"
 }
 
 
-description "HK-50 'Assassin' Droid 
+description "HK-50 Assassin Droid 
 
-A straightforward ‘assassin’ droid who doesn't care for subtlety (or colleteral damage) and appreciates teamwork.
+A straightforward assassin droid who doesn't care for subtlety (or colleteral damage) and appreciates teamwork.
 
 
 ^2Weaponry:
