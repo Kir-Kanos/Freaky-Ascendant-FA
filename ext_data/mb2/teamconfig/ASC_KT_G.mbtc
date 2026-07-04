@@ -43,6 +43,8 @@ SubclassesForClass3
 	Subclass3	"ktg7_Dodonna"
 	Subclass4	"ktg7_Trask"
 	Subclass5	"ktg6_OldRepSniper"
+	Subclass6 	"ktg3_Baodur"
+	Subclass7	"ktg2_NicoOkarr"
 }
 
 SubclassesForClass4
