@@ -18,7 +18,7 @@ forcepowers	FP_TEAM_FORCE,2
 
 classflags	CFL_BLOODYMELEE|CFL_BPFREEJUMPS|CFL_STATVIEWER
 	
-saber1	mando
+saber1	gamo_axe_legends
 saberstyle	SS_STRONG
 
 saber1_1  		ispdvba
