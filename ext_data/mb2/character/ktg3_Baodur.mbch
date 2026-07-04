@@ -1,7 +1,7 @@
-//Custom FA by -{EXE}-Noob
+
 ClassInfo
 {
-	name			"asg3_Baodur"
+	name			"ktg3_Baodur"
 	weapons			WP_MELEE|WP_SABER|WP_BLASTER|WP_BOWCASTER
 	saberstyle		SS_DUAL
 	saber1			powerfist
