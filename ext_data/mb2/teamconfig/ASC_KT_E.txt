@@ -1,0 +1,95 @@
+name "ASC_KT_E"
+
+ClassesAllowed 6
+TimePeriod 1
+EUAllowed 0
+
+Classes
+{
+	class1 "kte1_ZhugGang"
+	class2 "kte5_NeoAerial"
+	class3 "kte7_ExInfil"
+	class4 "kte8_Hanharr"
+	class5 "kte9_DarkJedi"
+	class6 "kte10_SithLord"
+}
+
+SubclassesForClass1
+{
+	Subclass1 "kte1_Czerka"
+	Subclass2 "kte1_Looter"
+	Subclass3 "kte1_OndSep"
+	Subclass4 "kte1_Student"
+	Subclass5 "v1_ORSithTr"
+	Subclass6 "kte3_SithTRHVY"
+	Subclass7 "kte2_SithCommando"
+	Subclass8 "kte2_SithOff"
+	Subclass9 "v1_Thug"
+	Subclass10 "kte2_ExchangeThug"
+	Subclass11 "v2_Calo"
+	Subclass12 "kte1_MandoSlave"
+	Subclass13 "kte2_HK50"
+	Subclass14 "kte2_CzerkaTech"
+	Subclass15 "kte2_RakatanInfantry"
+	Subclass16 "v1_TORagent"
+	Subclass17 "kte2_Dezanti"
+	Subclass18 "kte3_RedEclipse"
+	Subclass19 "v3_Trando"
+	Subclass20 "kte2_Bendak"
+	Subclass21 "kte3_NeoWarrior"
+	Subclass22 "kte3_NeoMaster"
+}
+
+SubclassesForClass2
+{
+	Subclass1 "kte4_Cognus"
+	Subclass2 "kte4_Prototype"
+	Subclass3 "kte6_GandFinder"
+	Subclass4 "kte6_UbeseScout"
+	Subclass5 "kte6_SithGunner"
+	Subclass6 "kte4_TwinSuns"
+	Subclass7 "kte6_SithSeeker"
+	Subclass8 "kte6_OuterRimBounty"
+	Subclass9 "v6_Tusk"
+}
+
+SubclassesForClass3
+{
+	Subclass1 "kte7_Azanti"
+	Subclass2 "kte7_SaulK"
+	Subclass3 "kte7_Cassus"
+}
+
+SubclassesForClass4
+{
+	Subclass1 "kte8_InsaneSelkath"
+	Subclass2 "kte8_Cahhmakt"
+	Subclass3 "kte8_Ultimate"
+	Subclass4 "v8_HuttW"
+	Subclass5 "v8_GamoPig"
+}
+
+SubclassesForClass5
+{
+	Subclass1 "kte9_SithMaster"
+	Subclass2 "kte9_SithAssassin"
+	Subclass3 "kte9_SithMarauder"
+	Subclass4 "kte9_Atris"
+	Subclass5 "kte9_Malgus"
+	Subclass6 "kte9_Revan"
+	Subclass7 "v9_Sion"
+}
+
+SubclassesForClass6
+{
+	Subclass1 "kte10_JorakUln"
+	Subclass2 "kte10_Uthar"
+	Subclass3 "kte10_Yuthura"
+	Subclass4 "kte10_AjuntaGhost"
+	Subclass5 "kte10_SithSorc"
+	Subclass6 "v10_Malak"
+	Subclass7 "v10_Nihilus"
+	Subclass8 "kte10_TrayaTrio"
+	Subclass9 "kte10_kallig"
+	Subclass10 "kte10_Bandon"
+}
