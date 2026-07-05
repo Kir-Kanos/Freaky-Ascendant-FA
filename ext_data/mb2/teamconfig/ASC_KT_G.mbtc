@@ -10,7 +10,7 @@ Classes
 	class2	"h3_Cander"
 	Class3	"h7_HK47"
 	class4	"h8_Zaal"
-	Class5	"h9_JKnight"
+	Class5	"ktg9_JediWeapon"
 	Class6	"h10_JForce"
 }
 
@@ -61,7 +61,6 @@ SubclassesForClass5
 	Subclass7	"ktg9_Kavar"
 	Subclass8	"ktg9_JediKnight"
 	Subclass9	"ktg9_JediWatch"
-	Subclass10	"ktg9_JediWeapon"
 }
 
 SubclassesForClass6
