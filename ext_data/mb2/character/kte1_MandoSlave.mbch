@@ -1,0 +1,86 @@
+
+ClassInfo
+{
+	name  		"kte1_MandoSlave"
+	MBClass 		MB_CLASS_SOLDIER
+	
+	weapons		WP_MELEE|WP_MANDO_PISTOL
+	
+	attributes	MB_ATT_ASSEMBLE,3|MB_ATT_STAMINA,3|MB_ATT_DEXTERITY,1|MB_ATT_GETUPS,2|MB_ATT_SELFEXPLODE,3|MB_ATT_MANDO_PISTOL,1
+	
+	
+	maxhealth 	85
+	hackRate 1.35
+	resource		RESOURCE_STAMINA
+	forcepool	40
+	
+	special1 	EAS_HI_SPRINT
+	special2	EAS_HI_SELFEXPLODE
+		
+	gloatAnim 	BOTH_VICTORY_FAST
+	flourishAnim 	TORSO_SURRENDER_START
+	
+	extralives	4
+	
+	uioverlay_r 	"gfx/icons/infantry"
+	uioverlay_l 	"gfx/icons/brawler"
+	
+
+	model		"noghri"
+	skin		"default"
+	uishader	"models/players/noghri/mb2_icon_default"
+
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_MELEE
+	WeaponBasedOff		WP_MELEE
+	NewWorldModel		"models/weapons2/dummyblaster/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon			"gfx/hud/w_icon_melee"
+	WeaponName		"Terrified Flailing"
+	rateMod 0.65
+	damagemod .5
+}
+
+WeaponInfo1
+{
+	WeaponToReplace	WP_MANDO_PISTOL
+	WeaponBasedOff	WP_MANDO_PISTOL	
+	NewWorldModel		"models/weapons2/kotor_bpistol2/kotor_bpistol2_w.glm"  
+    NewViewModel		"models/weapons2/kotor_bpistol2/kotor_bpistol2.md3"
+	Icon				"gfx/hud/w_icon_kotor_bpistol2"
+	flashsound0		"sound/weapons/kotor/fire_light.wav"
+	Altflashsound0	"sound/weapons/kotor/fire_power1.wav"
+	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
+    WeaponName		"Broken Blaster Pistol"
+	ratemod 1.30
+	damagemod 1.20
+}
+
+description "Mandalorian Slave 
+
+5 Life Body Shields who live and die now only to serve the will of Mandalore...
+
+^2Weaponry:
+- Terrified Flailing (Melee)
+-- 35% faster RoF
+-- 50% less Damage
+- Broken Mandalorian Blaster Pistol
+- 30% Less RoF
+- 20% Less Damage
+- Mag Reload
+
+^8Attributes:
+- Reinforcements (4)
+- 35% Slower Hacking
+- Stamina (3)
+- Dexterity (1)
+- Getup (2)
+- Assemble (3)
+- Detonator Vest (Self Explode 3) ^3[CS2]
+
+^3Abilities:
+- Sprint ^3[CS1]"

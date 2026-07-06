@@ -1,0 +1,273 @@
+// Siege class definition file for KotOR II: Ubese Tracker
+ClassInfo
+{
+	name				"kte6_UbeseScout"
+	MBClass				MB_CLASS_BATTLEDROID
+	weapons				WP_MELEE|WP_FRAG_NADE|WP_THERMAL
+
+	maxhealth			35
+	maxarmor			40
+
+	attributes			MB_ATT_AMMO,3|MB_ATT_FRAGS,2|MB_ATT_ENV_PROT,3|MB_ATT_TRACKING_BEACON|MB_ATT_DODGE,3|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_DART,4|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_CCTRAINING,3
+
+	forcepowers	FP_SABER_DEFENSE,1|FP_SABER_OFFENSE,1
+
+	extralives			2
+
+	basespeed			190
+	modelscale			.98
+
+	resource	resource_energy
+	force pool 75
+	forceregen 1.6
+
+	saber1      	qstaff_legends
+	saberstyle 	SS_STAFF|SS_TAVION
+
+	
+	
+ saberDamageStyle SS_STAFF,45|SS_TAVION,30
+
+	APmultiplier		0.75
+	BPmultiplier		0.55
+	ASmultiplier		1.10
+	CSmultiplier		1.20
+
+	WP_ClonePistolFlags	HELD_ALTRELOAD|HELD_TRACKING|HELD_PULSE|HELD_SPEED
+	WP_ProjFlags		HELD_ALTRELOAD|HELD_CRIPPLE|HELD_SLOW|HELD_PULSE
+	WP_FragNadeFlags		HELD_POISON|HELD_SPEED|HELD_CRIPPLE|HELD_FORCEFOCUS
+	WP_SaberFlags		HELD_POISON|HELD_PULSE|HELD_STUN|HELD_SPEED
+	WP_MeleeFlags		HELD_SPEED
+	WP_EE4Flags		HELD_ALTRELOAD
+	WP_ThermalFlags		HELD_SPEED
+	WP_BlasterFlags		HELD_ALTRELOAD|HELD_POISON|HELD_CRIPPLE
+
+	model				"boushh"
+	skin				"grey"
+	uishader			"models/players/boushh/mb2_icon_grey"
+
+	special1	EAS_HI_DODGE
+	special2	EAS_HI_DEX
+	special3	EAS_HI_TRACKER
+	special4	EAS_HI_GRAPPLEHOOK
+
+	classNumberLimit	2
+
+	isCustomBuild	1
+	mbPoints	3
+	
+	c_att_skill_0	MB_ATT_SABER
+	c_att_names_0	"Ubese Shock-Injector Staff"
+	c_att_ranks_0	1
+	c_att_descs_0	"Saber, Very Low Damage, Stuns/Pulses/Poisons"
+
+	c_att_skill_1	MB_ATT_CLONE_PISTOL
+	c_att_names_1	"Ubese Targeting Pistol"
+	c_att_ranks_1	1,0
+	c_att_descs_1	"Clone Pistol, Tracks/Pulses, 50%- RoF/60%+ FP Mult/35%- Damage"
+
+	c_att_skill_2	MB_ATT_PROJECTILE_RIFLE
+	c_att_names_2	"Ubese Disruptor Rifle"
+	c_att_ranks_2	1
+	c_att_descs_2	"Proj, 100%- RoF/65%- Damage/150%+ FP Mult, Mag Reload, 2 Shots"
+
+	c_att_skill_3	MB_ATT_EE4
+	c_att_names_3	"Ubese Assassin Rifle"
+	c_att_ranks_3	1,0,0
+	c_att_descs_3	"EE4, Mag Reload, 35%+ Dmg, 75%+ FP Dmg, 150%+ Velocity"
+
+	c_att_skill_4	MB_ATT_BLASTER
+	c_att_names_4	"Radiation Carbine"
+	c_att_ranks_4	1,0,0
+	c_att_descs_4	"E11, Slow RoF, 10%+ Damage/FP Drain, High Velocity, Poisons/Cripples"
+
+	c_att_skill_5	MB_ATT_BASE_TD
+	c_att_names_5	"Thermal Grenades"
+	c_att_ranks_5	1,0,0
+}
+
+WeaponInfo0
+{
+	
+	WeaponToReplace	WP_CLONE_PISTOL
+	WeaponBasedOff	WP_CLONE_PISTOL
+ NewWorldModel    "models/weapons2/cb_pistol/pistol_w.glm"
+ NewViewModel    "models/weapons2/cb_pistol/pistol_w.md3"
+ Icon            "gfx/hud/w_icon_cb_pistol"
+	FlashSound0		"sound/chars/cadbane/misc/cadblast" 			
+	AltFlashSound0	"sound/chars/cadbane/misc/cadblast"
+	MissileEffect	"Blaster/Shot03B"
+	AltMissileEffect	"Blaster/Shot03B"
+	WeaponName			"Ubese Targeting Pistol"
+	damageMod			.65
+	ratemod				1.5
+	fpmult				1.60
+ hasAnimOverrides 1
+animReadyRun BOTH_ATTACK2 
+animReady BOTH_ATTACK2 
+animReadyWalk BOTH_ATTACK2 
+animReadyNoAmmo BOTH_ATTACK2 
+animAttackRun BOTH_ATTACK2 
+animAttack BOTH_ATTACK2 
+animAttackWalk BOTH_ATTACK2 
+animCharge BOTH_ATTACK2
+}
+
+WeaponInfo1
+
+{
+	WeaponToReplace		WP_PROJ
+	WeaponBasedOff		WP_PROJ
+	NewWorldModel   "models/weapons2/zamrifle/zamrifle_w.glm"
+ NewViewModel   "models/weapons2/zamrifle/zamrifle.md3"
+ Icon     "gfx/hud/w_icon_zamrifle"
+ FlashSound0   "sound/weapons/RC_Sniper/fire.mp3"
+ AltFlashSound0 "sound/weapons/de10/fire.mp3" 
+WeaponName			"Ubese Disruptor Rifle"
+ PrimHitscanShot  1
+ PrimHitscanTracer 10
+ clipSize   2
+ customAmmo 35
+damagemod .35
+FPMult	2.5
+ratemod	2
+hasAnimOverrides 1
+animReadyRun BOTH_JANGO_PISTOL_IDLE
+animReady BOTH_JANGO_PISTOL_IDLE
+animReadyWalk BOTH_DC15_READY
+animReadyNoAmmo BOTH_DC15_ATTACK
+animAttackRun BOTH_DC15_ATTACK
+animAttack BOTH_DC15_ATTACK
+animAttackWalk BOTH_DC15_ATTACK
+animStand BOTH_STAND1
+}
+
+WeaponInfo2
+{
+ 	WeaponToReplace  WP_FRAG_NADE
+	WeaponBasedOff   WP_FRAG_NADE
+	NewWorldModel  "models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel  "models/map_objects/mp/bacta.md3"
+	NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
+ 	Icon    "gfx/hud/w_icon_stungrenade"
+	MissileModel "models/map_objects/mp/bacta.md3"
+	AltMissileModel "models/map_objects/mp/bacta.md3"
+	MissileEffect "sonic_pistol/projectile"
+	MissileMissEffect			"slime_explosion_new"
+	MissileHitHumanEffect	"slime_explosion_new"
+	MissileHitDroidEffect	"slime_explosion_new"
+	AltMissileMissEffect		"slime_explosion_new"
+	AltMissileHitHumanEffect	"slime_explosion_new"
+	AltMissileHitDroidEffect	"slime_explosion_new"
+	FlashSound0		"sound/weapons/smokenade/select.mp3"
+	AltFlashSound0 	"sound/weapons/smokenade/select.mp3"
+	WeaponName  				"Ubese Neurotoxin Canister"
+	hasAnimOverrides 1
+	animAttackRun BOTH_THERMAL_THROW2
+	animAttack BOTH_THERMAL_THROW2
+	animAttackWalk BOTH_THERMAL_THROW2
+	animReadyRun BOTH_THERMAL_READY2
+	animReady BOTH_THERMAL_READY2
+	animReadyWalk BOTH_THERMAL_READY2
+	damageMod 0
+	ratemod 0.6
+	splashRadius 320
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/tusken_staff_sar/tusken_staff3.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_qstaff"
+	WeaponName			"Ubese Shock-Injector Staff"
+	SelectSound "sound/weapons/knife/knifespin.mp3"
+
+}
+
+WeaponInfo4
+{
+
+WeaponToReplace	WP_EE4
+WeaponBasedOff	WP_EE4
+NewWorldModel	"models/weapons2/relby_v10/model_w.glm"
+NewViewModel	"models/weapons2/relby_v10/model.md3"
+Icon	"gfx/hud/w_icon_relby_v10"
+WeaponName 	"Ubese Assassin Rifle"
+FlashSound0 	"sound/weapons/cw-w5/fire_scope.mp3"
+AltFlashSound0 "sound/weapons/cw-w5/fire_scope.mp3"
+MuzzleEffect	"Blaster/MuzzleFlash01Y"
+AltMuzzleEffect	"Blaster/MuzzleFlash01Y"
+MissileEffect	"Blaster/Shot03Y"
+MissileEffect3	"Blaster/Shot03Y"
+AltMissileEffect	"Blaster/Shot04Y"
+clipsize	26
+ratemod 3.4
+fpmult 1.75
+damagemod 1.35
+Velocitymod 2.2
+customammo 600
+
+}
+
+WeaponInfo5
+
+{
+
+	WeaponToReplace		WP_BLASTER 		
+	WeaponBasedOff		WP_BLASTER    			
+	NewWorldModel		"models/weapons2/kotor_carbine/model.glm"
+	NewViewModel		"models/weapons2/kotor_carbine/model.MD3"
+	Icon				"gfx/hud/w_icon_kotorcarbine"
+	WeaponName			"Radiation Carbine"
+	MuzzleEffect		"Blaster/MuzzleFlash01G"	   				
+	AltMuzzleEffect	"Blaster/MuzzleFlash01G" 					
+	MissileEffect	"Blaster/Shot03G"
+	Missile2Effect	"Blaster/Shot03G"								
+	Missile3Effect	"Blaster/Shot03G"  		
+	FlashSound0 "sound/weapons/demp2/altfire.mp
+	AltFlashSound0 "sound/weapons/demp2/altfire.mp3"					
+	AltMissileEffect	"Blaster/Shot03G" 
+	MissileMissEffect		"noghri_stick/flesh_impact"
+ 	MissileHitHumanEffect 	"noghri_stick/flesh_impact"
+ 	MissileHitDroidEffect 	"noghri_stick/flesh_impact"	
+	AltMissileMissEffect		"noghri_stick/flesh_impact"
+ 	AltMissileHitHumanEffect 	"noghri_stick/flesh_impact"
+ 	AltMissileHitDroidEffect 	"noghri_stick/flesh_impact"						
+	clipSize			24
+	ReloadTimeModifier  1.2
+	FPMult     			1.45
+	damageMod 1.2
+	rateMod 1.4
+	velocitymod	1.8
+
+}
+
+
+description	"Ubese Scout
+
+An effective scout, the Ubese seeks out long range engagements from high vantage points. Completely sealed within their environmental gear, they are utterly immune to battlefield hazards.
+
+^2Weaponry:
+- Melee
+-- 15% Faster Movement
+- Ubese Neurotoxin Canister (Frag 2)
+-- Poisons/Cripples/Force Focuses 
+-- Large Splash Radius, 0 Damage
+
+^8Attributes:
+- Reinforcement (2)
+- Dexterity (1)
+- Tracking Beacon
+- Knockdown Roll
+- Close Combat (3)
+- Ubese Environment Protection Suit (Environmental Protection 3)
+- Advanced Filters (Immune To Sonic/Poison/Sonic/Locational Damage/Drowning)
+- Suit Reliance (5x damage from Ion/Pulse)
+
+^3Abilities:
+- Dodge (3) ^3[CS1]
+- Dex Roll ^3[CS2]
+- Tracking Darts ^3[CS3]
+- Grapple Hook (2) ^3[CS4]"

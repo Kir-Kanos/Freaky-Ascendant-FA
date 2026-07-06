@@ -1,0 +1,112 @@
+//Siege class def file
+ClassInfo
+{
+	name			"ktg1_Padawan"
+	weapons			WP_MELEE|WP_SABER
+	attributes		MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_DEFLECT,0|MB_ATT_ASSEMBLE,3
+
+	extralives		3
+
+	MBClass			MB_CLASS_JEDI
+
+	ASmultiplier 	0.90
+	CSmultiplier 	0.80
+	APmultiplier 	0.90
+	BPmultiplier 	0.80
+
+	speed 			0.9
+	
+	saberMaxChain 	2
+	
+	forcepowers		FP_SABER_OFFENSE,3
+	classflags 		CFL_NOPICKUPS
+
+	special2 		EAS_NONE
+
+	saberDamageStyle SS_FAST,100|SS_MEDIUM,120
+	
+	forcepool		60
+	rankForcepool 	80
+	
+	uioverlay_l 	"gfx/icons/frontline"
+	uioverlay_r 	"gfx/icons/infantry"
+
+	model			"jedi_spanki"
+	skin			"padawan"
+	uishader		"models/players/jedi_spanki/mb2_icon_padawan"
+
+	model_1				"gwethenea"
+	skin_1				"jedi"
+	uishader_1			"models/players/gwethenea/mb2_icon_jedi"
+	
+	saber1				saber_kshrt
+	sabercolor		4
+	saberstyle		SS_MEDIUM
+	
+	saber1_1			saber_kshrt_shoto
+	sabercolor_1		2
+	saberstyle_1		SS_MEDIUM
+	
+	saber1_2			saber_kshrt
+	sabercolor_2		3
+	saberstyle_2		SS_MEDIUM
+	
+	classNumberLimit	4
+
+	isCustomBuild		1
+
+	mbPoints			20
+
+	c_att_skill_0	MB_ATT_FP_LEVITATION
+	c_att_names_0	"Force Jump"
+	c_att_ranks_0	4
+	
+	c_att_skill_1	MB_ATT_FP_PROTECT
+	c_att_names_1	"Force Protect"
+	c_att_ranks_1	6
+	
+	c_att_skill_2	MB_ATT_FP_PUSH
+	c_att_names_2	"Force Push ^3[CS4]"
+	c_att_ranks_2	4
+	
+	c_att_skill_3	MB_ATT_FP_PULL
+	c_att_names_3	"Force Pull ^3[CS3]"
+	c_att_ranks_3	4
+	
+	c_att_skill_4	MB_ATT_POWER
+	c_att_names_4	"FP (80)"
+	c_att_ranks_4	6
+
+	c_att_skill_5	MB_ATT_FORCEBLOCK
+	c_att_names_5	"Force Block"
+	c_att_ranks_5	4
+	
+	c_att_skill_6	MB_ATT_SABER_FAST
+	c_att_names_6	"Fast Saber Styles"
+	c_att_ranks_6	2,0,2
+	
+	c_att_skill_7	MB_ATT_FP_SABERTHROW
+	c_att_names_7	"Saber Throw ^3[CS1]"
+	c_att_ranks_7	1,1
+
+	c_att_skill_8	MB_ATT_FP_ABSORB
+	c_att_names_8	"Force Absorb"
+	c_att_ranks_8	6
+
+}
+
+description	"Jedi Padawan 
+
+Young trainees of the Jedi Order, they are sent to the front lines to gain experience—often at a great personal cost.
+
+^2Weaponry: 
+- Melee
+- Lightsaber (Medium)
+-- Saber Throw ^3[CS1]
+-- Saber/Blaster Defense (1)
+-- Deflect (0)
+
+^8Attributes:
+- Reinforcement (3)
+- Assemble (3)
+- Force Focus (1)"

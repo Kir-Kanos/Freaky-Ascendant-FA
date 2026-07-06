@@ -1,0 +1,255 @@
+ClassInfo
+{
+	name		"kte2_ExchangeThug"
+	weapons		WP_MELEE|WP_SABER
+	
+	attributes	MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_AMMO,3|MB_ATT_STAMINA,4|MB_ATT_ASSEMBLE,3|MB_ATT_DEXTERITY,1
+	
+WP_ClonePistolFlags	HELD_DISRUPTIFY
+WP_DisruptorFlags	HELD_ALTRELOAD|HELD_DISRUPTIFY|HELD_PULSE|HELD_STUN|HELD_KNOCKBACK
+WP_BowcasterFlags	HELD_SLOW
+WP_T21Flags		HELD_SLOW
+
+	saberMaxChain 3
+	saberDamage 120
+	maxhealth		75
+	maxarmor		45
+	extralives		2
+	
+	special1	EAS_HI_WRIST
+	special2	EAS_HI_STIMPACK
+	meleespecial3	EAS_HI_POISON
+	special4	EAS_HI_GRAPPLEHOOK
+	
+	resource RESOURCE_STAMINA
+	forcepool 80
+	
+	basespeed 190
+	
+	classflags		CFL_RUNFASTMELEE|CFL_BLOODYMELEE
+
+	MBClass			MB_CLASS_BOUNTY_HUNTER
+	classNumberLimit	3
+	modelscale       1.025
+	speed           1.02
+	
+	APmultiplier		.85
+	BPmultiplier		.90
+	
+	forcepowers		FP_SABER_OFFENSE,3
+
+saber1			kotor_vibrosword
+saberstyle		SS_STRONG|SS_FAST
+saber1_1		kotor_shortsword
+saberstyle_1		SS_DESANN|SS_TAVION
+saber1_2 		kotor_vibrostaff 
+saberstyle_2 		SS_STAFF
+
+
+	
+	uioverlay_r "gfx/icons/infantry"
+	uioverlay_l "gfx/icons/hybrid"
+
+	gloatAnim       BOTH_VICTORY_FAST
+	
+model          "serroco"
+skin           "dxun"
+uishader       "models/players/serroco/mb2_icon_dxun"
+
+model_1        "serroco"
+skin_1         "dxun_cpt"
+uishader_1     "models/players/serroco/mb2_icon_dxun_cpt"
+
+model_2        "human_merc"
+skin_2         "dxun"
+uishader_2     "models/players/human_merc/mb2_icon_dxun"
+
+
+	isCustomBuild		1
+	mbPoints			30
+	
+	c_att_skill_0	MB_ATT_WOOKIE_STRENGTH
+	c_att_names_0	"Thug Strength"
+	c_att_ranks_0	2
+	c_att_descs_0	"Wookie Strength"
+
+	c_att_skill_1	MB_ATT_POISON_DART
+	c_att_names_1	"Spice Overdose Darts"
+	c_att_ranks_1	2,0,0
+	c_att_descs_1	"Poison Darts ^3[CS3 Melee]"
+	
+	c_att_skill_2	MB_ATT_WRISTLASER
+	c_att_names_2	"Concealed Wristlaser"
+	c_att_ranks_2	6
+	c_att_descs_2	"Wrist Laser ^3[CS1]"
+
+	c_att_skill_3	MB_ATT_FP_SABER_DEFENSE
+	c_att_names_3	"Saber Defense"
+	c_att_ranks_3	4,4
+
+	c_att_skill_4	MB_ATT_STUN_BATON
+	c_att_names_4	"Overcharged Cattle Prod"
+	c_att_ranks_4	0,4
+	c_att_descs_4	"Stun Baton"
+
+	c_att_skill_5	MB_ATT_T21
+	c_att_names_5	"Repeating Blaster Rifle (T21)"
+	c_att_ranks_5	2,8,2
+	c_att_descs_5	"15%- Movement Speed, 5%+ Rof, 5%- Damage/FP Drain"
+	
+	c_att_skill_6	MB_ATT_DISRUPTOR
+	c_att_names_6	"Overcharged Ion Disruptor"
+	c_att_ranks_6	6
+	c_att_descs_6	"Applies Pulse/Stagger Knockback, 10%+ Damage, 100%+ FP Drain"
+
+	c_att_skill_7	MB_ATT_TRAD_BOWCASTER
+	c_att_names_7	"Stolen Bowcaster"
+	c_att_ranks_7	4,4,2
+	c_att_descs_7	"Trad Bowcaster, 15% Slower Movement Speed"
+
+	c_att_skill_8	MB_ATT_CLONE_PISTOL
+	c_att_names_8	"Blackmarket Disintegrator" 
+	c_att_ranks_8	2,2,6
+	c_att_descs_8	"Clone Pistol(s), 10%+ Velocity"
+	
+	c_att_skill_8	MB_ATT_STIMPACK
+	c_att_names_8	"Ilegal Spice"
+	c_att_ranks_8	6
+	c_att_descs_8	"Stimpack ^3[CS2]"
+
+	c_att_skill_9	MB_ATT_TRACKING_BEACON
+	c_att_names_9	"Bounty Board"
+	c_att_ranks_9	2
+	c_att_descs_9	"Tracking Beacon"
+
+	c_att_skill_10	MB_ATT_BLAST_ARMOUR
+	c_att_names_10	"Blast Armor"
+	c_att_ranks_10	2
+
+	c_att_skill_11	MB_ATT_GRAPPLE_HOOK
+	c_att_names_11	"Grappling Hook ^3[CS4 Melee]"
+	c_att_ranks_11	0,2
+}
+WeaponInfo0
+{
+    WeaponToReplace     WP_TRAD_BOWCASTER
+    WeaponBasedOff      WP_TRAD_BOWCASTER
+
+    NewWorldModel       "models/weapons2/kotor_bowcaster1/kotor_bowcaster1_w.glm"
+    NewViewModel        "models/weapons2/kotor_bowcaster1/kotor_bowcaster1.md3"
+
+    FlashSound0         "sound/weapons/kotor/fire_hvy.wav"
+
+    MissileEffect       "effects/Chewiecaster/shot.efx"
+    MuzzleEffect        "Blaster/MuzzleFlash01G"
+
+    Icon                "gfx/hud/w_icon_kotor_bowcaster1"
+
+    WeaponName          "Stolen Bowcaster"
+}
+
+WeaponInfo1
+{
+    WeaponToReplace     WP_DISRUPTOR
+    WeaponBasedOff      WP_DISRUPTOR
+
+    NewWorldModel       "models/weapons2/kotor_drifle/kotor_drifle_w.glm"
+    NewViewModel        "models/weapons2/kotor_drifle/kotor_drifle.md3"
+
+    Icon                "gfx/hud/w_icon_kotor_drifle"
+
+    FlashSound0         "sound/weapons/RC_Sniper/fire.mp3"
+    altFlashSound0      "sound/weapons/RC_Sniper/fire.mp3"
+
+    MuzzleEffect        "Blaster/MuzzleFlash01B"
+    altMuzzleEffect     "Blaster/MuzzleFlash01B"
+
+    WeaponName          "Overcharged Ion Disruptor"
+
+    clipSize            25
+    customAmmo          100
+
+    	ReloadTimeModifier  1.20
+    	FPmult              2
+    	rateMod             1
+	Damagemod	    1.1
+
+    disruptorBeam1      "gfx/effects/disrupt_beam_blue"
+    disruptorBeam2      "gfx/effects/disrupt_beam_blue"
+}
+
+WeaponInfo2
+{
+    WeaponToReplace     WP_T21
+    WeaponBasedOff      WP_T21
+
+    NewWorldModel       "models/weapons2/kotor_reprifle/kotor_reprifle_w.glm"
+    NewViewModel        "models/weapons2/kotor_reprifle/kotor_reprifle.md3"
+
+    Icon                "gfx/hud/w_icon_kotor_reprifle"
+
+    WeaponName          "Repeating Blaster Rifle"
+
+    FPmult              0.95
+    rateMod             0.95
+    DamageMod           0.95
+
+    customAmmo          1200
+
+    FlashSound0         "sound/weapons/kotor/fire_power1.wav"
+    altFlashSound0      "sound/weapons/kotor/fire_med.wav"
+}
+
+WeaponInfo3
+{
+    WeaponToReplace     WP_CLONE_PISTOL
+    WeaponBasedOff      WP_CLONE_PISTOL
+
+    NewWorldModel       "models/weapons2/kotor_bpistol3/kotor_bpistol3_w.glm"
+    NewViewModel        "models/weapons2/kotor_bpistol3/kotor_bpistol3.md3"
+
+    Icon                "gfx/hud/w_icon_kotor_bpistol3"
+
+    WeaponName          "Blackmarket Disintegrator"
+
+    clipSize            48
+    customAmmo          800
+
+    velocityMod         1.10
+    reloadtimeModifier  1.75
+
+    MuzzleEffect        "Blaster/MuzzleFlash01Y"
+    altMuzzleEffect     "Blaster/MuzzleFlash01Y"    
+    MissileEffect       "Blaster/Shot02Y"
+    Missile3Effect      "Blaster/Shot03Y"
+    AltMissileEffect    "Blaster/Shot04Y"
+
+    ChargeEffect        "gfx/effects/yellow_bryarFrontFlash"
+}
+WeaponInfo4
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_oldrepswords"
+	WeaponName			"Melee Weapon" 
+	SelectSound "sound/weapons/blade/slash2.mp3"
+}
+description	"Exchange Thug 
+
+Multilife old world gang members who deal in weapon modification, spice trading and slave capture.
+
+^2Weaponry:
+- Melee
+-- 15% Faster Movement
+- Vibroweapon (Varies)
+-- Saber Defense (0)
+-- No Blaster Block
+-- Chain Limit: 3
+
+^8Attributes:
+- Reinforcement (2)
+- Stamina (4)
+- Assemble (3)
+- Dexterity (1)"

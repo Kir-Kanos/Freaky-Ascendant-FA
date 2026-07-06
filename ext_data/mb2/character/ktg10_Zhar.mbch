@@ -1,0 +1,58 @@
+//Siege class def file
+ClassInfo
+{
+	name			"ktg10_Zhar"
+	MBClass			MB_CLASS_JEDI
+	
+	weapons			WP_MELEE|WP_SABER
+	attributes		MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_FORCEBLOCK,1|MB_ATT_ROUNDSPAWNER,1|MB_ATT_SPAWNER,1|MB_ATT_RALLY
+	
+	saberMaxChain 	6
+	saberDamageStyle SS_MEDIUM,100|SS_DESANN,100
+	
+	ASmultiplier 	0.8
+	CSmultiplier 	0.9
+	APmultiplier 	0.7
+	BPmultiplier 	0.7
+
+	roundnpc	"JediMage"
+	spawnernpc	"JediDual"
+
+	special4 EAS_HI_SPAWNER
+	
+	speed 			1.0
+	
+	forcepowers		FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_PUSH,2|FP_PULL,2
+	
+	classflags 		CFL_NOPICKUPS
+	
+	model			"jedipack_hb"
+	skin			"zhar"
+	uishader		"models/players/jedipack_hb/mb2_icon_zhar"
+	
+	saber1			saber_kshrt
+	sabercolor		3
+	saberstyle		SS_MEDIUM|SS_DESANN
+	
+	classNumberLimit	1
+}
+
+description	"Master Zhar
+
+An instructor who focuses on a high volume of strikes and rallying fellow jedi.
+
+^2Weaponry: 
+- Lightsaber (Medium/Desann)
+-- Low Damage, 6 Swing Combo
+-- Saber Defense (1)
+-- Blaster Deflect (1)
+-- Blaster Defense (2)
+
+^8Attributes:
+- Force Focus (1)
+- Force Block (1)
+
+^3Abilities:
+- Force Push (2)
+- Force Pull (2)
+- Force Jump (2)"

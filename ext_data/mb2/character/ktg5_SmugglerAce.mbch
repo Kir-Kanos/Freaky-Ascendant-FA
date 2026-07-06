@@ -1,0 +1,164 @@
+ClassInfo
+{
+	name			"ktg5_SmugglerAce"
+	MBClass			MB_CLASS_HERO
+	weapons			WP_MELEE|WP_SABER|WP_THERMAL
+
+	maxhealth		60
+	maxarmor       20	
+	attributes		MB_ATT_ASSEMBLE,1|MB_ATT_AMMO,3|MB_ATT_TRACKING_BEACON|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_ENV_PROT,1|MB_ATT_BASE_TD,5|MB_ATT_BINOCULARS|MB_ATT_TRACKING_DART,4|MB_ATT_DEXTERITY,3|MB_ATT_DODGE,3|MB_ATT_FLIPKICK|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_JETPACK,1
+	
+	modelscale	 	.98
+
+	extralives	2
+
+	WP_ClonePistolFlags	HELD_ALTRELOAD
+	WP_BlasterFlags	HELD_ALTRELOAD
+
+	forcepowers		FP_SABER_OFFENSE,2
+
+	saber1      	Cutlass_legends
+	saberstyle 	SS_MEDIUM
+
+	extralives		2
+	
+	knockbacktaken	1
+	
+	resource	RESOURCE_ENERGY
+	forcepool	45
+	forceregen	.80
+	
+	rateOfFire_Melee .95
+	
+	saberDamage 180
+	saberMaxChain 3
+
+	APMultiplier	.9
+	CSmultiplier	1.05
+	ASmultiplier	1.05
+	BPmultiplier	0.4
+
+	skilltimermod 0.85
+
+	basespeed	220
+
+	jetpackJetTag		"*r_leg_foot"		//*r_leg_foot"
+	jetpackJet2Tag	"*l_leg_foot"		//"*l_leg_foot"
+	jetpackJetOffset	"0, 0, 07" // 20"
+	jetpackJet2Offset	"0, 0, 07" // 0, 0, 20"
+	jetpackJetAngles	"0, -73, 0"
+	jetpackJet2Angles	"0, 73, 0"
+
+ 	uioverlay "gfx/icons/aerial"
+	
+	model			"gwethenea"			
+	skin			"smuggler"
+	uishader		"models/players/gwethenea/mb2_icon_smuggler"
+	
+	special1	EAS_HI_DODGE
+	special2	EAS_HI_DEX
+	special3	EAS_HI_TRACKER
+	special4	EAS_HI_GRAPPLEHOOK
+
+	classNumberLimit	3
+
+	classflags		CFL_HEAVYMELEE
+	
+	damageTaken     1.0
+	
+	iscustombuild	1
+	mbpoints		8
+		
+c_att_skill_0	MB_ATT_BLASTER
+c_att_names_0	"Modified Outlaw Carbine"
+c_att_ranks_0	2,2,2
+c_att_descs_0	"E-11, 40%+ RoF, Mag Reload"
+
+c_att_skill_1	MB_ATT_CLONE_PISTOL
+c_att_names_1	"Reliable Blaster"
+c_att_ranks_1	2,2,2
+c_att_descs_1	"Clone Pistol(s), Mag Reload"
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER		
+	WeaponBasedOff		WP_BLASTER    			
+	NewWorldModel		"models/weapons2/kotor_carbine/model.glm"
+	NewViewModel		"models/weapons2/kotor_carbine/model.MD3"
+	Icon				"gfx/hud/w_icon_kotorcarbine"
+	WeaponName			"Outlaw Carbine"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	AltMuzzleEffect	"Blaster/MuzzleFlash01B"
+	MissileEffect		"blaster/Shot03B"
+	AltMissileEffect 	"blaster/Shot03B"
+	FlashSound0			"sound/weapons/kotor_carbine/fire.wav"
+	AltFlashSound0			"sound/weapons/kotor_carbine/fire.wav"
+	clipSize			28
+	idleAnim  			TORSO_WEAPONREADY3
+	ReloadTimeModifier  1.2
+	rateMod 0.60
+}
+
+WeaponInfo1
+{
+	WeaponToReplace	WP_CLONE_PISTOL
+	WeaponBasedOff WP_CLONE_PISTOL
+	NewWorldModel			"models/weapons2/kotor_hpistol/kotor_hpistol_w.glm"
+	NewViewModel			"models/weapons2/kotor_hpistol/kotor_hpistol.md3"
+	Icon            		"gfx/hud/w_icon_kotor_hpistol_dual"	
+	Weaponname 	"Reliable Blaster Pistol"
+	FlashSound0				"sound/weapons/kotor/fire_light.wav" 			
+	AltFlashSound0			"sound/weapons/kotor/fire_power1.mp3"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	AltMuzzleEffect	"Blaster/MuzzleFlash01R"
+	MissileEffect	"Blaster/Shot03R"
+	AltMissileEffect	"Blaster/Shot03R"
+	PowerupShotEffect	"Blaster/Shot03R"
+	ChargeEffect		"gfx/effects/bryarfrontflash"
+ MissileMissEffect "Blaster/Impact_Wall01R.efx"
+ MissileHitHumanEffect "Blaster/Impact_Wall01R.efx"
+ MissileHitDroidEffect "Blaster/Impact_Wall01R.efx"
+ altMissileMissEffect "Blaster/Impact_Wall01R.efx"
+ altMissileHitHumanEffect "Blaster/Impact_Wall01R.efx"
+ altMissileHitDroidEffect "Blaster/Impact_Wall01R.efx"
+
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_canderous_vibblade"
+	WeaponName			"Vibro-Cutlass"
+	SelectSound "sound/weapons/blade/slash2.mp3"	
+}
+
+description	"Smuggler Ace
+
+An exceptionally nimble underworld scoundrel who relies on quick reflexes, custom blasters, and evasive maneuvers over light armor.
+
+^2Weaponry:
+- Melee
+- 5% Faster RoF
+- Vibrocutlass
+-- Cutlass (Medium)
+-- Saber Defense (1)
+- Thermal Grenades (5)
+
+^8Attributes:
+- Assemble (1)
+- Dexterity (3) ^3[CS1]
+- Faster Skill Cooldowns (15% reduction)
+- Binoculars
+- Tracking Beacon
+- Environmental Suit (1)
+- Tracking Darts (4) ^3[CS3]
+- Grapple Hook (2) ^3[CS4]
+
+^8Abilities:
+- Dex Roll ^3[CS2]
+- Dodge (3) ^3[CS1]"

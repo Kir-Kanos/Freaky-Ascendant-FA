@@ -1,0 +1,162 @@
+ClassInfo
+{
+	name					"kte2_CzerkaTech"
+	MBClass				MB_CLASS_CLONETROOPER
+	weapons				WP_MELEE|WP_SHOTGUN|WP_PULSE_NADE|WP_DET_PACK|WP_CLONE_PISTOL|WP_STUN_BATON
+	attributes			MB_ATT_ASSEMBLE,2|MB_ATT_STAMINA,3|MB_ATT_AMMO,3|MB_ATT_DET_PACK,2|MB_ATT_PULSE_GRENADES,2|MB_ATT_BACTA_BIG|MB_ATT_SHOTGUN,3|MB_ATT_PSHIELD,1|MB_ATT_ENEMYSCANNER,1|MB_ATT_ANTI_MT,1|MB_ATT_ENV_PROT,1|MB_ATT_QUICKTHROW,1|MB_ATT_SENTRY,1|MB_ATT_DRONE,1|MB_ATT_EWEB,1|MB_ATT_CLONE_PISTOL,1|MB_ATT_STUN_BATON,1
+
+	WP_SaberFlags 		HELD_STUN|HELD_PULSE
+	WP_BlasterPistolFlags	HELD_PULSE|HELD_ALTRELOAD
+	WP_ShotgunFlags	HELD_PULSE|HELD_ALTRELOAD
+	WP_StunBatonFlags HELD_FLAME|HELD_PULSE
+
+	resource 		RESOURCE_STAMINA
+	forcepool 		80
+	forceregen		.6
+	speed 			.90
+
+	classNumberLimit	2
+	extralives			2
+
+	hackrate .65
+
+	special1		EAS_HI_SPRINT
+	special2 		EAS_HI_EWEB
+	special3		EAS_HI_QUICKTHROW
+	special4		EAS_HI_ENEMYSCANNER
+	
+	saber1			soldierbaton_legends
+	forcepowers 		FP_SABER_OFFENSE,3
+	saberstyle 		SS_STRONG
+	saberMaxChain		2
+
+	saberDamage 80
+
+	BPmultiplier 		0
+
+	APmultiplier 		0.8
+
+	ASmultiplier 1.05
+
+	saberStanceAnim BOTH_SABERDUAL_STANCE
+	flourishAnim BOTH_STAND5TOAIM
+	gloatAnim BOTH_VICTORY_FAST
+	
+	maxhealth		60
+	
+	maxArmor			15
+
+	
+	uioverlay "gfx/icons/infantry"
+		
+	model			"czerka"
+	skin			"twilek"
+	uishader		"models/players/czerka/mb2_icon_twilek"
+
+	model_1			"czerka"
+	skin_1			"nikto"
+	uishader_1		"models/players/czerka/mb2_icon_nikto"
+	
+
+
+}
+WeaponInfo0
+{
+	WeaponToReplace	WP_CLONE_PISTOL     						
+	WeaponBasedOff	WP_CLONE_PISTOL  						
+	NewWorldModel		"models/weapons2/kotor_ionpistol/kotor_ionpistol_w.glm"  
+ 	NewViewModel		"models/weapons2/kotor_ionpistol/kotor_ionpistol.md3"
+	Icon				"gfx/hud/w_icon_kotor_ionpistol"					
+	FlashSound0		"sound/weapons/demp2/fire.mp3"
+	Altflashsound0		"sound/weapons/demp2/fire.mp3"
+	MuzzleEffect		"blaster/MuzzleFlash01B"
+	MissileEffect		"Blaster/Shot04B"
+	AltMissileEffect		"Blaster/Shot04B"
+   	MissileHitHumanEffect	"SBD/Cortosis_blue"
+	MissileHitDroidEffect	"SBD/Cortosis_blue"
+	MissileMissEffect	"SBD/Cortosis_blue"
+	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
+	WeaponName		"Pulse Pistol"    					
+	FPMult     		2
+	customAmmo 600
+	DamageMod .50
+	rateMod 1.25
+	Altfireenabled	0
+}
+WeaponInfo1
+{
+	WeaponToReplace		WP_SHOTGUN
+	WeaponBasedOff		WP_SHOTGUN
+	NewWorldModel 		"models/weapons2/kotor_ionrifle/kotor_ionrifle.glm" 
+	NewViewModel  		"models/weapons2/kotor_ionrifle/kotor_ionrifle.md3"
+	Icon				"gfx/hud/w_icon_kotor_ionrifle"
+	FlashSound0			"sound/weapons/acparray/fire.wav"
+	AltFlashSound0		"sound/weapons/acparray/fire.wav"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01B"
+	MissileEffect		"Blaster/Shot03B"
+	AltMissileEffect	"Blaster/Shot03B"
+	WeaponName			"Ion Spread Blaster"
+	FPMult				0.35
+	customAmmo			600
+	DamageMod			0.40
+	rateMod				0.85
+	altfireenabled		0
+}
+
+WeaponInfo2
+{
+WeaponToReplace WP_STUN_BATON
+WeaponBasedOff WP_STUN_BATON
+NewWorldModel "models/weapons2/fc_f187/f187.glm"
+NewViewModel "models/weapons2/fc_f187/f187.md3"
+NewHandsModel "models/weapons2/fc_f187/f187_hand.md3"
+Icon "gfx/hud/w_icon_fc_f187_all"
+WeaponName "Terminal Slicer Kit"
+hasAnimOverrides 1
+animReadyNoAmmo TORSO_WEAPONREADY0
+animReadyRun TORSO_WEAPONREADY0
+animReady TORSO_WEAPONREADY0
+animReadyWalk TORSO_WEAPONREADY0
+animAttackRun BOTH_ATTACK2
+animAttack BOTH_ATTACK2
+animAttackWalk BOTH_ATTACK2
+FlashSound0 "sound/weapons/fusioncutter/cutter_hit.mp3"
+rateMod .2
+damageMod .25
+}
+
+description	"Czerka Tech Expert
+
+Mega-Corp Tech Experts and Slicers tasked with defending their property, alive or otherwise...
+
+^2Weaponry:
+- Melee
+- Pulse Pistol (1)
+-- Clone Pistol, Pulse On Hit
+-- 50%- Damage, 25%- RoF, 100%+ FP Drain
+- Ion Spread Blaster (Shotgun 3)
+-- Pulse On Hit
+-- 65%- FP Drain, 60%- Damage, 15%+ RoF
+- Terminal Slicer Kit (Stun Baton 1)
+-- 75%- Damage, 80%+ RoF, Pulses/Ignites
+- Detpacks (2)
+- Pulse Grenades (2)
+
+^8Attributes:
+- Reinforcement (1)
+- Stamina (3)
+- Assemble (2)
+- EWEB Emplacement Gun ^3[CS2]
+- Remote Seeker Drone
+- Sentry Gun
+- Personal Shield
+- 45% Faster Hack Speed
+- Large Medpack
+- Anti Mind Trick (1)
+- Elemental Protection (1)
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Quickthrow ^3[CS2]
+- Enemy Scanner ^3[CS4]"

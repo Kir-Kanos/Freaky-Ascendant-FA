@@ -1,0 +1,140 @@
+//Legends Mode character file
+
+ClassInfo
+{
+	name			"kte1_Looter"
+	MBClass			MB_CLASS_CLONETROOPER
+	
+	weapons			WP_MELEE|WP_SABER
+	
+	attributes		MB_ATT_ASSEMBLE,3|MB_ATT_STAMINA,3|MB_ATT_DODGE,3||MB_ATT_DEXTERITY,1|MB_ATT_CCTRAINING,3|MB_ATT_HEALING,2|MB_ATT_TRACKING_BEACON
+
+	speed	0.95
+
+	rateOfFire_Melee	2.50
+	
+	maxhealth		105
+	resource		RESOURCE_STAMINA
+	forcepool		100
+	damageGiven		1.5
+	
+	special1		EAS_HI_SPRINT
+	special2		EAS_HI_DODGE
+	special4		EAS_HI_DEX
+
+	saberdamage		20
+
+	sabermaxchain	1
+	
+	WP_MeleeFlags	HELD_DISARM|HELD_LOWDAMAGE
+	WP_SaberFlags	HELD_KNOCKDOWN|HELD_CRIPPLE|HELD_FLASH
+	
+	WP_BlasterPistolFlags HELD_SPEED
+	WP_BlasterFlags HELD_SPEED
+	WP_StunBatonFlags HELD_SPEED
+	WP_ClonePistolFlags HELD_SPEED
+	WP_MandoPistolFlags HELD_SPEED
+	WP_ShotgunFlags HELD_SPEED
+	WP_EE3Flags HELD_SPEED
+	WP_EE4Flags HELD_SPEED
+	WP_AmbanFlags HELD_SPEED
+	WP_BowcasterFlags HELD_SPEED
+	WP_RepeaterFlags HELD_SPEED
+	WP_CloneRifleFlags HELD_SPEED
+	WP_MinigunFlags HELD_SPEED
+	WP_DEMP2Flags HELD_SPEED
+	WP_ThrowerFlags HELD_SPEED
+	WP_T21Flags HELD_SPEED
+	WP_ProjFlags HELD_SPEED
+	WP_DisruptorFlags HELD_SPEED
+	WP_FlechetteFlags HELD_SPEED
+	WP_M5Flags HELD_SPEED
+	WP_A280Flags HELD_SPEED
+	WP_DLT20AFlags HELD_SPEED
+	WP_PLX1Flags HELD_SPEED
+	WP_RocketLauncherFlags HELD_SPEED
+	WP_RealTDFlags HELD_SPEED
+	WP_FragNadeFlags HELD_SPEED
+	WP_PulseNadeFlags HELD_SPEED
+	WP_TripMineFlags HELD_SPEED
+	WP_FireNadeFlags HELD_SPEED
+	WP_SonicNadeFlags HELD_SPEED
+	WP_ConcNadeFlags HELD_SPEED
+	WP_CryoNadeFlags HELD_SPEED
+	WP_DetPackFlags HELD_SPEED
+	WP_ConcussionFlags HELD_SPEED
+	WP_BryarOldFlags HELD_SPEED
+	WP_SBDFlags HELD_SPEED
+	WP_CR2Flags HELD_SPEED
+	WP_E22Flags HELD_SPEED
+	WP_DCCarbineFlags HELD_SPEED
+	WP_ThermalFlags HELD_SPEED
+	WP_TradBowcasterFlags HELD_SPEED
+	WP_UGLFlags HELD_SPEED
+	WP_MGLFlags HELD_SPEED	
+	
+	extralives	4
+	
+	uioverlay_r 	"gfx/icons/infantry"
+	uioverlay_l 	"gfx/icons/brawler"
+	
+	model			"chiss"
+	skin			"merc"
+	uishader		"models/players/chiss/mb2_icon_merc"
+	
+	model_1				"rodian"
+ 	skin_1				"blue"
+ 	uishader_1			"gfx/reactor/FA_Icons/mb2_icon_rct_mercsold"
+	
+	saber1		"pipe"
+	saberstyle	SS_STRONG|SS_TAVION
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_MELEE
+	WeaponBasedOff		WP_MELEE
+	NewWorldModel		"models/weapons2/dummyblaster/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon			"gfx/hud/w_icon_melee"
+	WeaponName		"Grappling Strikes"
+	primFireEnabled		1
+	AltFireEnabled 		1
+	rateMod 0.95
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/vibroaxe/vibroaxe.glm" 
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_thugblades" 
+	WeaponName			"Rusty Pipe"
+}
+
+description "Criminal Looter
+
+5-life low lives who fight with whatever they can find. Damage and speed buff when holding a stolen weapon.
+
+^2Weaponry:
+- Grappling Strikes (Melee)
+-- 150% Slower Fire Rate
+-- Disarms on Hit
+- Rusty Pipe
+-- Low Damage, 1 Swing In Combo
+-- Knocksdown, Blinds And Cripples
+
+^8Attributes:
+- Reinforcements (4)
+- Stamina (3)
+- Dexterity (1)
+- Close Combat (3)
+- Tracking Beacon
+- Healing (2)
+- Assemble (3)
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Dex Roll ^3[CS4]
+- Dodge (3) ^3[CS2]"

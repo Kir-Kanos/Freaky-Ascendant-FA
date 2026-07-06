@@ -1,0 +1,147 @@
+//Siege class def file
+ClassInfo
+{
+	name			"kte1_Student"
+	weapons			WP_MELEE|WP_SABER
+	attributes		MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_GUN_DEFENSE,0|MB_ATT_DEFLECT,0|MB_ATT_ASSEMBLE,3
+
+	extralives	3
+
+	MBClass			MB_CLASS_SITH
+
+	ASmultiplier .90
+	CSmultiplier .80
+	APmultiplier .90
+	BPmultiplier .90
+
+	speed .9
+	
+	saberMaxChain 2
+	
+	forcepowers		FP_SABER_OFFENSE,3
+	classflags CFL_NOPICKUPS
+	special2 EAS_NONE
+
+ saberDamageStyle SS_STRONG,160|SS_DESANN,140
+	
+	forcepool		60
+	rankForcepool 80
+
+	customred			0.784
+	customgreen			0
+	customblue			0
+	
+	uioverlay_l "gfx/icons/frontline"
+	uioverlay_r "gfx/icons/infantry"
+
+
+	model			"sith_officer"
+	skin			"sith1"
+	uishader		"models/players/sith_officer/mb2_icon_sith1"
+
+	model_1			"sith_officer"
+	skin_1			"sith2"
+	uishader_1		"models/players/sith_officer/mb2_icon_sith2"
+
+	model_2			"sith_officer"
+	skin_2			"sith3"
+	uishader_2		"models/players/sith_officer/mb2_icon_sith3"
+	
+	model_3			"sith_officer_fem"
+	skin_3			"default"
+	uishader_3		"models/players/sith_officer_fem/mb2_icon_default"
+
+		
+	saber1				saber_revan
+	sabercolor		0
+	saberstyle		SS_MEDIUM
+	
+	saber1_1			saber_kshrt_shoto
+	sabercolor_1		0
+	saberstyle_1		SS_MEDIUM
+	
+	saber1_2			single_104
+	sabercolor_2		0
+	saberstyle_2		SS_MEDIUM
+	
+	
+	classNumberLimit	4
+
+	isCustomBuild		1
+
+	mbPoints			40
+
+	
+	c_att_skill_0	MB_ATT_FP_LEVITATION
+	c_att_names_0	"Force Jump"
+	c_att_ranks_0	4
+
+	c_att_skill_1	MB_ATT_FP_PUSH
+	c_att_names_1	"Force Push"
+	c_att_ranks_1	4
+
+	c_att_skill_2	MB_ATT_FP_PULL
+	c_att_names_2	"Force Pull"
+	c_att_ranks_2	4
+	
+	c_att_skill_3	MB_ATT_FP_DARKRAGE
+	c_att_names_3	"Dark Rage"
+	c_att_ranks_3	2,4,2
+	
+	c_att_skill_4	MB_ATT_FP_LIGHTNING
+	c_att_names_4	"Force Lightning ^3[CS4]"
+	c_att_ranks_4	4
+	
+	c_att_skill_5	MB_ATT_FP_GRIP
+	c_att_names_5	"Force Grip ^3[CS3]"
+	c_att_ranks_5	2
+	
+	c_att_skill_6	MB_ATT_POWER
+	c_att_names_6	"FP (80)"
+	c_att_ranks_6	8
+
+	c_att_skill_7	MB_ATT_FORCEBLOCK
+	c_att_names_7	"Force Block"
+	c_att_ranks_7	4
+	
+	c_att_skill_8	MB_ATT_SABER_STRONG
+	c_att_names_8	"Strong Saber Styles"
+	c_att_ranks_8	4,0,2
+ c_att_descs_10 "Red, Purple, both
+42/25% less Red/Purple Dmg"
+
+	c_att_skill_9	MB_ATT_FP_SABER_DEFENSE
+	c_att_names_9	"Saber Defense"
+	c_att_ranks_9	6
+	
+	c_att_skill_10	MB_ATT_GUN_DEFENSE
+	c_att_names_10	"Blaster Defense"
+	c_att_ranks_10	8	
+
+	c_att_skill_11	MB_ATT_DEFLECT
+	c_att_names_11	"Blaster Deflect"
+	c_att_ranks_11	4
+
+	c_att_skill_12	MB_ATT_FP_SABERTHROW
+	c_att_names_12	"Saber Throw ^3[CS1]"
+	c_att_ranks_12	2,2
+
+	c_att_skill_13	MB_ATT_FP_DRAIN
+	c_att_names_13	"Force Drain"
+	c_att_ranks_13	6
+
+}
+
+description	"Sith Academy Student
+
+Expendable Sith who have yet to be battle proven, they arent expected to live...
+
+^2Weaponry: 
+- Melee
+- Lightsaber (Yellow)
+-- Saber Throw ^3[CS1]
+
+^8Attributes:
+- Reinforcement (3)
+- Assemble (3)
+- Force Focus (1)"

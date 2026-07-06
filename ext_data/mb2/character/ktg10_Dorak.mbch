@@ -1,0 +1,59 @@
+//Siege class def file
+ClassInfo
+{
+	name			"ktg10_Dorak"
+	MBClass			MB_CLASS_JEDI
+	
+	weapons			WP_MELEE|WP_SABER
+	attributes		MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_FORCEBLOCK,3|MB_ATT_DISP_BLOCK,3|MB_ATT_DISP_FORCE,3|MB_ATT_ANTI_MT,1|MB_ATT_FLIPKICK,1|MB_ATT_DEXTERITY,3
+	
+	saberMaxChain 	1
+	saberDamageStyle SS_DESANN,600|SS_STRONG,800
+
+	WP_SaberFlags	HELD_STUN
+	
+	ASmultiplier 	1.40
+	CSmultiplier 	1.40
+	APmultiplier 	1.15
+	BPmultiplier 	1.15
+	
+	speed 			1.1
+	
+	forcepowers		FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_PUSH,2|FP_PULL,3|FP_PROTECT,2|FP_STASIS,2|FP_SEE,3|FP_TELEPATHY,1|FP_SABERTHROW,3
+	
+	classflags 		CFL_NOPICKUPS
+	
+	model			"jedipack_hb"
+	skin			"dorak"
+	uishader		"models/players/jedipack_hb/mb2_icon_dorak"
+	
+	saber1			saber_kshrt
+	sabercolor		4
+	saberstyle		SS_DESANN|SS_STRONG
+	
+	classNumberLimit	1
+}
+
+description	"Master Dorak
+
+A master of the Jedi archives and a peerless duelist. Has a swing combo swing, but its extremely quick and deadly.
+
+^2Weaponry: 
+- Lightsaber (Desann/Strong)
+-- 1 Combo Swing, Stuns, Very High Damage
+-- Saber Throw (3)
+
+^8Attributes:
+- Force Focus (1)
+- Force Block (3)
+- Block Dispenser (3)
+- Force Dispenser (3)
+- Anti-Mind Trick (1)
+- Dexterity (3)
+- Flipkick (1)
+
+^3Abilities:
+- Sense (3)
+- Stasis (2)
+- Protect (2)
+- Mind Trick (1)"

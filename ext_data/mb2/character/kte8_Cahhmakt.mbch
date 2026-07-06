@@ -1,0 +1,150 @@
+//Custom FA by -{EXE}-Noob
+
+ClassInfo
+{
+	name				"kte8_Cahhmakt"
+	weapons				WP_MELEE|WP_SABER|WP_CRYO_NADE|WP_STUN_BATON|WP_CLONE_PISTOL
+
+	attributes			MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_HEALING,3|MB_ATT_RALLY,1|MB_ATT_BESKAR,1|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,1|MB_ATT_DEXTERITY,2|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_FLOAT_HOP|MB_ATT_BUNNY_HOP|MB_ATT_CORTOSIS|MB_ATT_WOOKIEE_FURY,3|MB_ATT_FLIPKICK,1|MB_ATT_CRYOBAN_GRENADES,3|MB_ATT_DODGE,3|MB_ATT_STUN_BATON,2|MB_ATT_CLONE_PISTOL,2
+
+	saber1 				kotor_vibrostaff
+
+	saberstyle			SS_STAFF|SS_STRONG
+
+	APmultiplier		1.25
+
+	BPmultiplier		.94
+
+	ASMultiplier		.94
+
+	CSMultiplier		.94
+
+	saberdamage	120
+
+	forcepowers			FP_SABER_DEFENSE,1
+
+	maxhealth			300
+	maxarmor			15
+
+	basespeed			210
+
+	modelscale			1.15
+
+	model				"trandoshan"
+	skin				"tra3"
+	uishader			"models/players/trandoshan/mb2_icon_tra3"
+
+	MBClass				MB_CLASS_WOOKIE
+
+	classflags			CFL_STATVIEWER|CFL_BPFREEJUMPS
+
+	WP_MeleeFlags HELD_CRIPPLE
+	WP_SaberFlags HELD_POISON|HELD_PULSE|HELD_CRIPPLE
+	WP_StunBatonFlags HELD_FLAME
+	WP_ClonePistolFlags	HELD_SONIC|HELD_ALTRELOAD|HELD_CRIPPLE
+
+	classNumberLimit	1
+
+	resource			resource_energy
+
+	flourishAnim BOTH_SPINATTACK7
+	saberStanceAnim		BOTH_TRIPLE3_STAFFSTANCE
+
+	forcepool 120
+	forceregen	1.6
+
+	special1			EAS_HI_FURY
+	special2			EAS_HI_BARGE
+	special3			EAS_HI_DODGE
+	special4			EAS_HI_DEX
+}
+
+WeaponInfo0
+{
+
+ WeaponToReplace  WP_CLONE_PISTOL
+ WeaponBasedOff  WP_CLONE_PISTOL
+ NewWorldModel  "models/weapons2/kotor_ionpistol/kotor_ionpistol_w.glm"
+ NewViewModel  "models/weapons2/kotor_ionpistol/kotor_ionpistol.md3"
+ Icon    "gfx/hud/w_icon_kotor_ionpistol"
+ WeaponName   "Sonic Paralyzer Pistol"
+ MissileMissEffect  "sonic_pistol/k_wall_impact"
+ MissileEffect  "sonic_pistol/k_projectile"       
+ MuzzleEffect  "sonic_pistol/k_muzzle_flash" 
+ MissileHitHumanEffect "sonic_pistol/k_wall_impact"
+ MissileHitDroidEffect  "sonic_pistol/k_wall_impact"
+ altMissileHitHumanEffect "sonic_pistol/k_wall_impact"
+ altMissileHitDroidEffect  "sonic_pistol/k_wall_impact"
+ altMissileMissEffect  "sonic_pistol/k_wall_impact"
+ altMissileEffect  "sonic_pistol/k_projectile"       
+ altMuzzleEffect  "sonic_pistol/k_muzzle_flash"    
+ FlashSound0   "sound/weapons/kotor/fire_sonic.wav"
+ altFlashSound0   "sound/weapons/kotor/fire_sonic.wav"
+ velocityMod .6
+ damageMod .75
+ fpmult .75
+ rateMod 1.15
+ clipSize 24
+ customAmmo 328
+ hasAnimOverrides 1
+animReadyRun BOTH_ATTACK2 
+animReady BOTH_ATTACK2 
+animReadyWalk TBOTH_ATTACK2 
+animReadyNoAmmo BOTH_ATTACK2 
+animAttackRun BOTH_ATTACK2 
+animAttack BOTH_ATTACK2 
+animAttackWalk BOTH_ATTACK2 
+}
+
+WeaponInfo1
+{
+
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/kotor_vibrostaff/saber_w.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_vibrosword_staff"
+	WeaponName			"Vibrostaff"
+}
+
+
+description	"Cahhmakt
+ 
+Leader Of The Red Eclipse slaver pirates, leads through example with his insane strength and ruthless weaponry.
+
+^2Weaponry:
+- Heavy Melee
+-- Cripples
+- Poison Pulse-staff
+-- Poisons/Cripples/Pulses
+-- BP Free Jumps
+-- Saber Defense (1)
+-- No Blaster Defense
+- Overcharged Stun-Baton
+-- Ignites
+- Cyroban Grenades (3)
+- Sonic Paralyzer Pistol 
+-- Clone Pistol (2)
+-- Sonic/Cripples/Mag Reload
+-- 25%- Damage/25%- RoF
+
+^8Attributes:
+- Blast Armor
+- Healing (3)
+- Beskar (1)
+- Dexterity (2)
+- Cortosis Lined Armor
+- Fury (3) ^3[CS1]
+- Knockdown Roll
+- Slow Falling
+- Bunny Hop
+- Wary Leadership (Anti Mind Trick 1)
+- Strength (1)
+- Rally
+- Stat Viewer
+
+^3Abilities:
+- Flipkick (1) ^3[Contact Jump]
+- Barge ^3[CS2]
+- Dodge (3) ^3[CS3]
+- Combat Roll ^3[CS4]"

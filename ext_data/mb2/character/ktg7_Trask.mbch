@@ -1,0 +1,127 @@
+//Legends Mode character file - Created for Republic Support
+
+ClassInfo
+{
+	name				"ase7_Trask"
+	weapons				WP_MELEE|WP_BLASTER_PISTOL|WP_SABER|WP_M5|WP_PULSE_NADE
+		
+	attributes			MB_ATT_AMMO,3|MB_ATT_PISTOL,3|MB_ATT_DEXTERITY,1|MB_ATT_DODGE,2|MB_ATT_RALLY|MB_ATT_DISP_HEALTH,2|MB_ATT_DISP_FORCE,2|MB_ATT_SELFEXPLODE,3|MB_ATT_WESTARM5,3|MB_ATT_ARC_RIFLE_SCOPE|MB_ATT_HEALING,2|MB_ATT_ANTI_MT,1|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_BEACON|MB_ATT_DISP_ARMOR,2|MB_ATT_DISP_BLOCK,2|MB_ATT_BACTA_BIG|MB_ATT_BACTA|MB_ATT_STIMPACK|MB_ATT_RALLY|MB_ATT_FORCEFIELD,1|MB_ATT_PULSE_GRENADES|MB_ATT_QUICKTHROW,1|MB_ATT_FP_SABER_DEFENSE,1
+	
+	resource RESOURCE_ENERGY
+	forcepool 100
+	
+	hackrate 2
+	knockbacktaken .75
+
+	forceregen 1.0
+
+	maxhealth			125
+	maxarmor			80
+	
+	MBClass				MB_CLASS_BOUNTY_HUNTER
+	classNumberLimit	1
+	basespeed			215
+	
+	WP_BlasterPistolFlags	HELD_ALTRELOAD
+	
+	special1		EAS_HI_DODGE
+	special2		EAS_HI_DEX
+	special3		EAS_HI_QUICKTHROW
+	special4		EAS_HI_SELFEXPLODE
+	
+	uioverlay_r "gfx/icons/infantry"
+	uioverlay_c "gfx/icons/hybrid"
+
+	model			"trask"
+	skin			"default"
+	uishader		"models/players/trask/icon_default"
+	
+	saber1			kotor_vibroblade
+	sabercolor		0
+	saberstyle		SS_MEDIUM
+}
+
+WeaponInfo0
+{
+	WeaponToReplace	WP_BLASTER_PISTOL
+	WeaponBasedOff	WP_BLASTER_PISTOL	
+	NewWorldModel		"models/weapons2/kotor_bpistol1/kotor_bpistol1_w.glm"  
+	NewViewModel		"models/weapons2/kotor_bpistol1/kotor_bpistol1.md3"
+	Icon				"gfx/hud/w_icon_kotor_bpistol1"
+	FlashSound0				"sound/weapons/kotor/fire_light.wav" 			
+	AltFlashSound0			"sound/weapons/kotor/fire_power1.mp3"
+	ChargeSound				"sound/weapons/leia_pistol/altcharge.mp3"
+	MuzzleEffect			"Blaster/MuzzleCharge01R"
+	AltMuzzleEffect			"Blaster/MuzzleFlash01R"
+	MissileEffect			"Blaster/Shot03r"
+	Missile3Effect			"Blaster/Shot03r"
+	AltMissileEffect		"Blaster/Shot03r"
+	PowerupShotEffect		"Blaster/Shot04r"
+	ChargeEffect			"gfx/effects/bryarfrontflash"
+	MissileMissEffect 		"effects/blaster/Impact_Wall01R"
+ 	WeaponName		"Republic Issue Blaster Pistol"
+	ChargeSound			"sound/weapons/leia_pistol/altcharge.mp3"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace	WP_M5		
+	WeaponBasedOff	WP_M5    			
+	NewWorldModel		"models/weapons2/kotor_brifle1/kotor_brifle1_w.glm"
+	NewViewModel		"models/weapons2/kotor_brifle1/kotor_brifle1.md3"
+	Icon				"gfx/hud/w_icon_kotor_brifle1"
+	WeaponName		"Republic Ensign Rifle"
+	MuzzleEffect  		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+	AltMissileEffect	"Blaster/Shot03R"
+	FlashSound0		"sound/weapons/kotor/fire_med.wav"
+	AltFlashSound0	"sound/weapons/kotor/fire_hvy.wav"
+}
+
+WeaponInfo2
+{
+	WeaponToReplace	WP_SABER			
+	WeaponBasedOff	WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_oldrepswords"
+	WeaponName		"Trask's Vibrosaber"
+	SelectSound "sound/weapons/blade/slash2.mp3"
+}
+
+description	"Trask Ulgo
+
+A dedicated Republic soldier and elite squadmate who is a one-life utility support specialist who excels at bypassing security systems.
+
+^2Weaponry:
+- Melee
+- Republic Issue Blaster Pistol (3)
+-- Mag Reload
+- Trask's Vibroblade (Medium Style)
+-- Saber Defense (1)
+-- No Blaster Deflect/Defense
+- Republic Ensign Rifle (3)
+-- M5 Rifle (3)
+-- With Scope
+- Pulse Grenades (2)
+
+^8Attributes:
+- 100% Faster Hacking
+- 25% Less Knockback Taken
+- Enemy Scanner
+- Dexterity (1)
+- Stimpack
+- Medpack
+- Rally
+- Anti Mind Trick (1)
+- Healing (2)
+- Advanced Medpack
+- Blast Shield (Energy Shield)
+- Tracking Beacon
+
+^3Abilities:
+- Multi-Purpose Toolbox (HP/BP/Force/Armor Dispenser 2) ^3[USE In Melee]
+- Dodge (2) ^3[CS1]
+- Sacrifice (Self Explode 3) ^3[CS4]
+- Dex Roll ^3[CS2]
+- Quickthrow (1) ^3[CS3]"

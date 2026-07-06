@@ -1,0 +1,204 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name		"kte6_SithGunner"
+	weapons			WP_MELEE|WP_BLASTER_PISTOL
+
+	attributes		MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_PISTOL,3|MB_ATT_ENEMYSCANNER|MB_ATT_DEXTERITY,1
+	maxhealth		100
+	maxarmor			60
+
+	
+	MBClass			MB_CLASS_CLONETROOPER	
+	
+	resource RESOURCE_STAMINA
+	forcepool 120
+	
+	extralives		1
+
+	WP_BlasterPistolFlags	HELD_ALTRELOAD
+	WP_ProjFlags		HELD_ALTRELOAD
+	WP_TripMineFlags	HELD_TRACKING|HELD_LOWDAMAGE|HELD_CRIPPLE|HELD_FLASH
+	WP_FragNadeFlags	HELD_FLASH
+	WP_EE4Flags		HELD_ALTRELOAD
+	
+	uioverlay_r "gfx/icons/infantry"
+	uioverlay_c "gfx/icons/hybrid"
+	uioverlay_l "gfx/icons/spec_infantry"
+	
+	modelScale        	1.00
+	classNumberLimit	2
+	
+	saberdamage 130
+	
+	special1	EAS_HI_SPRINT
+	special2 EAS_HI_DEX
+	special3 EAS_HI_ENEMYSCANNER
+	special4 EAS_HI_GRAPPLEHOOK
+	
+	gloatAnim   	BOTH_VICTORY_FAST
+	flourishAnim BOTH_STAND5TOAIM
+	
+	model		"sithtrooper"
+	skin		"gold"
+	uishader	"models/players/sithtrooper/mb2_icon_gold"
+	
+ 	isCustomBuild		1
+	mbPoints			30
+	
+	c_att_skill_0	MB_ATT_PROJECTILE_RIFLE
+	c_att_names_0	"Sith Sniper Rifle"
+	c_att_ranks_0	14
+	c_att_descs_0	"Proj, 30%- Damage, 20%+ Velocity, Mag Reload"
+
+	c_att_skill_1	MB_ATT_TRIP_MINES
+	c_att_names_1	"Tracing Mine"
+	c_att_ranks_1	2,2,2
+	c_att_descs_1	"Tripmine, Applies Blind, Tracking, Low Damage, Slow"
+	
+	c_att_skill_2	MB_ATT_FRAGS
+	c_att_names_2	"Obfuscation Grenade"
+	c_att_ranks_2	2,2,2
+	c_att_descs_2	"Applies Smoke Field, Applies Blind, Low Damage"
+	
+	c_att_skill_3	MB_ATT_EE4
+	c_att_names_3	"Sith Marksman Rifle"
+	c_att_ranks_3	2,2,4
+	c_att_descs_3	"EE-4, 20%+ Damage, 40%- RoF, 15%+ Velocity, 35%+ FP Drain"
+	
+	c_att_skill_4 	MB_ATT_STAMINA
+	c_att_names_4	"Stamina"
+	c_att_ranks_4	2,2,2
+	
+	c_att_skill_5	MB_ATT_DODGE
+	c_att_names_5	"Dodge"
+	c_att_ranks_5	2,2,2
+
+	c_att_skill_6	MB_ATT_PSHIELD
+	c_att_names_6	"Sith Energy Shield"
+	c_att_ranks_6	8
+
+	c_att_skill_7	MB_ATT_GRAPPLE_HOOK
+	c_att_names_7	"Grapple Hook"
+	c_att_ranks_7	2,4
+	c_att_descs_7	"^3[CS4]"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_PROJ					 
+	WeaponBasedOff      WP_PROJ
+	NewWorldModel		"models/weapons2/proj_rifle/proj_rifle_w.glm"
+	NewViewModel		"models/weapons2/proj_rifle/proj_rifle.md3"
+	Icon				"gfx/hud/w_icon_proj_rifle"
+	WeaponName			"Sith Sniper Rifle"    				 
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect	"Blaster/Shot03R"
+	AltMissileEffect	"Blaster/Shot03R"
+	AltFlashSound0		"sound/weapons/kotor/fire_hvy.wav"
+	FlashSound0		"sound/weapons/kotor/fire_hvy.wav"
+	damagemod	.7
+	Velocitymod	1.2
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_EE4 			
+	WeaponBasedOff		WP_EE4    			
+	NewWorldModel		"models/weapons2/kotor_brifle2/kotor_brifle2_w.glm"
+	NewViewModel		"models/weapons2/kotor_brifle2/kotor_brifle2.md3"
+	Icon				"gfx/hud/w_icon_kotor_brifle2"
+	WeaponName			"Sith Blaster Rifle"
+	FlashSound0			"sound/weapons/kotor/fire_med.wav"
+	AltFlashSound0		"sound/weapons/kotor/fire_hvy.wav"
+	MuzzleEffect  		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+	damagemod 1.20
+	ratemod	1.40
+	fpmult	1.35
+	velocitymod 1.20
+}
+
+WeaponInfo2
+{
+	WeaponToReplace	WP_BLASTER_PISTOL
+	WeaponBasedOff	WP_BLASTER_PISTOL	
+	NewWorldModel		"models/weapons2/kotor_bpistol2/kotor_bpistol2_w.glm"  
+    NewViewModel		"models/weapons2/kotor_bpistol2/kotor_bpistol2.md3"
+	Icon				"gfx/hud/w_icon_kotor_bpistol2"
+	flashsound0		"sound/weapons/kotor/fire_light.wav"
+	Altflashsound0	"sound/weapons/kotor/fire_power1.wav"
+	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
+    WeaponName		"Sith Blaster Pistol"
+	hasAnimOverrides 1
+	animStand BOTH_STAND1
+	animReadyRun BOTH_PISTOL_IDLE2
+	animReady BOTH_PISTOL_IDLE2
+	animReadyWalk BOTH_PISTOL_READY
+	animReadyNoAmmo BOTH_PISTOL_ATTACK
+	animAttackRun BOTH_PISTOL_ATTACK
+	animAttack BOTH_PISTOL_ATTACK
+	animAttackWalk BOTH_PISTOL_ATTACK
+	animCharge BOTH_PISTOL_ATTACK
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_TRIP_MINE
+	WeaponBasedOff	WP_TRIP_MINE
+	NewWorldModel		"models/weapons2/laser_trap/laser_trap_w.glm"
+	NewViewModel		"models/weapons2/laser_trap/laser_trap.md3"
+ NewHandsModel "models/weapons2/laser_trap/laser_trap_hand.md3"
+	Icon			"gfx/hud/w_icon_tripmine"
+	WeaponName		"Tracer Mines"
+}
+
+WeaponInfo4
+{
+	WeaponToReplace			WP_FRAG_NADE
+	WeaponBasedOff			WP_FRAG_NADE
+NewWorldModel	"models/weapons2/thermal/thermal_w.glm"
+NewViewModel "models/weapons2/thermal/thermal.md3"
+NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
+	Icon						"gfx/hud/w_thermal_grenade"
+	MissileModel 				"models/weapons2/thermal/thermal_proj.md3"
+	AltMissileModel			"models/weapons2/thermal/thermal_proj.md3"
+	MissileEffect 			"stone/missile1"
+	AltMissileEffect 			"stone/missile1"
+	MissileMissEffect			"smokenadeleg/explode_vol"
+	MissileHitHumanEffect	"smokenadeleg/explode_vol"
+	MissileHitDroidEffect	"smokenadeleg/explode_vol"
+	AltMissileMissEffect		"smokenadeleg/explode_vol"
+	AltMissileHitHumanEffect	"smokenadeleg/explode_vol"
+	AltMissileHitDroidEffect	"smokenadeleg/explode_vol"
+	FlashSound0		"sound/weapons/smokenade/select.mp3"
+	AltFlashSound0 	"sound/weapons/smokenade/select.mp3"
+	WeaponName  				"Obfuscation Grenade"
+	hasAnimOverrides 1
+	animAttackRun BOTH_THERMAL_THROW2
+	animAttack BOTH_THERMAL_THROW2
+	animAttackWalk BOTH_THERMAL_THROW2
+	animReadyRun BOTH_THERMAL_READY2
+	animReady BOTH_THERMAL_READY2
+	animReadyWalk BOTH_THERMAL_READY2
+	damageMod 0.001
+	ratemod 0.6
+}
+description	"Sith Trooper Elite Gunner
+
+2-life marksman with immense tracking and movement abilities.
+
+^2Weaponry:
+- Melee
+
+^8Attributes:
+- Reinforcement (1)
+- Stamina (0)
+- Assemble (3) 
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Dex Roll ^3[CS2]
+- Sith Armor Heads Up Display (Enemy Scanner) ^3[CS3]"

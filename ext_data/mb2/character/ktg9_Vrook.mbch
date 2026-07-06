@@ -1,0 +1,74 @@
+//Siege class def file
+
+ClassInfo
+{
+	name		"ktg9_Vrook"
+	weapons		WP_MELEE|WP_SABER
+	attributes	MB_ATT_FORCEFOCUS,3|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,3|MB_ATT_DEFLECT,3|MB_ATT_FORCEBLOCK,2|MB_ATT_BLAST_ARMOUR
+	extralives	1
+	maxhealth	135
+
+	MBClass		MB_CLASS_JEDI
+	
+	speed .97
+	
+	forcepowers	FP_SABER_OFFENSE,2|FP_PUSH,3|FP_LEVITATION,3|FP_PULL,3|FP_ABSORB,2|FP_HEAL,1|FP_SABERTHROW,3|FP_STASIS,3|FP_DARKRAGE,1
+
+	classflags CFL_NOPICKUPS|CFL_BPFREEJUMPS
+
+	special2 EAS_NONE
+
+	forcepool	130
+
+	rateOfFire_Melee .95
+
+	forceregen	1
+
+	ASmultiplier 1.05
+	CSmultiplier 1.05
+	APmultiplier 1.10
+	BPmultiplier .9
+	
+	uioverlay_l "gfx/icons/frontline"
+	uioverlay_r "gfx/icons/infantry"
+
+	model				"jedipack_hb"
+	skin				"vrook"
+	uishader			"models/players/jedipack_hb/mb2_icon_vrook"
+
+	saber1		saber_kshrt
+	sabercolor	3
+	saberstyle	SS_STRONG|SS_MEDIUM|SS_TAVION
+
+	
+	classNumberLimit	1
+	
+}
+
+description	"Jedi Master Vrook
+
+An Aggressive Jedi Consular who has self healing capabilities and anger issues.
+
+^2Weaponry: 
+- Melee
+-- 5% Faster RoF
+-- 15% Faster Movement
+- Lightsaber (Red/Yellow/Cyan)
+-- BP-Free Jumps
+-- Saber Throw (3) ^3[CS1]
+
+^8Force Powers:
+- Push (3)
+- Pull (3)
+- Heal (1)
+- Jump (3)
+- Absorb (2)
+- Dark Rage (1)
+- Stasis (3)
+
+^8Attributes:
+- Force Focus (3)
+- Force Block (2)
+- Saber (2)
+- Blaster Defense/Deflect (3)
+- Blast Armor"

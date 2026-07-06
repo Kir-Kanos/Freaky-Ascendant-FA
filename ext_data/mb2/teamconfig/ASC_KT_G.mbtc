@@ -1,0 +1,79 @@
+name "ASC_KT_G"
+
+ClassesAllowed 6
+TimePeriod 1
+EUAllowed 0
+
+Classes
+{
+	class1	"ktg1_Refugee"
+	class2	"h3_Cander"
+	Class3	"h7_HK47"
+	class4	"h8_Zaal"
+	Class5	"h9_JKnight"
+	Class6	"h10_JForce"
+}
+
+SubclassesForClass1
+{
+	Subclass1	"ktg1_OldRepTR"
+	Subclass2	"h1_TORtroop"
+	Subclass3	"ktg2_Carth"
+	Subclass4	"h1_Talz"
+	Subclass5	"ktg1_SentinelDR"
+	Subclass6	"ktg2_OldRepOff"
+	Subclass7	"ktg1_Padawan"
+	Subclass8	"ktg1_TSF"
+	Subclass9	"ktg2_OldRepHVY"
+	Subclass10	"ktg2_Ithorian"
+	Subclass11	"ktg1_OndRoyal"
+}
+
+SubclassesForClass2
+{
+	Subclass1	"h4_Atton"
+	Subclass2	"ktg5_SmugglerAce"
+	Subclass3	"ktg3_Smuggler"
+}
+
+SubclassesForClass3
+{
+	Subclass1	"h6_Mission"
+	Subclass2	"h7_T3M4"
+	Subclass3	"ktg7_Dodonna"
+	Subclass4	"ktg7_Trask"
+	Subclass5	"ktg6_OldRepSniper"
+	Subclass6 	"ktg3_Baodur"
+	Subclass7	"ktg2_NicoOkarr"
+}
+
+SubclassesForClass4
+{
+	Subclass1	"ktg8_Shadowlander"
+}
+
+SubclassesForClass5
+{
+	Subclass1	"h9_JBrute"
+	Subclass2	"ktg9_Vandar"
+	Subclass3	"h9_JSword"
+	Subclass4	"ktg9_Handmaiden"
+	Subclass5	"ktg9_Juhani"
+	Subclass6	"ktg9_Vrook"
+	Subclass7	"ktg9_Kavar"
+	Subclass8	"ktg9_JediKnight"
+	Subclass9	"ktg9_JediWatch"
+	Subclass10	"ktg9_JediWeapon"
+}
+
+SubclassesForClass6
+{
+	Subclass1	"h10_JSavant"
+	Subclass2	"ktg10_Jolee"
+	Subclass3	"ktg10_Visas"
+	Subclass4	"ktg10_Mical"
+	Subclass5	"ktg10_Zez"
+	Subclass6	"ktg10_Dorak"
+	Subclass7	"ktg10_Zhar"
+	Subclass8	"ktg10_JediMaster"
+}
