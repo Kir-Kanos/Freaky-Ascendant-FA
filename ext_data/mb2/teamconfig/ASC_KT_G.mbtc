@@ -34,6 +34,7 @@ SubclassesForClass2
 	Subclass1	"h4_Atton"
 	Subclass2	"ktg5_SmugglerAce"
 	Subclass3	"ktg3_Smuggler"
+	Subclass4	"ktg4_KotorRepGuard"
 }
 
 SubclassesForClass3
