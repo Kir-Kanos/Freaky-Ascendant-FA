@@ -5,29 +5,28 @@ ClassInfo
 	name		"ktg9_Vrook"
 	weapons		WP_MELEE|WP_SABER
 	attributes	MB_ATT_FORCEFOCUS,3|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,3|MB_ATT_DEFLECT,3|MB_ATT_FORCEBLOCK,2|MB_ATT_BLAST_ARMOUR
-	extralives	1
-	maxhealth	135
+
+	maxhealth	140
 
 	MBClass		MB_CLASS_JEDI
 	
-	speed .97
+	speed .96
 	
-	forcepowers	FP_SABER_OFFENSE,2|FP_PUSH,3|FP_LEVITATION,3|FP_PULL,3|FP_ABSORB,2|FP_HEAL,1|FP_SABERTHROW,3|FP_STASIS,3|FP_DARKRAGE,1
+	forcepowers	FP_SABER_OFFENSE,2|FP_PUSH,3|FP_LEVITATION,2|FP_PULL,3|FP_ABSORB,2|FP_HEAL,1|FP_SABERTHROW,3|FP_STASIS,3|FP_DARKRAGE,1
 
 	classflags CFL_NOPICKUPS|CFL_BPFREEJUMPS
 
 	special2 EAS_NONE
 
 	forcepool	130
+	forceregen	1.3
 
 	rateOfFire_Melee .95
 
-	forceregen	1
-
 	ASmultiplier 1.05
 	CSmultiplier 1.05
-	APmultiplier 1.10
-	BPmultiplier .9
+	APmultiplier 1.05
+	BPmultiplier .95
 	
 	uioverlay_l "gfx/icons/frontline"
 	uioverlay_r "gfx/icons/infantry"
