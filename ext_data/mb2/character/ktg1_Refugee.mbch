@@ -44,17 +44,13 @@ ClassInfo
 
 	saberMaxChain	2
 
-	model			"jedi_tm"
-	skin			"citizen"
-	uishader		"models/players/jedi_tm/mb2_icon_citizen"
+	model			"prisoner"
+	skin			"togruta"
+	uishader		"models/players/prisoner/mb2_icon_togruta"
 
 	model_1			"prisoner"
-	skin_1			"togruta"
-	uishader_1		"models/players/prisoner/mb2_icon_togruta"
-
-	model_2			"prisoner"
-	skin_2			"elder"
-	uishader_2		"models/players/prisoner/mb2_icon_elder"
+	skin_1			"elder"
+	uishader_1		"models/players/prisoner/mb2_icon_elder"
 
 }
 
