@@ -23,7 +23,7 @@ ClassInfo
 	rankspeed			250
 	modelscale			.98
 	
-	spawnerNPC "Seeraa"
+
 	roundNPC "Seeraa"
 	
 
@@ -47,7 +47,7 @@ ClassInfo
 
 c_att_skill_0	MB_ATT_CLOAK
 c_att_names_0	"Stealth Field Generator"
-c_att_ranks_0	4
+c_att_ranks_0	2,2
 c_att_descs_0	"Replaces Gunkick ^3[CS2]"
 
 c_att_skill_1	MB_ATT_BASESPEED
