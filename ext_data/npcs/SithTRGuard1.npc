@@ -1,0 +1,37 @@
+SithTRGuard1
+{
+	playerModel sithtrooper
+	customskin red
+	weapon		WP_EE4
+	MB_ATT_EE4 2
+	altFire 1
+	health		75
+	armor 30
+	headPitchRangeDown 30
+	reactions	5
+	aim			4
+	move		5
+	aggression	5
+	evasion		4
+	intelligence	5
+	rank		crewman
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+//	race		klingon
+	class		CLASS_STORMTROOPER
+	height		64
+	crouchheight 38
+	walkSpeed	51
+	runSpeed	200
+	snd			sithtrooper
+	sndcombat	sithtrooper
+	sndextra	sithtrooper
+	yawspeed	70
+	walkSpeed	55
+	runSpeed	200
+	dismemberProbHead	0
+	dismemberProbArms	10
+	dismemberProbLegs	0
+	dismemberProbHands	20
+	dismemberProbWaist	0
+}
