@@ -27,7 +27,7 @@ ClassInfo
 
 	speed				0.80
 
-	rateOfFire_Melee 	4
+	rateOfFire_Melee 	1.2
 
 	sabermaxchain 		2
 
@@ -87,6 +87,7 @@ An insane and fragile caster with ancient knowledge and experiences.
 
 ^2Weaponry:
 - Torturous Melee
+-- 20% Slower Swing Rate
 -- Force Focuses/Cripples On Hit
 -- 15% Faster Movement Speed
 - Lightning-Surged Double-Bladed Saber (Staff)
