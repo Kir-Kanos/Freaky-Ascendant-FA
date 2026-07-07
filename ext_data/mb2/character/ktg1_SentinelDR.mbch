@@ -11,10 +11,10 @@ ClassInfo
 	WP_ThermalFlags	HELD_SONIC
 	WP_E22Flags	HELD_SLOW
 	WP_CR2Flags	HELD_ALTRELOAD
-	knockbackTaken	1		
+	knockbackTaken	.75		
 	knockbackGiven 1
 	hackRate 1.50
-	basespeed 170
+	basespeed 165
 	Maxhealth		60
 	MaxArmor		20
 	forcepool	30
@@ -24,8 +24,9 @@ ClassInfo
 	deathAnim	BOTH_SBD_DEATH1
 	flourishAnim BOTH_PAIN17
 
-	special2	EAS_FP_RAGE
-	special3	EAS_FP_PROTECT	
+	special2	EAS_FP_RAGE	
+	special4	EAS_HI_PSHIELD
+
 	modelScale   1.09		
 	uioverlay "gfx/icons/infantry"
 	model			"wardroid" 				
@@ -37,37 +38,37 @@ ClassInfo
 	
 	c_att_skill_0	MB_ATT_MAGNETIC_PLATING
 	c_att_names_0	"Magnetic Plating"
-	c_att_ranks_0	10	
+	c_att_ranks_0	12	
 	c_att_descs_0	"Blaster Deflection Plating"
 
 	c_att_skill_1	MB_ATT_ANTI_MT
 	c_att_names_1	"Advanced Logic"
-	c_att_ranks_1	3
+	c_att_ranks_1	4
 	c_att_descs_1	"Anti Jedi Mind Trick"
 	
-	c_att_skill_2	MB_ATT_FP_PROTECT
+	c_att_skill_2	MB_ATT_PSHIELD
 	c_att_names_2	"Energy Shield"
-	c_att_ranks_2 	10
-	c_att_descs_2	"Protect 1"
+	c_att_ranks_2 	12
+	c_att_descs_2	"Personal Shield ^3[CS4]"
 
 	c_att_skill_3	MB_ATT_FP_RAGE
 	c_att_names_3	"Battery Overcharge"
-	c_att_ranks_3	8
-	c_att_descs_3	"Dark Rage 1"
+	c_att_ranks_3	4
+	c_att_descs_3	"Rage 1"
 
 	c_att_skill_4	MB_ATT_CR2
 	c_att_names_4	"Republic Blaster Carbine"
-	c_att_ranks_4	3,1,1
+	c_att_ranks_4	2,2,2
 	c_att_descs_4	"CR-2, 10% More FP Drain, 20% More Damage, 10% Higher RoF, Low Clip Size, Mag Reload"
 	
 	c_att_skill_5	MB_ATT_BASE_TD
 	c_att_names_5	"Micro Sonic Grenade"
-	c_att_ranks_5	2,3
+	c_att_ranks_5	4,4
 	c_att_descs_5	"Basic Thermal Det, Applies Sonic Grenade Effect"
 
 	c_att_skill_6	MB_ATT_CRYOBAN_GRENADES
 	c_att_names_6	"Cyroban Grenade"
-	c_att_ranks_6	5
+	c_att_ranks_6	6
 	c_att_descs_6	"Cyro Grenade"
 
 	c_att_skill_7	MB_ATT_RESPAWNS
@@ -77,22 +78,22 @@ ClassInfo
 
 	c_att_skill_8	MB_ATT_ENV_PROT
 	c_att_names_8	"Enhanced Shielding"
-	c_att_ranks_8	3,2
+	c_att_ranks_8	4,4
 	c_att_descs_8	"Environmental Protection"
 
 	c_att_skill_9	MB_ATT_BESKAR
 	c_att_names_9	"Plated Torso"
-	c_att_ranks_9	10
+	c_att_ranks_9	12
 	c_att_descs_9	"Beskar 1, Covers Chest Only"
 
 	c_att_skill_10	MB_ATT_E_22
 	c_att_names_10	"Republic Assualt Blaster"
-	c_att_ranks_10	4,0,2
+	c_att_ranks_10	4,4,2
 	c_att_descs_10	"100 Percent Faster Rof, 50% Less Damage, 40% Less FP Drain, 15% Slower Movement"
 
 	c_att_skill_11	MB_ATT_ASSEMBLE
 	c_att_names_11	"Assemble"
-	c_att_ranks_11	0,1
+	c_att_ranks_11	2,2
 
 }
 WeaponInfo0
@@ -145,8 +146,9 @@ WeaponInfo1
 	animAttack BOTH_DC15_ATTACK
 	animAttackWalk BOTH_DC15_ATTACK
 	animStand BOTH_STAND1
-	FPMult				.60
-	damagemod			.50
+	FPMult				.40
+	damagemod			.40
+	velocitymod			.40
 	rateMod .5
 	clipsize 90
 	customAmmo 900
@@ -157,13 +159,13 @@ description	"MK-1 Sentinel Droid
 Mass-produced, Tanky Wardroids equipped with old world technology.
 
 ^2Weaponry:
-- Melee
+- Heavy Melee
 
 ^8Attributes:
 - Strength 1
 - Blast Armor
-- Reinforcements (2)
+- 25% Less Knockback Taken
+- Reinforcements (1)
 - Battery Recharge (1)
 - Assemble (1)
-- 50% Slower Objective Speed
-"
+- 50% Slower Objective Speed"
