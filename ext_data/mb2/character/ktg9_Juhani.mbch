@@ -37,7 +37,7 @@ ClassInfo
 
 	saberThrowDamage 50
 
- saberSpecialDamage 120
+ saberSpecialDamage 1.25
 
 	special1 EAS_FP_SABERTHROW
 	special2 EAS_HI_CLOAK
