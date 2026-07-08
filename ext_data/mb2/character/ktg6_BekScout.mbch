@@ -24,7 +24,7 @@ ClassInfo
 	basespeed		240
 	modelscale		1.0
 	
-	classflags		CFL_SEEINGSTEALTH
+	classflags		CFL_SEEING_STEALTH
 
 	WP_MeleeFlags HELD_SPEED
 	WP_SaberFlags HELD_CRIPPLE|HELD_SPEED
