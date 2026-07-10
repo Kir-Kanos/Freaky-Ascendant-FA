@@ -6,8 +6,9 @@ ClassInfo
 	
 	weapons		WP_MELEE|WP_MANDO_PISTOL
 	
-	attributes	MB_ATT_ASSEMBLE,3|MB_ATT_STAMINA,3|MB_ATT_DEXTERITY,1|MB_ATT_GETUPS,2|MB_ATT_SELFEXPLODE,3|MB_ATT_MANDO_PISTOL,1
-	
+	attributes	MB_ATT_STAMINA,3|MB_ATT_DEXTERITY,1|MB_ATT_GETUPS,2|MB_ATT_SELFEXPLODE,3|MB_ATT_MANDO_PISTOL,1
+
+	WP_MandoPistolFlags	HELD_ALTRELOAD
 	
 	maxhealth 	85
 	hackRate 1.35
@@ -57,7 +58,7 @@ WeaponInfo1
 	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
     WeaponName		"Broken Blaster Pistol"
 	ratemod 1.30
-	damagemod 1.20
+	damagemod .80
 }
 
 description "Mandalorian Slave 
@@ -79,7 +80,6 @@ description "Mandalorian Slave
 - Stamina (3)
 - Dexterity (1)
 - Getup (2)
-- Assemble (3)
 - Detonator Vest (Self Explode 3) ^3[CS2]
 
 ^3Abilities:

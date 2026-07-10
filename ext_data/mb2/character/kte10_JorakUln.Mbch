@@ -12,14 +12,14 @@ ClassInfo
 
 	forcepowers			FP_SABER_OFFENSE,1|FP_LEVITATION,1|FP_PUSH,3|FP_PULL,2|FP_ABSORB,1|FP_GRIP,3|FP_DRAIN,3|FP_LIGHTNING,3|FP_SABERTHROW,2|FP_TELEPATHY,2
 
-	WP_MeleeFlags		HELD_PULSE|HELD_SPEED
+	WP_MeleeFlags		HELD_SPEED|HELD_FORCEFOCUS|HELD_CRIPPLE
 	WP_TripMineFlags	HELD_POISON|HELD_KNOCKDOWN
 	WP_SaberFlags		HELD_PULSE|HELD_KNOCKBACK|HELD_KNOCKDOWN
 	WP_ThrowerFlags		HELD_FORCEFOCUS|HELD_CRIPPLE|HELD_ALTRELOAD
-	AB_FLightningFlags	HELD_FORCEFOCUS|HELD_CRIPPLE|HELD_FLAME
+	AB_FLightningFlags  HELD_CRIPPLE|HELD_FLAME
 
 	maxhealth			80 
-	maxarmor			10
+	maxarmor			5
 
 	resource			RESOURCE_FORCE
 	forcepool			100
@@ -87,8 +87,9 @@ An insane and fragile caster with ancient knowledge and experiences.
 
 ^2Weaponry:
 - Torturous Melee
--- 20% Slower RoF
--- Pulses on Hit
+-- 20% Slower Swing Rate
+-- Force Focuses/Cripples On Hit
+-- 15% Faster Movement Speed
 - Lightning-Surged Double-Bladed Saber (Staff)
 -- Saber Defense (1)
 -- Blaster Defense (1)
@@ -107,7 +108,7 @@ An insane and fragile caster with ancient knowledge and experiences.
 - Force Pull (2) 
 - Force Absorb (1)
 - Ancient Force Lightning (3) ^3[CS2]
--- Force Focuses, Ignites and Cripples
+-- Ignites and Cripples
 - Force Drain (3) ^3[CS3]
 - Force Grip (3) ^3[CS4]
 - Force Mind Trick (2)

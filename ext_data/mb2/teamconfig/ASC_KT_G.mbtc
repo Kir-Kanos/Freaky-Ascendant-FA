@@ -10,8 +10,8 @@ Classes
 	class2	"h3_Cander"
 	Class3	"h7_HK47"
 	class4	"h8_Zaal"
-	Class5	"h9_JKnight"
-	Class6	"h10_JForce"
+	Class5	"asg9_JKnight"
+	Class6	"asg10_JForce"
 }
 
 SubclassesForClass1
@@ -46,7 +46,10 @@ SubclassesForClass3
 	Subclass5	"ktg6_OldRepSniper"
 	Subclass6 	"ktg3_Baodur"
 	Subclass7	"ktg2_NicoOkarr"
-	Subclass8	"ktg7_GadonThek"
+	Subclass9	"ktg7_GadonThek"
+	Subclass10	"ktg6_BekScout"
+	Subclass11	"ktg7_Talia"
+	Subclass12	"h7_Scavenge"
 }
 
 SubclassesForClass4
@@ -78,4 +81,5 @@ SubclassesForClass6
 	Subclass6	"ktg10_Dorak"
 	Subclass7	"ktg10_Zhar"
 	Subclass8	"ktg10_JediMaster"
+	Subclass9	"ktg10_Lonna"
 }

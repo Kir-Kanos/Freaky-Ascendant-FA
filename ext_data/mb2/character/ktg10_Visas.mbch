@@ -43,7 +43,7 @@ AB_FLightningFlags	HELD_DISRUPTIFY|HELD_LIFESTEAL|HELD_CRIPPLE|HELD_LOWDAMAGE
 	skin		"default"
 	uishader	"models/players/visas/mb2_icon_default"
 		
-	saber1		saber_visas_asc
+	saber1		Visas_ASC
 	sabercolor		0	
 	
 }

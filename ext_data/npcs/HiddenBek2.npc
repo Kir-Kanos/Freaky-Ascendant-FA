@@ -1,0 +1,35 @@
+HiddenBek2
+{
+	playerModel prisoner
+	customskin	merchant
+	weapon		WP_FLECHETTE
+	MB_ATT_FLECHETTE 1
+	altFire 1
+	health		120
+	armor 40
+	headPitchRangeDown 30
+	reactions	5
+	aim		5
+	move		5
+	aggression	5
+	evasion		5
+	intelligence	5
+	rank		crewman
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY	
+//	race		klingon
+	class		CLASS_STORMTROOPER
+	height		64
+	crouchheight 38
+	snd			bartender
+	sndcombat	bartender
+	sndextra	bartender
+	yawspeed	70
+	walkSpeed	55
+	runSpeed	240
+	dismemberProbHead	0
+	dismemberProbArms	10
+	dismemberProbLegs	0
+	dismemberProbHands	20
+	dismemberProbWaist	0
+}

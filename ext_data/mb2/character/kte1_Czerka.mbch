@@ -91,7 +91,7 @@ ClassInfo
 	c_att_skill_4	MB_ATT_PROJECTILE_RIFLE
 	c_att_names_4	"Czerka Prototype Slugthrower"
 	c_att_ranks_4	8
-	c_att_descs_4	"Based On Prok. Large Clip Size, -85% Damage, +45% RoF"
+	c_att_descs_4	"Based On Proj. Large Clip Size, -85% Damage, +45% RoF"
 	
 	c_att_skill_5	MB_ATT_SONIC_DETONATOR
 	c_att_names_5	"Cyroban Multi-burst Detonator"

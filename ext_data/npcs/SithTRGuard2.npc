@@ -1,0 +1,36 @@
+SithTRGuard2
+{
+	playerModel	sithtrooper
+	customSkin	default
+	saber		kotor_vibrosword
+	weapon	WP_SABER
+	saberStyle	1
+	MB_ATT_FP_SABER_DEFENSE 1
+	PBchance 8
+	MBchance 1
+	SBchance 5
+	reactions	5
+	aim			5
+	move		5
+	aggression	5
+	evasion		5
+	intelligence	5
+	hfov		120
+	vfov		120
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY
+	class		CLASS_REBORN
+	snd			sithtrooper
+	sndcombat	sithtrooper
+	sndjedi		sithtrooper
+	yawSpeed	60
+	walkSpeed	45
+	runSpeed	180
+	health		100
+	armor		100
+	dismemberProbHead	0
+	dismemberProbArms	20
+	dismemberProbLegs	0
+	dismemberProbHands	30
+	dismemberProbWaist	0
+}
