@@ -79,7 +79,7 @@ WeaponInfo1
 	NewWorldModel		"models/weapons2/kotor_carbine/model.glm"
 	NewViewModel		"models/weapons2/kotor_carbine/model.MD3"
 	Icon				"gfx/hud/w_icon_kotorcarbine"
-	WeaponName			"Sith Carbine"
+	WeaponName			"Surplus Blaster Carbine"
 	FlashSound0			"sound/weapons/kotor_carbine/fire.wav"
 	FlashSound1			"sound/weapons/kotor_carbine/fire.wav"
 	FlashSound2			"sound/weapons/kotor_carbine/fire.wav"
