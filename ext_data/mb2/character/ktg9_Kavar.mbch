@@ -6,7 +6,6 @@ ClassInfo
 	weapons		WP_MELEE|WP_SABER
 	attributes	MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_DEFLECT,3|MB_ATT_FORCEBLOCK,3|MB_ATT_KICKFLIP,2|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_RALLY|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_HEALING,1|MB_ATT_DEXTERITY,1
 
-	extralives	1
 	maxhealth	140
 	maxarmor	10
 
@@ -14,7 +13,7 @@ ClassInfo
 	
 	speed 1.09
 	
-	forcepowers	FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_SPEED,2|FP_PUSH,2|FP_PULL,1|FP_SABERTHROW,3|FP_TEAM_FORCE,1|FP_SEE,1
+	forcepowers	FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_SPEED,2|FP_PUSH,2|FP_PULL,2|FP_SABERTHROW,3|FP_TEAM_FORCE,1|FP_SEE,1
 
 	classflags CFL_NOPICKUPS
 	
@@ -50,7 +49,7 @@ rateOfFire_Melee .9
 
 description	"Jedi Master Kavar
 
-A Master Duelist specializing in high-speed combat and disarming techniques.
+A Master Duelist with leadership skills specializing in high-speed combat and disarming techniques.
 
 ^2Weaponry: 
 - Melee
@@ -58,11 +57,12 @@ A Master Duelist specializing in high-speed combat and disarming techniques.
 - 10% Faster Swings
 - Shoto And Lightsaber
 -- Dual Style/Cyan Style
+-- Disarms On Hit
 
 ^8Force Powers:
 - Speed (3)
 - Push (2)
-- Pull (1)
+- Pull (2)
 - Jump (3)
 - Saber Throw (3)
 - Team Energize (1)
