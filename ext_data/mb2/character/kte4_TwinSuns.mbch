@@ -3,7 +3,7 @@
 ClassInfo
 {
 	name				"kte4_TwinSuns"
-	weapons				WP_MELEE|WP_SABER|
+	weapons				WP_MELEE|WP_SABER
 	attributes			MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_SHIELD_RECHARGE,1|MB_ATT_STAMINA,3|MB_ATT_DEXTERITY,3|MB_ATT_POISON_DART,6|MB_ATT_STIMPACK|MB_ATT_FLIPKICK,1|MB_ATT_BUNNY_HOP,1|MB_ATT_TRACKING_BEACON|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_ANTI_MT,1|MB_ATT_HEALING,1|MB_ATT_AMMO,3|MB_ATT_ROUNDSPAWNER
 	saber1				kotor_shortsword
 	saber2				kotor_shortsword
@@ -23,7 +23,7 @@ ClassInfo
 	rankspeed			250
 	modelscale			.98
 	
-	spawnerNPC "Seeraa"
+
 	roundNPC "Seeraa"
 	
 
@@ -47,7 +47,7 @@ ClassInfo
 
 c_att_skill_0	MB_ATT_CLOAK
 c_att_names_0	"Stealth Field Generator"
-c_att_ranks_0	4
+c_att_ranks_0	2,2
 c_att_descs_0	"Replaces Gunkick ^3[CS2]"
 
 c_att_skill_1	MB_ATT_BASESPEED
@@ -116,6 +116,7 @@ Twin assassins, agile and dexterious, they see combat more as a dance than as an
 - Healing (1)
 
 ^3Abilities:
+- Seeraa, The Twin Sun (Start With Your Sword Dual Wielding Sister)
 - Energy Shield [Protect] (2)
 - Poison Darts (6) ^3[Melee CS2]
 - Dex Roll ^3[CS1]
