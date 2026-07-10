@@ -1,0 +1,245 @@
+ClassInfo
+{
+	name			"ktg6_BekScout"
+	weapons			WP_MELEE|WP_SABER
+	
+	attributes		MB_ATT_DODGE,2|MB_ATT_STAMINA,2|MB_ATT_AMMO,3|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_GRAPPLE_HOP|MB_ATT_ASSEMBLE,3|MB_ATT_TRACKING_BEACON
+	
+	maxhealth		50
+	maxarmor		15
+
+	extralives		2
+	classNumberLimit	3
+	
+	special1		EAS_HI_SPRINT
+	special2		EAS_HI_DODGE
+	special3		EAS_HI_CLOAK
+	special4		EAS_HI_GRAPPLEHOOK
+
+	resource		RESOURCE_STAMINA
+
+	forcepool 100
+	forceregen	2
+	
+	basespeed		240
+	modelscale		1.0
+	
+	classflags		CFL_SEEING_STEALTH
+
+	WP_MeleeFlags HELD_SPEED
+	WP_SaberFlags HELD_CRIPPLE|HELD_SPEED
+	WP_BlasterPistolFlags	HELD_ALTRELOAD
+	WP_DCCarbineFlags	HELD_ALTRELOAD
+	WP_TripMineFlags	HELD_TRACKING|HELD_FORCEFOCUS
+	WP_ConcNadeFlags	HELD_FORCEFOCUS|HELD_FLASH|HELD_CRIPPLE|HELD_STUN|HELD_POISON|HELD_TRACKING|HELD_SLIPPERY|HELD_DISARM
+	AB_GHookFlags	HELD_PULSE|HELD_SLIPPERY|HELD_CRIPPLE|HELD_PULL
+
+	saber1		Legends_Knife_Spy_T
+	saberstyle	SS_TAVION
+
+	saberdamage	60
+	saberMaxChain 2
+
+	CSmultiplier	1.05
+	ASmultiplier	1.05
+	APmultiplier	.5
+	BPmultiplier	0
+
+	MBClass			MB_CLASS_BOUNTY_HUNTER
+
+	model			"jedi_tm"
+	skin			"citizen"
+	uishader		"models/players/jedi_tm/mb2_icon_citizen"
+
+	isCustomBuild		1
+	mbPoints			44
+	
+	c_att_skill_0	MB_ATT_PISTOL
+	c_att_names_0	"Bek Light Pistol"
+	c_att_ranks_0	2,2,4
+	c_att_descs_0	"Pistol, 30%+ RoF, 25%- Damage"
+
+	c_att_skill_1	MB_ATT_DC_CARBINE
+	c_att_names_1	"Stolen Sith Carbine"
+	c_att_ranks_1	4,2,2
+	c_att_descs_1	"DC Carbine, 5%+ Damage, 10%+ RoF, Mag Reload"
+
+	c_att_skill_2	MB_ATT_CLOAK
+	c_att_names_2	"Stealth Field"
+	c_att_ranks_2	2,4
+	c_att_descs_2	"Cloak ^3[CS3]"
+
+	c_att_skill_3	MB_ATT_SPY_DISGUISE
+	c_att_names_3	"Stolen Outfit"
+	c_att_ranks_3	2,2,2
+	c_att_descs_3	"^3[Style Swap In Melee]"
+
+	c_att_skill_4	MB_ATT_DEXTERITY
+	c_att_names_4	"Dexterity"
+	c_att_ranks_4	2,4
+
+	c_att_skill_5	MB_ATT_WOOKIE_STRENGTH
+	c_att_names_5	"Infiltrator Takedown"
+	c_att_ranks_5	4
+	c_att_descs_5	"Strength"
+
+	c_att_skill_6	MB_ATT_GRAPPLE_HOOK
+	c_att_names_6	"Tech Grapple Hook"
+	c_att_ranks_6	4
+	c_att_descs_6 	"Applies Pulse/Slippery/Cripples/Pull ^3[Melee CS4]"
+
+	c_att_skill_7	MB_ATT_TRIP_MINES
+	c_att_names_7	"Hand-Made Motion Sensor"
+	c_att_ranks_7	4,4
+	c_att_descs_7	"0 Damage, Tracks"
+
+	c_att_skill_8	MB_ATT_MICRO_GRENADES
+	c_att_names_8	"Death-Mark Canister"
+	c_att_ranks_8	4,4
+	c_att_descs_8 	"0 Damage, Shit-Fucks You Up"
+
+	c_att_skill_9	MB_ATT_RESPAWNS
+	c_att_names_9	"Reinforcements"
+	c_att_ranks_9	16
+	c_att_descs_9	"2 default"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace	WP_BLASTER_PISTOL
+	WeaponBasedOff	WP_BLASTER_PISTOL	
+	NewWorldModel		"models/weapons2/kotor_hobpistol/kotor_hobpistol_w.glm"
+	NewViewModel		"models/weapons2/kotor_hobpistol/kotor_hobpistol.md3"
+	Icon				"gfx/hud/w_icon_kotor_hobpistol"
+	WeaponName			"Bek Light Blaster Pistol"
+	flashsound0		"sound/weapons/kotor/fire_light.wav"
+	Altflashsound0	"sound/weapons/kotor/fire_power1.wav"
+	ChargeSound			"sound/weapons/LPA_NN-14/charge.wav"
+	MuzzleEffect		"Blaster/MuzzleFlash01G"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01G"
+	MissileEffect	"Blaster/Shot03G"
+	Missile3Effect	"Blaster/Shot03G"
+	AltMissileEffect	"Blaster/Shot04G"
+	PowerupShotEffect	"Blaster/Shot04G"
+	ChargeEffect		"gfx/effects/GreenFrontFlash"
+	OverchargeEffect	"Blaster/MuzzleCharge01G"
+	CustomAmmo			200
+	clipSize			24
+	FPMult				.65
+	damagemod			.65
+	ratemod				.70
+	velocitymod			1.05
+	hasAnimOverrides 1
+	animReadyRun BOTH_JANGO_PISTOL_IDLE
+	animReady BOTH_JANGO_PISTOL_IDLE
+	animReadyWalk TORSO_WEAPONIDLE2
+	animReadyNoAmmo BOTH_ATTACK2 
+	animAttackRun BOTH_ATTACK2 
+	animAttack BOTH_ATTACK2 
+	animAttackWalk BOTH_ATTACK2 
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_TRIP_MINE
+	WeaponBasedOff		WP_TRIP_MINE
+	NewWorldModel		"models/weapons2/thermal/thermal_w.glm"
+	NewViewModel		"models/weapons2/thermal/thermal.md3"
+	NewHandsModel		"models/weapons2/thermal/thermal_hand.md3"
+	Icon			"gfx/hud/w_thermal_grenade"
+	MissileModel 		"models/weapons2/thermal/thermal_proj.md3"
+	WeaponName		"Handmade Motion Sensor"
+	damagemod 0
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_DC_CARBINE
+	WeaponBasedOff		WP_DC_CARBINE
+	NewWorldModel		"models/weapons2/kotor_carbine/model.glm"
+	NewViewModel		"models/weapons2/kotor_carbine/model.MD3"
+	Icon				"gfx/hud/w_icon_kotorcarbine"
+	WeaponName			"Sith Carbine"
+	FlashSound0			"sound/weapons/kotor_carbine/fire.wav"
+	FlashSound1			"sound/weapons/kotor_carbine/fire.wav"
+	FlashSound2			"sound/weapons/kotor_carbine/fire.wav"
+	FlashSound3			"sound/weapons/kotor_carbine/fire.wav"
+	AltFlashSound0		"sound/weapons/kotor_carbine/fire.wav"
+	AltFlashSound1		"sound/weapons/kotor_carbine/fire.wav"
+	AltFlashSound2		"sound/weapons/kotor_carbine/fire.wav"
+	AltFlashSound3		"sound/weapons/kotor_carbine/fire.wav"
+	MuzzleEffect 		"Blaster/MuzzleFlash01R"
+	MissileEffect 		"Blaster/Shot02R"
+	clipSize			46
+	ReloadTimeModifier 0.9
+	FPMult 			1.05
+	damageMod 1.05
+	rateMod .9
+}
+
+WeaponInfo3
+{
+	WeaponToReplace WP_CONC_NADE
+	WeaponBasedOff  WP_CONC_NADE
+	NewWorldModel  "models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel  "models/map_objects/mp/bacta.md3"
+	NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
+	Icon    "gfx/hud/w_icon_stungrenade"
+	MissileModel "models/map_objects/mp/bacta.md3"
+	AltMissileModel "models/map_objects/mp/bacta.md3"
+	MissileEffect "sonic_pistol/projectile"
+	MissileMissEffect			"slime_explosion_new"
+	MissileHitHumanEffect	"slime_explosion_new"
+	MissileHitDroidEffect	"slime_explosion_new"
+	AltMissileMissEffect		"slime_explosion_new"
+	AltMissileHitHumanEffect	"slime_explosion_new"
+	AltMissileHitDroidEffect	"slime_explosion_new"
+	FlashSound0		"sound/weapons/smokenade/select.mp3"
+	AltFlashSound0 	"sound/weapons/smokenade/select.mp3"
+	WeaponName 				"Death-Mark Canister"
+	hasAnimOverrides 1
+	animAttackRun BOTH_THERMAL_THROW2
+	animAttack BOTH_THERMAL_THROW2
+	animAttackWalk BOTH_THERMAL_THROW2
+	animReadyRun BOTH_THERMAL_READY2
+	animReady BOTH_THERMAL_READY2
+	animReadyWalk BOTH_THERMAL_READY2
+	damageMod 0
+	ratemod 0.6
+	splashRadius 280
+}
+
+WeaponInfo4
+{
+	WeaponToReplace	WP_SABER
+	WeaponBasedOff	WP_SABER
+	NewWorldModel		"models/weapons2/vibroknife/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_prisonknife"
+	WeaponName		"Hidden Bek Vibroknife"
+}
+
+description	"Hidden Bek Scout
+
+Agile swoop racers and scouts for the Hidden Beks. They rely on speed and surprise to navigate the Lower City of Taris, using their mobility to outmaneuver stronger opponents.
+
+^2Weaponry:
+- Melee
+-- 15% Faster Movement Speed
+- Vibroknife 
+-- 15% Faster Movement Speed
+-- No Saber/Blaster Defense
+-- No Deflect
+-- Cripples on Hit, Low Damage
+
+^8Attributes:
+- Reinforcement (2)
+- Dodge (2)
+- Stamina (2)
+- Grapple Hop (1)
+- Aerial Resource Regen
+- Tracking Beacon
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Dodge (2) ^3[CS2]"
