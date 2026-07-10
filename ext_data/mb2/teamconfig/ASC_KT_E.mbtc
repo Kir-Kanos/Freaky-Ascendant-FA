@@ -34,10 +34,9 @@ SubclassesForClass1
 	Subclass16 "v1_TORagent"
 	Subclass17 "kte2_Dezanti"
 	Subclass18 "kte3_RedEclipse"
-	Subclass19 "v3_Trando"
-	Subclass20 "kte2_MandoLegend"
-	Subclass21 "kte3_NeoWarrior"
-	Subclass22 "kte3_NeoMaster"
+	Subclass19 "kte2_MandoLegend"
+	Subclass20 "kte3_NeoWarrior"
+	Subclass21 "kte3_NeoMaster"
 }
 
 SubclassesForClass2
