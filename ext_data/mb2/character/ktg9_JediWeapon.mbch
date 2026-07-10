@@ -2,36 +2,34 @@ ClassInfo
 {
 	name			"ktg9_JediWeapon"
 	weapons			WP_MELEE|WP_SABER
-	attributes		MB_ATT_FORCEFOCUS,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_DEFLECT,1|MB_ATT_ASSEMBLE,1|MB_ATT_HEALING,1|MB_ATT_ENV_PROT,1|MB_ATT_BLAST_ARMOUR
+	attributes		MB_ATT_FORCEFOCUS,2
 
 	extralives	1
 
 	MBClass			MB_CLASS_JEDI
 	
-	forcepowers		FP_SABER_OFFENSE,3|FP_LEVITATION,1
+	forcepowers		FP_LEVITATION,1
 
 	classflags CFL_NOPICKUPS|CFL_BLOODYMELEE
 	special2 EAS_NONE
 
-maxhealth	130
-starthealth	120
+	maxhealth	100
 
 	Knockbacktaken	.95
 	rankKbTaken	.80
 	
-	forcepool		100
-	rankForcepool 110
+	forcepool		110
+	rankForcepool 130
 
 	speed 1.05
 
 	forceregen	1.1
 
-	ASmultiplier	1.05
-	CSmultiplier	1.05
-	APmultiplier	1.05
-	BPmultiplier	.95
+	ASmultiplier	1.02
+	BPmultiplier	1.05
+	APMultiplier	0.9
 
-	rankDmgGiven 1.25 
+	rankDmgGiven 1.15 
 
 	rateOfFire_Melee 1
 
@@ -56,11 +54,11 @@ starthealth	120
 	saber2		saber_kshrt
 	sabercolor		3
 	saber2color		4
-	saberstyle		SS_DUAL|SS_DESANN|SS_TAVION
+	saberstyle		SS_DUAL|SS_DESANN
 	
 	saber1_1		saber_kshrt
 	sabercolor_1		3
-	saberstyle_1		SS_STRONG|SS_MEDIUM|SS_FAST
+	saberstyle_1		SS_MEDIUM|SS_STRONG
 	
 	classNumberLimit	2
 
@@ -73,20 +71,21 @@ starthealth	120
 	c_att_ranks_0	2
 
 	c_att_skill_1	MB_ATT_DMG_GIVEN_MULTIPLIER
-	c_att_names_1	"Damage Given (125%)"
+	c_att_names_1	"Damage Given (115%)"
 	c_att_ranks_1	4
 
 	c_att_skill_2	MB_ATT_KB_TAKEN_MULTIPLIER
 	c_att_names_2	"Kb Taken (80%)"
 	c_att_ranks_2	4
 	
-	c_att_skill_3	MB_ATT_FP_LEVITATION
-	c_att_names_3	"Force Jump"
-	c_att_ranks_3	0,2,4
+	c_att_skill_3	MB_ATT_BESKAR
+	c_att_names_3	"Beskar Lined Robes"
+	c_att_ranks_3	6,6,6
+	c_att_descs_3 	"Beskar"
 
-	c_att_skill_4	MB_ATT_FP_PUSH
-	c_att_names_4	"Force Push"
-	c_att_ranks_4	2,2
+	c_att_skill_4	MB_ATT_FP_LEVITATION
+	c_att_names_4	"Force Jump"
+	c_att_ranks_4	0,2,4
 
 	c_att_skill_5	MB_ATT_FP_PULL
 	c_att_names_5	"Force Pull"
@@ -94,39 +93,39 @@ starthealth	120
 	
 	c_att_skill_6	MB_ATT_FP_SEE
 	c_att_names_6	"Force Sense"
-	c_att_ranks_6	4
+	c_att_ranks_6	4,2
 	
 	c_att_skill_7	MB_ATT_FP_SPEED
 	c_att_names_7	"Force Speed"
-	c_att_ranks_7	2,4
+	c_att_ranks_7	2,2
 
 	c_att_skill_8	MB_ATT_FP_PROTECT
 	c_att_names_8	"Force Protect"
-	c_att_ranks_8	2,2,2
+	c_att_ranks_8	4,4
 	
 	c_att_skill_9	MB_ATT_POWER
-	c_att_names_9	"FP (110)"
+	c_att_names_9	"FP (130)"
 	c_att_ranks_9	6
 
 	c_att_skill_10	MB_ATT_FORCEBLOCK
 	c_att_names_10	"Force Block"
-	c_att_ranks_10	0,4,2
+	c_att_ranks_10	6,8
 	
 	c_att_skill_11	MB_ATT_FP_SABER_DEFENSE
 	c_att_names_11	"Saber Defense"
-	c_att_ranks_11	0,4,2
+	c_att_ranks_11	6,8,10
 	
 	c_att_skill_12	MB_ATT_GUN_DEFENSE
 	c_att_names_12	"Blaster Defense"
-	c_att_ranks_12	0,4,2	
+	c_att_ranks_12	4,4,6	
 	
 	c_att_skill_13	MB_ATT_DEFLECT
 	c_att_names_13	"Blaster Deflect"
-	c_att_ranks_13	0,2,4
+	c_att_ranks_13	2,2,2
 
 	c_att_skill_14	MB_ATT_FP_SABERTHROW
 	c_att_names_14	"Saber Throw ^3[CS1]"
-	c_att_ranks_14	0,2,2
+	c_att_ranks_14	2,2,2
 }
 
 description	"Jedi Weapon Master
@@ -136,15 +135,11 @@ description	"Jedi Weapon Master
 ^2Weaponry: 
 - Melee
 - Short Lightsaber
--- Dual Sabers (Blue & Green)
--- Single Saber (Blue)
+-- Dual Sabers (Duals/Purple)
+-- Single Saber (Yellow/Red)
 -- Saber Throw ^3[CS1]
 
 ^8Attributes:
 - Reinforcement (1)
 - Force Focus (2)
-- Assemble (1)
-- Jedi Conditioning (Environmental Protection 1)
-- Inner Fortitude (Blast Armor)
-- Light Resilience (Healing 1)
 - 5% Less Knockback Taken"
