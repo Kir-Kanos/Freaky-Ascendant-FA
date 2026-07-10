@@ -8,7 +8,7 @@ ClassInfo
 	
 	weapons 	WP_MELEE|WP_SABER|WP_MINIGUN
 	
-	attributes MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_WOOKIE_STRENGTH,3|MB_ATT_AMMO,3|MB_ATT_HEALING,1|MB_ATT_BLAST_ARMOUR|MB_ATT_BESKAR,3|MB_ATT_CORTOSIS|MB_ATT_ANTI_MT,1|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_BEACON|MB_ATT_ENV_PROT,2|MB_ATT_WRISTLASER|MB_ATT_MINIGUN,1|MB_ATT_STIMPACK|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_BARGE|MB_ATT_RALLY
+	attributes MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_WOOKIE_STRENGTH,3|MB_ATT_AMMO,3|MB_ATT_HEALING,1|MB_ATT_BLAST_ARMOUR|MB_ATT_BESKAR,3|MB_ATT_CORTOSIS,1|MB_ATT_ANTI_MT,1|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_BEACON|MB_ATT_ENV_PROT,2|MB_ATT_WRISTLASER|MB_ATT_MINIGUN,1|MB_ATT_STIMPACK|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_BARGE|MB_ATT_RALLY
 
 WP_MinigunFlags	HELD_ALTRELOAD|HELD_SLOW
 WP_SaberFlags	HELD_PULSE|HELD_STUN|HELD_KNOCKBACK	
@@ -26,8 +26,8 @@ saberstyle_1 	SS_STAFF
 
 saberDamageStyle SS_STRONG,250|SS_STAFF,150
 
-	APmultiplier   1.5
-	BPmultiplier 	.50
+	APmultiplier   1.35
+	BPmultiplier 	.10
 	CSMultiplier	.95
 	ASMultiplier	.95
 	
@@ -94,7 +94,7 @@ WeaponInfo1
 	FPMult				1.1
 	rateMod 1.65
 	velocitymod	1.20
-	damagemod 1.45
+	damagemod 1.15
 	clipsize 40
 	customAmmo 200
 }
@@ -108,13 +108,14 @@ Leader of the Mandalorian Neocrusaders, A tank of a man who wields heavy armor a
 -- 10% faster RoF
 - Mandalore Melee Weapon (Red Saber)
 -- Saber Defense (1)
+-- Very Low BP
 -- No Blaster Block
 -- Pulses/Knockback/Knockdown
 - Warrior's Repeater (Minigun 1)
 -- Small Mag Size (Mag Reload)
 -- 65% Slower RoF
 -- 20% Faster Velocity
--- 45% More Damage
+-- 15% More Damage
 
 ^3Powers:
 - For Mandalore! (Team Energize 2)
@@ -131,7 +132,7 @@ Leader of the Mandalorian Neocrusaders, A tank of a man who wields heavy armor a
 - Tracking Beacon
 - Dexterity (1)
 - Anti MT (1)
-- Cortosis Armor
+- Cortosis Armor (1)
 - Healing (1)
 
 ^3Abilities:
