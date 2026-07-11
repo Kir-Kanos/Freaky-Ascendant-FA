@@ -22,11 +22,10 @@ SubclassesForClass1
 	Subclass4	"h1_Talz"
 	Subclass5	"ktg1_SentinelDR"
 	Subclass6	"ktg2_OldRepOff"
-	Subclass7	"ktg1_Padawan"
+	Subclass7	"ktg1_OndRoyal"
 	Subclass8	"ktg1_TSF"
 	Subclass9	"ktg2_OldRepHVY"
 	Subclass10	"ktg2_Ithorian"
-	Subclass11	"ktg1_OndRoyal"
 }
 
 SubclassesForClass2
@@ -68,6 +67,7 @@ SubclassesForClass5
 	Subclass7	"ktg9_Kavar"
 	Subclass8	"ktg9_JediWatch"
 	Subclass9	"ktg9_JediWeapon"
+	Subclass10	"ktg9_Padawan"
 }
 
 SubclassesForClass6
