@@ -80,7 +80,7 @@ WeaponInfo1
 	Icon				"gfx/hud/w_icon_w90conc"
 	WeaponName			"W-90 Concussion Rifle"
 	customAmmo   200
-	clipsize     22
+	clipsize     16
 	rateMod 0.8
 	damagemod 0.9
 	FPmult   1.75
@@ -175,8 +175,7 @@ Stocky force attuned bounty hunters. Their strong exo-Skeleton and biology assis
 - Melee
 - Gand Shockprod Staff (Staff/Purple Saber)
 -- Saber Defense (1)
--- No Blaster Block
--- No Saber Training
+-- No Blaster Block/Saber Training
 -- Shocks/tracks on hit
 - Ammonia Bombs (2/5) (Flechette 4)
 -- Poisons/tracks/slows on det
@@ -184,9 +183,8 @@ Stocky force attuned bounty hunters. Their strong exo-Skeleton and biology assis
 -- Secondary fire only
 - W-90 Concussion Rifle (T-21 1)
 -- Pushes/Pulses on hit
--- 20% faster RoF/10%- Damage
+-- 20% faster RoF/10%- Damage, Mag Reload
 -- 75% more FP damage
--- Mag Reload
 - Automatic Slugthrower Repeater (1)
 -- 100%+ Velocity/50%- Damage/25%- FP Drain/5%- Slower RoF
 - Sonic Screamer Grenade (1)

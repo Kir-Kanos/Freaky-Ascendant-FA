@@ -55,17 +55,13 @@ ClassInfo
 	skin			"captain"
 	uishader		"models/players/sithtrooper/mb2_icon_captain"
 
-	model_1			"sithtrooper"
-	skin_1			"elite"
-	uishader_1		"models/players/sithtrooper/mb2_icon_elite"
+	model_1			"sith_officer"
+	skin_1			"default"
+	uishader_1		"models/players/sith_officer/mb2_icon_default"
 
-	model_2			"sith_officer"
-	skin_2			"default"
-	uishader_2		"models/players/sith_officer/mb2_icon_default"
-
-	model_3			"sith_officer_fem"
-	skin_3			"hat"
-	uishader_3		"models/players/sith_officer_fem/mb2_icon_hat"
+	model_2			"sith_officer_fem"
+	skin_2			"hat"
+	uishader_2		"models/players/sith_officer_fem/mb2_icon_hat"
 
 	isCustomBuild		1
 	mbPoints			35

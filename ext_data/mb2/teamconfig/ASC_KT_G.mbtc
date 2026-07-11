@@ -45,10 +45,10 @@ SubclassesForClass3
 	Subclass5	"ktg6_OldRepSniper"
 	Subclass6 	"ktg3_Baodur"
 	Subclass7	"ktg2_NicoOkarr"
-	Subclass9	"ktg7_GadonThek"
-	Subclass10	"ktg6_BekScout"
-	Subclass11	"ktg7_Talia"
-	Subclass12	"h7_Scavenge"
+	Subclass8	"ktg7_GadonThek"
+	Subclass9	"ktg6_BekScout"
+	Subclass10	"ktg7_Talia"
+	Subclass11	"h7_Scavenge"
 }
 
 SubclassesForClass4
