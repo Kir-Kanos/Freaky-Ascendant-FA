@@ -42,17 +42,23 @@ description	"Master Zhar
 An instructor who focuses on a high volume of strikes and rallying fellow jedi.
 
 ^2Weaponry: 
-- Lightsaber (Medium/Desann)
+- Lightsaber (Medium/Purple)
 -- Low Damage, 6 Swing Combo
 -- Saber Defense (1)
+-- Saber Offense (3)
 -- Blaster Deflect (1)
 -- Blaster Defense (2)
 
 ^8Attributes:
 - Force Focus (1)
 - Force Block (1)
+- Rally
+
+^8Powers
+- Push (2)
+- Pull (2)
+- Jump (3)"
 
 ^3Abilities:
-- Force Push (2)
-- Force Pull (2)
-- Force Jump (2)"
+- Jedi Consular Student (Support Jedi On Round Start)
+- Call Jedi Knight (Summon Aggressive Jedi) ^3[CS4]"
