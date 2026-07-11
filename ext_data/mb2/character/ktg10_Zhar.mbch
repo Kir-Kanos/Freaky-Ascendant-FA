@@ -9,9 +9,11 @@ ClassInfo
 	
 	saberMaxChain 	6
 	saberDamageStyle SS_MEDIUM,100|SS_DESANN,100
+
+	maxhealth	125
 	
-	ASmultiplier 	0.8
-	CSmultiplier 	0.9
+	ASmultiplier 	1
+	CSmultiplier 	1
 	APmultiplier 	0.7
 	BPmultiplier 	0.7
 
@@ -22,7 +24,7 @@ ClassInfo
 	
 	speed 			1.0
 	
-	forcepowers		FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_PUSH,2|FP_PULL,2
+	forcepowers		FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_PUSH,2|FP_PULL,2|FP_STASIS,1
 	
 	classflags 		CFL_NOPICKUPS
 	
@@ -57,6 +59,7 @@ An instructor who focuses on a high volume of strikes and rallying fellow jedi.
 ^8Powers
 - Push (2)
 - Pull (2)
+- Stasis (1)
 - Jump (3)"
 
 ^3Abilities:
