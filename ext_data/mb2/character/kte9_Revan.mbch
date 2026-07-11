@@ -19,8 +19,7 @@ ClassInfo
 	resource RESOURCE_FORCE
 	forceregen  1.15
 	saberThrowDamage 45
-	saberstyle		SS_MEDIUM|SS_STRONG|SS_DESANN
- saberDamageStyle SS_STRONG,300|SS_DESANN,300|SS_MEDIUM,240
+ saberDamageStyle SS_STRONG,300|SS_DESANN,300|SS_MEDIUM,240|SS_DUAL,220
 	APmultiplier		1.1
 	BPmultiplier		1.1
 	ASmultiplier 		1.05
@@ -48,6 +47,13 @@ ClassInfo
 
 	saber1		saber_revan
 	sabercolor		0
+	saberstyle		SS_MEDIUM|SS_DESANN|SS_STRONG
+
+	saber1_1		saber_revan
+	sabercolor_1		0
+	saber2_1		saber_revan
+	saber2color_1		5
+	saberstyle_1		SS_DUAL|SS_DESANN|SS_STRONG
 
 	}
 
