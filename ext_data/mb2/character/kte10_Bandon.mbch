@@ -16,7 +16,7 @@ spawnerNPC	"DarkJediDual"
 RoundNPC	"DarkJediMage"	
 
 	maxhealth		100
- maxarmor  25
+ maxarmor  20
 
 	resource RESOURCE_FORCE
 	forcepool			100
@@ -25,7 +25,7 @@ RoundNPC	"DarkJediMage"
 	speed				0.97
  rateOfFire_Melee .95
 	APmultiplier	0.95
-	BPmultiplier	1.15
+	BPmultiplier	1.05
 	ASmultiplier	0.95
 	CSmultiplier	1
 
@@ -83,4 +83,6 @@ A middling Sith who is hard carried by his specialized Force Drain and Sith Hit-
 
 ^8Attributes:
 - Healing (1)
-- Force Block/Focus (2)"
+- Force Block/Focus (2)
+- Personal Sith Sorcerer (Support Sith Spawns On Round Start)
+- Call Sith Marauder (Aggressive Sith Spawner) ^3[CS4]"
