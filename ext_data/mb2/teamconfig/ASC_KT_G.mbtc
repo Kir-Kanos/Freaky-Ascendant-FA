@@ -26,6 +26,7 @@ SubclassesForClass1
 	Subclass8	"ktg1_TSF"
 	Subclass9	"ktg2_OldRepHVY"
 	Subclass10	"ktg2_Ithorian"
+	Subclass11	"ktg1_Freedom"
 }
 
 SubclassesForClass2
