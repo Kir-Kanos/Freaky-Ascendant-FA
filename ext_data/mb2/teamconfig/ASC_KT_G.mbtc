@@ -28,6 +28,7 @@ SubclassesForClass1
 	Subclass10	"ktg2_Ithorian"
 	Subclass11	"ktg2_Ice"
 	Subclass12	"ktg2_Peragus"
+  Subclass13	"ktg2_Deadeye"
 }
 
 SubclassesForClass2
