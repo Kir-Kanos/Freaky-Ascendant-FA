@@ -79,6 +79,7 @@ SubclassesForClass5
 	Subclass10	"ktg9_Padawan"
 	Subclass11	"ktg9_JediRevan"
 	Subclass12	"ktg9_ORSword"
+  Subclass13	"ktg9_Exile"
 }
 
 SubclassesForClass6
