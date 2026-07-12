@@ -39,17 +39,18 @@ SubclassesForClass2
 
 SubclassesForClass3
 {
-	Subclass1	"h6_Mission"
-	Subclass2	"h7_T3M4"
-	Subclass3	"ktg7_Dodonna"
-	Subclass4	"ktg7_Trask"
-	Subclass5	"ktg6_OldRepSniper"
-	Subclass6 	"ktg3_Baodur"
-	Subclass7	"ktg2_NicoOkarr"
-	Subclass8	"ktg7_GadonThek"
-	Subclass9	"ktg6_BekScout"
-	Subclass10	"ktg7_Talia"
-	Subclass11	"h7_Scavenge"
+	Subclass1	"ktg7_Mira"
+	Subclass2	"h6_Mission"
+	Subclass3	"h7_T3M4"
+	Subclass4	"ktg7_Dodonna"
+	Subclass5	"ktg7_Trask"
+	Subclass6	"ktg6_OldRepSniper"
+	Subclass7 	"ktg3_Baodur"
+	Subclass8	"ktg2_NicoOkarr"
+	Subclass9	"ktg7_GadonThek"
+	Subclass10	"ktg6_BekScout"
+	Subclass11	"ktg7_Talia"
+	Subclass12	"h7_Scavenge"
 }
 
 SubclassesForClass4
