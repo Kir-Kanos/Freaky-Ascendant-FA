@@ -14,7 +14,9 @@ ClassInfo
 	CSmultiplier 	0.9
 	APmultiplier 	0.7
 	BPmultiplier 	0.7
-
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
 	roundnpc	"JediMage"
 	spawnernpc	"JediDual"
 
@@ -61,4 +63,5 @@ An instructor who focuses on a high volume of strikes and rallying fellow jedi.
 
 ^3Abilities:
 - Jedi Consular Student (Support Jedi On Round Start)
-- Call Jedi Knight (Summon Aggressive Jedi) ^3[CS4]"
+- Call Jedi Knight (Summon Aggressive Jedi) ^3[CS4]
+- Heal capped at 35hp"

@@ -173,9 +173,8 @@ A frontline tactician leading the defense of Onderon. She uses a high-utility ki
 - Royal Defender (Pistol 3)
 -- Cripples On Hit
 -- 10% Less Damage/FP Drain, 20% Faster RoF
-- Onderonian Vibrosword
+- Onderonian Vibrosword (Blue Style)
 -- Low Damage, Disarms, Cripples
--- Blue Style
 -- Saber Defense (1)
 -- No Blaster Defense/Deflect
 - Pulse Grenades (2)
@@ -183,9 +182,8 @@ A frontline tactician leading the defense of Onderon. She uses a high-utility ki
 -- Frag Grenade, Huge Radius
 -- 0 Damage, Tracks
 - Royal Armament (E-11 1)
--- 50% Less Damage, 40% More FP Drain, 100% Lower RoF, Mag Reload
+-- 50% Less Damage, 40% More FP Drain, 100% Lower RoF, Mag Reload, Cant Be Disarmed
 -- Inflicts Flashbang Effect, Slippery, Force Focus, Poison, Cripple And Tracking
--- Cant Be Disarmed
 
 ^8Attributes:
 - Rally

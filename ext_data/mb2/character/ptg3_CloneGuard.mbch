@@ -4,7 +4,7 @@ ClassInfo
 {
 	name			"ptg3_CloneGuard"
 	weapons		WP_MELEE|WP_SABER
-	attributes	MB_ATT_AMMO,3|MB_ATT_BACTA,1|MB_ATT_STAMINA,1|MB_ATT_ASSEMBLE,2|MB_ATT_DEXTERITY,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_DEFLECT,0|MB_ATT_THROWER_FLAME
+	attributes	MB_ATT_AMMO,3|MB_ATT_STAMINA,1|MB_ATT_ASSEMBLE,2|MB_ATT_DEXTERITY,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_DEFLECT,0|MB_ATT_THROWER_FLAME
 	
 	MBClass		MB_CLASS_CLONETROOPER
 	WP_SaberFlags HELD_PULSE
@@ -18,6 +18,10 @@ ClassInfo
 	extralives	2
 	maxhealth	80
 	maxArmor	40
+
+	APmultiplier		.5
+	BPmultiplier		.5
+
 
 	saberstyle 	SS_TAVION
 	saber1	riot_baton_p_legends
@@ -84,6 +88,10 @@ ClassInfo
 	c_att_names_7	"Respawns"
 	c_att_ranks_7	4
 	c_att_descs_7	"One by default"
+
+	c_att_skill_8	MB_ATT_BESKAR
+	c_att_names_8 	"Beskar Plating"
+	c_att_ranks_8 	1,2,2
 }
 
 WeaponInfo0
@@ -130,6 +138,9 @@ Clone troopers with weaponry designed to stun, detain and disarm criminals.
 ^2Weaponry:
 - Melee
 - DC-15s Clone Pistol (1)
+- Riot Shield and Stun Baton
+-- Cyan Style
+-- Saber/Blaster Defense (1)
 
 ^6Inventory:
 - Medpac ^3[CS3]

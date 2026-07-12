@@ -4,7 +4,7 @@ ClassInfo
 {
 	name		"ktg9_Kavar"
 	weapons		WP_MELEE|WP_SABER
-	attributes	MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_DEFLECT,3|MB_ATT_FORCEBLOCK,3|MB_ATT_KICKFLIP,2|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_RALLY|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_HEALING,1|MB_ATT_DEXTERITY,1
+	attributes	MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_DEFLECT,3|MB_ATT_FORCEBLOCK,3|MB_ATT_KICKFLIP,2|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_RALLY|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_DEXTERITY,1
 
 	maxhealth	140
 	maxarmor	10
@@ -14,7 +14,9 @@ ClassInfo
 	speed 1.09
 	
 	forcepowers	FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_SPEED,2|FP_PUSH,2|FP_PULL,2|FP_SABERTHROW,3|FP_TEAM_FORCE,1|FP_SEE,1
-
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
 	classflags CFL_NOPICKUPS
 	
 	WP_SaberFlags	HELD_DISARM
@@ -77,6 +79,7 @@ A Master Duelist with leadership skills specializing in high-speed combat and di
 - 25% Less Knockback Taken
 - Saber Defense (3)
 - Blaster Defense/Deflect (3)
+- Heal capped at 35hp
 
 ^8Abilities:
 - Dex Roll ^3[CS2]"

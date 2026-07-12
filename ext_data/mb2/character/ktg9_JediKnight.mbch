@@ -26,8 +26,8 @@ ClassInfo
 
 	ASmultiplier	.98
 	CSmultiplier	.98
-	APmultiplier	.98
-	BPmultiplier	.98
+	APmultiplier	.85
+	BPmultiplier	.90
 	
 	uioverlay_l "gfx/icons/frontline"
 	uioverlay_r "gfx/icons/infantry"
