@@ -12,7 +12,7 @@ Classinfo
 
 	APmultiplier		1.15
 	BPmultiplier		.8
-	CSmultiplier 		.80
+	CSmultiplier 		1.05
 	ASmultiplier 		1.05
 	saberMaxChain 5
 	skilltimermod 2.5
