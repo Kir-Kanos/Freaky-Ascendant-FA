@@ -26,7 +26,11 @@ SubclassesForClass1
 	Subclass8	"ktg1_TSF"
 	Subclass9	"ktg2_OldRepHVY"
 	Subclass10	"ktg2_Ithorian"
-	Subclass11	"ktg2_TwoFinger"
+	Subclass11	"ktg2_Ice"
+	Subclass12	"ktg2_Peragus"
+  Subclass13	"ktg2_Deadeye"
+  Subclass14	"ktg2_Twitch"
+  Subclass15	"ktg2_TwoFinger"
 }
 
 SubclassesForClass2
@@ -55,13 +59,14 @@ SubclassesForClass3
 SubclassesForClass4
 {
 	Subclass1	"ktg8_Shadowlander"
+	Subclass2	"ktg8_Marl"
 }
 
 SubclassesForClass5
 {
 	Subclass1	"h9_JBrute"
 	Subclass2	"ktg9_Vandar"
-	Subclass3	"h9_JSword"
+	Subclass3	"ktg9_ORSword"
 	Subclass4	"ktg9_Handmaiden"
 	Subclass5	"ktg9_Juhani"
 	Subclass6	"ktg9_Vrook"
@@ -69,11 +74,13 @@ SubclassesForClass5
 	Subclass8	"ktg9_JediWatch"
 	Subclass9	"ktg9_JediWeapon"
 	Subclass10	"ktg9_Padawan"
+	Subclass11	"ktg9_JediRevan"
+	Subclass12	"ktg9_ORSword"
 }
 
 SubclassesForClass6
 {
-	Subclass1	"h10_JSavant"
+	Subclass1	"ktg10_Bastila"
 	Subclass2	"ktg10_Jolee"
 	Subclass3	"ktg10_Visas"
 	Subclass4	"ktg10_Mical"

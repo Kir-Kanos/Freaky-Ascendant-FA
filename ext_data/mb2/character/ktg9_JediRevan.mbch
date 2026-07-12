@@ -2,33 +2,34 @@
 
 ClassInfo
 {
-	name				"kte9_Revan"
+	name				"ktg9_JediRevan"
 	MBClass				MB_CLASS_SITH
 	classNumberLimit	1
 	weapons				WP_SABER|WP_MELEE
 
-	attributes			MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_DEFLECT,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_WOOKIEE_FURY,1|MB_ATT_RALLY|MB_ATT_TRACKING_BEACON
+	attributes			MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,3|MB_ATT_DEFLECT,3|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_RALLY|MB_ATT_TRACKING_BEACON
 
-	forcepowers			FP_SABER_OFFENSE,3|FP_LEVITATION,2|FP_SEE,3|FP_PUSH,2|FP_PULL,2|FP_GRIP,2|FP_SABERTHROW,2|FP_DARKRAGE,1|FP_DRAIN,2|FP_LIGHTNING,2|FP_TEAM_FORCE,1
+	forcepowers			FP_SABER_OFFENSE,3|FP_LEVITATION,2|FP_SEE,3|FP_PUSH,3|FP_PULL,2|FP_SABERTHROW,2|FP_DARKRAGE,1|FP_LIGHTNING,1|FP_TEAM_FORCE,1|FP_PROTECT,2|FP_TELEPATHY,2|FP_SPEED,1
 
 	speed       1.01
 	damageGiven 1.05
  rateOfFire_Melee .9
-	maxhealth			125
-	forcepool  130
+	maxhealth			130
+	forcepool  125
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
 	resource RESOURCE_FORCE
-	forceregen  1.15
+	forceregen  1.13
 	saberThrowDamage 45
- saberDamageStyle SS_STRONG,300|SS_DESANN,300|SS_MEDIUM,240|SS_DUAL,220
+ saberDamageStyle SS_FAST,140|SS_TAVION,160|SS_MEDIUM,240|SS_DUAL,180
 	APmultiplier		1.1
 	BPmultiplier		1.1
 	ASmultiplier 		1.05
 	CSmultiplier 		1.05
  saberSpecialDamage 1.35
 	classflags CFL_NOPICKUPS
-	healthRegenAmount 1
-	healthRegenRate 1500
-	healthRegenCap	35
+
 	special2 EAS_NONE
 	special3 EAS_FP_GRIP	
 	special4 EAS_FP_DARKRAGE
@@ -42,33 +43,40 @@ ClassInfo
 
 	uioverlay "gfx/icons/frontline"
 	modelscale 1.01
-	model		"revan"
+
+	model		"jedi_revan"
 	skin		"default"
-	uishader		"models/players/revan/mb2_icon_default"
+	uishader		"models/players/jedi_revan/mb2_icon_default"
+
+	model_1		"jedi_revan"
+	skin_1		"nomask"
+	uishader_1		"models/players/jedi_revan/mb2_icon_nomask"
 
 
 	saber1		saber_revan
-	sabercolor		0
-	saberstyle		SS_MEDIUM|SS_DESANN|SS_STRONG
+	sabercolor		5
+	saberstyle		SS_MEDIUM|SS_FAST|SS_TAVION
 
 	saber1_1		saber_revan
-	sabercolor_1		0
+	sabercolor_1		5
 	saber2_1		saber_revan
-	saber2color_1		5
-	saberstyle_1		SS_DUAL|SS_DESANN|SS_STRONG
+	saber2color_1		4
+	saberstyle_1		SS_DUAL|SS_TAVION|SS_FAST
 
 	}
 
-description	"Darth Revan
+description	"Jedi Knight Revan
 
 A master of tactics and the force - possessing equally strong Lightsaber and Force abilities.
 
 ^2Weaponry:
 - Melee
 -- 10% faster RoF
-- Lightsaber (Yellow/Red/Purple)
+- Lightsaber (Dual/Blue/Cyan)
+- Dual Lightsabers (Dual/Blue/Cyan)
 -- Saber Defense (2)
--- Blaster Defense/Deflect (2)
+-- Blaster Defense (2)
+-- Blaster Deflect (3)
 -- 42/25% less Red/Purple Dmg
 -- 135% Spec Dmg mult
 -- EX Saber Throw (2) ^3[CS1]
@@ -76,13 +84,14 @@ A master of tactics and the force - possessing equally strong Lightsaber and For
 
 ^5Force Powers:
 - Jump (2)
-- Push (2)
+- Push (3)
 - Pull (2) 
 - Sense (3) 
 - Dark Rage (1) ^3[CS4]
-- Grip (2) ^3[CS3] 
-- Drain (2)
-- Lightning (2)
+- Lightning (1)
+- Telepathy (2)
+- Protect (2)
+- Speed (1)
 - Team Energize (1)
 
 ^8Attributes:
@@ -90,5 +99,4 @@ A master of tactics and the force - possessing equally strong Lightsaber and For
 - Tracking Beacon
 - Rally
 - 20% Faster Hack Rate
-- Force Block/Focus (2)
-- Fury (1)"
+- Force Block/Focus (2)"
