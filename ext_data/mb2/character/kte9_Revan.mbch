@@ -7,7 +7,7 @@ ClassInfo
 	classNumberLimit	1
 	weapons				WP_SABER|WP_MELEE
 
-	attributes			MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_DEFLECT,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_HEALING,1|MB_ATT_WOOKIEE_FURY,1|MB_ATT_RALLY|MB_ATT_TRACKING_BEACON
+	attributes			MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_DEFLECT,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_WOOKIEE_FURY,1|MB_ATT_RALLY|MB_ATT_TRACKING_BEACON
 
 	forcepowers			FP_SABER_OFFENSE,3|FP_LEVITATION,2|FP_SEE,3|FP_PUSH,2|FP_PULL,2|FP_GRIP,2|FP_SABERTHROW,2|FP_DARKRAGE,1|FP_DRAIN,2|FP_LIGHTNING,2|FP_TEAM_FORCE,1
 
@@ -27,7 +27,9 @@ ClassInfo
 	CSmultiplier 		1.05
  saberSpecialDamage 1.35
 	classflags CFL_NOPICKUPS
-
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
 	special2 EAS_NONE
 	special3 EAS_FP_GRIP	
 	special4 EAS_FP_DARKRAGE
@@ -78,7 +80,7 @@ A master of tactics and the force - possessing equally strong Lightsaber and For
 - Team Energize (1)
 
 ^8Attributes:
-- Healing (1)
+- Heal capped at 35hp
 - Tracking Beacon
 - Rally
 - 20% Faster Hack Rate
