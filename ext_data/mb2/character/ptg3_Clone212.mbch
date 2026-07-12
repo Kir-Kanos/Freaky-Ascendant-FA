@@ -4,7 +4,7 @@ ClassInfo
 {
 	name			"ptg3_Clone212"
 	weapons		WP_MELEE|WP_SHOTGUN|WP_STUN_BATON|WP_TRIP_MINE|WP_CLONE_PISTOL
-	attributes	MB_ATT_AMMO,3|MB_ATT_BACTA,1|MB_ATT_STAMINA,1|MB_ATT_ASSEMBLE,2|MB_ATT_DEXTERITY,1|MB_ATT_SHOTGUN,1|MB_ATT_STUN_BATON,1|MB_ATT_TRIP_MINES,3|MB_ATT_CLONE_PISTOL,1|MB_ATT_EWEB,1
+	attributes	MB_ATT_AMMO,3|MB_ATT_STAMINA,1|MB_ATT_ASSEMBLE,2|MB_ATT_DEXTERITY,1|MB_ATT_SHOTGUN,1|MB_ATT_STUN_BATON,1|MB_ATT_TRIP_MINES,3|MB_ATT_CLONE_PISTOL,1|MB_ATT_EWEB,1
 	MBClass		MB_CLASS_CLONETROOPER
 	
 	resource RESOURCE_STAMINA
@@ -83,7 +83,7 @@ damageMod .35
 
 description	"Clone Trooper
 
-A 212th clone trooper characterized by more defensive weaponry choices compared to his peers.
+A 212th clone trooper characterized by more defensive weaponry choices.
 
 ^2Weaponry:
 - Melee
