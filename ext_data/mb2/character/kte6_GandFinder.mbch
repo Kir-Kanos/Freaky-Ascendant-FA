@@ -177,7 +177,7 @@ Stocky force attuned bounty hunters. Their strong exo-Skeleton and biology assis
 -- Saber Defense (1)
 -- No Blaster Block/Saber Training
 -- Shocks/tracks on hit
-- Ammonia Bombs (2/5) (Flechette 4)
+- Ammonia Bombs (2) (Flechette 4)
 -- Poisons/tracks/slows on det
 -- 75% more damage
 -- Secondary fire only
@@ -187,8 +187,11 @@ Stocky force attuned bounty hunters. Their strong exo-Skeleton and biology assis
 -- 10% less dmg
 -- 75% more FP damage
 -- Mag reload
-- Automatic Slugthrower Repeater (1)
--- 100%+ Velocity/50%- Damage/25%- FP Drain/5%- Slower RoF
+- Automatic Slugthrower (Repeater 1)
+-- 100% more velocity
+-- 50% less dmg
+-- 25% less fp dmg
+-- 5% slower RoF
 - Sonic Screamer Grenade (1)
 -- Disarms on det
 
@@ -210,5 +213,5 @@ Stocky force attuned bounty hunters. Their strong exo-Skeleton and biology assis
 - Sprint ^3[CS1]
 - Dodge (2) ^3[CS2]
 - Ammonia Darts (8) ^3[CS3]
--- Poison Darts, Cripple On Hit
+-- Poisons/slows on hit
 - Gand Binoculars ^3[CS4]"
