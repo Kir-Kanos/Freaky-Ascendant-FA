@@ -1,3 +1,4 @@
+//Stromboli
 ClassInfo
 {
 	name		"ktg8_Marl"
@@ -70,15 +71,14 @@ A veteran Melee Duelist From Taris. Uses his experience and toughness to close t
 
 ^2Weaponry:
 - Melee
-- Dueling Vibro-Staff
+- Dueling Vibro-Staff (Staff)
 -- Saber Defense (3)
--- BP Free Jumps
--- 5 Combo Limit
+-- Chain Limit: 4
 -- No Blaster Defense/Deflect
--- Cripples On Hit
--- Low Damage
+-- Slows on hit
 
 ^8Attributes:
+- BP Free Jumps
 - Stamina (3)
 - Dexterity (1)
 - Knockdown Roll
@@ -91,7 +91,7 @@ A veteran Melee Duelist From Taris. Uses his experience and toughness to close t
 - 25% Less Knockback Taken
 
 ^3Abilities:
-- Dash (1) ^3[CS2]
 - Dodge (1) ^3[CS1]
+- Dash (1) ^3[CS2]
 - Duelist's Rush (Rage 3) ^[CS3]
 - Stimpack ^3[CS4]"
