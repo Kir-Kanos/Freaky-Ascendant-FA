@@ -1,4 +1,4 @@
-//Legends Mode character file - Created by Frenzy & Leos
+//Stromboli
 
 ClassInfo
 {
@@ -86,19 +86,20 @@ WeaponInfo0
 
 description	"Gerlon Two-Fingers
 
-A disabled Duelist, due to an unstable blaster pistol lost his fingers, forever effecting his aim. He still Overcharges his Ion pistol though...
+A scarred duelist who lost his fingers due to an unstable blaster pistol, forever effecting his aim, but not his ability to continue overcharging said pistol.
 
 ^2Weaponry:
 - Two Fingered Melee
 -- 50% Less Damage
 -- Re-Open Wound (Bloody Melee)
-- Overcharged Ion Pistol
--- DC Carbine (1)
--- 50%+ Damage, 150%+ FP Drain, 100%- RoF
--- Pulses/Ignites/Stuns/Cripples
+- Overcharged Ion Pistol (DC Carbine 1)
+-- 50% More Damage
+-- 150% More FP Damage 
+-- 100% More RoF
+-- Pulses/Ignites/Stuns/Slows
 -- Mag Reload
 - Stun Baton (2)
-- CyroBan Grenades (3)
+- CryoBan Grenades (3)
 
 ^8Attributes:
 - Tracking Beacon
@@ -107,10 +108,10 @@ A disabled Duelist, due to an unstable blaster pistol lost his fingers, forever 
 - Bunny Hop (1)
 - Blast Armor
 - Healing (3)
-- Two-Fingered Fury (1)
+- Two-Fingered Wrath (Fury 1)
 
 ^3Abilities:
-- Shoulder Barge ^3[CS4 Melee]
-- Overcharge (Force Rage 1) ^3[CS3]
+- Dodge (2) ^3[CS1]
 - Two-Fingered Roll ^3[CS2]
-- Dodge (2) ^3[CS1]"
+- Overcharge (Force Rage 1) ^3[CS3]
+- Shoulder Barge ^3[CS4 Melee]"
