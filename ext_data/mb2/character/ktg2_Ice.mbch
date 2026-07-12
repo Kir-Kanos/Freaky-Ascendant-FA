@@ -1,0 +1,153 @@
+//Stromboli
+ClassInfo
+{
+	name		"ktg2_Ice"
+	MBClass	MB_CLASS_HERO 
+	classNumberLimit	1
+	
+	weapons	WP_MELEE|WP_CLONE_PISTOL|WP_THERMAL|WP_SABER
+
+	attributes	MB_ATT_AMMO,3|MB_ATT_TRACKING_BEACON|MB_ATT_CLONE_PISTOL,2|MB_ATT_DASH,1|MB_ATT_BACTA_BIG|MB_ATT_DODGE,1|MB_ATT_DEXTERITY,1|MB_ATT_ANTI_MT,1|MB_ATT_FP_MIRALUKA,1|MB_ATT_HEALING,1|MB_ATT_BINOCULARS|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_BASE_TD,3
+
+	forcepowers	FP_SEE,1
+
+	WP_ClonePistolFlags	HELD_ALTRELOAD|HELD_KNOCKBACK|HELD_STUN
+	
+	maxhealth 120
+
+	maxarmor		60
+
+	baseSpeed 200
+	
+	saber1			kotor_vibrosword
+	saberstyle		SS_FAST	
+
+	saberdamage 60
+
+	ASMultiplier 			.95
+	BPmultiplier			.90
+	APmultiplier			.8
+	
+
+	skilltimermod	.20
+
+	Resource	RESOURCE_ENERGY
+	forcepool	120
+	forceregen	1.6
+	
+	special1	EAS_HI_DODGE
+	special2	EAS_HI_DASH
+	special3	EAS_HI_BINOCULARS
+	special4	EAS_HI_MEDPAC_BIG
+
+	uioverlay "gfx/icons/spec infantry"
+	modelscale   0.99
+
+model	"jedi_hf"
+skin		"legends1"
+uishader	"models/players/jedi_hf/mb2_icon_legends1"
+userRGB 0
+customred 204
+customgreen 119
+customblue 34
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace 	WP_CLONE_PISTOL
+	WeaponBasedOff  	WP_CLONE_PISTOL
+	NewWorldModel			"models/weapons2/kotor_hpistol/kotor_hpistol_w.glm"
+	NewViewModel			"models/weapons2/kotor_hpistol/kotor_hpistol.md3"
+	Icon            		"gfx/hud/w_icon_kotor_hpistol_dual"	
+	FlashSound0				"sound/weapons/kotor/fire_power1.mp3" 			
+	AltFlashSound0			"sound/weapons/kotor/fire_power1.mp3"
+	WeaponName			"Maximum Charge Pistol"
+	clipSize       		4
+	FPMult     			1.8
+	damagemod			1.8
+	rateMod 	1.8
+	velocityMod 2
+	ReloadTimeModifier 	1.6
+	CustomAmmo			800
+	ChargeSound "sound/weapons/leia_pistol/altcharge.mp3"
+	Missile3Effect		"blaster/Shot07R"
+	AltMissileEffect		"blaster/Shot07R"
+	PowerupShotEffect		"blaster/Shot04R"
+	MissileEffect			"blaster/Shot03R"
+	ChargeEffect		"gfx/effects/bryarfrontflash"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	AltMuzzleEffect	"Blaster/MuzzleFlash01R"
+ MissileMissEffect "Blaster/Impact_Wall01R.efx"
+ MissileHitHumanEffect "Blaster/Impact_Wall01R.efx"
+ MissileHitDroidEffect "Blaster/Impact_Wall01R.efx"
+ altMissileMissEffect "Blaster/Impact_Wall01R.efx"
+ altMissileHitHumanEffect "Blaster/Impact_Wall01R.efx"
+ altMissileHitDroidEffect "Blaster/Impact_Wall01R.efx"
+	hasAnimOverrides 1
+	animReadyRun BOTH_MAND_PISTOL_READY
+	animReady BOTH_MAND_PISTOL_READY
+	animReadyWalk BOTH_MAND_PISTOL_READY
+	animReadyNoAmmo BOTH_MAND_PISTOL_ATTACK
+	animAttackRun BOTH_MAND_PISTOL_ATTACK
+	animAttack BOTH_MAND_PISTOL_ATTACK
+	animAttackWalk BOTH_MAND_PISTOL_ATTACK
+	animStand BOTH_MAND_PISTOL_READY
+	animCharge BOTH_MAND_PISTOL_ATTACK
+}
+
+WeaponInfo1
+{
+	WeaponToReplace	WP_SABER			
+	WeaponBasedOff	WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_oldrepswords"
+	WeaponName		"Vibrosaber"
+	SelectSound "sound/weapons/blade/slash2.mp3"
+}
+
+ForceInfo0
+{
+	ForceToReplace FP_SEE
+	Icon	"gfx/forcepowers/radar"
+	ForcePowerName "Awareness"
+	StartSound 	"sound/ambience/kotor/consolebeep03.mp3"
+	LoopSound "sound/ambience/cp_02_lp.wav"
+}
+
+
+description	"Ice
+
+A precise Duelist focused on positioning and accuracy. 
+
+^2Weaponry:
+- Melee
+- Dueling Vibro-Saber (Blue)
+-- Saber Defense (1)
+-- No Blaster Defense/Deflect
+- Maximum Charge Pistol (Clone Pistol 2)
+-- 2 Shots
+-- 100% more velocity
+-- 80% less RoF
+-- 80% more dmg
+-- 80% more FP dmg
+-- 60% slower reload
+-- Mag Reload
+-- Knocks back on hit
+- Thermal Grenades (3)
+
+^8Attributes:
+- Tracking Beacon
+- 80% Faster Cooldowns
+- Awareness (Sense 1)
+- On Her Toes (Miraluka Vision)
+- Dexterity (1)
+- Anti MT (1)
+- Healing (1)
+
+^3Abilities:
+- Dodge (1) ^3[CS1]
+- Dash (1) ^3[CS2]
+- Binoculars ^3[CS3]
+- Advanced Medpack ^3[CS4]"
