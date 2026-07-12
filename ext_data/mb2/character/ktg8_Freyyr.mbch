@@ -1,4 +1,4 @@
-//Legends Mode character file - Created by Frenzy & Leos
+//Stromboli
 
 ClassInfo
 {
@@ -69,7 +69,7 @@ A large wookie leader returned from the depths of the shadowlands.
 ^2Weaponry:
 - Melee
 -- 5% faster RoF
-- Freyyr's Warblade (Purple/Red Saber)
+- Freyyr's Warblade (Purple/Red)
 -- Saber Defense (1)
 -- No Blaster Block
 -- 70% more Kb
@@ -86,8 +86,8 @@ A large wookie leader returned from the depths of the shadowlands.
 - Rally
 
 ^3Abilities:
-- Command (Resource/Block Dispenser 3) ^3[USE In Melee)
+- Command (Resource/Block Dispenser 3) ^3[Use Key In Melee]
 - Rage ^3[CS1 Melee]
 - Shoulder Barge ^3[CS2 Melee]
-- Grapple Hook (1) ^3[CS4]
-- Tracking Darts (8) ^3[CS3]"
+- Tracking Darts (8) ^3[CS3]
+- Grapple Hook (1) ^3[CS4]"
