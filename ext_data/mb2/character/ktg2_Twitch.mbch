@@ -1,3 +1,4 @@
+//Stromboli
 ClassInfo
 {
 	name		"ktg2_Twitch"
@@ -140,15 +141,16 @@ An unstable and unpredictable duelist from Taris, extremely agile and disruptive
 - Frenzied Melee
 -- 50% Faster Swings
 -- 60% Lower Damage
-- Dual Rodian Blasters
--- Mando Pistols, 25% Faster Rof, 25% Lower Damage/FP Drain, 15% Slower Velocity
+- Dual Rodian Blasters (Westar 3)
+-- 25% Faster Rof, 
+-- 25% Less damage/FP damage
+-- 15% Slower Velocity
 -- Low Clip Size
 - Pocket Dueling Grenades (10)
--- Cant Be Thrown Unless Using Quickthrow
+-- Quickthrow Only
 -- Small Radius, 70% Less Damage
--- Cripples On Hit
-- Dull Vibrosaber
--- Low Damage (75)
+-- Slows on det
+- Dull Vibrosaber (Purple)
 -- Saber Defense 0
 -- No Blaster Defense/Deflect
 
