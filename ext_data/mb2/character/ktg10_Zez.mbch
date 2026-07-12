@@ -4,7 +4,7 @@ ClassInfo
 {
 	name		"ktg10_Zez"
 	weapons		WP_MELEE|WP_SABER
-	attributes	MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_DEFLECT,2|MB_ATT_FORCEBLOCK,2|MB_ATT_CLOAK,2|MB_ATT_DEXTERITY,3|MB_ATT_LIGHTS_BEACON|MB_ATT_ENV_PROT,1|MB_ATT_HEALING,1
+	attributes	MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_DEFLECT,2|MB_ATT_FORCEBLOCK,2|MB_ATT_CLOAK,2|MB_ATT_DEXTERITY,3|MB_ATT_LIGHTS_BEACON|MB_ATT_ENV_PROT,1
 	maxhealth	125
 
 	MBClass		MB_CLASS_JEDI
@@ -12,7 +12,9 @@ ClassInfo
 	speed 1.05
 
 	hackrate	.80
-	
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
 	forcepowers	FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_SEE,2|FP_TELEPATHY,3|FP_DRAIN,1|FP_SABERTHROW,3|FP_PULL,3|FP_PROTECT,2|FP_BLIND,1
 
 	classflags CFL_NOPICKUPS
@@ -76,4 +78,5 @@ A Stealth-Oriented Sentinel with a fast saber style and high utility.
 - 20% Faster Hack Speed
 - Light's Beacon (Share Mindtrick/Protect)
 - Saber Defense (2)
-- Blaster Defense/Deflect (2)"
+- Blaster Defense/Deflect (2)
+- Heal capped at 35hp"
