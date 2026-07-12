@@ -4,7 +4,7 @@ ClassInfo
     MBClass             MB_CLASS_JEDI
     weapons             WP_SABER|WP_MELEE
     
-    attributes          MB_ATT_FORCEBLOCK,1|MB_ATT_DEFLECT,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_SABER_DEFENSE,1|MB_ATT_HEALING,1|MB_ATT_BLAST_ARMOUR|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_FP_REPULSE,1
+    attributes          MB_ATT_FORCEBLOCK,1|MB_ATT_DEFLECT,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_SABER_DEFENSE,1|MB_ATT_BLAST_ARMOUR|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_FP_REPULSE,1
     
     forcepowers         FP_LEVITATION,2|FP_PUSH,3|FP_ABSORB,2|FP_GRIP,2|FP_STASIS,3|FP_LIGHTNING,2|FP_DRAIN,2|FP_DARKRAGE,3|FP_SABERTHROW,3|FP_SABER_DEFENSE,1|FP_SABER_OFFENSE,3
     
@@ -14,7 +14,9 @@ ClassInfo
 
 	forcepool 140
 	forceregen 1.3
-
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
 	rateOfFire_Melee .85
 	
 	special1	EAS_FP_SABERTHROW
@@ -57,12 +59,8 @@ A former Jedi Archivist fallen to the dark side, Focuses on strong blaster defen
 - Atris's Lightsaber
 -- Red/Cyan/Purple Style
 -- Max Saber Chain (2)
--- Saber Defense (1)
--- Blaster Defense/Deflect (3)
--- Force Saber Throw (3) ^3[CS1]
--- BP Free Jumps
 
-^8Attributes:
+^5Force Powers:
 - Force Jump (2)
 - Force Push (3)
 - Force Absorb (2)
@@ -71,7 +69,14 @@ A former Jedi Archivist fallen to the dark side, Focuses on strong blaster defen
 - Force Lightning (2) ^3[CS3]
 - Force Drain (2) ^3[CS4]
 - Force Dark Rage (3) ^3[CS2]
-- Force Block (1)
 - Force Repulse (1)
-- Echani Conditioning (Blast Armor)"
+-- Force Saber Throw (3) ^3[CS1]
+
+^8Attributes:
+- Saber Defense (1)
+- Blaster Defense/Deflect (3)
+- Force Block (1)
+- Echani Conditioning (Blast Armor)
+- Heal capped at 35hp
+- BP Free Jumps"
 

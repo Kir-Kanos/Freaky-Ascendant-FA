@@ -7,7 +7,7 @@ ClassInfo
 	
 	weapons			WP_MELEE|WP_SABER
 	
-	attributes		MB_ATT_ASSEMBLE,3|MB_ATT_STAMINA,3|MB_ATT_DODGE,3||MB_ATT_DEXTERITY,1|MB_ATT_CCTRAINING,3|MB_ATT_HEALING,2|MB_ATT_TRACKING_BEACON
+	attributes		MB_ATT_ASSEMBLE,3|MB_ATT_STAMINA,3|MB_ATT_DODGE,3||MB_ATT_DEXTERITY,1|MB_ATT_HEALING,2|MB_ATT_TRACKING_BEACON
 
 	speed	0.95
 
@@ -88,6 +88,15 @@ ClassInfo
 	
 	saber1		"pipe"
 	saberstyle	SS_STRONG|SS_TAVION
+
+	ASmultiplier 1.05
+
+	CSmultiplier 1.05
+
+	APmultiplier .50
+
+	BPmultiplier 0
+ 
 }
 
 WeaponInfo0
@@ -115,7 +124,7 @@ WeaponInfo1
 
 description "Criminal Looter
 
-5-life low lives who fight with whatever they can find. Damage and speed buff when holding a stolen weapon.
+5-life low lives who fight with whatever they get their hands on. Damage and speed buff when holding a stolen weapon.
 
 ^2Weaponry:
 - Grappling Strikes (Melee)
@@ -129,7 +138,6 @@ description "Criminal Looter
 - Reinforcements (4)
 - Stamina (3)
 - Dexterity (1)
-- Close Combat (3)
 - Tracking Beacon
 - Healing (2)
 - Assemble (3)
