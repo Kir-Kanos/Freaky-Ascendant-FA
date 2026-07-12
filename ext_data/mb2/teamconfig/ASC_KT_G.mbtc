@@ -17,16 +17,17 @@ Classes
 SubclassesForClass1
 {
 	Subclass1	"ktg1_OldRepTR"
-	Subclass2	"h1_TORtroop"
-	Subclass3	"ktg2_Carth"
-	Subclass4	"h1_Talz"
-	Subclass5	"ktg1_SentinelDR"
-	Subclass6	"ktg2_OldRepOff"
-	Subclass7	"ktg1_OndRoyal"
-	Subclass8	"ktg1_TSF"
-	Subclass9	"ktg2_OldRepHVY"
-	Subclass10	"ktg2_Ithorian"
-	Subclass11	"ktg2_Peragus"
+	Subclass2	"ktg1_Freedom"
+	Subclass3	"h1_TORtroop"
+	Subclass4	"ktg2_Carth"
+	Subclass5	"h1_Talz"
+	Subclass6	"ktg1_SentinelDR"
+	Subclass7	"ktg2_OldRepOff"
+	Subclass8	"ktg1_OndRoyal"
+	Subclass9	"ktg1_TSF"
+	Subclass10	"ktg2_OldRepHVY"
+	Subclass11	"ktg2_Ithorian"
+	Subclass12	"ktg2_Peragus"
 }
 
 SubclassesForClass2
