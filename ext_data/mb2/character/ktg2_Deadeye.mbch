@@ -1,0 +1,176 @@
+//Stromboli
+Classinfo	
+{
+ name			"ktg2_Deadeye"		
+ MBClass			MB_CLASS_JEDI
+ classNumberLimit	1
+
+	weapons			WP_MELEE|WP_T21|WP_THERMAL|WP_PULSE_NADE|WP_FRAG_NADE
+	
+	attributes	MB_ATT_HEALING,2|MB_ATT_DEXTERITY,1|MB_ATT_STAMINA,3|MB_ATT_ROSHTAUNT|MB_ATT_DODGE,3|MB_ATT_T21,1|MB_ATT_BLAST_ARMOUR|MB_ATT_GETUPS,3|MB_ATT_PULSE_GRENADES,3|MB_ATT_FRAGS,3|MB_ATT_BASE_TD,20|MB_ATT_FLOAT_HOP|MB_ATT_GRAPPLE_HOP|MB_ATT_GRAPPLE_HOOK,3|MB_ATT_STIMPACK|MB_ATT_QUICKTHROW,1
+	
+	WP_MeleeFlags	HELD_LOWDAMAGE
+	WP_T21Flags HELD_ALTRELOAD
+	WP_FragNadeFlags	HELD_FLASH|HELD_SLIPPERY
+		WP_PulseNadeFlags	HELD_HIGHDAMAGE
+	
+	basespeed 	220
+
+ 	maxhealth	200
+	maxarmor		65
+
+	forcepool	150
+	forceregen 1.6
+	resource RESOURCE_STAMINA
+
+	classflags CFL_BLOODYMELEE|CFL_NOPICKUPS
+	
+	rateOfFire_Melee	0.75
+
+	knockbackTaken 1.5
+	knockbackGiven 1.5
+
+	skilltimermod .1
+
+	special1	EAS_HI_DODGE
+	special2	EAS_HI_QUICKTHROW
+	special3	EAS_HI_STIMPACK
+	special4	EAS_HI_GRAPPLEHOOK
+	
+	uioverlay_r "gfx/icons/spec_infantry"
+	uioverlay_l "gfx/icons/brawler"
+
+	modelScale  1	
+	
+model		"prisoner"
+skin		"elder2"
+uishader	"models/players/prisoner/mb2_icon_elder2" 
+
+}
+
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_T21
+	WeaponBasedOff		WP_T21
+	NewWorldModel		"models/weapons2/kotor_bpistol1/kotor_bpistol1_w.glm"  
+ 	NewViewModel		"models/weapons2/kotor_bpistol1/kotor_bpistol1.md3"
+	Icon				"gfx/hud/w_icon_kotor_bpistol1"
+	flashsound0		"sound/weapons/kotor/fire_light.wav"
+	WeaponName		"The Deadeye Decimator"	
+	FlashSound1 		"sound/weapons/kotor/fire_light.wav"
+	FlashSound2 		"sound/weapons/kotor/fire_light.wav"
+	FlashSound3 		"sound/weapons/kotor/fire_light.wav"
+	AltFlashSound0	   "sound/weapons/kotor/fire_light.wav"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"blaster/Shot01R"
+	altMuzzleEffect		"Blaster/MuzzleFlash01R"
+	altMissileEffect		"blaster/Shot01R"
+	customAmmo 		1092
+	clipsize 		100
+	reloadTimeModifier 1
+	ratemod	.4
+	damagemod	.25
+	hasAnimOverrides 1
+	animReadyRun BOTH_JANGO_PISTOL_IDLE
+	animReady BOTH_JANGO_PISTOL_IDLE
+	animReadyWalk TORSO_WEAPONIDLE2
+	animReadyNoAmmo BOTH_ATTACK2 
+	animAttackRun BOTH_ATTACK2 
+	animAttack BOTH_ATTACK2 
+	animAttackWalk BOTH_ATTACK2 
+
+}
+
+WeaponInfo1
+{
+	WeaponToReplace			WP_THERMAL
+	WeaponBasedOff			WP_THERMAL
+	NewWorldModel				"models/weapons2/thermal/thermal_w.glm"
+	NewViewModel				"models/weapons2/thermal/thermal_hand.md3"
+	Icon						"gfx/hud/w_thermal_grenade"
+	WeaponName  				"Thermal Grenades"
+	ratemod	.1	
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_FRAG_NADE
+	WeaponBasedOff		WP_FRAG_NADE
+	NewWorldModel		"models/weapons2/kotor_gfrag/thermal_w.glm"  	
+	NewViewModel		"models/weapons2/kotor_gfrag/thermal.md3" 
+	MissileModel "models/weapons2/kotor_gfrag/thermal_proj_1.md3" 
+	AltMissileModel "models/weapons2/kotor_gfrag/thermal_proj_2.md3" 
+	Icon				"gfx/hud/w_icon_kotor_fraggrenade" 					
+	WeaponName			"Confusion Grenade"    
+	splashradius	400
+	altfireenabled 0
+}
+
+WeaponInfo3
+{
+	WeaponToReplace			WP_PULSE_NADE
+	WeaponBasedOff			WP_PULSE_NADE
+	NewWorldModel  "models/weapons/Grenade_Concussion/model.glm"
+ 	NewViewModel  "models/map_objects/mp/bacta.md3"
+	MissileModel "models/map_objects/mp/bacta.md3"
+	altMissileModel "models/map_objects/mp/bacta.md3"
+ 	Icon    "gfx/hud/w_icon_stungrenade"
+	MissileEffect 			"stone/missile1"
+	AltMissileEffect 			"stone/missile1"
+	MissileMissEffect			"smokenadeleg/explode_vol"
+	MissileHitHumanEffect	"smokenadeleg/explode_vol"
+	MissileHitDroidEffect	"smokenadeleg/explode_vol"
+	AltMissileMissEffect		"smokenadeleg/explode_vol"
+	AltMissileHitHumanEffect	"smokenadeleg/explode_vol"
+	AltMissileHitDroidEffect	"smokenadeleg/explode_vol"
+	FlashSound0		"sound/weapons/smokenade/select.mp3"
+	AltFlashSound0 	"sound/weapons/smokenade/select.mp3"
+	WeaponName  				"Pulse Screen Canister"
+	hasAnimOverrides 1
+	animAttackRun BOTH_THERMAL_THROW2
+	animAttack BOTH_THERMAL_THROW2
+	animAttackWalk BOTH_THERMAL_THROW2
+	animReadyRun BOTH_THERMAL_READY2
+	animReady BOTH_THERMAL_READY2
+	animReadyWalk BOTH_THERMAL_READY2
+	damageMod 0.001
+	ratemod 0.6
+}
+
+
+description "Deadeye Duncan
+
+The 5th best ranked duelist on Taris, out of 5...
+
+^2Weaponry:
+- Melee
+-- 50% Less Damage
+- The Deadeye Decimator (T-21 1)
+-- 80% Faster RoF
+-- 75% less Dmg
+- Thermal Grenades (20)
+-- 90% Faster RoF
+- Confusion Grenades (3)
+-- Frag Grenade
+-- 0 Damage, Flashes/Slippery In Large Radius
+- Pulse Screen Canister
+-- Pulse Grenade
+-- 100% Higher Damage, Spreads Smoke Screen
+
+^8Attributes:
+- 90% Faster Cooldowns
+- 50% more Kb Taken/Given
+- Grapple Hop
+- Stamina (3)
+- Dexterity (1)
+- Blast Armor
+- Healing (2)
+- Getup (3)
+
+^3Abilities:
+- Rambling Man (Toxic Taunt)
+- Pure Luck (Dodge 3) ^3[CS1]
+- Quickthrow (1) ^3[CS2]
+- Stimpack ^3[CS3]
+- Grapple Hook (3) ^3[CS4]"

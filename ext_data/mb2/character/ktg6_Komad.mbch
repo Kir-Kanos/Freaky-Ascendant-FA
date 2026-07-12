@@ -1,0 +1,185 @@
+//Stromboli
+ClassInfo
+{
+	name  "ktg6_Komad"
+	weapons WP_PROJ|WP_TRIP_MINE|WP_SONIC_NADE
+	attributes  MB_ATT_PROJECTILE_RIFLE,1|MB_ATT_AMMO,5|MB_ATT_HEALING,3|MB_ATT_DODGE,2|MB_ATT_TRACKING_BEACON|MB_ATT_BINOCULARS,1|MB_ATT_CLOAK,1|MB_ATT_WRISTLASER|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,1|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_DEXTERITY,1|MB_ATT_SONIC_DETONATOR,1|MB_ATT_TRIP_MINES,3
+
+	maxhealth 			170
+	maxarmor  			90
+	MBclass		MB_CLASS_HERO
+	forcepool 			100
+	rankForcepool		110
+	resource			RESOURCE_ENERGY
+	forceregen			1
+	rankForceregen	1.1
+	classNumberLimit 		1
+
+	WP_TripMineFlags	HELD_PULL|HELD_KNOCKDOWN|HELD_PULSE|HELD_CRIPPLE
+	WP_ProjFlags		HELD_KNOCKDOWN
+	AB_WLaserFlags		HELD_LOWDAMAGE|HELD_TRACKING
+	
+	baseSpeed 240
+
+	model "rebel_guerilla"
+	skin  "twilek"
+	uishader  "models/players/rebel_guerilla/mb2_icon_twilek"
+
+userRGB 0
+
+customred 154
+
+customgreen 205
+
+customblue 50
+
+
+	//respawncustomtime  50000
+
+	special1 EAS_HI_DODGE
+	special2 EAS_HI_WRIST
+	special3 EAS_HI_CLOAK
+	special4 EAS_HI_BINOCULARS
+
+	flourishAnim BOTH_PISTOL_MELEE
+
+	uioverlay "gfx/icons/scout"
+
+	isCustomBuild	1
+	mbPoints		5
+
+	c_att_skill_0	MB_ATT_BRYAR_OLD
+	c_att_names_0	"Outdated Pistol"
+	c_att_ranks_0	1,0,2
+	c_att_descs_0	"50% more charged FP damage, 7% faster RoF"
+
+	c_att_skill_1	MB_ATT_EE4
+	c_att_names_1	"Hunting Blaster Rifle"
+	c_att_ranks_1	1,2,2
+	c_att_descs_1	"EE-4, 15%+ Damage, 10%- RoF'
+
+	c_att_skill_2	MB_ATT_POWER
+	c_att_names_2	"Energy Pool (110)"
+	c_att_ranks_2	1
+
+	c_att_skill_3	MB_ATT_REGEN
+	c_att_names_3	"Energy Regen (110%)"
+	c_att_ranks_3	1
+}
+
+WeaponInfo0
+{
+	WeaponToReplace	WP_PROJ
+	WeaponBasedOff	WP_PROJ
+	NewWorldModel 		"models/weapons2/czerka_adventurer_rifle/model_w.glm"
+	NewViewModel		"models/weapons2/czerka_adventurer_rifle/model.md3"
+	Icon 				"gfx/hud/w_icon_czerka_adventurer"
+	WeaponName 			"Czerka High-Caliber Rifle"
+	FlashSound0  		"sound/weapons/czerka_adventurer_rifle/fire.mp3"	
+	primGore		1
+	altGore		1
+	customAmmo	50
+	damagemod	.80
+	clipSize     2
+	ReloadTimeModifier 0.7
+	ratemod 0.93
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_BRYAR_OLD
+	WeaponBasedOff		WP_BRYAR_OLD
+		NewWorldModel		 "models/weapons/KYD-21_Pistol/model.glm"
+	NewViewModel			 "models/weapons/KYD-21_Pistol/model.md3"
+	FlashSound0			"sound/weapons/KYD-21/fire.wav"
+	altFlashSound0		"sound/weapons/KYD-21/fire.wav"
+	Icon  				"gfx/hud/w_icon_kyd-21"
+	WeaponName			"Outdated Pistol"
+	
+	flashsound0			"sound/weapons/kotor/fire_light.wav"
+	Altflashsound0		"sound/weapons/kotor/fire_power1.wav"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	
+	MuzzleEffect		"Blaster/MuzzleFlash01Y"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01Y"
+	MissileEffect		"Blaster/Shot02Y"
+	Missile3Effect		"Blaster/Shot03Y"
+	AltMissileEffect	"Blaster/Shot02Y"
+	PowerupShotEffect	"Blaster/Shot04Y"
+	ChargeEffect	"gfx/effects/yellow_bryarFrontFlash"
+	
+	customAmmo 500
+	clipSize 21
+	FPChargeMult	1.5
+	ratemod 0.93
+	
+	hasAnimOverrides 1
+	animReadyRun BOTH_PISTOL_IDLE
+	animReady BOTH_PISTOL_IDLE
+	animReadyWalk BOTH_PISTOL_IDLE2
+	animAttackRun BOTH_PISTOL_ATTACK
+	animAttack BOTH_PISTOL_ATTACK
+	animAttackWalk BOTH_PISTOL_ATTACK
+	animCharge BOTH_PISTOL_ATTACK
+}
+
+WeaponInfo2
+{
+	WeaponToReplace	WP_EE4 			
+	WeaponBasedOff	WP_BLASTER    			
+	NewWorldModel		"models/weapons2/kotor_brifle1/kotor_brifle1_w.glm"
+	NewViewModel		"models/weapons2/kotor_brifle1/kotor_brifle1.md3"
+	Icon				"gfx/hud/w_icon_kotor_brifle1"
+	WeaponName		"Hunting Blaster Rifle"
+	FlashSound0		"sound/weapons/kotor/fire_med.wav"
+AltFlashSound0	"sound/weapons/kotor/fire_med.wav"
+damagemod	1.15
+ratemod		1.10
+
+}
+
+WeaponInfo3
+{
+
+WeaponToReplace			WP_TRIP_MINE
+WeaponBasedOff			WP_TRIP_MINE
+NewWorldModel	"models/weapons2/thermal/thermal_w.glm"
+NewViewModel "models/weapons2/thermal/thermal.md3"
+NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
+	Icon						"gfx/hud/w_thermal_grenade"
+	MissileModel 				"models/weapons2/thermal/thermal_proj.md3""
+	WeaponName			"Snare Trip Mines"
+}
+
+description	"Komad Fortuna
+
+A traditional hunter with a strategic mind.
+
+^2Weaponry:
+- Melee
+- Snare Trip Mines (3)
+-- Pulls/Slows/Pulses On Det
+- Sonic Grenade (1)
+- Czerka High-Caliber Rifle
+-- 2 shots per reload
+-- 7% faster RoF
+-- 20% Lower Damage
+-- 30% faster reload
+-- Knocksdown On Hit
+
+^6Inventory:
+- Electrobinoculars ^3[CS4]
+
+^8Attributes:
+- Healing (3)
+- Tracking Beacon
+- Dexterity (1)
+- Knockdown Roll
+- Blast Armor 
+- Anti MT (1)
+
+^3Abilities:
+- Dodge (2) ^3[CS1]
+- Wrist Laser ^3[CS2]
+-- Tracks On Hit, 50% Less Damage
+- Cloak (1) ^3[CS3]"
