@@ -6,7 +6,7 @@ ClassInfo
 
 	weapons 		WP_SABER|WP_MELEE|WP_T21|WP_SONIC_NADE|WP_FLECHETTE|WP_REPEATER
 
-	attributes		MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_HEALING,1|MB_ATT_DODGE,2|MB_ATT_SONIC_DETONATOR,1|MB_ATT_FP_MIRALUKA|MB_ATT_STAMINA,2|MB_ATT_T21,1|MB_ATT_FORCEBLOCK,1|MB_ATT_ANTI_MT,1|MB_ATT_TRACKING_BEACON|MB_ATT_FLECHETTE,4|MB_ATT_GETUPS,2|MB_ATT_FLECHETTE_NADES,1|MB_ATT_FLECHETTE_ALT_NUM,5|MB_ATT_WATER_BREATHING|MB_ATT_ENV_PROT,2|MB_ATT_POISON_DART,4|MB_ATT_REPEATER,1|MB_ATT_BESKAR,2|MB_ATT_BINOCULARS|MB_ATT_SABER_COMBO_NONE|MB_ATT_CCTRAINING,2|MB_ATT_DEXTERITY,1|MB_ATT_BLAST_ARMOUR
+	attributes		MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_HEALING,1|MB_ATT_DODGE,2|MB_ATT_SONIC_DETONATOR,1|MB_ATT_FP_MIRALUKA,1|MB_ATT_STAMINA,2|MB_ATT_T21,1|MB_ATT_FORCEBLOCK,1|MB_ATT_ANTI_MT,1|MB_ATT_TRACKING_BEACON|MB_ATT_FLECHETTE,4|MB_ATT_GETUPS,2|MB_ATT_FLECHETTE_NADES,1|MB_ATT_FLECHETTE_ALT_NUM,5|MB_ATT_WATER_BREATHING|MB_ATT_ENV_PROT,2|MB_ATT_POISON_DART,4|MB_ATT_REPEATER,1|MB_ATT_BESKAR,2|MB_ATT_BINOCULARS|MB_ATT_SABER_COMBO_NONE|MB_ATT_CCTRAINING,2|MB_ATT_BLAST_ARMOUR
 
 	extralives	1
 
@@ -183,8 +183,10 @@ Stocky force attuned bounty hunters. Their strong exo-Skeleton and biology assis
 -- Secondary fire only
 - W-90 Concussion Rifle (T-21 1)
 -- Pushes/Pulses on hit
--- 20% faster RoF/10%- Damage, Mag Reload
+-- 20% faster RoF
+-- 10% less dmg
 -- 75% more FP damage
+-- Mag reload
 - Automatic Slugthrower Repeater (1)
 -- 100%+ Velocity/50%- Damage/25%- FP Drain/5%- Slower RoF
 - Sonic Screamer Grenade (1)
@@ -200,7 +202,6 @@ Stocky force attuned bounty hunters. Their strong exo-Skeleton and biology assis
 - Anti-Mind Trick (1)
 - Tracking Beacon
 - Force Sense Immunity
-- Dexterity (1)
 - Reinforcement (1)
 - Force Block (1)
 - Respirator (Underwater Breathing)
