@@ -68,6 +68,7 @@ SubclassesForClass5
 	Subclass8	"ktg9_JediWatch"
 	Subclass9	"ktg9_JediWeapon"
 	Subclass10	"ktg9_Padawan"
+	Subclass11	"ktg9_Exile"
 }
 
 SubclassesForClass6
