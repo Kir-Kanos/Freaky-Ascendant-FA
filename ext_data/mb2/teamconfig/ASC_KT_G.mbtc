@@ -54,6 +54,7 @@ SubclassesForClass3
 SubclassesForClass4
 {
 	Subclass1	"ktg8_Shadowlander"
+	Subclass2	"ktg8_Marl"
 }
 
 SubclassesForClass5
