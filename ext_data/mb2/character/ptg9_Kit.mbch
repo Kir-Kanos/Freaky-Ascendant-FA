@@ -10,9 +10,9 @@ ClassInfo
 
 	attributes			MB_ATT_DEFLECT,1|MB_ATT_FORCEBLOCK,3|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_WATER_BREATHING|MB_ATT_DC_CARBINE,3
 
-	forcepowers			FP_LEVITATION,3|FP_PUSH,1|FP_SEE,3
-	WP_RocketLauncherFlags HELD_ALTRELOAD|HELD_STUN
-	WP_DCCarbineFlags HELD_STUN|HELD_ALTRELOAD|HELD_IGNOREBLOCK
+	forcepowers			FP_LEVITATION,3|FP_PUSH,2|FP_SEE,3
+	WP_RocketLauncherFlags HELD_BACTA|HELD_STUN|HELD_LIFT|HELD_SLIPPERY
+	WP_DCCarbineFlags HELD_STUN|HELD_ALTRELOAD|HELD_IGNOREBLOCK|HELD_FLASH|HELD_FORCEFOCUS
 	damageGiven  1.1
 	maxhealth			135
 	healthRegenAmount 1
@@ -22,8 +22,7 @@ ClassInfo
 	resource RESOURCE_FORCE
  	rateOfFire_melee .9
 	BPmultiplier		1.15
-	ASmultiplier 	1.1
-	CSmultiplier 	1.1
+	ASmultiplier 	1.08
 	saberstyle			SS_TAVION|SS_MEDIUM|SS_FAST
 	saberThrowDamage 40
 	saberSpecialDamage 1.25
@@ -79,9 +78,8 @@ WeaponInfo0
 	clipSize 			2
 	CustomAmmo 			6
 	velocityMod 0.4
-	rateMod	2
-	ReloadTimeModifier 2
-	damageMod	0.7
+	rateMod	1.5
+	ReloadTimeModifier 1.2
 	altfireenabled 0
 }
 WeaponInfo1
@@ -98,12 +96,13 @@ AltMissileHitDroidEffect "force/kothos_recharge"
 Icon "gfx/hud/HUD_body_blue.tga"
 WeaponName "Sonic Scream"
 altFlashSound0 "sound/chars/glm_howler/misc/death2.mp3"
-ReloadTimeModifier 5
-rateMod 5
-velocityMod 0.2
+ReloadTimeModifier 2
+rateMod 1.2
+velocityMod 0.3
 clipsize 20
-CustomAmmo 40
+CustomAmmo 60
 primFireEnabled 0
+FPMult 3
 hasAnimOverrides 1
 animReady BOTH_SONICPAIN_START
 animReadyWalk BOTH_SONICPAIN_START
@@ -134,16 +133,18 @@ An aggressive and masterful Jedi duelist, but lacking reliable tools for dealing
 -- 200% slower ROF and reload
 -- 60% slower velocity
 -- 30% less damage
--- Stuns on hit 
+-- Stuns/lifts/slicks on hit 
+-- Heals allies
 
 - Sonic Scream
 -- Based off DC15, sec fire only 
 -- Stuns on hit. ignores block
 -- 500% slower rof, 80% slower velocity
+-- 300% more FP damage
 
 ^5Force Powers:
 - Jump (3)
-- Push (1)
+- Push (2)
 - Sense (3)
 
 ^8Attributes:

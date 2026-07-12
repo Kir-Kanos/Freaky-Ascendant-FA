@@ -4,7 +4,7 @@ ClassInfo
 {
 	name			"ptg3_Clone501"
 	weapons		WP_MELEE|WP_CLONE_PISTOL
-	attributes	MB_ATT_AMMO,3|MB_ATT_CLONE_PISTOL,1|MB_ATT_BACTA,1|MB_ATT_STAMINA,3|MB_ATT_ASSEMBLE,2|MB_ATT_DEXTERITY,1
+	attributes	MB_ATT_AMMO,3|MB_ATT_CLONE_PISTOL,1|MB_ATT_STAMINA,3|MB_ATT_ASSEMBLE,2|MB_ATT_DEXTERITY,1
 	
 	MBClass		MB_CLASS_CLONETROOPER
 	WP_PLX1Flags	HELD_PULSE
@@ -18,7 +18,7 @@ ClassInfo
 	
 
 	special1		EAS_HI_SPRINT
-	special2		EAS_HI_MEDPAC
+
 	special3		EAS_HI_DEX
 	special4 		EAS_HI_GRAPPLEHOOK
 	
@@ -71,6 +71,10 @@ ClassInfo
 	c_att_skill_8	MB_ATT_GRAPPLE_HOOK
 	c_att_names_8	"Grappling Hook ^3[CS4 Melee]"
 	c_att_ranks_8	1,1
+
+	c_att_skill_9	MB_ATT_BESKAR
+	c_att_names_9 	"Beskar Plating"
+	c_att_ranks_9 	1,2,2
 }
 
 description	"501st Clone Trooper
@@ -80,9 +84,6 @@ Clone troopers characterized by offensive weaponry choices and higher mobility.
 ^2Weaponry:
 - Melee
 - DC-15s Clone Pistol (1)
-
-^6Inventory:
-- Medpac ^3[CS3]
 
 ^8Attributes:
 - Reinforcement (1)

@@ -22,7 +22,7 @@ ClassInfo
 	forcepool	75
 	forceregen	.80
 	
-	basespeed 162
+	basespeed 172
 
 	special1	EAS_HI_SPRINT
 	special2	EAS_HI_DODGE

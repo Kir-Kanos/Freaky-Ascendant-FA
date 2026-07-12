@@ -36,7 +36,9 @@ classinfo
 	rankarmor	75
 	rankBP		1.1,1.5,1.75
 	rankdmgtaken	.9,.8
-	
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
 	special1	EAS_FP_REPULSE
 	special2	EAS_MELEE
 	special3	EAS_HI_POISONTHROWER
@@ -183,7 +185,7 @@ A Tri-Spec Sith Lord who can DPS, Heal or Tank.
 - Force Lightning (1)
 - Overload ^3[CS1]
 -- Repulse
-
+- Heal capped at 35hp
 ^1Spec Builds:
 - Sorcerer (DPS)
 -- Focuses on Lightning, Telekinesis and Improved Force Pool/Regen
