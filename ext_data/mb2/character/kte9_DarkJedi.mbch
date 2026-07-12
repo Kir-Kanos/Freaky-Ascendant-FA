@@ -26,9 +26,9 @@ ClassInfo
 	
 	CSmultiplier	.98
 
-	APmultiplier	.98
+	APmultiplier	.90
 
-	BPmultiplier	.98
+	BPmultiplier	.85
 
 
 	rateOfFire_Melee 1

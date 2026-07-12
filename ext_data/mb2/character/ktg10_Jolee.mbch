@@ -7,7 +7,7 @@ ClassInfo
 	classNumberLimit	1
 	weapons				WP_SABER|WP_MELEE
 
-	attributes			MB_ATT_FORCEFOCUS,3|MB_ATT_FORCEBLOCK,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_ANTI_MT,2|MB_ATT_DEFLECT,2|MB_ATT_HEALING,1|MB_ATT_LIGHTS_BEACON
+	attributes			MB_ATT_FORCEFOCUS,3|MB_ATT_FORCEBLOCK,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_ANTI_MT,2|MB_ATT_DEFLECT,2|MB_ATT_LIGHTS_BEACON
 
 	forcepowers			FP_LEVITATION,1|FP_PUSH,3|FP_PULL,2|FP_SABER_OFFENSE,2|FP_SEE,3|FP_SABERTHROW,3|FP_GRIP,2|FP_DRAIN,1|FP_ABSORB,3|FP_TELEPATHY,1|FP_LIGHTNING,2|FP_PROTECT,3|FP_STASIS,3|FP_BLIND,1|FP_TEAM_FORCE,1
 
@@ -15,7 +15,9 @@ ClassInfo
 	forcepool   125
 	forceregen  1.9
 	speed				0.95
-	//special1			EAS_FP_SABERTHROW
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
 	special2 EAS_FP_DRAIN
 	special3 EAS_FP_GRIP
 	special4 EAS_FP_ABSORB
@@ -75,6 +77,6 @@ A Jedi Consular who goes his own way, has darkside and light side powers with a 
 - Sense Immunity
 - Lights Beacon
 - Anti-Mind Trick (2)
-- Healing (1)
+- Heal capped at 35hp
 - Force Block (2)
 - Force Focus (3)"
