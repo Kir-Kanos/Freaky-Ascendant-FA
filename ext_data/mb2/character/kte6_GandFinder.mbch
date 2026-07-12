@@ -31,7 +31,6 @@ ClassInfo
 	gloatAnim       BOTH_TUSKENATTACK2
 	flourishAnim    BOTH_TUSKENTAUNT1
 	saberStanceAnim	BOTH_SPEAR_STANCE
-	//SaberStanceAnim	BOTH_TRIPLE3_STAFFSTANCE
 	
 	WP_T21Flags   HELD_KNOCKBACK|HELD_ALTRELOAD|HELD_PULSE
 	WP_SaberFlags HELD_PULSE|HELD_TRACKING
@@ -173,9 +172,10 @@ Stocky force attuned bounty hunters. Their strong exo-Skeleton and biology assis
 
 ^2Weaponry:
 - Melee
-- Gand Shockprod Staff (Staff/Purple Saber)
+- Gand Shockprod Staff (Staff/Purple)
 -- Saber Defense (1)
--- No Blaster Block/Saber Training
+-- No Blaster Block
+-- No Saber Training
 -- Shocks/tracks on hit
 - Ammonia Bombs (2) (Flechette 4)
 -- Poisons/tracks/slows on det
@@ -192,6 +192,7 @@ Stocky force attuned bounty hunters. Their strong exo-Skeleton and biology assis
 -- 50% less dmg
 -- 25% less fp dmg
 -- 5% slower RoF
+-- Mag Reload
 - Sonic Screamer Grenade (1)
 -- Disarms on det
 
@@ -212,6 +213,6 @@ Stocky force attuned bounty hunters. Their strong exo-Skeleton and biology assis
 ^3Abilities:
 - Sprint ^3[CS1]
 - Dodge (2) ^3[CS2]
-- Ammonia Darts (8) ^3[CS3]
+- Ammonia Darts (8) ^3[Melee CS3]
 -- Poisons/slows on hit
-- Gand Binoculars ^3[CS4]"
+- Binoculars ^3[CS4]"
