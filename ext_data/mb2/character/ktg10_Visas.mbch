@@ -7,7 +7,7 @@ ClassInfo
 	classNumberLimit	1
 	weapons				WP_SABER|WP_MELEE
 
-	attributes			MB_ATT_FORCEFOCUS,3|MB_ATT_FORCEBLOCK,3|MB_ATT_FP_MIRALUKA,3|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_ANTI_MT,1|MB_ATT_DEFLECT,2|MB_ATT_HEALING,1
+	attributes			MB_ATT_FORCEFOCUS,3|MB_ATT_FORCEBLOCK,3|MB_ATT_FP_MIRALUKA,3|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_ANTI_MT,1|MB_ATT_DEFLECT,2|
 
 	forcepowers			FP_LEVITATION,1|FP_PUSH,3|FP_SABER_OFFENSE,3|FP_SEE,3|FP_SABERTHROW,2|FP_GRIP,3|FP_ABSORB,1|FP_LIGHTNING,3|FP_BLIND,3|FP_PULL,2
 
@@ -18,7 +18,9 @@ AB_FLightningFlags	HELD_DISRUPTIFY|HELD_LIFESTEAL|HELD_CRIPPLE|HELD_LOWDAMAGE
 	forcepool   130
 	forceregen  1.2
 	speed				0.93
-
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
 
 	special1 EAS_FP_SABERTHROW
 	special2 EAS_FP_LIGHTNING
@@ -80,6 +82,6 @@ A Jedi Sentinel with Sith Training with greater force sight and controlling powe
 ^8Attributes:
 - Miraluka Vision (3)
 - Anti-Mind Trick (1)
-- Healing (1)
+- Heal capped at 35hp
 - Force Block (3)
 - Force Focus (3)"
