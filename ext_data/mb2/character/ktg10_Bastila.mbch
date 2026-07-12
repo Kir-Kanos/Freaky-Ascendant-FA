@@ -9,7 +9,7 @@ ClassInfo
 
 	weapons			WP_SABER|WP_MELEE	
 
-	attributes		MB_ATT_SABER_FAST,2|MB_ATT_DEFLECT,3|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_RALLY,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_HEALING,1
+	attributes		MB_ATT_SABER_FAST,2|MB_ATT_DEFLECT,3|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_RALLY,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,2
 
 	forcepowers		FP_LEVITATION,3|FP_PUSH,2|FP_SEE,2|FP_PULL,2|FP_DRAIN,2|FP_SABERTHROW,2|FP_TEAM_FORCE,3|FP_ABSORB,1|FP_STASIS,2
 
@@ -17,6 +17,9 @@ ClassInfo
 	maxhealth		135
 	forcepool		135
 	forceregen 1.1
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
 	damageGiven 1.10
  rateOfFire_Melee 0.9
 	saberstyle SS_STAFF|SS_TAVION
@@ -85,5 +88,5 @@ A support Jedi with Battle Meditation (Team Energize) and strong defensive power
 ^8Attributes:
 - Ally Stat Viewer
 - Rally
-- Healing (1)
+- Heal capped at 35hp
 - Force Block/Focus (2)"
