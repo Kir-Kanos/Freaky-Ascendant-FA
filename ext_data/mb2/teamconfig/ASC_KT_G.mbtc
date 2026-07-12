@@ -29,6 +29,7 @@ SubclassesForClass1
 	Subclass11	"ktg2_Ice"
 	Subclass12	"ktg2_Peragus"
   Subclass13	"ktg2_Deadeye"
+  Subclass14	"ktg2_Twitch"
 }
 
 SubclassesForClass2

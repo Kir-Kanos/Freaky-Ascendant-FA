@@ -1,0 +1,170 @@
+//Stromboli
+ClassInfo
+{
+	name		"ktg2_Twitch"
+	MBClass	MB_CLASS_BOUNTY_HUNTER
+	classNumberLimit	1
+	
+	weapons	WP_MELEE|WP_MANDO_PISTOL|WP_SABER|WP_FRAG_NADE
+
+	WP_FragNadeFlags	HELD_CRIPPLE
+
+	attributes	MB_ATT_AMMO,3|MB_ATT_TRACKING_BEACON|MB_ATT_DEXTERITY,1|MB_ATT_DODGE,3|MB_ATT_HEALING,3|MB_ATT_MANDO_PISTOL,3|MB_ATT_FRAGS,10|MB_ATT_QUICKTHROW,1|MB_ATT_KNOCKDOWN_ROLL
+	
+	maxhealth 120
+
+	maxarmor		50
+
+knockbackTaken 1.40
+
+skilltimermod 0.5
+
+ASmultiplier	1.20
+
+
+CSmultiplier	1.20
+
+
+APmultiplier	.95
+
+
+BPmultiplier	2
+
+saber1			kotor_vibrosword
+saberDamage	75
+saberstyle	SS_DESANN
+
+	classflags	CFL_SEEING_STEALTH|CFL_BLOODYMELEE
+
+	baseSpeed 270
+
+	Resource	RESOURCE_ENERGY
+	forcepool	90
+	forceregen	2.5
+	
+	special1	EAS_HI_DODGE
+	special2	EAS_HI_QUICKTHROW
+ 	special4 	EAS_HI_DEX
+
+	idleAnim BOTH_SCEPTER_HOLD
+	flourishAnim BOTH_SCEPTER_HOLD
+
+	uioverlay "gfx/icons/spec_infantry"
+	modelscale   0.99
+
+	model		"rodian" 					
+	skin			"rgb"						
+	uishader		"models/players/rodian/mb2_icon_red"
+
+	userRGB
+
+	customred 100
+
+	customgreen 115
+
+	customblue 0
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace 	WP_MANDO_PISTOL
+	WeaponBasedOff  	WP_MANDO_PISTOL
+	NewWorldModel		 "models/weapons/KYD-21_Pistol/model.glm"
+	NewViewModel			 "models/weapons/KYD-21_Pistol/model.md3"
+	FlashSound0			"sound/weapons/KYD-21/fire.mp3"
+	altFlashSound0		"sound/weapons/KYD-21/fire.mp3"
+	Icon  				"gfx/hud/w_icon_kyd-21"
+	WeaponName			"Dual Rodian Pistols"
+	clipSize       		20
+	FPMult     			.75
+	Damagemod			.75
+	rateMod 	.75
+	velocityMod .85
+	ReloadTimeModifier 	1.2
+	CustomAmmo			1500
+	ChargeSound "sound/weapons/leia_pistol/altcharge.mp3"
+	Missile3Effect		"blaster/Shot07R"
+	AltMissileEffect		"blaster/Shot07R"
+	PowerupShotEffect		"blaster/Shot04R"
+	MissileEffect			"blaster/Shot03R"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_MELEE
+	WeaponBasedOff		WP_MELEE
+	NewWorldModel		"models/weapons2/dummyblaster/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon			"gfx/hud/w_icon_melee"
+	WeaponName		"Frenzied Melee"
+	primFireEnabled		1
+	AltFireEnabled 		1
+	rateMod 0.5
+	damagemod	0.4
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_FRAG_NADE
+	WeaponBasedOff		WP_FRAG_NADE
+	NewWorldModel		"models/weapons2/kotor_gfrag/thermal_w.glm"  	
+	NewViewModel		"models/weapons2/kotor_gfrag/thermal.md3" 
+	MissileModel "models/weapons2/kotor_gfrag/thermal_proj_1.md3" 
+	AltMissileModel "models/weapons2/kotor_gfrag/thermal_proj_2.md3" 
+	Icon				"gfx/hud/w_icon_kotor_fraggrenade" 					
+	WeaponName			"Pocket Dueling Grenade"    
+	splashradius	180
+	primFireEnabled		0
+	altFireEnabled   0
+	damagemod	0.30
+	MissileEffect "repeater/projectile"
+}
+
+WeaponInfo3
+{
+	WeaponToReplace	WP_SABER			
+	WeaponBasedOff	WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_oldrepswords"
+	WeaponName		"Dull Vibrosaber"
+	SelectSound "sound/weapons/blade/slash2.mp3"
+}
+
+
+description	"Twitch
+
+An unstable and unpredictable duelist from Taris, extremely agile and disruptive.
+
+^2Weaponry:
+- Frenzied Melee
+-- 50% Faster Swings
+-- 60% Lower Damage
+- Dual Rodian Blasters (Westar 3)
+-- 25% Faster Rof, 
+-- 25% Less damage/FP damage
+-- 15% Slower Velocity
+-- Low Clip Size
+- Pocket Dueling Grenades (10)
+-- Quickthrow Only
+-- Small Radius, 70% Less Damage
+-- Slows on det
+- Dull Vibrosaber (Purple)
+-- Saber Defense 0
+-- No Blaster Defense/Deflect
+
+^8Attributes:
+- Tracking Beacon
+- Unpredictable (Sense Immunity)
+- 50% Faster Cooldowns
+- Dexterity (1)
+- Knockdown Roll
+- Healing (3)
+- 40% More Knockback Taken
+
+^3Abilities:
+- Dodge (3) ^3[CS1]
+- Quickthrow (1) ^3[CS2]
+- Gunkick ^3[CS3]
+- Dex Roll ^3[CS4]"
