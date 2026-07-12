@@ -1,3 +1,4 @@
+//Stromboli
 ClassInfo
 {
 	name		"ktg2_Ice"
@@ -6,7 +7,7 @@ ClassInfo
 	
 	weapons	WP_MELEE|WP_CLONE_PISTOL|WP_THERMAL|WP_SABER
 
-	attributes	MB_ATT_AMMO,3|MB_ATT_TRACKING_BEACON|MB_ATT_CLONE_PISTOL,2|MB_ATT_DASH,1|MB_ATT_BACTA_BIG|MB_ATT_DODGE,1|MB_ATT_DEXTERITY,1|MB_ATT_ANTI_MT,1|MB_ATT_FP_MIRALUKA|MB_ATT_HEALING,1|MB_ATT_BINOCULARS|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_BASE_TD,3
+	attributes	MB_ATT_AMMO,3|MB_ATT_TRACKING_BEACON|MB_ATT_CLONE_PISTOL,2|MB_ATT_DASH,1|MB_ATT_BACTA_BIG|MB_ATT_DODGE,1|MB_ATT_DEXTERITY,1|MB_ATT_ANTI_MT,1|MB_ATT_FP_MIRALUKA,1|MB_ATT_HEALING,1|MB_ATT_BINOCULARS|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_BASE_TD,3
 
 	forcepowers	FP_SEE,1
 
@@ -122,16 +123,19 @@ A precise Duelist focused on positioning and accuracy.
 
 ^2Weaponry:
 - Melee
-- Maximum Charge Pistol
--- Clone Pistol 2
--- 2 Shots, 100%+ Velocity, 80%- Fire Rate, 80%+ Damage/FP Drain
--- Mag Reload, Slow Reload
--- Knocks Back
-- Dueling Vibro-Saber
--- Saber Defense 1
+- Dueling Vibro-Saber (Blue)
+-- Saber Defense (1)
 -- No Blaster Defense/Deflect
--- Low Damage
-- 3 Thermal Grenades
+- Maximum Charge Pistol (Clone Pistol 2)
+-- 2 Shots
+-- 100% more velocity
+-- 80% less RoF
+-- 80% more dmg
+-- 80% more FP dmg
+-- 60% slower reload
+-- Mag Reload
+-- Knocks back on hit
+- Thermal Grenades (3)
 
 ^8Attributes:
 - Tracking Beacon
@@ -143,7 +147,7 @@ A precise Duelist focused on positioning and accuracy.
 - Healing (1)
 
 ^3Abilities:
-- Dash (1) ^3[CS2]
 - Dodge (1) ^3[CS1]
+- Dash (1) ^3[CS2]
 - Binoculars ^3[CS3]
 - Advanced Medpack ^3[CS4]"
