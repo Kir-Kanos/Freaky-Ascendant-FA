@@ -115,7 +115,7 @@ ClassInfo
 	c_att_skill_9	MB_ATT_ANTI_MT
 	c_att_names_9	"Keen Eye"
 	c_att_ranks_9	1
-	c_att_descs_9	"Mind Trick"
+	c_att_descs_9	"Anti Mind Trick"
 
 	c_att_skill_10	MB_ATT_DRONE
 	c_att_names_10	"Czerka Recon Drone"
