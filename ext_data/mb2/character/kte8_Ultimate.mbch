@@ -91,11 +91,10 @@ WeaponInfo1
 	MissileMissEffect		"Blaster/Impact_Wall01R.efx"
 	FlashSound0			"sound/weapons/kotor/fire_power1.wav"
 	AltFlashSound0		"sound/weapons/kotor/fire_hvy.wav"
-	FPMult				1.1
-	rateMod 1.65
-	velocitymod	1.20
-	damagemod 1.15
-	clipsize 40
+	rateMod 2
+	velocitymod	1.25
+	damagemod 1.25
+	clipsize 30
 	customAmmo 200
 }
 
@@ -107,8 +106,7 @@ Leader of the Mandalorian Neocrusaders, A tank of a man who wields heavy armor a
 - Heavy Melee
 -- 10% faster RoF
 - Mandalore Melee Weapon (Red Saber)
--- Saber Defense (1)
--- Very Low BP
+-- Saber Defense (3)
 -- No Blaster Block
 -- Pulses/Knockback/Knockdown
 - Warrior's Repeater (Minigun 1)
