@@ -76,22 +76,22 @@ ClassInfo
 	c_att_skill_1	MB_ATT_PISTOL
 	c_att_names_1	"Employee Bonus Blaster (Pistol)"
 	c_att_ranks_1	0,1,1
-	c_att_descs_1	"25% faster RoF, 25% less Dmg, 30% less FP Dmg"
+	c_att_descs_1	"Pistol, 25% faster RoF, 25% less Dmg, 30% less FP Dmg"
 
 	c_att_skill_2	MB_ATT_EE3
-	c_att_names_2	"Company Carbine (EE-3)"
+	c_att_names_2	"Company Carbine"
 	c_att_ranks_2	2,1,1
-	c_att_descs_2	"Low clip size, +15% RoF"
+	c_att_descs_2	"EE3, Low clip size, +15% RoF"
 
 	c_att_skill_3	MB_ATT_DISRUPTOR
 	c_att_names_3	"Czerka Auto Disruptor"
 	c_att_ranks_3	6
-	c_att_descs_3	"-60% FP Drain, +65% RoF, -75% Damage"
+	c_att_descs_3	"-60% FP Drain, +80% RoF, -75% Damage"
 
 	c_att_skill_4	MB_ATT_PROJECTILE_RIFLE
 	c_att_names_4	"Czerka Prototype Slugthrower"
 	c_att_ranks_4	8
-	c_att_descs_4	"Based On Proj. Large Clip Size, -85% Damage, +45% RoF"
+	c_att_descs_4	"Based On Proj. Large Clip Size, -85% Damage/-80% FP Drain, +45% RoF"
 	
 	c_att_skill_5	MB_ATT_SONIC_DETONATOR
 	c_att_names_5	"Cyroban Multi-burst Detonator"
@@ -99,7 +99,7 @@ ClassInfo
 	c_att_descs_5	"Sonic Grenade, Applies Freeze"
 	
 	c_att_skill_6	MB_ATT_TRIP_MINES
-	c_att_names_6	"Motion Sensor"
+	c_att_names_6	"Motion Sensor Explosive"
 	c_att_ranks_6	2,2
 	c_att_descs_6	"Trip Mine, Applies Tracking, Low Damage"
 
@@ -158,13 +158,9 @@ FlashSound0			"sound/weapons/e_22/fire.mp3"
 	clipSize			50
 	customAmmo 		600
 	damageMod .25
-	ReloadTimeModifier 	1.75
+	ReloadTimeModifier 	1.4075
 	FPmult				.3
-	rateMod .35
-	AltMuzzleEffect null
-	AltFlashSound0	null
-	ChargeEffect null
-	altFireEnabled	0
+	rateMod .20
 }
 WeaponInfo2
 {
@@ -213,6 +209,7 @@ WeaponInfo3
 	clipSize     20
 	ReloadTimeModifier 1.5
 	ratemod 0.65
+	FPMUlt	0.20
 	damagemod	.15
 }
 WeaponInfo4
@@ -242,7 +239,7 @@ NewViewModel "models/weapons2/thermal/thermal.md3"
 NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
 	Icon						"gfx/hud/w_thermal_grenade"
 	MissileModel 				"models/weapons2/thermal/thermal_proj.md3""
-	WeaponName			"Motion Sensor"
+	WeaponName			"Motion Sensor Explosive"
 }
 
 
