@@ -1,0 +1,92 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name				"ktg10_Bastila"
+
+	MBClass				MB_CLASS_JEDI
+	classNumberLimit  	1
+
+	weapons			WP_SABER|WP_MELEE	
+
+	attributes		MB_ATT_SABER_FAST,2|MB_ATT_DEFLECT,3|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_RALLY,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,2
+
+	forcepowers		FP_LEVITATION,3|FP_PUSH,2|FP_SEE,2|FP_PULL,2|FP_DRAIN,2|FP_SABERTHROW,2|FP_TEAM_FORCE,3|FP_ABSORB,1|FP_STASIS,2
+
+	speed     	1.02
+	maxhealth		135
+	forcepool		135
+	forceregen 1.1
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+	damageGiven 1.10
+ rateOfFire_Melee 0.9
+	saberstyle SS_STAFF|SS_TAVION
+	saberDamageStyle SS_TAVION,130|SS_STAFF,260
+ saberSpecialDamage 1.25
+	saberThrowDamage 40
+	APmultiplier		1.1
+	BPmultiplier  1.1
+	ASmultiplier		1.0
+	CSmultiplier		1.05
+
+	classflags CFL_NOPICKUPS|CFL_STATVIEWER
+
+	special2 EAS_FP_DRAIN
+	special3 EAS_FP_TEAM_FORCE
+ special4 EAS_FP_ABSORB
+
+	uioverlay "gfx/icons/support"
+
+	model		"bastila"
+	skin		"default"
+	uishader	"models/players/bastila/mb2_icon_default"
+
+	model_1		"bastila_sith"
+	skin_1		"default"
+	uishader_1	"models/players/bastila_sith/mb2_icon_default"
+
+	model_2		"bastila_sith"
+	skin_2		"ds"
+	uishader_2	"models/players/bastila_sith/mb2_icon_ds"
+
+	saber1			bastila_legends
+	sabercolor		2
+	
+	saber1_1		bastila_legends
+	sabercolor_1		0
+
+	tauntAnim	BOTH_MAUL_TAUNT
+}
+
+description	"Bastila Shan
+
+A support Jedi with Battle Meditation (Team Energize) and strong defensive powers.
+
+^2Weaponry:
+- Melee
+-- 10% faster RoF
+- Lightsaber (Staff/Cyan)
+-- Saber/Blaster Defense (2)
+-- Blaster Deflect (3)
+-- 25% more Reach
+-- 8% more Cyan Dmg
+-- EX Saber Throw (2) ^3[CS1]
+--- 33% more Dmg
+
+^5Force Powers:
+- Jump (3)
+- Push (2)
+- Pull (2)
+- Stasis (2)
+- Sense (2)
+- Drain (2) ^3[CS2]
+- Team Energize (3) ^3[CS3]
+- Absorb (1) ^3[CS4]
+
+^8Attributes:
+- Ally Stat Viewer
+- Rally
+- Heal capped at 35hp
+- Force Block/Focus (2)"

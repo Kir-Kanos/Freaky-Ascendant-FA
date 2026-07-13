@@ -8,7 +8,7 @@ ClassInfo
 	
 	weapons				WP_MELEE|WP_SABER|WP_THROWER|WP_TRIP_MINE
 	
-	attributes			MB_ATT_FORCEBLOCK,1|MB_ATT_FORCEFOCUS,3|MB_ATT_DEFLECT,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_HEALING,1|MB_ATT_TRIP_MINES,3|MB_ATT_THROWER_POISON,1|MB_ATT_ANTI_MT,2
+	attributes			MB_ATT_FORCEBLOCK,1|MB_ATT_FORCEFOCUS,3|MB_ATT_DEFLECT,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_TRIP_MINES,3|MB_ATT_THROWER_POISON,1|MB_ATT_ANTI_MT,2
 
 	forcepowers			FP_SABER_OFFENSE,1|FP_LEVITATION,1|FP_PUSH,3|FP_PULL,2|FP_ABSORB,1|FP_GRIP,3|FP_DRAIN,3|FP_LIGHTNING,3|FP_SABERTHROW,2|FP_TELEPATHY,2
 
@@ -20,7 +20,9 @@ ClassInfo
 
 	maxhealth			80 
 	maxarmor			5
-
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
 	resource			RESOURCE_FORCE
 	forcepool			100
 	forceregen			2
@@ -115,5 +117,6 @@ An insane and fragile caster with ancient knowledge and experiences.
 - Force Saber Throw ^3[CS1]
 
 ^8Attributes:
-- Mental Fortitude (Anti-Mind Trick 2)
-- Shrouded Presence (Force Sense Immunity)"
+- Anti-Mind Trick 2
+- Force Sense Immunity
+- Heal capped at 35hp"

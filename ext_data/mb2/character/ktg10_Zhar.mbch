@@ -1,20 +1,24 @@
-//Siege class def file
+//Stromboli
 ClassInfo
 {
 	name			"ktg10_Zhar"
 	MBClass			MB_CLASS_JEDI
 	
 	weapons			WP_MELEE|WP_SABER
-	attributes		MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_FORCEBLOCK,1|MB_ATT_ROUNDSPAWNER,1|MB_ATT_SPAWNER,1|MB_ATT_RALLY
+	attributes		MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_FORCEBLOCK,1|MB_ATT_ROUNDSPAWNER,1|MB_ATT_SPAWNER,1|MB_ATT_RALLY,1
 	
 	saberMaxChain 	6
-	saberDamageStyle SS_MEDIUM,100|SS_DESANN,100
-	
-	ASmultiplier 	0.8
-	CSmultiplier 	0.9
+	saberdamage 130
+
+	maxhealth	125
+
+	ASmultiplier 	1
+	CSmultiplier 	1
 	APmultiplier 	0.7
 	BPmultiplier 	0.7
-
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
 	roundnpc	"JediMage"
 	spawnernpc	"JediDual"
 
@@ -22,7 +26,7 @@ ClassInfo
 	
 	speed 			1.0
 	
-	forcepowers		FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_PUSH,2|FP_PULL,2
+	forcepowers		FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_PUSH,2|FP_PULL,2|FP_STASIS,1
 	
 	classflags 		CFL_NOPICKUPS
 	
@@ -42,23 +46,24 @@ description	"Master Zhar
 An instructor who focuses on a high volume of strikes and rallying fellow jedi.
 
 ^2Weaponry: 
-- Lightsaber (Medium/Purple)
--- Low Damage, 6 Swing Combo
+- Lightsaber (Yellow/Purple)
 -- Saber Defense (1)
--- Saber Offense (3)
--- Blaster Deflect (1)
 -- Blaster Defense (2)
+-- Blaster Deflect (1)
+-- Chain Limit: 4
 
 ^8Attributes:
 - Force Focus (1)
 - Force Block (1)
 - Rally
 
-^8Powers
+^5Force Powers:
 - Push (2)
 - Pull (2)
-- Jump (3)"
+- Jump (3)
+- Stasis (1)
 
 ^3Abilities:
 - Jedi Consular Student (Support Jedi On Round Start)
-- Call Jedi Knight (Summon Aggressive Jedi) ^3[CS4]"
+- Call Jedi Knight (Summon Aggressive Jedi) ^3[CS4]
+- Heal capped at 35hp"

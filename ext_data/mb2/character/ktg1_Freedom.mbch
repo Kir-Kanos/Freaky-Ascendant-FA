@@ -1,0 +1,146 @@
+//Stromboli
+
+ClassInfo
+{
+	name			"ktg1_Freedom"
+	MBClass			MB_CLASS_CLONETROOPER
+	
+	weapons			WP_MELEE	
+	
+	attributes		MB_ATT_ASSEMBLE,3|MB_ATT_STAMINA,3|MB_ATT_DODGE,3||MB_ATT_DEXTERITY,1|MB_ATT_HEALING,2|MB_ATT_TRACKING_BEACON
+
+	speed	0.94
+
+	rateOfFire_Melee	2.50
+	
+	maxhealth		95
+	resource		RESOURCE_STAMINA
+	forcepool		100
+	damageGiven		1.5
+	
+	special1		EAS_HI_SPRINT
+	special2		EAS_HI_DODGE
+	special4		EAS_HI_DEX
+	
+	WP_MeleeFlags	HELD_DISARM|HELD_LOWDAMAGE
+	WP_BlasterPistolFlags HELD_ALTRELOAD|HELD_CRIPPLE
+	
+	WP_BlasterFlags HELD_SPEED
+	WP_ClonePistolFlags HELD_SPEED
+	WP_MandoPistolFlags HELD_SPEED
+	WP_ShotgunFlags HELD_SPEED
+	WP_EE3Flags HELD_SPEED
+	WP_EE4Flags HELD_SPEED
+	WP_AmbanFlags HELD_SPEED
+	WP_BowcasterFlags HELD_SPEED
+	WP_RepeaterFlags HELD_SPEED
+	WP_CloneRifleFlags HELD_SPEED
+	WP_MinigunFlags HELD_SPEED
+	WP_DEMP2Flags HELD_SPEED
+	WP_ThrowerFlags HELD_SPEED
+	WP_T21Flags HELD_SPEED
+	WP_ProjFlags HELD_SPEED
+	WP_DisruptorFlags HELD_SPEED
+	WP_FlechetteFlags HELD_SPEED
+	WP_M5Flags HELD_SPEED
+	WP_A280Flags HELD_SPEED
+	WP_DLT20AFlags HELD_SPEED
+	WP_PLX1Flags HELD_SPEED
+	WP_RocketLauncherFlags HELD_SPEED
+	WP_RealTDFlags HELD_SPEED
+	WP_FragNadeFlags HELD_SPEED
+	WP_PulseNadeFlags HELD_SPEED
+	WP_TripMineFlags HELD_SPEED
+	WP_FireNadeFlags HELD_SPEED
+	WP_SonicNadeFlags HELD_SPEED
+	WP_ConcNadeFlags HELD_SPEED
+	WP_CryoNadeFlags HELD_SPEED
+	WP_DetPackFlags HELD_SPEED
+	WP_ConcussionFlags HELD_SPEED
+	WP_BryarOldFlags HELD_SPEED
+	WP_SBDFlags HELD_SPEED
+	WP_CR2Flags HELD_SPEED
+	WP_E22Flags HELD_SPEED
+	WP_DCCarbineFlags HELD_SPEED
+	WP_ThermalFlags HELD_SPEED
+	WP_TradBowcasterFlags HELD_SPEED
+	WP_UGLFlags HELD_SPEED
+	WP_MGLFlags HELD_SPEED	
+	
+	extralives	4
+	
+	uioverlay_r 	"gfx/icons/infantry"
+	uioverlay_l 	"gfx/icons/brawler"
+	
+	model		"prisoner"
+	skin_		"merchant"
+	uishader	"models/players/prisoner/mb2_icon_merchant"
+
+	isCustomBuild	1
+	mbPoints		1
+	
+	c_att_skill_0	MB_ATT_STUN_BATON
+	c_att_names_0	"Stun Baton"
+	c_att_ranks_0	1
+	
+	c_att_skill_1	MB_ATT_PISTOL
+	c_att_names_1	"Shoddy Crafted Pistol"
+	c_att_ranks_1	1
+	c_att_descs_1	"Slows On Hit, 1 Shot, Mag Reload"
+	
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_MELEE
+	WeaponBasedOff		WP_MELEE
+	NewWorldModel		"models/weapons2/dummyblaster/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon			"gfx/hud/w_icon_melee"
+	WeaponName		"Grappling Strikes"
+	primFireEnabled		1
+	AltFireEnabled 		1
+}
+
+WeaponInfo1
+{
+
+ WeaponToReplace  WP_BLASTER_PISTOL
+ WeaponBasedOff  WP_BLASTER_PISTOL
+ NewWorldModel "models/weapons2/sonic_emitter/gunz_w.glm" 
+ NewViewModel "models/weapons2/sonic_emitter/gunz.md3" 
+ NewHandsModel "models/weapons2/sonic_emitter/gunz_hand.md3" 
+ Icon    "gfx/hud/w_icon_emitsonic2"
+ WeaponName   "Shoddy Crafted Pistol"
+ MuzzleEffect	"Blaster/MuzzleFlash01Y"
+ MissileEffect	"Blaster/Shot02Y"
+ FlashSound0 "sound/weapons/kotor/fire_power1.wav"
+ damageMod 1.2
+ clipsize 1
+
+}
+
+
+
+description "Freedom Fighter
+
+5-life escaped slaves, unhappy citizens or otherwise who wish to overthrow oppressors! For Freedom!
+
+^2Weaponry:
+- Grappling Strikes (Melee)
+-- 150% Slower Fire Rate
+-- Disarms on Hit
+
+^8Attributes:
+- Reinforcements (4)
+- Stamina (3)
+- Dexterity (1)
+- Tracking Beacon
+- Healing (2)
+- Assemble (3)
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Dex Roll ^3[CS4]
+- Dodge (3) ^3[CS2]"

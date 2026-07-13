@@ -1,0 +1,352 @@
+//Stromboli
+ClassInfo
+{
+name	"ktg9_Exile"
+classNumberLimit	1
+MBClass	MB_CLASS_JEDI
+weapons	WP_SABER
+
+attributes	MB_ATT_AMMO,3|MB_ATT_DEFLECT,2|MB_ATT_HEALING,1|MB_ATT_FORCEBLOCK,1|MB_ATT_RALLY|MB_ATT_GUN_DEFENSE,2|MB_ATT_ANTI_MT,1|MB_ATT_FP_SABER_DEFENSE,2
+
+forcepowers	FP_SEE,1|FP_PUSH,2|FP_PULL,1|FP_SABER_OFFENSE,3|FP_LEVITATION,1
+
+classflags	CFL_NOPICKUPS
+
+WP_BlasterPistolFlags	HELD_ALTRELOAD
+
+maxhealth 100
+
+maxarmor	25
+
+basespeed 225
+rankbasespeed	250
+
+forcepool 110
+rankForcepool	140
+
+forceregen 1.25
+rankForceregen 1.50
+
+rankKbTaken	.8
+
+saber1		Exile_legends
+sabercolor		6	
+saberstyle		SS_STAFF|SS_FAST|SS_STRONG
+
+saber1_1		saber_kshrt
+sabercolor_1		4
+saber2_1	saber_kshrt
+saber2color_1	4
+saberstyle_1		SS_DUAL|SS_TAVION|SS_DESANN
+
+saber1_2		saber_kshrt
+sabercolor_2		0
+saberstyle_2		SS_MEDIUM|SS_STRONG|SS_DESANN
+
+saber1_3		saber_kshrt
+sabercolor_3		6
+saberstyle_3		SS_MEDIUM|SS_STRONG|SS_DESANN
+
+saber1_4		saber_kshrt
+sabercolor_4		5
+saberstyle_4		SS_MEDIUM|SS_STRONG|SS_DESANN
+
+saber1_5		saber_kshrt
+sabercolor_5		3
+saberstyle_5		SS_MEDIUM|SS_STRONG|SS_DESANN
+
+saber1_6		saber_kshrt_shoto
+sabercolor_6		1
+saberstyle_6		SS_TAVION|SS_STRONG|SS_DESANN|SS_MEDIUM
+
+saber1_7		saber_kshrt_shoto
+sabercolor_7		0
+saberstyle_7		SS_TAVION|SS_STRONG|SS_DESANN|SS_MEDIUM
+
+saber1_8		saber_kshrt_shoto
+sabercolor_8		6
+saberstyle_8		SS_TAVION|SS_STRONG|SS_DESANN|SS_MEDIUM
+
+
+forcepowers 
+
+BPMultiplier	1
+
+APMultiplier	1
+
+ASmultiplier	1
+
+CSmultiplier	1
+
+rankBP	1.2
+
+rankAP	1.2
+
+rankAS	1.12
+
+rankCS	1.12
+
+rankROFMelee .8
+
+model		"jedi_female"
+skin			"meetra"
+uishader		"models/players/jedi_female/mb2_icon_meetra"
+
+model_1	"meetra"
+skin_1	"default"
+uishader_1 "models/players/meetra/mb2_icon_default"
+
+model_2				"jedipack_hb" 			
+skin_2				"exile_sith"	
+uishader_2			"models/players/jedipack_hb/mb2_icon_exile_sith"
+
+model_3				"jedipack_hb" 			
+skin_3				"default"	
+uishader_3			"models/players/jedipack_hb/mb2_icon_default"
+
+special1 EAS_HI_DEX
+special2 EAS_HI_STIMPACK
+special3 EAS_FP_REPULSE
+special4 EAS_HI_GRAPPLEHOOK
+
+flourishAnim BOTH_HAN_TAUNT
+
+isCustomBuild	1
+mbPoints	10
+hasCustomSpec 3
+isOnlyOneSpec 1
+
+customSpecName_1 "Guardian"
+customSpecIcon_1 "gfx/menus/alpha/icon_weap_saber"
+
+customSpecName_2 "Sentinel"
+customSpecIcon_2 "gfx/menus/alpha/icon_weap_firerate"
+
+customSpecName_3 "Consular"
+customSpecIcon_3 "gfx/menus/alpha/icon_weap_stun"
+
+	c_att_skill_0	MB_ATT_WOOKIE_STRENGTH
+	c_att_names_0	"Jedi Strength"
+	c_att_ranks_0	2
+
+	c_att_skill_1	MB_ATT_DMG_GIVEN_MULTIPLIER
+	c_att_names_1	"Damage Given (125%)"
+	c_att_ranks_1	2
+
+	c_att_skill_2	MB_ATT_KB_TAKEN_MULTIPLIER
+	c_att_names_2	"Kb Taken (80%)"
+	c_att_ranks_2	2
+	
+	c_att_skill_3	MB_ATT_FP_LEVITATION
+	c_att_names_3	"Force Jump"
+	c_att_ranks_3	0,0,2
+	
+	c_att_skill_4	MB_ATT_BESKAR
+	c_att_names_4	"Reinforced Robes"
+	c_att_ranks_4	4
+	
+	c_att_skill_5	MB_ATT_FP_SABER_DEFENSE
+	c_att_names_5	"Saber Defense"
+	c_att_ranks_5	0,0,2
+	
+	c_att_skill_6	MB_ATT_GUN_DEFENSE
+	c_att_names_6	"Blaster Defense"
+	c_att_ranks_6	0,0,2	
+
+	c_att_skill_7	MB_ATT_FP_SABERTHROW
+	c_att_names_7	"Saber Throw ^3[CS1]"
+	c_att_ranks_7	0,0,2
+
+	c_att_skill_8	MB_ATT_FP_DARKRAGE
+	c_att_names_8	"Dark Rage"
+	c_att_ranks_8	2,0
+
+	c_att_skill_9	MB_ATT_FP_PROTECT
+	c_att_names_9	"Force Protect"
+	c_att_ranks_9	2,0
+
+	c_att_skill_10	MB_ATT_ROF_MELEE_MULTIPLIER
+	c_att_names_10	"Melee RoF (120%)"
+	c_att_ranks_10	2
+
+	c_att_skill_11 	MB_ATT_CS_MULTIPLIER
+	c_att_names_11 	"Saber CS (112%)"
+	c_att_ranks_11 	0
+
+	c_att_skill_12 	MB_ATT_AS_MULTIPLIER
+	c_att_names_12 	"Saber AS (112%)"
+	c_att_ranks_12 	0
+
+	c_att_skill_13 	MB_ATT_AP_MULTIPLIER
+	c_att_names_13 	"Saber AP (120%)"
+	c_att_ranks_13 	0
+
+
+	c_att_skill_15 	MB_ATT_BP_MULTIPLIER
+	c_att_names_15 	"Saber BP (120%)"
+	c_att_ranks_15 	2
+
+	c_att_skill_16 	MB_ATT_DEFLECT
+	c_att_names_16 	"Blaster Deflect"
+	c_att_ranks_16 	0,0,2
+
+	c_att_skill_17 	MB_ATT_FP_TELEPATHY
+	c_att_names_17 	"Force Mind Trick"
+	c_att_ranks_17 	2,0
+
+	c_att_skill_18 	MB_ATT_FP_SPEED
+	c_att_names_18 	"Force Speed"
+	c_att_ranks_18 	2,0
+
+	c_att_skill_19 	MB_ATT_FP_DEADLYSIGHT
+	c_att_names_19 	"Deadly Sight"
+	c_att_ranks_19 	2
+
+	c_att_skill_20 	MB_ATT_FP_SEE
+	c_att_names_20 	"Force Sense"
+	c_att_ranks_20 	0,0,0
+
+	c_att_skill_21 	MB_ATT_CLOAK
+	c_att_names_21 	"Stealth Field Generator"
+	c_att_ranks_21 	2,2
+
+	c_att_skill_22 	MB_ATT_STIMPACK
+	c_att_names_22 	"Echani Combat Stim"
+	c_att_ranks_22	2
+	c_att_descs_22	"Stimpack ^3[CS2]"
+
+	c_att_skill_23 	MB_ATT_DEXTERITY
+	c_att_names_23 	"Force Agility"
+	c_att_ranks_23	0,0,2
+	c_att_descs_23	"Dexterity, Unlocks Dex Roll ^3[CS1]"
+
+	c_att_skill_24 	MB_ATT_FLIPKICK
+	c_att_names_24 	"Force Kick"
+	c_att_ranks_24	2
+	c_att_descs_24	"Flipkick"
+
+	c_att_skill_25 	MB_ATT_GRAPPLE_HOOK
+	c_att_names_25 	"Grapple Hook"
+	c_att_ranks_25	0,0
+	c_att_descs_25	"^3[CS4]"
+
+	c_att_skill_26 	MB_ATT_DISP_FORCE
+	c_att_names_26 	"Force Aura"
+	c_att_ranks_26	0,0
+	c_att_descs_26	"Force Dispenser"
+
+	c_att_skill_27 	MB_ATT_PISTOL
+	c_att_names_27 	"Exile's Rusty Blaster"
+	c_att_ranks_27	2,0,2
+	c_att_descs_27	"Mag Reload, 10%- Fire Rate/Damage"
+
+	c_att_skill_28	MB_ATT_BASESPEED
+	c_att_names_28	"Speed (250)"
+	c_att_ranks_28	2
+
+
+	c_att_skill_30	MB_ATT_FP_TEAM_FORCE
+	c_att_names_30	"Force Energize"
+	c_att_ranks_30	2,0,2
+
+	c_att_skill_31	MB_ATT_FP_STASIS
+	c_att_names_31	"Force Stasis"
+	c_att_ranks_31	2,0,0
+
+	c_att_skill_32	MB_ATT_FP_DRAIN
+	c_att_names_32	"Force Drain"
+	c_att_ranks_32	0,2,2
+
+	c_att_skill_33	MB_ATT_FP_PUSH
+	c_att_names_33	"Force Push"
+	c_att_ranks_33 	0,0,2
+
+	c_att_skill_34	MB_ATT_FP_PULL
+	c_att_names_34	"Force Pull"
+	c_att_ranks_34	0,0,2
+	
+	c_att_skill_35	MB_ATT_FP_ABSORB
+	c_att_names_35	"Force Absorb"
+	c_att_ranks_35	0,2,0
+
+	c_att_skill_36	MB_ATT_FP_TEAM_HEAL
+	c_att_names_36	"Force Team Heal"
+	c_att_ranks_36	4
+
+	c_att_skill_37	MB_ATT_FP_LIGHTNING
+	c_att_names_37	"Force Lightning"
+	c_att_ranks_37	2,0,2
+
+	c_att_skill_38	MB_ATT_FP_GRIP
+	c_att_names_38	"Force Grip"
+	c_att_ranks_38	2,0,2
+
+	c_att_skill_39	MB_ATT_REGEN
+	c_att_names_39	"Force Regen (150%)"
+	c_att_ranks_39	0
+	
+	c_att_skill_40	MB_ATT_POWER
+	c_att_names_40	"FP (140)"
+	c_att_ranks_40	0
+
+	c_att_skill_41	MB_ATT_FORCEBLOCK
+	c_att_names_41	"Force Block"
+	c_att_ranks_41	0,0,2
+
+	c_att_skill_42	MB_ATT_FP_REPULSE
+	c_att_names_42	"Force Repulse"
+	c_att_ranks_42	0
+	c_att_descs_42	"^3[CS3]"
+
+	c_att_skill_43	MB_ATT_FP_BLIND
+	c_att_names_43	"Force Blinding"
+	c_att_ranks_43	0
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel			"models/weapons2/kotor_hpistol/kotor_hpistol_w.glm"
+	NewViewModel			"models/weapons2/kotor_hpistol/kotor_hpistol.md3"
+	Icon				"gfx/hud/w_icon_kotor_hpistol"
+	flashsound0			"sound/weapons/kotor/fire_hvy.wav"
+	WeaponName			"Exile's Rusty Blaster"
+	damageMod			.9
+	rateMod				1.1
+	hasAnimOverrides 1
+	MuzzleEffect null
+animReadyRun BOTH_JANGO_PISTOL_IDLE
+animReady BOTH_JANGO_PISTOL_IDLE
+animReadyWalk TORSO_WEAPONIDLE2
+animReadyNoAmmo BOTH_ATTACK2 
+animAttackRun BOTH_ATTACK2 
+animAttack BOTH_ATTACK2 
+animAttackWalk BOTH_ATTACK2 
+}
+
+description "The Exile
+
+A veteran Jedi general from the Mandalorian Wars. A wound in the force with a aptitude for leadership and versatility.
+
+^2Weaponry:
+- Melee
+- The Exile's Lightsaber
+- Exile's Lightsaber Staff (Staff/Blue/Red)
+- Single Light Saber (Yellow/Red/Purple)
+- Dual Sabers (Duals/Cyan/Purple)
+- Shoto Lightsaber (Cyan/Purple/Red/Yellow)
+-- Saber/Blaster Defense (2)
+-- Blaster Deflect (2)
+
+^5Force Powers:
+- Jump (1)
+- Sense (1)
+- Push (2)
+- Pull (1)
+
+^8Attributes:
+- Dexterity (1)
+- Rally
+- Healing (1)
+- Force Block (1)
+- Anti Mind Trick (1)"
