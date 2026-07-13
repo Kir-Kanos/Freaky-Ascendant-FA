@@ -3,7 +3,7 @@
 ClassInfo
 {
 	name				"kte2_SithOff"
-	weapons				WP_SABER|WP_MELEE|WP_BLASTER_PISTOL|WP_THERMAL|WP_E_22
+	weapons				WP_SABER|WP_MELEE|WP_BLASTER_PISTOL|WP_THERMAL
 		
 	attributes			MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,1|MB_ATT_PISTOL,1|MB_ATT_DEXTERITY,1|MB_ATT_STAMINA,3|MB_ATT_DODGE,2|MB_ATT_RALLY|MB_ATT_DISP_FORCE,1
 	
@@ -153,7 +153,7 @@ WeaponInfo2
 	flashsound0		"sound/weapons/kotor/fire_light.wav"
 	Altflashsound0	"sound/weapons/kotor/fire_power1.wav"
 	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
-    	WeaponName		"Heavy Sith Blaster Pistol"
+    WeaponName		"Heavy Sith Blaster Pistol"
 	hasAnimOverrides 1
 	animStand BOTH_STAND1
 	animReadyRun BOTH_PISTOL_IDLE2
@@ -164,8 +164,9 @@ WeaponInfo2
 	animAttack BOTH_PISTOL_ATTACK
 	animAttackWalk BOTH_PISTOL_ATTACK
 	animCharge BOTH_PISTOL_ATTACK
-	damagemod 1.30
-	rateMod 1.50
+	damagemod 1.25
+	FPMult 1.25
+	rateMod 1.40
 	Clipsize 20
 	altfireenabled		0
 }
@@ -202,11 +203,11 @@ Ruthless Customizable Hybrid Leaders with high tech weaponry and martial skills 
 -- 5% less Reach
 > Vibrostaff (Staff)
 -- 19% more Reach
-- Old Republic Blaster Pistol (1)
+- Heavy Sith Blaster Pistol (1)
 -- Mag Reload
 -- 15% faster Movement
--- 20% more Damage
--- 40% less RoF
+-- 25% More Damage/FP Drain
+-- 40% Mess RoF
 -- Alt Fire Disabled
 -- Less Clip size
 
@@ -219,7 +220,7 @@ Ruthless Customizable Hybrid Leaders with high tech weaponry and martial skills 
 
 ^3Abilities:
 - Gunkick ^3[CS3]"
-- Repremand (Resource Dispenser) ^3
+- Repremand (Resource Dispenser 1) ^3
 - Medpac ^3[CS4]
 - Dodge (2) ^3[CS1]
 - Dex Roll ^3[CS2]
