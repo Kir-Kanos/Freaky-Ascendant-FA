@@ -5,7 +5,7 @@ ClassInfo
 	name		"kte3_SithTRHVY"
 	weapons			WP_SABER|WP_MELEE|WP_CONC_NADE
 
-	attributes		MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_BLAST_ARMOUR|MB_ATT_MICRO_GRENADES,3
+	attributes		MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_BLAST_ARMOUR
 
 	maxhealth		80
 	
@@ -22,7 +22,9 @@ ClassInfo
 	resource RESOURCE_STAMINA
 	forcepool 70
 	
-	speed           	0.8
+	basespeed	160
+	rankbasespeed	170
+
 	extralives		1
 
 	knockbacktaken		.9
@@ -33,7 +35,6 @@ ClassInfo
 	WP_E22Flags		HELD_ALTRELOAD|HELD_SLOW
 	WP_MinigunFlags		HELD_SLOW
 	WP_PLX1Flags		HELD_SLOW|HELD_FLAME|HELD_LIFT
-	WP_UGLFlags		HELD_ALTRELOAD|HELD_CRIPPLE
 	
 	uioverlay_r "gfx/icons/infantry"
 	uioverlay_c "gfx/icons/hybrid"
@@ -82,7 +83,7 @@ ClassInfo
 	c_att_skill_4	MB_ATT_BLASTER
 	c_att_names_4	"Sith Blaster Rifle"
 	c_att_ranks_4	2,2,2
-	c_att_descs_4	"Based on E-11, Alt Reload"
+	c_att_descs_4	"Based on E-11, Mag Reload"
 	
 	c_att_skill_5	MB_ATT_RESPAWNS
 	c_att_names_5	"Reinforcements"
@@ -115,10 +116,10 @@ ClassInfo
 	c_att_ranks_11	6,6
 	c_att_descs_11	"PLX, 50%- Damage, Lifts, Ignites"
 
-	c_att_skill_12	MB_ATT_UGL
-	c_att_names_12	"Sith Grenade Launcher"
-	c_att_ranks_12	30
-	c_att_descs_12	"3 Conc Rounds, Slows on hit, 10%+ Damage"
+	c_att_skill_12	MB_ATT_BASESPEED
+	c_att_names_12	"Speed (170)
+	c_att_ranks_12	6
+
 }
 
 
@@ -202,31 +203,6 @@ WeaponInfo4
 	Icon				"gfx/hud/w_icon_e60r_launcher"
 	WeaponName			"Gravitational Rupture Rocket"
  Damagemod .5
-}
-
-WeaponInfo5
-{
-WeaponToReplace WP_UGL
-WeaponBasedOff WP_UGL
-NewWorldModel		"models/weapons2/cp-50_repeater/cp-50_repeater_w.glm"
-NewViewModel		"models/weapons2/cp-50_repeater/cp-50_repeater.md3"
-FlashSound0 "sound/weapons/upl/fire_mortar.wav"
-altFlashSound0 "sound/weapons/dc17m/alt_fire.wav"
-Icon				"gfx/hud/w_icon_cp-50_repeater"
-WeaponName "Sith Grenade Launcher"
-damagemod 1.10
-}
-
-WeaponInfo6
-{
-WeaponToReplace WP_CONC_NADE
-WeaponBasedOff WP_CONC_NADE
-NewWorldModel "models/weapons2/dummyblaster/model.glm"
-NewViewModel "models/weapons2/dummy/dummy.md3"
-Icon	"gfx/hud/mgs/weapon_melee"
-WeaponName "Grenade Launcher Ammo"
-primfireenabled 0
-altFireEnabled 0
 }
 
 description	"Sith Heavy Trooper 
