@@ -1,0 +1,117 @@
+//Stromboli
+
+ClassInfo
+{
+	name				"ktg2_TwoFinger"
+	MBClass			MB_CLASS_HERO
+	classNumberLimit	1
+	
+	weapons			WP_MELEE|WP_DC_CARBINE|WP_CRYO_NADE|WP_STUN_BATON
+
+	attributes	MB_ATT_AMMO,3|MB_ATT_TRACKING_BEACON|MB_ATT_WOOKIEE_FURY,1|MB_ATT_HEALING,3|MB_ATT_DODGE,3|MB_ATT_DC_CARBINE,1|MB_ATT_DEXTERITY,1|MB_ATT_BLAST_ARMOUR|MB_ATT_BUNNY_HOP,1|MB_ATT_FLOAT_HOP|MB_ATT_CRYOBAN_GRENADES,3|MB_ATT_STUN_BATON,2
+
+forcepowers	FP_RAGE,1
+
+classflags	CFL_BLOODYMELEE
+	
+	WP_MeleeFlags	HELD_LOWDAMAGE
+	WP_DCCarbineFlags	HELD_PULSE|HELD_FLAME|HELD_ALTRELOAD|HELD_CRIPPLE|HELD_STUN|HELD_DISRUPTIFY
+
+	maxhealth		200
+	
+	maxarmor	40
+	
+	baseSpeed 245
+
+	Resource			RESOURCE_ENERGY
+	forcepool		130
+
+	forceregen		2
+
+	bargeSoundOverride	"sound/chars/han_anh/misc/victory1.mp3"
+
+	special1				EAS_HI_DODGE
+	special2				EAS_HI_DEX
+	special3				EAS_FP_RAGE
+ 	special4    				EAS_HI_BARGE
+
+	model		"prisoner"
+	skin		"default"
+	uishader	"models/players/prisoner/mb2_icon_default"
+	
+	flourishAnim 	BOTH_STAND1_TALK3
+	bowAnim BOTH_HAN_TAUNT
+	
+	uioverlay 		"gfx/icons/spec_infantry"
+	modelscale      	1
+
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_DC_CARBINE
+	WeaponBasedOff		WP_DC_CARBINE
+	NewWorldModel		"models/weapons2/kotor_ionpistol/kotor_ionpistol_w.glm"  
+ 	NewViewModel		"models/weapons2/kotor_ionpistol/kotor_ionpistol.md3"
+	Icon			"gfx/hud/w_icon_kotor_ionpistol"					
+	FlashSound0		"sound/weapons/demp2/fire.mp3"
+	FlashSound1		"sound/weapons/demp2/fire.mp3"
+	FlashSound2		"sound/weapons/demp2/fire.mp3"
+	FlashSound3		"sound/weapons/demp2/fire.mp3"
+	MuzzleEffect		"blaster/MuzzleFlash01B"
+	MissileEffect		"Blaster/Shot04B"
+	AltMissileEffect	"Blaster/Shot04B"
+   	MissileHitHumanEffect	"SBD/Cortosis_blue"
+	MissileHitDroidEffect	"SBD/Cortosis_blue"
+	MissileMissEffect	"SBD/Cortosis_blue"
+	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
+	WeaponName		"Overcharged Pulse Pistol"    					
+	FPMult     		2.5
+	customAmmo 1000
+	DamageMod 1.50
+	customAmmo 		800
+	clipsize 		24
+	rateMod 2.5
+	Altfireenabled	0
+	hasAnimOverrides 1
+	animReadyRun TORSO_WEAPONIDLE2
+	animReady TORSO_WEAPONIDLE2
+	animReadyWalk TORSO_WEAPONIDLE2
+	animReadyNoAmmo BOTH_ATTACK2 
+	animAttackRun BOTH_ATTACK2 
+	animAttack BOTH_ATTACK2 
+	animAttackWalk BOTH_ATTACK2 
+}
+
+description	"Gerlon Two-Fingers
+
+A scarred duelist who lost his fingers due to an unstable blaster pistol, forever effecting his aim, but not his ability to continue overcharging said pistol.
+
+^2Weaponry:
+- Two Fingered Melee
+-- 50% Less Damage
+-- Re-Open Wound (Bloody Melee)
+- Overcharged Ion Pistol (DC Carbine 1)
+-- 50% More Damage
+-- 150% More FP Damage 
+-- 100% More RoF
+-- Pulses/Ignites/Stuns/Slows
+-- Mag Reload
+- Stun Baton (2)
+- CryoBan Grenades (3)
+
+^8Attributes:
+- Tracking Beacon
+- Dexterity (1)
+- Slow Faller 
+- Bunny Hop (1)
+- Blast Armor
+- Healing (3)
+- Two-Fingered Wrath (Fury 1)
+
+^3Abilities:
+- Dodge (2) ^3[CS1]
+- Two-Fingered Roll ^3[CS2]
+- Overcharge (Force Rage 1) ^3[CS3]
+- Shoulder Barge ^3[CS4 Melee]"

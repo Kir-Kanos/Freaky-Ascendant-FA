@@ -4,7 +4,7 @@ ClassInfo
 {
 	name			"ptg3_ClonePhase2"
 	weapons		WP_MELEE|WP_CLONE_PISTOL
-	attributes	MB_ATT_AMMO,3|MB_ATT_CLONE_PISTOL,1|MB_ATT_BACTA,1
+	attributes	MB_ATT_AMMO,3|MB_ATT_CLONE_PISTOL,1
 	
 	MBClass		MB_CLASS_CLONETROOPER
 	
@@ -15,14 +15,14 @@ ClassInfo
 	
 	extralives		2
 
-	maxhealth		60
+	maxhealth		80
 	
 	maxArmor			25
 	
 	knockbacktaken 0.9
 	
 	special1			EAS_HI_SPRINT
-	special3			EAS_HI_MEDPAC
+
 	special4 		EAS_HI_GRAPPLEHOOK
 	
 	flourishAnim BOTH_MELEE1
@@ -88,36 +88,36 @@ ClassInfo
 	
 	c_att_skill_1	MB_ATT_DC_CARBINE
 	c_att_names_1	"DC-15S Clone Carbine"
-	c_att_ranks_1	1,1
+	c_att_ranks_1	1,1,0
 
 	c_att_skill_2	MB_ATT_CLONERIFLE
 	c_att_names_2	"DC-15A Clone Rifle"
-	c_att_ranks_2	2
+	c_att_ranks_2	2,1
 
 	c_att_skill_3	MB_ATT_CLONEBLOBS
 	c_att_names_3	"> Clone Rifle Conc Blobs"
-	c_att_ranks_3	2
+	c_att_ranks_3	1,1
 
 	c_att_skill_4	MB_ATT_STRONGBLOBS
 	c_att_names_4	"> Clone Rifle Ion Blobs"
-	c_att_ranks_4	2
+	c_att_ranks_4	1,1
 
 	c_att_skill_5	MB_ATT_MINIGUN
 	c_att_names_5	"Z-6 Rotary Cannon (Minigun)"
-	c_att_ranks_5	8
+	c_att_ranks_5	8,0
 	c_att_descs_5	"38% faster RoF, 5% more Dmg, 10% more FP Dmg"
 
 	c_att_skill_6	MB_ATT_PLX1
 	c_att_names_6	"PLX-1 Rocket Launcher"
-	c_att_ranks_6	11
+	c_att_ranks_6	8
 
 	c_att_skill_7	MB_ATT_PULSE_GRENADES
 	c_att_names_7	"Pulse Grenade"
-	c_att_ranks_7	4
+	c_att_ranks_7	1,1
 	
 	c_att_skill_8	MB_ATT_RESPAWNS
 	c_att_names_8	"Reinforcement"
-	c_att_ranks_8	10
+	c_att_ranks_8	8
 	c_att_descs_8   "2 default"
 
 	c_att_skill_9	MB_ATT_STAMINA
@@ -165,8 +165,6 @@ A trooper characterized by heavier armor and weaponry choices compared to his pe
 - Melee
 - DC-15s Clone Pistol (1)
 
-^6Inventory:
-- Medpac ^3[CS3]
 
 ^8Attributes:
 - Reinforcement (2)

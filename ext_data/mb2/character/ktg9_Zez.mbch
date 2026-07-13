@@ -15,7 +15,9 @@ ClassInfo
 	haterate	.80
 	
 	forcepowers	FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_SEE,2|FP_MINDTRICK,3|FP_DRAIN,1|FP_SABERTHROW,3|FP_PULL,3|FP_PROTECT,2|FP_BLIND,1
-
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
 	classflags CFL_NOPICKUPS
 	WP_MeleeFlags	HELD_SPEED
 
@@ -67,6 +69,7 @@ A Stealth-Oriented Sentinel with a fast saber style and high utility.
 - Saber Throw (3)
 
 ^8Attributes:
+- Heal capped at 35hp
 - Cloak (2) ^3[CS2]
 - Environment Protection (1)
 - Force Block (2)
