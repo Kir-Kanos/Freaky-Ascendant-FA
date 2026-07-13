@@ -6,12 +6,12 @@ ClassInfo
 	MBClass			MB_CLASS_SITH
 	classNumberLimit	2
 
-	weapons			WP_MELEE|WP_SABER
+	weapons			WP_MELEE|WP_SABER|WP_ROCKET_LAUNCHER
 
 	forcepowers		FP_LEVITATION,3|FP_DRAIN,2|FP_PULL,3|FP_PUSH,3|FP_SEE,3|FP_LIGHTNING,1|FP_GRIP,2
 
 	attributes		MB_ATT_FORCEBLOCK,3|MB_ATT_FORCEFOCUS,3|MB_ATT_FP_REPULSE,1|MB_ATT_FLIPKICK,1|MB_ATT_HEALING,1|MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_DEXTERITY,3|MB_ATT_DASH,2|MB_ATT_INAIR_FORCE_REGEN
-
+	WP_RocketLauncherFlags HELD_LIFESTEAL|HELD_FLASH|HELD_FORCEFOCUS|HELD_LIFT
 	forcepool	125
 	rankforcepool	150
 	forceregen	1.1
@@ -133,7 +133,32 @@ WeaponInfo0
 	Icon			"models/weapons2/halo_melee/icon.png"
 	WeaponName		"Martial Arts"
 }
-
+WeaponInfo1
+{
+	WeaponToReplace		WP_ROCKET_LAUNCHER
+	WeaponBasedOff		WP_ROCKET_LAUNCHER
+	NewWorldModel		"models/weapons2/dummyblaster/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	MuzzleEffect		"gfx/effects/forceflare"
+	MissileEffect		"Force/inv_wave"
+	MissileMissEffect	"mustafar/volcano1_enhanced2"
+	hasAnimOverrides 	1
+	animReady 			BOTH_MELEE_BLOCK_BLASTER_L 
+	animReadyWalk 		BOTH_MELEE_BLOCK_BLASTER_L
+	animReadyRun 		BOTH_MELEE_BLOCK_BLASTER_L
+	animReadyNoAmmo 	BOTH_PISTOL_IDLE
+	animAttack 			BOTH_SUPERPUSH
+	animAttackRun		BOTH_SUPERPUSH
+	animAttackWalk 		BOTH_SUPERPUSH
+	Icon				"gfx/hud/HUD_body_blue.tga"
+	WeaponName			"Thought Bomb"
+	clipSize 			1
+	CustomAmmo 			1
+	altfireenabled 0
+	velocityMod 0.6
+	splashRadius 300
+	splashdamage 30
+}
 description	"Sith Forcemaster 
 
 Dark Side masters who forego the use of a Lightsaber in favor of martial arts and Force proficiency.
@@ -149,6 +174,12 @@ Dark Side masters who forego the use of a Lightsaber in favor of martial arts an
 -- 160% Spec Dmg mult
 -- 40% less Reach
 -- 167% more Radius
+
+- Thought Bomb (Rocket Launcher)
+-- 300 splash radius
+-- 30 splash damage
+-- 40% slower velocity
+-- Lifts/blinds/lifesteals/force focuses on hit
 
 ^5Force Powers:
 - Jump (3)

@@ -2,7 +2,7 @@
 ClassInfo
 {
 	name				"ktg3_Smuggler"
-	weapons				WP_SABER|WP_MELEE|WP_MANDO_PISTOL|WP_TRIP_MINE
+	weapons				WP_SABER|WP_MELEE|WP_MANDO_PISTOL
 
 	attributes			MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,3|MB_ATT_MANDO_PISTOL,1|MB_ATT_DEXTERITY,1|MB_ATT_QUICKTHROW,1|MB_ATT_DODGE,2
 	
@@ -90,7 +90,7 @@ uishader_1     "models/players/jedi_tf/mb2_icon_dxun"
 	c_att_skill_4		MB_ATT_SHOTGUN
 	c_att_names_4		"Underworld Scattergun"
 	c_att_ranks_4		4,4
-	c_att_descs_4		"Based on Shotgun,"
+	c_att_descs_4		"Based on Shotgun, 15%+ RoF, 60%- Damage"
 	
 	c_att_skill_5		MB_ATT_TRIP_MINES
 	c_att_names_5		"Cheap-Shot Trip Mine"
@@ -112,7 +112,7 @@ uishader_1     "models/players/jedi_tf/mb2_icon_dxun"
 	c_att_descs_8		"1 default"
 
 	c_att_skill_9		MB_ATT_GRAPPLE_HOOK
-	c_att_names_9		"Escape Line (Grapple)"
+	c_att_names_9		"Grapple Hook"
 	c_att_ranks_9		2,4
 	c_att_descs_9		"^3[CS4]"
 }
@@ -125,7 +125,7 @@ WeaponInfo0
 	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
 	NewViewModel		"models/weapons2/dummy/dummy.md3"      
 	Icon				"gfx/hud/w_icon_oldrepswords"
-	WeaponName			"Vibrosabers" 
+	WeaponName			"Vibrosaber" 
 	SelectSound 		"sound/weapons/blade/slash2.mp3"
 }
 
@@ -150,7 +150,8 @@ WeaponInfo1
 	PowerupShotEffect		"Blaster/Shot04r"
 	ChargeEffect			"gfx/effects/bryarfrontflash"
 	MissileMissEffect 		"effects/blaster/Impact_Wall01R"
-
+	damagemod	1.25
+	ratemod	1.35
 }
 
 WeaponInfo2
@@ -215,18 +216,26 @@ description	"Underworld Smuggler
 Quick flankers with illegal weaponry.
 
 ^2Weaponry:
-- Melee (Extremely fast, built for pocket sand and gunkicks)
-- Vibrosabers (Dual-wielded swords, aggressive stance)
-- Modified Heavy Blaster (High damage per shot, mag reload)
-- Underworld Scattergun (Devastating close-range punch, low capacity)
+- Melee
+-- 10% Faster Swings
+-- 15% Faster Movement Speed
+- Vibrosaber
+-- Low Damage (125)
+-- Dual Vibrosabers (Duals)
+-- Single Vibrosaber (Cyan/Blue)
+- Modified Heavy Blaster 
+-- Mando Pistol
+-- 25%+ Damage
+-- 35%- Rate Of Fire
+-- Mag Reload
 
 ^8Attributes:
-- Elusive Triggerman (Increased base movement speed)
-- Lightweight Armor (Lower armor value, higher mobility)
-- Pocket Flashbangs & Trip Mines (Disorient and track flanking targets)
+- Dexterity (1)
+- Assemble (3)
+- Ammo (3)
 
 ^3Abilities:
 - Combat Roll ^3[CS2]
 - Dodge (2) ^3[CS1]
-- Underworld Gunkick ^3[CS3]
-- Escape Line ^3[CS4]"
+- Gunkick ^3[CS3]
+- Grapple Hook ^3[CS4]"

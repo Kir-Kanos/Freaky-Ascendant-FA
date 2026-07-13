@@ -10,7 +10,7 @@ ClassInfo
 	classNumberLimit 	3
 	knockbackTaken		0.8
 	modelscale 	        1.035
-	basespeed	255
+	basespeed	220
 	maxhealth	100
 	maxarmor	100
 	
