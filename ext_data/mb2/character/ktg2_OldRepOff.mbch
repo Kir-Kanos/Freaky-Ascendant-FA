@@ -154,6 +154,7 @@ WeaponInfo2
  WeaponName		"Heavy Blaster Pistol"
 	ChargeSound			"sound/weapons/leia_pistol/altcharge.mp3"
 damagemod 1.30
+FPMult 1.30
 rateMod 1.40
 Clipsize 20
 altfireenabled		0
