@@ -51,9 +51,9 @@ WeaponInfo0
 {
 WeaponToReplace		WP_CLONE_PISTOL
 WeaponBasedOff		WP_CLONE_PISTOL
-NewWorldModel		"models/weapons2/blaster_pistol/blaster_pistol_w.glm"
-NewViewModel		"models/weapons2/blaster_pistol/blaster_pistol.md3"
-Icon				"gfx/hud/w_icon_blaster_pistol"
+NewWorldModel		"models/weapons2/blaster_pistol/blaster_pistol_w1.glm"
+NewViewModel		"models/weapons2/blaster_pistol/blaster_pistol1.md3"
+Icon				"gfx/hud/w_icon_nico_pistol"
 WeaponName			"Akimbo Smuggler Pistols"
 MuzzleEffect		"Blaster/MuzzleFlash01B"
 AltMuzzleEffect		"Blaster/MuzzleFlash01B"
