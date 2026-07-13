@@ -9,8 +9,8 @@ ClassInfo
 	modelscale 		1
 	resource		resource_stamina
 	forcePool	120
-	attributes		MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_WRISTLASER,1|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_POISON_DART,2|MB_ATT_BLAST_ARMOUR,1|MB_ATT_AMMO,3|MB_ATT_HEALING,2|MB_ATT_TRACKING_BEACON|MB_ATT_CRYOBAN_GRENADES,2|MB_ATT_PULSE_GRENADES,3|MB_ATT_THROWER_LIGHTNING|MB_ATT_DEXTERITY,3|MB_ATT_UGL|MB_ATT_TRIP_MINES,3|MB_ATT_STAMINA,3
-	forcepowers		FP_SEE,1|FP_SABER_DEFENSE,1|FP_SABER_OFFENSE,3|FP_PROTECT,1
+	attributes		MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_WRISTLASER,1|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_POISON_DART,2|MB_ATT_BLAST_ARMOUR,1|MB_ATT_AMMO,3|MB_ATT_HEALING,2|MB_ATT_TRACKING_BEACON|MB_ATT_CRYOBAN_GRENADES,2|MB_ATT_PULSE_GRENADES,3|MB_ATT_THROWER_LIGHTNING|MB_ATT_DEXTERITY,3|MB_ATT_UGL|MB_ATT_TRIP_MINES,3|MB_ATT_STAMINA,3|MB_ATT_PSHIELD
+	forcepowers		FP_SEE,1|FP_SABER_DEFENSE,1|FP_SABER_OFFENSE,3
 	classNumberLimit	1
 	BPmultiplier		.6
 	rankBP	.8
@@ -18,6 +18,7 @@ ClassInfo
 	rankAS	1.1
 	rankCS	1.1
 	saberMaxChain 2
+	rankSaberMaxChain 3,4
 	saberDamageStyle SS_DESANN,300
 	model 			"mira"
 	skin 			"default"
@@ -31,7 +32,7 @@ ClassInfo
 	
 	WP_UGLFlags	HELD_NODISARM
 	WP_RocketLauncherFlags	HELD_KNOCKBACK|HELD_NODISARM|HELD_FLAME
-	WP_ThrowerFlags		HELD_ALTRELOAD|HELD_HIGHDAMAGE|HELD_NODISARM
+	WP_ThrowerFlags		HELD_ALTRELOAD|HELD_SLOW|HELD_NODISARM
 	WP_BowcasterFlags	HELD_ALTRELOAD|HELD_POISON|HELD_NODISARM
 	WP_DCCarbineFlags	HELD_SLOW|HELD_CRIPPLE
 	WP_TripMineFlags	HELD_CRIPPLE
@@ -106,41 +107,41 @@ ClassInfo
 	c_att_skill_12	MB_ATT_STIMPACK
 	c_att_names_12	"Adrenal Stimpack"
 	c_att_ranks_12	0
-	c_att_skill_15 MB_ATT_SABER_MAXCHAIN
-	c_att_names_15 "Saber Chain Limit (3/4)"
-	c_att_ranks_15 1,1
-	c_att_descs_15 "2 default"
-	c_att_skill_16 MB_ATT_BP_MULTIPLIER
-	c_att_names_16 "Saber BP (80%)"
-	c_att_ranks_16 0
-	c_att_skill_17 MB_ATT_CS_MULTIPLIER
-	c_att_names_17 "Saber CS (110%)"
-	c_att_ranks_17 1
-	c_att_skill_18 MB_ATT_AS_MULTIPLIER
-	c_att_names_18 "Saber AS (110%)"
-	c_att_ranks_18 1
-	c_att_skill_19 MB_ATT_SS_PURPLESTYLE
-	c_att_names_19 "Purple Saber Style"
-	c_att_ranks_19 1
-	c_att_descs_19 "25% less damage (300)"
-	c_att_skill_20 MB_ATT_FP_SABER_DEFENSE
-	c_att_names_20 "Saber Defense"
-	c_att_ranks_20 0,2
-	c_att_skill_21 MB_ATT_GUN_DEFENSE
-	c_att_names_21 "Blaster Defense"
-	c_att_ranks_21 1,1
-	c_att_skill_23 MB_ATT_FP_PUSH
-	c_att_names_23 "Force Push"
-	c_att_ranks_23 0,1
-	c_att_skill_24 MB_ATT_FP_PULL
-	c_att_names_24 "Force Pull"
-	c_att_ranks_24 0,1
-	c_att_skill_25 MB_ATT_FP_TELEPATHY
-	c_att_names_25 "Force Mind Trick"
-	c_att_ranks_25 1
-	c_att_skill_26 MB_ATT_FP_SPEED
-	c_att_names_26 "Force Speed"
-	c_att_ranks_26 1
+	c_att_skill_15	MB_ATT_SABER_MAXCHAIN
+	c_att_names_15	"Saber Chain Limit (3/4)"
+	c_att_ranks_15	1,1
+	c_att_descs_15	"2 default"
+	c_att_skill_16	MB_ATT_BP_MULTIPLIER
+	c_att_names_16	"Saber BP (80%)"
+	c_att_ranks_16	0
+	c_att_skill_17	MB_ATT_CS_MULTIPLIER
+	c_att_names_17	"Saber CS (110%)"
+	c_att_ranks_17	1
+	c_att_skill_18	MB_ATT_AS_MULTIPLIER
+	c_att_names_18	"Saber AS (110%)"
+	c_att_ranks_18	1
+	c_att_skill_19	MB_ATT_SS_PURPLESTYLE
+	c_att_names_19	"Purple Saber Style"
+	c_att_ranks_19	1
+	c_att_descs_19	"25% less damage (300)"
+	c_att_skill_20	MB_ATT_FP_SABER_DEFENSE
+	c_att_names_20	"Saber Defense"
+	c_att_ranks_20	0,2
+	c_att_skill_21	MB_ATT_GUN_DEFENSE
+	c_att_names_21	"Blaster Defense"
+	c_att_ranks_21	1,1
+	c_att_skill_23	MB_ATT_FP_PUSH
+	c_att_names_23	"Force Push"
+	c_att_ranks_23	0,1
+	c_att_skill_24	MB_ATT_FP_PULL
+	c_att_names_24	"Force Pull"
+	c_att_ranks_24	0,1
+	c_att_skill_25	MB_ATT_FP_TELEPATHY
+	c_att_names_25	"Force Mind Trick"
+	c_att_ranks_25	1
+	c_att_skill_26	MB_ATT_FP_SPEED
+	c_att_names_26	"Force Speed"
+	c_att_ranks_26	1
 	c_att_skill_27	MB_ATT_FORCEBLOCK
 	c_att_names_27	"Force Block"
 	c_att_ranks_27	1
@@ -236,7 +237,9 @@ WeaponInfo3
 	Icon			"gfx/hud/w_icon_cr-24_flamerifle"
 	WeaponName		"Ion Blast MK III" //High voltage discharge, in game kotor item typically used by droids
 	clipsize 90
-	customammo 678
+	rateMod 0.5
+	ReloadTimeModifier  	1.25
+	customammo 720
 	hasAnimOverrides	1
 	animReadyRun BOTH_MAND_FLAME_READY
 	animReady BOTH_MAND_FLAME_READY
@@ -330,8 +333,9 @@ a Mandalorian Neo-Crusader with demolitions/gadget expertise, a lightdagger, and
 -- 100% more damage
 -- 100% more velocity
 - Ion Blast Mark III (Lightning Thrower)
--- 100% more damage
--- Mag Reload
+-- 50% more RoF
+-- Heavy Weight
+-- 30% slower mag reload
 - Pulse Grenades (3)
 - Cryoban Grenades (2)
 - Deadly Flash Mines (4)
@@ -340,10 +344,10 @@ a Mandalorian Neo-Crusader with demolitions/gadget expertise, a lightdagger, and
 
 ^5Force Powers:
 - Sense (1)
-- Energy Shield (Protect 1)
 
 ^6Inventory:
 - Electrobinoculars
+- Personal Shield
 
 ^8Attributes:
 - Healing (2)
