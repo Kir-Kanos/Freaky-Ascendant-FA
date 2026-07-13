@@ -39,8 +39,8 @@ RoundNPC	"DarkJediMage"
 
 	saberSpecialDamage 1.25
 
-	special1 EAS_FP_REPULSE
-	special2 EAS_FP_LIGHTNING
+	special1 EAS_FP_SABERTHROW
+	special2 EAS_FP_REPULSE
 	special3 EAS_FP_DRAIN
 	special4 EAS_HI_SPAWNER
 	
@@ -79,9 +79,9 @@ A middling Sith who is hard carried by his specialized Force Drain and Sith Hit-
 - Push (2) 
 - Sense (1) 
 - Grip (1)
-- Lightning (1) ^3[CS3]
-- Drain (3) ^3[CS2]
-- Repulse ^3[CS1]
+- Lightning (1)
+- Drain (3) ^3[CS3]
+- Repulse ^3[CS2]
 
 ^8Attributes:
 - Heal capped at 35hp
