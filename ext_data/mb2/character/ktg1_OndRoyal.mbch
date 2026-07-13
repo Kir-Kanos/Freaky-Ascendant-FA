@@ -2,7 +2,7 @@
 ClassInfo
 {
 	name				"ktg1_OndRoyal"
-	weapons				WP_MELEE|WP_BLASTER_PISTOL|WP_CONC_NADE|WP_TRIP_MINE
+	weapons				WP_MELEE|WP_BLASTER_PISTOL
 
 	attributes			MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_PISTOL,1
 
