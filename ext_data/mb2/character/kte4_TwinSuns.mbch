@@ -4,7 +4,7 @@ ClassInfo
 {
 	name				"kte4_TwinSuns"
 	weapons				WP_MELEE|WP_SABER
-	attributes			MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_SHIELD_RECHARGE,1|MB_ATT_STAMINA,3|MB_ATT_DEXTERITY,3|MB_ATT_POISON_DART,6|MB_ATT_STIMPACK|MB_ATT_FLIPKICK,1|MB_ATT_BUNNY_HOP,1|MB_ATT_TRACKING_BEACON|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_ANTI_MT,1|MB_ATT_HEALING,1|MB_ATT_AMMO,3|MB_ATT_ROUNDSPAWNER
+	attributes			MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_SHIELD_RECHARGE,1|MB_ATT_STAMINA,3|MB_ATT_DEXTERITY,3|MB_ATT_POISON_DART,6|MB_ATT_STIMPACK|MB_ATT_FLIPKICK,1|MB_ATT_BUNNY_HOP,1|MB_ATT_TRACKING_BEACON|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_ANTI_MT,1|MB_ATT_HEALING,1|MB_ATT_AMMO,3|MB_ATT_PSHIELD|MB_ATT_ROUNDSPAWNER
 	saber1				kotor_shortsword
 	saber2				kotor_shortsword
 	saberstyle			SS_DUAL|SS_TAVION
@@ -14,7 +14,7 @@ ClassInfo
 	ASmultiplier		1.20
 	rateOfFire_Melee	.8
 
-	forcepowers			FP_SABER_OFFENSE,3|FP_SABER_DEFENSE,2|FP_PROTECT,2
+	forcepowers			FP_SABER_OFFENSE,3|FP_SABER_DEFENSE,2
 	forcepool			100
 	forceregen			0.7
 	maxhealth			140
@@ -35,11 +35,11 @@ ClassInfo
 	classflag			CFL_SEEING_STEALTH|CFL_RUNFASTMELEE|CFL_BLOODYMELEE
 	classNumberLimit	1
 	resource			RESOURCE_STAMINA
+
 	special1			EAS_HI_DEX
-	special2			EAS_HI_STIMPACK
-	meleespecial2			EAS_HI_POISON
-	special3			EAS_HI_CLOAK
-	meleespecial4			EAS_HI_TRACKER
+	special2			EAS_HI_POISON
+	meleespecial3		EAS_HI_TRACKER
+	special4			EAS_HI_CLOAK
 
 
 	isCustomBuild	1
@@ -48,7 +48,7 @@ ClassInfo
 c_att_skill_0	MB_ATT_CLOAK
 c_att_names_0	"Stealth Field Generator"
 c_att_ranks_0	2,2
-c_att_descs_0	"Replaces Gunkick ^3[CS2]"
+c_att_descs_0	"^[CS4]"
 
 c_att_skill_1	MB_ATT_BASESPEED
 c_att_names_1	"Speed Increase (250)"
@@ -100,7 +100,7 @@ Twin assassins, agile and dexterious, they see combat more as a dance than as an
 -- Saber (2)
 
 ^6Inventory:
-- Endocrine Booster (Stimpack) [CS2]
+- Endocrine Booster (Stimpack)
 
 ^8Attributes:
 - Seeraa, The Twin Sun
@@ -114,12 +114,11 @@ Twin assassins, agile and dexterious, they see combat more as a dance than as an
 - Dexterity (3)
 - Anti MT (1)
 - Healing (1)
+- Personal Energy Shield
 
 ^3Abilities:
 - Seeraa, The Twin Sun (Start With Your Sword Dual Wielding Sister)
-- Energy Shield [Protect] (2)
 - Poison Darts (6) ^3[Melee CS2]
 - Dex Roll ^3[CS1]
-- Tracking Darts (6) ^3[Melee CS4]
-- Gunkick ^3[CS3]
-"
+- Tracking Darts (6) ^3[Melee CS3]
+- Gunkick ^3[CS3]"
