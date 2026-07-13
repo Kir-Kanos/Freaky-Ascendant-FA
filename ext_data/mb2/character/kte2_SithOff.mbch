@@ -160,8 +160,8 @@ WeaponInfo2
 	animAttack BOTH_PISTOL_ATTACK
 	animAttackWalk BOTH_PISTOL_ATTACK
 	animCharge BOTH_PISTOL_ATTACK
-	damagemod 1.25
-	FPMult 1.25
+	damagemod 1.30
+	FPMult 1.30
 	rateMod 1.40
 	Clipsize 20
 	altfireenabled		0
