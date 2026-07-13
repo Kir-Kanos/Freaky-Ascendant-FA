@@ -4,7 +4,7 @@ ClassInfo
 {
 	name		"kte1_OndSep"
 
-	weapons			WP_SABER|WP_MELEE|WP_BLASTER_PISTOL|WP_THERMAL
+	weapons			WP_MELEE|WP_BLASTER_PISTOL|WP_THERMAL
 
 	attributes		MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_PISTOL,1
 
@@ -35,6 +35,7 @@ ClassInfo
 	WP_CR2Flags	HELD_ALTRELOAD
 	WP_MeleeFlags	HELD_SPEED
 	WP_ShotgunFlags	HELD_FLAME|HELD_ALTRELOAD
+	WP_PLX1Flags	HELD_ALTRELOAD|HELD_CRIPPLE
 	
 	uioverlay_r "gfx/icons/infantry"
 	uioverlay_c "gfx/icons/hybrid"
@@ -100,8 +101,8 @@ ClassInfo
 	
 	c_att_skill_7	MB_ATT_PLX1
 	c_att_names_7	"Outdated Missile Launcher"
-	c_att_ranks_7	10
-	c_att_descs_7	"PLX, 25%- Damage, Long Reload"
+	c_att_ranks_7	6,6,6
+	c_att_descs_7	"PLX, 85%- Damage, Cripples On Hit, Mag Reload"
 	
 	c_att_skill_8	MB_ATT_CR2
 	c_att_names_8	"Onderonian Blaster Rifle"
@@ -111,7 +112,7 @@ ClassInfo
 	c_att_skill_9	MB_ATT_SHOTGUN
 	c_att_names_9	"Sapper Shotgun"
 	c_att_ranks_9	2,2,4
-	c_att_descs_9	"Ignite, Mag Reload, 1 Shot"
+	c_att_descs_9	"Ignite, Mag Reload, 1 Shot, 50% Less Damage/FP Drain"
 	
 	c_att_skill_10	MB_ATT_RESPAWNS
 	c_att_names_10	"Reinforcements"
@@ -136,8 +137,8 @@ WeaponInfo0
 	NewViewModel		"models/weapons2/e60r_launcher/e60r_launcher.md3"
 	Icon				"gfx/hud/w_icon_e60r_launcher"
 	WeaponName			"Outdated Missile Launcher"
- Damagemod .75
- reloadTimeModifier 1.35
+ Damagemod .15
+ reloadTimeModifier 1.30
 }
 
 WeaponInfo1
@@ -204,8 +205,8 @@ WeaponInfo4
 
 	
 	rateMod 1.40
-	fpmult		1.20
-	damagemod	1.20
+	fpmult		1.15
+	damagemod	1.15
 	velocitymod	1.30
 	customAmmo 700
 
@@ -225,6 +226,8 @@ WeaponInfo5
  Icon    "gfx/hud/w_icon_cp-50_repeater"
  WeaponName   "Sapper Shotgun"
  clipSize           12
+ damagemod	.5
+ fpmult		.5
  altFireEnabled  0
  ReloadTimeModifier  0.95
  CustomAmmo 48
