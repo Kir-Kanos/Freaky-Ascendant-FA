@@ -23,10 +23,9 @@ ClassInfo
 	saber1_2		kotor_vibrostaff
 	saberstyle_2		SS_STAFF
 	
-	
 	extralives		1
 	
-	WP_MinigunFlags	HELD_EXPLOSIVE|HELD_KNOCKBACK|HELD_CRIPPLE|HELD_ALTRELOAD|HELD_SLOW
+	WP_MinigunFlags	HELD_KNOCKBACK|HELD_CRIPPLE|HELD_ALTRELOAD|HELD_SLOW
 	WP_MandoPistolFlags HELD_ALTRELOAD|HELD_SPEED
 	WP_MeleeFlags	HELD_SPEED
 	WP_FireNadeFlags	HELD_CRIPPLE|HELD_FLASH|HELD_SPEED
@@ -90,7 +89,7 @@ c_att_descs_1	"10%+ Damage, 15%- RoF, 15%+ Velocity, Mag Reload, Lightweight"
 c_att_skill_2	MB_ATT_MINIGUN
 c_att_names_2	"Annihilator Cannon"
 c_att_ranks_2	4,4
-c_att_descs_2	"Minigun, Explosive/Knocks Back, High Damage, Heavy, Low RoF"
+c_att_descs_2	"Minigun, Knocks Back, 120%+ Damage/FP Drain, Heavy, Slow Rof"
 
 c_att_skill_3	MB_ATT_EE4
 c_att_names_3	"Mandalorian Blaster Rifle"
@@ -168,7 +167,7 @@ WeaponInfo1
 	NewBarrelModel		"models/weapons2/z6_rotary/rotary_cannon_barrel.md3"
 	MuzzleEffect  	"Blaster/MuzzleFlash01R"
 	altMuzzleEffect  "Blaster/MuzzleFlash01R"
-	MissileEffect 		"Blaster/Shot04R"
+	MissileEffect "effects/Force/destruction.efx"
 	missileMissEffect 	"effects/Grenades/EXP_BaseThermal"
 	MissileHitHumanEffect	"effects/Grenades/EXP_BaseThermal"
 	MissileHitDroidEffect 	"effects/Grenades/EXP_BaseThermal"
@@ -176,15 +175,13 @@ WeaponInfo1
 	AltFlashSound0 "sound/weapons/explosions/coolexplode1.wav"
 	isMinigun 1
 	WeaponName	"Annihilator Cannon"
-	FPMult	2
+	FPMult	2.2
 	rateMod 9
-	damageMod 2
-	splashradius 150
-	splashdamage 35
-	velocityMod	.65
+	damageMod 2.2
+	velocityMod	.70
 	ReloadTimeModifier 2
-	clipsize	8
-	customAmmo	42
+	clipsize	12
+	customAmmo	48
 }
 WeaponInfo2
 {
@@ -292,13 +289,13 @@ Battle proven Mandalorians who is entrusted with specialized weaponry, armor and
 -- 15% Faster Movement
 - Mandalorian Vibrosword
 -- 15% Faster Movement Speed
--- Single Saber
--- Purple/Red Style
--- Dual Saber
--- Duals Style
+-- Single Saber (Purple/Red Style)
+-- Dual Saber (Duals Style)
+-- Vibrostaff (Staff)
 -- Saber Defense (1)
 - Mandalorian Heavy Blaster Pistol (1)
 -- 15% Faster Movement Speed
+-- 10% More Damage, 15% Slower RoF
 
 ^8Attributes:
 - Assemble (2)
