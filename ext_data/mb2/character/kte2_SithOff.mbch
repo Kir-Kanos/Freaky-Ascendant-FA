@@ -89,35 +89,31 @@ ClassInfo
 
 	c_att_skill_5	MB_ATT_FIRE_GRENADES
 	c_att_names_5	"Fire Grenade"
-	c_att_ranks_5	4
+	c_att_ranks_5	4,6
 	
-	c_att_skill_6	MB_ATT_CRYOBAN_GRENADES
-	c_att_names_6	"Cryoban Grenade"
-	c_att_ranks_6	4
+	c_att_skill_6	MB_ATT_EE4
+	c_att_names_6	"Sith Blaster Rifle (EE-4)"
+	c_att_ranks_6	3,4,2
 	
-	c_att_skill_7	MB_ATT_EE4
-	c_att_names_7	"Sith Blaster Rifle (EE-4)"
-	c_att_ranks_7	3,4,2
-	
-	c_att_skill_8	MB_ATT_RESPAWNS
-	c_att_names_8	"Reinforcements"
-	c_att_ranks_8	14
-	c_att_descs_8	"1 default"
+	c_att_skill_7	MB_ATT_RESPAWNS
+	c_att_names_7	"Reinforcements"
+	c_att_ranks_7	14
+	c_att_descs_7	"1 default"
 
-	c_att_skill_9	MB_ATT_FP_DARKRAGE
-	c_att_names_9	"Charge"
-	c_att_ranks_9	"6"
-	c_att_descs_9	"Dark Rage 1"
+	c_att_skill_8	MB_ATT_FP_DARKRAGE
+	c_att_names_8	"Charge"
+	c_att_ranks_8	"6"
+	c_att_descs_8	"Dark Rage 1"
 
-	c_att_skill_10	MB_ATT_BASE_TD
-	c_att_names_10	"Plasma Grenades"
-	c_att_ranks_10	2,2,2
-	c_att_descs_10	"Thermal Grenades"
+	c_att_skill_9	MB_ATT_BASE_TD
+	c_att_names_9	"Plasma Grenades"
+	c_att_ranks_9	2,2,2
+	c_att_descs_9	"Thermal Grenades"
 	
-	c_att_skill_11	MB_ATT_GRAPPLE_HOOK
-	c_att_names_11	"Grapple Hook"
-	c_att_ranks_11	4
-	c_att_descs_11	"CS2 in melee"
+	c_att_skill_10	MB_ATT_GRAPPLE_HOOK
+	c_att_names_10	"Grapple Hook"
+	c_att_ranks_10	4
+	c_att_descs_10	"^3[CS2 in melee]"
 }
 
 WeaponInfo0
