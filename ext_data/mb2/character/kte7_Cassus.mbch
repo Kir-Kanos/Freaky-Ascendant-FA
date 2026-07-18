@@ -124,6 +124,20 @@ fpmult		1.30
 velocitymod	1.20
 }
 
+ForceInfo0
+{
+	ForceToReplace		FP_TEAM_FORCE
+	Icon		gfx/2d/logos/mb_mand.tga"
+	ForcePowerName		"Prime Tactics"
+}
+ForceInfo1
+{
+ForceToReplace	FP_RAGE
+Icon	"gfx/mp/new_f_icon_dk_rage"
+ForcePowerName	"Battle Focus"
+}
+
+
 description	"Cassus Fett 
 
 A tactical leader with a heavy blaster pistol and a variety of support tech.
@@ -163,4 +177,6 @@ A tactical leader with a heavy blaster pistol and a variety of support tech.
 -- Blinds, Poisons, Low Damage
 - Mandolorian Armor Scanner (Enemy Scanner) ^3[CS2]
 - Gun Kick ^3[CS3]
-- Mandalorian Combat Shield ^3[CS4]"
+- Mandalorian Combat Shield ^3[CS4]
+- Prime Tactics (Team Energize 1)
+- Battle Focus (Force Rage 1)"
