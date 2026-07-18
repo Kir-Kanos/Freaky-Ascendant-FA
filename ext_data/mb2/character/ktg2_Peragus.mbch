@@ -1,0 +1,192 @@
+ClassInfo
+{
+	name				"ktg2_Peragus"
+	MBClass				MB_CLASS_CLONETROOPER
+	extralives 			3
+	classNumberLimit	3
+	weapons				WP_BLASTER_PISTOL|WP_MELEE|WP_SABER|WP_PULSE_NADE|WP_THROWER
+
+	attributes			MB_ATT_PISTOL,2|MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,3|MB_ATT_SABER_COMBO_NONE|MB_ATT_GETUPS,2|MB_ATT_STUN_BATON,2|MB_ATT_THROWER_LIGHTNING|MB_ATT_BLAST_ARMOUR|MB_ATT_ENV_PROT,1|MB_ATT_QUICKTHROW,1|MB_ATT_PSHIELD|MB_ATT_PULSE_GRENADES,1
+
+	maxhealth 			60
+	maxarmor			25
+	
+	speed				.94
+
+	classflags	CFL_STATVIEWER
+		
+	resource			RESOURCE_ENERGY
+	forcepool 			95
+
+	haterate			.65
+	
+	DamageGiven			1.1
+	knockbackGiven 		1.05
+	
+	special1			EAS_HI_QUICKTHROW
+	special2			EAS_HI_PSHIELD
+
+	saberDamage 		45
+	saber1				reb_wrench_p
+	sabercolor			0
+	saberstyle			SS_TAVION
+	saber1_1 			reb_wrench_s
+	sabercolor_1		0
+	saberstyle_1 		SS_TAVION
+
+	ASMultiplier 		1.05
+	BPMultiplier 		0
+	
+	WP_TripMineFlags 	HELD_SPEED
+	WP_MeleeFlags 		HELD_SPEED
+	WP_PulseNadeFlags 	HELD_SPEED|HELD_LOWDAMAGE
+	WP_SaberFlags		HELD_SPEED
+	WP_StunBatonFlags 	HELD_SPEED|HELD_FLAME
+	WP_BlasterPistolFlags	HELD_SPEED|HELD_DISRUPTIFY|HELD_KNOCKBACK|HELD_ALTRELOAD
+	WP_ThrowerFlags		HELD_SLOW|HELD_FLAME|HELD_CRIPPLE|HELD_ALTRELOAD
+	
+	isCustomBuild		1
+	mbPoints			4
+
+	c_att_skill_0 		MB_ATT_TRIP_MINES
+	c_att_names_0 		"Trip Mines"
+	c_att_ranks_0 		1,1,1
+	c_att_descs_0 		"15% faster Movement"
+
+	c_att_skill_1 		MB_ATT_DET_PACK
+	c_att_names_1 		"Det Packs"
+	c_att_ranks_1 		1,1,1
+	c_att_descs_1 		"15% faster Movement, Dmg increases with rank"
+	
+	uioverlay_l 		"gfx/icons/tactician"
+	uioverlay_r 		"gfx/icons/infantry"
+	modelscale			1.00	
+	
+	model 				"radartech1"
+	skin				"default"
+	uishader 			"models/players/radartech1/mb2_icon_default"
+	
+	tauntAnim 			BOTH_VICTORY_FAST
+	gloatAnim 			BOTH_MAND_PISTOL_MELEE
+	flourishAnim 		BOTH_PISTOL_MELEE
+
+	}
+	WeaponInfo0
+	{
+		WeaponToReplace		WP_BLASTER_PISTOL
+		WeaponBasedOff		WP_BLASTER_PISTOL
+		NewWorldModel		"models/weapons2/kotor_pistol1/pistol_w.GLM"
+		NewViewModel		"models/weapons2/kotor_pistol1/model.md3"
+		Icon				"gfx/hud/w_icon_disruptorpistols_dual"
+		WeaponName			"Mining Laser"
+		MuzzleEffect		"Blaster/MuzzleFlash01Y"
+		AltMuzzleEffect		"Blaster/MuzzleFlash01Y"
+		MissileEffect		"Blaster/Shot03Y"
+		Missile3Effect		"Blaster/Shot03Y"
+		AltMissileEffect	"Blaster/Shot03Y"
+		PowerupShotEffect	"Blaster/Shot04Y"
+		FlashSound0 		"sound/weapons/kotor/fire_power1.mp3"
+		ChargeEffect		"gfx/effects/yellow_bryarFrontFlash"
+		ChargeSound			"sound/weapons/leia_pistol/altcharge.mp3"
+		customammo 			600
+		ratemod 			1.10
+		clipsize 16
+		damagemod 			0.9
+		FPChargeMult		1.5
+		FPMult				1.5
+	}
+
+	WeaponInfo1
+	{
+		WeaponToReplace 	WP_STUN_BATON
+		WeaponBasedOff 		WP_STUN_BATON
+		NewWorldModel 		"models/weapons2/fc_f187/f187.glm"
+		NewViewModel 		"models/weapons2/fc_f187/f187.md3"
+		NewHandsModel 		"models/weapons2/fc_f187/f187_hand.md3"
+		Icon 				"gfx/hud/w_icon_fc_f187_all"
+		WeaponName 			"Fusion Cutter"
+		hasAnimOverrides 	1
+		animReadyRun 		TORSO_WEAPONREADY0
+		animReady 			TORSO_WEAPONREADY0
+		animReadyWalk 		TORSO_WEAPONREADY0
+		animReadyNoAmmo 	TORSO_WEAPONREADY0
+		animAttackRun 		BOTH_ATTACK2
+		animAttack 			BOTH_ATTACK2
+		animAttackWalk 		BOTH_ATTACK2
+		FlashSound0 		"sound/weapons/fusioncutter/cutter_hit.mp3"
+		MissileMissEffect 	"effects/sparks/spark_exp_nosnd"
+		MissileHitHumanEffect "effects/sparks/spark_exp_nosnd"
+		MissileHitDroidEffect "effects/sparks/spark_exp_nosnd"
+		rateMod 			.2
+		damageMod 			.35
+	}
+
+	WeaponInfo2
+	{
+		WeaponToReplace		WP_SABER
+		WeaponBasedOff		WP_SABER
+		NewWorldModel		"models/weapons2/mwrench/mwrench.glm"
+		NewViewModel		"models/weapons2/dummy/dummy.md3"
+		Icon				"gfx/hud/w_icon_mwrench"
+		WeaponName			"Wrench"
+	}
+
+	WeaponInfo3
+	{
+		WeaponToReplace 	WP_THROWER
+		WeaponBasedOff 		WP_THROWER
+		NewWorldModel		"models/weapons2/CR-24_flamerifle/rifle_w.glm"
+		NewViewModel		"models/weapons2/CR-24_flamerifle/rifle.md3"		
+		Icon				"gfx/hud/w_icon_cr-24_flamerifle"
+		WeaponName 			"ARC Caster"
+		customAmmo 			700
+		clipsize 			140
+		damagemod 			1.3
+		ratemod				.80
+		ReloadTimeModifier 	1.30
+	}
+
+description	"Peragus Industrial Worker
+
+Workers using improvised weaponry and mining equipment to defend themselves.
+
+^2Weaponry:
+- Melee
+-- 15% faster Movement
+- Wrench (Cyan Saber)
+-- No Saber/Blaster Block
+-- No Saber Training
+-- 200% more Kb
+-- 40% less Reach
+-- 167% more Radius
+- Mining Laser (Pistol 2)
+-- Mag Reload, Knocks Back On Hit
+-- 10% Slower RoF
+-- 50% more Charged FP Dmg
+-- 50% more FP Drain
+-- 10% less Dmg
+- Pulse Grenade (1)
+-- 50% Less Damage
+- Fusion Cutter (Stun Baton 2)
+-- Ignites on hit, 15% faster Movement, 80% faster RoF, 65% less Dmg
+- Arc Caster (Lightning Thrower)
+-- 20% Faster RoF, 30% More Damage
+-- Ignites/Cripples/Mag Reload
+-- Heavy Weight
+
+^6Inventory:
+- Personal Energy Shield ^3[CS2]
+
+^8Attributes:
+- Reinforcement (3)
+- 35% Faster Hack Rate
+- Blast Armor
+- Get Ups (2)
+- Stat Viewer
+- Ammo (3)
+- 5% more Kb Given
+- Env Protection (1)
+- Assemble (3) 
+
+^3Abilities:
+- Quickthrow (1) ^3[CS1]"

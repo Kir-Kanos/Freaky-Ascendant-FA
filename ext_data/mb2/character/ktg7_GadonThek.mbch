@@ -1,0 +1,120 @@
+ClassInfo
+{
+	name				"ktg7_GadonThek"
+	weapons				WP_A280|WP_MELEE|WP_SABER
+	
+	attributes			MB_ATT_SENSE,3|MB_ATT_FP_MIRALUKA|MB_ATT_CLOAK,2|MB_ATT_SPY_DISGUISE,3|MB_ATT_SPAWNER,1|MB_ATT_A280,3|MB_ATT_DEXTERITY,1|MB_ATT_DODGE,2|MB_ATT_ENV_PROT,1|MB_ATT_RALLY,1|MB_ATT_ANTI_MT,1|MB_ATT_TRACKING_BEACON|MB_ATT_BLAST_ARMOUR|MB_ATT_HEALING,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_ENEMYSCANNER|MB_ATT_ROUNDSPAWNER,1
+
+	MBClass				MB_CLASS_CLONETROOPER
+
+	classNumberLimit	1
+
+	resource RESOURCE_ENERGY
+	forcepool 100
+
+	spawnerNPC "HiddenBek2"
+
+	roundNPC "HiddenBek1"
+	
+	maxhealth			100
+	maxarmor			100
+	
+	forcepowers			FP_SEE,3
+
+	WP_A280Flags	HELD_ALTRELOAD
+	WP_SaberFlags			HELD_SPEED
+
+	special1	EAS_HI_DODGE
+	special2	EAS_HI_ENEMYSCANNER
+	special3	EAS_HI_CLOAK
+	special4 	EAS_HI_SPAWNER
+	
+	model				"gadon_thek"
+	skin				"default"
+	uishader			"models/players/gadon_thek/icon_default"
+	
+	MBClass				MB_CLASS_JEDI
+	classNumberLimit	1
+	classflags			CFL_SEEING_STEALTH|CFL_STATVIEWER
+
+	saber1			kotor_vibrosword
+	saberstyle		SS_MEDIUM	
+	
+	saberdamage 130
+
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_A280 			
+	WeaponBasedOff		WP_A280    			
+	NewWorldModel		"models/weapons2/kotor_carbine/model.glm"
+	NewViewModel		"models/weapons2/kotor_carbine/model.MD3"
+	Icon				"gfx/hud/w_icon_kotorcarbine"
+	WeaponName			"Gadon's Carbine"
+	FlashSound0			"sound/weapons/kotor_carbine/fire.wav"
+	AltFlashSound0			"sound/weapons/kotor_carbine/fire.wav"
+	MuzzleEffect  		"Blaster/MuzzleFlash01R"
+	MissileEffect 		"Blaster/Shot02R"
+	idleAnim  			TORSO_WEAPONREADY3
+	ReloadTimeModifier  0.9
+	FPMult     			0.9
+	damageMod 0.90
+	rateMod 0.85
+}
+WeaponInfo1
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_oldrepswords"
+	WeaponName			"Vibrosaber" 
+	SelectSound "sound/weapons/blade/slash2.mp3"
+}
+ForceInfo0
+{
+	ForceToReplace FP_SEE
+	Icon	"gfx/forcepowers/radar"
+	ForcePowerName "Augmented Eyes"
+	StartSound 	"sound/ambience/kotor/consolebeep03.mp3"
+	LoopSound "sound/ambience/cp_02_lp.wav"
+}
+
+
+}
+
+
+description	"Gadon Thek
+ 
+Augmented Leader of the Hidden Beks, Master Of Stealth and Coorinating Ambushes.
+
+^2Weaponry:
+- Melee
+-- 15% Percent Faster Movement Speed
+- Gadon's Carbine (A280 Level 3)
+-- 10%- Damage, 15%+ RoF, Mag Reload
+- Vibrosaber
+-- 15% Faster Movement Speed
+-- Saber Defense (1)
+-- No Blaster Defense/Deflect
+
+^8Attributes:
+- Augmented Eyes (Sense 3)
+- Enhanced Senses (Miraluka Sight))
+- Cloak (2)
+- Disguise (3)
+- Blast Armor
+- Tracking Beacon
+- Anti MT (1)
+- Environment Protection (1)
+- Dexterity (1)
+- Healing (1)
+- Rally
+- Call In Hidden Bek (Spawner ^3[CS4]
+- Hidden Bek Bodyguard (Hidden Bek Round Spawn)
+
+^8Abilities:
+- Disguise (3) ^3[Change Style Button in MELEE]
+- Optical Scan (Enemy Scanner) ^3[CS2]
+- Dodge ^3[CS1]
+- Cloak ^3[CS3]"

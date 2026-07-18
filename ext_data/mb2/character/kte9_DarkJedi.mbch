@@ -2,18 +2,16 @@ ClassInfo
 {
 	name			"kte9_DarkJedi"
 	weapons			WP_MELEE|WP_SABER
-	attributes		MB_ATT_FORCEFOCUS,2|MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_GUN_DEFENSE,0|MB_ATT_DEFLECT,0|MB_ATT_SABER_MEDIUM,2|MB_ATT_ASSEMBLE,2
-
+	attributes		MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_DEFLECT,1|MB_ATT_SABER_MEDIUM,2|MB_ATT_ASSEMBLE,1|MB_ATT_FORCEBLOCK,1
+	forcepowers			FP_SABER_OFFENSE,1|FP_PULL,2|FP_SEE,1|FP_SABERTHROW,1|FP_RAGE,1|FP_LEVITATION,1|FP_LIGHTNING,1
 	extralives	2
 
 	MBClass			MB_CLASS_SITH
-	
-	forcepowers		FP_SABER_OFFENSE,2
 	classflags CFL_NOPICKUPS
 	special2 EAS_NONE
-
-maxhealth	100
-starthealth	90
+	special3 EAS_FP_RAGE
+	maxhealth	150
+	starthealth	100
 
  saberDamageStyle SS_STRONG,300|SS_DESANN,300|SS_FAST,130|SS_TAVION,130
 	
@@ -24,13 +22,13 @@ starthealth	90
 
 	forceregen	.95
 
-	ASmultiplier	.95
+	ASmultiplier	.98
 	
-	CSmultiplier	.95
+	CSmultiplier	.98
 
-	APmultiplier	.95
+	APmultiplier	.90
 
-	BPmultiplier	.95
+	BPmultiplier	.85
 
 
 	rateOfFire_Melee 1
@@ -79,83 +77,32 @@ starthealth	90
 	saberstyle_3		SS_STAFF
 	
 	classNumberLimit	4
-
-	isCustomBuild		1
-
-	mbPoints			45
-
-	c_att_skill_0	MB_ATT_ROF_MELEE_MULTIPLIER
-	c_att_names_0	"Melee RoF (100/105%)"
-	c_att_ranks_0	1,1
-	
-	c_att_skill_1	MB_ATT_FP_LEVITATION
-	c_att_names_1	"Force Jump"
-	c_att_ranks_1	2,4
-
-	c_att_skill_2	MB_ATT_FP_PUSH
-	c_att_names_2	"Force Push"
-	c_att_ranks_2	2,4
-
-	c_att_skill_3	MB_ATT_FP_PULL
-	c_att_names_3	"Force Pull"
-	c_att_ranks_3	4,2
-	
-	c_att_skill_4	MB_ATT_FP_SEE
-	c_att_names_4	"Force Sense"
-	c_att_ranks_4	6
-	
-	c_att_skill_5	MB_ATT_FP_LIGHTNING
-	c_att_names_5	"Force Lightning ^3[CS4]"
-	c_att_ranks_5	6
-	
-	c_att_skill_6	MB_ATT_FP_GRIP
-	c_att_names_6	"Force Grip ^3[CS3]"
-	c_att_ranks_6	6
-
-	c_att_skill_7	MB_ATT_FP_DARKRAGE
-	c_att_names_7	"Force Dark Rage"
-	c_att_ranks_7	2,6
-	
-	c_att_skill_8	MB_ATT_POWER
-	c_att_names_8	"FP (100)"
-	c_att_ranks_8	6
-
-	c_att_skill_9	MB_ATT_FORCEBLOCK
-	c_att_names_9	"Force Block"
-	c_att_ranks_9	4,6
-	
-	c_att_skill_10	MB_ATT_FP_SABER_DEFENSE
-	c_att_names_10	"Saber Defense"
-	c_att_ranks_10	4,6
-	
-	c_att_skill_11	MB_ATT_GUN_DEFENSE
-	c_att_names_11	"Blaster Defense"
-	c_att_ranks_11	4,8	
-	
-	c_att_skill_12	MB_ATT_DEFLECT
-	c_att_names_12	"Blaster Deflect"
-	c_att_ranks_12	6
-
-	c_att_skill_13	MB_ATT_FP_SABERTHROW
-	c_att_names_13	"Saber Throw ^3[CS1]"
-	c_att_ranks_13	2,4
 }
 
 description	"Dark Jedi 
 
-3-life Sith with customizable Force Powers and Lightsaber attributes.
+3-life Sith with weaker Force Powers and Lightsaber attributes.
 
 ^2Weaponry: 
 - Melee
-- Lightsaber (Yellow)
--- Short Saber (Yellow/Red)
--- Dual Shotos (Duals/Purple)
--- Single Shoto (Blue/Cyan)
+- Lightsaber
+-- Short Saber (Yellow/Blue)
+-- Dual Shotos (Duals/Cyan)
+-- Single Shoto (Red/Purple)
 -- Double Bladed (Staff)
 -- Lower Damage Heavy Styles, Higher Damage Light Styles
--- Saber Throw ^3[CS1]
+-- Saber Throw (1) ^3[CS1]
 
 ^8Attributes:
 - Reinforcement (2)
 - Force Focus (2)
-- Assemble (2)"
+- Assemble (1)
+- Saber/Blaster Defense (1)
+- Deflect (1)
+
+^5Force Powers:
+- Push (2)
+- Jump (1)
+- Lightning (1)
+- Sense (1)
+- Dark Rage (1) ^3[CS3]"

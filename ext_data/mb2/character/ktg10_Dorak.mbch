@@ -16,7 +16,9 @@ ClassInfo
 	CSmultiplier 	1.40
 	APmultiplier 	1.15
 	BPmultiplier 	1.15
-	
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35	
 	speed 			1.1
 	
 	forcepowers		FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_PUSH,2|FP_PULL,3|FP_PROTECT,2|FP_STASIS,2|FP_SEE,3|FP_TELEPATHY,1|FP_SABERTHROW,3
@@ -36,7 +38,7 @@ ClassInfo
 
 description	"Master Dorak
 
-A master of the Jedi archives and a peerless duelist. Has a swing combo swing, but its extremely quick and deadly.
+A master of the Jedi archives and a peerless duelist. Has a single combo swing, but its extremely quick and deadly.
 
 ^2Weaponry: 
 - Lightsaber (Desann/Strong)
@@ -51,9 +53,13 @@ A master of the Jedi archives and a peerless duelist. Has a swing combo swing, b
 - Anti-Mind Trick (1)
 - Dexterity (3)
 - Flipkick (1)
+- Heal capped at 35hp
 
-^3Abilities:
-- Sense (3)
-- Stasis (2)
+^8Powers:
+- Jump (3)
+- Push (2)
+- Pull (3)
 - Protect (2)
+- Stasis (2)
+- Sense (3)
 - Mind Trick (1)"

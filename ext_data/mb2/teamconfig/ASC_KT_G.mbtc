@@ -10,23 +10,28 @@ Classes
 	class2	"h3_Cander"
 	Class3	"h7_HK47"
 	class4	"h8_Zaal"
-	Class5	"h9_JKnight"
-	Class6	"h10_JForce"
+	Class5	"ktg9_JediKnight"
+	Class6	"asg10_JForce"
 }
 
 SubclassesForClass1
 {
 	Subclass1	"ktg1_OldRepTR"
-	Subclass2	"h1_TORtroop"
-	Subclass3	"ktg2_Carth"
-	Subclass4	"h1_Talz"
-	Subclass5	"ktg1_SentinelDR"
-	Subclass6	"ktg2_OldRepOff"
-	Subclass7	"ktg1_Padawan"
-	Subclass8	"ktg1_TSF"
-	Subclass9	"ktg2_OldRepHVY"
-	Subclass10	"ktg2_Ithorian"
-	Subclass11	"ktg1_OndRoyal"
+	Subclass2	"ktg1_Freedom"
+	Subclass3	"h1_TORtroop"
+	Subclass4	"ktg2_Carth"
+	Subclass5	"h1_Talz"
+	Subclass6	"ktg1_SentinelDR"
+	Subclass7	"ktg2_OldRepOff"
+	Subclass8	"ktg1_OndRoyal"
+	Subclass9	"ktg1_TSF"
+	Subclass10	"ktg2_OldRepHVY"
+	Subclass11	"ktg2_Ithorian"
+	Subclass12	"ktg2_Ice"
+	Subclass13	"ktg2_Peragus"
+  Subclass14	"ktg2_Deadeye"
+  Subclass15	"ktg2_Twitch"
+  Subclass16	"ktg2_TwoFinger"
 }
 
 SubclassesForClass2
@@ -39,37 +44,49 @@ SubclassesForClass2
 
 SubclassesForClass3
 {
-	Subclass1	"h6_Mission"
-	Subclass2	"h7_T3M4"
-	Subclass3	"ktg7_Dodonna"
-	Subclass4	"ktg7_Trask"
-	Subclass5	"ktg6_OldRepSniper"
-	Subclass6 	"ktg3_Baodur"
-	Subclass7	"ktg2_NicoOkarr"
+	Subclass1	"ktg7_Mira"
+	Subclass2	"h6_Mission"
+	Subclass3	"h7_T3M4"
+	Subclass4	"ktg7_Dodonna"
+	Subclass5	"ktg7_Trask"
+	Subclass6	"ktg6_OldRepSniper"
+	Subclass7 	"ktg3_Baodur"
+	Subclass8	"ktg2_NicoOkarr"
+	Subclass9	"ktg7_GadonThek"
+	Subclass10	"ktg6_BekScout"
+	Subclass11	"ktg7_Talia"
+	Subclass12	"h7_Scavenge"
+  Subclass13	"ktg6_Komad"
 }
 
 SubclassesForClass4
 {
 	Subclass1	"ktg8_Shadowlander"
+	Subclass2	"ktg8_Marl"
+  Subclass3	"ktg8_Freyyr"
+
 }
 
 SubclassesForClass5
 {
 	Subclass1	"h9_JBrute"
 	Subclass2	"ktg9_Vandar"
-	Subclass3	"h9_JSword"
+	Subclass3	"ktg9_ORSword"
 	Subclass4	"ktg9_Handmaiden"
 	Subclass5	"ktg9_Juhani"
 	Subclass6	"ktg9_Vrook"
 	Subclass7	"ktg9_Kavar"
-	Subclass8	"ktg9_JediKnight"
-	Subclass9	"ktg9_JediWatch"
-	Subclass10	"ktg9_JediWeapon"
+	Subclass8	"ktg9_JediWatch"
+	Subclass9	"ktg9_JediWeapon"
+	Subclass10	"ktg9_Padawan"
+	Subclass11	"ktg9_JediRevan"
+	Subclass12	"ktg9_ORSword"
+  Subclass13	"ktg9_Exile"
 }
 
 SubclassesForClass6
 {
-	Subclass1	"h10_JSavant"
+	Subclass1	"ktg10_Bastila"
 	Subclass2	"ktg10_Jolee"
 	Subclass3	"ktg10_Visas"
 	Subclass4	"ktg10_Mical"
@@ -77,4 +94,5 @@ SubclassesForClass6
 	Subclass6	"ktg10_Dorak"
 	Subclass7	"ktg10_Zhar"
 	Subclass8	"ktg10_JediMaster"
+	Subclass9	"ktg10_Lonna"
 }

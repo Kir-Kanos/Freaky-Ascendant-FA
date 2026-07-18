@@ -6,7 +6,7 @@ ClassInfo
 	name				"ktg2_OldRepHVY"
 	weapons				WP_SABER|WP_MELEE|WP_CONC_NADE
 
-	attributes			MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_BLAST_ARMOUR|MB_ATT_UGL_IMPACT|MB_ATT_MICRO_GRENADES,8
+	attributes			MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_BLAST_ARMOUR
 
 	maxhealth			80
 	maxarmor			60
@@ -20,7 +20,9 @@ ClassInfo
 	resource 			RESOURCE_STAMINA
 	forcepool 			70
 	
-	speed               0.8
+	basespeed			158
+	rankbasespeed		170
+
 	extralives			1
 
 	knockbacktaken		.9
@@ -31,7 +33,6 @@ ClassInfo
 	WP_E22Flags			HELD_ALTRELOAD|HELD_SLOW
 	WP_MinigunFlags		HELD_SLOW
 	WP_PLX1Flags		HELD_SLOW|HELD_FLAME|HELD_LIFT
-	WP_UGLFlags			HELD_ALTRELOAD|HELD_CRIPPLE
 	
 	uioverlay_r "gfx/icons/infantry"
 	uioverlay_c "gfx/icons/hybrid"
@@ -74,7 +75,7 @@ ClassInfo
 	
 	c_att_skill_3		MB_ATT_CRYOBAN_GRENADES
 	c_att_names_3		"Cryo Grenade"
-	c_att_ranks_3		4
+	c_att_ranks_3		4,6
 	
 	c_att_skill_4		MB_ATT_BLASTER
 	c_att_names_4		"Republic Blaster Rifle"
@@ -114,10 +115,10 @@ ClassInfo
 	c_att_ranks_11		6,6
 	c_att_descs_11		"PLX, 50%- Damage, Lifts, Ignites"
 
-	c_att_skill_12		MB_ATT_UGL
-	c_att_names_12		"Republic Grenade Launcher"
+	c_att_skill_12		MB_ATT_BASESPEED
+	c_att_names_12		"Speed (170)"
 	c_att_ranks_12		6
-	c_att_descs_12		"UGL Impact, 8 Conc Rounds, Slows on hit, 10%+ Damage"
+
 }
 
 WeaponInfo0
@@ -209,22 +210,6 @@ WeaponInfo5
 	Icon				"gfx/hud/w_icon_cp-50_repeater"
 	WeaponName 			"Republic Grenade Launcher"
 	damagemod 			1.10
-}
-
-WeaponInfo6
-{
-	WeaponToReplace 	WP_CONC_NADE
-	WeaponBasedOff 		WP_CONC_NADE
-	NewWorldModel 		"models/weapons2/dummyblaster/model.glm"
-	NewViewModel 		"models/weapons2/dummy/dummy.md3"
-	Icon				"gfx/hud/mgs/weapon_melee"
-	WeaponName 			"Grenade Launcher Ammo"
-	MissileEffect 		"flechette/alt_shot"
-	altMissileEffect 	"flechette/alt_shot"
-	MissileMissEffect 	"wook_rocket/wall_impact"
-	altMissileMissEffect "wook_rocket/wall_impact"
-	primfireenabled 	0
-	altFireEnabled 		0
 }
 
 description	"Republic Heavy Trooper 

@@ -27,7 +27,7 @@ saberMaxChain	2
 
 	skilltimermod	2
 
-	basespeed	162
+	basespeed	170
 
 	special1	EAS_HI_SPRINT
 	special2	EAS_HI_DODGE
@@ -79,7 +79,7 @@ WeaponInfo1
 	NewWorldModel		"models/weapons2/kotor_carbine/model.glm"
 	NewViewModel		"models/weapons2/kotor_carbine/model.MD3"
 	Icon				"gfx/hud/w_icon_kotorcarbine"
-	WeaponName			"Sith Carbine"
+	WeaponName			"Surplus Blaster Carbine"
 	FlashSound0			"sound/weapons/kotor_carbine/fire.wav"
 	FlashSound1			"sound/weapons/kotor_carbine/fire.wav"
 	FlashSound2			"sound/weapons/kotor_carbine/fire.wav"
@@ -150,4 +150,4 @@ A gang of bounty hunters who prefer swarm tactics and street combat over any pre
 - Grappling Hook (1) ^3[CS4]
 -- Pulls/Cripples On Hit
 - Dodge (1) ^3[CS2]
-- Sprint (1) ^[CS1]"
+- Sprint (1) ^3[CS1]"
