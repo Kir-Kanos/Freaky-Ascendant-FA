@@ -4,7 +4,7 @@
 ClassInfo
 {
 	name					"kte1_Czerka"
-	MBClass				MB_CLASS_BOUNTY_HUNTER
+	MBClass				MB_CLASS_ELITETROOPER
 	weapons				WP_MELEE|WP_SABER|WP_SONIC_NADE|WP_TRIP_MINE
 	attributes			MB_ATT_ASSEMBLE,2|MB_ATT_STAMINA,2|MB_ATT_AMMO,3|MB_ATT_SABER_COMBO_NONE|MB_ATT_BACTA|MB_ATT_GRAPPLE_HOOK,1
 
@@ -15,19 +15,16 @@ ClassInfo
 
 	resource 		RESOURCE_STAMINA
 	forcepool 		80
-	speed 			1.01
+	basespeed 188
 
 	rankHack .60
 
-	classNumberLimit	3
+	classNumberLimit	4
 	extralives			1
 
 	special1		EAS_HI_SEEKER
 	special2 	EAS_HI_MEDPAC
 	special4		EAS_HI_GRAPPLEHOOK	
-
-	special1HUD HUD_CONCBLOB
-	special2HUD HUD_SONICNADE
 	
 	saber1			soldierbaton_legends
 	forcepowers 		FP_SABER_OFFENSE,3
@@ -45,26 +42,12 @@ ClassInfo
 	maxhealth		70
 	
 	maxArmor			15
-
 	
 	uioverlay "gfx/icons/infantry"
-		
-	model			"czerka" 				
-	skin				"default"					
-	uishader			"models/players/czerka/mb2_icon_default"
 	
-	model_1			"czerka"
-	skin_1			"desert"					
-	uishader_1		"models/players/czerka/mb2_icon_desert"
-
-	model_2 			"czerka"
-	skin_2			"mirialan"
-	uishader_2		"models/players/czerka/mb2_icon_mirialan"
-
-	model_3 			"czerka"
-	skin_3			"mirialan_hat"
-	uishader_3		"models/players/czerka/mb2_icon_mirialan_hat"
-	
+	model		"czerka"
+	skin			"desert"					
+	uishader		"models/players/czerka/mb2_icon_desert"
 
 	isCustomBuild		1
 	mbPoints			35
@@ -74,9 +57,9 @@ ClassInfo
 	c_att_ranks_0	2
 	
 	c_att_skill_1	MB_ATT_PISTOL
-	c_att_names_1	"Employee Bonus Blaster (Pistol)"
+	c_att_names_1	"Employee Bonus Blaster"
 	c_att_ranks_1	0,1,1
-	c_att_descs_1	"Pistol, 25% faster RoF, 25% less Dmg, 30% less FP Dmg"
+	c_att_descs_1	"Pistol, 25% faster RoF, 35% less Dmg, 40% less FP Dmg"
 
 	c_att_skill_2	MB_ATT_EE3
 	c_att_names_2	"Company Carbine"
@@ -139,9 +122,9 @@ WeaponInfo0
 	Altflashsound0		"sound/weapons/kotor/fire_power1.wav"
 	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
 	WeaponName		"Employee Bonus Blaster"    					
-	FPMult     		0.70
+	FPMult     		0.60
 	customAmmo 600
-	DamageMod .75
+	DamageMod .65
 	rateMod .75
 }
 WeaponInfo1
@@ -242,7 +225,6 @@ NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
 	WeaponName			"Motion Sensor Explosive"
 }
 
-
 description	"Czerka Security Force 
 
 Mega-Corp Security with insider specialized weaponry, focused on holding objectives.
@@ -258,8 +240,8 @@ Mega-Corp Security with insider specialized weaponry, focused on holding objecti
 -- 33% more Radius
 - Employee Bonus Blaster (1)
 -- 25% faster RoF
--- 25% less Dmg
--- 30% less FP Dmg
+-- 35% less Dmg
+-- 40% less FP Dmg
 
 ^8Attributes:
 - Reinforcement (1)
@@ -267,6 +249,5 @@ Mega-Corp Security with insider specialized weaponry, focused on holding objecti
 - Assemble (2)
 
 ^3Abilities:
-- Gunkick ^3[CS3]
 - Medpac  ^3[CS2]
 - Grappling Hook (1) ^3[CS4 Melee]"
