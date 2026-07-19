@@ -36,6 +36,7 @@ SubclassesForClass1
 	Subclass18 "kte2_MandoLegend"
 	Subclass19 "kte3_NeoWarrior"
 	Subclass20 "kte3_NeoMaster"
+	Subclass21 "kte2_SithFlame"
 }
 
 SubclassesForClass2
