@@ -36,6 +36,7 @@ SubclassesForClass1
 	Subclass18 "kte2_MandoLegend"
 	Subclass19 "kte3_NeoWarrior"
 	Subclass20 "kte3_NeoMaster"
+	Subclass21 "kte3_Tusk"
 }
 
 SubclassesForClass2
@@ -48,7 +49,6 @@ SubclassesForClass2
 	Subclass6 "kte4_TwinSuns"
 	Subclass7 "kte6_SithSeeker"
 	Subclass8 "kte6_OuterRimBounty"
-	Subclass9 "v6_Tusk"
 }
 
 SubclassesForClass3
