@@ -1,0 +1,181 @@
+ClassInfo
+{
+	name				"kte7_GenoEnforcer"
+	MBClass				MB_CLASS_BOUNTY_HUNTER
+	classNumberLimit	2
+	extralives			1
+	weapons				WP_MELEE
+	
+	
+	attributes			MB_ATT_AMMO,3|MB_ATT_TRACKING_BEACON|MB_ATT_GRAPPLE_HOP|MB_ATT_FLOAT_HOP|MB_ATT_BLAST_ARMOUR|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_THROWER_PLASMA|MB_ATT_DEXTERITY,2|MB_ATT_ANTI_MT,1|MB_ATT_BESKAR,1|MB_ATT_FLIPKICK,1|MB_ATT_DODGE,3
+
+	maxhealth			120
+	MaxArmor			80
+
+	resource			RESOURCE_ENERGY
+	forcepool 			100
+	forceregen			1.2
+
+	WP_MinigunFlags		HELD_POISON|HELD_ALTRELOAD|HELD_CRIPPLE|HELD_FORCEFOCUS|HELD_TRACKING|HELD_NODISARM
+	WP_ThrowerFlags		HELD_ALTRELOAD|HELD_NODISARM|HELD_FORCEFOCUS|HELD_DISRUPTIFY
+	AB_WBirdsFlags		HELD_LOWDAMAGE|HELD_PULL
+	AB_WLaserFlags		HELD_LOWDAMAGE|HELD_FLAME
+	WP_MeleeFlags		HELD_CRIPPLE
+
+	classflags			CFL_HEAVYMELEE|CFL_BLOODYMELEE|CFL_SEEING_STEALTH|
+
+	special1			EAS_HI_DODGE
+	meleespecial2 		EAS_HI_WHISTLING_BIRDS
+ 	special2 			EAS_HI_WRIST
+	special4			EAS_HI_GRAPPLEHOOK
+
+	uioverlay_l 		"gfx/icons/tactician"
+	uioverlay_c 		"gfx/icons/spec_infantry"
+	uioverlay_r 		"gfx/icons/infantry"
+
+	model				"shadowtrooper"
+	skin 				"new_rgb" 
+	uishader			"models/players/shadowtrooper/mb2_icon_new_rgb"
+	userRGB				255
+	customred 			255
+	customgreen			255
+	customblue 			255 
+
+	model_1				"shadowtrooper"
+	skin_1				"default" 
+	uishader_1			"models/players/shadowtrooper/mb2_icon_default"
+
+	isCustomBuild		1
+	mbPoints			45
+
+	c_att_skill_0		MB_ATT_MINIGUN
+	c_att_names_0		"Wind Up Darts"
+	c_att_ranks_0		8
+	c_att_descs_0		"Minigun, 20%- Damage, Tracking/Poison/Cripple/FF"
+
+	c_att_skill_1		MB_ATT_THROWER
+	c_att_names_1		"Disintegration Thrower"
+	c_att_ranks_1		8
+	c_att_descs_1		"Plasma Thrower, Low Clip Size, Mag Reload"
+
+	c_att_skill_2		MB_ATT_THERMALS
+	c_att_names_2		"Thermal Detonator"
+	c_att_ranks_2		4
+
+	c_att_skill_3		MB_ATT_BESKAR
+	c_att_names_3		"Beskar Plating"
+	c_att_ranks_3		4,4
+
+	c_att_skill_4		MB_ATT_WRISTLASER
+	c_att_names_4		"Unstable Wrist Laser"
+	c_att_ranks_4		4
+	c_att_descs_4		"Low Damage, Ignites ^3[CS2]"
+
+	c_att_skill_5		MB_ATT_WHISTLINGBIRD
+	c_att_names_5		"Micro Grav Rockets"
+	c_att_ranks_5		6
+	c_att_descs_5		"Low Damage, Pulls ^3[CS2 Melee]"
+	
+	c_att_skill_6		MB_ATT_GRAPPLE_HOOK
+	c_att_names_6		"Grap. Hook/Hop"
+	c_att_ranks_6		2,2
+	c_att_descs_6 		"^3[CS4 Melee]"
+
+	c_att_skill_7 		MB_ATT_CLOAK
+	c_att_names_7 		"Cloak"
+	c_att_ranks_7		2,2
+	
+	c_att_skill_8		MB_ATT_DEXTERITY
+	c_att_names_8		"Dexterity"
+	c_att_ranks_8		0,0,2
+}
+
+WeaponInfo0
+
+{
+
+	WeaponToReplace		WP_MINIGUN
+	WeaponBasedOff		WP_MINIGUN
+	NewWorldModel	"models/weapons2/dummyblaster/model.glm"
+	NewViewModel	"models/weapons2/dummy/dummy.md3" 	 
+	Icon			"gfx/hud/w_icon_sbdarm"
+	WeaponName		"Wind Up Darts"
+	clipSize 20
+	CustomAmmo 400
+	hasAnimOverrides 1
+	primgore 	1
+	FlashSound0	"sound/weapons/silencedpistol/fire.wav"
+	AltFlashSound0 "sound/weapons/silencedpistol/fire.wav"
+	MissileMissEffect "effects/flechette/wall_impact"
+	AltMissileEffect	"halo_shotgun/shot"
+	MissileEffect	"halo_shotgun/shot"
+	MuzzleEffect  	null
+	altMuzzleEffect  null
+	hasAnimOverrides 1
+	animReady BOTH_MAND_FLAME_READY  //upper
+	animReadyWalk BOTH_MAND_FLAME_READY 
+	animReadyNoAmmo BOTH_MAND_FLAME_READY 
+	animReadyRun	BOTH_MAND_FLAME_READY
+	animAttackRun	BOTH_MAND_FLAME_READY
+	animAttack BOTH_MAND_FLAME_READY 
+	animAttackWalk BOTH_MAND_FLAME_READY
+	animStand BOTH_MAND_FLAME_READY  //lower
+	ReloadTimeModifier  1
+	velocityMod 2.5
+	FPMult 	 	.80
+	damagemod 	.80
+
+}
+
+WeaponInfo1
+
+{
+
+	WeaponToReplace		WP_THROWER
+	WeaponBasedOff		WP_THROWER
+	NewWorldModel	"models/weapons2/dummyblaster/model.glm"
+	NewViewModel	"models/weapons2/dummy/dummy.md3" 	 
+	Icon			"gfx/hud/w_icon_cr-24_flamerifle"
+	WeaponName		"Disintegration Thrower"
+	clipSize 24
+	CustomAmmo 400
+	hasAnimOverrides 1
+	FlashSound0		"sound/weapons/halo_needler/fire.wav"
+	FlashSound1		"sound/weapons/halo_needler/fire.wav"
+	FlashSound2		"sound/weapons/halo_needler/fire.wav"
+	FlashSound3		"sound/weapons/halo_needler/fire.wav"
+	MissileMissEffect "effects/flechette/wall_impact"
+	MissileEffect		"effects/flechette/shot"
+	MuzzleEffect		null
+	hasAnimOverrides 1
+	animReady BOTH_MAND_FLAME_READY  //upper
+	animReadyWalk BOTH_MAND_FLAME_READY 
+	animReadyNoAmmo BOTH_MAND_FLAME_READY 
+	animReadyRun	BOTH_MAND_FLAME_READY
+	animAttackRun	BOTH_MAND_FLAME_READY
+	animAttack BOTH_MAND_FLAME_READY 
+	animAttackWalk BOTH_MAND_FLAME_READY
+	animStand BOTH_MAND_FLAME_READY  //lower
+	ReloadTimeModifier  1.4
+	damagemod 	1.20
+	ratemod		.80
+
+}
+
+
+description	"GenoHaradan Enforcer
+
+Elite Assassins Equipped in a Mesh Combat Suit with integrated Vambrance Weaponry.
+
+^8Attributes:
+- Reinforcement (1)
+- Grapple Hop
+- Blast Armor
+- Beskar (1)
+- Slow Faller
+- Knockdown Roll
+- Tracking Beacon
+
+^3Abilities:
+- Flipkick (1) ^3[Contact Jump]
+- Dodge (3) ^3[CS1]"
