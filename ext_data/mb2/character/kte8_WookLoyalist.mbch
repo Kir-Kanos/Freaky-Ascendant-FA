@@ -1,0 +1,248 @@
+//Legends Mode character file - Created by Goosto
+
+ClassInfo
+{
+	name		"kte8_WookLoyalist"
+	classNumberLimit 4
+	extralives 1
+	MBClass	MB_CLASS_WOOKIE
+	weapons 	WP_MELEE|WP_SABER|WP_BLASTER_PISTOL|WP_DET_PACK
+	attributes MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_AMMO,3|MB_ATT_PISTOL,2|MB_ATT_DET_PACK,3
+
+	saber1	kotor_vibrosword
+	saberDamage 180
+	saberstyle SS_MEDIUM|SS_FAST
+	
+	saberMaxChain 1
+	rankSaberMaxChain 2,3
+
+	maxhealth	250
+	maxArmor		60
+	
+	rateoffire_Melee 1.35
+	rankROFMelee  0.90
+	
+	basespeed	170
+	rankbasespeed	 195
+	
+	resource 	RESOURCE_RAGE
+	forcepool 90
+	rankForcepool 160
+	
+	ForceRegen 1
+		
+	skilltimermod 1.15
+	rankSTM 0.45
+	
+	knockbackTaken 1
+	
+	damageGiven 1
+	rankDmgGiven 1.10
+	
+	modelscale		1.14
+	
+	WP_RocketLauncherFlags HELD_ALTRELOAD|HELD_KNOCKBACK|HELD_SLOW
+	WP_BowcasterFlags HELD_ALTRELOAD
+	WP_TradBowcasterFlags HELD_ALTRELOAD
+	WP_ShotgunFlags	HELD_ALTRELOAD
+
+	gloatAnim 		BOTH_TUSKENTAUNT1
+	flourishAnim 		BOTH_VICTORY_FAST
+	
+	isCustomBuild 1
+	mbPoints 8
+
+	meleeMoves M_UPPERCUT|M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_PUNCH|M_RLKICK
+	uioverlay_l "gfx/icons/brawler"
+	uioverlay_c	"gfx/icons/hybrid"
+	uioverlay_r "gfx/icons/infantry"
+	
+	model 		"wookiee"
+	skin 		"red"
+	uishader 	"models/players/wookiee/mb2_icon_red"
+	
+	model_1		"wookiee"
+	skin_1 		"blue"
+	uishader_1 	"models/players/wookiee/mb2_icon_blue"
+	
+	c_att_skill_0	MB_ATT_FP_SABER_DEFENSE
+	c_att_names_0	"Saber Defense"
+	c_att_ranks_0	1,1,0
+
+	c_att_skill_1	MB_ATT_SABER_MAXCHAIN
+	c_att_names_1	"Saber Chain Limit (2/3)"
+	c_att_ranks_1	1,1	
+	c_att_descs_1 	"1 default"
+	
+	c_att_skill_2	MB_ATT_WOOKIE_STRENGTH
+	c_att_names_2	"Wookiee Strength"
+	c_att_ranks_2	0,1
+
+	c_att_skill_3	MB_ATT_ROF_MELEE_MULTIPLIER
+	c_att_names_3	"Melee RoF (110%)"
+	c_att_ranks_3	1
+	c_att_descs_3	"65% default"
+
+	c_att_skill_4	MB_ATT_PISTOL
+	c_att_names_4	"Czerka Side-Arm Pistol"
+	c_att_ranks_4	0,0,1
+	c_att_descs_4	"Prim only"
+	
+	c_att_skill_5	MB_ATT_BOWCASTER
+	c_att_names_5	"Czerka Tinkered Bowcaster"
+	c_att_ranks_5	1,1,1
+	c_att_descs_5	"No charge shots, Mag Reload"
+	
+	c_att_skill_6	MB_ATT_SHOTGUN
+	c_att_names_6	"Czerka Shotgun"
+	c_att_ranks_6	1,1,1
+	c_att_descs_6	"No Alt Fire, 45%- Damage, 25%+ RoF, Mag Reload"
+
+	c_att_skill_7	MB_ATT_PULSE_GRENADES
+	c_att_names_7	"Pulse Grenades"
+	c_att_ranks_7	1,1,1
+	
+	c_att_skill_8	MB_ATT_STUN_BATON
+	c_att_names_8	"Stun Baton"
+	c_att_ranks_8	0,1
+
+	c_att_skill_9	MB_ATT_DMG_GIVEN_MULTIPLIER
+	c_att_names_9	"Dmg Given (110%)"
+	c_att_ranks_9	1
+ 	c_att_descs_9	"Does not affect Saber"
+
+	c_att_skill_10	MB_ATT_BLAST_ARMOUR
+	c_att_names_10	"Blast Armor"
+	c_att_ranks_10	1
+
+	c_att_skill_11	MB_ATT_BASESPEED
+	c_att_names_11	"Speed (195)"
+	c_att_ranks_11	1
+
+	c_att_skill_12	MB_ATT_WOOKIEE_FURY
+	c_att_names_12	"Fury/Barge ^3[CS1/2 Melee]"
+	c_att_ranks_12	1,1
+	c_att_descs_12 "Both included"
+	
+	c_att_skill_13	MB_ATT_POWER
+	c_att_names_13	"> Larger Fury Pool (160)"
+	c_att_ranks_13	1
+
+	c_att_skill_14	MB_ATT_STM_MULTIPLIER
+	c_att_names_14	"> Skill Cd (150%)"
+	c_att_ranks_14	1
+	c_att_descs_14 	"75% default"
+}
+
+WeaponInfo0
+
+{
+
+    	WeaponToReplace		WP_BOWCASTER
+    	WeaponBasedOff		WP_BOWCASTER
+   	NewWorldModel		"models/weapons2/kotor_bowcaster2/kotor_bowcaster2_w.glm"
+    	NewViewModel		"models/weapons2/kotor_bowcaster2/kotor_bowcaster2.md3"  
+    	MuzzleEffect		"Blaster/MuzzleFlash01Y" 		   
+	AltMuzzleEffect		"Blaster/MuzzleFlash01Y" 		  		 
+	ChargeSound 		"sound/weapons/bowcaster/altcharge.mp3"
+	OverchargeEffect	"Blaster/MuzzleCharge01Y"	
+	MissileEffect	"Blaster/Shot04Y"
+	Missile3Effect	"Blaster/Shot04Y"
+	AltMissileEffect	"Blaster/Shot04Y"
+	PowerupShotEffect	"Blaster/Shot04Y"
+	ChargeEffect		"gfx/effects/YellowFrontFlash"
+    	Icon			"gfx/hud/w_icon_kotor_bowcaster2" 
+    	WeaponName		"Czerka Tinkered Bowcaster"
+	ratemod	1.25
+
+}
+
+WeaponInfo1
+
+{
+
+	WeaponToReplace	WP_BLASTER_PISTOL        						
+	WeaponBasedOff	WP_BLASTER_PISTOL   						
+	NewWorldModel		"models/weapons2/kotor_bpistol3/kotor_bpistol3_w.glm"  
+ 	NewViewModel		"models/weapons2/kotor_bpistol3/kotor_bpistol3.md3"
+	Icon				"gfx/hud/w_icon_kotor_bpistol3"				
+	flashsound0		"sound/weapons/kotor/fire_light.wav"
+	Altflashsound0		"sound/weapons/kotor/fire_power1.wav"
+	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
+	OverchargeEffect	"Blaster/MuzzleCharge01Y"	
+	MissileEffect	"Blaster/Shot03Y"
+	MuzzleEffect		"Blaster/MuzzleFlash01Y" 		   
+	AltMuzzleEffect		"Blaster/MuzzleFlash01Y" 	
+	Missile3Effect	"Blaster/Shot03Y"
+	AltMissileEffect	"Blaster/Shot03Y"
+	PowerupShotEffect	"Blaster/Shot04Y"
+	ChargeEffect		"gfx/effects/YellowFrontFlash"
+	WeaponName		"Czerka Side-Arm"    					
+	FPMult     		0.80
+	customAmmo 600
+	DamageMod .80
+	rateMod .75
+	AltFireEnabled 0
+
+}
+
+WeaponInfo2
+
+{
+	WeaponToReplace	WP_SABER			
+	WeaponBasedOff	WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_oldrepswords"
+	WeaponName		"Vibrosaber"
+	SelectSound "sound/weapons/blade/slash2.mp3"
+
+}
+
+WeaponInfo3
+
+{
+	WeaponToReplace		WP_SHOTGUN
+	WeaponBasedOff		WP_SHOTGUN
+	NewWorldModel		"models/weapons2/cp-50_repeater/cp-50_repeater_w.glm"
+	NewViewModel		"models/weapons2/cp-50_repeater/cp-50_repeater.md3"
+	Icon				"gfx/hud/w_icon_cp-50_repeater"
+	WeaponName			"Czerka Shotgun"
+	clipSize			60
+	customAmmo			600
+	ReloadTimeModifier	1.4
+	rateMod				0.75
+	damageMod			0.55
+	MissileEffect		"Blaster/Shot02Y"
+	MuzzleEffect		"Blaster/MuzzleFlash02Y" 
+	AltMuzzleEffect		"Blaster/MuzzleFlash02Y"
+	altFireEnabled		0
+	hasAnimOverrides	1
+	animReadyWalk		BOTH_WESTARM5_READY
+	animReadyNoAmmo		BOTH_WESTARM5_ATTACK
+	animAttackRun		BOTH_WESTARM5_ATTACK
+	animAttack			BOTH_WESTARM5_ATTACK
+	animAttackWalk		BOTH_WESTARM5_ATTACK
+
+}
+
+description	"Wookiee Chuundar Loyalist 
+
+Tough 2-life wookies who borrow Czerka Weaponry from their Czerka Slavers.
+
+^2Weaponry:
+- Melee
+-- 25% slower RoF
+- Vibrosaber
+-- Saber Defense (1)
+-- No Blaster Defense/Deflect
+-- Chain Limit: 1
+- Kashyyyk Side-Arm Blaster Pistol (2)
+-- Prim only
+-- 20%- Damage/25%+ RoF
+- Det Packs (3)
+
+^8Attributes:
+- Reinforcement (1)
+- 25% slower Skill Cd
+- Strength (1)"
