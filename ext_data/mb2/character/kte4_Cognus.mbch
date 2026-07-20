@@ -8,7 +8,7 @@ MBClass	MB_CLASS_SITH
 
 weapons	WP_SABER|WP_MELEE
 
-attributes	MB_ATT_AMMO,3|MB_ATT_HEALING,1|MB_ATT_FORCEBLOCK,1|MB_ATT_GETUPS,3|MB_ATT_DEXTERITY,3|MB_ATT_FORCEFOCUS,1|MB_ATT_BUNNY_HOP,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_TRACKING_BEACON|MB_ATT_FLIPKICK,1|MB_ATT_INAIR_FORCE_REGEN,1|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_ANTI_MT,1|MB_ATT_FLOAT_HOP
+attributes	MB_ATT_AMMO,3|MB_ATT_HEALING,1|MB_ATT_FORCEBLOCK,1|MB_ATT_GETUPS,3|MB_ATT_DEXTERITY,3|MB_ATT_FORCEFOCUS,1|MB_ATT_BUNNY_HOP,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_TRACKING_BEACON|MB_ATT_FLIPKICK,2|MB_ATT_INAIR_FORCE_REGEN,1|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_ANTI_MT,1|MB_ATT_FLOAT_HOP
 
 
 WP_MandoPistolFlags	HELD_ALTRELOAD
@@ -17,7 +17,7 @@ WP_ConcNadeFlags	HELD_FLASH|HELD_CRIPPLE
 
 classflags	CFL_SEEING_STEALTH|CFL_NOPICKUPS
 
-forcepowers 	FP_LEVITATION,1|FP_SEE,1|FP_PULL,1|FP_SABERTHROW,1|FP_SABER_OFFENSE,2|FP_SPEED,1
+forcepowers 	FP_LEVITATION,1|FP_SEE,3|FP_PULL,1|FP_SABERTHROW,1|FP_SABER_OFFENSE,2|FP_SPEED,1
 
 maxhealth 120
 
@@ -193,29 +193,25 @@ c_att_skill_23  MB_ATT_FP_GRIP
 c_att_names_23 	"Force Grip"
 c_att_ranks_23 	0,0
 
-c_att_skill_24 	MB_ATT_FP_SEE
-c_att_names_24 	"Force Sense"
-c_att_ranks_24 	0,0,0
+c_att_skill_24 	MB_ATT_POWER
+c_att_names_24	"Force Pool (120)"
+c_att_ranks_24 	0
 
-c_att_skill_25 	MB_ATT_POWER
-c_att_names_25 	"Force Pool (120)"
+c_att_skill_25 	MB_ATT_REGEN
+c_att_names_25 	"Force Regen (115%)"
 c_att_ranks_25 	0
 
-c_att_skill_26 	MB_ATT_REGEN
-c_att_names_26 	"Force Regen (115%)"
-c_att_ranks_26 	0
+c_att_skill_26 	MB_ATT_FORCEBLOCK
+c_att_names_26 	"Force Block"
+c_att_ranks_26 	0,0
 
-c_att_skill_27 	MB_ATT_FORCEBLOCK
-c_att_names_27 	"Force Block"
+c_att_skill_27 	MB_ATT_FORCEFOCUS
+c_att_names_27	"Force Focus"
 c_att_ranks_27 	0,0
 
-c_att_skill_28 	MB_ATT_FORCEFOCUS
-c_att_names_28 	"Force Focus"
+c_att_skill_28 	MB_ATT_ANTI_MT
+c_att_names_28 	"Anti Mind Trick"
 c_att_ranks_28 	0,0
-
-c_att_skill_29 	MB_ATT_ANTI_MT
-c_att_names_29 	"Anti Mind Trick"
-c_att_ranks_29 	0,0
 
 }
 WeaponInfo0
