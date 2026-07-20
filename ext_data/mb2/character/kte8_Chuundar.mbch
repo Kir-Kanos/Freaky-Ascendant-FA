@@ -1,0 +1,86 @@
+//Legends Mode character file - Created by Frenzy, Leos & Custom
+
+ClassInfo
+{
+	name				"kte8_Chuundar"
+	MBClass				MB_CLASS_WOOKIE
+	classNumberLimit	1
+	
+	weapons 			WP_MELEE|WP_BOWCASTER|WP_DET_PACK|WP_TRIP_MINE|WP_PULSE_NADE
+	
+	attributes 			MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_AMMO,3|MB_ATT_BOWCASTER,3|MB_ATT_DET_PACK,3|MB_ATT_TRIP_MINES,2|MB_ATT_BLAST_ARMOUR|MB_ATT_QUICKTHROW,1|MB_ATT_DISP_HEALTH,3|MB_ATT_RALLY|MB_ATT_PSHIELD,1|MB_ATT_DRONE,1|MB_ATT_PULSE_GRENADES,2|MB_ATT_HEALING,1|MB_ATT_ANTI_MT,1|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_BEACON|MB_ATT_SENTRY
+	maxhealth 			300
+	maxarmor 			100
+
+	knockbackTaken .9
+
+	speed				0.95
+	hackRate	.85
+	
+	skilltimermod 		0.85
+
+	special1 EAS_HI_QUICKTHROW
+	special2 EAS_HI_SENTRY_GUN
+	special3 EAS_HI_SEEKER	
+	special4 EAS_HI_PSHIELD
+
+	modelscale			1.19
+	uioverlay 			"gfx/icons/infantry"
+
+	model				"wookieev2"
+	skin				"snoova"
+	uishader			"models/players/wookieev2/mb2_icon_snoova"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BOWCASTER
+	WeaponBasedOff		WP_BOWCASTER
+	NewWorldModel		"models/weapons2/kotor_bowcaster2/kotor_bowcaster2_w.glm"
+	NewViewModel		"models/weapons2/kotor_bowcaster2/kotor_bowcaster2.md3"  
+	MuzzleEffect		"Blaster/MuzzleFlash01Y"            
+	AltMuzzleEffect		"Blaster/MuzzleFlash01Y"                 
+	ChargeSound 		"sound/weapons/bowcaster/altcharge.mp3"
+	OverchargeEffect	"Blaster/MuzzleCharge01Y"   
+	MissileEffect		"Blaster/Shot04Y"
+	Missile3Effect		"Blaster/Shot04Y"
+	AltMissileEffect	"Blaster/Shot04Y"
+	PowerupShotEffect	"Blaster/Shot04Y"
+	ChargeEffect		"gfx/effects/YellowFrontFlash"
+	Icon				"gfx/hud/w_icon_kotor_bowcaster2" 
+	WeaponName			"Chuundar's Custom Bowcaster"
+	clipSize			24
+	customAmmo			800
+	rateMod				0.85
+	damageMod			1.15
+}
+
+description	"Chuundar
+
+A cowardly Wookie Powerhouse Leader. Relies On High Tech Equipment to even the odds. 
+
+^2Weaponry:
+- Melee
+- Chuundar's Custom Bowcaster (3)
+-- 15% more Damage
+-- 15% faster RoF
+- Det Packs (3)
+- Trip Mines (2)
+- Pulse Grenades (2)
+
+^8Attributes:
+- Wookiee Strength (2)
+- Blast Armor
+- Dexterity (1)
+- Healing
+- Rally 
+- Anti MT (1)
+- 15% Faster Hack Speed
+- Tracking Beacon
+
+^3Abilities:
+- Quickthrow (1) ^3[CS1]
+- Czerka Personal Energy Shield ^3[CS4] 
+- Czerka Sentry Gun ^3[CS2]
+- Czerka Seeker Drone  ^3[CS3]
+- Medical Dispenser (Health 3) ^3[USE in Melee]"

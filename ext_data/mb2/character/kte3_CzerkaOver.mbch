@@ -1,0 +1,252 @@
+
+ClassInfo
+{
+	name				"kte3_CzerkaOver"
+	MBClass				MB_CLASS_ELITETROOPER
+	
+	weapons				WP_MELEE|WP_SABER|WP_PULSE_NADE
+	
+	attributes			MB_ATT_ASSEMBLE,1|MB_ATT_AMMO,3|MB_ATT_SABER_COMBO_NONE|MB_ATT_BACTA|MB_ATT_TRACKING_BEACON|MB_ATT_PULSE_GRENADES,2|MB_ATT_DODGE,1
+
+	WP_SaberFlags 		HELD_STUN
+	WP_CloneRifleFlags	HELD_ALTRELOAD|HELD_DISRUPTIFY|HELD_CRIPPLE
+	WP_M5Flags		HELD_TRACKING
+	WP_TripMineFlags	HELD_TRACKING
+	
+	resource 			RESOURCE_STAMINA
+	forcepool 			100
+	basespeed 			190
+
+	classNumberLimit	2
+	extralives			1
+
+	special1			EAS_HI_DODGE
+	special2 			EAS_HI_ENEMYSCANNER
+	special3			EAS_HI_MEDPAC
+	special4			EAS_HI_SEEKER
+	
+	saber1				soldierbaton_legends
+	forcepowers 		FP_SABER_OFFENSE,3
+	saberstyle 			SS_STRONG
+	saberMaxChain		2
+
+	saberDamage 		70
+	BPmultiplier 		0
+	APmultiplier 		0.8
+	ASmultiplier 		1.05
+	saberStanceAnim 	BOTH_SABERDUAL_STANCE
+	flourishAnim 		BOTH_STAND5TOAIM
+	gloatAnim 			BOTH_VICTORY_FAST
+	
+	maxhealth			80
+	maxArmor			40
+
+
+	
+	uioverlay 			"gfx/icons/infantry"
+		
+	model			"czerka" 				
+	skin				"default"					
+	uishader			"models/players/czerka/mb2_icon_default"
+
+	isCustomBuild		1
+	mbPoints			40
+	
+	c_att_skill_0		MB_ATT_PISTOL
+	c_att_names_0		"Executive Sidearm (Pistol)"
+	c_att_ranks_0		0,0,2
+	c_att_descs_0		"Standard issue sidearm"
+
+	c_att_skill_1		MB_ATT_CLONERIFLE
+	c_att_names_1		"Prototype Carbine"
+	c_att_ranks_1		2,2,2
+	c_att_descs_1		"Clone Rifle, 15%+ RoF, 20%- Damage, Mag Reload, Cripples"
+
+	c_att_skill_2		MB_ATT_WESTARM5
+	c_att_names_2		"Custom Ordered Rifle"
+	c_att_ranks_2		2,2,2
+	c_att_descs_2		"Westar M5, Tracks On Hit, 50% Slower RoF, 25%+ Damage/FP Drain/Velocity"
+
+	c_att_skill_3		MB_ATT_STRONGBLOBS
+	c_att_names_3		"Ion Blob"
+	c_att_ranks_3		2,2
+
+	c_att_skill_4		MB_ATT_CLONEBLOBS
+	c_att_names_4		"Concussion Blob"
+	c_att_ranks_4		2,2
+
+	c_att_skill_5		MB_ATT_ARC_RIFLE_GRENADELAUNCHER
+	c_att_names_5		"Custom Grenade Launcher"
+	c_att_ranks_5		2
+	c_att_descs_5		"Westar M5 Grenade Launcher"
+
+	c_att_skill_6		MB_ATT_RALLY
+	c_att_names_6		"Rally"
+	c_att_ranks_6		2
+	c_att_descs_6		"Allows Czerka Security to spawn on you"
+
+	c_att_skill_7		MB_ATT_HEALING
+	c_att_names_7		"Healing"
+	c_att_ranks_7		2,2
+
+	c_att_skill_8		MB_ATT_DRONE
+	c_att_names_8		"Czerka Recon Drone"
+	c_att_ranks_8		4
+	c_att_descs_8		"Seeker Droid"
+	
+	c_att_skill_9		MB_ATT_TRIP_MINES
+	c_att_names_9		"Tripmine"
+	c_att_ranks_9		2,2	
+	c_att_descs_9		"Tracks On Hit"
+
+	c_att_skill_10		MB_ATT_BLAST_ARMOUR
+	c_att_names_10		"Riot Armor"
+	c_att_ranks_10		2
+	c_att_descs_10		"Blast Armor"
+
+	c_att_skill_11		MB_ATT_ANTI_MT
+	c_att_names_11		"Corporate Conditioning"
+	c_att_ranks_11		2,2
+	c_att_descs_11		"Anti Mind Trick"
+
+	c_att_skill_12		MB_ATT_ENEMYSCANNER
+	c_att_names_12		"Czerka Personal Scanner"
+	c_att_ranks_12		8
+	c_att_descs_12		"Enemy Scanner ^3[CS3]"
+
+	c_att_skill_13		MB_ATT_DISP_ARMOR
+	c_att_names_13		"Armor Charger"
+	c_att_ranks_13		10
+	c_att_descs_13		"Armor Dispenser ^3[USE In Melee]"
+
+	c_att_skill_14		MB_ATT_FP_TEAM_FORCE
+	c_att_names_14		"Corporate Command"
+	c_att_ranks_14		8
+	c_att_descs_14		"Team Energize"
+}
+
+WeaponInfo0
+
+{
+
+	WeaponToReplace		WP_BLASTER_PISTOL 						
+	WeaponBasedOff		WP_BLASTER_PISTOL 						
+	NewWorldModel		"models/weapons2/kotor_bpistol3/kotor_bpistol3_w.glm"  
+ 	NewViewModel		"models/weapons2/kotor_bpistol3/kotor_bpistol3.md3"
+	Icon				"gfx/hud/w_icon_kotor_bpistol3"				
+	flashsound0			"sound/weapons/kotor/fire_light.wav"
+	Altflashsound0		"sound/weapons/kotor/fire_power1.wav"
+	ChargeSound			"sound/weapons/leia_pistol/altcharge.mp3"
+	OverchargeEffect	"Blaster/MuzzleCharge01Y"	
+	MissileEffect		"Blaster/Shot03Y"
+	MuzzleEffect		"Blaster/MuzzleFlash01Y" 		   
+	AltMuzzleEffect		"Blaster/MuzzleFlash01Y" 	
+	Missile3Effect		"Blaster/Shot03Y"
+	AltMissileEffect	"Blaster/Shot03Y"
+	PowerupShotEffect	"Blaster/Shot04Y"
+	ChargeEffect		"gfx/effects/YellowFrontFlash"
+	WeaponName			"Executive Sidearm"   					
+	FPMult     			0.80
+	customAmmo 			600
+	DamageMod 			.90
+	rateMod 			.75
+	AltFireEnabled 		0
+}
+
+WeaponInfo1
+
+{
+
+	WeaponToReplace 	WP_CLONE_RIFLE
+	WeaponBasedOff  	WP_CLONE_RIFLE
+	NewWorldModel		"models/weapons2/kotor_carbine/model.glm"
+	NewViewModel		"models/weapons2/kotor_carbine/model.MD3"
+	Icon				"gfx/hud/w_icon_kotorcarbine"
+	WeaponName			"Prototype Carbine"			
+	FlashSound0 		"sound/weapons/kotor_carbine/fire.wav"
+	FlashSound1 		"sound/weapons/kotor_carbine/fire.wav"
+	FlashSound2 		"sound/weapons/kotor_carbine/fire.wav"
+	FlashSound3 		"sound/weapons/kotor_carbine/fire.wav"
+	MuzzleEffect		"Blaster/MuzzleFlash01Y"	   				
+	MissileEffect 		"Blaster/Shot02Y"
+	idleAnim  			TORSO_WEAPONREADY3
+	ratemod 			.85
+	clipsize 			24
+	damagemod			.80
+
+}
+
+WeaponInfo2
+
+{
+
+	WeaponToReplace	WP_M5
+	WeaponBasedOff	WP_M5
+	NewWorldModel		"models/weapons2/proj_rifle/proj_rifle_w.glm"
+	NewViewModel		"models/weapons2/proj_rifle/proj_rifle.md3"
+	Icon				"gfx/hud/w_icon_proj_rifle"
+	WeaponName		"Custom Ordered Rifle"
+FlashSound0 		"sound/weapons/kotor/fire_hvy.wav"
+	FlashSound1 		"sound/weapons/kotor/fire_hvy.wav"
+	FlashSound2 		"sound/weapons/kotor/fire_hvy.wav"
+	FlashSound3 		"sound/weapons/kotor/fire_hvy.wav"
+	AltFlashSound0 		"sound/weapons/kotor/fire_hvy.wav"
+	AltFlashSound1 		"sound/weapons/kotor/fire_hvy.wav"
+	AltFlashSound2 		"sound/weapons/kotor/fire_hvy.wav"
+	AltFlashSound3 		"sound/weapons/kotor/fire_hvy.wav"
+	MuzzleEffect		"Blaster/MuzzleFlash01Y"	   				
+	MissileEffect 		"Blaster/Shot03Y"
+	Missile3Effect 		"Blaster/Shot03Y"
+	AltMissileEffect 	"Blaster/Shot03Y"
+	ratemod	2.25
+	damagemod	1.50
+	velocitymod	1.50
+	FPmult		1.50
+	clipsize	18
+	
+}
+
+WeaponInfo3
+
+{
+
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/stunbaton/stun_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_soldierbaton"
+	WeaponName			"Shock Baton" 
+
+}
+
+ForceInfo0
+{
+	ForceToReplace		FP_TEAM_FORCE
+	Icon		gfx/2d/logos/mb_czerka.tga"
+	ForcePowerName		"Corporate Command"
+
+}
+
+
+description	"Czerka Overseer
+
+2 Life Corpo Supervisor with various prototype weaponry. 
+
+^2Base Weaponry:
+- Melee
+- Pulse Grenades (2)
+- Shock Baton (Red Saber)
+-- No Saber/Blaster Defense
+-- No Blaster Deflect
+-- 2 Hit Combo, 70 Damage
+-- Stuns
+
+^8Attributes:
+- Reinforcements (1)
+- Assemble (1)
+- Dodge (1)
+- Medpack ^3[CS3]
+- Ammo (3)
+
+^8Abilites:
+- Dodge (1) ^3[CS1]"

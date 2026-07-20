@@ -1,0 +1,298 @@
+
+
+ClassInfo
+{
+	name		"kte8_TalzPirate"
+	extralives 2
+ 	MBClass			MB_CLASS_WOOKIE
+
+	classNumberLimit	4
+
+	weapons			WP_MELEE|WP_SABER|WP_THERMAL
+
+ 	WP_SaberFlags HELD_PULSE
+	WP_ClonePistolFlags	HELD_ALTRELOAD
+	WP_DCCarbineFlags	HELD_ALTRELOAD
+	WP_ProjFlags	HELD_EXPLOSIVE|HELD_ALTRELOAD
+	WP_PLX1Flags	HELD_FREEZE
+	WP_DetPackFlags	HELD_FREEZE|HELD_DISARM
+	WP_ThermalFlags	HELD_FREEZE|HELD_DISARM
+	WP_ThrowerFlags HELD_ALTRELOAD
+
+	attributes		MB_ATT_ASSEMBLE,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_WOOKIEE_FURY,3|MB_ATT_GETUPS,2|MB_ATT_DEXTERITY,1|MB_ATT_THROWER_ICE|MB_ATT_BINOCULARS|MB_ATT_TRACKING_BEACON|MB_ATT_FP_SABER_DEFENSE,0
+
+	saberDamage 55
+	saberSpecialDamage 2
+
+	saber1		electro_purp_legends
+	saberstyle	SS_STAFF
+	
+	saber1_1		electro1h_blu_legends
+	saber2_1		electro1h_blu_legends
+	saberstyle_1	SS_DUAL
+
+	saber1_2			kotor_vibrosword
+	saberstyle_2		SS_STRONG|SS_DESANN	
+
+	BPmultiplier		1.2
+	APmultiplier		1.15
+	ASmultiplier 	1
+ CSmultiplier  1
+
+ 	special1 EAS_HI_SPRINT
+	special2 EAS_HI_FURY
+	special4 EAS_HI_BINOCULARS
+
+	maxhealth		200
+	maxarmor   10
+
+	resource 		RESOURCE_RAGE
+	forcepool 		100
+
+	meleeMoves M_UPPERCUT|M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_PUNCH|M_RLKICK
+
+	meleeknockback_flat 85
+
+ 	knockbackTaken 0.6
+
+	baseSpeed 205
+ tauntAnim BOTH_ENGAGETAUNT
+	flourishAnim BOTH_TUSKENTAUNT1
+	gloatAnim  BOTH_VICTORY_FAST
+ saberStanceAnim BOTH_SPEAR_STANCE
+
+	uioverlay_r "gfx/icons/infantry"
+	uioverlay_l "gfx/icons/brawler"
+ uioverlay_c "gfx/icons/hybrid"
+
+	model			 "talz"
+	skin				 "rgb"
+	uishader "models/players/talz/mb2_icon_rgb"
+
+	modelscale 		1.17
+
+ 	userRGB 1
+	customred 		0.502
+	customgreen	0.502
+	customblue	0.502
+
+	isCustomBuild	1
+	mbPoints		10
+	
+	c_att_skill_0	MB_ATT_CLONE_PISTOL
+	c_att_names_0	"Rusty Blaster Pistols"
+	c_att_ranks_0	1,1,2
+	c_att_descs_0	"10%- Damage, 10%- RoF"
+
+	c_att_skill_1	MB_ATT_PROJECTILE_RIFLE
+	c_att_names_1	"Scrap Blaster Cannon"
+	c_att_ranks_1	4
+	c_att_descs_1	"Proj, 80%- Damage, Explosive, Low Ammo/Velocity, Mag Reload"
+
+	c_att_skill_2	MB_ATT_CRYOBAN_GRENADES
+	c_att_names_2	"Cyro Grenade"
+	c_att_ranks_2	1,1,1
+
+	c_att_skill_3	MB_ATT_THROWER
+	c_att_names_3	"Carbonite Dispenser"
+	c_att_ranks_3	4
+	c_att_descs_3	"Ice Thrower, Small Clip, Low Reserves"
+
+	c_att_skill_4	MB_ATT_DET_PACK
+	c_att_names_4	"Carbonite Canister"
+	c_att_ranks_4	1,1,1
+	c_att_descs_4	"Freezes and Disarms, 60% Less Damage"
+
+	c_att_skill_5	MB_ATT_PLX1
+	c_att_names_5	"CyroBan Missile Launcher"
+	c_att_ranks_5	2,2,2
+	c_att_descs_5	"Freezes, 85%- Lower Damage"
+
+	c_att_skill_6	MB_ATT_DC_CARBINE
+	c_att_names_6	"Broken Repeater Rifle"
+	c_att_ranks_6	2,2,2
+	c_att_descs_6	"DC Carbine, 50%+ RoF, 60%- Damage, No Alt Fire, Mag Reload"
+
+	c_att_skill_6	MB_ATT_BASE_TD
+	c_att_names_6	"Cold Front Thermal Grenades"
+	c_att_ranks_6	1,0,0
+	c_att_descs_6	"Freezes and Disarms"
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace	WP_SABER
+	WeaponBasedOff	WP_SABER
+	NewWorldModel		"models/weapons2/ewok_spear/ewok_spear.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"models/weapons2/ewok_spear/w_icon_ewok_spear"
+	WeaponName		"Scavenged Melee Weapon"
+}
+
+WeaponInfo1
+{
+
+	WeaponToReplace		WP_PROJ
+	WeaponBasedOff		WP_PROJ
+	NewWorldModel		"models/weapons2/kotor_repeater/model_w.glm"
+	NewViewModel			"models/weapons2/kotor_repeater/model.md3"
+	Icon				"gfx/hud/w_icon_kotor_repeater"
+	MuzzleEffect  	"Blaster/MuzzleFlash01R"
+	altMuzzleEffect  "Blaster/MuzzleFlash01R"
+	MissileEffect 		"Blaster/Shot04R"
+	AltMissileEffect 		"Blaster/Shot04R"
+	missileMissEffect 	"effects/Grenades/EXP_BaseThermal"
+	MissileHitHumanEffect	"effects/Grenades/EXP_BaseThermal"
+	MissileHitDroidEffect 	"effects/Grenades/EXP_BaseThermal"
+	FlashSound0	"sound/weapons/explosions/coolexplode1.wav"
+	AltFlashSound0 "sound/weapons/explosions/coolexplode1.wav"
+	WeaponName			"Scrap Blaster Cannon"
+	customAmmo   4
+	clipsize     1
+ 	damageMod 0.2
+	splashradius	160
+	splashdamage	20
+	velocitymod	.2
+}
+
+WeaponInfo2
+
+{
+
+	WeaponToReplace		WP_PLX1
+	WeaponBasedOff		WP_PLX1
+	NewWorldModel		"models/weapons2/e60r_launcher/e60r_launcher_w.glm"
+	NewViewModel		"models/weapons2/e60r_launcher/e60r_launcher.md3"
+	Icon				"gfx/hud/w_icon_e60r_launcher"
+	WeaponName			"CyroBan Missile Launcher"
+	damageMod 			.15
+	MuzzleEffect  		"Flamethrower/ice"
+	MissileEffect 		"materials/snow"
+MissileMissEffect	"grenades/exp_heal"
+	MissileHitHumanEffect "grenades/exp_heal"
+	MissileHitDroidEffect "grenades/exp_heal"
+	MuzzleEffect "Blaster/MuzzleFlash01B"
+altMuzzleEffect "Blaster/MuzzleFlash01B"
+
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_DC_CARBINE 			
+	WeaponBasedOff		WP_DC_CARBINE   			
+	NewWorldModel		"models/weapons2/kotor_reprifle/kotor_reprifle_w.glm"
+	NewViewModel		"models/weapons2/kotor_reprifle/kotor_reprifle.md3"
+	NewHandsModel		"models/weapons2/heavy_repeater/heavy_repeater_hand.md3"
+	Icon				"gfx/hud/w_icon_kotor_reprifle"
+	WeaponName			"Broken Repeater Rifle"
+	AltWallImpact "Blaster/Impact_Wall01R"
+	AltMissileEffect	"Blaster/Shot07R"
+	FlashSound0			"sound/weapons/kotor/fire_power1.wav"
+	FlashSound1			"sound/weapons/kotor/fire_power1.wav"
+	FlashSound2			"sound/weapons/kotor/fire_power1.wav"
+	FlashSound3			"sound/weapons/kotor/fire_power1.wav"
+	FPMult				.4
+	damagemod			.4
+	rateMod .5
+	clipsize 200
+	customAmmo 1000
+	hasAnimOverrides 1
+	animReadyRun BOTH_STAND3
+	animReady BOTH_STAND3
+	animReadyWalk BOTH_STAND3
+	animReadyNoAmmo BOTH_ATTACK3 
+	animAttackRun BOTH_ATTACK3 
+	animAttack BOTH_ATTACK3 
+	animAttackWalk BOTH_ATTACK3 
+	animStand BOTH_WOOKIEE_RAGE_STAND
+	//animStand BOTH_SPEAR_STANCE
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+	altfireenabled		0
+}
+
+WeaponInfo4
+{
+	WeaponToReplace	WP_DET_PACK
+	WeaponBasedOff	WP_DET_PACK
+	NewWorldModel "models/weapons2/detpack/det_pack_w.glm"
+NewViewModel "models/weapons2/detpack/det_pack.md3"
+Icon "gfx/hud/w_icon_detpack"
+	WeaponName	"CyroBan Canister"
+	damagemod	.4
+}
+
+WeaponInfo5
+{
+	WeaponToReplace	WP_CLONE_PISTOL        						
+	WeaponBasedOff	WP_CLONE_PISTOL   						
+	NewWorldModel		"models/weapons2/kotor_bpistol3/kotor_bpistol3_w.glm"  
+ 	NewViewModel		"models/weapons2/kotor_bpistol3/kotor_bpistol3.md3"
+	Icon				"gfx/hud/w_icon_kotor_bpistol3"						
+	flashsound0		"sound/weapons/kotor/fire_light.wav"
+	Altflashsound0		"sound/weapons/kotor/fire_power1.wav"
+	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
+	WeaponName		"Rusty Blaster Pistol"  
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	AltMuzzleEffect	"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot02r"
+	Missile3Effect	"Blaster/Shot04r"
+	AltMissileEffect	"Blaster/Shot04r"
+	PowerupShotEffect	"Blaster/Shot04r"
+	FlashSound0			"sound/weapons/kotor/fire_light.wav"
+	AltFlashSound0		"sound/weapons/kotor/fire_power1.wav"
+	ChargeEffect		"gfx/effects/bryarfrontflash"
+  					
+	FPMult     		0.90
+	customAmmo 600
+	DamageMod .90
+	rateMod 1.10
+}
+
+WeaponInfo6
+{
+
+WeaponToReplace	WP_THROWER
+WeaponBasedOff WP_THROWER
+NewWorldModel	"models/weapons2/ee-3/ee-3_dirty_w.glm"
+NewViewModel	"models/weapons2/ee-3/ee-3_dirty.md3"
+Icon	"gfx/hud/w_icon_ee-3" 
+WeaponName		"Carbonite Dispenser"
+customammo	100
+clipsize	20
+
+}
+
+description	"Talz Pirate
+
+Indigenous Pirates equipped with scavenged gear and a cold, cold arsenal.
+
+^2Weaponry:
+- Melee
+-- Flat Kb: 85
+- Melee Weapon
+-- Pulses On hit
+-- No Blaster Defense/Deflect
+-- Saber Defense (0)
+-- Electro Staff (Staff)
+-- Dual Electro Batons (Dual)
+-- Vibro Sword (Purple/Red)
+
+^5Powers:
+- Talz Fury (3) ^3[CS2]
+
+^8Attributes:
+- Reinforcement (2)
+- 40% less Kb Taken
+- Dexterity (1)
+- Strength (1)
+- Fury (3)
+- Getup (2)
+- Healing (2)
+- Assemble (1)
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Barge ^3[CS3]
+- Binoculars ^3[CS4]"
