@@ -55,8 +55,9 @@ ClassInfo
 	mbPoints			35
 	
 	c_att_skill_0	MB_ATT_WOOKIE_STRENGTH
-	c_att_names_0	"Riot Training (Strength)"
+	c_att_names_0	"Riot Training"
 	c_att_ranks_0	2
+	c_att_descs_0	"Strength"
 	
 	c_att_skill_1	MB_ATT_PISTOL
 	c_att_names_1	"TSF Issue Blaster Pistol"
@@ -64,19 +65,19 @@ ClassInfo
 	c_att_descs_1	"25% faster RoF, 25% less Dmg, 30% less FP Dmg"
 
 	c_att_skill_2	MB_ATT_EE3
-	c_att_names_2	"TSF Patrol Carbine (EE-3)"
+	c_att_names_2	"TSF Patrol Carbine"
 	c_att_ranks_2	2,1,1
-	c_att_descs_2	"Low clip size, +15% RoF"
+	c_att_descs_2	"EE-3, Low clip size, +15% RoF"
 
 	c_att_skill_3	MB_ATT_DISRUPTOR
 	c_att_names_3	"TSF Tactical Disruptor"
 	c_att_ranks_3	6
-	c_att_descs_3	"-60% FP Drain, +65% RoF, -75% Damage"
+	c_att_descs_3	"-60% FP Drain, +80% RoF, -75% Damage"
 
 	c_att_skill_4	MB_ATT_PROJECTILE_RIFLE
 	c_att_names_4	"Telosian Hunting Rifle"
 	c_att_ranks_4	8
-	c_att_descs_4	"Based On Proj. Large Clip Size, -85% Damage, +45% RoF"
+	c_att_descs_4	"Based On Proj. Large Clip, -85% Damage/80% Drain, +45% RoF"
 	
 	c_att_skill_5	MB_ATT_SONIC_DETONATOR
 	c_att_names_5	"Cryoban Containment Grenade"
@@ -89,7 +90,7 @@ ClassInfo
 	c_att_descs_6	"Trip Mine, Applies Tracking, Low Damage"
 
 	c_att_skill_7	MB_ATT_RESPAWNS
-	c_att_names_7	"TSF Backup (Reinforcements)"
+	c_att_names_7	"Reinforcements"
 	c_att_ranks_7	10,15
 	c_att_descs_7	"1 default"
 	
@@ -98,9 +99,9 @@ ClassInfo
 	c_att_ranks_8	2
 
 	c_att_skill_9	MB_ATT_ANTI_MT
-	c_att_names_9	"Willpower Focus"
+	c_att_names_9	"Security Focus"
 	c_att_ranks_9	1
-	c_att_descs_9	"Mind Trick"
+	c_att_descs_9	"Anti Mind Trick"
 
 	c_att_skill_10	MB_ATT_DRONE
 	c_att_names_10	"TSF Patrol Remote"
@@ -144,9 +145,9 @@ WeaponInfo1
 	clipSize			50
 	customAmmo 		600
 	damageMod .25
-	ReloadTimeModifier 	1.75
+	ReloadTimeModifier 	1.40
 	FPmult				.3
-	rateMod .35
+	rateMod .20
 }
 
 WeaponInfo2
@@ -195,6 +196,7 @@ WeaponInfo3
 	altGore		1
 	customAmmo	250
 	clipSize     20
+	FPMult	.20
 	ReloadTimeModifier 1.5
 	ratemod 0.65
 	damagemod	.15
@@ -229,7 +231,7 @@ WeaponInfo6
 	NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
 	Icon						"gfx/hud/w_thermal_grenade"
 	MissileModel 				"models/weapons2/thermal/thermal_proj.md3"
-	WeaponName			"Perimeter Sensor"
+	WeaponName			"Perimeter Sensor Explosive"
 	damagemod	0
 }
 
