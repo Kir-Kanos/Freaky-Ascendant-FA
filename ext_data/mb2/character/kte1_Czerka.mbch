@@ -4,7 +4,7 @@
 ClassInfo
 {
 	name					"kte1_Czerka"
-	MBClass				MB_CLASS_BOUNTY_HUNTER
+	MBClass				MB_CLASS_ELITETROOPER
 	weapons				WP_MELEE|WP_SABER|WP_SONIC_NADE|WP_TRIP_MINE
 	attributes			MB_ATT_ASSEMBLE,2|MB_ATT_STAMINA,2|MB_ATT_AMMO,3|MB_ATT_SABER_COMBO_NONE|MB_ATT_BACTA|MB_ATT_GRAPPLE_HOOK,1
 
@@ -15,19 +15,16 @@ ClassInfo
 
 	resource 		RESOURCE_STAMINA
 	forcepool 		80
-	speed 			1.01
+	basespeed 188
 
 	rankHack .60
 
-	classNumberLimit	3
+	classNumberLimit	4
 	extralives			1
 
 	special1		EAS_HI_SEEKER
 	special2 	EAS_HI_MEDPAC
 	special4		EAS_HI_GRAPPLEHOOK	
-
-	special1HUD HUD_CONCBLOB
-	special2HUD HUD_SONICNADE
 	
 	saber1			soldierbaton_legends
 	forcepowers 		FP_SABER_OFFENSE,3
@@ -45,26 +42,12 @@ ClassInfo
 	maxhealth		70
 	
 	maxArmor			15
-
 	
 	uioverlay "gfx/icons/infantry"
-		
-	model			"czerka" 				
-	skin				"default"					
-	uishader			"models/players/czerka/mb2_icon_default"
 	
-	model_1			"czerka"
-	skin_1			"desert"					
-	uishader_1		"models/players/czerka/mb2_icon_desert"
-
-	model_2 			"czerka"
-	skin_2			"mirialan"
-	uishader_2		"models/players/czerka/mb2_icon_mirialan"
-
-	model_3 			"czerka"
-	skin_3			"mirialan_hat"
-	uishader_3		"models/players/czerka/mb2_icon_mirialan_hat"
-	
+	model		"czerka"
+	skin			"desert"					
+	uishader		"models/players/czerka/mb2_icon_desert"
 
 	isCustomBuild		1
 	mbPoints			35
@@ -74,24 +57,24 @@ ClassInfo
 	c_att_ranks_0	2
 	
 	c_att_skill_1	MB_ATT_PISTOL
-	c_att_names_1	"Employee Bonus Blaster (Pistol)"
+	c_att_names_1	"Employee Bonus Blaster"
 	c_att_ranks_1	0,1,1
-	c_att_descs_1	"25% faster RoF, 25% less Dmg, 30% less FP Dmg"
+	c_att_descs_1	"Pistol, 25% faster RoF, 35% less Dmg, 40% less FP Dmg"
 
 	c_att_skill_2	MB_ATT_EE3
-	c_att_names_2	"Company Carbine (EE-3)"
+	c_att_names_2	"Company Carbine"
 	c_att_ranks_2	2,1,1
-	c_att_descs_2	"Low clip size, +15% RoF"
+	c_att_descs_2	"EE3, Low clip size, +15% RoF"
 
 	c_att_skill_3	MB_ATT_DISRUPTOR
 	c_att_names_3	"Czerka Auto Disruptor"
 	c_att_ranks_3	6
-	c_att_descs_3	"-60% FP Drain, +65% RoF, -75% Damage"
+	c_att_descs_3	"-60% FP Drain, +80% RoF, -75% Damage"
 
 	c_att_skill_4	MB_ATT_PROJECTILE_RIFLE
 	c_att_names_4	"Czerka Prototype Slugthrower"
 	c_att_ranks_4	8
-	c_att_descs_4	"Based On Proj. Large Clip Size, -85% Damage, +45% RoF"
+	c_att_descs_4	"Based On Proj. Large Clip Size, -85% Damage/-80% FP Drain, +45% RoF"
 	
 	c_att_skill_5	MB_ATT_SONIC_DETONATOR
 	c_att_names_5	"Cyroban Multi-burst Detonator"
@@ -99,7 +82,7 @@ ClassInfo
 	c_att_descs_5	"Sonic Grenade, Applies Freeze"
 	
 	c_att_skill_6	MB_ATT_TRIP_MINES
-	c_att_names_6	"Motion Sensor"
+	c_att_names_6	"Motion Sensor Explosive"
 	c_att_ranks_6	2,2
 	c_att_descs_6	"Trip Mine, Applies Tracking, Low Damage"
 
@@ -115,7 +98,7 @@ ClassInfo
 	c_att_skill_9	MB_ATT_ANTI_MT
 	c_att_names_9	"Keen Eye"
 	c_att_ranks_9	1
-	c_att_descs_9	"Mind Trick"
+	c_att_descs_9	"Anti Mind Trick"
 
 	c_att_skill_10	MB_ATT_DRONE
 	c_att_names_10	"Czerka Recon Drone"
@@ -139,9 +122,9 @@ WeaponInfo0
 	Altflashsound0		"sound/weapons/kotor/fire_power1.wav"
 	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
 	WeaponName		"Employee Bonus Blaster"    					
-	FPMult     		0.70
+	FPMult     		0.60
 	customAmmo 600
-	DamageMod .75
+	DamageMod .65
 	rateMod .75
 }
 WeaponInfo1
@@ -158,13 +141,9 @@ FlashSound0			"sound/weapons/e_22/fire.mp3"
 	clipSize			50
 	customAmmo 		600
 	damageMod .25
-	ReloadTimeModifier 	1.75
+	ReloadTimeModifier 	1.4075
 	FPmult				.3
-	rateMod .35
-	AltMuzzleEffect null
-	AltFlashSound0	null
-	ChargeEffect null
-	altFireEnabled	0
+	rateMod .20
 }
 WeaponInfo2
 {
@@ -213,6 +192,7 @@ WeaponInfo3
 	clipSize     20
 	ReloadTimeModifier 1.5
 	ratemod 0.65
+	FPMUlt	0.20
 	damagemod	.15
 }
 WeaponInfo4
@@ -242,9 +222,8 @@ NewViewModel "models/weapons2/thermal/thermal.md3"
 NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
 	Icon						"gfx/hud/w_thermal_grenade"
 	MissileModel 				"models/weapons2/thermal/thermal_proj.md3""
-	WeaponName			"Motion Sensor"
+	WeaponName			"Motion Sensor Explosive"
 }
-
 
 description	"Czerka Security Force 
 
@@ -261,8 +240,8 @@ Mega-Corp Security with insider specialized weaponry, focused on holding objecti
 -- 33% more Radius
 - Employee Bonus Blaster (1)
 -- 25% faster RoF
--- 25% less Dmg
--- 30% less FP Dmg
+-- 35% less Dmg
+-- 40% less FP Dmg
 
 ^8Attributes:
 - Reinforcement (1)
@@ -270,6 +249,5 @@ Mega-Corp Security with insider specialized weaponry, focused on holding objecti
 - Assemble (2)
 
 ^3Abilities:
-- Gunkick ^3[CS3]
 - Medpac  ^3[CS2]
 - Grappling Hook (1) ^3[CS4 Melee]"
