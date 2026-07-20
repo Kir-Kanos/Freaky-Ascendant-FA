@@ -59,6 +59,7 @@ SubclassesForClass3
 	Subclass2 "kte7_SaulK"
 	Subclass3 "kte7_Cassus"
 	Subclass4 "kte7_GenoAgent"
+  Subclass5 "kte7_GenoEnforcer"
 }
 
 SubclassesForClass4
