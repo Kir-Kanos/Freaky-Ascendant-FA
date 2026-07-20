@@ -24,19 +24,22 @@ SubclassesForClass1
 	Subclass6 "kte3_SithTRHVY"
 	Subclass7 "kte2_SithCommando"
 	Subclass8 "kte2_SithOff"
-	Subclass9 "kte1_Thug"
-	Subclass10 "kte2_ExchangeThug"
-	Subclass11 "v2_Calo"
-	Subclass12 "kte1_MandoSlave"
-	Subclass13 "kte2_HK50"
-	Subclass14 "kte2_CzerkaTech"
-	Subclass15 "kte3_RakatanInfantry"
-	Subclass16 "kte2_Dezanti"
-	Subclass17 "kte3_RedEclipse"
-	Subclass18 "kte2_MandoLegend"
-	Subclass19 "kte3_NeoWarrior"
-	Subclass20 "kte3_NeoMaster"
-	Subclass21 "kte3_Tusk"
+  Subclass9 "kte2_SithFlame"
+  Subclass10 "kte3_SithMedic"
+	Subclass11 "kte1_Thug"
+	Subclass12 "kte2_ExchangeThug"
+	Subclass13 "v2_Calo"
+	Subclass14 "kte1_MandoSlave"
+	Subclass15 "kte2_HK50"
+	Subclass16 "kte2_CzerkaTech"
+  Subclass17 "kte3_CzerkaOver"
+	Subclass18 "kte3_RakatanInfantry"
+	Subclass19 "kte2_Dezanti"
+	Subclass20 "kte3_RedEclipse"
+	Subclass21 "kte2_MandoLegend"
+	Subclass22 "kte3_NeoWarrior"
+	Subclass23 "kte3_NeoMaster"
+  Subclass24 "kte3_Tusk"
 }
 
 SubclassesForClass2
@@ -56,6 +59,10 @@ SubclassesForClass3
 	Subclass1 "kte7_Azanti"
 	Subclass2 "kte7_SaulK"
 	Subclass3 "kte7_Cassus"
+	Subclass4 "kte7_GenoAgent"
+  Subclass5 "kte7_GenoEnforcer"
+  Subclass6 "kte7_Chief"
+  Subclass7 "kte7_Shaman"
 }
 
 SubclassesForClass4
@@ -65,6 +72,9 @@ SubclassesForClass4
 	Subclass3 "kte8_Ultimate"
 	Subclass4 "v8_HuttW"
 	Subclass5 "kte8_GamoEnforcer"
+	Subclass6 "kte8_TalzPirate"
+  Subclass7 "kte8_Chuundar"
+  Subclass8 "kte8_WookLoyalist"
 }
 
 SubclassesForClass5
@@ -78,6 +88,7 @@ SubclassesForClass5
 	Subclass7 "kte9_Malgus"
 	Subclass8 "kte9_Revan"
 	Subclass9 "v9_Sion"
+	Subclass10 "kte9_Vindican"
 }
 
 SubclassesForClass6
@@ -92,4 +103,5 @@ SubclassesForClass6
 	Subclass8 "kte10_TrayaTrio"
 	Subclass9 "kte10_kallig"
 	Subclass10 "kte10_Bandon"
+	Subclass11 "kte10_Ragnos"
 }
