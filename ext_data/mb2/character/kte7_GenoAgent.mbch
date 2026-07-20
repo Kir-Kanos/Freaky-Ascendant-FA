@@ -1,0 +1,252 @@
+
+ClassInfo
+{
+	name				"kte7_GenoAgent"
+	MBClass				MB_CLASS_BOUNTY_HUNTER
+	classNumberLimit	2
+	extralives			1
+	weapons				WP_MELEE|WP_SABER|WP_CONC_NADE
+
+	attributes			MB_ATT_AMMO,3|MB_ATT_ANTI_MT,2|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_DODGE,3|MB_ATT_TRACKING_BEACON|MB_ATT_FLIPKICK,1|MB_ATT_GRAPPLE_HOOK,3|MB_ATT_MICRO_GRENADES,2|MB_ATT_DEXTERITY,2
+
+	maxhealth			100
+	MaxArmor			20
+
+	basespeed			225
+
+	resource			RESOURCE_ENERGY
+	forcepool 			145
+	forceregen			1.4
+	
+	saber1				Legends_Knife_Spy
+	saberstyle			SS_TAVION|SS_DESANN
+
+	classflags			CFL_SEEING_STEALTH
+
+	special1 			EAS_HI_DODGE
+	special2			EAS_HI_KICK
+    special3            	EAS_HI_POISON
+	special4		EAS_HI_DEX
+	meleespecial4		EAS_HI_GRAPPLEHOOK
+
+ASmultiplier 1.15
+
+CSmultiplier 1.15
+
+APmultiplier .3
+
+BPmultiplier 0
+
+    WP_MeleeFlags	    HELD_SPEED
+    WP_SaberFlags           HELD_PULSE|HELD_SPEED
+    WP_BlasterPistolFlags   HELD_POISON|HELD_SPEED
+    WP_DisruptorFlags       HELD_PULSE|HELD_ALTRELOAD|HELD_POISON|HELD_FLAME|HELD_CRIPPLE|HELD_DISRUPTIFY|HELD_SLOW
+    WP_ShotgunFlags         HELD_POISON|HELD_CRIPPLE|HELD_ALTRELOAD|HELD_SPEED|HELD_NODISARM
+    WP_ConcNadeFlags	HELD_FLASH|HELD_CRIPPLE|HELD_SONIC|HELD_SPEED
+	AB_PDartFlags	HELD_SLIPPERY|HELD_FORCEFOCUS|HELD_CRIPPLE
+
+	uioverlay_l 		"gfx/icons/tactician"
+	uioverlay_c 		"gfx/icons/spec_infantry"
+	uioverlay_r 		"gfx/icons/infantry"
+
+	model				"saboteur" 				
+	skin				"plate"					
+	uishader			"models/players/saboteur/mb2_icon_plate"
+
+	model_1				"cultist"
+	skin_1				"rgb" 
+	uishader_1			"models/players/cultist/mb2_icon_rgb"
+
+	userRGB_1			0
+	customred_1 		15
+	customgreen_1		15
+	customblue_1		15 
+
+	model_2				"tie_pilot"
+	skin_2				"kubazb"
+	uishader_2			"models/players/tie_pilot/mb2_icon_kubazb"
+
+	model_3				"saboteur" 				
+	skin_3				"default"					
+	uishader_3			"models/players/saboteur/mb2_icon_default"
+
+	isCustomBuild		1
+	mbPoints			35
+
+	c_att_skill_0	MB_ATT_PISTOL
+	c_att_names_0	"Assassin Blaster Pistol"
+	c_att_ranks_0	2,0,2
+	c_att_descs_0	"Pistol, Hitscan, Poison/Cripples, 40%- Damage"
+	
+	c_att_skill_1	MB_ATT_DISRUPTOR
+	c_att_names_1	"Combustion Disruptor"
+	c_att_ranks_1	6
+	c_att_descs_1	"10%+ Damage, Causes Pulse/Flame/Poison/Cripple, Heavy"
+	
+	c_att_skill_2	MB_ATT_SHOTGUN
+	c_att_names_2	"Spread Poison Flechettes"
+	c_att_ranks_2	4
+	c_att_descs_2	"Shotgun, Very Low Damage, Mag Reload, Poisons/Cripples"
+    
+	c_att_skill_3	MB_ATT_CLOAK
+	c_att_names_3   "Active Camouflage"
+	c_att_ranks_3   4,4
+	c_att_descs_3	"Cloak"
+
+	c_att_skill_4	MB_ATT_SPY_DISGUISE
+	c_att_names_4	"Disguise"
+	c_att_ranks_4	0,2,2
+    
+   	c_att_skill_5	MB_ATT_DEXTERITY
+   	c_att_names_5	"Dexterity"
+   	c_att_ranks_5	0,0,2
+
+   	c_att_skill_6   MB_ATT_POISON_DART
+    	c_att_names_6 	"Deathstick Darts"
+    	c_att_ranks_6   2,2,2
+    	c_att_descs_6   "Poison Darts, Causes Slippery/Force Focus/Cripples ^3[CS3]"
+
+	c_att_skill_7	MB_ATT_RESPAWNS
+	c_att_names_7	"Reinforcements"
+	c_att_ranks_7	20
+	c_att_descs_7	"1 default"
+	
+}
+
+WeaponInfo0
+{
+	WeaponToReplace	WP_BLASTER_PISTOL
+	WeaponBasedOff	WP_BLASTER_PISTOL
+	NewWorldModel "models/weapons2/Relby-K23/model_w.GLM"
+	NewViewModel  "models/weapons2/Relby-K23/pistol.MD3"
+	Icon    "gfx/hud/w_icon_relby_k23"
+	ChargeSound	"sound/weapons/leia_pistol/altcharge.mp3"
+	WeaponName	"Assassin Blaster Pistol"
+	clipSize 21
+	CustomAmmo 460
+	primHitscanShot 1
+	primHitscanTracer	10
+	primGore	1
+	Velocitymod 1.25
+	Damagemod 0.6
+	ratemod 1.25
+	reloadTimeModifier 1.25
+	AltMuzzleEffect	"Blaster/MuzzleFlash01G"
+	AltFlashSound0	"sound/weapons/spy_pistol/fire.wav"
+	AltMissileEffect	"Blaster/Shot11G"
+	AltMissile3Effect	"Blaster/Shot03G"
+	FlashSound0	"sound/weapons/silencedpistol/fire.wav"
+	MuzzleEffect null
+	ChargeEffect	"gfx/effects/greenFrontFlash"
+	OverchargeEffect	"Blaster/MuzzleCharge01G"
+	PowerupShotEffect	"Blaster/Shot04G"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel	"models/weapons2/vibroknife/model.glm"
+	NewViewModel	"models/weapons2/dummy/dummy.md3"
+	Icon	"gfx/hud/w_icon_prisonknife"
+	WeaponName	"Stun Blade"
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_CONC_NADE
+	WeaponBasedOff		WP_CONC_NADE
+	NewWorldModel  "models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel  "models/map_objects/mp/bacta.md3"
+	MissileModel "models/map_objects/mp/bacta.md3"
+	altMissileModel "models/map_objects/mp/bacta.md3"
+	Icon    "gfx/hud/w_icon_stungrenade"
+	WeaponName			"Debilitation Grenade"
+	damagemod	.25
+	Splashradius	375
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_SHOTGUN
+	WeaponBasedOff		WP_SHOTGUN
+	NewWorldModel	"models/weapons2/dummyblaster/model.glm"
+	NewViewModel	"models/weapons2/dummy/dummy.md3" 	 
+	Icon			"gfx/hud/Alpha/HUD_Icon_WhistlingBird"
+	WeaponName		"Spread Poison Flechettes"
+	clipSize 24
+	CustomAmmo 464
+	hasAnimOverrides 1
+	primgore 	1
+	FlashSound0		"sound/weapons/halo_needler/fire.wav"
+	FlashSound1		"sound/weapons/halo_needler/fire.wav"
+	FlashSound2		"sound/weapons/halo_needler/fire.wav"
+	FlashSound3		"sound/weapons/halo_needler/fire.wav"
+	MissileMissEffect "noghri_stick/flesh_impact"
+	MissileEffect		"effects/flechette/shot"
+	MuzzleEffect		null
+	MissileMissEffect		"noghri_stick/flesh_impact"
+ 	MissileHitHumanEffect 	"noghri_stick/flesh_impact"
+ 	MissileHitDroidEffect 	"noghri_stick/flesh_impact"
+	hasAnimOverrides 1
+	animReady BOTH_MAND_FLAME_READY  //upper
+	animReadyWalk BOTH_MAND_FLAME_READY 
+	animReadyNoAmmo BOTH_MAND_FLAME_READY 
+	animReadyRun	BOTH_MAND_FLAME_READY
+	animAttackRun	BOTH_MAND_FLAME_READY
+	animAttack BOTH_MAND_FLAME_READY 
+	animAttackWalk BOTH_MAND_FLAME_READY
+	animStand BOTH_MAND_FLAME_READY  //lower
+	ReloadTimeModifier  1.2
+	velocityMod 1.6
+	FPMult 	 	.25
+	ratemod	.25
+	damagemod 	.25
+}
+
+WeaponInfo4
+{
+	WeaponToReplace	WP_DISRUPTOR
+	WeaponBasedOff	WP_DISRUPTOR
+	NewWorldModel		"models/weapons2/proj_rifle/proj_rifle_w.glm"
+	NewViewModel		"models/weapons2/proj_rifle/proj_rifle.md3"
+	Icon				"gfx/hud/w_icon_proj_rifle"
+	WeaponName		"Combustion Disruptor"
+	primGore		1
+	altGore		1
+	DisruptorBeam1 "gfx/beam/superlaserpulse"
+	DisruptorBeam2 "gfx/beam/superlaserpulse"
+	muzzleEffect "Blaster/MuzzleFlash01G" 		
+	altMuzzleEffect "Blaster/MuzzleFlash01G" 		
+	ReloadTimeModifier  1.4
+	damageMod 1.10
+	FPMult	1.10
+	Clipsize	20
+	rateMod 1.65
+	hasAnimOverrides 1
+	animReadyRun BOTH_WESTARM5_IDLE
+	animReady BOTH_WESTARM5_IDLE
+	animReadyWalk BOTH_WESTARM5_READY
+	animReadyNoAmmo BOTH_WESTARM5_ATTACK
+	animAttackRun BOTH_WESTARM5_ATTACK
+	animAttack BOTH_WESTARM5_ATTACK
+	animAttackWalk BOTH_WESTARM5_ATTACK
+}
+
+description	"GenoHaradan Agent
+
+Elite covert agents utilizing subtle influence to shift the battlefield.
+
+^8Attributes:
+- Reinforcement (1)
+- Sense Immunity
+- Dexterity (2)
+- Knockdown Roll
+- Anti Mind Trick (2)
+- Dodge (3)
+- Tracking Beacon
+
+^3Abilities:
+- Flipkick (1) ^3[Contact Jump]
+- Grapple Hook ^3[Melee CS4]
+- Dodge (3) ^3[CS1]"

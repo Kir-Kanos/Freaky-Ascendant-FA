@@ -1,0 +1,134 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+Classinfo
+{
+	name		"kte2_SithFlame"
+	MBclass		MB_CLASS_SOLDIER
+
+	classNumberLimit	2
+	extralives		1
+
+	weapons	WP_MELEE|WP_THROWER|WP_FIRE_NADE|WP_SHOTGUN|WP_EE4
+
+	attributes	MB_ATT_AMMO,4|MB_ATT_FIRE_GRENADES,2|MB_ATT_ASSEMBLE,2|MB_ATT_FLAMETHROWER|MB_ATT_ENV_PROT,2|MB_ATT_SHOTGUN,3|MB_ATT_EE4,2|MB_ATT_WRISTLASER
+
+	maxhealth	100
+	maxarmor		50
+
+	basespeed	175
+	
+	special1HUD HUD_FIRENADE
+	special2HUD HUD_WRISTLASER
+	
+	resource		RESOURCE_ENERGY
+	forcepool	100
+	
+	special1	EAS_HI_FLAME
+	special2	EAS_HI_WRIST
+
+	WP_ShotgunFlags HELD_ALTRELOAD|HELD_SLOW|HELD_FLAME
+	WP_ThrowerFlags HELD_ALTRELOAD|HELD_SLOW
+
+	AB_WLaserFlags	HELD_LOWDAMAGE|HELD_FLAME|HELD_DISRUPTIFY
+	
+	flourishAnim TORSO_HANDSIGNAL3
+	
+model "sithtrooper_tor"
+skin "korriban"
+uishader "models/players/sithtrooper_tor/mb2_icon_korriban"
+	
+ uioverlay_r "gfx/icons/infantry"
+	uioverlay_l "gfx/icons/spec_infantry"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace WP_THROWER
+	WeaponBasedOff WP_THROWER
+	NewWorldModel	"models/weapons2/CR-24_flamerifle/rifle_w.glm"
+	NewViewModel	"models/weapons2/CR-24_flamerifle/rifle.md3"		
+	Icon	"gfx/hud/w_icon_cr-24_flamerifle"
+	WeaponName "Sith Flame Rifle"
+	customAmmo 700
+	clipsize 140
+	damagemod	.8
+	ratemod		1.2
+	ReloadTimeModifier 1.30
+}
+
+WeaponInfo1
+{
+WeaponToReplace WP_SHOTGUN
+WeaponBasedOff WP_SHOTGUN
+NewWorldModel	"models/weapons2/cp-50_repeater/cp-50_repeater_w.glm"
+NewViewModel	"models/weapons2/cp-50_repeater/cp-50_repeater.md3"
+Icon	"gfx/hud/w_icon_cp-50_repeater"
+WeaponName "Combustion Rifle"
+clipSize 120
+altFireEnabled 0
+Customammo 1200
+ReloadTimeModifier 1.3
+ratemod 0.4
+damagemod 0.15
+MuzzleEffect	"Blaster/MuzzleFlash01Y"
+MissileEffect	"Blaster/Shot02Y"
+Missile3Effect	"Blaster/Shot03Y"
+hasAnimOverrides 1
+animReadyRun BOTH_STAND3
+animReady BOTH_STAND3
+animReadyWalk BOTH_STAND3
+animReadyNoAmmo BOTH_ATTACK3 
+animAttackRun BOTH_ATTACK3 
+animAttack BOTH_ATTACK3 
+animAttackWalk BOTH_ATTACK3 
+animStand BOTH_WOOKIEE_RAGE_STAND
+//animStand BOTH_SPEAR_STANCE
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_EE4 			
+	WeaponBasedOff		WP_BLASTER    			
+	NewWorldModel		"models/weapons2/kotor_brifle2/kotor_brifle2_w.glm"
+	NewViewModel		"models/weapons2/kotor_brifle2/kotor_brifle2.md3"
+	Icon				"gfx/hud/w_icon_kotor_brifle2"
+	WeaponName			"Sith Blaster Rifle"
+	FlashSound0			"sound/weapons/kotor/fire_med.wav"
+	AltFlashSound0		"sound/weapons/kotor/fire_med.wav"
+	MuzzleEffect  		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+}
+
+
+Description 	"Sith Empire Flame Trooper  
+
+A specialized Multilife Trooper equipped with incendiary weaponry and great crowd control abilities 
+
+^2Weaponry:
+- Melee
+- Sith Flame Rifle (Flamethrower)
+-- 30% slower Mag Reload
+-- 20% Slower RoF
+-- 20% Less Damage
+- Combustion Rifle (3)
+-- Based On Shotgun
+-- 85% Less Damage
+-- 60% Faster RoF
+-- Ignites
+-- 60% More RoF
+-- 85% Less Damage
+-- Alt Fire Disabled, Mag Reload
+- Sith Blaster Rifle 
+-- EE4 (2)
+- Fire Grenades (2)
+
+
+^8Attributes:
+- Reinforcement (1)
+- Environmental Protection (3)
+- Assemble (2)
+
+^3Abilities:
+- Integrated Flamethrower ^3[CS1]
+- Wrist Laser ^3[CS2]"
+-- Ignites/50% Less Damage
