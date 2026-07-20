@@ -71,7 +71,8 @@ SubclassesForClass4
 	Subclass4 "v8_HuttW"
 	Subclass5 "kte8_GamoEnforcer"
 	Subclass6 "kte8_TalzPirate"
-  Subclass7 "kte8_WookLoyalist"
+  Subclass7 "kte8_Chuundar"
+  Subclass8 "kte8_WookLoyalist"
 }
 
 SubclassesForClass5
