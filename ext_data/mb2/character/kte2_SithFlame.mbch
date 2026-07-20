@@ -10,8 +10,6 @@ Classinfo
 
 	weapons	WP_MELEE|WP_THROWER|WP_FIRE_NADE|WP_SHOTGUN|WP_EE4
 
-
-
 	attributes	MB_ATT_AMMO,4|MB_ATT_FIRE_GRENADES,2|MB_ATT_ASSEMBLE,2|MB_ATT_FLAMETHROWER|MB_ATT_ENV_PROT,3|MB_ATT_SHOTGUN,3|MB_ATT_EE4,2|MB_ATT_WRISTLASER
 
 	maxhealth	100
@@ -35,9 +33,9 @@ Classinfo
 	
 	flourishAnim TORSO_HANDSIGNAL3
 	
-	model "sote_trooper"
-	skin "red"
-	uishader "models/players/sote_trooper/mb2_icon_red"
+model "sithtrooper_tor"
+skin "korriban"
+uishader "models/players/sithtrooper_tor/mb2_icon_korriban"
 	
  uioverlay_r "gfx/icons/infantry"
 	uioverlay_l "gfx/icons/spec_infantry"
@@ -108,21 +106,20 @@ A specialized Multilife Trooper equipped with incendiary weaponry and great crow
 
 ^2Weaponry:
 - Melee
-- SithFlame Rifle (Flamethrower)
+- Sith Flame Rifle (Flamethrower)
 -- 30% slower Mag Reload
 -- 20% Slower RoF
 -- 20% Less Damage
 - Combustion Rifle (3)
 -- Based On Shotgun
+-- 85% Less Damage
+-- 60% Faster RoF
 -- Ignites
 -- 60% More RoF
 -- 85% Less Damage
 -- Alt Fire Disabled, Mag Reload
-- Heat Beam (1)
--- Based on Disruptor Rifle
--- Stuns/Knockback/Ignites
--- 1 Shot, Slow Mag Reload
--- 50% Less damage and FP Drain
+- Sith Blaster Rifle 
+-- EE4 (2)
 - Fire Grenades (2)
 
 
