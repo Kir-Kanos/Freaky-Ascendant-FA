@@ -1,0 +1,236 @@
+ClassInfo
+{
+	name			"kte7_Chief"
+	MBClass			MB_CLASS_WOOKIE
+	classNumberLimit		1
+
+	weapons			WP_SABER|WP_MELEE|WP_CONC_NADE|WP_THERMAL
+
+	attributes		MB_ATT_AMMO,3|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_MICRO_GRENADES,3|MB_ATT_HEALING,2|MB_ATT_WOOKIEE_FURY,3|MB_ATT_GETUPS,2|MB_ATT_BASE_TD,3|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_DEXTERITY,1|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_TRACKING_BEACON|MB_ATT_RALLY|MB_ATT_TRACKING_DART,3|MB_ATT_DISP_FORCE,3|MB_ATT_DISP_BLOCK,3|MB_ATT_FLIPKICK,2|MB_ATT_BINOCULARS|MB_ATT_DODGE,2
+
+	forcepowers     FP_SABER_OFFENSE,3
+
+	classflags	CFL_BPFREEJUMPS|CFL_BLOODYMELEE|CFL_STATVIEWER|CFL_STRONGAGAINSTPHYSICAL|CFL_SEEING_STEALTH
+
+	WP_BlasterFlags HELD_ALTRELOAD
+	WP_TradBowcasterFlags HELD_ALTRELOAD
+	WP_SaberFlags HELD_SPEED
+	WP_MeleeFlags HELD_SPEED
+	WP_ConcNadeFlags	HELD_FLASH|HELD_CRIPPLE|HELD_SLIPPERY|HELD_STUN
+	AB_TDartFlags	HELD_FLASH
+
+	forcepool 175
+	resource RESOURCE_RAGE
+	forceregen	2.5
+
+	skilltimermod	2
+
+	maxhealth		160
+	maxarmor  80
+
+	basespeed		245
+
+	rageSoundOverride 	"sound/chars/tusken/misc/rage.mp3"
+	bargeSoundOverride 	"sound/chars/tusken/misc/anger3.mp3"
+
+	APmultiplier	1.15
+	ASmultiplier 1.05
+	BSmultiplier 1.05
+	BPmultiplier		.85
+
+	saberDamage 	100
+	saberspecialDamage 2
+
+ meleeMoves M_UPPERCUT|M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_PUNCH|M_RLKICK
+	
+	saber1		Gaffi_legends2
+	saberstyle	SS_STRONG|SS_STAFF
+	saberStanceAnim BOTH_SPEAR_STANCE
+	
+	flourishAnim BOTH_VICTORY_FAST
+	gloatAnim BOTH_TUSKENTAUNT1
+
+	modelscale  1.04
+	
+	model	"tusken_jk3"
+	skin		"chief"
+	uishader	"models/players/tusken_jk3/mb2_icon_chief"
+	
+	special1 EAS_HI_DODGE
+	special2 EAS_HI_BARGE
+	special3 EAS_HI_DEX
+	special4 EAS_HI_TRACKER
+
+	isCustomBuild		1
+	mbPoints			3
+
+	c_att_skill_0	MB_ATT_FP_SABER_DEFENSE
+	c_att_names_0	"Saber Defense"
+	c_att_ranks_0	0,1
+
+	c_att_skill_1	MB_ATT_FP_TEAM_FORCE
+	c_att_names_1	"War Cry"
+	c_att_ranks_1	1
+	c_att_descs_1	"Team Energize"
+
+	c_att_skill_2	MB_ATT_BLASTER
+	c_att_names_2	"Projectile Thrower"
+	c_att_ranks_2	0,1
+	c_att_descs_2	"Blaster, Hitscan, 20%- Damage, 6%+ RoF"
+
+	c_att_skill_3	MB_ATT_TRAD_BOWCASTER
+	c_att_names_3	"Scrap Bowcaster"
+	c_att_ranks_3	0,1,1
+	c_att_descs_3	"Trad Bowcaster, 15%- Damage, 6%+ RoF"
+
+	c_att_skill_4	MB_ATT_FP_RAGE
+	c_att_names_4	"Tusken Rage"
+	c_att_ranks_4	1,0
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER	
+	NewWorldModel		"models/weapons2/saber_gaffi/saber_w.glm"
+	NewViewModel		"models/weapons2/saber_gaffi/saber_w.md3"
+	Icon			"models/weapons2/icons/gaffi"
+	WeaponName		"Chieftains Gaffi Stick"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_BLASTER
+	WeaponBasedOff	WP_BLASTER
+	NewWorldModel	"models/weapons2/cp-50_repeater/cp-50_repeater_w.glm"
+	NewViewModel	"models/weapons2/cp-50_repeater/cp-50_repeater.md3"
+	Icon	"gfx/hud/w_icon_cp-50_repeater"
+	WeaponName			"Projectile Spitter"
+	primHitscanShot		1
+	altHitscanShot 		1
+	primGore				1
+	altGore				1
+	PrimHitscanTracer 	100
+	AltHitscanTracer 		100
+	FPMult     			0.9
+	CustomAmmo 			560
+	clipsize				40
+	FlashSound0			"sound/weapons/bar/fire.wav" 
+	AltFlashSound0			"sound/weapons/bar/fire.wav" 
+	MuzzleEffect		"halo_pistol/Muzzle_Flash"
+	MissileMissEffect "tusken/hitwall"
+	altMissileMissEffect "tusken/hitwall"
+	MissileHitHumanEffect "tusken/hit"
+	AltMissileHitHumanEffect "tusken/hit"
+	MissileHitDroidEffect "tusken/hitwall"
+	AltMissileHitDroidEffect "tusken/hitwall"
+		damageMod .80
+		ratemod 0.94
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_TRAD_BOWCASTER
+	WeaponBasedOff	WP_TRAD_BOWCASTER
+	NewWorldModel		"models/weapons2/kotor_bowcaster2/kotor_bowcaster2_w.glm"
+    	NewViewModel		"models/weapons2/kotor_bowcaster2/kotor_bowcaster2.md3"  
+	Icon			"gfx/hud/w_icon_kotor_bowcaster2" 
+	WeaponName			"Scrap Bowcaster"
+	primGore				1
+	altGore				1
+	FPMult     			0.9
+	CustomAmmo 			560
+	clipsize				36
+	OverchargeEffect	"Blaster/MuzzleCharge01Y"	
+	MissileEffect	"effects/flechette/shot"
+	Missile3Effect	"effects/flechette/shot"
+	AltMissileEffect	"effects/flechette/shot"
+	PowerupShotEffect	"effects/flechette/shot"
+	ChargeEffect		"gfx/effects/yellow_bryarFrontFlash"
+	FlashSound0			"sound/weapons/tusken_cycler/fire.wav"  
+	AltFlashSound0			"sound/weapons/tusken_cycler/fire.wav" 
+	MuzzleEffect		"halo_pistol/Muzzle_Flash"
+	AltMuzzleEffect     "halo_pistol/Muzzle_Flash"  
+	MissileMissEffect "tusken/hitwall"
+	altMissileMissEffect "tusken/hitwall"
+	MissileHitHumanEffect "tusken/hit"
+	AltMissileHitHumanEffect "tusken/hit"
+	MissileHitDroidEffect "tusken/hitwall"
+	AltMissileHitDroidEffect "tusken/hitwall"
+		damageMod .85
+		ratemod 0.94
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_CONC_NADE
+	WeaponBasedOff		WP_CONC_NADE
+ 	NewWorldModel  "models/weapons/Grenade_Concussion/model.glm"
+ 	NewViewModel  "models/map_objects/mp/bacta.md3"
+	MissileModel "models/map_objects/mp/bacta.md3"
+	altMissileModel "models/map_objects/mp/bacta.md3"
+ 	missileEffect	"effects/weather/sand_plo"
+	altmissileEffect	"effects/weather/sand_plo"
+ 	Icon    "gfx/hud/w_icon_stungrenade"
+	WeaponName			"Sand Shrapnel Canister"
+	damagemod	.5
+}
+
+ForceInfo0
+{
+	ForceToReplace		FP_TEAM_FORCE
+	Icon		gfx/2d/logos/mb_tusk.tga"
+	ForcePowerName		"War Cry"
+
+}
+
+ForceInfo1
+{
+	ForceToReplace		FP_RAGE
+	Icon		"gfx/2d/logos/mb_tusk2.tga"
+	ForcePowerName		"Tusken Rage"
+
+}
+
+
+description	"Tusken Raider Chieftain
+
+Chief of the Sand people, access to special weapons and a master of instructing ambushes.  
+
+^2Weaponry:
+- Heavy Melee
+-- Lightweight
+- Chieftain Gaffi Stick (Staff/Red Saber)
+-- No Saber/Blaster Block
+-- Saber Defense (1)
+-- BP Free Jumps
+-- Lightweight
+-- 100% more special damage
+-- 30% longer
+-- 25% more knockback
+-- 7% less AS
+- Sand Shrapnel Canister (3)
+-- Conc Grenade, Blinds/Slips/Stun/Cripples, 
+-- Low Damage
+- Thermal Grenade (3)
+
+^8Attributes:
+- Tusken Fury (3)
+-- 99% slower decay
+- Getup (2)
+- Knockdown Roll
+- Tracking Beacon
+- Stat Viewer
+- Rally
+- Melee Resist
+- Dexterity (1)
+- Tusken Strength (1)
+- Healing (1)
+
+^8Abilities:
+- Krayt Dragon Venom Darts (Tracking Darts 6 ^3[CS4])
+- Combat Roll ^3[CS3]
+- Shoulder Barge ^3[CS2]
+- Dodge (2) ^3[CS1]
+- Instruct (Force/Block Dispenser 3) ^3[USE In Melee]"
