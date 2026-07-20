@@ -30,13 +30,14 @@ SubclassesForClass1
 	Subclass12 "kte1_MandoSlave"
 	Subclass13 "kte2_HK50"
 	Subclass14 "kte2_CzerkaTech"
-	Subclass15 "kte3_RakatanInfantry"
-	Subclass16 "kte2_Dezanti"
-	Subclass17 "kte3_RedEclipse"
-	Subclass18 "kte2_MandoLegend"
-	Subclass19 "kte3_NeoWarrior"
-	Subclass20 "kte3_NeoMaster"
-	Subclass21 "kte2_SithFlame"
+  Subclass15 "kte3_CzerkaOver"
+	Subclass16 "kte3_RakatanInfantry"
+	Subclass17 "kte2_Dezanti"
+	Subclass18 "kte3_RedEclipse"
+	Subclass19 "kte2_MandoLegend"
+	Subclass20 "kte3_NeoWarrior"
+	Subclass21 "kte3_NeoMaster"
+	Subclass22 "kte2_SithFlame"
 }
 
 SubclassesForClass2
