@@ -16,7 +16,7 @@ ClassInfo
 
 	resource 		RESOURCE_STAMINA
 	forcepool 		80
-	speed 			1.01
+	basespeed		177
 
 	classNumberLimit	3
 	extralives			1
