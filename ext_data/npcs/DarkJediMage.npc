@@ -1,6 +1,7 @@
 
 DarkJediMage
 {
+	Displayname	"Sith Sorcerer"
 	playerModel	Reborn
 	customSkin	Darkjedi
 	MBClass		5
