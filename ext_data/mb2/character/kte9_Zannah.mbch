@@ -1,0 +1,121 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name	"kte9_Zannah"
+	MBClass	MB_CLASS_JEDI
+	classNumberLimit	1
+	
+	weapons	WP_MELEE|WP_SABER
+	
+	attributes	MB_ATT_FORCEBLOCK,3|MB_ATT_FORCEFOCUS,2|MB_ATT_DEFLECT,2|MB_ATT_GUN_DEFENSE,3|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,1|MB_ATT_LIGHTS_BEACON
+
+	forcepowers	FP_LEVITATION,3|FP_PUSH,2|FP_SEE,2|FP_SABER_OFFENSE,3|FP_PULL,2|FP_LIGHTNING,1|FP_PROTECT,1|FP_TELEPATHY,1|FP_SABERTHROW,2
+
+ damageGiven 1.1
+ rateOfFire_Melee 3
+
+AB_FLightningFlags	HELD_FLAME|HELD_HIGHDAMAGE|HELD_DISRUPTIFY|HELD_FORCEFOCUS
+WP_SaberFlags		HELD_SONIC
+WP_MeleeFlags		HELD_SONIC
+
+classflags	CFL_SEEING_STEALTH|CFL_NOPICKUPS
+
+	speed			0.96
+
+	maxhealth	115
+
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+
+	forcepool	120
+	
+	forceregen  1.1
+	
+	saberstyle	SS_STAFF
+	saberDamageStyle SS_STAFF,80
+	saberThrowDamage 20
+ saberSpecialDamage 1.25
+	blockRegenAmount 5
+	blockRegenRate 400
+
+	APmultiplier	0.85
+	BPmultiplier	1.5
+	CSmultiplier 1.30
+	ASmultiplier	1.10
+
+
+	//special1 EAS_FP_SABERTHROW game chooses spec1 if not defined, leave as is
+	special2	EAS_FP_PROTECT
+	//special3 EAS_FP_TELEPATHY
+	//special4 
+	
+	flourishAnim	BOTH_STAND5TOSTAND8
+ gloatAnim	BOTH_MINDTRICK1
+	
+	saber1		DarthZannah
+	sabercolor	0
+	
+	modelscale	.96
+
+	uioverlay "gfx/icons/support"
+
+	model		"darthzannah"
+	skin			"default"
+	uishader		"models/players/darthzannah/mb2_icon_default"
+}
+ForceInfo0
+{
+    ForceToReplace    FP_LIGHTNING
+    Icon            "gfx/forcepowers/lightning"
+    ForcePowerName    "Dark Tendrils"
+    Coneeffect "effects/mp/drain.efx"
+}
+ForceInfo1
+{
+	ForceToReplace	FP_PULL
+	Icon			"gfx/hud/Alpha/HUD_RadarCone"
+	ForcePowerName	"Dark Mist"
+	ConeEffect	"effects/weather/smoke_plo"
+	startSound "sound/effects/woosh10.mp3"
+}
+
+	
+}
+
+description	"Darth Zannah
+
+A Sith Lord with exceptional defenses, her strikes inflict terror on her victims.
+
+^2Weaponry:
+- Melee
+-- 200% Slower RoF
+-- Inflicts Terror (Sonic)
+- 'Banes Heart' Lightsaber Staff (Staff)
+-- Saber/Blaster Defense (3)
+--- BP Regen: 5/.4s to 100
+-- Blaster Deflect (3)
+-- Shorter Reach
+-- 80 Damage, Inflict Sonic (Terror)
+-- 125% Spec Dmg mult
+-- Saber Throw (2) ^3[CS3]
+ 
+^5Force Powers:
+- Jump (2)
+- Push (2)
+- Pull (2)
+- Sense (2)
+- Dark Tendrils (Lightning 1)
+-- Inflict Flame/Disruptify/High Damage/Force Focus
+- Mind Trick (1)
+- Protect (1)
+
+^8Attributes:
+- Blast Armor
+- Sense Immunity
+- Health Regen, Capped at 35
+- Force Block (3)
+- Force Focus (2)
+- Anti MT 1
+- Lights Beacon"
