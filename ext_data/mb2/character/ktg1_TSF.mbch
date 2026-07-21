@@ -125,9 +125,9 @@ WeaponInfo0
 	Altflashsound0		"sound/weapons/kotor/fire_power1.wav"
 	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
 	WeaponName		"TSF Issue Blaster Pistol"                      
-	FPMult         		0.70
+	FPMult         		0.60
 	customAmmo 600
-	DamageMod .75
+	DamageMod .65
 	rateMod .75
 }
 
@@ -250,8 +250,8 @@ Law enforcement personnel assigned to Citadel Station's high-traffic modules. Eq
 -- 33% more Radius
 - TSF Issue Blaster Pistol (1)
 -- 25% faster RoF
--- 25% less Dmg
--- 30% less FP Dmg
+-- 35% less Dmg
+-- 40% less FP Dmg
 
 ^8Attributes:
 - Reinforcements (1)
