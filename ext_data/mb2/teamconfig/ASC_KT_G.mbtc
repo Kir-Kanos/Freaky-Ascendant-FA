@@ -32,6 +32,7 @@ SubclassesForClass1
   Subclass14	"ktg2_Deadeye"
   Subclass15	"ktg2_Twitch"
   Subclass16	"ktg2_TwoFinger"
+  Subclass17	"ktg2_Bostuco"
 }
 
 SubclassesForClass2
