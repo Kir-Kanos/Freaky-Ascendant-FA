@@ -40,7 +40,6 @@ SubclassesForClass1
 	Subclass22 "kte3_NeoWarrior"
 	Subclass23 "kte3_NeoMaster"
   Subclass24 "kte3_Tusk"
-  Subclass25 "kte2_Chiss"
 }
 
 SubclassesForClass2
