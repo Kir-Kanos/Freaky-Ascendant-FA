@@ -40,6 +40,7 @@ SubclassesForClass2
 	Subclass2	"ktg5_SmugglerAce"
 	Subclass3	"ktg3_Smuggler"
 	Subclass4	"ktg4_KotorSenGuard"
+	Subclass5	"ktg4_JediCrusader"
 }
 
 SubclassesForClass3
