@@ -1,0 +1,21 @@
+DarthZannah
+{
+	name			"Banes Heart"
+	saberType		SABER_STAFF
+	saberModel		"models/weapons2/saber_plasma/saber_bastila.glm"
+	soundLoop		"sound/weapons/saber/saberhum_kotor.wav"
+	soundOn			"sound/weapons/saber/saberon.mp3"
+	soundOff		"sound/weapons/saber/saberoff.mp3"
+
+	spinsound		"sound/weapons/saber/OT/saberspin.wav"
+	hitSound1		"sound/weapons/saber/OT/saberhit1.mp3"
+	hitSound2		"sound/weapons/saber/OT/saberhit2.mp3"
+	hitSound3		"sound/weapons/saber/OT/saberhit3.mp3"
+
+	saberColor		RED
+	numBlades		2
+	saberLength		24
+	saberStyle		staff
+	throwable		1
+	twoHanded		1
+}

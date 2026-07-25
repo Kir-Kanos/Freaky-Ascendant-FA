@@ -1,5 +1,6 @@
 SithTRGuard1
 {
+	Displayname	"Saul's Personal Guard"
 	playerModel sithtrooper
 	customskin red
 	weapon		WP_EE4

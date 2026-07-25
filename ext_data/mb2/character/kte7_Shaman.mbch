@@ -54,7 +54,7 @@ ClassInfo
 	
 	special1 EAS_NONE
 	special2 EAS_NONE
-	special3 EAS_HI_BACTA
+	special3 EAS_HI_MEDPAC
 
 	isCustomBuild		1
 	mbPoints			3
