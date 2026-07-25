@@ -1,13 +1,11 @@
-HiddenBek1
+Davikmerc
 {
-	Displayname "Hidden Bek Scoundrel"
-	playerModel jedi_tm
-	customskin	citizen
-	weapon		WP_DISRUPTOR
-	MB_ATT_DISRUPTOR 1
-	altFire 1
-	health		100
-	armor 35
+	playerModel human_merc
+	customskin	dxun
+	weapon		WP_PROJ
+	altFire 0
+	health		200
+	armor 50
 	headPitchRangeDown 30
 	reactions	5
 	aim		5
@@ -22,8 +20,6 @@ HiddenBek1
 	class		CLASS_STORMTROOPER
 	height		64
 	crouchheight 38
-	walkSpeed	51
-	runSpeed	200
 	snd			bartender
 	sndcombat	bartender
 	sndextra	bartender

@@ -1,0 +1,90 @@
+
+ClassInfo
+{
+	name			"ktg9_Kao"
+	classNumberLimit	1
+	MBClass		MB_CLASS_JEDI
+
+	weapons			WP_SABER|WP_MELEE
+	attributes		MB_ATT_DEFLECT,3|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_DEXTERITY,3|MB_ATT_FLIPKICK,2|MB_ATT_ENV_PROT,2|MB_ATT_BUNNY_HOP,1|MB_ATT_FLOAT_HOP|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_BLAST_ARMOUR
+
+	forcepowers		FP_SEE,2|FP_LEVITATION,3|FP_PUSH,2|FP_SABER_OFFENSE,3|FP_PULL,1|FP_SPEED,3|FP_PROTECT,1|FP_RAGE,1
+	
+	maxhealth		125
+	Maxarmor		20
+	forcepool		130
+	forceregen		1.08
+	rateOfFire_Melee	0.9
+	damageGiven		1.25
+	healthRegenAmount	1
+	healthRegenRate	1500
+	healthRegenCap		35	
+
+	special2		EAS_HI_DEX
+	special3		EAS_FP_SPEED
+	special4		EAS_FP_PROTECT
+
+	saberSpecialDamage	4
+	saberThrowDamage	60
+	APmultiplier		1.15
+	BPmultiplier		1.35
+	ASmultiplier		1.15
+	CSmultiplier		1.15
+	
+	classflags		CFL_NOPICKUPS
+
+	model			"jedi_tor"
+	skin			"default"
+	uishader		"models/players/jedi_tor/mb2_icon_default"
+
+	saber1			saber_ven
+	sabercolor		3
+	saberstyle		SS_MEDIUM|SS_STRONG|SS_DESANN
+
+	saber1_1		saber_ven
+	sabercolor_1		3
+	saber2_1		saber_ven
+	saber2color_1		4
+	saberstyle_1		SS_DUAL|SS_STRONG|SS_DESANN
+
+}
+
+description	"Kao Cen Darach
+
+A legendary Battle Master embodying raw physical might and agility.
+
+^2Weaponry:
+- Heavy Melee
+-- 10% Faster Swing Speed
+- Lightsaber
+-- Single Lightsaber (Yellow/Red/Purple)
+-- Dual Lightsabers (Dual/Red/Purple)
+-- Saber Defense (3)
+-- Blaster Defense (2)
+-- Blaster Deflect (3)
+-- 300% Spec Dmg mult
+-- Saber Throw (3) ^3[CS1]
+--- Higher Damage
+
+^5Force Powers:
+- Jump (3)
+- Push (2)
+- Pull (1) 
+- Sense (2)
+- Protect (1) ^3[CS4]
+- Speed (3) ^3[CS3]
+- Rage (1)
+
+^8Attributes:
+- Dexterity/Dex Roll (3) ^3[CS2]
+- Zabrak Strength (1)
+- Heal capped at 35hp
+- Force Block (2)
+- Blast Armor
+- Knockdown Roll
+- Slow Faller
+- Bunny Hop (2)
+- Elemental Protection (2)
+- Flipkick (2)
+- Force Focus (2)
+- Aerial Force Regen"

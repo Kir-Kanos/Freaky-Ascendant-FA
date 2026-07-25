@@ -1,5 +1,6 @@
 JediMage
 {
+	Displayname	"Jedi Consular"
 	playerModel	eerin_bant_robe
 	MBClass		5
 	weapon		WP_SABER
