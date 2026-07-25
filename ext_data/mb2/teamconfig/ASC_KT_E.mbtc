@@ -41,6 +41,8 @@ SubclassesForClass1
 	Subclass23 "kte3_NeoMaster"
   Subclass24 "kte3_Tusk"
   Subclass25 "kte1_Rakghoul"
+  Subclass26 "kte3_SithInterro"
+  Subclass27 "kte2_Chiss"
 }
 
 SubclassesForClass2
@@ -53,6 +55,7 @@ SubclassesForClass2
 	Subclass6 "kte4_TwinSuns"
 	Subclass7 "kte6_SithSeeker"
 	Subclass8 "kte6_OuterRimBounty"
+	Subclass9 "kte5_SithAir"
 }
 
 SubclassesForClass3
@@ -64,6 +67,7 @@ SubclassesForClass3
   Subclass5 "kte7_GenoEnforcer"
   Subclass6 "kte7_Chief"
   Subclass7 "kte7_Shaman"
+  Subclass8 "kte7_Davik"
 }
 
 SubclassesForClass4
@@ -90,6 +94,7 @@ SubclassesForClass5
 	Subclass8 "kte9_Revan"
 	Subclass9 "v9_Sion"
 	Subclass10 "kte9_Vindican"
+	Subclass11 "kte9_Zannah"
 }
 
 SubclassesForClass6

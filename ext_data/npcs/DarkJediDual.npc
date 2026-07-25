@@ -1,5 +1,7 @@
 DarkJediDual
 {
+
+	Displayname	"Sith Maruader"
 	playerModel	reborn
 	customSkin	DarkJedi
 	MBClass		5
