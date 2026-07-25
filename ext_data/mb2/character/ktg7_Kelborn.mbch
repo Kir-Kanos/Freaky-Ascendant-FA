@@ -22,9 +22,9 @@ ClassInfo
 	forcepool 120
 	forceregen 1.1
 	
-	resource	RESOURCE_ENERGY
+	resource	RESOURCE_STAMINA
 
-	basespeed 225
+	basespeed 210
 	
 	maxhealth 		130
 	
@@ -123,6 +123,19 @@ damagemod	1.45
 ratemod		1.20
 fpmult		1.30
 velocitymod	1.20
+}
+
+ForceInfo0
+{
+	ForceToReplace		FP_TEAM_FORCE
+	Icon		gfx/2d/logos/mb_mand.tga"
+	ForcePowerName		"Advanced Tactics"
+}
+ForceInfo1
+{
+ForceToReplace	FP_RAGE
+Icon	"gfx/mp/new_f_icon_dk_rage"
+ForcePowerName	"Battle Focus"
 }
 
 description	"Kelborn
