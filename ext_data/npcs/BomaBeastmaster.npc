@@ -1,0 +1,44 @@
+bomabeastmaster
+{
+	displayName "Tamed Boma Beast"
+	playerModel 	bomabeast
+	weapon		WP_MELEE
+	health		400
+	FL_NO_KNOCKBACK 1
+	forceImmunity     1
+	headPitchRangeDown 30
+	reactions		5
+	aim			2
+	move			5
+	aggression		5
+	evasion		1
+	intelligence	5
+	rank			captain
+    playerTeam    	TEAM_FREE
+    enemyTeam    	TEAM_FREE
+	class			CLASS_RANCOR
+	height	52
+	crouchheight 	52
+	width		48
+	snd		boma
+	sndcombat	boma
+	sndextra	boma
+	yawspeed	50
+//	walkSpeed	173
+//	runSpeed	165
+	walkSpeed	89
+	runSpeed	228
+	dismemberProbHead	0
+	dismemberProbArms	0
+	dismemberProbLegs	0
+	dismemberProbHands	0
+	dismemberProbWaist	0
+	
+	//special frenzy attributes
+	earshot	1000 //default is 1024
+	hfov 	100 //horiztonal field of view
+	vfov	135 //vertical field of view
+	vigilance	0.1 //default is 0.1
+	visrange	600 //how far npc can see
+
+}
