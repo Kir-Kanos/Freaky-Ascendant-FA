@@ -33,6 +33,7 @@ SubclassesForClass1
   Subclass15	"ktg2_Twitch"
   Subclass16	"ktg2_TwoFinger"
   Subclass17	"ktg2_Iri"
+  Subclass18	"ktg2_Riiken"
 }
 
 SubclassesForClass2
@@ -58,6 +59,7 @@ SubclassesForClass3
 	Subclass11	"ktg7_Talia"
 	Subclass12	"h7_Scavenge"
   Subclass13	"ktg6_Komad"
+ 	Subclass13	"ktg7_Kelborn"
 }
 
 SubclassesForClass4
@@ -65,6 +67,7 @@ SubclassesForClass4
 	Subclass1	"ktg8_Shadowlander"
 	Subclass2	"ktg8_Marl"
   Subclass3	"ktg8_Freyyr"
+	Subclass4	"ktg8_Bralor"
 
 }
 

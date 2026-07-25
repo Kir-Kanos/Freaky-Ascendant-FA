@@ -1,0 +1,82 @@
+
+ClassInfo
+{
+	name					"kte7_Davik"
+	MBClass					MB_CLASS_HERO
+	classNumberLimit 		1
+	weapons					WP_MELEE|WP_BLASTER_PISTOL
+
+	attributes				MB_ATT_PISTOL,3|MB_ATT_AMMO,3|MB_ATT_HEALING,1|MB_ATT_SPAWNER,1|MB_ATT_ROUNDSPAWNER,1|MB_ATT_SENTRY|MB_ATT_BASESEEKER,1|MB_ATT_DRONE,1|MB_ATT_BACTA_BIG|MB_ATT_RALLY|MB_ATT_TRACKING_BEACON|MB_ATT_ANTI_MT,1|MB_ATT_BLAST_ARMOUR|MB_ATT_BESKAR,1
+
+	roundnpc	"DavikMerc"
+	spawnernpc	"Davikg0t0"
+
+	maxhealth				60
+	maxarmor				175
+
+	resource 				RESOURCE_STAMINA
+	forcepool 				75
+
+	baseSpeed 				210
+
+	model					"davik" 				
+	skin					"default"					
+	uishader				"models/players/davik/icon_default"
+
+	special1				EAS_HI_SPAWNER
+	special2 				EAS_HI_SEEKER
+	special3				EAS_HI_SENTRY_GUN
+	special4				EAS_HI_BASESEEKER
+	
+	flourishAnim 			BOTH_STAND5TOAIM
+}
+WeaponInfo0
+{
+	WeaponToReplace			WP_BLASTER_PISTOL
+	WeaponBasedOff			WP_BLASTER_PISTOL					
+	NewWorldModel			"models/weapons2/kotor_hpistol/kotor_hpistol_w.glm"
+	NewViewModel			"models/weapons2/kotor_hpistol/kotor_hpistol.md3"
+	Icon            		"gfx/hud/w_icon_kotor_hpistol_dual"	
+	WeaponName				"Exchange Pistol"
+	FlashSound0				"sound/weapons/kotor/fire_light.wav" 			
+	AltFlashSound0			"sound/weapons/kotor/fire_power1.mp3"
+	ChargeSound				"sound/weapons/leia_pistol/altcharge.mp3"
+	MuzzleEffect			"Blaster/MuzzleCharge01R"
+	AltMuzzleEffect			"Blaster/MuzzleFlash01R"
+	MissileEffect			"Blaster/Shot03r"
+	Missile3Effect			"Blaster/Shot03r"
+	AltMissileEffect		"Blaster/Shot03r"
+	PowerupShotEffect		"Blaster/Shot04r"
+	ChargeEffect			"gfx/effects/bryarfrontflash"
+	MissileMissEffect 		"effects/blaster/Impact_Wall01R"
+	customammo 				950
+	Clipsize				25
+	FPMult          		1.05
+	Damagemod			1.05
+	rateMod .95
+}
+
+
+description	"Davik Kang
+
+The feared head of the Exchange on Taris. A master of logistics and hired muscle, Davik fights through his extensive network of droids and enforcers.
+
+^2Weaponry:
+- Melee
+- Exchange Heavy Pistol
+-- Pistol 3, 5%+ Damage/RoF
+-- Mag Reload
+
+^8Attributes:
+- Personal Shield
+- Call Goto, The Boss (Support Beacon) ^3[CS1]
+- Healing (1)
+- Personal Exchange Guard (Round Spawner)
+- Blast Armor
+- Rally
+- Exchange Network (Tracking Beacon)
+- Large Medpack
+- Anti MT (1)
+- Sentry Turret ^3[CS3]
+- Defense Done ^3[CS4]
+- Seeker Drone ^3[CS2]"
