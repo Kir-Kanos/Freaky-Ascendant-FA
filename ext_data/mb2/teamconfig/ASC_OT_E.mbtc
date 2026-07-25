@@ -7,7 +7,7 @@ EUAllowed 0
 Classes
 {
 	class1	"ase1_ImpSold"
-	class2	"v3_FOMarsh"
+	class2	"ase5_JetTr"
 	class3	"ase6_ScoutTr"
 	class4	"v8_GamoPig"
 	class5	"ase9_SAcolyte"
@@ -47,7 +47,6 @@ SubclassesForClass2
 	Subclass10	"ase5_P2DarkTr"
 	Subclass11	"ase5_P3DarkTr"
 	Subclass12	"ase5_GadgetMando"
-	Subclass13	"ase5_JetTr"
 }
 
 SubclassesForClass3
@@ -90,7 +89,7 @@ SubclassesForClass5
 
 SubclassesForClass6
 {
-	Subclass1	"ase10_PalpPlagNovel"
+	Subclass1	"v10_Palp"
 	Subclass2	"ase10_SecretApp"
 	Subclass3	"ase10_Jerec"
 	Subclass4	"ase10_Tavion"
