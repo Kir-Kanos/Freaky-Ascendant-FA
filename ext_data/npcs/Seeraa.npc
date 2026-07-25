@@ -1,5 +1,6 @@
 Seeraa
 {
+	Displayname "Seeraa, The Twin Sun"
 	playerModel	twinsuns_new
 	Customskin	Seeraa
 	saber		kotor_shortsword

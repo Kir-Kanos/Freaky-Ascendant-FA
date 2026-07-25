@@ -1,5 +1,6 @@
 RepTRGuard2
 {
+	Displayname	"Republic Shock Trooper"
 	playerModel	prisoner
 	customSkin	oldrepsold
 	saber		kotor_vibrosword

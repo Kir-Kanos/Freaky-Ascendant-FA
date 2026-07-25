@@ -1,5 +1,6 @@
 RepTRGuard1
 {
+	Displayname	"Admirial's Guard"
 	playerModel prisoner
 	customskin oldrepsold_helm
 	weapon		WP_EE4
