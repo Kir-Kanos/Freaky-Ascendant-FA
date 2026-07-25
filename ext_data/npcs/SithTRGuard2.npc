@@ -1,5 +1,6 @@
 SithTRGuard2
 {
+	Displayname "Sith Shock Trooper"
 	playerModel	sithtrooper
 	customSkin	default
 	saber		kotor_vibrosword

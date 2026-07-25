@@ -1,5 +1,6 @@
 HiddenBek2
 {
+	Displayname	"Hidden Bek Enforcer"
 	playerModel prisoner
 	customskin	merchant
 	weapon		WP_FLECHETTE
