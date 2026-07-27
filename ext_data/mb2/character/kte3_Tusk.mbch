@@ -1,0 +1,271 @@
+//Siege class def file.
+
+ClassInfo
+{
+	name			"kte3_Tusk"
+	MBClass			MB_CLASS_WOOKIE
+	extralives			1
+	classNumberLimit		6
+
+	weapons			WP_SABER|WP_MELEE
+
+	attributes		MB_ATT_AMMO,3|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_HEALING,1|MB_ATT_WOOKIEE_FURY,3|MB_ATT_SABER_COMBO_NONE|MB_ATT_GETUPS,2
+
+	forcepowers     FP_SABER_OFFENSE,1
+	forcepool 150
+	resource RESOURCE_RAGE
+	forceregen	0.01
+
+	maxhealth		90
+	maxarmor  75
+
+	basespeed		232
+
+	WP_ProjFlags 		HELD_ALTRELOAD|HELD_STUN
+	WP_ClonePistolFlags    HELD_ALTRELOAD
+	WP_SaberFlags HELD_SPEED
+	WP_MinigunFlags HELD_ALTRELOAD
+	WP_EE3Flags HELD_ALTRELOAD
+
+	rageSoundOverride 	"sound/chars/tusken/misc/rage.mp3"
+	bargeSoundOverride 	"sound/chars/tusken/misc/anger3.mp3"
+
+	APmultiplier	1.1
+	ASmultiplier 1.05w
+	BPmultiplier		0
+
+	skilltimermod	2.4
+
+	saberDamage 	100
+	saberspecialDamage 2
+
+ meleeMoves M_UPPERCUT|M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_PUNCH|M_RLKICK
+	
+	saber1		Gaffi_legends
+	saberstyle	SS_MEDIUM|SS_STAFF
+	saberStanceAnim BOTH_SPEAR_STANCE
+	
+	flourishAnim BOTH_VICTORY_FAST
+	gloatAnim BOTH_TUSKENTAUNT1
+
+	modelscale  1.03
+	uioverlay_l "gfx/icons/scout"
+	uioverlay_c "gfx/icons/brawler"
+	uioverlay_r "gfx/icons/infantry"
+	
+	model		"tusken_jk3"
+	skin			"default"
+	uishader		"models/players/tusken_jk3/mb2_icon_default"
+	
+	model_1	"tusken_jk3" 					
+	skin_1		"breather"					
+	uishader_1	"models/players/tusken_jk3/mb2_icon_breather"
+	
+	
+	special1 EAS_NONE
+	special2 EAS_NONE
+
+	isCustomBuild		1
+	mbPoints			7
+
+	c_att_skill_0	MB_ATT_FP_SABER_DEFENSE
+	c_att_names_0	"Saber Defense"
+	c_att_ranks_0	2,1
+
+	c_att_skill_1	MB_ATT_CLONE_PISTOL
+	c_att_names_1	"Projectile Pistols"
+	c_att_ranks_1	1,0,2
+	c_att_descs_1	"Clone Pistol, Prim Only, Mag Reload, Hitscan, 6%+ RoF, 15%- Damage"
+
+	c_att_skill_2	MB_ATT_PROJECTILE_RIFLE
+	c_att_names_2	"Cycler Rifle"
+	c_att_ranks_2	4
+	c_att_descs_2	"Proj, 10%- Damage, Staggers, Mag Reload" 
+
+	c_att_skill_3	MB_ATT_MICRO_GRENADES
+	c_att_names_3	"Conc Grenade"
+	c_att_ranks_3	1,0
+
+	c_att_skill_4	MB_ATT_EE3
+	c_att_names_4	"Junk Carbine"
+	c_att_ranks_4	1,0,1
+	c_att_descs_4	"EE3, Mag Reload, Hitscan, 60%+ RoF, 20%+ Damage"
+
+	c_att_skill_5	MB_ATT_MINIGUN
+	c_att_names_5	"Scrap Rifle"
+	c_att_ranks_5	1,1
+	c_att_descs_5	"Minigun, 160%+ Velocity, 60%- Rof, 20%+ Damage, Mag Reload"
+
+	c_att_skill_6	MB_ATT_RESPAWNS
+	c_att_names_6	"Reinforcement"
+	c_att_ranks_6	4,3
+	c_att_descs_6	"1 by Default"
+
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER	
+	NewWorldModel		"models/weapons2/saber_gaffi/saber_w.glm"
+	NewViewModel		"models/weapons2/saber_gaffi/saber_w.md3"
+	Icon			"models/weapons2/icons/gaffi"
+	WeaponName		"Gaffi Stick"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_CLONE_PISTOL
+	WeaponBasedOff	WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/tusken_pistol_sar/tusken_pistol_w.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_tuskenpistol_dual"
+	altFireEnabled 		0
+	WeaponName			"Projectile Pistol"
+	primHitscanShot		1
+	altHitscanShot 		1
+	primGore				1
+	altGore				1
+	PrimHitscanTracer 	100
+	AltHitscanTracer 		100
+	FPMult     			0.9
+	CustomAmmo 			560
+	clipsize				40
+	FlashSound0			"sound/weapons/bar/fire.wav" 
+	MuzzleEffect		"halo_pistol/Muzzle_Flash"
+	MissileMissEffect "halo_smg/wall_impact"
+	altMissileMissEffect "halo_smg/wall_impact"
+	MissileHitHumanEffect "halo_smg/wall_impact"
+	AltMissileHitHumanEffect "halo_smg/wall_impact"
+	MissileHitDroidEffect "halo_smg/wall_impact"
+	AltMissileHitDroidEffect "halo_smg/wall_impact"
+		damageMod .85
+		ratemod 0.94
+	hasAnimOverrides 1
+	animReadyRun BOTH_SABERDUAL_STANCE
+	animReady BOTH_SABERDUAL_STANCE
+	animReadyWalk BOTH_SABERDUAL_STANCE
+animReadyNoAmmo BOTH_MAND_DUAL_PISTOLS_IDLE
+animRunAttackR    BOTH_DUAL_PISTOLS_ATTACK_R
+animRunAttackL   BOTH_DUAL_PISTOLS_ATTACK_L
+animWalkAttackR   BOTH_MAND_DUAL_PISTOLS_ATTACK_R
+animWalkAttackL   BOTH_MAND_DUAL_PISTOLS_ATTACK_L
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_PROJ
+	WeaponBasedOff		WP_DISRUPTOR
+	NewWorldModel		"models/weapons2/tusken_sniper/model_w.glm"  	
+	NewViewModel		"models/weapons2/tusken_sniper/model.md3"  	
+	FlashSound0			"sound/weapons/tusken_cycler/fire.wav"  			
+	Icon				"gfx/hud/w_icon_tuskenSniper"
+	WeaponName			"Tusken Cycler Projectile Rifle"  
+	CustomAmmo 	15
+	clipsize    1
+	ReloadTimeModifier 1.35
+	damageMod .9
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_EE3
+	WeaponBasedOff	WP_EE3
+	NewWorldModel	"models/weapons2/junglerifle/jungeRifle.glm"
+	NewViewModel	"models/weapons2/junglerifle/jungeRifle.md3"
+	NewHandsModel "models/weapons2/junglerifle/jungeRifle_hand.md3"
+	Icon	"gfx/hud/w_icon_junglerifle"
+	WeaponName			"Junk Carbine"
+	primHitscanShot		1
+	altHitscanShot 		1
+	primGore				1
+	altGore				1
+	PrimHitscanTracer 	100
+	AltHitscanTracer 		100
+	FPMult     			0.9
+	CustomAmmo 			560
+	clipsize				35
+	FlashSound0			"sound/weapons/bar/fire.wav" 
+	FlashSound1			"sound/weapons/bar/fire.wav" 
+	FlashSound2			"sound/weapons/bar/fire.wav" 
+	FlashSound3			"sound/weapons/bar/fire.wav" 
+	FlashSound4			"sound/weapons/bar/fire.wav" 
+	FlashSound5			"sound/weapons/bar/fire.wav" 
+	AltFlashSound0			"sound/weapons/tusken_cycler/fire.wav"
+	AltFlashSound1			"sound/weapons/tusken_cycler/fire.wav"
+	AltFlashSound2			"sound/weapons/tusken_cycler/fire.wav" 
+	AltFlashSound3			"sound/weapons/tusken_cycler/fire.wav" 
+	AltFlashSound4			"sound/weapons/tusken_cycler/fire.wav" 
+	MuzzleEffect		"halo_pistol/Muzzle_Flash"
+	MissileMissEffect "halo_smg/wall_impact"
+	altMissileMissEffect "halo_smg/wall_impact"
+	MissileHitHumanEffect "halo_smg/wall_impact"
+	AltMissileHitHumanEffect "halo_smg/wall_impact"
+	MissileHitDroidEffect "halo_smg/wall_impact"
+	AltMissileHitDroidEffect "halo_smg/wall_impact"
+		damageMod 1.20
+		ratemod 1.60
+}
+WeaponInfo4
+{
+	WeaponToReplace		WP_MINIGUN
+	WeaponBasedOff	WP_MINIGUN
+	NewWorldModel		"models/weapons/W-90_Concussion/w-90_w.glm"
+	NewViewModel		"models/weapons/W-90_Concussion/w-90.md3"
+	Icon				"gfx/hud/w_icon_w90conc"
+	WeaponName			"Scrap Rifle"
+	primGore				1
+	altGore				1
+	FPMult     			1.10
+	CustomAmmo 			560
+	clipsize				25
+	FlashSound0			"sound/weapons/bar/fire.wav" 
+	AltFlashSound0		"sound/weapons/bar/fire.wav" 
+	AltMissileEffect	"halo_shotgun/shot" 
+	MissileEffect	"halo_shotgun/shot"
+	MuzzleEffect		"halo_pistol/Muzzle_Flash"
+	AltMuzzleEffect		"halo_pistol/Muzzle_Flash"
+	MissileMissEffect "halo_smg/wall_impact"
+	altMissileMissEffect "halo_smg/wall_impact"
+	MissileHitHumanEffect "halo_smg/wall_impact"
+	AltMissileHitHumanEffect "halo_smg/wall_impact"
+	MissileHitDroidEffect "halo_smg/wall_impact"
+	AltMissileHitDroidEffect "halo_smg/wall_impact"
+		damageMod 1.20
+		ratemod 1.60
+		velocitymod	2.6
+hasAnimOverrides 1
+	animReadyRun BOTH_DC15_IDLE
+	animReady BOTH_DC15_IDLE
+	animReadyWalk TORSO_WEAPONREADY4
+	animReadyNoAmmo TORSO_WEAPONREADY4
+	animAttackRun BOTH_ATTACK4
+	animAttack BOTH_ATTACK4
+	animAttackWalk BOTH_ATTACK4
+	animStand TORSO_DROPWEAP4
+}
+
+
+description	"Tusken Raider 
+
+A 2-life class with a unique blend of Melee weapons, slug-based guns, and Wookiee characteristics.   
+
+^2Weaponry:
+- Melee
+- Gaffi Stick (Staff/Yellow Saber)
+-- No Saber/Blaster Block
+-- No Saber Training
+-- 15% faster Movement
+-- 200% Spec Dmg mult
+-- 14% more AS
+-- 20% more Kb
+
+^8Attributes:
+- Reinforcement (1)
+- Fury (3)
+- 140% Slower Cooldowns
+-- 99% slower Resource Decay
+- Getup (2)
+- Strength (1)
+- Healing (1)"

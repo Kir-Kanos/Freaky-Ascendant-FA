@@ -1,0 +1,115 @@
+//Legends Mode character file - Created by Frenzy & Leos
+ClassInfo
+{
+	name 				 "ktg8_Bralor"
+	MBClass			MB_CLASS_BOUNTY_HUNTER
+	classNumberLimit  1
+
+	weapons 			WP_MELEE|WP_SABER
+
+	WP_Meleeflags		HELD_SPEED
+
+	classflags	CFL_BLOODYMELEE
+
+	attributes  		MB_ATT_AMMO,3|MB_ATT_DEXTERITY,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_PSHIELD|MB_ATT_ENV_PROT,2|MB_ATT_TRACKING_BEACON|MB_ATT_ANTI_MT,1|MB_ATT_BLAST_ARMOUR|MB_ATT_HEALING,2|MB_ATT_BESKAR,3|MB_ATT_WHISTLINGBIRD|MB_ATT_BARGE,2|MB_ATT_WRISTLASER|MB_ATT_FLAMETHROWER|MB_ATT_JETPACK|MB_ATT_FLIPKICK,1
+
+
+	forcepowers		FP_SABER_OFFENSE,3|FP_SABER_DEFENSE,2
+	forcepool 80
+	forceregen .2
+	
+	resource	RESOURCE_ENERGY
+
+	basespeed 225
+	
+	maxhealth 		150
+	
+	maxarmor			100	
+	 
+	ASmultiplier		1.05
+	APmultiplier		1.05
+	BPmultiplier		.80
+	CSmultiplier		1.15
+
+	saber1				"vibroblade_canderous_legends"
+	saberstyle  		SS_STRONG|SS_DESANN
+
+	saberDamageStyle SS_STRONG,200|SS_DESANN,200
+	
+
+	special1 EAS_HI_WRIST
+meleespecial1 EAS_HI_WRIST
+	special2 EAS_HI_FLAME
+meleespecial2 EAS_HI_FLAME
+	special3 EAS_HI_BARGE
+	special4 EAS_HI_DEX
+meleespecial4	EAS_HI_WHISTLING_BIRDS
+
+	knockbackTaken		.70
+	
+	gloatAnim   BOTH_VICTORY_FAST
+
+	uioverlay_r "gfx/icons/heavy"
+	uioverlay_l "gfx/icons/hybrid"
+
+	modelscale	1.05
+	model			"manda_et"	
+	skin			"rgb"
+	customred		1.000
+	customgreen		1.000
+	customblue		1.000
+	uishader		"models/players/manda_et/mb2_icon_gold"
+
+	jetpackJetTag		"*r_leg_foot"		//*r_leg_foot"
+	jetpackJet2Tag		"*l_leg_foot"		//"*l_leg_foot"
+	jetpackJetOffset	"0, 0, 10" // 30"
+	jetpackJet2Offset	"0, 0, 10" // 0, 0, 30"
+	jetpackJetAngles	"0, -70, 0"
+	jetpackJet2Angles	"0, 70, 0"
+
+bargeSoundOverride	"sound/chars/manda_kotor/misc/taunt.mp3"
+
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_canderous_vibblade"
+	WeaponName			"Bralor's Vibroblade"
+	SelectSound "sound/weapons/blade/slash2.mp3"	
+}
+
+
+description	"Bralor
+
+A cunning duelist who uses every advantage possible, many integrated weapons and excellent martial skills.
+
+^2Weaponry:
+- Heavy Melee
+-- 15% Faster Movement
+- Kelborn's Vibroblade (Red/Purple Saber)
+-- No Blaster Block
+-- Saber Defense (2)
+
+^8Attributes:
+- 30% less Kb Taken
+- Strength (1)
+- Dexterity (1)
+- Blast Armor
+- Beskar (3)
+- Healing (2)
+- Anti Mind Trick (1)
+- Tracking Beacon
+- Environmental Protection (2)
+- Flipkick (1)
+
+^3Abilities:
+- Mandalorian Combat Shield
+- Shoulder Barge ^3[CS3]
+- Wrist Laser ^3[CS1]
+- Wrist Flamethrower ^3[CS2]
+- Jetboots (Jetpack)
+- Vambrace Microrockets ^3[CS4 Melee]
+- Dex Roll ^3[CS4 Weapon Out]"

@@ -1,0 +1,101 @@
+name "ASC_OT_E"
+
+ClassesAllowed 6
+TimePeriod 5
+EUAllowed 0
+
+Classes
+{
+	class1	"ase1_ImpSold"
+	class2	"ase5_JetTr"
+	class3	"ase6_ScoutTr"
+	class4	"v8_GamoPig"
+	class5	"ase9_SAcolyte"
+	class6	"ase10_SForce"
+}
+
+SubclassesForClass1
+{
+	Subclass1	"ase1_ImpComm"
+	Subclass2	"ase1_NTroop"
+	Subclass3	"ase1_Undead"
+	Subclass4	"ase1_ORSithTr"
+	Subclass5	"ase1_Thug"
+	Subclass6	"ase2_Isb"
+	Subclass7	"ase2_FlameTr"
+	Subclass8	"v2_Hondo"
+	Subclass9	"v2_Greedo"
+	Subclass10	"ase3_EliteStorm"
+	Subclass11	"ase3_HeavyStorm"
+	Subclass12	"v3_Trando"
+	Subclass13	"ase3_DeathTr"
+	Subclass14	"v3_Bossk"
+	Subclass15	"ase3_Cultforce"
+}
+
+SubclassesForClass2
+{
+	Subclass1	"ase4_PurgeTr"
+	Subclass2	"ase4_RoyalPr"
+	Subclass3	"ase4_CarnorJax"
+	Subclass4	"v4_Mara"
+	Subclass5	"ase5_ImpArmCom"
+	Subclass6	"ase5_JumpTr"
+	Subclass7	"v5_Boba"
+	Subclass8	"ase5_P0DarkTr"
+	Subclass9	"ase5_P1DarkTr"
+	Subclass10	"ase5_P2DarkTr"
+	Subclass11	"ase5_P3DarkTr"
+	Subclass12	"ase5_GadgetMando"
+}
+
+SubclassesForClass3
+{
+	Subclass1	"ase6_Tusk"
+	Subclass2	"v6_Dengar"
+	Subclass3	"v6_MercSh"
+	Subclass4	"ase6_ImpCross"
+	Subclass5	"ase7_ImpAgent"
+	Subclass6	"ase7_Garindan"
+	Subclass7	"v7_ImpSpec"
+	Subclass8	"ase7_Noghri"
+	Subclass9	"v7_Tarkin"
+	Subclass10	"v7_Krennic"
+	Subclass11	"v7_Veers"
+	Subclass12	"v7_Zuck"
+	Subclass13	"v7_Thrawn"
+	Subclass14	"v7_Reelo"
+}
+
+SubclassesForClass4
+{
+	Subclass1	"v8_HuttW"
+	Subclass2	"v8_Burg"
+	Subclass3	"v8_Galak"
+	Subclass4	"v8_Snoova"
+	Subclass5	"v8_Wampa"
+}
+
+SubclassesForClass5
+{
+	Subclass1	"ase9_ShadowG"
+	Subclass2	"ase9_Vader"
+	Subclass3	"ase9_Inquis"
+	Subclass4	"ase9_SJugger"
+	Subclass5	"ase9_SAssass"
+	Subclass6	"ase9_SWarr"
+	Subclass7	"ase9_Maw"
+}
+
+SubclassesForClass6
+{
+	Subclass1	"v10_Palp"
+	Subclass2	"ase10_SecretApp"
+	Subclass3	"ase10_Jerec"
+	Subclass4	"ase10_Tavion"
+	Subclass5	"ase10_Yun"
+	Subclass6	"ase10_Sariss"
+	Subclass7	"ase10_Boc"
+	Subclass8	"ase10_Pic"
+	Subclass9	"ase10_Gorc"
+}

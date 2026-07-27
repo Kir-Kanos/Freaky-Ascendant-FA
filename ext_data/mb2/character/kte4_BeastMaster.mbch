@@ -1,0 +1,125 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name		"kte4_Beastmaster"
+	weapons			WP_SABER|WP_MELEE|WP_BLASTER_PISTOL
+
+	attributes		MB_ATT_AMMO,3|MB_ATT_PISTOL,1|MB_ATT_ROUNDSPAWNER,1|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_DODGE,3|MB_ATT_STAMINA,3|MB_ATT_CRYOBAN_GRENADES,1|MB_ATT_DEXTERITY,3|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_BLAST_ARMOUR|MB_ATT_ENV_PROT,1|MB_ATT_FLIPKICK,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_STIMPACK
+
+forcepowers	FP_DARKRAGE,3
+
+	maxhealth		120
+
+	RoundNPC	"BomaBeastmaster"
+
+	maxarmor			80
+
+	ASmultiplier 1.05
+
+	BPmultiplier		.90
+
+	APmultiplier		.95
+	
+	MBClass			MB_CLASS_CLONETROOPER	
+	
+	resource RESOURCE_STAMINA
+	forcepool 110
+
+	extralives		1
+
+	WP_BlasterPistolFlags	HELD_ALTRELOAD
+	WP_SaberFlags			HELD_SPEED
+	WP_MeleeFlags			HELD_SPEED
+
+	classflags	CFL_BPFREEJUMPS|CFL_BLOODYMELEE
+	
+	uioverlay_r "gfx/icons/infantry"
+	uioverlay_c "gfx/icons/hybrid"
+	uioverlay_l "gfx/icons/spec_infantry"
+	
+	modelScale        	1.00
+	classNumberLimit	1
+
+	saber1			kotor_vibrostaff
+	saberstyle		SS_STAFF
+	
+	saberdamage 120
+	
+	special1	EAS_HI_SPRINT
+	special2 EAS_HI_STIMPACK
+	special3 EAS_HI_DODGE
+	special4 EAS_HI_DEX
+	
+	gloatAnim   	BOTH_VICTORY_FAST
+	flourishAnim BOTH_STAND5TOAIM
+	
+	model		"sithtrooper"
+	skin		"green"
+	uishader	"models/players/sithtrooper/mb2_icon_green"
+ 
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_oldrepswords"
+	WeaponName			"Vibrostaff" 
+	SelectSound "sound/weapons/blade/slash2.mp3"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace	WP_BLASTER_PISTOL
+	WeaponBasedOff	WP_BLASTER_PISTOL	
+	NewWorldModel		"models/weapons2/kotor_bpistol2/kotor_bpistol2_w.glm"  
+    NewViewModel		"models/weapons2/kotor_bpistol2/kotor_bpistol2.md3"
+	Icon				"gfx/hud/w_icon_kotor_bpistol2"
+	flashsound0		"sound/weapons/kotor/fire_light.wav"
+	Altflashsound0	"sound/weapons/kotor/fire_power1.wav"
+	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
+    WeaponName		"Sith Blaster Pistol"
+	hasAnimOverrides 1
+	animStand BOTH_STAND1
+	animReadyRun BOTH_PISTOL_IDLE2
+	animReady BOTH_PISTOL_IDLE2
+	animReadyWalk BOTH_PISTOL_READY
+	animReadyNoAmmo BOTH_PISTOL_ATTACK
+	animAttackRun BOTH_PISTOL_ATTACK
+	animAttack BOTH_PISTOL_ATTACK
+	animAttackWalk BOTH_PISTOL_ATTACK
+	animCharge BOTH_PISTOL_ATTACK
+}
+
+ForceInfo0
+{
+	ForceToReplace		FP_DARKRAGE
+	Icon		gfx/hud/vadertaunt.tga"
+	ForcePowerName		"Primal Rage"
+}
+
+description	"Sith Beastmaster
+
+Sith Specialized in taming alien species as allies. Excellent Shock Troops.
+
+^2Weaponry:
+- Melee
+- Vibrostaff (Staff)
+-- Saber Defense (2)
+-- No Blaster Block
+-- 15% faster Movement
+- Sith Blaster Pistol (2)
+-- Mag Reload
+- Cyroban Grenade (1)
+
+^8Attributes:
+- Reinforcement (1)
+- Stamina (3)
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Primal Rage (Dark Rage 3) ^3[CS4]"

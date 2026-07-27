@@ -1,5 +1,6 @@
 HiddenBek1
 {
+	Displayname "Hidden Bek Scoundrel"
 	playerModel jedi_tm
 	customskin	citizen
 	weapon		WP_DISRUPTOR

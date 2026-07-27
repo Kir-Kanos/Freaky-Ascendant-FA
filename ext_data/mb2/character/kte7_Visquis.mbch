@@ -1,0 +1,161 @@
+ClassInfo
+{
+	name				"kte7_Visquis"
+	MBClass				MB_CLASS_SOLDIER
+	classNumberLimit	1
+
+	weapons				WP_MELEE|WP_SABER|WP_DC_CARBINE|WP_REAL_TD|WP_TRIP_MINE|WP_DET_PACK
+
+	WP_SaberFlags		HELD_STUN|HELD_CRIPPLE|HELD_PULSE
+	WP_DCCarbineFlags	HELD_ALTRELOAD
+	WP_TripMineFlags	HELD_TRACKING
+	WP_DetPackFlags		HELD_FLAME|HELD_CRIPPLE
+
+	attributes			MB_ATT_HEALING,3|MB_ATT_RALLY|MB_ATT_SABER_COMBO_NONE|MB_ATT_DC_CARBINE,1|MB_ATT_BACTA|MB_ATT_BACTA_BIG|MB_ATT_SPAWNER|MB_ATT_ROUNDSPAWNER|MB_ATT_PSHIELD|MB_ATT_AMMO,3|MB_ATT_PETCONTROL|MB_ATT_ANTI_MT,2|MB_ATT_TRACKING_BEACON|MB_ATT_DISP_HEALTH,1|MB_ATT_DISP_ARMOR,2|MB_ATT_DRONE|MB_ATT_FORCEFIELD|MB_ATT_SENTRY|MB_ATT_BASESEEKER|MB_ATT_THERMALS,1|MB_ATT_TRIP_MINES,10|MB_ATT_DET_PACK,10
+
+	spawnerNPC			"sentry"
+
+	roundNPC			"Visg0t0"
+
+	knockbackGiven		0.6
+	knockbackTaken		1.25
+
+	baseSpeed			220
+
+	//rateOfFire		2
+	rateOfFire_Melee	2
+
+	skilltimermod		2
+
+	maxhealth			175
+	maxarmor			50
+
+	resource			RESOURCE_ENERGY
+	forcepool			75
+
+	special1			EAS_HI_BASESEEKER
+	special2			EAS_HI_SPAWNER
+	special3			EAS_HI_SEEKER
+	special4			EAS_HI_SENTRY_GUN
+
+	meleemoves			M_BLOCK|M_PUNCH
+	disableGunbash		1
+
+	saber1				soldierbaton_legends
+	forcepowers			FP_SABER_OFFENSE,3
+	saberstyle			SS_TAVION
+	maxsaberchain
+	BPmultiplier		0
+	APmultiplier		0.4
+	ASmultiplier		.90
+	saberDamage			40
+
+	classFlags			CFL_NOPICKUPS|CFL_STATVIEWER|CFL_SEEING_STEALTH
+
+	model				"SenatorTikkes"
+	skin				"aide"
+	uishader			"models/players/SenatorTikkes/icon_default"
+
+	uioverlay			"gfx/icons/tactician"
+	modelscale			1.03
+
+	punchAnim			BOTH_MELEE_BACKHAND
+	tauntAnim			BOTH_STAND5STARTLEDLOOKLEFT
+	gloatAnim			BOTH_STAND1_TALK1
+	flourishAnim		BOTH_COWER1
+	bowAnim				BOTH_INJURED_TO_COLLAPSED
+	saberStanceAnim		BOTH_B5_T____ //overhead //TORSO_SURRENDER_START
+	//WalkForward		BOTH_WALK5
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_DC_CARBINE
+	WeaponBasedOff		WP_DC_CARBINE
+	NewWorldModel		"models/weapons2/kotor_bpistol2/kotor_bpistol2_w.glm"
+	NewViewModel		"models/weapons2/kotor_bpistol2/kotor_bpistol2.md3"
+	Icon				"gfx/hud/w_icon_kotor_bpistol2"
+	WeaponName			"Exchange Blaster Pistol"
+	MissileEffect				"Blaster/Shot01R"
+	MuzzleEffect				"Blaster/MuzzleFlash01R"
+	MissileMissEffect			"Blaster/Impact_Wall01"
+	MissileHitHumanEffect		"Blaster/Impact_Wall01"
+	MissileHitDroidEffect		"Blaster/Impact_Wall01"
+	altMissileMissEffect		"Blaster/Impact_Wall01"
+	altMissileHitHumanEffect	"Blaster/Impact_Wall01"
+	altMissileHitDroidEffect	"Blaster/Impact_Wall01"
+	FlashSound0			"sound/weapons/spy_pistol/fire.mp3"
+	FlashSound1			"sound/weapons/spy_pistol/fire.mp3"
+	FlashSound2			"sound/weapons/spy_pistol/fire.mp3"
+	FlashSound3			"sound/weapons/spy_pistol/fire.mp3"
+	rateMod				3
+	reloadTimeModifier	1.4
+	hasAnimOverrides	1
+	animReadyNoAmmo		BOTH_PISTOL_ATTACK
+	animAttackRun		BOTH_PISTOL_ATTACK
+	animAttack			BOTH_PISTOL_ATTACK
+	animAttackWalk		BOTH_PISTOL_ATTACK
+	animStand			BOTH_STAND1
+	animReadyRun		BOTH_PISTOL_IDLE2
+	animReady			BOTH_PISTOL_IDLE2
+	animReadyWalk		BOTH_PISTOL_READY
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/stunbaton/stun_w.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_soldierbaton"
+	WeaponName			"Shock Baton"
+}
+
+
+description "Visquis
+
+A cowardly crimeboss who'd prefer to set up a killzone with his droids
+
+^2Weaponry:
+- Unskilled Melee
+-- 100% slower RoF
+-- Punch/block only
+- Exchange Blaster Pistol (DC Carb 1)
+-- 200% slower RoF
+-- 400% slower reload
+-- Mag Reload
+- Stun Baton (Cyan)
+-- 40 Damage
+-- No Blaster/Saber Defense
+-- No Blaster Deflect
+-- Pulses/Stuns/Cripples On Hit
+- Tripmines (10)
+-- Tracks
+- Detpacks (10)
+-- Ignites/Cripples
+- Thermal Detonator (1)
+
+^6Inventory:
+- Medpac
+- Adv Medpac
+- Exchange Remote Droid (Beacon) ^3[CS2]
+- Personal Energy Shield 
+- Exchange Sentry Turret ^3[CS4]
+- Exchange Defensive Remote ^3[CS1]
+- Exchange Seeker Remote ^3[CS3]
+- Force Field
+
+^8Attributes:
+- G0T0, The Exchange Leader (Bodyguard)
+- Remote Viewer
+- Stat Viewer
+- Healing (3)
+- Rally
+- Force Sense Immunity
+- Anti Mind Trick (1)
+- Health/Armor Dispenser (1) ^3[USE In Melee]
+- No Gunbash/Pickups
+- 100% slower skill cooldown
+- 40% less knockback given
+- 25% more knockback taken"

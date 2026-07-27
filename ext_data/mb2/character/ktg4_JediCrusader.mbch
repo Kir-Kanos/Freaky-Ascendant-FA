@@ -1,0 +1,162 @@
+ClassInfo
+{
+	name		"ktg4_JediCrusader"
+	weapons			WP_MELEE|WP_SABER
+
+	attributes		MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,1|MB_ATT_FORCEFOCUS,2|MB_ATT_DODGE,3|MB_ATT_DEFLECT,1|MB_ATT_BESKAR,1|MB_ATT_GUN_DEFENSE,1
+
+	forcepowers	FP_SABERTHROW,2|FP_SABER_DEFENSE,2|FP_LEVITATION,2
+
+	maxhealth		100
+	
+	maxarmor			30
+	
+	MBClass			MB_CLASS_JEDI	
+	
+	resource RESOURCE_FORCE
+	forcepool 100
+	forceregen	1.1
+
+
+	DamageGiven     	1
+	speed           	0.95
+
+	extralives		1
+
+	WP_BlasterPistolFlags	HELD_ALTRELOAD
+	
+	uioverlay_r "gfx/icons/infantry"
+	uioverlay_c "gfx/icons/hybrid"
+	uioverlay_l "gfx/icons/spec_infantry"
+	
+	modelScale        	1.00
+	classNumberLimit	3
+	
+	special1	EAS_HI_SPRINT
+	special2	EAS_HI_DODGE
+	special4 EAS_FP_REPULSE
+	
+	gloatAnim   	BOTH_VICTORY_FAST
+	flourishAnim BOTH_STAND5TOAIM
+	
+	model		"jedi_spanki"
+	skin		"torjedi1"
+	uishader	"models/players/jedi_spanki/mb2_icon_torjedi1"
+
+	model_1		"jedi_spanki"
+	skin_1		"jedi_arena"
+	uishader_1	"models/players/jedi_spanki/mb2_icon_jedi_arena"
+
+saber1		saber_kshrt
+sabercolor		5
+saberstyle		SS_MEDIUM|SS_TAVION
+
+	saberDamageStyle	SS_TAVION,120|SS_MEDIUM,200
+
+	APmultiplier		.95
+	BPmultiplier		.95
+	ASmultiplier		1.05
+	CSmultiplier		1.10
+
+	
+ 	isCustomBuild		1
+	mbPoints			20
+	
+	c_att_skill_0	MB_ATT_PISTOL
+	c_att_names_0	"Republic Blaster Pistol"
+	c_att_ranks_0	2,2,4
+	c_att_descs_0	"Mag Reload"
+
+	c_att_skill_1	MB_ATT_FP_SEE
+	c_att_names_1	"Force Sense"
+	c_att_ranks_1	4,0
+
+	c_att_skill_2	MB_ATT_FP_GRIP
+	c_att_names_2	"Force Grip"
+	c_att_ranks_2	2,4
+
+	c_att_skill_3	MB_ATT_FP_DARKRAGE
+	c_att_names_3	"Force Dark Rage"
+	c_att_ranks_3	2,0
+
+	c_att_skill_4	MB_ATT_FP_REPULSE
+	c_att_names_4	"Force Repulse"
+	c_att_ranks_4	6
+	c_att_descs_4	"^3[CS4]"
+
+	c_att_skill_5	MB_ATT_FP_PROTECT
+	c_att_names_5	"Force Protect"
+	c_att_ranks_5	2,2
+
+	c_att_skill_6	MB_ATT_FP_PUSH
+	c_att_names_6	"Force Push"
+	c_att_ranks_6	4,0,2
+
+	c_att_skill_7	MB_ATT_FP_PULL
+	c_att_names_7	"Force Pull"
+	c_att_ranks_7	4,0,2
+
+	c_att_skill_8	MB_ATT_FP_SPEED
+	c_att_names_8	"Force Speed"
+	c_att_ranks_8	2,2,2
+
+	c_att_skill_9	MB_ATT_FP_STASIS
+	c_att_names_9	"Force Stasis"
+	c_att_ranks_9	2,2,2
+
+	c_att_skill_10	MB_ATT_FP_STASIS
+	c_att_names_10	"Blaster Deflect"
+	c_att_ranks_10	0,2,2
+
+	c_att_skill_11	MB_ATT_GUN_DEFENSE
+	c_att_names_11	"Blaster Defense"
+	c_att_ranks_11	0,2,2
+
+
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace	WP_BLASTER_PISTOL
+	WeaponBasedOff	WP_BLASTER_PISTOL	
+	NewWorldModel		"models/weapons2/kotor_bpistol1/kotor_bpistol1_w.glm"
+	NewViewModel		"models/weapons2/kotor_bpistol1/kotor_bpistol1.md3"
+	Icon				"gfx/hud/w_icon_kotor_bpistol1"
+	flashsound0		"sound/weapons/kotor/fire_light.wav"
+	Altflashsound0	"sound/weapons/kotor/fire_power1.wav"
+	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
+    WeaponName		"Republic Blaster Pistol"
+	hasAnimOverrides 1
+	animReadyRun TORSO_WEAPONIDLE2
+	animReady TORSO_WEAPONIDLE2
+	animReadyWalk TORSO_WEAPONIDLE2
+	animReadyNoAmmo BOTH_ATTACK2 
+	animAttackRun BOTH_ATTACK2 
+	animAttack BOTH_ATTACK2 
+	animAttackWalk BOTH_ATTACK2 
+}
+
+description	"Jedi Revanchist Crusader
+
+A war adapted Jedi, has no issue using blasters stolen or equipped from enemies or ally alike, has heavy armor under their robes.
+
+^2Weaponry:
+- Melee
+- Lightsaber (Yellow/Cyan Style)
+-- Saber Defense (2)
+-- Blaster Defense/Deflect (1)
+-- Saberthrow (2)
+
+^8Attributes:
+- Reinforcement (1)
+- Assemble (1) 
+- Force Focus (2)
+- Beskar (1)
+
+^8Powers:
+- Jump (2)
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Dodge (3) ^3[CS2]"
