@@ -34,7 +34,7 @@ ClassInfo
 	WP_MeleeFlags		HELD_SPEED
 	WP_SaberFlags		HELD_SPEED
 	WP_BlasterFlags		HELD_ALTRELOAD
-	WP_StunBatonFlags	HELD_SPEED|HELD_TRACKING
+	WP_StunBatonFlags	HELD_SPEED|HELD_TRACKING|HELD_CRIPPLE|HELD_LIFESTEAL|HELD_LOWDAMAGE
 	
 	uioverlay_r "gfx/icons/infantry"
 	uioverlay_c "gfx/icons/hybrid"
@@ -88,8 +88,8 @@ ClassInfo
 
 	c_att_skill_4	MB_ATT_STUN_BATON
 	c_att_names_4	"Stun Baton"
-	c_att_ranks_4	2,4
-	c_att_descs_4	"Applies Tracking, Fast Movement"
+	c_att_ranks_4	4
+	c_att_descs_4	"Applies Tracking/Cripple, Life Steals, Low Damage, Fast Movement"
 	
 	c_att_skill_5	MB_ATT_BLASTER
 	c_att_names_5	"Converted Sith Carbine"
