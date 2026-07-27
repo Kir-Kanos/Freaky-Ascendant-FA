@@ -49,6 +49,10 @@ ClassInfo
 	skin			"desert"					
 	uishader		"models/players/czerka/mb2_icon_desert"
 
+	model_1		"czerka"
+	skin_1			"nikto"					
+	uishader_1		"models/players/czerka/mb2_icon_nikto"
+
 	isCustomBuild		1
 	mbPoints			35
 	
