@@ -7,7 +7,7 @@ ClassInfo
 	maxhealth			150
 	maxarmor			60 
 
-	attributes			MB_ATT_BLASTER_PISTOL,1|MB_ATT_E_22,3|MB_ATT_AMMO,3|MB_ATT_BESKAR,1|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,1|MB_ATT_FRAGS,2|MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_RALLY,1|MB_ATT_PSHIELD|MB_ATT_STIMPACK|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_BARGE|MB_ATT_DISP_ARMOR,1
+	attributes			MB_ATT_BLASTER_PISTOL,1|MB_ATT_E_22,3|MB_ATT_AMMO,3|MB_ATT_BESKAR,1|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,1|MB_ATT_FRAGS,2|MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_RALLY,1|MB_ATT_PSHIELD|MB_ATT_STIMPACK|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_BARGE,2|MB_ATT_DISP_ARMOR,1
 
 	saber1				short_vibroaxe_legends
 	saberstyle			SS_STRONG|SS_MEDIUM
@@ -31,7 +31,7 @@ ClassInfo
 
 	forcepowers	FP_RAGE
 
-	bargeSoundOverride	"sound/chars/rodian_rebel/misc/pushed1.mp3"
+	bargeSoundOverride	"sound/chars/duros/misc/anger1.mp3"
 
 	resource	resource_energy
 
@@ -81,7 +81,7 @@ WeaponInfo1
 	Icon				"gfx/hud/w_icon_kotor_bpistol1"
 	flashsound0		"sound/weapons/kotor/fire_light.wav"
 	WeaponName			"Zhug Rapid Blaster Pistol"
-	damageMod			0.65
+	damageMod			0.60
 	rateMod				0.50
 hasAnimOverrides 1
 animReadyRun BOTH_JANGO_PISTOL_IDLE
