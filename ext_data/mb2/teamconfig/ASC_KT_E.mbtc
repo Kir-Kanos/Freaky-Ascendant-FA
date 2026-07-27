@@ -28,7 +28,7 @@ SubclassesForClass1
   Subclass10 "kte3_SithMedic"
 	Subclass11 "kte1_Thug"
 	Subclass12 "kte2_ExchangeThug"
-	Subclass13 "v2_Calo"
+	Subclass13 "kte2_Calo"
 	Subclass14 "kte1_MandoSlave"
 	Subclass15 "kte2_HK50"
 	Subclass16 "kte2_CzerkaTech"
