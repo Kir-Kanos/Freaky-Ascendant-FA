@@ -40,22 +40,24 @@ ClassInfo
 	
 	maxhealth			80
 	maxArmor			40
-
-
 	
 	uioverlay 			"gfx/icons/infantry"
 		
 	model			"czerka" 				
-	skin				"default"					
-	uishader			"models/players/czerka/mb2_icon_default"
+	skin				"mirialan_hat"					
+	uishader			"models/players/czerka/mb2_icon_mirialan_hat"
+
+	model_1			"czerka" 				
+	skin_1				"default"					
+	uishader_1			"models/players/czerka/mb2_icon_default"
 
 	isCustomBuild		1
 	mbPoints			40
 	
 	c_att_skill_0		MB_ATT_PISTOL
-	c_att_names_0		"Executive Sidearm (Pistol)"
+	c_att_names_0		"Executive Sidearm"
 	c_att_ranks_0		0,0,2
-	c_att_descs_0		"Standard issue sidearm"
+	c_att_descs_0		"15%- Damage/FP Drain, 25%+ RoF, Alt Fire Disabled, Mag Reload "
 
 	c_att_skill_1		MB_ATT_CLONERIFLE
 	c_att_names_1		"Prototype Carbine"
@@ -83,7 +85,6 @@ ClassInfo
 	c_att_skill_6		MB_ATT_RALLY
 	c_att_names_6		"Rally"
 	c_att_ranks_6		2
-	c_att_descs_6		"Allows Czerka Security to spawn on you"
 
 	c_att_skill_7		MB_ATT_HEALING
 	c_att_names_7		"Healing"
@@ -146,9 +147,9 @@ WeaponInfo0
 	PowerupShotEffect	"Blaster/Shot04Y"
 	ChargeEffect		"gfx/effects/YellowFrontFlash"
 	WeaponName			"Executive Sidearm"   					
-	FPMult     			0.80
+	FPMult     			0.85
 	customAmmo 			600
-	DamageMod 			.90
+	DamageMod 			.85
 	rateMod 			.75
 	AltFireEnabled 		0
 }
