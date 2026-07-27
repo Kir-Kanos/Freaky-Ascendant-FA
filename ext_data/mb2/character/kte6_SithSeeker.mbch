@@ -73,9 +73,13 @@ Multi-life Dark Jedi pawns who attempt to ambush unsuspecting opponents with the
 
 ^2Weaponry:
 - Melee
-- Lightsaber (Staff/Duals/Cyan)
+- Sith Force Pike
+-- Staff Pike (Staff/Cyan)
+-- Single Pike (Blue/Yellow)
+-- Dual Pikes (Dual/Purple)
 -- Saber Defense (1)
--- 135% Spec Dmg mult
+-- 150% Spec Dmg mult
+-- Much less Damage
 
 ^5Force Powers:
 - Jump (2)
