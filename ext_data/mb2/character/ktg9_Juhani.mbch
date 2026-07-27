@@ -8,11 +8,11 @@ ClassInfo
 
 	weapons				WP_SABER|WP_MELEE
 
-	attributes			MB_ATT_DEFLECT,1|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_FLIPKICK,1|MB_ATT_DEXTERITY,3|MB_ATT_BACTA|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_CLOAK,1|MB_ATT_SPEEDLUNGE|MB_ATT_WOOKIE_STRENGTH|MB_ATT_DASH,1
+	attributes			MB_ATT_DEFLECT,1|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_FLIPKICK,1|MB_ATT_DEXTERITY,3|MB_ATT_BACTA|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_CLOAK,1|MB_ATT_SPEEDLUNGE|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_DASH,1
 
 	forcepowers			FP_SABER_OFFENSE,2|FP_LEVITATION,3|FP_PUSH,2|FP_PULL,1|FP_SABERTHROW,3|FP_SPEED,1|FP_DARKRAGE,3|FP_LIGHTNING,1|FP_PROTECT,1|FP_SEE,1
 
-	damageGiven  1.1
+	damageGiven  1.05
 	speed   1.16
 
 	maxhealth			135
@@ -23,11 +23,9 @@ ClassInfo
 	forceregen    1.35
 	resource RESOURCE_FORCE
 
-	Classflags	CFL_SEEING_STEALTH
+	WP_MeleeFlags	HELD_CRIPPLE|HELD_TRACKING
 
-	WP_MeleeFlags	HELD_CRIPPLE
-
- rateOfFire_melee .90
+ rateOfFire_melee .95
 
 	APmultiplier		1.15
 	ASmultiplier 	1.05
@@ -46,11 +44,10 @@ ClassInfo
  	special3 EAS_HI_MEDPAC
 	special4 EAS_HI_DASH
 
-	classflags CFL_NOPICKUPS|CFL_BLOODYMELEE
+	classflags CFL_NOPICKUPS|CFL_BLOODYMELEE|CFL_SEEING_STEALTH
 
 	saber1				saber_juhani
 	sabercolor			4
-
 
 	uioverlay "gfx/icons/frontline"
 	
@@ -67,8 +64,8 @@ A seasoned Jedi Guardian who focused on an agile offensive abilites and martial 
 ^2Weaponry:
 - Cathar Claws 
 -- Heavy Melee
--- Cripples on Hit
--- 10% faster RoF
+-- Cripples/Tracks on Hit
+-- 5% faster RoF
 - Lightsaber (Red/Cyan/Blue)
 -- Saber Defense (2)
 -- Blaster Defense/Deflect (2/1)
