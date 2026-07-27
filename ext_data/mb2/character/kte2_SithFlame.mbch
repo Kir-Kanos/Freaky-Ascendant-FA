@@ -8,9 +8,9 @@ Classinfo
 	classNumberLimit	2
 	extralives		1
 
-	weapons	WP_MELEE|WP_THROWER|WP_FIRE_NADE|WP_SHOTGUN|WP_EE4
+	weapons	WP_MELEE|WP_THROWER|WP_FIRE_NADE|WP_MINIGUN|WP_EE4
 
-	attributes	MB_ATT_AMMO,4|MB_ATT_FIRE_GRENADES,2|MB_ATT_ASSEMBLE,2|MB_ATT_FLAMETHROWER|MB_ATT_ENV_PROT,2|MB_ATT_SHOTGUN,3|MB_ATT_EE4,2|MB_ATT_WRISTLASER
+	attributes	MB_ATT_AMMO,4|MB_ATT_FIRE_GRENADES,2|MB_ATT_ASSEMBLE,2|MB_ATT_FLAMETHROWER|MB_ATT_ENV_PROT,2|MB_ATT_MINIGUN,1|MB_ATT_EE4,2|MB_ATT_WRISTLASER
 
 	maxhealth	100
 	maxarmor		50
@@ -26,7 +26,7 @@ Classinfo
 	special1	EAS_HI_FLAME
 	special2	EAS_HI_WRIST
 
-	WP_ShotgunFlags HELD_ALTRELOAD|HELD_SLOW|HELD_FLAME
+	WP_MinigunFlags HELD_ALTRELOAD|HELD_SLOW|HELD_FLAME|HELD_CRIPPLE|HELD_POISON|HELD_DISRUPTIFY|HELD_FORCEFOCUS
 	WP_ThrowerFlags HELD_ALTRELOAD|HELD_SLOW
 
 	AB_WLaserFlags	HELD_LOWDAMAGE|HELD_FLAME|HELD_DISRUPTIFY
@@ -58,21 +58,25 @@ WeaponInfo0
 
 WeaponInfo1
 {
-WeaponToReplace WP_SHOTGUN
-WeaponBasedOff WP_SHOTGUN
+WeaponToReplace WP_MINIGUN
+WeaponBasedOff WP_MINIGUN
 NewWorldModel	"models/weapons2/cp-50_repeater/cp-50_repeater_w.glm"
 NewViewModel	"models/weapons2/cp-50_repeater/cp-50_repeater.md3"
 Icon	"gfx/hud/w_icon_cp-50_repeater"
 WeaponName "Combustion Rifle"
-clipSize 120
-altFireEnabled 0
-Customammo 1200
-ReloadTimeModifier 1.3
-ratemod 0.4
-damagemod 0.15
+clipSize 30
+Customammo 300
+ReloadTimeModifier 1.4
+velocitymod	2.25
+ratemod 0.25
+damagemod 0.005
+FPmult	  0.005
+flashsound0		"sound/weapons/kotor/fire_light.wav"
+Altflashsound0	"sound/weapons/kotor/fire_light.wav"
 MuzzleEffect	"Blaster/MuzzleFlash01Y"
+AltMuzzleEffect	"Blaster/MuzzleFlash01Y"
 MissileEffect	"Blaster/Shot02Y"
-Missile3Effect	"Blaster/Shot03Y"
+Missile3Effect	"Blaster/Shot02Y"
 hasAnimOverrides 1
 animReadyRun BOTH_STAND3
 animReady BOTH_STAND3
@@ -84,6 +88,7 @@ animAttackWalk BOTH_ATTACK3
 animStand BOTH_WOOKIEE_RAGE_STAND
 //animStand BOTH_SPEAR_STANCE
 }
+
 
 WeaponInfo2
 {
@@ -110,14 +115,13 @@ A specialized Multilife Trooper equipped with incendiary weaponry and great crow
 -- 30% slower Mag Reload
 -- 20% Slower RoF
 -- 20% Less Damage
-- Combustion Rifle (3)
--- Based On Shotgun
--- 85% Less Damage
--- 60% Faster RoF
--- Ignites
--- 60% More RoF
--- 85% Less Damage
--- Alt Fire Disabled, Mag Reload
+- Combustion Rifle (1)
+-- Based On Minigun
+-- Slow Movement
+-- Ignites/Cripples/Force Focuses/Cripples/Poisons
+-- 75% More RoF
+-- 99.995% Less Damage/FP Drain
+-- Mag Reload
 - Sith Blaster Rifle 
 -- EE4 (2)
 - Fire Grenades (2)
