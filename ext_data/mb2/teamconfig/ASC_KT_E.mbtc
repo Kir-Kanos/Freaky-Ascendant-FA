@@ -43,6 +43,7 @@ SubclassesForClass1
   Subclass25 "kte1_Rakghoul"
   Subclass26 "kte3_SithInterro"
   Subclass27 "kte2_Chiss"
+  Subclass28 "kte2_Vulkar"
 }
 
 SubclassesForClass2
