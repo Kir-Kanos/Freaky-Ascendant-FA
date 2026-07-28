@@ -1,0 +1,180 @@
+//Legends Mode character file - Created by Frenzy & Leos
+ClassInfo
+{
+	name 				 "ktg7_Kelborn"
+	MBClass			MB_CLASS_BOUNTY_HUNTER
+	classNumberLimit  1
+
+	weapons 			WP_MELEE|WP_SABER|WP_MANDO_PISTOL|WP_FRAG_NADE
+
+	WP_Meleeflags		HELD_SPEED
+	WP_MandoPistolFlags	HELD_ALTRELOAD|HELD_CRIPPLE
+	WP_FragNadeFlags HELD_BACTA
+	AB_TDartFlags	HELD_BACTA
+	AB_WLaserFlags HELD_FLASH|HELD_LOWDAMAGE|HELD_POISON
+
+	classflags	CFL_STATVIEWER|CFL_BLOODYMELEE
+
+	attributes  		MB_ATT_AMMO,3|MB_ATT_RALLY|MB_ATT_DEXTERITY,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_PSHIELD|MB_ATT_ENEMYSCANNER|MB_ATT_MANDO_PISTOL,2|MB_ATT_FRAGS,3|MB_ATT_ENV_PROT,1|MB_ATT_TRACKING_BEACON|MB_ATT_ANTI_MT,2|MB_ATT_BLAST_ARMOUR|MB_ATT_HEALING,1|MB_ATT_BESKAR,2|MB_ATT_TRACKING_DART,6
+
+
+	forcepowers		FP_SABER_OFFENSE,3|FP_TEAM_FORCE,1|FP_RAGE,2|FP_SABER_DEFENSE,1
+	forcepool 120
+	forceregen 1.1
+	
+	resource	RESOURCE_STAMINA
+
+	basespeed 210
+	
+	maxhealth 		130
+	
+	maxarmor			90	
+	 
+	ASmultiplier		.95
+	APmultiplier		.80
+	BPmultiplier		.75
+	CSmultiplier		.95
+
+	saber1				"vibroblade_canderous_legends"
+	saberstyle  		SS_TAVION
+
+	saberDamageStyle SS_TAVION,120
+	
+
+	special1 EAS_HI_WRIST
+	special2 EAS_HI_ENEMYSCANNER
+	special3 EAS_HI_KICK
+	meleespecial3	EAS_HI_TRACKER
+	special4 EAS_HI_PSHIELD
+
+	knockbackTaken		.75
+	
+	gloatAnim   BOTH_VICTORY_FAST
+
+	uioverlay_r "gfx/icons/heavy"
+	uioverlay_l "gfx/icons/hybrid"
+
+	modelscale	1.03
+	model			"manda_et"	
+	skin			"rgb"
+	customred		0.500
+	customgreen		0.100
+	customblue		0.800
+	uishader		"models/players/manda_et/mb2_icon_red"
+
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_canderous_vibblade"
+	WeaponName			"Kelborn's Vibroblade"
+	SelectSound "sound/weapons/blade/slash2.mp3"	
+}
+
+WeaponInfo1
+{
+ WeaponToReplace  WP_FRAG_NADE
+ WeaponBasedOff   WP_FRAG_NADE
+ NewWorldModel  "models/weapons/Grenade_Concussion/model.glm"
+ NewViewModel  "models/map_objects/mp/bacta.md3"
+
+ MissileModel "models/map_objects/mp/bacta.md3"
+ MissileEffect "force/pushblur"
+ MissileMissEffect "grenades/exp_heal"
+ MissileHitHumanEffect "grenades/exp_heal"
+ MissileHitDroidEffect  "grenades/exp_heal"
+
+ altMissileModel "models/map_objects/mp/bacta.md3"
+ altMissileEffect "force/pushblur"
+ altMissileMissEffect "droideka/shieldimpact"
+ altMissileHitHumanEffect "droideka/shieldimpact"
+ altMissileHitDroidEffect  "droideka/shieldimpact"
+ Icon    "gfx/hud/w_icon_stungrenade"
+ WeaponName   "Colto Grenades"
+ damageMod 0
+}
+
+}
+WeaponInfo2
+{
+WeaponToReplace	WP_MANDO_PISTOL
+WeaponBasedOff WP_MANDO_PISTOL
+NewWorldModel	"models/weapons2/kotor_bpistol2/kotor_bpistol2_w.glm"
+NewViewModel	"models/weapons2/kotor_bpistol2/kotor_bpistol2.md3"
+Icon	"gfx/hud/w_icon_kotor_bpistol2"
+flashsound0	"sound/weapons/kotor/fire_light.wav"
+Altflashsound0 "sound/weapons/kotor/fire_power1.wav"
+WeaponName "Kelborn's Blaster Pistol"
+MissileEffect		"blaster/Shot03R"
+ChargeSound "sound/weapons/bryar/altcharge.mp3"
+customammo 460
+hasAnimOverrides 1
+animReadyRun BOTH_JANGO_PISTOL_IDLE
+animReady BOTH_JANGO_PISTOL_IDLE
+animReadyWalk TORSO_WEAPONIDLE2
+animReadyNoAmmo BOTH_ATTACK2 
+animAttackRun BOTH_ATTACK2 
+animAttack BOTH_ATTACK2 
+animAttackWalk BOTH_ATTACK2 
+damagemod	1.45
+ratemod		1.20
+fpmult		1.30
+velocitymod	1.20
+}
+
+ForceInfo0
+{
+	ForceToReplace		FP_TEAM_FORCE
+	Icon		gfx/2d/logos/mb_mand.tga"
+	ForcePowerName		"Advanced Tactics"
+}
+ForceInfo1
+{
+ForceToReplace	FP_RAGE
+Icon	"gfx/mp/new_f_icon_dk_rage"
+ForcePowerName	"Battle Focus"
+}
+
+description	"Kelborn
+
+A tactical leader with a heavy blaster pistol and a variety of scouting tech.
+
+^2Weaponry:
+- Heavy Melee
+-- 15% Faster Movement
+- Kelborn's Vibroblade (Cyan Saber)
+-- No Blaster Block
+-- 48% more Reach
+-- 42% less Red Dmg
+- Kelborn's Blaster Pistol
+-- Mando Pistol (2)
+-- 45%+ Damage/20%- RoF/30%+ FP Drain/20%+ Velocity
+-- Slows on Hit
+- Colto Grenades (3)
+-- Frag Grenades
+-- 0% Damage, Heals on Hit
+- Combat Stim Injector (Tracker Darts 6)
+-- Heals on Inject
+
+^8Attributes:
+- 25% less Kb Taken
+- Strength (1)
+- Dexterity (1)
+- Blast Armor
+- Rally
+- Beskar (2)
+- Healing (1)
+- Anti Mind Trick (2)
+- Tracking Beacon
+- Environmental Protection (1)
+
+^3Abilities:
+- Colto Sprayer (Health Dispenser 1) ^3[USE In Melee]
+- DNA Scrambler (Wrist Laser) ^3[CS1]
+-- Blinds, Poisons, Low Damage
+- Mandolorian Armor Scanner (Enemy Scanner) ^3[CS2]
+- Gun Kick ^3[CS3]
+- Mandalorian Combat Shield ^3[CS4]"

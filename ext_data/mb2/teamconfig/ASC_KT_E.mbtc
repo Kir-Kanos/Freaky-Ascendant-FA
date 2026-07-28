@@ -55,7 +55,8 @@ SubclassesForClass2
 	Subclass6 "kte4_TwinSuns"
 	Subclass7 "kte6_SithSeeker"
 	Subclass8 "kte6_OuterRimBounty"
-	Subclass9 "kte5_SithAir"
+	Subclass9 "kte4_BeastMaster"
+	Subclass10 "kte5_SithAir"
 }
 
 SubclassesForClass3
@@ -67,7 +68,8 @@ SubclassesForClass3
   Subclass5 "kte7_GenoEnforcer"
   Subclass6 "kte7_Chief"
   Subclass7 "kte7_Shaman"
-  Subclass8 "kte7_Davik"
+  Subclass8 "kte7_Visquis"
+  Subclass9 "kte7_Davik"
 }
 
 SubclassesForClass4
