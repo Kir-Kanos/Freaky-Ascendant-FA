@@ -43,10 +43,6 @@ ClassInfo
 	skin		"torjedi1"
 	uishader	"models/players/jedi_spanki/mb2_icon_torjedi1"
 
-	model_1		"jedi_spanki"
-	skin_1		"jedi_arena"
-	uishader_1	"models/players/jedi_spanki/mb2_icon_jedi_arena"
-
 saber1		saber_kshrt
 sabercolor		5
 saberstyle		SS_MEDIUM|SS_TAVION
