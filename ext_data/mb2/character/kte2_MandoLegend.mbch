@@ -4,11 +4,13 @@ ClassInfo
 	MBClass	MB_CLASS_BOUNTY_HUNTER 
 	classNumberLimit	1
 	
-	weapons	WP_MELEE|WP_SABER|WP_BLASTER_PISTOL
+	weapons	WP_MELEE|WP_SABER
 
 	WP_BlasterPistolFlags	HELD_ALTRELOAD|HELD_KNOCKBACK
 	WP_FragNadeFlags	HELD_FLAME|HELD_DISRUPTIFY
 	WP_PulseNadeFlags	HELD_STUN|HELD_FREEZE
+	WP_DisruptorFlags	HELD_ALTRELOAD|HELD_CRIPPLE
+	WP_CloneRifleFlags	HELD_ALTRELOAD|HELD_SLOW
 
 	classflags	CFL_BLOODYMELEE
 
@@ -28,10 +30,9 @@ ClassInfo
 	
 	special1	EAS_HI_DODGE
 	special2	EAS_HI_QUICKTHROW
-	special4	EAS_HI_STIMPACK
- 
- 	special1HUD HUD_FRAGNADE
-	special2HUD HUD_CONCNADE
+	special3	EAS_HI_STIMPACK
+	special4	EAS_HI_KICK
+	meleespecial4	EAS_HI_GRAPPLEHOOK
 
 	idleAnim BOTH_SCEPTER_HOLD
 	flourishAnim BOTH_SCEPTER_HOLD
@@ -62,12 +63,12 @@ ClassInfo
 	isCustomBuild	1
 	mbPoints	0
 	hasCustomSpec 2
-	customSpecName_1 "Bendak (Duelist)"
+	customSpecName_1 "Duelist (Bendak Starkiller)"
 	customSpecIcon_1 "gfx/menus/alpha/icon_weap_accuracy"
 	customSpecDesc_1 "Death Match Duelist With Grenades And Finesse"
-	customSpecName_3 "Field Marshal"
-	customSpecIcon_3 "gfx/menus/alpha/icon_playermodel"
-	customSpecDesc_3 "Custom Elite Mandalorian General"
+	customSpecName_2 "Field Marshal"
+	customSpecIcon_2 "gfx/menus/alpha/icon_playermodel"
+	customSpecDesc_2 "Custom Elite Mandalorian General"
 
 	c_att_skill_0	MB_ATT_FRAGS
 	c_att_names_0	"Plasma Grenade"
@@ -90,11 +91,39 @@ ClassInfo
 	c_att_skill_4 	MB_ATT_PISTOL
 	c_att_names_4 	"Bendak's Blaster Pistol"
 	c_att_ranks_4 	0
+	c_att_descs_4	"Knocks Back, Mag Reload, 30%+ Damage/FP Drain, 20%+ RoF
+ 		10%+ Velocity"
 
-	c_att_skill_4 	MB_ATT_QUICKTHROW
-	c_att_names_4 	"Quick Throw"
-	c_att_ranks_4 	0
+	c_att_skill_5 	MB_ATT_QUICKTHROW
+	c_att_names_5 	"Quick Throw"
+	c_att_ranks_5 	0
 
+	c_att_skill_15		MB_ATT_RALLY
+	c_att_names_15		"Rally"
+	c_att_ranks_15		0
+
+	c_att_skill_16		MB_ATT_CLONERIFLE
+	c_att_names_16		"Mandalorian Heavy Repeater"
+	c_att_ranks_16		0,0,0
+	c_att_descs_16		"10% less Damage/FP Drain, 150% slower reload, Heavyweight"
+
+	c_att_skill_17		MB_ATT_BESKAR
+	c_att_names_17		"Beskar"
+	c_att_ranks_17		0,0,0
+
+	c_att_skill_18		MB_ATT_GRAPPLE_HOOK
+	c_att_names_18		"Grapple Hook"
+	c_att_ranks_18		0,0
+	c_att_descs_18		"^3[CS4 Melee]"
+
+	c_att_skill_19		MB_ATT_DISRUPTOR
+	c_att_names_19		"Disruptor Rifle"
+	c_att_ranks_19		0,0
+	c_att_descs_19		"Mag Reload, Cripples On Hit"
+
+	c_att_skill_20		MB_ATT_HEALING
+	c_att_names_20		"Healing"
+	c_att_ranks_20		0,0
 	
 }
 WeaponInfo0
@@ -162,19 +191,48 @@ WeaponInfo3
 	SelectSound "sound/weapons/blade/slash2.mp3"
 }
 
+WeaponInfo4
+{
+	WeaponToReplace		WP_CLONE_RIFLE
+	WeaponBasedOff		WP_CONCUSSION
+	NewWorldModel		"models/weapons2/kotor_repeater/model_w.glm"
+	NewViewModel		"models/weapons2/kotor_repeater/model.md3"
+	Icon				"gfx/hud/w_icon_kotor_repeater"
+	WeaponName			"Mandalorian Heavy Repeater"
+	MissileEffect				"Blaster/Shot01R"
+	MuzzleEffect				"Blaster/MuzzleFlash01R"
+	AltMuzzleEffect				"Blaster/MuzzleFlash01B"
+	FlashSound0			"sound/weapons/kotor/fire_hvy.wav"
+	FPMult				0.90
+	Damagemod			0.90
+	clipsize			60
+	customAmmo			800
+	ReloadTimeModifier	1.6
+	hasAnimOverrides	1
+	animReadyRun		BOTH_DC15_IDLE
+	animReady			BOTH_DC15_IDLE
+	animReadyWalk		TORSO_WEAPONREADY3
+	animReadyNoAmmo		BOTH_ATTACK3
+	animAttackRun		BOTH_ATTACK3
+	animAttack			BOTH_ATTACK3
+	animAttackWalk		BOTH_ATTACK3
+	animStand			BOTH_STAND1
+}
+
 description	"Mandalorian Legend
 
-Pick between a high ranking Mandalorian Warlord, or an Ex Mandolorian Duelist (Bendak Starkiller).
+Pick between a high ranking Mandalorian Warlord, or an Ex Mandalorian Duelist (Bendak Starkiller).
 
 ^2Weaponry:
 - Melee
 - Bendak's Blaster Pistol (Pistol 3)
--- Knocks Down
+-- Knocks Back
 -- Mag Reload
 -- 30%+ Damage, 20%+ FP Drain
 -- 20%+ RoF
 -- 10%+ Velocity
 - Vibrosword (Saber Defense 1)
+-- No Blaster Defense/Deflect
 -- Red Style
 
 ^8Attributes:
@@ -185,7 +243,6 @@ Pick between a high ranking Mandalorian Warlord, or an Ex Mandolorian Duelist (B
 - Anti-Mind Trick (1)
 
 ^3Abilities:
-- Quickthrow (1) ^3[CS4]
-- Stimpack ^3[CS2]
-- Gunkick ^3[CS3]
+- Stimpack ^3[CS3]
+- Gunkick ^3[CS4]
 - Dodge (2) ^3[CS1]"
