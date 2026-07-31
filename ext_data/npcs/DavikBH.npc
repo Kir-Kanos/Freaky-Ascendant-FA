@@ -1,10 +1,10 @@
-Davikmerc
+DavikBH
 {
-	displayname "Exchange Merc"
-	playerModel serroco
+	displayname	"Exchange Bounty Hunter"
+	playerModel human_merc
 	customskin	dxun
-	weapon		WP_BRYAR_OLD
-	MB_ATT_BRYAR_OLD 3
+	weapon		WP_BLASTER_PISTOL
+	MB_ATT_PISTOL 3
 	health		150
 	armor 50
 	headPitchRangeDown 30

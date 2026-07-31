@@ -43,6 +43,7 @@ SubclassesForClass1
   Subclass25 "kte1_Rakghoul"
   Subclass26 "kte3_SithInterro"
   Subclass27 "kte2_Chiss"
+  Subclass28 "kte2_Vulkar"
 }
 
 SubclassesForClass2
@@ -107,9 +108,11 @@ SubclassesForClass6
 	Subclass3 "kte10_Yuthura"
 	Subclass4 "kte10_AjuntaGhost"
 	Subclass5 "kte10_SithSorc"
-	Subclass6 "v10_Nihilus"
-	Subclass7 "kte10_TrayaTrio"
-	Subclass8 "kte10_kallig"
-	Subclass9 "kte10_Bandon"
-	Subclass10 "kte10_Ragnos"
+	Subclass6 "kte10_Ragnos"
+	Subclass7 "v10_Nihilus"
+	Subclass8 "kte10_TrayaTrio"
+	Subclass9 "kte10_kallig"
+	Subclass10 "kte10_Bandon"
+	Subclass11 "kte10_Ragnos"
+	Subclass12 "kte10_Freedon"
 }

@@ -54,9 +54,9 @@ ClassInfo
 	uioverlay_r 	"gfx/icons/infantry"
 	uioverlay_l 	"gfx/icons/brawler"
 	
-	model 			"re_tyrant"
+	model 			"rakghoul"
 	skin  			"default"
-	uishader		"gfx/mplevels/revil/re_zombiec"
+	uishader	"models/players/rakghoul/icon_default"
 	
 	bargesoundoverride "Sound/chars/Death_Trooper/misc/taunt3.wav"
 	ragesoundoverride "Sound/chars/Death_Trooper/misc/falling1.wav"
