@@ -98,6 +98,7 @@ SubclassesForClass5
 	Subclass9 "v9_Sion"
 	Subclass10 "kte9_Vindican"
 	Subclass11 "kte9_Zannah"
+	Subclass12 "kte9_Malak"
 }
 
 SubclassesForClass6
@@ -107,7 +108,7 @@ SubclassesForClass6
 	Subclass3 "kte10_Yuthura"
 	Subclass4 "kte10_AjuntaGhost"
 	Subclass5 "kte10_SithSorc"
-	Subclass6 "v10_Malak"
+	Subclass6 "kte10_Ragnos"
 	Subclass7 "v10_Nihilus"
 	Subclass8 "kte10_TrayaTrio"
 	Subclass9 "kte10_kallig"
