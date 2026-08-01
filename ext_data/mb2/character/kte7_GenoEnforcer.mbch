@@ -9,7 +9,7 @@ ClassInfo
 	
 	attributes			MB_ATT_AMMO,3|MB_ATT_TRACKING_BEACON|MB_ATT_GRAPPLE_HOP|MB_ATT_FLOAT_HOP|MB_ATT_BLAST_ARMOUR|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_THROWER_PLASMA|MB_ATT_DEXTERITY,2|MB_ATT_ANTI_MT,1|MB_ATT_BESKAR,1|MB_ATT_FLIPKICK,1|MB_ATT_DODGE,3
 
-	maxhealth			120
+	maxhealth			100
 	MaxArmor			80
 
 	resource			RESOURCE_ENERGY
@@ -51,7 +51,7 @@ ClassInfo
 	c_att_skill_0		MB_ATT_MINIGUN
 	c_att_names_0		"Wind Up Darts"
 	c_att_ranks_0		8
-	c_att_descs_0		"Minigun, 20%- Damage, Tracking/Poison/Cripple/FF"
+	c_att_descs_0		"Minigun, 35%- Damage, Tracking/Poison/Cripple/FF"
 
 	c_att_skill_1		MB_ATT_THROWER
 	c_att_names_1		"Disintegration Thrower"
@@ -122,8 +122,9 @@ WeaponInfo0
 	animStand BOTH_MAND_FLAME_READY  //lower
 	ReloadTimeModifier  1
 	velocityMod 2.5
-	FPMult 	 	.80
-	damagemod 	.80
+	ratemod		1.20
+	FPMult 	 	.65
+	damagemod 	.65
 
 }
 
