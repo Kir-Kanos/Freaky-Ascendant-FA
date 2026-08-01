@@ -7,9 +7,9 @@ ClassInfo
 	
 	maxhealth		80
 	
-	maxarmor			60
+	maxarmor			45
 
-	basespeed		220
+	basespeed		235
 
 	rateOFire_Melee	.95
 
