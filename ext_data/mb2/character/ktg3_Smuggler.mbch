@@ -7,9 +7,9 @@ ClassInfo
 	attributes			MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,3|MB_ATT_MANDO_PISTOL,1|MB_ATT_DEXTERITY,1|MB_ATT_QUICKTHROW,1|MB_ATT_DODGE,2
 	
 	maxhealth			80
-	maxarmor			50
+	maxarmor			45
 
-	basespeed			225
+	basespeed			235
 	rateOFire_Melee		.90
 	hackrate			.80
 	knockbackTaken 		0.90
