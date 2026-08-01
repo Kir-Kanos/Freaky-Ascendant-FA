@@ -5,7 +5,7 @@ ClassInfo
 	weapons			WP_MELEE|WP_SABER|WP_THERMAL|WP_CLONE_PISTOL
 
 	maxhealth		60
-	maxarmor       20	
+	maxarmor       15	
 	attributes		MB_ATT_ASSEMBLE,3|MB_ATT_AMMO,3|MB_ATT_ENV_PROT,1|MB_ATT_BASE_TD,2|MB_ATT_DODGE,3|MB_ATT_BINOCULARS|MB_ATT_TRACKING_DART,3|MB_ATT_DEXTERITY,1|MB_ATT_DODGE,2|MB_ATT_JETPACK,1|MB_ATT_CLONE_PISTOL,1
 
 	extralives	3
@@ -19,7 +19,7 @@ ClassInfo
 	saberstyle		SS_TAVION|SS_FAST
 	
 	resource	RESOURCE_ENERGY
-	forcepool	60
+	forcepool	25
 	forceregen	.80
 	
 	saberDamage 60
@@ -68,12 +68,12 @@ c_att_ranks_1	2
 c_att_skill_2	MB_ATT_BLASTER
 c_att_names_2	"Sith Airborne Carbine"
 c_att_ranks_2	1,1,1
-c_att_descs_2	"E11, 30%+ RoF, Mag Reload, 15%+ Velocity, 15%- Damage"
+c_att_descs_2	"E11, 20%+ RoF, Mag Reload, 15%+ Velocity, 15%- Damage"
 
 c_att_skill_3	MB_ATT_CLONE_PISTOL
 c_att_names_3	"Sith Light Pistol"
 c_att_ranks_3	0,1,1
-c_att_descs_3	"Clone Pistol(s), Mag Reload, 10%- RoF, 5%- Damage"
+c_att_descs_3	"Clone Pistol(s), Mag Reload, 10%- RoF, 5%- Damage/Velocity"
 
 c_att_skill_4	MB_ATT_CLONE_PISTOL
 c_att_names_4	"Seeker Drone"
@@ -97,10 +97,10 @@ WeaponInfo0
 	AltMissileEffect 	"blaster/Shot03R"
 	FlashSound0			"sound/weapons/kotor_carbine/fire.wav"
 	AltFlashSound0			"sound/weapons/kotor_carbine/fire.wav"
-	clipSize			22
+	clipSize			20
 	idleAnim  			TORSO_WEAPONREADY3
 	ReloadTimeModifier  1.2
-	rateMod 0.70
+	rateMod 0.80
 	velocitymod	1.15
 	damagemod	.85
 }
@@ -131,6 +131,7 @@ MuzzleEffect		"Blaster/MuzzleFlash01G"
  altMissileHitDroidEffect "Blaster/Impact_Wall01R.efx"
  ratemod	1.10
  damagemod	.95
+ velocitymod	.95
 
 }
 
