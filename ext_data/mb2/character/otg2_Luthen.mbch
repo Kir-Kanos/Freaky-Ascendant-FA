@@ -1,0 +1,94 @@
+
+ClassInfo
+{
+	name "otg2_Luthen"
+	MBClass	MB_CLASS_HERO
+	classNumberLimit	1
+	weapons	WP_MELEE|WP_BLASTER_PISTOL|WP_DET_PACK
+	
+	attributes MB_ATT_AMMO,3|MB_ATT_HEALING,3|MB_ATT_DASH,1|MB_ATT_DODGE,3|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_BEACON|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_TRACKING_DART,6|MB_ATT_SPY_DISGUISE,2|MB_ATT_DET_PACK,5|MB_ATT_PISTOL,3|MB_ATT_BACTA_BIG,1
+	
+	basespeed 215
+	maxHealth 150
+	maxArmor 80
+	
+	resource	RESOURCE_ENERGY
+	forcepool	150
+	
+	WP_DetPackFlags HELD_KNOCKDOWN|HELD_LOWDAMAGE
+	
+	special1	EAS_HI_DODGE
+	special2	EAS_HI_TRACKER
+	special3	EAS_HI_DASH
+	
+	model	"luthen"
+	skin		"default"
+	uishader	"models/players/luthen/mb2_icon_default"
+	
+}
+
+WeaponInfo0
+{
+WeaponToReplace	WP_BLASTER_PISTOL
+WeaponBasedOff	WP_BLASTER_PISTOL
+NewWorldModel	"models/weapons2/a180/a180_w.glm"
+NewViewModel	"models/weapons2/a180/a180.md3"
+Icon	"gfx/hud/w_icon_a180"
+WeaponName	"Luthen's Blaster Pistol"
+velocityMod 1.15
+rateMod .5
+clipSize 12
+reloadTimeModifier 4
+customAmmo 1000
+hasAnimOverrides 1
+animReadyRun BOTH_PISTOL_IDLE
+animReady BOTH_PISTOL_IDLE
+animReadyWalk BOTH_PISTOL_IDLE
+animAttackRun BOTH_PISTOL_ATTACK
+animAttack BOTH_PISTOL_ATTACK
+animAttackWalk BOTH_PISTOL_ATTACK
+animCharge BOTH_PISTOL_ATTACK
+}
+
+WeaponInfo1
+{
+	WeaponToReplace	WP_DET_PACK
+	WeaponBasedOff	WP_DET_PACK
+	NewWorldModel	"models/weapons2/dummy/dummy.md3"
+	NewViewModel	"models/weapons2/dummy/dummy.md3"
+	NewHandsModel "models/weapons2/dummy/dummy.md3"
+	MissileModel "models/weapons2/dummy/dummy.md3"
+	Icon			"gfx/hud/w_icon_realTG"
+	WeaponName	"Slap Charges"
+	MuzzleEffect null
+	splashRadius 250
+}
+description "Luthen Rael
+The revolutionary who birthed the Rebellion.
+
+^2Weaponry:
+- Melee
+- Luthen's Blaster Pistol (3)
+-- 15% more velocity
+-- 50% faster rate of fire
+-- 4x slower reload speed
+-- Low Magazine Capacity
+- Slap Charges (Det Packs)
+-- Increased Splash Radius
+-- Causes knockdown
+-- Half Damage
+
+^6Inventory:
+- Big Bacta
+
+^8Attributes:
+- Healing 3
+- Tracking Beacon
+- Diguise 2
+- Knockdown Roll
+- Dexterity 1
+
+^3Abilities:
+- Dodge (3) ^3[CS1]
+- Tracking Darts (6) ^3[CS2]
+- Dash (1) ^3[CS3]"

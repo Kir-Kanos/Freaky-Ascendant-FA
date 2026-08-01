@@ -1,0 +1,154 @@
+
+ClassInfo
+{
+	name			"ase9_ShadowG"
+	MBClass		MB_CLASS_SITH
+	classNumberLimit	2
+
+	weapons		WP_SABER|WP_MELEE
+	WP_BlasterPistolFlags HELD_ALTRELOAD
+	
+	attributes	MB_ATT_FORCEBLOCK,2|MB_ATT_HEALING,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_FORCEFOCUS,2|MB_ATT_DEFLECT,1|MB_ATT_DEXTERITY,3|MB_ATT_FP_REPULSE
+
+	forcepowers	FP_SABER_OFFENSE,3|FP_SPEED,3|FP_LEVITATION,3|FP_PUSH,1|FP_LIGHTNING,1|FP_GRIP,1
+	resource RESOURCE_FORCE
+	forcepool	100
+	forceregen 1.05
+	rateOfFire_Melee .9
+	damageGiven 1.1
+	
+	holdables	HI_MEDPAC_BIG
+
+	maxhealth	100
+	maxarmor	25
+	rankArmor 80
+ 	basespeed 	230
+	saberdamage	400
+	saberSpecialDamage 1.25
+
+	saberstyle	SS_DESANN|SS_TAVION|SS_STAFF
+	saberDamageStyle SS_TAVION,140|SS_DESANN,400|SS_STAFF,260
+	saber1		lightsaber_pike_legends
+	sabercolor 0
+	APmultiplier 1.05
+	BPmultiplier 1.1
+	CSmultiplier 1.05
+	ASmultiplier 1.05
+	modelscale   1.01
+	uioverlay_r 		"gfx/icons/frontline"
+	model			"royal"
+	skin				"default_b"
+	uishader	"models/players/royal/mb2_icon_default_b"
+
+	model_1	"royalguard_tfu"
+	skin_1	"shadow"
+	uishader_1 "models/players/royalguard_tfu/mb2_icon_shadow"
+
+	tauntAnim	BOTH_STAFF_TAUNT
+	flourishAnim BOTH_SHOWOFF_STAFF
+	gloatAnim BOTH_SHOWOFF_STRONG
+	saberstanceAnim BOTH_SPEAR_STANCE
+	
+	meleespecial1 EAS_FP_REPULSE
+	special2 EAS_FP_SPEED
+	special3 EAS_FP_GRIP
+	special4 EAS_FP_LIGHTNING
+
+isCustomBuild	1
+mbPoints	13
+
+	c_att_skill_0	MB_ATT_RESPAWNS
+	c_att_names_0	"Reinforcement"
+	c_att_ranks_0	10
+	
+	c_att_skill_1	MB_ATT_PISTOL
+	c_att_names_1	"Heavy Pistol"
+	c_att_ranks_1	1,0,3
+	c_att_descs_1	"25% more Dmg/FP Dmg, 25% slower RoF"
+
+	c_att_skill_2	MB_ATT_FP_PUSH
+	c_att_names_2	"Force Push"
+	c_att_ranks_2	0,1
+	
+	c_att_skill_3	MB_ATT_FP_GRIP
+	c_att_names_3	"Force Grip"
+	c_att_ranks_3	0,1
+
+	c_att_skill_4	MB_ATT_FP_LIGHTNING
+	c_att_names_4	"Force Lightning"
+	c_att_ranks_4	0,1
+	
+	c_att_skill_5	MB_ATT_FP_SABER_DEFENSE
+	c_att_names_5	"Saber Defense"
+	c_att_ranks_5	0,1
+	
+	c_att_skill_6	MB_ATT_GUN_DEFENSE
+	c_att_names_6	"Blaster Defense"
+	c_att_ranks_6	0,1
+	
+	c_att_skill_7	MB_ATT_ARMOUR
+	c_att_names_7	"Armor (80)"
+	c_att_ranks_7	4
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/saber_forcepike/saber_forcepike.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_forcepike" 	
+	WeaponName			"Lightsaber Pike"
+	selectSound 	"s/w/t/staffswing4.mp3"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace WP_BLASTER_PISTOL
+	WeaponBasedOff  WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/a180/a180_w.glm" 
+	NewViewModel		"models/weapons2/a180/a180.md3"   
+	Icon				"gfx/hud/w_icon_a180"
+	WeaponName  "Heavy Blaster Pistol"
+	ChargeSound 			"sound/weapons/leia_pistol/altcharge.mp3"
+	customAmmo          840
+	clipsize            24
+	damageMod 1.2
+	FPmult    1.25
+	rateMod 1.25
+	hasAnimOverrides 1
+	animReadyRun TORSO_WEAPONIDLE2
+	animReady TORSO_WEAPONIDLE2
+	animReadyWalk TORSO_WEAPONIDLE2
+	animReadyNoAmmo BOTH_ATTACK2 
+	animAttackRun BOTH_ATTACK2 
+	animAttack BOTH_ATTACK2 
+	animAttackWalk BOTH_ATTACK2
+	altfireenabled 	0
+}
+
+description	"Emperor's Shadow Guard [Sith] ^3Reworked
+
+Highly mobile saberists that can choose between versatile one-life or specialized two-life builds.
+
+^2Weaponry:
+- Melee
+- Lightsaber Pike (Purple)
+-- Saber/Blaster Defense (1)
+-- Saber Deflect (1)
+-- 10% less reach
+-- Slap
+-Advanced Medpac
+
+^5Force Powers:
+- Jump (3)
+- Speed (3)
+- Push (1)
+- Grip (1) ^3[CS3]
+- Lightning (1) ^3[CS4]
+- Repulse ^3[CS2]
+
+^8Attributes:
+- Dexterity (3)
+- Healing (1)
+- Force Block/Focus (2)"

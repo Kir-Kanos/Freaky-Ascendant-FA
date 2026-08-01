@@ -1,0 +1,94 @@
+//Air 
+ClassInfo
+{
+	name				"otg1_RebGuerrillaHeavyGunner"
+	weapons			WP_MELEE|WP_MINIGUN
+	WP_MinigunFlags	HELD_ALTRELOAD|HELD_STUN
+	WP_MeleeFlags	HELD_SPEED
+	attributes		MB_ATT_ASSEMBLE,1|MB_ATT_MINIGUN,1|MB_ATT_STAMINA,1|MB_ATT_TRACKING_BEACON|MB_ATT_BESKAR,1
+	MBClass			MB_CLASS_SOLDIER
+	modelscale      	1.1
+	classNumberLimit	1
+	rateOfFire_Melee	1
+	basespeed	180
+	extralives		1
+	maxhealth		120
+	maxArmor 		120
+	damageTaken	.85
+	resource RESOURCE_STAMINA
+	forcepool 20
+	flourishAnim 	BOTH_STAND5TOAIM
+	knockbacktaken 0.1
+	knockbackgiven .2
+	tauntAnim	BOTH_TUSKENTAUNT1
+	meditateAnim BOTH_SIT6
+	flourishAnim BOTH_FORCEHEAL_START
+	extralives		1
+	special1 EAS_HI_SPRINT
+	classNumberLimit	2
+	uioverlay_r "gfx/icons/heavy"
+	uioverlay_l "gfx/icons/infantry"
+	model		"Rodian_Hvy"
+	skin		"default"
+	uishader	"models/players/Rodian_Hvy/icon_default"
+}
+	WeaponInfo0
+{
+	WeaponToReplace WP_MINIGUN
+	WeaponBasedOff  WP_MINIGUN
+	NewWorldModel "models/weapons2/heavy_repeater/heavy_repeater_w.glm"
+	NewViewModel  "models/weapons2/heavy_repeater/heavy_repeater_w.md3"
+	Icon  "gfx/hud/w_icon_repeater"
+	WeaponName  "Stolen Heavy Repeater"
+	FlashSound0	"sound/weapons/repeater/fire.wav"
+	MuzzleEffect  "Blaster/MuzzleFlash01R"
+	AltFlashSound0		"sound/weapons/repeater/fire.wav"
+	altMuzzleEffect  		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+	customAmmo         600
+	damageMod 1
+	clipsize 125
+	reloadTimeModifier 3.5
+	rateMod .85
+	hasAnimOverrides 	1
+	AltFireEnabled 		1
+	PrimFireEnabled		1
+	animReadyRun BOTH_MINIGUN_READY
+	animReady BOTH_MINIGUN_READY
+	animReadyWalk BOTH_MINIGUN_READY
+	animReadyNoAmmo BOTH_MINIGUN_ATTACK
+	animAttackRun BOTH_MINIGUN_ATTACK
+	animAttack BOTH_MINIGUN_ATTACK
+	animAttackWalk BOTH_MINIGUN_ATTACK
+}
+description "Guerrilla Heavy Gunner [Soldier]
+
+Air
+
+A former civilian turned guerrilla heavy gunner after stealing a heavy repeater amidst civil unrest on an Empire occupied Rodia.
+
+Slow frontliner utilizing a heavy stagger gun alongside good lightsaber and middling blaster resistance.
+
+^2Weaponry:
+- Melee
+-- 15% faster movement
+- Stolen Heavy Repeater (Minigun 2)
+-- Staggers on hit
+-- 15% faster RoF
+-- 350% slower reload
+-- Clipsize (125)
+
+^8Attributes:
+- Reinforcement (1)
+- 90% less KB taken
+- 80% less KB given
+- Physical Resistance
+- Beskar (1)
+- Stamina (1)
+- Assemble (1)
+- Scanner Goggles (Homing Beacon)
+
+^3Abilities:
+- Sprint ^3[CS1]"
+
+

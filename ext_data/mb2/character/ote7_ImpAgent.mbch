@@ -1,0 +1,225 @@
+//Legends Mode character file - Created by Frenzy & Leos
+ClassInfo
+{
+	name			"ote7_ImpAgent"
+	MBClass			MB_CLASS_BOUNTY_HUNTER
+	classNumberLimit	2
+	extralives			1
+	weapons			WP_MELEE|WP_SABER
+
+	attributes		MB_ATT_AMMO,3|MB_ATT_TRACKING_BEACON|MB_ATT_TRACKING_DART,1
+
+	maxhealth		90
+	MaxArmor		5
+	rankArmor		10,15,20
+
+	//ArmourRegenCap 20
+	ArmourRegenRate	20000
+
+	rankArmourRegenAmount 20
+
+	resource	RESOURCE_BATTERY
+	forcepool 65
+	forceregen		2.65
+
+	BPmultiplier    0
+	saber1			Legends_Knife_Spy
+	forcepowers     FP_SABER_OFFENSE,3
+	saberstyle		SS_TAVION|SS_FAST
+	saberDamage 	90
+
+	WP_BlasterPistolFlags	held_poison
+
+	classflags		CFL_HEAVYMELEE|CFL_SEEING_STEALTH
+	holdables		HI_CLOAK
+
+	special1 EAS_HI_WRIST
+	special2 EAS_HI_TRACKER
+	special3	EAS_HI_DASH
+	special4 EAS_HI_CLOAK
+
+	uioverlay_l "gfx/icons/tactician"
+	uioverlay_c "gfx/icons/spec_infantry"
+	uioverlay_r "gfx/icons/infantry"
+
+	//WalkBackward BOTH_WALK_DUAL
+	//WalkForward BOTH_WALK_DUAL
+	//tauntAnim BOTH_SHOWOFF_MEDIUM
+	gloatAnim TORSO_HANDSIGNAL4
+	flourishAnim BOTH_SPINATTACK7
+	saberStanceAnim BOTH_STAND9
+
+
+model		"saboteur" 				
+skin		"default"					
+uishader	"models/players/saboteur/mb2_icon_default"
+
+model_1		"tie_pilot"
+skin_1		"kubaz"
+uishader_1	"models/players/tie_pilot/mb2_icon_kubaz"
+
+model_2		"tie_pilot"
+skin_2		"kubazb"
+uishader_2	"models/players/tie_pilot/mb2_icon_kubazb"
+
+model_3		"stormie"
+skin_3		"shadow"
+uishader_3	"models/players/stormie/mb2_icon_shadow"
+
+model_4 	"stormie"
+skin_4 		"vader"
+uishader_4	"models/players/stormie/mb2_icon_vader"
+
+	isCustomBuild	1
+	mbPoints	50
+
+	c_att_skill_0	MB_ATT_PISTOL
+	c_att_names_0	"Assassin Blaster Pistol"
+	c_att_ranks_0	2,1,3
+	c_att_descs_0	"	Prim. fire: Hitscan, Alt. fire: Poisons on hit, 50% more charged FP DMG,
+40% less DMG, 25% slower RoF, 20% more velocity"
+
+	c_att_skill_1	MB_ATT_DC_CARBINE
+	c_att_names_1	"E-11 Stun Carbine"
+	c_att_ranks_1	3,2
+	c_att_descs_1	"10% more DMG, 30% more FP DMG, 25% slower RoF"
+
+	c_att_skill_2	MB_ATT_DISRUPTOR
+	c_att_names_2	"Disruptor Rifle"
+	c_att_ranks_2	2,6
+
+	c_att_skill_3	MB_ATT_DET_PACK
+	c_att_names_3	"Det Packs"
+	c_att_ranks_3	1,1,1
+
+	c_att_skill_4	MB_ATT_FP_SEE
+	c_att_names_4	"Radar Scanner (Sense)"
+	c_att_ranks_4	5
+
+	c_att_skill_5	MB_ATT_RESPAWNS
+	c_att_names_5	"Reinforcement"
+	c_att_ranks_5	20
+	c_att_descs_5 "1 default"
+	
+	c_att_skill_6	MB_ATT_ARMOUR
+	c_att_names_6	"Armor (10/15/20)"
+	c_att_ranks_6	1,2,3
+
+	c_att_skill_7	MB_ATT_ARMOUR_REGEN_AMOUNT
+	c_att_names_7	"> Armor Regen (20/20s)"
+	c_att_ranks_7	5
+
+	c_att_skill_8	MB_ATT_RECHARGE
+	c_att_names_8	"Battery Recharge"
+	c_att_ranks_8	2,2,6
+
+	c_att_skill_9	MB_ATT_SPY_DISGUISE
+	c_att_names_9	"Disguise ^3[Toggle Melee]"
+	c_att_ranks_9	3,3,3
+
+	c_att_skill_10	MB_ATT_WRISTLASER
+	c_att_names_10	"Wrist Laser ^3[CS1]"
+	c_att_ranks_10	5
+
+	c_att_skill_11	MB_ATT_TRACKING_DART
+	c_att_names_11	"Tracking Darts ^3[CS2 Melee]"
+	c_att_ranks_11	0,2,2
+
+	c_att_skill_12	MB_ATT_DASH
+	c_att_names_12	"Dash ^3[CS3]"
+	c_att_ranks_12	0,1
+}
+
+WeaponInfo0
+{
+	WeaponToReplace	WP_BLASTER_PISTOL
+	WeaponBasedOff	WP_BLASTER_PISTOL
+	NewWorldModel "models/weapons2/Relby-K23/model_w.GLM"
+	NewViewModel  "models/weapons2/Relby-K23/pistol.MD3"
+	Icon  	"gfx/hud/w_icon_relby_k23"
+	ChargeSound	"sound/weapons/leia_pistol/altcharge.mp3"
+	WeaponName	"Assassin Blaster Pistol"
+	clipSize 21
+	CustomAmmo 460
+	primHitscanShot 1
+	primHitscanTracer	10
+	primGore	1
+	Velocitymod 1.2
+	Damagemod 0.6
+	ratemod 1.25
+	FPChargeMult	1.5
+	reloadTimeModifier 1.25
+	AltMuzzleEffect	"Blaster/MuzzleFlash01G"
+	AltFlashSound0	"sound/weapons/spy_pistol/fire.wav"
+	AltMissileEffect	"Blaster/Shot11G"
+	AltMissile3Effect	"Blaster/Shot03G"
+	FlashSound0	"sound/weapons/silencedpistol/fire.wav"
+	MuzzleEffect null
+	ChargeEffect	"gfx/effects/greenFrontFlash"
+	OverchargeEffect	"Blaster/MuzzleCharge01G"
+	PowerupShotEffect	"Blaster/Shot04G"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace	WP_DC_CARBINE
+	WeaponBasedOff	WP_DC_CARBINE
+	NewWorldModel "models/weapons2/blaster_r/blaster_w_stock.GLM"
+	NewViewModel "models/weapons2/blaster_r/blaster.md3"
+	Icon "gfx/hud/w_icon_e11_extendedstock"
+	WeaponName	"E-11 Stun Carbine"
+	FlashSound0 "sound/weapons/blastermb/alt_fire.wav"
+	FlashSound1	"sound/weapons/blastermb/alt_fire.wav"
+	FlashSound2	"sound/weapons/blastermb/alt_fire.wav"
+	FlashSound3	"sound/weapons/blastermb/alt_fire.wav"
+	MuzzleEffect	"Blaster/MuzzleFlash01R"
+	MissileEffect	"Blaster/Shot01R"
+	customAmmo	540
+	damagemod 1.1
+	ratemod 1.25
+	fpmult 1.3
+}
+
+WeaponInfo2
+{
+	WeaponToReplace	WP_SABER
+	WeaponBasedOff	WP_SABER
+	NewWorldModel	"models/weapons2/vibroknife/model.glm"
+	NewViewModel	"models/weapons2/dummy/dummy.md3"
+	Icon	"gfx/hud/w_icon_prisonknife"
+	WeaponName	"Jagged Vibroknife"
+}
+
+ForceInfo0
+{
+	ForceToReplace FP_SEE
+	Icon	"gfx/forcepowers/radar"
+	ForcePowerName "Radar Scanner"
+	StartSound 	"sound/ambience/kotor/consolebeep03.mp3"
+	LoopSound "sound/ambience/cp_02_lp.wav"
+}
+
+description	"Imperial Agent [Bounty Hunter]
+
+Mid-ranged elite soldiers who can Disguise themselves and Cloak.
+
+^2Weaponry:
+- Heavy Melee
+- Jagged Vibroknife (Cyan/Blue Saber)
+-- No Saber/Blaster Block
+-- 25% less DMG
+-- 60% less reach
+-- Slap ^3[CS2]
+
+^6Inventory:
+- Cloaking Device ^3[CS4]
+
+^8Attributes:
+- Reinforcement (1)
+- Sense Immunity
+- Tracking Beacon
+
+^3Abilities:
+- Tracking Darts (2) ^3[CS2 Melee]
+- Gun Kick ^3[CS2 Gun]
+- Dash (1) ^3[CS3]"

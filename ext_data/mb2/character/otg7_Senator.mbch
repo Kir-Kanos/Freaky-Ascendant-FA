@@ -1,0 +1,99 @@
+//Fuse
+
+ClassInfo
+{
+	name					"otg7_Senator"
+	weapons					WP_MELEE|WP_DC_CARBINE
+	attributes				MB_ATT_HEALING,3|MB_ATT_DASH,2|MB_ATT_AMMO,3|MB_ATT_RALLY,1|MB_ATT_DODGE,3|MB_ATT_DC_CARBINE,2|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_USE_DISTANCE,25|MB_ATT_DISP_BLOCK,1|MB_ATT_DISP_FORCE,1|MB_ATT_DISP_HEALTH,1|MB_ATT_DISP_ARMOR,1|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_ANTI_MT,2|MB_ATT_SPY_DISGUISE,3|MB_ATT_DEXTERITY,1
+	maxhealth				120
+	maxarmor				65
+	
+	resource 				RESOURCE_ENERGY
+	forcepool 				100
+	MBClass					MB_CLASS_HERO
+	basespeed				275
+	rateOfFire				1.0
+	rateOfFire_Melee		1.0
+	skilltimermod			0.80
+	knockbackGiven 			1.0
+	classNumberLimit 		1
+	holdables       		HI_MEDPAC_BIG|HI_MEDPAC
+	WP_DCCarbineFlags	HELD_ALTRELOAD|HELD_KNOCKBACK
+	
+	resourceregenrate			125
+	resourceregenamount			1.2
+		
+	model		"organa" 				
+	skin			"default"					
+	uishader		"models/players/organa/mb2_icon_default"
+
+	model_1		"organa" 				
+	skin_1		"cape"					
+	uishader_1	"models/players/organa/mb2_icon_cape"
+	
+	model_2		"monmothma" 				
+	skin_2		"default"					
+	uishader_2	"models/players/monmothma/mb2_icon_default"
+	
+	respawnCustomTime  50000	
+	special1		EAS_HI_DODGE
+	special2 		EAS_HI_DASH
+//	special3		
+	special4		EAS_HI_GRAPPLEHOOK
+	
+	uioverlay_r "gfx/icons/tactician"
+	uioverlay_l "gfx/icons/medic"
+	
+	flourishAnim BOTH_STAND5TOAIM
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_DC_CARBINE
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/leias_pistol/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/leias_pistol/blaster_pistol.md3"
+	Icon				"models/weapons2/leias_pistol/w_icon_leias_pistol"
+	WeaponName			"Senator's Stun Pistol"
+    MuzzleEffect        "sonic_pistol/k_muzzle_flash"
+	primfireenabled 0
+	Clipsize 80
+	fpmult 5
+	ratemod 1.5
+	Velocitymod 1.0
+	FPChargeMult	1.2
+	damagemod 5
+	customAmmo 800
+}
+
+description	"Galactic Republic Senator [Hero]
+
+Support Hero that focuses on helping their team rather than Offense.
+
+^2Weaponry:
+- Melee
+- Senator's Stun Pistol (DC Carbine 2)
+-- Knockback on hit
+-- +400% Damage/FP Damage
+-- -50% Rate of Fire
+-- Mag Reload
+-- Secondary Fire Only
+
+^6Inventory:
+- Medpac
+- Advanced Medpac
+
+^8Attributes:
+- -20% Skill Cooldown
+- Healing (3)
+- Anti-Mind Trick (2)
+- Rally
+- Dexterity (1)
+
+^3Abilities:
+- Disguise (3) ^3[Toggle Melee]
+- Health/Armor/BP/Resource Dispenser (1) ^3['Use' on ^3allies]
+-- +25 range
+- Dodge (3) ^3[CS1]
+- Dash (2) ^3[CS2]
+- Grappling Hook (2) ^3[CS4 Melee]"

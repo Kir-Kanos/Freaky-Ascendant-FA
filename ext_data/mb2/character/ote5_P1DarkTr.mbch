@@ -1,0 +1,114 @@
+//Siege class def file.
+
+ClassInfo
+{
+	name 	"ote5_P1DarkTr"
+	weapons 	WP_SABER|WP_MELEE
+	
+	attributes 	MB_ATT_STAMINA,3|MB_ATT_DEFLECT,1|MB_ATT_ASSEMBLE|MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_BESKAR,2|MB_ATT_ANTI_MT,2|MB_ATT_BLAST_ARMOUR,1|MB_ATT_TRACKING_BEACON|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_ASSEMBLE,3|MB_ATT_TRACKING_DART,4|MB_ATT_ENV_PROT,1|MB_ATT_WOOKIEE_FURY,1
+	forcepowers     FP_SABER_OFFENSE,3|FP_LEVITATION,3
+	
+	maxhealth 		60
+	maxarmor			120
+
+	modelscale 			1.15
+	damageTaken   		1.0
+	DamageGiven			1.1
+	speed               1.15
+	forceregen 1.5
+	rateoffire_melee 	1.50
+	
+	knockbacktaken		0.8
+
+	saber1          phase1
+	saber2          phase1
+	saberstyle      SS_TAVION|SS_DUAL
+	saberDamage 108 //with damage given it goes up 12 to 120
+	BPmultiplier	1.0
+	APMultiplier	1.0
+	CSMultiplier	1.2
+	ASMultiplier	1.2
+	
+	classflags	CFL_STRONGAGAINSTPHYSICAL|CFL_BLOODYMELEE
+
+	bargeSoundOverride 		"sound/chars/k2so/misc/death2.mp3" //placeholder
+
+	resource	RESOURCE_STAMINA
+	forcepool 80
+
+	special1		EAS_HI_SPRINT
+	special2 		EAS_HI_BARGE
+	special3		EAS_HI_TRACKER
+
+
+	isCustomBuild		1
+	mbPoints			2
+	
+	c_att_skill_0	MB_ATT_RESPAWNS
+	c_att_names_0	"Reinforcement"
+	c_att_ranks_0	2
+	
+	c_att_skill_1	MB_ATT_MAGNETIC_PLATING
+	c_att_names_1	"Deflector Shield"
+	c_att_ranks_1	1
+	c_att_descs_1    "Mag Plating"
+	
+	c_att_skill_2 	MB_ATT_CORTOSIS
+	c_att_names_2	"Cortosis Infused Phrik"
+	c_att_ranks_2	1
+	
+	model            "darktrooper_p1"
+	skin            "default"
+	uishader        "gfx/um_icons/PrisonRaidPack/DarkTrooper"
+	
+	//respawncustomtime 	75000
+	classNumberLimit  	3
+	MBClass 	MB_CLASS_CLONETROOPER
+	
+	uioverlay_r "gfx/icons/aerial"
+	uioverlay_c "gfx/icons/infantry"
+	uioverlay_l "gfx/icons/scout"
+	
+	meleeMoves M_UPPERCUT|M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_RLKICK|M_PUNCH
+		flourishAnim BOTH_STAND5TOAIM
+}
+
+WeaponInfo0
+{
+WeaponToReplace        WP_SABER
+WeaponBasedOff        WP_SABER
+NewWorldModel        "models/weapons2/dummy/dummy.glm"
+NewViewModel        "models/weapons2/dummy/dummy.md3"
+Icon            "gfx/hud/w_icon_darktrooperblade"
+selectSound "sound/weapons/phase1_sword/ready.wav"
+WeaponName        "Wrist Blade"
+}
+
+description	"Dark Trooper Phase I [Clone Trooper] -Kalkite
+ 
+Phase I of the Dark Trooper project introduced battle droids resembling a human skeleton, which doubles as a psychological weapon. It features advanced leg hydraulics, a wrist blade, and a shield.
+
+^2Weaponry:
+-Melee
+-- -25% Rate of Fire
+-Wrist Blade
+-- Saber Defense (1)
+-- Blaster Defense (2)
+-- 120 Damage
+
+^8Attributes:
+- -20% Knockback Taken
+- Strength (2)
+- Unrefined Phrik Armor (Beskar 1)
+- Blast Armor
+- Physical Resist
+- Anti-Mind Trick (2)
+- Tracking Beacon
+- Advanced Leg Hydraulics (Force Jump 3)
+- Environmental Protection (2)
+- Assemble (3)
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Barge ^3[CS2]
+- Tracking Darts (8) ^3[CS3 Melee]"

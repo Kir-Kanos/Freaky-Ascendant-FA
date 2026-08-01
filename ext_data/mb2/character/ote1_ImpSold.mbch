@@ -1,0 +1,76 @@
+ClassInfo
+{
+	name				"ote1_ImpSold"
+	MBClass				MB_CLASS_SOLDIER
+	extralives			4
+
+	weapons				WP_BLASTER_PISTOL|WP_BLASTER|WP_FRAG_NADE|WP_CONC_NADE|WP_MELEE
+	//WP_BlasterFlags	HELD_ALTRELOAD
+	WP_SaberFlags		HELD_STUN
+	attributes			MB_ATT_PISTOL,2|MB_ATT_BLASTER,2|MB_ATT_MICRO_GRENADES,1|MB_ATT_FRAGS,1|MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,3|MB_ATT_CCTRAINING,1|MB_ATT_SABER_COMBO_NONE
+
+	maxhealth			75
+	maxarmor			35
+
+	resource			resource_energy
+	forcepool			25
+	forceregen			0.75
+
+	special2			EAS_NONE
+
+	saberStanceAnim		BOTH_SABERDUAL_STANCE
+	gloatAnim			BOTH_VICTORY_FAST
+	flourishanim		BOTH_STAND5TOAIM
+
+	uioverlay			"gfx/icons/infantry"
+	modelscale			1.00
+
+	model				"imperial_army"
+	skin				"default"
+	uishader			"models/players/imperial_army/mb2_icon_default"
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/se-14c_pistol/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/se-14c_pistol/blaster_pistol.md3"
+	Icon				"gfx/hud/w_icon_se-14c"
+	WeaponName			"SE-14C Blaster Pistol"
+	FlashSound0			"sound/weapons/SE-14c/fire.wav"
+	altFlashSound0		"sound/weapons/SE-14c/fire.wav"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_FRAG_NADE
+	WeaponBasedOff		WP_FRAG_NADE
+	NewWorldModel		"models/weapons2/fraggrenade/thermal_w.glm"
+	NewViewModel		"models/weapons2/fraggrenade/thermal_hand.md3"
+	MissileModel		"models/weapons2/fraggrenade/thermal_proj.md3"
+	Icon				"gfx/hud/w_icon_fraggrenade"
+	WeaponName			"Class B Frag Grenade"
+	splashRadius		250
+	altFireEnabled		0
+}
+
+description	"Imperial Soldier
+
+The bread-and-butter bad guys.
+
+^2Weaponry:
+- Melee
+- SE-14C Blaster Pistol (2)
+- E-11 Blaster Rifle (2)
+- Class B Frag Grenade (1)
+-- 28% smaller splash
+-- Primary fire only
+- V-59 Conc Grenade (1)
+
+^8Attributes:
+- Reinforcements (4)
+- Close Combat Training (1)
+- Assemble (3)"
