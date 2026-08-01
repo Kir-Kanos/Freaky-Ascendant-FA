@@ -21,8 +21,8 @@ ClassInfo
 	special3			EAS_HI_POISON
 	meleespecial3		EAS_HI_POISON
 
-	maxhealth			100
-	maxarmor			75
+	maxhealth			80
+	maxarmor			40
 	ArmourRegenCap		10
 	ArmourRegenRate		500
 	ArmourRegenAmount	1
