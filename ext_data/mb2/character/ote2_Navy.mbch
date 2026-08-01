@@ -1,0 +1,89 @@
+
+ClassInfo
+{
+	name				"ote2_Navy"
+	MBClass				MB_CLASS_SOLDIER
+	extralives			3
+	classnumberlimit		2
+
+	weapons				WP_MELEE|WP_T21|WP_CRYO_NADE
+	WP_T21Flags	HELD_ALTRELOAD
+	attributes			MB_ATT_AMMO,2|MB_ATT_ASSEMBLE,2|MB_ATT_CCTRAINING,1|MB_ATT_T21,2|MB_ATT_SPAWNER|MB_ATT_PETCONTROL|MB_ATT_CRYOBAN_GRENADES,1
+
+	spawnernpc	"NavyBot"
+
+	maxhealth			50
+	maxarmor			35
+
+	resource			resource_energy
+	forcepool			25
+	forceregen			0.75
+
+	special1			EAS_HI_PETCONTROL
+	meleespecial1			EAS_HI_PETCONTROL
+	special2			EAS_HI_SPAWNER
+	meleespecial2			EAS_HI_SPAWNER
+
+	saberStanceAnim		BOTH_SABERDUAL_STANCE
+	gloatAnim			BOTH_VICTORY_FAST
+	flourishanim		BOTH_STAND5TOAIM
+
+	uioverlay			"gfx/icons/infantry"
+	modelscale			1.00
+
+	model				"imperial_army"
+	skin				"navy"
+	uishader			"models/players/imperial_army/mb2_icon_navy"
+
+	model_1				"imperial"
+	skin_1				"navy"
+	uishader_1			"models/players/imperial/mb2_icon_navy"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_T21
+	WeaponBasedOff		WP_T21
+	NewWorldModel		"models/weapons2/dh-17/dh-17_w.glm"
+	NewViewModel		"models/weapons2/dh-17/dh-17_FA.md3"
+	Icon				"gfx/hud/w_icon_dh-17"
+	WeaponName			"DH-17 Naval Blaster"
+	AltMissileEffect				"Blaster/Shot02r"
+	MissileEffect			"Blaster/Shot03r"
+	AltFlashSound0			"sound/weapons/blaster/fire.mp3"
+	AltFlashSound1			"sound/weapons/blaster/fire.mp3"
+	AltFlashSound2			"sound/weapons/blaster/fire.mp3"
+	AltFlashSound3			"sound/weapons/blaster/fire.mp3"
+	FlashSound0		"sound/weapons/firegun/fire.wav"
+	FlashSound1		"sound/weapons/firegun/fire.wav"
+	FlashSound2		"sound/weapons/firegun/fire.wav"
+	FlashSound3		"sound/weapons/firegun/fire.wav"
+	FlashSound4		"sound/weapons/firegun/fire.wav"
+	MissileMissEffect "Blaster/Impact_Wall01R_E"
+	damagemod	.8
+	ratemod		1.2
+	velocitymod	.8
+	clipsize	24
+}
+
+
+description	"Imperial Naval Trooper
+
+Controlling Technicans with special droid allies and weaponry.
+
+^2Weaponry:
+- Melee
+- DH-17 Naval Blaster
+-- Based on T21 (2)
+-- 20% Less Damage/Velocity/RoF
+- Cyroban Grenade (1)
+
+^8Attributes:
+- Reinforcements (3)
+- Summon R2 Combat Droid (^3[CS2] Spawn Stun Baton R2)
+- Close Combat Training (1)
+- Assemble (2)
+- Ammo (2)
+
+^8Abilities:
+- Droid Control ^3[CS1]"

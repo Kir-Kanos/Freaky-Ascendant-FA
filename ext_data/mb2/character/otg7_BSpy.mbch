@@ -1,0 +1,79 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name "otg7_BSpy"
+	classNumberLimit 2
+	extralives	1
+	MBClass		MB_CLASS_ARCTROOPER
+	weapons		WP_MELEE|WP_THROWER
+	
+	attributes	MB_ATT_AMMO,3|MB_ATT_TRACKING_BEACON|MB_ATT_THROWER_PLASMA|MB_ATT_DET_PACK,4|MB_ATT_DEXTERITY,2
+	maxhealth	80
+	MaxArmor	50
+	
+	resource		RESOURCE_ENERGY
+	forcepool	200
+
+	WP_ThrowerFlags HELD_TRACKING|HELD_ALTRELOAD|HELD_DISRUPTIFY
+	WP_MeleeFlags HELD_SPEED
+	classflags 	CFL_SEEING_STEALTH
+	holdables	HI_CLOAK|HI_STIMPACK
+
+	baseSpeed 250
+
+	uioverlay_l "gfx/icons/tactician"
+	uioverlay_r "gfx/icons/infantry"
+	tauntAnim	BOTH_SABERKILLER1
+	//saberStanceAnim BOTH_DEAD23
+	//bowanim BOTH_DEATH10
+	//meditateanim BOTH_DEATH14
+	flourishAnim BOTH_SPINATTACK7
+	saberStanceAnim BOTH_STAND9
+	//WalkForward BOTH_WALK_DUAL
+	
+	model		"bothan-spy"
+	skin			"default"
+	uishader		"models/players/bothan-spy/mb2_icon_default"
+	
+	special2		EAS_HI_DEX
+	special3		EAS_HI_STIMPACK
+	special4		EAS_HI_CLOAK
+	skilltimerMod 0.5
+}
+
+WeaponInfo0{
+WeaponToReplace WP_THROWER
+WeaponBasedOff WP_THROWER
+NewWorldModel "models/weapons2/CR-1_cannon/rifle_w.glm"
+NewViewModel "models/weapons2/CR-1_cannon/rifle.md3"
+Icon "gfx/hud/w_icon_CR1_blastCannon"
+WeaponName	"CR-41 Incinerator"
+customAmmo 600
+clipSize 20
+rateMod 1.5 //slower ignite
+}
+
+description	"Bothan Spy 
+
+A cloaked infiltrator specializing in close range assassinations.
+
+^2Weaponry:
+-Melee
+-CR-41 Incinerator
+--50% RoF (for slower ignite). Applies temporary tracking. Magazine reload.
+^6Inventory:
+-Stimpack
+-Cloaking Device
+
+^8Attributes:
+-Reinforcement (1)
+-Dexterity (2)
+-Tracking Beacon
+-Sense Immunity
+-50% Faster Skill CD
+
+^3Abilities:
+-Dexterity Roll ^3[CS2]
+-Stimpack ^3[CS3]
+-Cloak ^3[CS4]"

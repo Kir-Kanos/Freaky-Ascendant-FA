@@ -1,0 +1,153 @@
+//Legends Mode character file - Created by KirKanos
+//Updated Ascended FA file - Kir Kanos
+
+ClassInfo
+{
+	name  			"ote4_CarnorJax"
+	MBClass 			MB_CLASS_SITH
+	classNumberLimit	1
+	weapons 			WP_SABER|WP_MELEE|WP_BLASTER_PISTOL
+	
+	attributes		MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_HEALING,1|MB_ATT_PISTOL,3|MB_ATT_FORCEBLOCK,2|MB_ATT_DEXTERITY,2|MB_ATT_FORCEFOCUS,1|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_FLIPKICK,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_ENV_PROT,1|MB_ATT_BLAST_ARMOUR,1|MB_ATT_DASH,1
+	
+	forcepowers		FP_SABER_OFFENSE,3|FP_LEVITATION,2
+	
+	maxhealth 		125
+	maxarmor  		125
+	damageTaken 	1.0
+	resource		resource_force
+	forcepool		135
+	forceregen		1.2
+	
+	model		"carnor_jax"
+	skin			"default"
+	uishader		"models/players/carnor_jax/mb2_icon_default"
+	uioverlay 	"gfx/icons/hybrid"
+	modelscale       1.02
+	
+	DamageGiven		1
+	knockbackTaken	0.9
+	rateOfFire      	0.9
+	rateOfFire_Melee 	0.85
+	baseSpeed		240
+	saberDamageStyle SS_TAVION,150|SS_DESANN,150|SS_STAFF,150
+	saberSpecialDamage 1.50
+	saber1		asc_ispdvba
+	saberstyle  	SS_STAFF|SS_DESANN|SS_TAVION
+	APmultiplier	1.05
+	BPmultiplier	1
+	ASmultiplier	1.10
+	CSmultiplier	1.07
+
+	WP_BlasterPistolFlags   HELD_ALTRELOAD
+
+	holdables		HI_STIMPACK
+
+	tauntAnim 		BOTH_SABERTHROW1START
+	gloatAnim 		BOTH_STAFF_TAUNT
+	flourishAnim		BOTH_TAVION_SWORDPOWER
+	saberStanceAnim	BOTH_TAVION_STANCE 
+	walkForward 	 	BOTH_WALK2
+
+	special1 	EAS_HI_STIMPACK
+	special2	EAS_NONE	
+	special3	EAS_HI_DEX
+	special4	EAS_HI_DASH
+
+	//respawncustomtime  50000
+
+	isCustomBuild		1
+	mbPoints			3
+	
+	c_att_skill_0	MB_ATT_FP_PUSH 
+	c_att_names_0	"Force Push"
+	c_att_ranks_0	1,1
+
+	c_att_skill_1 	MB_ATT_FP_SEE
+	c_att_names_1	"Force Sense"
+	c_att_ranks_1	1
+
+	c_att_skill_2	MB_ATT_FP_PULL
+	c_att_names_2	"Force Pull"
+	c_att_ranks_2	1,1
+
+	c_att_skill_3	MB_ATT_FP_GRIP
+	c_att_names_3	"Force Grip"
+	c_att_ranks_3	1,1
+}
+
+WeaponInfo0
+{
+	WeaponToReplace WP_BLASTER_PISTOL
+	WeaponBasedOff  WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/scout_pistol/blaster_pistol_w.glm" 
+	NewViewModel		"models/weapons2/scout_pistol/blaster_pistol.md3"   
+	Icon				"gfx/hud/w_icon_scout_pistol" 
+	WeaponName  "Modified Guardsmen Blaster Pistol"
+	customAmmo          792
+	clipsize            32
+	hasAnimOverrides 1
+animReadyRun TORSO_WEAPONIDLE2
+animReady TORSO_WEAPONIDLE2
+	animReadyWalk TORSO_WEAPONIDLE2
+	animReadyNoAmmo BOTH_ATTACK2 
+	animAttackRun BOTH_ATTACK2 
+	animAttack BOTH_ATTACK2 
+	animAttackWalk BOTH_ATTACK2 
+	animStand 	BOTH_STAND5
+	FPmult    1.20
+	altfireenabled 	0
+}
+
+WeaponInfo1
+{
+	WeaponToReplace	WP_SABER	
+	WeaponBasedOff	WP_SABER	
+	NewWorldModel	"models/weapons2/dummyblaster/model.glm" 
+	NewViewModel	"models/weapons2/dummy/dummy.md3"
+	Icon			"gfx/hud/w_icon_vibrosword_staff"
+	WeaponName	"ISP Double-Vibroblade A"
+	SelectSound 		"s/w/v/swish1.wav"
+}
+
+
+description	"Carnor Jax [Sith] ^3Reworked
+
+A well-rounded gunner/Saberist who combines martial arts and Force usage.
+
+^2Weaponry:
+- Melee
+-- +15% Rate of Fire
+- ISP Double-Vibroblade A (Staff/Purple/Cyan Saber)
+-- Saber Defense (2)
+-- Blaster Defense (1)
+-- Saber Damage: 150
+-- +120% special DMG mult
+-- -21/37% Reach
+-- +66% Radius
+-- Slap ^3[GB]
+- Modified Guardsmen Blaster Pistol (3)
+-- +10% Fire Rate (Global)
+-- +20% FP Damage
+-- Prim only
+-- Mag reload
+
+^5Force Powers:
+- Jump (2)
+
+^6Inventory:
+- Stimpack
+
+^8Attributes:
+- -10% Knockback Taken
+- Dexterity (2)
+- Knockdown Roll
+- Healing (1)
+- Force Block (2)
+- Force Focus (1)
+- Blast Armor
+
+^3Abilities:
+- Flipkick (1) ^3[Contact Jump]
+- Dex Roll ^3[CS3]
+- Dash (1) ^3[CS4]"

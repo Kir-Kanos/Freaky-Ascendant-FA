@@ -1,0 +1,200 @@
+ClassInfo
+{
+	name  	"ote2_ISBEnforcer"
+	MBClass 		MB_CLASS_HERO
+	classNumberLimit	2
+	weapons 			WP_MANDO_PISTOL|WP_MELEE|WP_SABER
+	WP_SaberFlags	HELD_STUN
+	WP_DetPackFlags	HELD_POISON|HELD_EXPLOSIVE|HELD_STUN
+	WP_SonicNadeFlags	HELD_TRACKING
+	
+	
+	
+	
+	attributes  	MB_ATT_MANDO_PISTOL,1|MB_ATT_HEALING,1|MB_ATT_AMMO,3|MB_ATT_DODGE,3|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_DART,4|MB_ATT_ANTI_MT,1|MB_ATT_STAMINA,2|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_TRACKING_BEACON|MB_ATT_STIMPACK
+	classflags	CFL_RUNFASTMELEE|CFL_HEAVYMELEE|CFL_BLOODYMELEE
+	forcepowers 	FP_SABER_OFFENSE,3
+	maxhealth 120
+	maxarmor  70
+
+	saber1	truncheon_legends
+	saberstyle	SS_DUAL|SS_TAVION
+	saberDamage 61
+	APmultiplier  1.25
+	CSmultiplier  1.1
+	ASmultiplier  1.15
+	BPmultiplier 0
+	saberMaxChain 2
+	
+	skilltimermod		.60
+	hackrate		0.65
+
+	modelscale 	0.955
+	model 		"isb_agont"
+	skin		"default"
+	uishader  	"models/players/isb_agont/icon_default"
+	
+	model_1		"agentkallus"
+	skin_1		"default"
+	uishader_1	"models/players/agentkallus/mb2_icon_default"
+	
+	forcepool 	50
+	forceregen	3
+	resource	 RESOURCE_STAMINA
+
+	holdables 	HI_BINOCULARS|HI_STIMPACK
+	classflags	CFL_SEEING_STEALTH
+
+	DamageGiven     1
+	rateOfFire 	    	1
+	rateoffire_melee 0.75
+	speed            1
+	
+	saberStanceAnim	BOTH_MELEE_STAND2
+	flourishAnim     BOTH_STAND5TOAIM
+	gloatAnim	BOTH_SHOWOFF_FAST
+	tauntAnim	BOTH_ENGAGETAUNT
+	
+	special1	EAS_HI_DODGE
+	special2 EAS_HI_KICK
+	meleespecial2 EAS_HI_TRACKER
+	special3	EAS_HI_DASH
+	special4 EAS_HI_DEX
+	
+	uioverlay "gfx/icons/spec_infantry"
+
+isCustomBuild		1
+	mbPoints			24
+
+	c_att_skill_0	MB_ATT_RESPAWNS		
+	c_att_names_0	"Reinforcement"	
+	c_att_ranks_0	8	
+	
+	c_att_skill_1	MB_ATT_MANDO_PISTOL	
+	c_att_names_1	"RK-3 Blaster Pistol"	
+	c_att_ranks_1	0,0,4	
+	c_att_descs_1	"30% Less FP Dam, 25% Higher Vel, 10% More Dam, 10% Lower RoF"	
+	
+	c_att_skill_2	MB_ATT_DEXTERITY	
+	c_att_names_2	"Dexterity" 	
+	c_att_ranks_2	0,2,4			
+
+	c_att_skill_3	MB_ATT_FLIPKICK	
+	c_att_names_3	"Flipkick"	
+	c_att_ranks_3	2,2	
+	
+	c_att_skill_4	MB_ATT_DASH	
+	c_att_names_4	"Dash"	
+	c_att_ranks_4	12
+	c_att_descs_4	"CS3"			
+
+	c_att_skill_5	MB_ATT_SONIC_DETONATOR	
+	c_att_names_5	"Listening Device"	
+	c_att_ranks_5	2,2	
+	c_att_descs_5	"Alt fire only, Acts as Sonic Mine And Applies Tracking"	
+
+	c_att_skill_6	MB_ATT_DET_PACK	
+	c_att_names_6	"Biochemical Payload"	
+	c_att_ranks_6	0,2,2
+	c_att_descs_6	"Detonates a large radius explosion that applies poison"		
+}
+
+
+WeaponInfo0
+{
+	WeaponToReplace 	WP_MANDO_PISTOL
+	WeaponBasedOff  	WP_BLASTER_PISTOL
+	NewWorldModel	"models/weapons2/kotor_pistol1/pistol_w.GLM"
+NewViewModel	"models/weapons2/kotor_pistol1/model.md3"
+Icon	"gfx/hud/w_icon_disruptorpistols_dual"
+	WeaponName  		"RK-3 Blaster Pistol"
+	FlashSound0			"sound/weapons/SE-14c/fire.mp3" 		
+	altFlashSound0		"sound/weapons/SE-14c/fire.mp3" 
+	ChargeSound			"sound/weapons/leia_pistol/altcharge.mp3"	
+	ClipSize 			54
+	ReloadTimeModifier 	1
+	damageMod 1.0
+	CustomAmmo			820
+	FPMult 				.7
+	velocitymod			1.25
+	damagemod			1.10
+	rofmod				1.10
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/dummyblaster/model.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon			"gfx/hud/w_icon_truncheon"
+	WeaponName		"ISB Truncheon" 
+}
+WeaponInfo2
+{
+	WeaponToReplace	WP_DET_PACK
+	WeaponBasedOff	WP_DET_PACK
+	NewWorldModel "models/weapons2/detpack/det_pack_w.glm"
+NewViewModel "models/weapons2/detpack/det_pack.md3"
+Icon "gfx/hud/w_icon_detpack"
+MissileEffect    "effects/Grenades/GlowGasB"
+AltMissileEffect    "effects/Grenades/GlowGasB"
+MissileMissEffect    "effects/Grenades/EXP_Gas"
+altMissileMissEffect    "effects/Grenades/EXP_Gas"
+	WeaponName	"Biochemical Payload"
+	splashRadius 300
+}
+WeaponInfo3
+{
+	WeaponToReplace	WP_SONIC_NADE
+	WeaponBasedOff	WP_SONIC_NADE
+	NewWorldModel			"models/weapons/Grenade_Concussion/model.glm"
+NewViewModel			"models/weapons/Grenade_Concussion/viewmodel.md3"
+Icon "gfx/hud/w_icon_stungrenade"
+	WeaponName	"Listening Device"
+primfireenabled 	0
+}
+
+description	"ISB Enforcer - (Fuse And Stromboli King)
+
+A speedy agent with advanced movement capabilities, tracking abilties and Close Combat expertise to punish hunted suspects...
+
+^2Weaponry:
+- Heavy Melee
+-- 25% faster RoF
+-- 15% Faster Movement Speed
+- ISB Truncheon (Dual/Cyan Saber)
+-- No Saber/Blaster Block
+-- Chain Limit: 2
+-- 76/49% less DMG
+-- 30% less reach
+-- Slap ^3[CS2]
+-- On Hit Staggers
+- ISB Blaster Pistol (WESTAR)
+-- 20% Less FP DMG
+-- 10% more DMG
+-- 25% more velocity
+-- 10% less RoF
+- Tracking Darts (4)
+
+^6Inventory:
+- Stimshot ^3[CS4]
+- Electrobinoculars
+
+^8Attributes:
+- 45% Increased Hack Speed
+- 40% Faster Cooldowns
+- Dexterity (1)
+- Healing (1)
+- Sense Immunity
+- Tracking Beacon
+- Mind Trick Resistance
+- Knockdown Roll
+
+^3Abilities:
+- Dodge (3) ^3[CS1]
+- Gun Kick ^3[CS2 Gun]"
+- Combat Roll ^3[CS4]
+- Tracking Dart ^3[CS3 Melee]
+
+

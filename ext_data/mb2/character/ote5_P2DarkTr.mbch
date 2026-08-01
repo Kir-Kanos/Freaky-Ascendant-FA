@@ -1,0 +1,209 @@
+//Siege class def file.
+
+ClassInfo
+{
+	name 	"ote5_P2DarkTr"
+	weapons 	WP_MELEE
+	
+	attributes 	MB_ATT_BLAST_ARMOUR,1|MB_ATT_AMMO,3|MB_ATT_JETPACK,1|MB_ATT_FUEL,3|MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_BESKAR,2|MB_ATT_ANTI_MT,2|MB_ATT_TRACKING_BEACON|MB_ATT_HEALING,1|MB_ATT_FRAGS,2|MB_ATT_TRACKING_DART,2|MB_ATT_ENV_PROT,2
+	
+	maxhealth 		80
+	maxarmor			200
+	rankArmor	250
+
+	modelscale 			1.20
+	damageTaken   		1.0
+	DamageGiven			1.1
+	speed               1.00
+	
+	knockbackgiven		1.1
+	knockbacktaken		0.9
+
+	WP_ShotgunFlags   HELD_PULSE|HELD_ALTRELOAD|HELD_SLOWPROJ
+	WP_RepeaterFlags	HELD_ALTRELOAD
+	
+	classflags	CFL_STRONGAGAINSTPHYSICAL|CFL_BLOODYMELEE
+
+	special1		EAS_HI_TRACKER
+
+	resource	RESOURCE_FUEL
+	forcepool 150
+
+	isCustomBuild		1
+	mbPoints			16
+	
+	c_att_skill_0    MB_ATT_SHOTGUN
+	c_att_names_0    "ARC Caster"
+	c_att_ranks_0    4,0
+	c_att_descs_0    "Electrifies on hit, -75% Velocity, -75% Mag Reload Speed"
+
+	c_att_skill_1    MB_ATT_REPEATER
+	c_att_names_1    "Dark Trooper Repeater"
+	c_att_ranks_1    4,0,0
+	c_att_descs_1    "-25% Damage & FP Damage, +10% Fire Rate, +20% Velocity"
+
+	c_att_skill_2    MB_ATT_MINIGUN
+	c_att_names_2    "Phase II Assault Cannon"
+	c_att_ranks_2    4,0,0
+	c_att_descs_2    "-150% Fire Rate & Reload Speed, +150% FP Damage, +90% Damage"
+
+	c_att_skill_3    MB_ATT_ARMOUR
+	c_att_names_3    "Armor (250)"
+	c_att_ranks_3    4
+
+	c_att_skill_4    MB_ATT_MAGNETIC_PLATING
+	c_att_names_4    "Deflector Shield"
+	c_att_ranks_4    8
+	c_att_descs_4    "Mag Plating"
+
+	c_att_skill_5    MB_ATT_CORTOSIS
+	c_att_names_5    "Cortosis Infused Phrik"
+	c_att_ranks_5    8
+
+	c_att_skill_6    MB_ATT_RESPAWNS
+	c_att_names_6    "Reinforcement"
+	c_att_ranks_6    12
+	
+	model 		"phase2_dt"
+	skin  		"default"
+	uishader  	"models/players/phase2_dt/icon_default"
+
+	jetpackJetTag	 *jet1
+	jetpackJet2Tag *jet2
+
+	jetpackThrustEffect		"effects/jetpack_b/thrust.efx"
+	jetpackIdleEffect		"effects/jetpack_b/idle.efx"
+	
+	jetpackFinishSound 	"sound/effects/dtjetpack/finish.wav"
+	jetpackThrustSound  "sound/effects/dtjetpack/thrust.wav"
+	jetpackStartSound 	"sound/effects/dtjetpack/start.wav"
+	jetpackIdleSound	"sound/effects/dtjetpack/idle.wav"
+	
+	//respawncustomtime 	75000
+	classNumberLimit  	2
+	MBClass 	MB_CLASS_WOOKIE
+	
+	uioverlay_r "gfx/icons/aerial"
+	uioverlay_c "gfx/icons/brawler"
+	uioverlay_l "gfx/icons/heavy"
+	
+	meleeMoves M_UPPERCUT|M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_PUNCH|M_RLKICK
+		flourishAnim BOTH_STAND5TOAIM
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_SHOTGUN
+	WeaponBasedOff		WP_BLASTER
+	NewWorldModel		"models/weapons2/arc_caster/arc_caster_w.glm"  	
+	NewViewModel		"models/weapons2/arc_caster/model.md3" 
+	Icon				"gfx/hud/w_icon_arc_caster" 
+	WeaponName			"ARC Caster"
+	hasAnimOverrides 1
+	animReadyRun BOTH_WESTARM5_IDLE
+	animReady BOTH_WESTARM5_IDLE
+	animReadyWalk BOTH_WESTARM5_READY
+	animReadyNoAmmo BOTH_WESTARM5_ATTACK
+	animAttackRun BOTH_WESTARM5_ATTACK
+	animAttack BOTH_WESTARM5_ATTACK
+	animAttackWalk BOTH_WESTARM5_ATTACK
+	animStand BOTH_STAND5
+	MuzzleEffect			"blaster/MuzzleFlash01B"
+	MissileEffect		"arc_caster/ArcCasterShock"
+ 	MissileHitHumanEffect	"SBD/Cortosis_blue"
+	MissileHitDroidEffect	"SBD/Cortosis_blue"
+	MissileMissEffect	"SBD/Cortosis_blue"
+	FlashSound0		"sound/movers/objects/green_beam_hit.mp3"
+	altFlashSound0 "sound/movers/objects/green_beam_hit.mp3"
+	selectSound "sound/weapons/phase2_arc/ready.wav"
+	altfireenabled		0
+	clipsize   12
+	customammo 480
+	ReloadTimeModifier 		1.75
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_MINIGUN
+	WeaponBasedOff		WP_MINIGUN
+	NewWorldModel		"models/weapons2/z6_rotary/model.glm"
+	NewViewModel		"models/weapons2/z6_rotary/rotary_cannon.md3"
+	NewHandsModel		"models/weapons2/z6_rotary/rotary_cannon_hand.md3"
+	NewBarrelModel		"models/weapons2/z6_rotary/rotary_cannon_barrel.md3"
+	MuzzleEffect		"Blaster/MuzzleFlash01G"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01G"
+	MissileEffect		"Blaster/Shot04G"
+	MissileMissEffect	"Blaster/Impact_Wall01G.efx"
+	Missile3Effect		"Blaster/Shot03G"
+	AltMissileEffect	"Blaster/Shot03G"
+	PowerupShotEffect	"Blaster/Shot04G"
+	FlashSound0			"sound/weapons/phase2_cannon/fire.wav"
+	altFlashSound0 "sound/weapons/phase2_cannon/fire.wav"
+	selectSound "sound/weapons/phase2_cannon/ready.wav"
+	isMinigun 0
+	Icon	 "gfx/hud/w_icon_rotary_cannon"
+	WeaponName	"Dark Trooper Assault Cannon"
+	FPMult	2.50
+	rateMod 2.50
+	damageMod 1.9 //1.1 dmg given
+	velocityMod	0.92
+	ReloadTimeModifier 2.5
+	altFireEnabled	1
+	clipSize	100
+	customAmmo 		700
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_REPEATER
+	WeaponBasedOff		WP_REPEATER
+	NewWorldModel		"models/weapons2/heavy_repeater/heavy_repeater_w.glm"
+	NewViewModel		"models/weapons2/heavy_repeater/heavy_repeater.md3"
+	NewHandsModel		"models/weapons2/heavy_repeater/heavy_repeater_hand.md3"
+	NewBarrelModel		"models/weapons2/heavy_repeater/heavy_repeater_barrel.md3"
+	Icon  				"gfx/doom_wpicons/w_icon_repeater"
+	WeaponName			"Dark Trooper Modded Heavy Repeater"
+ 	MuzzleEffect		"blaster/MuzzleFlash01B"
+	MissileEffect			"demp2/projectile"
+	FlashSound0			"sound/weapons/phase2_repeater/fire.wav"
+	selectSound "sound/weapons/phase2_repeater/ready.wav"
+	AltMuzzleEffect     "concussion/muzzle_flash"  
+	altMissileMissEffect "repeater/concussion"
+	AltFlashSound0		"sound/weapons/phase2_repeater/alt_fire.wav"
+	//altfireenabled			0
+	FPMult     				0.75
+	clipSize 				48
+	ReloadTimeModifier 		1.0
+	damageMod 0.75
+	velocityMod	1.25
+	Ratemod 1.1
+	customAmmo 		960
+hasAnimOverrides 1
+animReadyRun BOTH_WESTARM5_IDLE
+animReady BOTH_WESTARM5_IDLE
+animStand BOTH_STAND1
+}
+
+description	"Dark Trooper Phase II [Wookiee]
+ 
+A Jetpack-equipped light tank with access to an Arc Caster and heavy weapons.
+
+^2Weaponry:
+- Melee
+- Frag Grenade (2)
+
+^8Attributes:
+- +10% Knockback Given
+- -10% Knockback Taken
+- Strength (2)
+- Phrik Armor (Beskar 2)
+- Blast Armor
+- Physical Resist
+- Anti-Mind Trick (2)
+- Tracking Beacon
+- Healing (1)
+- Environmental Protection (2)
+
+^3Abilities:
+- Jetpack
+- Tracking Darts (4) ^3[CS1 Melee]"

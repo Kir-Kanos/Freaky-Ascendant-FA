@@ -1,0 +1,63 @@
+
+ClassInfo
+{
+	name	"ote5_GadgetMando"
+	classNumberLimit 3
+	MBClass	MB_CLASS_MANDALORIAN
+	weapons WP_MELEE
+	attributes MB_ATT_JETPACK|MB_ATT_DASH,2|MB_ATT_WRISTLASER|MB_ATT_FLAMETHROWER|MB_ATT_WHISTLINGBIRD,1|MB_ATT_TRACKING_DART,3|MB_ATT_DEXTERITY,3|MB_ATT_BESKAR,3|MB_ATT_TRACKING_BEACON|MB_ATT_BLAST_ARMOUR
+
+	extralives 1
+	baseSpeed 210
+	
+	maxhealth 80
+	maxarmor 80
+	
+	resource RESOURCE_FUEL
+	forcepool 50
+	forceregen 0.01
+	resourceRegenRate 15000
+	resourceRegenCap 50
+	resourceRegenAmount 20
+	
+	classflags CFL_HEAVYMELEE
+	
+	special1	EAS_HI_TRACKER
+	special2	EAS_HI_FLAME
+	special3	EAS_HI_DASH
+	special4	EAS_HI_WHISTLING_BIRDS
+	
+	special1HUD HUD_TRACKINGDART
+	special2HUD HUD_WHISTLINGBIRDS
+	
+	model "mbmandyfem"
+	skin "rgb"
+	uishader "models/players/mbmandyfem/mb2_icon_rgb"
+	userRGB 1
+	
+	model_1 "mbmandyfem"
+	skin_1 "rgb2"
+	uishader_1 "models/players/mbmandyfem/mb2_icon_rgb2"
+	userRGB_1 1
+}
+description "Gadget Mandalorian
+	
+A Mandalorian with unconventional gadgets.
+	
+^2 Weaponry:
+- Heavy Melee
+	
+^8Attributes:
+- Reinforcements (1)
+- Dexterity (3)
+- Beskar (3)
+- Blast Armor
+- Tracking Beacon
+	
+^3Abilities:
+- Jetpack
+--Fuel Regen 20/15s
+- Tracking Darts (3) ^3[CS1 Melee]
+- Wrist Laser/Flamer ^3[CS2]
+- Dash (2) ^3[CS3]
+- Whistling Birds (12)^3[CS4]"

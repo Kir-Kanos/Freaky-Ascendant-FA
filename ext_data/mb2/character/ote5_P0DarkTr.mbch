@@ -1,0 +1,170 @@
+//Siege class def file.
+
+ClassInfo
+{
+	name 	"ote5_P0DarkTr"
+	weapons 	WP_MELEE|WP_SHOTGUN
+	
+	attributes 	MB_ATT_BLAST_ARMOUR,1|MB_ATT_AMMO,3|MB_ATT_JETPACK,1|MB_ATT_FUEL,3|MB_ATT_SHOTGUN,2|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_BESKAR,1|MB_ATT_ANTI_MT,2|MB_ATT_TRACKING_BEACON|MB_ATT_HEALING,3|MB_ATT_ASSEMBLE,3|MB_ATT_FUELREGEN,1|MB_ATT_DEXTERITY,2|MB_ATT_TRACKING_DART,2|MB_ATT_ENV_PROT,1
+	
+	maxhealth 		75
+	maxarmor			100
+	rankHealth  100,125,150
+	rankArmor	125,150,200
+
+	modelscale 			1.05
+	damageTaken   		1.0
+	DamageGiven			1.0
+	speed               1.05
+	
+	knockbackgiven		1.0
+	knockbacktaken		1.0
+
+	WP_ShotgunFlags   HELD_PULSE|HELD_ALTRELOAD|HELD_SLOWPROJ
+	WP_PistolFlags		HELD_ALTRELOAD
+	
+	classflags	CFL_STRONGAGAINSTPHYSICAL|CFL_BLOODYMELEE|CFL_NOLOCATIONALDAMAGE
+
+	resource	RESOURCE_FUEL
+	forcepool 60
+	forceregen	2.00
+
+	special1		EAS_HI_TRACKER
+	special2 		EAS_NONE
+	special3 		EAS_HI_DEX
+
+	isCustomBuild		1
+	mbPoints			18
+	
+	c_att_skill_0	MB_ATT_SHOTGUN
+	c_att_names_0	"Heavy ARC Caster"
+	c_att_ranks_0	0,0,6
+	c_att_descs_0	"Electrifies on hit, -75% Reload Speed"
+
+	c_att_skill_1	MB_ATT_PISTOL
+	c_att_names_1	"Commando Pistol"
+	c_att_ranks_1	2,0,4
+	c_att_descs_1	"+15% FP Damage, -25% Damage, +50% Fire Rate, -10% Velocity"
+
+	c_att_skill_2	MB_ATT_THERMALS
+	c_att_names_2	"Thermal Detonator"
+	c_att_ranks_2	2
+
+	c_att_skill_3	MB_ATT_RESPAWNS
+	c_att_names_3	"Reinforcement"
+	c_att_ranks_3	6
+
+	c_att_skill_4	MB_ATT_HEALTH
+	c_att_names_4	"Health (100/125/150)"
+	c_att_ranks_4	2,2,2
+
+	c_att_skill_5	MB_ATT_ARMOUR
+	c_att_names_5	"Armor (125/150/200)"
+	c_att_ranks_5	2,2,4
+	
+	model 		"darktrooper_p0"
+	skin 		"default"
+	uishader  	"models/players/DarkTrooper_p0/mb2_icon_default"
+
+	jetpackJetTag	 *jet1
+	jetpackJet2Tag *jet2
+
+	jetpackThrustEffect		"effects/jetpack_b/thrust.efx"
+	jetpackIdleEffect		"effects/jetpack_b/idle.efx"
+	
+	jetpackFinishSound 	"sound/effects/dtjetpack/finish.wav"
+	jetpackThrustSound  "sound/effects/dtjetpack/thrust.wav"
+	jetpackStartSound 	"sound/effects/dtjetpack/start.wav"
+	jetpackIdleSound	"sound/effects/dtjetpack/idle.wav"
+	
+	//respawncustomtime 	75000
+	classNumberLimit  	3
+	MBClass 	MB_CLASS_CLONETROOPER
+	
+	uioverlay_r "gfx/icons/aerial"
+	uioverlay_c "gfx/icons/infantry"
+	uioverlay_l "gfx/icons/scout"
+	
+	meleeMoves M_UPPERCUT|M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_PUNCH|M_RLKICK
+		flourishAnim BOTH_STAND5TOAIM
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_SHOTGUN
+	WeaponBasedOff		WP_BLASTER
+	NewWorldModel		"models/weapons2/arc_caster/arc_caster_w.glm"  	
+	NewViewModel		"models/weapons2/arc_caster/model.md3" 
+	Icon				"gfx/hud/w_icon_arc_caster" 
+	WeaponName			"ARC Caster"
+	hasAnimOverrides 1
+	animReadyRun BOTH_WESTARM5_IDLE
+	animReady BOTH_WESTARM5_IDLE
+	animReadyWalk BOTH_WESTARM5_READY
+	animReadyNoAmmo BOTH_WESTARM5_ATTACK
+	animAttackRun BOTH_WESTARM5_ATTACK
+	animAttack BOTH_WESTARM5_ATTACK
+	animAttackWalk BOTH_WESTARM5_ATTACK
+	animStand BOTH_STAND5
+	MuzzleEffect			"blaster/MuzzleFlash01B"
+	MissileEffect		"arc_caster/ArcCasterShock"
+ 	MissileHitHumanEffect	"SBD/Cortosis_blue"
+	MissileHitDroidEffect	"SBD/Cortosis_blue"
+	MissileMissEffect	"SBD/Cortosis_blue"
+	FlashSound0		"sound/movers/objects/green_beam_hit.mp3"
+	altFlashSound0 "sound/movers/objects/green_beam_hit.mp3"
+	selectSound "sound/weapons/phase2_arc/ready.wav"
+	altfireenabled		0
+	clipsize   12
+	customammo 480
+	ReloadTimeModifier 		1.75
+}
+
+WeaponInfo1
+{
+	WeaponToReplace WP_BLASTER_PISTOL
+	WeaponBasedOff  WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/se-14c_pistol/blaster_pistol_w.glm" 
+	NewViewModel		"models/weapons2/se-14c_pistol/blaster_pistol.md3"   
+	Icon				"gfx/hud/w_icon_se-14c" 
+	WeaponName  "Commando Pistol"
+	customAmmo          900
+	clipsize            30
+	hasAnimOverrides 1
+	FlashSound0			"sound/weapons/phase0_pistol/fire.wav"
+	altFlashSound0 "sound/weapons/phase0_pistol/fire.wav"
+	selectSound "sound/weapons/phase0_pistol/ready.wav"
+	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
+	animStand 		BOTH_STAND5
+	damageMod 0.75
+	Ratemod 0.5	
+	velocityMod 0.90
+	FPMult      1.15
+}
+
+
+description	"Dark Trooper Phase 0 [Clone Trooper]
+ 
+To return aged veterans of the Clone Wars to peak condition, their limbs and organs were removed and replaced with cybernetics. Jetpack Trooper that has access to a Heavy Arc Caster, unique Commando Pistol, and thermal detonators.
+
+^2Weaponry:
+- Melee
+- Heavy ARC Caster (Shotgun 2)
+--Electrifies on hit, -75% Velocity, -75% Mag Reload Speed, -15% Damage
+
+^8Attributes:
+- Strength (1)
+- Phase 0 Armor (Beskar 1)
+- Blast Armor
+- Physical Resist
+- Anti-Mind Trick (2)
+- Tracking Beacon
+- Healing (3)
+- Assemble (3)
+- Dexterity (2)
+- Environmental Protection (1)
+
+^3Abilities:
+- Jetpack
+- Tracking Darts (4) ^3[CS1 Melee]
+- Dex Roll ^3[CS3]"

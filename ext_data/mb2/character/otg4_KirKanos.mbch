@@ -1,0 +1,170 @@
+//Legends Mode character file - Created by KirKanos
+//Updated Ascended FA file - Kir Kanos
+
+ClassInfo
+{
+	name  			"otg4_KirKanos"
+	MBClass 			MB_CLASS_JEDI
+	classNumberLimit	1
+	weapons 			WP_SABER|WP_MELEE|WP_BLASTER_PISTOL|WP_TRIP_MINE|WP_SONIC_NADE|WP_DET_PACK
+
+	WP_BlasterPistolFlags   HELD_ALTRELOAD
+	WP_SonicNadeFlags HELD_TRACKING
+	WP_TripMineFlags HELD_TRACKING
+	WP_DetPackFlags  HELD_TRACKING
+	WP_ProjFlags HELD_TRACKING|HELD_POISON
+	
+	attributes		MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_HEALING,1|MB_ATT_PISTOL,3|MB_ATT_SPY_DISGUISE,2|MB_ATT_FORCEBLOCK,2|MB_ATT_DEXTERITY,3|MB_ATT_TRACKING_DART,3|MB_ATT_TRACKING_BEACON|MB_ATT_FLIPKICK,1|MB_ATT_DET_PACK,3|MB_ATT_GUN_DEFENSE,1|MB_ATT_BLAST_ARMOUR,1|MB_ATT_DASH,1
+	
+	forcepowers		FP_SABER_OFFENSE,3
+
+	maxhealth 		125
+	maxarmor  		125
+
+	baseSpeed		240
+	resource		RESOURCE_FORCE
+	forcepool		135
+	forceregen		1.2
+	
+	model 			"kir_kanos"
+	skin  			"default"
+	uishader  		"models/players/kir_kanos/mb2_icon_default"
+	uioverlay 		"gfx/icons/hybrid"		
+	modelscale       1.02
+
+	knockbackTaken 	0.9
+	rateOfFire_Melee 	0.85
+	rateOfFire      	0.9
+	hackRate 0.90
+	skilltimermod	0.90
+	
+	holdables		HI_MEDPAC_BIG
+
+	saberDamageStyle SS_TAVION,150|SS_DESANN,150|SS_STAFF,150
+	saberSpecialDamage 1.5
+	saber1		asc_ispdvbd
+	saberstyle  	SS_STAFF|SS_DESANN|SS_TAVION
+	BPmultiplier	1.05
+	ASmultiplier 1.10
+	CSmultiplier 1.07
+
+	tauntAnim		 BOTH_ENGAGETAUNT
+	gloatAnim      	 BOTH_STAND1_TALK1
+	flourishAnim   	 BOTH_STAFF_TAUNT
+	saberStanceAnim  BOTH_TAVION_STANCE
+	walkForward 	 BOTH_WALK2
+
+ special1 	EAS_HI_TRACKER
+	special2	EAS_NONE	
+	special3 	EAS_HI_DEX
+	special4 	EAS_HI_DASH
+	
+	isCustomBuild		1
+	mbPoints			3
+	
+	c_att_skill_0	MB_ATT_TRIP_MINES
+	c_att_names_0	"Trip Mines"
+	c_att_ranks_0	1,1
+	c_att_descs_0	"Causes tracking upon hit"
+	
+	c_att_skill_1 MB_ATT_SONIC_DETONATOR
+	c_att_names_1	"Sonic Detonators"
+	c_att_ranks_1	1,1
+	c_att_descs_1	"Causes tracking upon hit"
+
+	c_att_skill_2 MB_ATT_PROJECTILE_RIFLE
+	c_att_names_2	"Assassin's Sniper Rifle"
+	c_att_ranks_2	2
+	c_att_descs_2 	"Causes tracking and poison upon hit. 25% less damage"
+
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace WP_BLASTER_PISTOL
+	WeaponBasedOff  WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/scout_pistol/blaster_pistol_w.glm" 
+	NewViewModel		"models/weapons2/scout_pistol/blaster_pistol.md3"   
+	Icon				"gfx/hud/w_icon_scout_pistol" 
+	WeaponName  "Modified Guardsmen Blaster Pistol"
+	customAmmo          792
+	clipsize            32
+	hasAnimOverrides 1
+	animReadyRun TORSO_WEAPONIDLE2
+	animReady TORSO_WEAPONIDLE2
+	animReadyWalk TORSO_WEAPONIDLE2
+	animReadyNoAmmo BOTH_ATTACK2 
+	animAttackRun BOTH_ATTACK2 
+	animAttack BOTH_ATTACK2 
+	animAttackWalk BOTH_ATTACK2 
+	animStand 	BOTH_STAND5
+	FPmult    1.20
+	rateMod 0.9
+	altfireenabled 	0
+}
+
+WeaponInfo1
+{
+	WeaponToReplace	WP_SABER	
+	WeaponBasedOff	WP_SABER	
+	NewWorldModel	"models/weapons2/dummyblaster/model.glm" 
+	NewViewModel	"models/weapons2/dummy/dummy.md3"
+	Icon			"gfx/hud/w_icon_vibrosword_staff"
+	WeaponName	"ISP Double-Vibroblade D"
+	SelectSound 		"s/w/v/swish1.wav"
+}
+
+WeaponInfo2
+{
+WeaponToReplace WP_PROJ
+WeaponBasedOff WP_PROJ
+NewWorldModel "models/weapons2/tusken_rifle_sar/tusken_rifle_w.glm"
+NewViewModel "models/weapons2/tusken_rifle_sar/tusken_rifle.md3"
+NewHandsModel "models/weapons2/tusken_rifle_sar/tusken_rifle_hand.md3"
+Icon	"gfx/hud/w_icon_tuskenrifle"
+WeaponName "Assassin's Sniper Rifle"
+damageMod .75
+customAmmo 12
+}
+
+description	"Kir Kanos [Jedi] ^3Reworked
+
+A well-rounded gunner/Saberist who combines martial arts, stealth and explosives.
+
+^2Weaponry:
+- Melee
+-- +15% Rate of Fire
+- ISP Double-Vibroblade A (Staff/Purple/Cyan Saber)
+-- Saber Defense (2)
+-- Blaster Defense (1)
+-- Saber Damage: 150
+-- +120% special DMG mult
+-- -21/37% Reach
+-- +66% Radius
+-- Slap ^3[GB]
+- Modified Guardsmen Blaster Pistol (3)
+-- +10% Fire Rate (Global)
+-- +20% FP Damage
+-- Prim only
+-- Mag reload
+- Det Packs (3) (Applies Tracking Debuff)
+
+^6Inventory:
+- Advanced Medpac
+
+^8Attributes:
+- -10% Knockback Taken
+- Dexterity (3)
+- Knockdown Roll
+- Healing (1)
+- Tracking Beacon
+- Force Block (2)
+- Blast Armor
+
+^3Abilities:
+- Flipkick (1) ^3[Contact Jump]
+- Disguise (2) ^3[Toggle Melee]
+- Tracking Darts (6) ^3[CS1 Melee]
+- Dex Roll ^3[CS3]
+- Dash (1) ^3[CS4]"

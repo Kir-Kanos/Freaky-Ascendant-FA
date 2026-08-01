@@ -1,0 +1,206 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name			"ote8_KXDroid"
+	MBClass 			MB_CLASS_WOOKIE
+	weapons 	WP_SONIC_NADE|WP_MELEE|WP_SABER
+	
+	attributes  MB_ATT_SONIC_DETONATOR,1|MB_ATT_WOOKIE_HEALTH,3|MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_AMMO,3|MB_ATT_BLAST_ARMOUR,1|MB_ATT_CORTOSIS,1|MB_ATT_BESKAR,2|MB_ATT_ANTI_MT,2|MB_ATT_WOOKIEE_FURY,2|MB_ATT_TRACKING_BEACON|MB_ATT_ENV_PROT,1
+	
+    classNumberLimit  	2
+	resource 		RESOURCE_RAGE
+	forcepool		100
+	forceregen 		0.3
+
+    maxhealth			125
+	rankHealth		150,175,200
+	
+	maxArmor			100
+	rankArmor		125,150,200
+	
+	basespeed			180
+	rankbasespeed		190,200,210
+	
+	forcepowers FP_RAGE,3
+	
+	special1 EAS_FP_RAGE
+	special2 EAS_NONE
+
+	meleeknockback_flat 150
+
+	classflags          	CFL_SEEING_STEALTH|CFL_STRONGAGAINSTPHYSICAL|CFL_BLOODYMELEE
+	rageSoundOverride 		"sound/chars/k2so/misc/taunt2.mp3"
+	bargeSoundOverride 		"sound/chars/k2so/misc/death2.mp3"
+	
+	DamageGiven         	1.15
+	damageTaken			0.8
+	
+	rateOfFire          	1
+	rateoffire_melee		1.25
+	
+	knockbackGiven 1.1
+	knockbackTaken 0.5
+	
+	saber1 				k2melee_legends
+	saberstyle			SS_TAVION
+	saberDamage 105 //120
+	saberSpecialDamage 2
+	saberMaxChain 1
+	APmultiplier		1.5
+	ASmultiplier 		0.8
+	BPmultiplier 0
+	WP_MeleeFlags HELD_SLOW
+	WP_SaberFlags HELD_STUN
+	WP_BlasterFlags HELD_ALTRELOAD
+	WP_T21Flags   HELD_ALTRELOAD
+    WP_E22Flags   HELD_ALTRELOAD
+    WP_SonicNadeFlags HELD_TRACKING
+
+    isCustomBuild 1
+	mbPoints 70
+
+    c_att_skill_0	MB_ATT_WOOKIE_STRENGTH
+	c_att_names_0	"Droid Strength"
+	c_att_ranks_0	0,0,30
+
+    c_att_skill_1	MB_ATT_BLASTER
+	c_att_names_1	"Modified KX E-11 Blaster"
+	c_att_ranks_1	10,0,5
+	c_att_descs_1	"Sec. Fire Only. -25% Dmg, +10% FP DMG & Velocity, & Mag Reload"
+
+	c_att_skill_2	MB_ATT_T21
+	c_att_names_2	"Hypervelocity T21 Rifle"
+	c_att_ranks_2	20,0,0
+	c_att_descs_2	"-25% Dmg, +40% Velocity & Mag Reload"
+
+	c_att_skill_3	MB_ATT_E_22
+	c_att_names_3	"Modified E-22 Blaster"
+	c_att_ranks_3	20,0,0
+	c_att_descs_3	"-25% Dmg, +15% FP Damage & Mag Reload"
+
+	c_att_skill_4	MB_ATT_HEALTH
+	c_att_names_4	"Health (150/175/200)"
+	c_att_ranks_4	5,5,5
+
+	c_att_skill_5	MB_ATT_ARMOUR
+	c_att_names_5	"Armor (125/150/200)"
+	c_att_ranks_5	5,5,10
+
+	c_att_skill_6	MB_ATT_RESPAWNS
+	c_att_names_6	"Reinforcement"
+	c_att_ranks_6	30
+
+	c_att_skill_7	MB_ATT_BASESPEED
+	c_att_names_7	"Speed (190/200/210)"
+	c_att_ranks_7	5,5,5
+	
+	//respawncustomtime 	75000
+
+	flourishAnim BOTH_STEADYSELF1
+	deathAnim BOTH_SBD_DEATH1
+	gloatAnim BOTH_STAND5TOAIM
+	tauntAnim BOTH_STAND1_TALK1
+	RunForward 	BOTH_WALK1
+	RunBackward	BOTH_WALK1
+	saberstanceAnim BOTH_TRIPLE3_DUALSTANCE
+	modelscale 		1.16
+	model 		"k2so"
+	skin  		"kxdroidasc"
+	uishader  "models/players/k2so/mb2_icon_k2so_evil"
+	uioverlay "gfx/icons/brawler"
+
+	meleeMoves M_UPPERCUT|M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_PUNCH|M_RLKICK
+}
+
+WeaponInfo0
+{
+	WeaponToReplace	WP_BLASTER
+	WeaponBasedOff  WP_BLASTER
+	WeaponName      "Modified KX E-11 Blaster"
+    NewWorldModel	"models/weapons2/blaster_r/blaster_w.glm"  	
+	NewViewModel	"models/weapons2/blaster_r/blaster.md3"
+	Icon			"gfx/hud/w_icon_E11"
+	primFireEnabled	0
+	customAmmo 800
+	FPmult 1.10
+    velocityMod 1.10
+	DamageMod 0.75
+}
+
+WeaponInfo1
+{
+	WeaponToReplace WP_T21
+	WeaponBasedOff  WP_T21
+	NewWorldModel		"models/weapons2/t-21/t-21_w.glm"
+	NewViewModel		"models/weapons2/t-21/t-21.md3"
+	Icon			"gfx/hud/w_icon_t-21"
+	WeaponName		"High Velocity T-21 Blaster Rifle"
+	customAmmo 720
+	velocityMod 1.40
+	DamageMod 0.75
+}
+
+WeaponInfo2
+{
+	WeaponToReplace WP_E_22
+	WeaponBasedOff  WP_E_22
+	NewWorldModel		"models/weapons2/e_22/e_22_w.glm"
+	NewViewModel		"models/weapons2/e_22/e_22.md3"
+	Icon			"gfx/hud/w_icon_e_22"
+	WeaponName		"High Powered E-22 Blaster Rifle"
+	customAmmo 720
+    FPMult 1.15
+	DamageMod 0.75
+}
+
+WeaponInfo3
+{
+	WeaponToReplace WP_SABER
+	WeaponBasedOff  WP_SABER
+	NewWorldModel		"models/weapons2/dummyblaster/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon			"models/weapons2/halo_melee/icon.png"
+	WeaponName		"Droid Spankers"
+	primGore			1
+	altGore			1
+}
+
+description	"KX Droid [Wookiee]
+
+Tanky gunner/brawler hybrid who can access an extra life and unique Imperial weapons.
+
+^2Weaponry:
+- Melee
+-- Flat KB: 150
+-- -25% Rate of Fire
+-- -15% Movement Speed
+- Droid Spankers (Cyan Saber)
+-- No Saber/Blaster Block
+-- Chain Limit: 1
+-- Staggers on hit
+-- +165% Knockback
+-- +5% Movement Speed
+-- +100% Special Damage
+-- -12% Damage
+-- -35% Reach
+-- +300% Radius
+- Sonic Grenades (1)
+-- Causes Tracking upon Detonation
+
+^5Powers:
+- Droid Rage (3) ^3[CS1]
+
+^8Attributes:
+- +10% Knockback Given
+- -50% Knockback Taken
+- Fury (2)
+- Strength (2)
+- Beskar (2)
+- Cortosis (1)
+- Blast Armor
+- Physical Resist
+- Sense Immunity
+- Anti-Mind Trick (2)
+- Environmental Protection (1)
+- Tracking Beacon"

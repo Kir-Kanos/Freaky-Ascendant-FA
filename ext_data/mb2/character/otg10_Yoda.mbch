@@ -1,0 +1,101 @@
+Classinfo
+{
+	name				"otg10_Yoda"
+	MBclass				MB_CLASS_JEDI
+	classNumberLimit	1
+
+	weapons				WP_SABER|WP_MELEE
+
+	attributes			MB_ATT_FORCEBLOCK,4|MB_ATT_DEFLECT,3|MB_ATT_FORCEFOCUS,3|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_FLIPKICK,1|MB_ATT_BUNNY_HOP,1|MB_ATT_DEXTERITY,3|MB_ATT_SABER_COMBO,1
+
+	forcepowers			FP_SABER_OFFENSE,3|FP_PUSH,3|FP_PULL,3|FP_SEE,3|FP_PROTECT,2|FP_ABSORB,2|FP_SABERTHROW,3|FP_SPEED,2|FP_LEVITATION,2
+
+	APmultiplier		1.15
+	BPmultiplier		.8
+	CSmultiplier 		1.05
+	ASmultiplier 		1.05
+	saberMaxChain 5
+	skilltimermod 2.5
+	knockbackTaken 1
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+	
+	saberThrowDamage 50
+	saberstyle		SS_STRONG
+ saberDamageStyle SS_STRONG,240
+ saberSpecialDamage 1.75
+	maxhealth			75
+	forcepool			20
+	forceregen			1.65	
+ rateOfFire_Melee .9
+ damageGiven 1
+	//special1	EAS_FP_SABERTHROW game chooses spec1 if not defined, leave as is
+	special2 EAS_FP_ABSORB
+	special3 EAS_FP_SPEED
+	special4 EAS_FP_PROTECT
+	
+	classflags CFL_NOPICKUPS|CFL_BPFREEJUMPS
+	
+	gloatAnim BOTH_FORCE_DRAIN_GRAB_HOLD
+	flourishAnim BOTH_FORCE_DRAIN_HOLD
+	//WalkBackward 	BOTH_WALK2
+	WalkForward 	BOTH_WALK2
+	RunForward BOTH_RUN_STAFF
+	saberStanceAnim BOTH_B1_TR___
+
+	modelscale 			0.55
+	uioverlay "gfx/icons/frontline"
+
+	model		"t_yoda"
+	skin			"default"
+	uishader		"models/players/t_yoda/mb2_icon_default"
+	
+	model_1		"t_yoda"
+	skin_1		"cw"
+	uishader_1	"models/players/t_yoda/mb2_icon_cw"
+	
+	saber1			saber_yodarework_legends
+	sabercolor		3
+	
+
+}
+
+Description 	"Yoda - ^3Reworked - Air
+
+Renowned Jedi Master with exceptional offensive and evasive skills.
+
+^2Weaponry:
+- Melee
+-- 10% faster RoF
+- Lightsaber (Red)
+-- EX Saber Training (1)
+-- Chain Limit: 5
+-- Saber Defense (3)
+--- BP-Free Jumps
+-- Blaster Deflect (3)
+-- Blaster Defense (1)
+-- 175% Spec Dmg mult
+-- 30% less Reach
+-- EX Saber Throw (2) ^3[CS1]
+--- 33% more Dmg
+
+^5Force Powers:
+- Push (3)
+- Pull (3)
+- Sense (3)
+- Absorb (2) ^3[CS2]
+- Protect (2) ^3[CS4]
+- Speed (2) ^3[CS3]
+
+^8Attributes:
+- 150% slower skill CD
+- Bunny Hop (1)
+- Dexterity (3)
+- Aerial Force Regen
+- Force Block (4)
+- Force Focus (3)
+- Heal capped at 35hp
+
+^3Abilities:
+- Flipkick (1) ^3[Contact Jump]"
