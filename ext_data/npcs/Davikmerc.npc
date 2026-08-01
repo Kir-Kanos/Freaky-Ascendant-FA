@@ -1,0 +1,35 @@
+Davikmerc
+{
+	displayname "Exchange Merc"
+	playerModel serroco
+	customskin	dxun
+	weapon		WP_BRYAR_OLD
+	MB_ATT_BRYAR_OLD 3
+	health		150
+	armor 50
+	headPitchRangeDown 30
+	reactions	5
+	aim		5
+	move		5
+	aggression	5
+	evasion		5
+	intelligence	5
+	rank		crewman
+	playerTeam	TEAM_PLAYER
+	enemyTeam	TEAM_ENEMY	
+//	race		klingon
+	class		CLASS_STORMTROOPER
+	height		64
+	crouchheight 38
+	snd			bartender
+	sndcombat	bartender
+	sndextra	bartender
+	yawspeed	70
+	walkSpeed	55
+	runSpeed	220
+	dismemberProbHead	0
+	dismemberProbArms	10
+	dismemberProbLegs	0
+	dismemberProbHands	20
+	dismemberProbWaist	0
+}

@@ -27,14 +27,10 @@ ClassInfo
 	WP_RepeaterFlags HELD_SLOW|HELD_ALTRELOAD
 	WP_E_22Flags HELD_STUN
 	holdables HI_MEDPAC_BIG
-	
-	model "carth"
-	skin "default"
-	uishader "models/players/carth/mb2_icon_default"
 
-	model_1 "sith_officer"
-	skin_1 "carth"
-	uishader_1 "models/players/sith_officer/mb2_icon_carth"
+	model "sith_officer"
+	skin "carth"
+	uishader "models/players/sith_officer/mb2_icon_carth"
 	
 	//respawncustomtime  50000	
 	

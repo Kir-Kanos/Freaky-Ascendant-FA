@@ -5,24 +5,26 @@ ClassInfo
 	
 	weapons			WP_SABER|WP_MELEE
 	
-	attributes		MB_ATT_FORCEBLOCK,1|MB_ATT_FORCEFOCUS,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_TRACKING_BEACON|MB_ATT_DEXTERITY,3|MB_ATT_CLOAK,2|FP_BLIND,1|MB_ATT_BINOCULARS
+	attributes		MB_ATT_FORCEBLOCK,1|MB_ATT_FORCEFOCUS,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_TRACKING_BEACON|MB_ATT_DEXTERITY,3|MB_ATT_CLOAK,2|MB_ATT_BINOCULARS|MB_ATT_TRACKING_DART,3
 
-	forcepowers 	FP_LEVITATION,2|FP_SEE,3|FP_SABERTHROW,2|FP_SABER_OFFENSE,2|FP_DRAIN,2|FP_BLIND,1
+	forcepowers 	FP_LEVITATION,2|FP_SEE,3|FP_SABER_OFFENSE,2|FP_DRAIN,2
 	
-	starthealth			75
-	maxhealth 	100
-	forcepool		70
-	forceregen	.8
+	starthealth			70
+	maxhealth 	125
+	forcepool		85
+	forceregen	.95
 	
 	extralives 2
 
 	classNumberLimit	3
 
- saberSpecialDamage 1.50
- saberDamageStyle SS_STAFF,80|SS_TAVION,60
+AB_TDartFlags HELD_FORCEFOCUS|HELD_CRIPPLE
 
-	BPmultiplier  0.7
-	APmultiplier  0.7
+ saberSpecialDamage 1.50
+ saberDamageStyle SS_STAFF,80|SS_TAVION,60|SS_FAST,50|SS_MEDIUM,80|SS_DESANN,90|SS_DUAL,65
+
+	BPmultiplier  0.8
+	APmultiplier  0.8
 	ASmultiplier		.95
 	CSmultiplier		1.05
 	
@@ -30,7 +32,7 @@ ClassInfo
 	
 	classflags		CFL_NOPICKUPS
 	
-	special1 EAS_FP_SABERTHROW
+	special1 EAS_HI_TRACKER
 	special2 EAS_HI_CLOAK
 	special3 EAS_HI_DEX
 	special4 EAS_HI_BINOCULARS
@@ -47,6 +49,10 @@ ClassInfo
 
 	saber1_1		royal_pike_legends
 	saberstyle_1		SS_FAST|SS_MEDIUM
+
+	saber1_2		royal_pike_legends
+	saber2_2		royal_pike_legends
+	saberstyle_1		SS_DUAL|SS_DESANN
 }
 WeaponInfo0
 {
@@ -67,17 +73,17 @@ Multi-life Dark Jedi pawns who attempt to ambush unsuspecting opponents with the
 
 ^2Weaponry:
 - Melee
-- Lightsaber (Staff/Duals/Cyan)
+- Sith Force Pike
+-- Staff Pike (Staff/Cyan)
+-- Single Pike (Blue/Yellow)
+-- Dual Pikes (Dual/Purple)
 -- Saber Defense (1)
--- Blaster Defense (1)
--- Blaster Deflect (1)
--- 135% Spec Dmg mult
--- Saber Throw (2) ^3[CS1]
+-- 150% Spec Dmg mult
+-- Much less Damage
 
 ^5Force Powers:
 - Jump (2)
 - Sense (1) 
-- Blind (1)
 - Drain (2)
 
 ^8Attributes:
@@ -86,8 +92,9 @@ Multi-life Dark Jedi pawns who attempt to ambush unsuspecting opponents with the
 - Force Focus (2)
 - Tracking Beacon
 
-^3Abilities:
-- Saberthrow (2) ^3[CS1]
+^8Abilities:
+- Force Dampeners (Tracking Darts 3) ^3[CS1]
+-- Causes Force Focus/Cripple On HIt
 - Cloaking Device (2) ^3[CS2]
 - Binoculars ^3[CS4]
 - Dex Roll ^3[CS3]"

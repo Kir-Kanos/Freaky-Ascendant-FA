@@ -1,0 +1,105 @@
+
+ClassInfo
+{
+	name				"otg2_Kyle"
+	MBClass				MB_CLASS_BOUNTY_HUNTER
+	classNumberLimit  	1
+
+	weapons				WP_MELEE|WP_STUN_BATON|WP_THERMAL
+	WP_DetPackFlags		HELD_HIGHDAMAGE
+
+	attributes			MB_ATT_BASE_TD,2|MB_ATT_AMMO,3|MB_ATT_DEFLECT,2|MB_ATT_STUN_BATON,2|MB_ATT_FLOAT_HOP|MB_ATT_BUNNY_HOP,1|MB_ATT_DEXTERITY,1
+
+	forcepool			100
+	resource			RESOURCE_FORCE
+
+	maxhealth			100
+	maxarmor			150
+
+	basespeed			240
+
+	rateOfFire_Melee	.9
+
+	uioverlay_r			"gfx/icons/frontline"
+	uioverlay_l			"gfx/icons/hybrid"
+	modelscale			1.0
+
+	model				"ib-merc_kyle"
+	skin				"default"
+	uishader			"models/players/ib-merc_kyle/mb2_icon_default"
+
+	isCustomBuild		1
+	mbPoints			100
+	
+	c_att_skill_0		MB_ATT_BRYAR_OLD
+	c_att_names_0		"Kyle's Bryar Blaster Pistol"
+	c_att_ranks_0		2,2,4
+	c_att_descs_0		"20% more charged FP damage, 20% less velocity"
+
+	c_att_skill_1		MB_ATT_BLASTER
+	c_att_names_1		"E-11 Blaster Rifle"
+	c_att_ranks_1		2,2,2
+
+	c_att_skill_2		MB_ATT_DET_PACK
+	c_att_names_2		"Det Packs"
+	c_att_ranks_2		2,2,2
+	c_att_descs_2		"100% more damage, Damage increases with rank"
+
+	c_att_skill_3		MB_ATT_TRIP_MINES
+	c_att_names_3		"Trip Mines"
+	c_att_ranks_3		2,2,2
+
+	c_att_skill_4		MB_ATT_THERMALS
+	c_att_names_4		"Thermal Detonator"
+	c_att_ranks_4		6
+	
+	c_att_skill_5		MB_ATT_REPEATER
+	c_att_names_5		"Imperial Repeater"
+	c_att_ranks_5		2,2,2
+
+	c_att_skill_6		MB_ATT_CONCUSSION
+	c_att_names_6		"Concussion Rifle"
+	c_att_ranks_6		2,2,2
+
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BRYAR_OLD
+	WeaponBasedOff		WP_BRYAR_OLD
+	NewWorldModel		"models/weapons2/briar_pistol/briar_pistol_w.glm"
+	NewViewModel		"models/weapons2/briar_pistol/briar_pistol.md3"
+	Icon				"gfx/hud/w_icon_briar"
+	WeaponName			"Kyle's Bryar Pistol"
+	//FlashSound0		"sound/weapons/bryar/fire.mp3"
+	//altFlashSound0	"sound/weapons/bryar/alt_fire.mp3"
+	flashsound0			"sound/weapons/kotor/fire_light.wav"
+	Altflashsound0		"sound/weapons/kotor/fire_power1.wav"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	velocityMod			0.8
+	FPChargeMult		1.20
+	customAmmo			240
+	hasAnimOverrides	1
+	animReadyRun		BOTH_JANGO_PISTOL_IDLE
+	animReady			BOTH_JANGO_PISTOL_IDLE
+	animReadyNoAmmo		BOTH_ATTACK2
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+}
+
+description	"Kyle Katarn
+
+An Ex Imperial mercenary who must choose his own path.
+
+^2Weaponry:
+- Melee
+-- 10% faster RoF
+- Thermal Grenades (2)
+- Stun Baton (2)
+
+^8Attributes:
+- Bunny Hop (1)
+- Slow Faller
+- Dexterity (1)"

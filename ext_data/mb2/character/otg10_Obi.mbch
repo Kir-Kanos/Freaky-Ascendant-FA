@@ -1,0 +1,104 @@
+//CONVERTED BY MARSHALL
+ClassInfo
+{
+	name	"otg10_Obi"
+	MBClass	MB_CLASS_JEDI
+	classNumberLimit	1
+	
+	weapons	WP_MELEE|WP_SABER
+	
+	attributes	MB_ATT_FORCEBLOCK,1|MB_ATT_FORCEFOCUS,2|MB_ATT_DEFLECT,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_BLAST_ARMOUR
+
+	forcepowers	FP_LEVITATION,2|FP_PUSH,3|FP_SEE,3|FP_SABER_OFFENSE,3|FP_PULL,1|FP_TELEPATHY,3|FP_PROTECT,1
+
+ 	damageGiven 1.1
+ 	rateOfFire_Melee 0.9
+	speed			0.94
+	maxhealth	150
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+	forcepool	185
+
+	forceregen  .85
+	rankforceregen 1
+	
+	saberstyle	SS_FAST|SS_MEDIUM|SS_TAVION
+	saberDamageStyle SS_FAST,130|SS_TAVION,130
+	saberThrowDamage 40
+ 	saberSpecialDamage 1.25
+	blockRegenAmount 5
+	blockRegenRate 400
+
+	APmultiplier	0.8
+	BPmultiplier	1.6
+	CSmultiplier 1.05
+	ASmultiplier	1.05
+
+	classflags CFL_NOPICKUPS
+
+	special1 EAS_FP_SABERTHROW 
+	special2 EAS_FP_PROTECT
+	special3 EAS_FP_TELEPATHY
+	
+	flourishAnim	BOTH_STAND5TOSTAND8
+ 	gloatAnim	BOTH_MINDTRICK1
+	
+	saber1		saber_obi_wan_legends4
+	sabercolor 	0.58
+
+	modelscale	1.01
+
+	uioverlay "gfx/icons/support"
+	
+	model		"obiwan_ot"
+	skin		"hooded"
+	uishader	"models/players/obiwan_ot/mb2_icon_hooded"
+
+	model_1		"obiwan_ot"
+	skin_1		"default"
+	uishader_1	"models/players/obiwan_ot/mb2_icon_default"
+	
+	model_2		"obiwan_ot"
+	skin_2		"robed"
+	uishader_2	"models/players/obiwan_ot/mb2_icon_robed"
+	
+	model_3		"obiwan_ot"
+	skin_3		"ghost"
+	uishader_3	"models/players/obiwan_ot/mb2_icon_ghost"
+
+	model_4		"obiwan_owk"
+	skin_4		"goggles"
+	uishader_4	"models/players/obiwan_owk/mb2_icon_goggles"
+
+}
+
+description	"Obi-Wan Kenobi 
+
+A Jedi with exceptional defenses. Choose between the resourcefulness of a Master or the raw agility of a Padawan.
+
+^2Weaponry:
+- Melee
+-- 10% faster RoF
+- Lightsaber (Yellow/Cyan/Blue)
+-- Saber/Blaster Defense (3)
+--- BP Regen: 5/.4s to 100
+-- Blaster Deflect (3)
+-- 8% more Fast style Dmg
+-- 125% Spec Dmg mult
+-- Saber Throw ^3[CS1]
+--- 33% more Dmg
+ 
+^5Force Powers:
+- Jump (2)
+- Push (3)
+- Pull (1)
+- Sense (3)
+- Protect (1)
+- Mindtrick (3)
+
+^8Attributes:
+- Blast Armor
+- Heal capped at 35hp
+- Force Block (1)
+- Force Focus (2)"

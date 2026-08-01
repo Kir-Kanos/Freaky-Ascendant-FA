@@ -1,0 +1,150 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo 
+{
+	name				"otg7_Hera"
+	weapons				WP_MELEE|WP_PULSE_NADE|WP_FRAG_NADE|WP_CLONE_PISTOL|WP_PLX1
+	attributes			MB_ATT_DISP_ARMOR,2|MB_ATT_PULSE_GRENADES,3|MB_ATT_DEXTERITY,3|MB_ATT_DODGE,3|MB_ATT_HEALING,2|MB_ATT_AMMO,3|MB_ATT_QUICKTHROW,1|MB_ATT_FRAGS,1|MB_ATT_RALLY,1|MB_ATT_USE_DISTANCE,3|MB_ATT_CLONE_PISTOL,2|MB_ATT_FLOAT_HOP|MB_ATT_BUNNY_HOP,1|MB_ATT_PLX1,1
+	maxhealth			170
+	maxarmor			100
+	model				"hera"
+	skin				"default"
+	uishader			"models/players/hera/MB2_Icon_Default"
+	MBClass				MB_CLASS_HERO
+	classNumberLimit	1
+	holdables 		  	HI_SHIELD|HI_EWEB|HI_SEEKER //BASE?
+ baseSpeed 260
+	modelscale         	0.99
+	rateOfFire         	0.9 //
+ rateOfFire_Melee 0.9
+	forceregen			1.25
+	forcepool			100
+	classflags			CFL_STATVIEWER
+	RESOURCE			RESOURCE_ENERGY
+
+	knockbackGiven 1.05
+
+	WP_BlasterFlags HELD_KNOCKBACK
+	WP_PLX1Flags HELD_SLOW|HELD_KNOCKBACK|HELD_STUN|HELD_FLAME
+
+	special1HUD HUD_FRAGNADE
+	special2HUD HUD_PULSENADE
+	
+	special1		EAS_HI_DODGE
+	special2		EAS_HI_DEX
+	special3		EAS_HI_QUICKTHROW
+	special4		EAS_HI_SHIELD
+	
+	uioverlay_r 	"gfx/icons/tactician"
+	uioverlay_l "gfx/2d/hud/hlp_defend"
+	//gloatAnim BOTH_DUAL_PISTOLS_DRAW
+	flourishAnim 	BOTH_KNEES1
+}
+
+WeaponInfo0
+{
+	WeaponToReplace			WP_CLONE_PISTOL
+	WeaponBasedOff 	WP_CLONE_PISTOL
+	NewWorldModel		"models/weapons2/hera_p/pistol_w.glm" 
+ NewViewModel		"models/weapons2/hera_p/pistol_w.md3"
+	Icon				"gfx/hud/w_icon_herapistols" 
+	WeaponName			"Blurrg-1120 Blaster Pistol" 
+	FlashSound0			"sound/weapons/amban/fire.mp3"
+	AltFlashSound0	 	"sound/weapons/amban_phase_rifle/fire.wav"
+	ChargeSound "sound/weapons/leia_pistol/altcharge.mp3"
+	MuzzleEffect		null
+	AltMuzzleEffect	 null
+	MissileEffect		"Blaster/Shot02r"
+	AltMissileEffect	"Blaster/Shot04r"
+	PowerupShotEffect	"Blaster/Shot04r"
+	ChargeEffect		"gfx/effects/bryarfrontflash"
+	MissileMissEffect 	"effects/blaster/Impact_Wall01R"
+	altMissileMissEffect 	"effects/blaster/Impact_Wall01R"
+	customAmmo 			825
+	hasAnimOverrides 1
+	animReadyRun BOTH_PISTOL_IDLE
+	animReady BOTH_PISTOL_IDLE
+	animReadyWalk BOTH_PISTOL_IDLE2
+	animAttackRun BOTH_PISTOL_ATTACK
+	animAttack BOTH_PISTOL_ATTACK
+	animAttackWalk BOTH_PISTOL_ATTACK
+	animCharge BOTH_PISTOL_ATTACK
+	VelocityMod 		1.15
+	rateMod 0.65
+ damageMod 1.15
+}
+
+WeaponInfo1
+{
+	WeaponToReplace	WP_PLX1
+	WeaponBasedOff	WP_MANDO_PISTOL
+	NewWorldModel	"models/items/datapad.glm"
+	NewViewModel "models/items/datapad.md3"
+	Icon		"gfx/hud/w_icon_realTD"
+	WeaponName	"Turbolaser Bombardment"
+	FlashSound0	null
+	altFlashSound0	null
+	altmissileMissEffect "effects/tarkin/explosion"
+	altMissileHitHumanEffect "effects/tarkin/explosion"
+	altMissileHitDroidEffect "effects/tarkin/explosion"
+	missileMissEffect "effects/tarkin/explosion"
+	MissileHitHumanEffect "effects/tarkin/explosion"
+	MissileHitDroidEffect "effects/tarkin/explosion"
+	missileModel null
+	altMissileModel null
+	missileEffect "effects/tarkin/ds_shot" 
+	altMissileEffect  "effects/tarkin/ds_shot"
+	hasAnimOverrides 1
+	animReadyRun BOTH_TALKCOMM1START
+	animReady BOTH_TALKCOMM1START
+	animReadyWalk BOTH_WALK6
+	animReadyNoAmmo BOTH_TALKCOMM1START
+	animAttackRun BOTH_COWER1_STOP
+	animAttack BOTH_COWER1_STOP
+	animAttackWalk BOTH_COWER1_STOP
+	animStand BOTH_STAND1
+	reloadTimeModifier 4.5
+ damageMod 1.25
+	SelectSound "sound/chars/hera/misc/victory2.mp3"
+}
+
+description	"Hera Syndulla ^3[Reworked]
+
+A dexterous and speedy commander with Quickthrow grenades and portable defensive utilities. Can repair her teammates' Armor and can call in an airstrike.
+
+^2Weaponry:
+- Melee
+-- 10% faster RoF
+- Blurrg-1120 Blaster Pistol (Clone Pistol 2)
+-- +35% Rate of Fire
+-- +15% Velocity
+-- +15% Damage
+-- Additional Knockback 
+- Turbolaser Bombardment (1) (PLX)
+-- Ignites/pushes/staggers on det
+-- +25% Damage
+-- -350% Reload Speed
+-- -15% Movement Speed
+- Frag Grenade (1)
+- Pulse Grenades (3)
+
+^6Inventory:
+- Seeker Drone
+- Forcefield ^3[CS4]
+- Portable E-Web Cannon
+
+^8Attributes:
+- +5% Knockback Given
+- Bunny Hop (1)
+- Slow Faller
+- Dexterity (3)
+- Healing (2)
+- Rally 
+- Ally Stat Viewer
+
+^3Abilities:
+- Armor Dispenser (2) ^3['Use' on ^3allies]
+-- +3 Range
+- Dodge (3) ^3[CS1]
+- Dex Roll ^3[CS2]
+- Quickthrow (1) ^3[CS3]"

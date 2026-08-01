@@ -1,0 +1,108 @@
+ClassInfo
+{
+	name				"ote1_NarkinaG"
+	MBClass				MB_CLASS_SOLDIER
+	extralives			4
+	classNumberLimit		3
+	weapons				WP_MELEE|WP_STUN_BATON|WP_TRIP_MINE|WP_DC_CARBINE|WP_PULSE_NADE
+	WP_StunBatonFlags HELD_CRIPPLE|HELD_LOWDAMAGE
+	WP_PulseNadeFlags	HELD_CRIPPLE
+	WP_TripMineFlags	HELD_PULSE|HELD_CRIPPLE|HELD_KNOCKBACK
+	WP_DCCarbineFlags	HELD_ALTRELOAD
+	WP_MeleeFlags		HELD_LOWDAMAGE|HELD_SPEED
+	
+	attributes			MB_ATT_AMMO,1|MB_ATT_ASSEMBLE,1|MB_ATT_CCTRAINING,0|MB_ATT_DC_CARBINE,1|MB_ATT_TRIP_MINES,3|MB_ATT_PULSE_GRENADES,1|MB_ATT_STUN_BATON,1
+
+	maxhealth			40
+	maxarmor			20
+
+	resource			resource_energy
+	forcepool			20
+	forceregen			0.6
+
+	special2			EAS_NONE
+
+	saberStanceAnim		BOTH_SABERDUAL_STANCE
+	gloatAnim			BOTH_VICTORY_FAST
+	flourishanim		BOTH_STAND5TOAIM
+
+	uioverlay			"gfx/icons/infantry"
+	modelscale			1.00
+	
+	model				"imperial_narkina"
+	skin				"default"
+	uishader			"models/players/imperial_narkina/mb2_icon_default"
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_DC_CARBINE
+	WeaponBasedOff		WP_DC_CARBINE
+	NewWorldModel		"models/weapons2/dh-17/dh-17_w.glm"
+	NewViewModel		"models/weapons2/dh-17/dh-17_FA.md3"
+	Icon				"gfx/hud/w_icon_dh-17"
+	WeaponName			"DH-17 Blaster Pistol"
+	MissileEffect				"Blaster/Shot02R"
+	MuzzleEffect				"Blaster/MuzzleFlash02R"
+	MissileMissEffect			"Blaster/Impact_Wall01"
+	MissileHitHumanEffect		"Blaster/Impact_Wall01"
+	MissileHitDroidEffect		"Blaster/Impact_Wall01"
+	altMissileMissEffect		"Blaster/Impact_Wall01"
+	altMissileHitHumanEffect	"Blaster/Impact_Wall01"
+	altMissileHitDroidEffect	"Blaster/Impact_Wall01"
+	FlashSound0			"sound/weapons/blaster/fire.mp3"
+	FlashSound1			"sound/weapons/blaster/fire.mp3"
+	FlashSound2			"sound/weapons/blaster/fire.mp3"
+	FlashSound3			"sound/weapons/blaster/fire.mp3"
+	rateMod				2.5
+	hasAnimOverrides	1
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+	animReadyNoAmmo		BOTH_PISTOL_IDLE
+	animStand			BOTH_PISTOL_IDLE
+	animReadyRun		BOTH_PISTOL_IDLE
+	animReady			BOTH_PISTOL_IDLE
+	animReadyWalk		BOTH_ATTACK2
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_TRIP_MINE
+	WeaponBasedOff		WP_TRIP_MINE
+	NewWorldModel		"models/weapons2/laser_trap/laser_trap_w.glm"
+	NewViewModel		"models/weapons2/laser_trap/laser_trap.md3"
+	NewHandsModel		"models/weapons2/laser_trap/laser_trap_hand.md3"
+	Icon				"gfx/hud/w_icon_tripmine"
+	WeaponName			"Electro-Shock Emplacement"
+	customammo			3
+	rateMod				0.8
+	damagemod			0.5
+}
+
+description	"Narkina 5 Guard
+
+Cowardly, ineffective soldiers who rely on gadgets to keep their foes in line.
+
+^2Weaponry:
+- Cowardly Melee
+-- 50% Less Damage Melee
+-- 15% Faster Movement
+- DH-17 Blaster Pistol
+-- Based on DC Carbine (1)
+-- 150% Slower RoF
+-- Mag Reload
+- Stun Baton (1)
+-- Low Damage, Causes Cripple
+- Electro-Shock Emplacement
+-- Trip Mine (3)
+-- Causes Pulse/Cripple/Knockback
+-- 50% Less Damage
+- Pulse Grenade (1)
+-- Causes Cripple
+
+^8Attributes:
+- Reinforcements (4)
+- Assemble (1)
+- Ammo (1)"

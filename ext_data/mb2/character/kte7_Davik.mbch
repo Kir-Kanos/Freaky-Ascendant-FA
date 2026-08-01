@@ -1,0 +1,95 @@
+
+ClassInfo
+{
+	name					"kte7_Davik"
+	MBClass					MB_CLASS_HERO
+	classNumberLimit 		1
+	weapons					WP_MELEE|WP_BLASTER_PISTOL|WP_THERMAL
+
+	attributes				MB_ATT_PISTOL,3|MB_ATT_AMMO,3|MB_ATT_HEALING,1|MB_ATT_SPAWNER,1|MB_ATT_ROUNDSPAWNER,1|MB_ATT_BACTA|MB_ATT_RALLY|MB_ATT_TRACKING_BEACON|MB_ATT_ANTI_MT,1|MB_ATT_BLAST_ARMOUR|MB_ATT_BESKAR,1|MB_ATT_BASE_TD,5|MB_ATT_TRACKING_DART,3|MB_ATT_WHISTLINGBIRD|MB_ATT_ENEMYSCANNER|MB_ATT_PSHIELD
+
+	roundnpc	"DavikMerc"
+	spawnernpc	"DavikBH"
+
+	maxhealth				60
+	maxarmor				200
+
+	resource 				RESOURCE_STAMINA
+	forcepool 				75
+
+	baseSpeed 				220
+
+	model					"davik" 				
+	skin					"default"					
+	uishader				"models/players/davik/icon_default"
+
+	special1				EAS_HI_ENEMYSCANNER
+	special2				EAS_HI_SPAWNER
+	special3				EAS_HI_WHISTLING_BIRDS
+	special4				EAS_HI_TRACKER
+	
+	flourishAnim 			BOTH_STAND5TOAIM
+}
+WeaponInfo0
+{
+	WeaponToReplace			WP_BLASTER_PISTOL
+	WeaponBasedOff			WP_BLASTER_PISTOL					
+	NewWorldModel			"models/weapons2/kotor_hpistol/kotor_hpistol_w.glm"
+	NewViewModel			"models/weapons2/kotor_hpistol/kotor_hpistol.md3"
+	Icon            		"gfx/hud/w_icon_kotor_hpistol_dual"	
+	WeaponName				"Exchange Pistol"
+	FlashSound0				"sound/weapons/kotor/fire_light.wav" 			
+	AltFlashSound0			"sound/weapons/kotor/fire_power1.mp3"
+	ChargeSound				"sound/weapons/leia_pistol/altcharge.mp3"
+	MuzzleEffect			"Blaster/MuzzleCharge01R"
+	AltMuzzleEffect			"Blaster/MuzzleFlash01R"
+	MissileEffect			"Blaster/Shot03r"
+	Missile3Effect			"Blaster/Shot03r"
+	AltMissileEffect		"Blaster/Shot03r"
+	PowerupShotEffect		"Blaster/Shot04r"
+	ChargeEffect			"gfx/effects/bryarfrontflash"
+	MissileMissEffect 		"effects/blaster/Impact_Wall01R"
+	customammo 				950
+	Clipsize				25
+	FPMult          		1.05
+	Damagemod			1.05
+	rateMod .95
+	hasAnimOverrides	1
+	animReadyNoAmmo		BOTH_PISTOL_READY
+	animAttackRun		BOTH_PISTOL_READY
+	animAttack			BOTH_PISTOL_READY
+	animAttackWalk		BOTH_PISTOL_READY
+	animStand			BOTH_PISTOL_READY
+	animReadyRun		BOTH_PISTOL_READY
+	animReady			BOTH_PISTOL_READY
+	animReadyWalk		BOTH_PISTOL_READY
+}
+
+
+description	"Davik Kang
+
+The feared head of the Exchange on Taris. A master of logistics and hired muscle, Davik fights through his extensive network of enforcers.
+
+^2Weaponry:
+- Melee
+- Exchange Heavy Pistol
+-- Pistol 3, 5% More Damage And RoF
+-- Mag Reload
+- Thermal Grenades (5)
+
+^8Attributes:
+- Personal Shield
+- Healing (1)
+- Personal Exchange Guard (Round Spawner)
+- Blast Armor
+- Rally
+- Exchange Network (Tracking Beacon)
+- Medpack
+- Anti MT (1)
+- Personal Shield 
+
+^8Abilities:
+- Call Backup (Support Beacon Exchange Bounty Hunter) ^3[CS1]
+- Exchange Suit Scanner (Enemy Scanner ^3[CS2]
+- Vambrace Micro Rockets (Whistling Birds) ^3[CS3]
+- Tracking Darts (6) ^3[CS4]"

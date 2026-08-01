@@ -1,0 +1,162 @@
+//Legends Mode character file - Created by Frenzy & Leos
+ClassInfo
+{
+	name				"ote7_ISBOff"
+	classNumberLimit	2
+	MBClass				MB_CLASS_BOUNTY_HUNTER
+	weapons				WP_MELEE|WP_STUN_BATON|WP_BLASTER_PISTOL
+
+	attributes			MB_ATT_DODGE,3|MB_ATT_RALLY,1|MB_ATT_AMMO,3|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_BEACON|MB_ATT_ASSEMBLE,1|MB_ATT_ANTI_MT,2|MB_ATT_TRACKING_DART,12|MB_ATT_GRAPPLE_HOOK,1|MB_ATT_STUN_BATON,1|MB_ATT_HEALING,1|MB_ATT_PISTOL,3|MB_ATT_QUICKTHROW,1
+
+	maxhealth			140
+	maxarmor			10
+	hackRate			.60
+
+	classflags			CFL_STATVIEWER|CFL_SEEING_STEALTH
+
+	WP_StunBatonFlags		HELD_TRACKING|HELD_KNOCKBACK|HELD_FLASH|HELD_CRIPPLE
+	WP_BlasterPistolFlags		HELD_TRACKING|HELD_ALTRELOAD
+	WP_MeleeFlags			HELD_SPEED|HELD_TRACKING
+	WP_SonicNadeFlags		HELD_TRACKING
+	WP_FragNadeFlags		HELD_TRACKING|HELD_FLASH|HELD_STUN
+
+	basespeed			210
+	
+	resource			RESOURCE_STAMINA
+	forcepool			80
+	forceregen			1.05
+
+
+model		"imperial_fml"
+skin		"ISB"
+uishader	"models/players/imperial_fml/mb2_icon_ISB"
+
+model_1		"imperial"
+skin_1		"ISB"
+uishader_1	"models/players/imperial/mb2_icon_ISB"
+
+model_2		"imptrench"
+skin_2		"ISB"
+uishader_2	"models/players/imptrench/mb2_icon_ISB"
+
+	modelscale			1
+	uioverlay_r 		"gfx/icons/tactician"
+
+	special1			EAS_HI_DODGE		
+	special2			EAS_HI_TRACKER	
+	special4			EAS_HI_QUICKTHROW		
+	meleespecial4			EAS_HI_GRAPPLEHOOK	
+
+	gloatAnim			BOTH_TALKCOMM1START
+	flourishAnim		TORSO_HANDSIGNAL3
+
+isCustomBuild	1
+mbPoints		20
+
+
+c_att_skill_0		MB_ATT_BLASTER
+c_att_names_0		"E-11 Blaster Rifle"
+c_att_ranks_0		2,2,2
+
+c_att_skill_1		MB_ATT_RESPAWNS
+c_att_names_1		"Reinforcement"
+c_att_ranks_1		14
+
+c_att_skill_2		MB_ATT_SONIC_DETONATOR
+c_att_names_2		"Sonic Grenade"
+c_att_ranks_2		2,2,4
+c_att_descs_2		"Applies Tracking"
+
+c_att_skill_3		MB_ATT_FRAGS
+c_att_names_3		"Flash Bang"
+c_att_ranks_3		2,0,2
+c_att_descs_3		"Blinds/staggers on det, Sec only. 99.9% less Dmg, Applies Tracking"
+
+c_att_skill_4		MB_ATT_HEALING
+c_att_names_4		"Healing"
+c_att_ranks_4		0,2,2
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace 	WP_BLASTER_PISTOL
+	WeaponBasedOff  	WP_BLASTER_PISTOL
+	NewWorldModel	"models/weapons2/kotor_pistol1/pistol_w.GLM"
+NewViewModel	"models/weapons2/kotor_pistol1/model.md3"
+Icon	"gfx/hud/w_icon_disruptorpistols_dual"
+	WeaponName  		"ISB Modified RK-3 Pistol"
+	FlashSound0			"sound/weapons/SE-14c/fire.mp3" 		
+	altFlashSound0		"sound/weapons/SE-14c/fire.mp3" 
+	ChargeSound			"sound/weapons/leia_pistol/altcharge.mp3"	
+	ClipSize 			54
+	ReloadTimeModifier 	1
+	CustomAmmo			820
+	velocitymod			1.10
+	damagemod			1.20
+	ratemod				1.20
+	hasAnimOverrides	1
+	animReadyNoAmmo		BOTH_PISTOL_READY
+	animAttackRun		BOTH_PISTOL_READY
+	animAttack			BOTH_PISTOL_READY
+	animAttackWalk		BOTH_PISTOL_READY
+	animStand			BOTH_PISTOL_READY
+	animReadyRun		BOTH_PISTOL_READY
+	animReady			BOTH_PISTOL_READY
+	animReadyWalk		BOTH_PISTOL_READY
+}
+
+
+WeaponInfo1
+{	
+	WeaponToReplace	WP_FRAG_NADE
+	WeaponBasedOff	WP_FRAG_NADE
+	NewWorldModel	"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel	"models/weapons/Grenade_Concussion/viewmodel.md3"
+	MissileModel "models/weapons/Grenade_Concussion/proj.md3"
+	altMissileModel "models/weapons/Grenade_Concussion/proj.md3"
+	altMissileMissEffect	"Grenades/EXP_Flash"
+	MissileMissEffect	"Grenades/EXP_Flash"
+	altMissileHitHumanEffect	"Grenades/EXP_Flash"
+	missileHitHumanEffect	"Grenades/EXP_Flash"
+	altMissileHitDroidEffect	"Grenades/EXP_Flash"
+	missileHitDroidEffect	"Grenades/EXP_Flash"
+	Icon	"gfx/hud/w_icon_stungrenade"
+	WeaponName	"Flash Bang"
+	damagemod 0.000
+	ratemod 0.6
+	MissileEffect "repeater/projectile"
+	AltMissileEffect "repeater/projectile"
+}
+
+description	"ISB Officer
+
+An intel officer who specializes in gathering info for their team and ambushing their targets.
+
+^2Weaponry:
+- Melee
+-- Applies Tracking
+- Stun-Baton (2)
+-- Applies Tracking/Knockback/Cripple/Blind
+- ISB Modified RK-3 Pistol
+-- Applies Tracking
+-- Mag Reload
+-- 20%+ Damage/20%- RoF/10%+ Velocity
+
+^8Attributes:
+- Dexterity (1)
+- Rally
+- Know your Enemy (Sense Immunity)
+- Awareness (Anti MT 2)
+- Tapped Comms (Ally Stat Viewer)
+- Tactical Acumen (+15% Melee Movement Speed)
+- Security Specialist (+40% Hack Speed)
+- ISB Comm-Link (Tracking Beacon)
+- Resilience (Healing 1)
+
+^3Abilities:
+- Dodge (2) ^3[CS1]
+- Gunkick ^3[CS3]
+- Grapple-Hook (1) ^3[CS4 Melee]
+- Quickthrow (1) ^3[CS4]
+- Tracking-Darts (12) ^3[CS2]"

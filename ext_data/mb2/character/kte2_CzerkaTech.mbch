@@ -54,8 +54,8 @@ ClassInfo
 	uishader		"models/players/czerka/mb2_icon_twilek"
 
 	model_1			"czerka"
-	skin_1			"nikto"
-	uishader_1		"models/players/czerka/mb2_icon_nikto"
+	skin_1			"mirialan"
+	uishader_1		"models/players/czerka/mb2_icon_mirialan"
 	
 
 

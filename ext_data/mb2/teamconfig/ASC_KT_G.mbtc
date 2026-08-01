@@ -32,6 +32,10 @@ SubclassesForClass1
   Subclass14	"ktg2_Deadeye"
   Subclass15	"ktg2_Twitch"
   Subclass16	"ktg2_TwoFinger"
+  Subclass17	"ktg2_Bostuco"
+  Subclass18	"ktg2_Iri"
+  Subclass19	"ktg2_Riiken"
+  Subclass20	"ktg1_ClanOrdo"
 }
 
 SubclassesForClass2
@@ -40,6 +44,7 @@ SubclassesForClass2
 	Subclass2	"ktg5_SmugglerAce"
 	Subclass3	"ktg3_Smuggler"
 	Subclass4	"ktg4_KotorSenGuard"
+	Subclass5	"ktg4_JediCrusader"
 }
 
 SubclassesForClass3
@@ -57,6 +62,7 @@ SubclassesForClass3
 	Subclass11	"ktg7_Talia"
 	Subclass12	"h7_Scavenge"
   Subclass13	"ktg6_Komad"
+ 	Subclass14	"ktg7_Kelborn"
 }
 
 SubclassesForClass4
@@ -64,6 +70,7 @@ SubclassesForClass4
 	Subclass1	"ktg8_Shadowlander"
 	Subclass2	"ktg8_Marl"
   Subclass3	"ktg8_Freyyr"
+	Subclass4	"ktg8_Bralor"
 
 }
 
@@ -71,7 +78,7 @@ SubclassesForClass5
 {
 	Subclass1	"h9_JBrute"
 	Subclass2	"ktg9_Vandar"
-	Subclass3	"ktg9_ORSword"
+	Subclass3	"ktg9_Kao"
 	Subclass4	"ktg9_Handmaiden"
 	Subclass5	"ktg9_Juhani"
 	Subclass6	"ktg9_Vrook"
@@ -80,8 +87,9 @@ SubclassesForClass5
 	Subclass9	"ktg9_JediWeapon"
 	Subclass10	"ktg9_Padawan"
 	Subclass11	"ktg9_JediRevan"
-	Subclass12	"ktg9_ORSword"
+	Subclass12	"ktg9_Ven"
   Subclass13	"ktg9_Exile"
+  Subclass14	"ktg9_JediChamp"
 }
 
 SubclassesForClass6

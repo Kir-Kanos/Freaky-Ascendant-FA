@@ -1,0 +1,85 @@
+name "ASC_OT_G"
+
+ClassesAllowed 6
+TimePeriod 2
+EUAllowed 0
+
+Classes
+{
+	class1	"h1_Militia"
+	class2	"h4_Chir"
+	class3	"h5_AstroR2"
+	class4	"otg7_Scavenge"
+	class5	"otg9_Ahsoka"
+	class6	"otg10_Obi"
+}
+
+SubclassesForClass1
+{
+	Subclass1	"otg1_NPrisoner"
+	Subclass2	"otg1_RebelET"
+	Subclass3	"asg2_Luthen"
+	Subclass4	"h2_JynE"
+	Subclass5	"otg2_Han"
+	Subclass6	"otg2_Lando"
+	Subclass7	"h2_JanO"
+	Subclass8	"otg2_RebelSabo"
+	Subclass9	"otg1_RebGuerrillaHeavyGunner"
+	Subclass10	"otg1_RebGuerrillaSpotter"
+	Subclass11	"otg1_RebGuerrillaMechanic"
+	Subclass12	"otg2_RebGuerrillaSalvagedDroid"
+	Subclass13	"otg2_RebOfficer"
+	Subclass14	"otg2_HonorG"
+	Subclass15	"h2_Pork"
+	Subclass16	"otg2_Kyle"
+}
+
+SubclassesForClass2
+{
+	Subclass1	"otg3_Baze"
+	Subclass2	"otg3_Saw"
+	Subclass3	"otg4_Ewok"
+	Subclass4	"otg3_itsatrap"
+	Subclass5	"otg4_KirKanos"
+}
+
+SubclassesForClass3
+{
+	Subclass1	"h5_Dash"
+	Subclass2	"h6_Andor"
+	Subclass3	"h6_Nien"
+	Subclass4	"otg6_RiannaS"
+	Subclass5	"otg5_BoKatan"
+}
+
+SubclassesForClass4
+{
+	Subclass1	"otg7_BSpy"
+	Subclass2	"otg7_RebSapper"
+	Subclass3	"otg7_RebSpecOps"
+	Subclass4	"otg7_Hera"
+	Subclass5	"h7_Leia"
+	Subclass6	"h7_Lobot"
+	Subclass7	"otg7_RebEngie"
+	Subclass8	"h8_Chewie"
+	Subclass9	"otg8_K2SO"
+	Subclass10	"otg8_Zeb"
+	Subclass11	"h8_Tarfful"
+	Subclass12	"h8_WookWarr"
+	Subclass13	"otg7_Senator"
+	Subclass14	"h7_Madine"
+}
+
+SubclassesForClass5
+{
+	Subclass1	"otg9_CalK"
+	Subclass2	"otg9_Proxy"
+}
+
+SubclassesForClass6
+{
+	Subclass1	"otg10_LukeSky"
+	Subclass2	"otg10_Starkiller"
+	Subclass3	"otg10_RahmKota"
+	Subclass4	"otg10_Yoda"
+}

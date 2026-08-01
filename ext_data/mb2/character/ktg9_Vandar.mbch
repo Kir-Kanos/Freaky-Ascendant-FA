@@ -20,8 +20,8 @@ Classinfo
 	healthRegenRate 1500
 	healthRegenCap	35
 	saberThrowDamage 40
-	saberstyle		SS_STRONG
- saberDamageStyle SS_STRONG,300
+	saberstyle		SS_DUAL
+ saberDamageStyle SS_DUAL,100
  saberSpecialDamage 1.25
 	maxhealth			60
 	forcepool			75
@@ -42,7 +42,7 @@ Classinfo
 	RunForward BOTH_RUN_STAFF
 	saberStanceAnim BOTH_B1_TR___
 
-	modelscale 			0.58
+	modelscale 			0.6
 	uioverlay "gfx/icons/frontline"
 
 	model		"t_yoda"
@@ -51,6 +51,8 @@ Classinfo
 	
 	saber1			saber_vandar_legends
 	sabercolor		4
+	saber2		saber_vandar_legends
+	saber2color	4
 
 	isCustomBuild		1
 	mbPoints		0

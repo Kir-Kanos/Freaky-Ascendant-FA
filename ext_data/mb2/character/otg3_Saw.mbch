@@ -1,0 +1,149 @@
+//Ascendant Mode character file
+
+ClassInfo
+{
+	name  				"otg3_Saw"
+	weapons 			WP_MELEE|WP_BLASTER_PISTOL|WP_FIRE_NADE|WP_FRAG_NADE|WP_PLX1
+	attributes  		MB_ATT_AMMO,3|MB_ATT_HEALING,2|MB_ATT_PISTOL,3|MB_ATT_FRAGS,4|MB_ATT_BESKAR,2|MB_ATT_PLX1,1|MB_ATT_SHIELD_RECHARGE,1|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_RALLY|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_DASH,1|MB_ATT_TRACKING_BEACON|MB_ATT_WOOKIEE_FURY,2|MB_ATT_BLAST_ARMOUR,1|MB_ATT_ENV_PROT,1|MB_ATT_FLOAT_HOP
+	maxhealth 			130
+	maxarmor  			150
+	forcepowers   FP_RAGE,3
+
+	resource 			RESOURCE_RAGE
+	forcepool	125
+	forceregen 0.50
+	resourceRegenCap 	50
+    resourceRegenAmount 1
+    resourceRegenRate 500
+    
+	model 				"sawgerrera"
+	skin  				"default"
+	uishader  			"models/players/sawgerrera/mb2_icon_default"
+	MBClass 				MB_CLASS_HERO
+	classNumberLimit  	1
+	rateoffire			1
+	rateoffire_melee 0.9
+	damagegiven			1.00
+	damageTaken 		1.00
+	speed       			0.9
+	knockbackTaken		1.5
+
+	WP_FragNadeFlags		HELD_POISON|HELD_FLAME
+	WP_PLX1Flags 			HELD_SLOW|HELD_STUN|HELD_KNOCKBACK|HELD_POISON|HELD_FLAME
+		
+	modelscale    		1.05
+
+	
+	bargeSoundOverride 		"sound/chars/sawgerrera/barge.wav"
+
+	classflags			CFL_STRONGAGAINSTPHYSICAL|
+	skilltimermod 		1.0
+	special1			EAS_FP_RAGE
+	special2			EAS_HI_BARGE
+	special3			EAS_HI_DASH
+	special4			EAS_HI_GRAPPLEHOOK
+	//respawncustomtime 	50000	
+	
+	uioverlay "gfx/icons/heavy"
+	
+	
+	
+	flourishAnim BOTH_THROW1
+}
+
+ForceInfo0
+{
+    ForceToReplace    FP_RAGE
+    Icon            "gfx/effects/deadlysightblur"
+    ForcePowerName    "Rhydonium Rage"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff  		WP_BLASTER_PISTOL
+	NewWorldModel 		"models/weapons2/dh-17/dh-17_w.glm"
+	NewViewModel			"models/weapons2/dh-17/dh-17_FA.md3"
+	Icon  				"gfx/hud/w_icon_dh-17"
+	WeaponName  			"Saw's Modified Pistol"
+	FlashSound0 		 	"sound/weapons/SawPistol/fire.mp3"
+	AltFlashSound0	    "sound/weapons/SawPistol/fire.mp3"
+	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
+	customammo			900
+	ClipSize    			40
+	FPMult 				1.15
+	rateMod 			0.80
+	damageMod 			0.70
+	ReloadTimeModifier 	1.0
+	MissileEffect			"Blaster/Shot01R"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_PLX1
+	WeaponBasedOff		WP_PLX1
+	NewWorldModel		"models/weapons2/t-10/merr_sonn_w.glm"
+	NewViewModel		"models/weapons2/t-10/merr_sonn.md3"
+	NewBarrelModel		"models/weapons2/t-10/merr_sonn_barrel.md3"
+	Icon				"gfx/hud/w_icon_t-10"
+	WeaponName			"Saw's RPG"
+	FlashSound0 		 	"sound/weapons/SawRPG/fire.wav"
+	CustomAmmo 8
+	ReloadTimeModifier 	0.9
+	velocityMod 2.0
+	damageMod 0.50
+}
+
+WeaponInfo2
+{
+	WeaponToReplace	WP_FRAG_NADE
+	WeaponBasedOff	WP_CONC_NADE
+	NewWorldModel	"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel	"models/weapons/Grenade_Concussion/viewmodel.md3"
+	Icon	"gfx/hud/w_icon_stungrenade"
+	WeaponName	"Rhydonium Grenade"
+	MissileModel	"models/weapons/Grenade_Concussion/proj.md3"
+	damageMod 0.70
+	ratemod	1.5
+}
+
+description	"Saw Gerrera [Hero]
+
+A heavy gunner equipped with a modified Pistol, Unique RPG, and other explosives. Lives off of Rhydonium.
+
+^2Weaponry:
+- Melee
+- Saw's Rhydonium RPG (8) (PLX)
+-- Staggers/pushes on hit
+-- +100% Velocity
+-- -50% Damage
+-- +10% Reload Speed
+-- -15% Movement Speed
+-- Inflicts Poison and Burn Damage
+- Rhydonium Grenades (3)
+--Based on Frag Grenades
+-- Inflicts Poison Damage
+-- -30% Damage
+- Saw's Modified Pistol (Pistol 3)
+-- -30% Damage
+-- +20% Rate of Fire
+-- +15% FP Damage
+
+^8Attributes:
+- Armor Regen (1)
+- Healing (1)
+- Beskar (2)
+- Physical Resist
+- Rhydonium Fury (Fury 2)
+- Rhydonium Strength (STR 1)
+- Blast Armor
+- Rally
+- +50% Knockback Taken
+- Environmental Protection (1)
+- Slow Faller
+
+^3Abilities:
+- Rhydonium Rage (Dark Rage 3) ^3[CS1]
+- Rhydonium Fueled Barge ^3[CS2]
+- Rhydonium Dash (1) ^3[CS3]
+- Grapple Hook (2) ^3[CS4]"

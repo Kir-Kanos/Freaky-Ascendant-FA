@@ -1,0 +1,90 @@
+ClassInfo
+{
+	name				"otg10_Starkiller"
+	MBClass				MB_CLASS_JEDI
+	classNumberLimit	1
+
+	weapons				WP_SABER|WP_MELEE
+ //WP_SaberFlags HELD_DISRUPTIFY
+
+	attributes			MB_ATT_FORCEBLOCK,3|MB_ATT_FORCEFOCUS,3|MB_ATT_DEFLECT,1|MB_ATT_FP_REPULSE,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,1
+
+	forcepowers			FP_SABER_OFFENSE,2|FP_LEVITATION,3|FP_PUSH,3|FP_PULL,2|FP_LIGHTNING,3|FP_SABERTHROW,3|FP_GRIP,3|FP_SEE,1
+
+	maxhealth		100
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+	maxarmor			25
+
+	forcepool		140
+	forceregen 1.35
+
+	classflags CFL_NOPICKUPS
+
+	APmultiplier		1
+	BPmultiplier		1.0
+	ASmultiplier 		1.02
+	CSmultiplier 		1.02
+
+ damageGiven 1.1
+ rateOfFire_melee 0.9
+	saberThrowDamage 50
+
+ saberstyle SS_DESANN
+ saberSpecialDamage 1.25
+ saber1 saber_marek_legends_s
+ sabercolor 4
+	saberstyle_1		SS_DUAL
+	saber1_1			saber_marek_legends
+	sabercolor_1		4
+	saber2_1			saber_marek_legends
+	saber2color_1		4	
+
+	uioverlay "gfx/icons/support"
+	model			"jedi_hm"
+	skin				"sk2_armored"
+	uishader			"models/players/jedi_hm/mb2_icon_sk2_armored"
+
+	model_1			"jedi_hm"
+	skin_1			"sk2_pilot"
+	uishader_1		"models/players/jedi_hm/mb2_icon_sk2_pilot"
+
+	saberStanceAnim BOTH_SABER_STARKILLER_STANCE
+
+ special1 EAS_FP_SABERTHROW
+ meleeSpecial1 EAS_FP_REPULSE
+	special2 	EAS_NONE
+	special3 	EAS_FP_GRIP
+	special4		EAS_FP_LIGHTNING
+}
+
+description	"Galen Marek aka 'Starkiller' 
+
+A Jedi/Sith hybrid sporting a strong combination of Force Powers.
+
+^2Weaponry:
+- Melee
+-- 10% faster RoF
+- Lightsaber
+-- Saber/Blaster Defense (1)
+-- Blaster Deflect (1)
+-- 125% Spec Dmg mult
+-- 50% more Kb
+-- EX Saber Throw (3) ^3[CS1]
+--- 66% more Dmg
+> Single (Purple)
+> Double (Dual)
+
+^5Force Powers:
+- Jump (3)
+- Push (3)
+- Pull (2)
+- Sense (1)
+- Repulse ^3[CS1 Melee]
+- Lightning (3) ^3[CS4]
+- Grip (3) ^3[CS3]
+
+^8Attributes:
+- Heal capped at 35hp
+- Force Block/Focus (3)"

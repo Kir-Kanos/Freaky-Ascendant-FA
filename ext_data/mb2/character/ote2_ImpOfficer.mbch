@@ -1,0 +1,211 @@
+//Legends Mode character file - Created by Frenzy & Leos
+ClassInfo
+{
+	name				"ote2_ImpOfficer"
+	extralives			1
+	classNumberLimit	3
+	MBClass				MB_CLASS_SOLDIER
+	weapons				WP_MELEE
+
+	classflags			CFL_STATVIEWER
+
+	attributes			MB_ATT_DODGE,2|MB_ATT_RALLY,1|MB_ATT_AMMO,3|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_BEACON|MB_ATT_LIGHTS_BEACON|MB_ATT_ASSEMBLE,1|MB_ATT_SENTRY|MB_ATT_DRONE
+
+	maxhealth			105
+	maxarmor			5
+	hackRate			.70
+
+	classflags			CFL_STATVIEWER
+
+	spawnerNPC "OfficerStormie"
+	roundNPC "OfficerStormie"
+	
+	WP_M5Flags 	HELD_POISON|HELD_DISRUPTIFY|HELD_FLAME|HELD_PULSE|HELD_STUN|HELD_ALTRELOAD|HELD_TRACKING
+	WP_MeleeFlags			HELD_LOWDAMAGE|HELD_SPEED
+
+	basespeed			193
+	
+	resource			RESOURCE_STAMINA
+	forcepool			80
+	forceregen			1.05
+
+
+model		"imperial"
+skin		"officer"
+uishader	"models/players/imperial/mb2_icon_officer"
+
+model_1	"imperial_fml"
+skin_1		"default"
+uishader_1	"models/players/imperial_fml/mb2_icon_default"
+
+model_2	"imptrench"
+skin_2		"lt"
+uishader_2	"models/players/imptrench/mb2_icon_lt"
+
+	modelscale			1
+	uioverlay_r 		"gfx/icons/tactician"
+	uioverlay_l 		"gfx/2d/hud/hlp_defend"
+
+	special1			EAS_HI_DODGE		
+	special3			EAS_HI_SEEKER		
+	special4			EAS_HI_SENTRY_GUN	
+
+	gloatAnim			BOTH_TALKCOMM1START
+	flourishAnim		TORSO_HANDSIGNAL3
+
+isCustomBuild	1
+mbPoints		40
+
+c_att_skill_0		MB_ATT_PISTOL
+c_att_names_0		"SE-14C Blaster Pistol"
+c_att_ranks_0		0,0,2
+c_att_descs_0		"5 Percent Slower RoF, Less Clip Size"
+
+c_att_skill_1		MB_ATT_BLASTER
+c_att_names_1		"E-11 Blaster Rifle"
+c_att_ranks_1		2,2
+
+c_att_skill_2		MB_ATT_STUN_BATON
+c_att_names_2		"Stun Baton"
+c_att_ranks_2		4
+
+c_att_skill_3		MB_ATT_RESPAWNS
+c_att_names_3		"Reinforcement"
+c_att_ranks_3		16
+c_att_descs_3		"One Granted By Default"
+
+c_att_skill_4		MB_ATT_SONIC_DETONATOR
+c_att_names_4		"Sonic Grenade"
+c_att_ranks_4		6
+
+c_att_skill_5		MB_ATT_FRAGS
+c_att_names_5		"Flash Bang"
+c_att_ranks_5		4
+c_att_descs_5		"Blinds/staggers on det, Sec only. 99.9% less Dmg, 40% faster RoF"
+
+c_att_skill_6		MB_ATT_HEALING
+c_att_names_6		"Healing"
+c_att_ranks_6		4,2
+
+c_att_skill_7		MB_ATT_WESTARM5
+c_att_names_7		"Disruptor Pistol"
+c_att_ranks_7		8
+c_att_descs_7		"Hitscan, Stuns/Burns/Electrifies/Poisons/Tracks, Low Ammo and Damage."
+
+c_att_skill_8		MB_ATT_DODGE
+c_att_names_8		"Dodge"
+c_att_ranks_8		0,0,2
+
+c_att_skill_9		MB_ATT_FP_PROTECT
+c_att_names_9		"Order: Cover"
+c_att_ranks_9		10
+c_att_descs_9		"Protect 1"
+
+c_att_skill_10		MB_ATT_FP_TEAM_FORCE
+c_att_names_10		"Order: March"
+c_att_ranks_10		10
+c_att_descs_10		"Force Energize 1"
+
+c_att_skill_11		MB_ATT_ROUNDSPAWNER
+c_att_names_11		"Order: Reinforce"
+c_att_ranks_11		4
+c_att_descs_11		"Start All Lives With A Stormtrooper Ally"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/se-14c_pistol/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/se-14c_pistol/blaster_pistol.md3"
+	Icon				"gfx/hud/w_icon_se-14c"
+	WeaponName			"SE-14C Blaster Pistol"
+	FlashSound0			"sound/weapons/SE-14c/fire.mp3"
+	altFlashSound0		"sound/weapons/SE-14c/fire.mp3"
+	ChargeSound			"sound/weapons/leia_pistol/altcharge.mp3"
+	clipSize			15
+	customAmmo			400
+	ReloadTimeModifier	1
+	rateMod				1.05
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_FRAG_NADE
+	WeaponBasedOff		WP_FRAG_NADE
+	NewWorldModel		"models/weapons2/Stormi_TD/stormiTD_w.glm"  	
+	NewViewModel		"models/weapons2/Stormi_TD/stormiTD.md3" 
+	MissileModel "models/weapons2/Stormi_TD/stormiTD_proj.md3" 
+	AltMissileModel "models/weapons2/Stormi_TD/stormiTD_proj.md3" 
+	altMissileMissEffect	"grenades/EXP_alt"
+	MissileMissEffect	"grenades/EXP_alt"
+	Icon				"gfx/hud/w_icon_StormiTD" 					
+	WeaponName			"Flash Grenade"
+	MissileEffect "repeater/projectile"
+	AltMissileEffect "repeater/projectile"
+	Damagemod .20    
+}
+
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_M5
+	WeaponBasedOff		WP_M5
+	NewWorldModel		"models/weapons2/imp_pistol/pistol_w.glm"
+	NewViewModel		"models/weapons2/imp_pistol/pistol_fpv.md3"
+	Icon				"gfx/hud/w_icon_imp_pistol"
+	ChargeSound			"sound/weapons/leia_pistol/altcharge.mp3"
+	WeaponName			"Disruptor Pistol"
+	clipSize			2
+	customAmmo			30
+	primHitscanShot		1
+	primHitscanTracer	10
+	primGore			1
+	Velocitymod			1.25
+	damageMod			0.2
+	rateMod				1
+	FPChargeMult		1
+	reloadTimeModifier	2
+	AltMuzzleEffect		"Blaster/MuzzleFlash01G"
+	AltFlashSound0		"sound/weapons/firegun/fire.wav"
+	AltMissileEffect	"Blaster/Shot11G"
+	AltMissile3Effect	"Blaster/Shot03G"
+	FlashSound0			"sound/weapons/firegun/fire.wav"
+	MuzzleEffect		null
+	ChargeEffect		"gfx/effects/greenFrontFlash"
+	OverchargeEffect	"Blaster/MuzzleCharge01G"
+	PowerupShotEffect	"Blaster/Shot04G"
+hasAnimOverrides 1
+animReadyRun BOTH_JANGO_PISTOL_IDLE
+animReady BOTH_JANGO_PISTOL_IDLE
+animReadyWalk TORSO_WEAPONIDLE2
+animReadyNoAmmo BOTH_ATTACK2 
+animAttackRun BOTH_ATTACK2 
+animAttack BOTH_ATTACK2 
+animAttackWalk BOTH_ATTACK2 
+	FPChargeMult	1.2
+}
+
+description	"Imperial Officer
+
+A customizable multilife Imperial Officer with several gadgets who can specialize in inspiring allies, special grenades, and utility.
+
+^2Weaponry:
+- Melee
+
+^6Inventory:
+- Sentry Gun ^3[CS2]
+- Seeker Droid ^3[CS3]
+
+^8Attributes:
+- Dexterity (1)
+- Rally
+- Logistical Insight (Ally Stat Viewer)
+- Inspiring Voice (Light's Beacon)
+- Desk Jockey (-50% Melee Damage)
+- Cowardice (+15% Melee Movement Speed)
+- Tech Smart (+30% Hack Speed)
+- High Command (Tracking Beacon)
+
+^3Abilities:
+- Dodge (2) ^3[CS1]"
