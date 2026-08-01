@@ -26,7 +26,7 @@ ClassInfo
 
 	sabermaxchain	1
 	
-	WP_MeleeFlags	HELD_DISARM|HELD_LOWDAMAGE
+	WP_MeleeFlags	HELD_DISARM
 	WP_SaberFlags	HELD_KNOCKDOWN|HELD_CRIPPLE|HELD_FLASH
 	
 	WP_BlasterPistolFlags HELD_SPEED
@@ -109,7 +109,7 @@ WeaponInfo0
 	WeaponName		"Grappling Strikes"
 	primFireEnabled		1
 	AltFireEnabled 		1
-	rateMod 0.95
+	damagemod	1.65
 }
 
 WeaponInfo1
@@ -129,6 +129,7 @@ description "Criminal Looter
 ^2Weaponry:
 - Grappling Strikes (Melee)
 -- 150% Slower Fire Rate
+-- 65% More Damage
 -- Disarms on Hit
 - Rusty Pipe
 -- Low Damage, 1 Swing In Combo
