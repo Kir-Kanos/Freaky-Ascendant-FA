@@ -16,8 +16,8 @@ ClassInfo
 	resource RESOURCE_RAGE
 	forceregen	0.01
 
-	maxhealth		90
-	maxarmor  75
+	maxhealth		85
+	maxarmor  40
 
 	basespeed		232
 
