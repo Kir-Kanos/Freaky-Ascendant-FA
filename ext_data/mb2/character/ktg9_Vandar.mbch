@@ -49,9 +49,9 @@ Classinfo
 	skin		"vandar"
 	uishader	"models/players/t_yoda/mb2_icon_vandar"
 	
-	saber1			saber_vandar_legends
+saber1		saber_kshrt_shoto
 	sabercolor		4
-	saber2		saber_vandar_legends
+	saber2		saber_kshrt_shoto
 	saber2color	4
 
 	isCustomBuild		1
