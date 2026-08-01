@@ -96,11 +96,11 @@ WeaponInfo2
 	FlashSound0	    "sound/weapons/f-11d/fire.mp3"
 	customAmmo 800
 	clipSize	50
-	ReloadTimeModifier 1.2
-	rateMod 0.5
+	ReloadTimeModifier 1.4
+	rateMod 0.6
 	velocitymod	1.6
-	damageMod 0.65
-	fpmult 0.65
+	damageMod 0.60
+	fpmult 0.60
 
 }
 
@@ -128,7 +128,7 @@ A highly experimental, highly insane, sound-sensitive combat unit engineered for
 - Prototype Sword (Red Style Only)
 -- No Blaster Defense, Saber Defense (1)
 -- Low BP, High Swing Speed, 2 Limit Combo
-- Frenzied Blaster Fire (DC Carbine 3)
+- Jury-Rigged Blaster Rifle (DC Carbine 3)
 -- 50%+ RoF, 35%- Damage/FP Drain
 - Sonic Detonators (3)
 - Sonic Trip Mines (3)
