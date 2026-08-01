@@ -13,7 +13,7 @@ ClassInfo
 	basespeed 200
 
 	maxhealth			80
-	maxarmor			80
+	maxarmor			40
 		ASMultiplier 1.05
 	BPmultiplier			.4
 	rankBP				0.6,0.9,1.05
