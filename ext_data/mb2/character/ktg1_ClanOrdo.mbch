@@ -4,15 +4,13 @@ ClassInfo
 	MBClass			MB_CLASS_MANDALORIAN
 	weapons			WP_MELEE|WP_EE4|WP_SABER
 
-	maxhealth		60
-	maxarmor        20	
+	maxhealth		70
+	maxarmor        40	
 	attributes		MB_ATT_EE4,1|MB_ATT_ASSEMBLE,2|MB_ATT_AMMO,3|MB_ATT_CLOAK,1|MB_ATT_FUEL,3|MB_ATT_FUELREGEN,1|MB_ATT_FP_SABER_DEFENSE,1
-	modelscale  	1
+	modelscale  	1.01
 	forcepowers		FP_SABER_OFFENSE,2
 	saber1		kotor_longsword
 	saberstyle	SS_MEDIUM
-	rankHealth	75,100,110
-	rankArmor	35,60,70
 	//extralives		2
 	
 	rateOfFire  	1
@@ -62,7 +60,7 @@ ClassInfo
 	damageTaken     0.95
 	
 	iscustombuild	1
-	mbpoints		80
+	mbpoints		65
 	hasCustomSpec 3
 	isOnlyOneSpec 1
 	customSpecName_1 "Hybrid"
@@ -107,34 +105,26 @@ c_att_names_6	"Mando Assault Rifle"
 c_att_ranks_6	0,5,8
 c_att_descs_6	"EE-4 Rifle"
 
-c_att_skill_7	MB_ATT_HEALTH
-c_att_names_7	"HP (75/100/110)"
-c_att_ranks_7	2,4,3
+c_att_skill_7	MB_ATT_BESKAR
+c_att_names_7	"Beskar"
+c_att_ranks_7	3,2,5
 
-c_att_skill_8	MB_ATT_ARMOUR
-c_att_names_8	"Armor (35/60/70)"
-c_att_ranks_8	4,6,4
+c_att_skill_8	MB_ATT_BASESPEED
+c_att_names_8	"Speed (214/235/258)"
+c_att_ranks_8	2,3,4
 
-c_att_skill_9	MB_ATT_BESKAR
-c_att_names_9	"Beskar"
-c_att_ranks_9	3,2,5
+c_att_skill_9	MB_ATT_POWER
+c_att_names_9	"Fuel (60/75/100)"
+c_att_ranks_9	2,2,5
+c_att_descs_9 "75% default"
 
-c_att_skill_10	MB_ATT_BASESPEED
-c_att_names_10	"Speed (214/235/258)"
-c_att_ranks_10	2,3,4
+c_att_skill_10	MB_ATT_DODGE
+c_att_names_10	"Dodge ^3[CS1]"
+c_att_ranks_10	1,2,3
 
-c_att_skill_11	MB_ATT_POWER
-c_att_names_11	"Fuel (60/75/100)"
-c_att_ranks_11	2,2,5
-c_att_descs_11 "75% default"
-
-c_att_skill_12	MB_ATT_DODGE
-c_att_names_12	"Dodge ^3[CS1]"
-c_att_ranks_12	1,2,3
-
-c_att_skill_13	MB_ATT_STIMPACK
-c_att_names_13	"Stimpack ^3[CS2]"
-c_att_ranks_13	5
+c_att_skill_11	MB_ATT_STIMPACK
+c_att_names_11	"Stimpack ^3[CS2]"
+c_att_ranks_11	5
 
 c_att_skill_15	MB_ATT_ROF_MELEE_MULTIPLIER
 c_att_names_15	"Melee RoF (110/120/130%)"
@@ -180,25 +170,17 @@ c_att_skill_24	MB_ATT_ASSEMBLE
 c_att_names_24	"Assemble"
 c_att_ranks_24	1,1
 
-c_att_skill_25	MB_ATT_HEALTH
-c_att_names_25	"HP (75/100)"
-c_att_ranks_25	3,4
+c_att_skill_25	MB_ATT_BESKAR
+c_att_names_25	"Beskar"
+c_att_ranks_25	3,2
 
-c_att_skill_26	MB_ATT_ARMOUR
-c_att_names_26	"Armor (35/65)"
-c_att_ranks_26	4,6
+c_att_skill_26	MB_ATT_BASESPEED
+c_att_names_26	"Speed (214/235/258)"
+c_att_ranks_26	1,2,4
 
-c_att_skill_27	MB_ATT_BESKAR
-c_att_names_27	"Beskar"
-c_att_ranks_27	3,2
-
-c_att_skill_28	MB_ATT_BASESPEED
-c_att_names_28	"Speed (214/235/258)"
-c_att_ranks_28	1,2,4
-
-c_att_skill_29	MB_ATT_STIMPACK
-c_att_names_29	"Stimpack ^3[CS2]"
-c_att_ranks_29	5
+c_att_skill_27	MB_ATT_STIMPACK
+c_att_names_27	"Stimpack ^3[CS2]"
+c_att_ranks_27	5
 
 c_att_skill_30	MB_ATT_ROF_MELEE_MULTIPLIER
 c_att_names_30	"Melee RoF (110%)"
@@ -227,34 +209,26 @@ c_att_skill_35	MB_ATT_ASSEMBLE
 c_att_names_35	"Assemble"
 c_att_ranks_35	1,1
 
-c_att_skill_36	MB_ATT_HEALTH
-c_att_names_36	"HP (75/100)"
-c_att_ranks_36	3,4
+c_att_skill_36	MB_ATT_BESKAR
+c_att_names_36	"Beskar"
+c_att_ranks_36	3,3
 
-c_att_skill_37	MB_ATT_ARMOUR
-c_att_names_37	"Armor (35/65)"
-c_att_ranks_37	4,6
+c_att_skill_37	MB_ATT_BASESPEED
+c_att_names_37	"Speed (214/235/258)"
+c_att_ranks_37	2,3,6
 
-c_att_skill_38	MB_ATT_BESKAR
-c_att_names_38	"Beskar"
-c_att_ranks_38	3,3
+c_att_skill_38	MB_ATT_POWER
+c_att_names_38	"Fuel (60/75/100)"
+c_att_ranks_38	2,2,5
+c_att_descs_38 "45% default"
 
-c_att_skill_39	MB_ATT_BASESPEED
-c_att_names_39	"Speed (214/235/258)"
-c_att_ranks_39	2,3,6
+c_att_skill_39	MB_ATT_DODGE
+c_att_names_39	"Dodge ^3[CS1]"
+c_att_ranks_39	1,2,3
 
-c_att_skill_40	MB_ATT_POWER
-c_att_names_40	"Fuel (60/75/100)"
-c_att_ranks_40	2,2,5
-c_att_descs_40 "45% default"
-
-c_att_skill_41	MB_ATT_DODGE
-c_att_names_41	"Dodge ^3[CS1]"
-c_att_ranks_41	1,2,3
-
-c_att_skill_42	MB_ATT_STIMPACK
-c_att_names_42	"Stimpack ^3[CS2]"
-c_att_ranks_42	5
+c_att_skill_40	MB_ATT_STIMPACK
+c_att_names_40	"Stimpack ^3[CS2]"
+c_att_ranks_40	5
 }
 
 WeaponInfo0
