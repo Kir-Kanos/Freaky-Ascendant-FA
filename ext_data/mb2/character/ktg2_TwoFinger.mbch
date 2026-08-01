@@ -8,25 +8,27 @@ ClassInfo
 	
 	weapons			WP_MELEE|WP_DC_CARBINE|WP_CRYO_NADE|WP_STUN_BATON
 
-	attributes	MB_ATT_AMMO,3|MB_ATT_TRACKING_BEACON|MB_ATT_WOOKIEE_FURY,1|MB_ATT_HEALING,3|MB_ATT_DODGE,3|MB_ATT_DC_CARBINE,1|MB_ATT_DEXTERITY,1|MB_ATT_BLAST_ARMOUR|MB_ATT_BUNNY_HOP,1|MB_ATT_FLOAT_HOP|MB_ATT_CRYOBAN_GRENADES,3|MB_ATT_STUN_BATON,2
+	attributes	MB_ATT_AMMO,3|MB_ATT_TRACKING_BEACON|MB_ATT_WOOKIEE_FURY,1|MB_ATT_HEALING,3|MB_ATT_DODGE,3|MB_ATT_DC_CARBINE,1|MB_ATT_DEXTERITY,1|MB_ATT_BLAST_ARMOUR|MB_ATT_BUNNY_HOP,1|MB_ATT_FLOAT_HOP|MB_ATT_CRYOBAN_GRENADES,5|MB_ATT_STUN_BATON,1
 
 forcepowers	FP_RAGE,1
 
 classflags	CFL_BLOODYMELEE
 	
-	WP_MeleeFlags	HELD_LOWDAMAGE
+	WP_MeleeFlags	HELD_LOWDAMAGE|HELD_FLASH
 	WP_DCCarbineFlags	HELD_PULSE|HELD_FLAME|HELD_ALTRELOAD|HELD_CRIPPLE|HELD_STUN|HELD_DISRUPTIFY
 
 	maxhealth		200
 	
 	maxarmor	40
+
+	rateOfFire_Melee 2
 	
 	baseSpeed 245
 
 	Resource			RESOURCE_ENERGY
 	forcepool		130
 
-	forceregen		2
+	forceregen		2.5
 
 	bargeSoundOverride	"sound/chars/han_anh/misc/victory1.mp3"
 
@@ -91,6 +93,8 @@ A scarred duelist who lost his fingers due to an unstable blaster pistol, foreve
 ^2Weaponry:
 - Two Fingered Melee
 -- 50% Less Damage
+-- 150% Less Rate of Fire
+-- Flashes On Hit
 -- Re-Open Wound (Bloody Melee)
 - Overcharged Ion Pistol (DC Carbine 1)
 -- 50% More Damage
@@ -98,8 +102,8 @@ A scarred duelist who lost his fingers due to an unstable blaster pistol, foreve
 -- 100% More RoF
 -- Pulses/Ignites/Stuns/Slows
 -- Mag Reload
-- Stun Baton (2)
-- CryoBan Grenades (3)
+- Stun Baton (1)
+- CryoBan Grenades (5)
 
 ^8Attributes:
 - Tracking Beacon
