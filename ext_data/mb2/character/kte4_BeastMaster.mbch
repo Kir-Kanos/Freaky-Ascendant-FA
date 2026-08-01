@@ -13,7 +13,7 @@ forcepowers	FP_DARKRAGE,3
 
 	RoundNPC	"BomaBeastmaster"
 
-	maxarmor			80
+	maxarmor			60
 
 	ASmultiplier 1.05
 
