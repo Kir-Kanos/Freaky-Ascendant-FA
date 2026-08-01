@@ -91,14 +91,13 @@ SubclassesForClass5
 	Subclass2 "kte9_SithAssassin"
 	Subclass3 "kte9_SithMarauder"
 	Subclass4 "kte9_SithMaster"
-	Subclass5 "ase10_SForce"
-	Subclass6 "kte9_Atris"
-	Subclass7 "kte9_Malgus"
-	Subclass8 "kte9_Revan"
-	Subclass9 "v9_Sion"
-	Subclass10 "kte9_Vindican"
-	Subclass11 "kte9_Zannah"
-	Subclass12 "kte9_Malak"
+	Subclass5 "kte9_Atris"
+	Subclass6 "kte9_Malgus"
+	Subclass7 "kte9_Revan"
+	Subclass8 "v9_Sion"
+	Subclass9 "kte9_Vindican"
+	Subclass10 "kte9_Zannah"
+	Subclass11 "kte9_Malak"
 }
 
 SubclassesForClass6
