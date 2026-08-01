@@ -31,7 +31,7 @@ ClassInfo
 
 	forcepowers	FP_RAGE
 
-	bargeSoundOverride	"sound/chars/duros/misc/anger1.mp3"
+	bargeSoundOverride	"sound/chars/duros2/misc/anger1.mp3"
 
 	resource	resource_energy
 
