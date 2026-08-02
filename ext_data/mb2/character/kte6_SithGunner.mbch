@@ -6,8 +6,8 @@ ClassInfo
 	weapons			WP_MELEE|WP_BLASTER_PISTOL
 
 	attributes		MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_PISTOL,3|MB_ATT_ENEMYSCANNER|MB_ATT_DEXTERITY,1
-	maxhealth		100
-	maxarmor			60
+	maxhealth		80
+	maxarmor			80
 
 	
 	MBClass			MB_CLASS_CLONETROOPER	
