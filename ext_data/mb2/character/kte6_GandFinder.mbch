@@ -15,8 +15,8 @@ ClassInfo
 	saberstyle  	SS_DESANN|SS_STAFF
 	forcepowers		FP_SEE,1|FP_SABER_OFFENSE,3
 
-	maxhealth 		65
-	maxarmor  		90
+	maxhealth 		80
+	maxarmor  		80
 
 	forcepool		 150
 	forceregen		1.35
