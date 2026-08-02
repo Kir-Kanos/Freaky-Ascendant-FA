@@ -5,8 +5,8 @@ ClassInfo
 	
 	attributes	MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_BEACON
 	
-	maxhealth		100
-	maxarmor		100
+	maxhealth		80
+	maxarmor		80
 	extralives		1
 	
 	special1	EAS_HI_WRIST
