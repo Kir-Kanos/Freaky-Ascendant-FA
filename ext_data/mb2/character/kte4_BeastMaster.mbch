@@ -9,11 +9,11 @@ ClassInfo
 
 forcepowers	FP_DARKRAGE,3
 
-	maxhealth		120
+	maxhealth		100
 
 	RoundNPC	"BomaBeastmaster"
 
-	maxarmor			60
+	maxarmor			80
 
 	ASmultiplier 1.05
 
