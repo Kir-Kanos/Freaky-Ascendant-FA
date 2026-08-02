@@ -16,7 +16,7 @@ ClassInfo
 	speed 			.90
 
 	classNumberLimit	2
-	extralives			2
+	extralives			1
 
 	hackrate .65
 
@@ -42,9 +42,9 @@ ClassInfo
 	flourishAnim BOTH_STAND5TOAIM
 	gloatAnim BOTH_VICTORY_FAST
 	
-	maxhealth		60
+	maxhealth		80
 	
-	maxArmor			15
+	maxArmor			40
 
 	
 	uioverlay "gfx/icons/infantry"
