@@ -13,8 +13,8 @@ ClassInfo
 
 	attributes			MB_ATT_DC_CARBINE,1|MB_ATT_AMMO,3|MB_ATT_BASE_TD,4|MB_ATT_BLAST_ARMOUR|MB_ATT_DODGE,2|MB_ATT_STUN_BATON,1|MB_ATT_PSHIELD|MB_ATT_DASH,1|MB_ATT_PISTOL,1|MB_ATT_DEXTERITY,1
 
-	maxhealth			75
-	maxarmor            20
+	maxhealth			80
+	maxarmor            40
 
 	resource			RESOURCE_ENERGY
 	
