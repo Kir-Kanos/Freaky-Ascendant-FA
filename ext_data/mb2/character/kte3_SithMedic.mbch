@@ -5,8 +5,8 @@ ClassInfo
 
 	attributes			MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_BLAST_ARMOUR|MB_ATT_MICRO_GRENADES,4
 
-	maxhealth			100
-	maxarmor			45
+	maxhealth			80
+	maxarmor			80
 	
 	MBClass				MB_CLASS_ELITETROOPER
 	
