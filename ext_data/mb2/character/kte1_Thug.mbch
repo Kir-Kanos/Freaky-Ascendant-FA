@@ -7,8 +7,9 @@ ClassInfo
 	
 	saberMaxChain 2
 	saberDamage 115
-	maxhealth	85
-	maxarmor	20
+
+	maxhealth	60
+	maxarmor	25
 	extralives		1
 	
 	special1	EAS_HI_SPRINT
