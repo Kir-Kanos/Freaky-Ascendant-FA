@@ -4,7 +4,7 @@ ClassInfo
 	MBClass			MB_CLASS_MANDALORIAN
 	weapons			WP_MELEE|WP_EE4|WP_SABER
 
-	maxhealth		70
+	maxhealth		80
 	maxarmor        40	
 	attributes		MB_ATT_EE4,1|MB_ATT_ASSEMBLE,2|MB_ATT_AMMO,3|MB_ATT_CLOAK,1|MB_ATT_FUEL,3|MB_ATT_FUELREGEN,1|MB_ATT_FP_SABER_DEFENSE,1
 	modelscale  	1.01
@@ -56,9 +56,7 @@ ClassInfo
 	special3	EAS_HI_CLOAK
 	classNumberLimit	4
 	classflags		CFL_STRONGAGAINSTPHYSICAL|CFL_HEAVYMELEE
-	
-	damageTaken     0.95
-	
+
 	iscustombuild	1
 	mbpoints		65
 	hasCustomSpec 3
