@@ -6,9 +6,10 @@ ClassInfo
 	weapons			WP_SABER|WP_MELEE|WP_BLASTER_PISTOL
 
 	attributes		MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_PISTOL,1
-	maxhealth		80
-	
-	maxarmor			40
+
+	maxhealth		60
+	maxarmor			25
+
 	ASmultiplier 1.05
 	BPmultiplier		.4
 	rankBP			0.6,0.9,1.1
