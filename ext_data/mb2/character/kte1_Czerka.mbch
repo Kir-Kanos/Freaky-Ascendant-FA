@@ -39,9 +39,9 @@ ClassInfo
 	flourishAnim BOTH_STAND5TOAIM
 	gloatAnim BOTH_VICTORY_FAST
 	
-	maxhealth		70
+	maxhealth		60
 	
-	maxArmor			15
+	maxArmor			25
 	
 	uioverlay "gfx/icons/infantry"
 	
