@@ -16,7 +16,7 @@ ClassInfo
 	hackRate 1.50
 	basespeed 165
 	Maxhealth		60
-	MaxArmor		20
+	MaxArmor		25
 	forcepool	30
 	forceregen	1.5
 	resource	 RESOURCE_BATTERY
