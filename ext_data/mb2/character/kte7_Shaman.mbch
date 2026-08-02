@@ -17,8 +17,7 @@ ClassInfo
 	forceregen	.95
 
 	maxhealth		80
-	maxarmor  40
-
+	maxarmor  80
 	basespeed		220
 
 	WP_ClonePistolFlags    HELD_ALTRELOAD
