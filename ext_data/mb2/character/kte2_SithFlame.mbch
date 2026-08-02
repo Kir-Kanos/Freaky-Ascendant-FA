@@ -13,7 +13,7 @@ Classinfo
 	attributes	MB_ATT_AMMO,4|MB_ATT_FIRE_GRENADES,2|MB_ATT_ASSEMBLE,2|MB_ATT_FLAMETHROWER|MB_ATT_ENV_PROT,2|MB_ATT_MINIGUN,1|MB_ATT_EE4,2|MB_ATT_WRISTLASER
 
 	maxhealth	80
-	maxarmor		50
+	maxarmor		80
 
 	basespeed	175
 	
