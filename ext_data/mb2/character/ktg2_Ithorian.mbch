@@ -5,8 +5,8 @@ ClassInfo
 
 	attributes			MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,2|MB_ATT_BLAST_ARMOUR|MB_ATT_MICRO_GRENADES,4|MB_ATT_WOOKIE_STRENGTH,2
 
-	maxhealth			145
-	maxarmor			15
+	maxhealth			80
+	maxarmor			40
 	
 	ASmultiplier 		.95
 	CSmultiplier		.95
