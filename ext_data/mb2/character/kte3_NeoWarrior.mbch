@@ -6,8 +6,8 @@ ClassInfo
 
 	extralives	2
 
-	maxhealth		50
-	maxarmor        50	
+	maxhealth		60
+	maxarmor        25	
 
 	attributes		MB_ATT_ASSEMBLE,2|MB_ATT_AMMO,3|MB_ATT_FUEL,1|MB_ATT_BESKAR,1|MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_MANDO_PISTOL,1|MB_ATT_GRAPPLE_HOOK,1|MB_ATT_ENV_PROT,1|MB_ATT_BLAST_ARMOUR|MB_ATT_TRACKING_BEACON
 
