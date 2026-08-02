@@ -140,6 +140,7 @@ Customizable Sith Master, Adept in all forms of combat, choose your focus and do
 -- Saber Defense (1)
 
 ^8Attributes:
+- Heal capped at 35hp
 - Force Focus (2)
 - Force Block (1)
 - 10% Less Knockback Taken"
