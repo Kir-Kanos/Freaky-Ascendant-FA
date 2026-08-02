@@ -17,8 +17,6 @@ ClassInfo
 	forcepool 		80
 	basespeed 177
 
-	rankHack .60
-
 	classNumberLimit	4
 	extralives			1
 
