@@ -10,7 +10,9 @@ ClassInfo
 
 	WP_MandoPistolFlags	HELD_ALTRELOAD
 	
-	maxhealth 	85
+	maxhealth 	65
+	maxarmor 	25
+
 	hackRate 1.35
 	resource		RESOURCE_STAMINA
 	forcepool	40
