@@ -12,8 +12,8 @@ WP_T21Flags		HELD_SLOW
 
 	saberMaxChain 3
 	saberDamage 120
-	maxhealth		75
-	maxarmor		45
+	maxhealth		80
+	maxarmor		40
 	extralives		2
 	
 	special1	EAS_HI_WRIST
