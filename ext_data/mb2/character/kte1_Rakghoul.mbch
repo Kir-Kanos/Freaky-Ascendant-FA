@@ -5,11 +5,12 @@ ClassInfo
 	extralives		4
 	weapons 		WP_MELEE
 
-	WP_MeleeFlags HELD_POISON
+	WP_MeleeFlags HELD_POISON|HELD_LIFESTEAL
 	
 	attributes  	MB_ATT_ASSEMBLE,3|MB_ATT_WOOKIEE_FURY,3|MB_ATT_HEALING,1|MB_ATT_DEXTERITY,3
 	
-	maxhealth 	135
+	maxhealth 	60
+	maxarmor	25
 		
 	damageTaken 	1
 	damageGiven	3
@@ -92,6 +93,7 @@ Infected Mutants of the Rakghoul Plague, Enhanced in Strength and their will to 
 - Rakghoul Melee
 -- Poisons
 -- 50%- Damage
+-- Life Steals
 -- Can Only Punch, Slap and Grab
 
 ^5Powers:
