@@ -23,8 +23,8 @@ ClassInfo
 	resource			RESOURCE_ENERGY
 	forcepool			100
 
-	maxhealth			110
-	maxarmor			30
+	maxhealth			80
+	maxarmor			40
 	basespeed			200
 	rateoffire_melee	0.95
 
