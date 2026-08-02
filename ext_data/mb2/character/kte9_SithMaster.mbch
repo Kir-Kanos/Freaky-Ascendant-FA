@@ -14,6 +14,10 @@ maxhealth	120
 starthealth	110
 maxarmor	20
 
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+
 speed 1.05
 
 	Knockbacktaken	.90
@@ -36,7 +40,6 @@ speed 1.05
 	skin		"master"
 	uishader	"models/players/sith_assassin/mb2_icon_master"
 
-	
 	saber1			saber_kshrt
 	sabercolor		0
 	saberstyle		SS_MEDIUM|SS_STRONG|SS_FAST
@@ -50,7 +53,6 @@ speed 1.05
 	saber2_2		saber_kshrt
 	saber2color_2		0
 	saberstyle_2		SS_DUAL|SS_TAVION|SS_FAST
-	
 	
 	classNumberLimit	2
 
@@ -138,6 +140,7 @@ Customizable Sith Master, Adept in all forms of combat, choose your focus and do
 -- Saber Defense (1)
 
 ^8Attributes:
+- Heal capped at 35hp
 - Force Focus (2)
 - Force Block (1)
 - 10% Less Knockback Taken"
