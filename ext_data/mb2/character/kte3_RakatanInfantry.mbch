@@ -21,9 +21,8 @@ rankForcepool 100,125
 uioverlay_l "gfx/icons/infantry"
 uioverlay_c "gfx/icons/hybrid"
 uioverlay_r "gfx/icons/brawler"
-maxhealth	115
-maxarmor	10
-rankArmor	25
+maxhealth 80
+maxarmor	40
 basespeed	210
 skilltimermod	3.0
 damageTaken		0.85
@@ -62,9 +61,6 @@ c_att_skill_2	MB_ATT_CLONERIFLE
 c_att_ranks_2	15
 c_att_names_2	"Rakatan Blaster (Clone Rifle)"
 c_att_descs_2	"^72 Concussion Blobs, +10% DMG, 45% Longer Reload, 5% Slower RoF"
-c_att_skill_3	MB_ATT_ARMOUR
-c_att_ranks_3	5
-c_att_names_3	"Armor (25)"
 customSpecName_2 "Sorcerer"
 customSpecIcon_2 "gfx/menus/alpha/Icon_SaberCustom"
 customSpecDesc_2 "^7An aggressive and agile force combatant."
