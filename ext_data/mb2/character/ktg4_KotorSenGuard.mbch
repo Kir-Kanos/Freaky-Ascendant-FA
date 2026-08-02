@@ -14,7 +14,7 @@ ClassInfo
 	forcepowers	FP_SABER_OFFENSE,3
 	forcepool	80
 
-	maxhealth	115
+	maxhealth	100
 	maxarmor		80
 
 	special1	EAS_HI_SPRINT
