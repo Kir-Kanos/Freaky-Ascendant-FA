@@ -1,0 +1,92 @@
+ClassInfo
+{
+	name			"ktg10_Kaevee"
+	weapons			WP_MELEE|WP_SABER
+	attributes		MB_ATT_FORCEFOCUS,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_DEFLECT,2|MB_ATT_FORCEBLOCK,1|MB_ATT_LIGHTS_BEACON|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_ENV_PROT,1|MB_ATT_PETCONTROL|MB_ATT_STAMINA,3|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_BLAST_ARMOUR|MB_ATT_ROUNDSPAWNER|MB_ATT_SPAWNER|MB_ATT_DEXTERITY,1
+
+	forcepowers			FP_SABER_OFFENSE,1|FP_SPEED,1|FP_LEVITATION,2|FP_PROTECT,3|FP_LIGHTNING,1|FP_GRIP,2
+	MBClass			MB_CLASS_JEDI
+
+	roundnpc	"LaigrekWarrior"
+	SpawnerNPC	"LaigrekDrone"
+	
+	classflags CFL_NOPICKUPS|CFL_BPFREEJUMPS|CFL_SEEING_STEALTH
+
+	AB_FLightningFlags HELD_SLIPPERY
+	
+	special1 EAS_HI_SPRINT
+	meleespecial1 EAS_HI_SPRINT
+	special2 EAS_HI_PETCONTROL
+	meleespecial2 EAS_HI_PETCONTROL
+	special3 EAS_HI_SPAWNER
+	meleespecial3 EAS_HI_SPAWNER
+	special4 EAS_HI_DEX
+	meleespecial4 EAS_HI_DEX
+	
+
+	maxhealth	105
+	
+	forcepool		110
+
+	speed 1.1
+
+	forceregen	1
+
+	ASmultiplier	1
+	CSmultiplier	1
+	APmultiplier	.90
+	BPmultiplier	.90
+	
+	uioverlay_l "gfx/icons/frontline"
+	uioverlay_r "gfx/icons/infantry"
+
+	model		"jedi_female"
+	skin		"rcnaat"
+	uishader	"models/players/jedi_female/mb2_icon_rcnaat"
+
+	saber1			saber_kshrt
+	sabercolor		2
+	saberstyle		SS_MEDIUM
+	
+	classNumberLimit	1
+}
+
+description	"Kaevee
+
+A fallen Jedi Padawan who survived the bombing of the enclave, uses controlled beasts to her advantage.
+
+^2Weaponry: 
+- Melee
+- Lightsaber
+-- Yellow Style
+-- Blaster Defense/Deflect (2)
+-- Saber Defense (1)
+-- BP Free Jumps
+
+^8Attributes:
+- Force Focus (2)
+- Saber/Blaster Defense (1)
+- Force Block (1)
+- Lights Beacon
+- Deflect (1)
+- Blast Armor
+- Environmental Protection (1)
+- Dexterity (1) (Dex Roll) ^3[CS4 Weapon Out]
+- Aerial Force Regen
+- Knockdown Roll 
+- Stamina (3) ^3[CS1]
+- Force Control (Pet Control) ^3[CS2]
+--^1 Disclaimer - Cant Attack, Use For Repositioning
+- Sense Immunity
+- Tamed Jagrek Warrior (Round Spawn Giant Insect)
+- Summon Jabrek Drone (Support Beacon Insect Scout) ^3[CS3]
+
+^5Force Powers:
+- Jump (2)
+- Speed (1) ^3[CS3]
+- Repulse ^3[CS4 Melee]
+- Grip (2)
+- Protect (3)
+- Jolt (Lightning) (1)
+-- Causes Slippery"
+
