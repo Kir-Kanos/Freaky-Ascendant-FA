@@ -1,0 +1,206 @@
+
+ClassInfo
+{
+	name				"ktg3_Vossk"
+	MBClass				MB_CLASS_ARCTROOPER
+	classNumberLimit	1
+	weapons				WP_EE3|WP_MELEE|WP_DET_PACK|WP_CONC_NADE|WP_SABER
+
+	WP_BowcasterFlags	HELD_POISON|HELD_ALTRELOAD
+	WP_MeleeFlags		HELD_TRACKING|HELD_LIFESTEAL
+	WP_SaberFlags		HELD_PULSE|HELD_TRACKING|HELD_POISON|HELD_CRIPPLE
+	WP_EE3Flags		HELD_ALTRELOAD
+	AB_WLaserFlags		HELD_PULL
+	WP_DetPackFlags		HELD_PULSE|HELD_CRIPPLE|HELD_HIGHDAMAGE
+	WP_ConcNadeFlags	HELD_PULSE|HELD_PULL|HELD_FLAME|HELD_POISON
+
+	attributes			MB_ATT_EE3,3|MB_ATT_AMMO,3|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_STAMINA,3|MB_ATT_DET_PACK,3|MB_ATT_DEXTERITY,2|MB_ATT_BUNNY_HOP,1|MB_ATT_FLOAT_HOP|MB_ATT_TRACKING_BEACON|MB_ATT_HEALING,3|MB_ATT_ANTI_MT,1|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_PSHIELD|MB_ATT_BESKAR,1|MB_ATT_FP_MIRALUKA|MB_ATT_WRISTLASER|MB_ATT_MICRO_GRENADES,3|MB_ATT_FP_SABER_DEFENSE,1
+
+	forcepowers			FP_SEE,1
+
+	Classflags			CFL_BLOODYMELEE|CFL_STRONGAGAINSTPHYSICAL
+	
+	maxhealth			250
+	maxarmor			30
+	forcepool			140
+	rateOfFire_Melee	0.9
+	healthRegenCap		250
+	healthRegenAmount	5
+	healthRegenRate		18000
+
+	speed				1.03
+
+	saberMaxChain		2
+
+	APmultiplier		1.1
+	BPmultiplier		.8
+	ASmultiplier		1.1
+	CSmultiplier		1.1
+
+	saberSpecialDamage	1.25
+
+	saber1			mission_legends
+	saber2			mission_legends
+	saberstyle		SS_DUAL
+	saberDamageStyle	SS_DUAL,120
+
+	special1			EAS_HI_SPRINT
+	special2			EAS_HI_DEX
+	special3			EAS_HI_WRIST
+	special4			EAS_HI_PSHIELD
+
+	modelscale			1.08
+	model				"bossk"
+	skin				"default"
+	uishader			"models/players/bossk/mb2_icon_default"
+	uioverlay			"gfx/icons/heavy"
+
+	RunForward			BOTH_WOOKIEE_RAGE_RUN
+	
+	flourishAnim		BOTH_SPINATTACK6
+	gloatAnim			BOTH_TUSKENTAUNT1
+	tauntAnim			BOTH_ENGAGETAUNT
+}
+
+WeaponInfo0
+
+{
+
+	WeaponToReplace		WP_EE3		
+	WeaponBasedOff		WP_EE3    			
+	NewWorldModel		"models/weapons2/kotor_brifle2/kotor_brifle2_w.glm"
+	NewViewModel		"models/weapons2/kotor_brifle2/kotor_brifle2.md3"
+	Icon				"gfx/hud/w_icon_kotor_brifle2"
+	WeaponName			"Vossk's Blaster Rifle"
+	MuzzleEffect		"Blaster/MuzzleFlash01Y"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01Y"	   				
+	MissileEffect 	"Blaster/Shot03Y"
+	Missile3Effect 	"Blaster/Shot03Y"
+	AltMissileEffect 	"Blaster/Shot03Y"
+	FlashSound0	 		"sound/weapons/kotor/fire_hvy.wav"
+	FlashSound1	 		"sound/weapons/kotor/fire_hvy.wav"
+	FlashSound2	 		"sound/weapons/kotor/fire_hvy.wav"
+	FlashSound3	 		"sound/weapons/kotor/fire_hvy.wav"
+	AltFlashSound0	 	"sound/weapons/kotor/fire_power1.wav"
+	AltFlashSound1	 	"sound/weapons/kotor/fire_power1.wav"
+	AltFlashSound2	 	"sound/weapons/kotor/fire_power1.wav"
+	AltFlashSound3	 	"sound/weapons/kotor/fire_power1.wav"	   
+	damagemod	1.40
+	ratemod		1.60
+	velocitymod	1.20
+	clipsize	40
+	hasAnimOverrides	1
+	animReadyRun		BOTH_WESTARM5_RUN1
+	animReady			BOTH_WESTARM5_READY
+	animReadyWalk		BOTH_WESTARM5_READY
+	animReadyNoAmmo		BOTH_WESTARM5_ATTACK
+	animAttackRun		BOTH_WESTARM5_ATTACK
+	animAttack			BOTH_WESTARM5_ATTACK
+	animAttackWalk		BOTH_WESTARM5_SCOPED_ATTACK
+	
+}
+
+WeaponInfo1
+
+{
+
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_canderous_vibblade"
+	WeaponName			"Vossk's Electro Knuckles"
+	SelectSound			"sound/weapons/blade/slash2.mp3"
+
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_CONC_NADE
+	WeaponBasedOff		WP_CONC_NADE
+	NewWorldModel		"models/weapons2/kes_pgren/laser_trap_w.glm"
+	NewViewModel		"models/weapons2/kes_pgren/laser_trap.md3"
+	MissileModel		"models/weapons2/kes_pgren/laser_trap_proj.md3"
+	missileEffect				"hutt/toxic_breath"
+	altmissileEffect			"hutt/toxic_breath"
+	MissileMissEffect			"slime_explosion_new"
+	MissileHitHumanEffect	"slime_explosion_new"
+	MissileHitDroidEffect	"slime_explosion_new"
+	AltMissileMissEffect		"slime_explosion_new"
+	AltMissileHitHumanEffect	"slime_explosion_new"
+	AltMissileHitDroidEffect	"slime_explosion_new"
+	Icon				"gfx/hud/w_icon_rpgren"
+	WeaponName			"Inhibitor Grenades"
+}
+WeaponInfo3
+{
+	WeaponToReplace	WP_DET_PACK
+	WeaponBasedOff	WP_DET_PACK
+	NewWorldModel "models/weapons2/detpack/det_pack_w.glm"
+NewViewModel "models/weapons2/detpack/det_pack.md3"
+Icon "gfx/hud/w_icon_detpack"
+MissileEffect    "firegrenade/prim_explode_enhanced2"
+AltMissileEffect    "firegrenade/prim_explode_enhanced2"
+MissileMissEffect    "firegrenade/prim_explode_enhanced2"
+altMissileMissEffect    "firegrenade/prim_explode_enhanced2"
+	WeaponName	"Unstable Pulse Charge"
+}
+
+
+ForceInfo0
+{
+	ForceToReplace		FP_SEE
+	Icon				"gfx/marvel/spidersense"
+	ForcePowerName		"Hunter Vision"
+}
+
+description "Vossk
+
+A retired bounty hunter with deep respect for the hunt.
+
+^2Weaponry:
+- Melee
+-- Tracks/drains on hit
+-- 10% faster RoF
+- Vossk's Vibroknuckles
+-- Dual Style Saber
+-- No Blaster Defense/Deflect
+-- Saber Defense (1)
+-- Cripples/Pulses/Tracks/Poisons
+- Vossk's Blaster Rifle
+-- EE-3 (3)
+-- 40% More Damage
+-- 20% More Velocity
+-- 60% Less RoF
+-- Mag Reload
+- Unstable Detpacks (3)
+-- 100% More Damage, Pulses/Cripples
+- Inhibitor Grenades (3)
+-- Conc, Pulses/Poisons/Flames
+-- Pulls On Hit
+
+^5Powers:
+- Hunter Vision (Sense 1)
+
+^8Attributes:
+- Bunny Hop (1)
+- Slow Faller
+- Stamina (3)
+- Dexterity (2)
+- Strength (1)
+- Melee Resist
+- Healing (3)
+-- Regenerate: 5/18s
+- Knockdown Roll
+- Tracking Beacon
+- Acid Blood
+- Beskar (1)
+- Anti MT (1)
+- Experienced Hunter (Miraluka)
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Dex Roll ^3[CS2]
+- Personal Shield ^3[CS4]
+- Personalized Wrist Laser ^3[CS3]
+-- Pulls On Hit"
