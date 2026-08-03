@@ -1,0 +1,28 @@
+
+LaigrekDrone
+{
+	Displayname "Laigrek Drone"
+	playerModel ice_spider
+	weapon		WP_MELEE
+	reactions	3
+	aim			1
+	move		3
+	aggression	3
+	evasion		1
+	intelligence	5
+	playerTeam	TEAM_FREE
+	enemyTeam	TEAM_FREE
+	class		CLASS_WAMPA
+	snd			mine
+	sndcombat	mine
+	sndextra	mine
+	yawspeed	40
+	runSpeed	240
+	walkSpeed	240
+	hFOV		120
+	vfov		45
+	height	30
+	width	9
+	scale		30
+	health		350
+}
