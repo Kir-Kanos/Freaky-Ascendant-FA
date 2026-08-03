@@ -1,0 +1,134 @@
+
+ClassInfo
+{
+	name				"kte6_Luxa"
+	MBclass				MB_CLASS_BOUNTY_HUNTER
+	classNumberLimit	1
+
+	weapons				WP_BLASTER_PISTOL|WP_REAL_TD|WP_TRIP_MINE|WP_CRYO_NADE
+
+	attributes			MB_ATT_PISTOL,3|MB_ATT_AMMO,3|MB_ATT_THERMALS,1|MB_ATT_HEALING,2|MB_ATT_SPY_DISGUISE,3|MB_ATT_TRACKING_DART,4|MB_ATT_DEXTERITY,2|MB_ATT_TRIP_MINES,3|MB_ATT_CRYOBAN_GRENADES,2|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_TRACKING_BEACON|MB_ATT_DASH,1|MB_ATT_CLOAK,2|MB_ATT_WRISTLASER|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_FLIPKICK,1
+
+	maxhealth			125
+	maxarmor			125
+
+	resource			RESOURCE_ENERGY
+	forcepool			110
+
+	classflags	CFL_STATVIEWER|CFL_SEEING_STEALTH|CFL_BLOODYMELEE
+
+	WP_TripMineFlags	HELD_DISARM|HELD_KNOCKDOWN
+	WP_CryoNadeFlags	HELD_TRACKING
+	WP_MeleeFlags	HELD_CRIPPLE|HELD_SPEED
+	WP_BlasterPistolFlags	HELD_ALTRELOAD
+	AB_TDartFlags	HELD_KNOCKBACK
+	AB_GHookFlags	HELD_SLIPPERY|HELD_PULL|HELD_FLASH
+	AB_WLaserFlags	HELD_PULL
+	
+	baseSpeed			256
+
+	special1			EAS_HI_KICK
+	meleespecial1		EAS_HI_TRACKER
+	special2			EAS_HI_WRIST
+	meleespecial2		EAS_HI_WRIST
+	special3			EAS_HI_DASH
+	meleespeical3		EAS_HI_DASH
+	special4			EAS_HI_DEX
+	meleespecial4		EAS_HI_GRAPPLEHOOK
+
+	flourishAnim		BOTH_STAND10_TALK1
+
+	modelScale			0.96
+
+	model				"jedi_tf"
+	skin				"sly"
+	uishader			"models/players/jedi_tf/mb2_icon_sly"
+
+	userRGB			0
+	customred		1
+	customgreen		0.56
+	customblue		0.6
+
+	uioverlay_r			"gfx/icons/scout"
+	uioverlay_l			"gfx/icons/tactician"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/kotor_hobpistol/kotor_hobpistol_w.glm"
+	NewViewModel		"models/weapons2/kotor_hobpistol/kotor_hobpistol.md3"
+	Icon				"gfx/hud/w_icon_kotor_hobpistol"
+	FlashSound0			"sound/weapons/kotor/fire_hvy.wav"
+	AltFlashSound0		"sound/weapons/kotor/fire_hvy.wav"
+	ChargeSound			"sound/weapons/LPA_NN-14/charge.wav"
+	WeaponName			"Exchange Scout Pistol"
+	OverchargeEffect	"Blaster/MuzzleCharge01G"	
+	MissileEffect		"Blaster/Shot03G"
+	MuzzleEffect		"Blaster/MuzzleFlash01G" 		   
+	AltMuzzleEffect		"Blaster/MuzzleFlash01G" 	
+	Missile3Effect		"Blaster/Shot03G"
+	AltMissileEffect	"Blaster/Shot03G"
+	PowerupShotEffect	"Blaster/Shot04G"
+	ChargeEffect		"gfx/effects/greenFrontFlash"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_JANGO_PISTOL_IDLE
+	animReady			BOTH_JANGO_PISTOL_IDLE
+	animReadyWalk		TORSO_WEAPONIDLE2
+	animReadyNoAmmo		BOTH_ATTACK2
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+	CustomAmmo			1000
+	clipSize			24
+	rateMod				.80
+	damageMod			1.1
+	fpmult				1.1
+	velocitymod			.85
+}
+
+description	"Luxa
+
+A backstabbing corpo with high mobility and high tech crowd control abilities.
+
+^2Weaponry:
+- Melee
+-- 15% Faster Movement
+-- Cheap Shot (Cripples On Hit)
+- Exchange Scout Pistol (3)
+-- 10% more damage/FP damage
+-- 20% Faster RoF
+-- 15% Slower Velocity
+-- Mag Reload
+- Thermal Detonator (1)
+- Cyroban Grenade (2)
+-- Tracks
+- Tripmines (3)
+-- Disarms, Knocks Down
+
+^6Inventory:
+- Personal Shield Generator (Cloak 2)
+
+^8Attributes:
+- Healing (2)
+- Dexterity (2)
+- Knockdown Roll
+- Tracking Beacon
+- Stat Viewer
+- Grapple Hop
+- Slow Faller
+- Sense Immunity
+
+^3Abilities:
+- Deceive (Disguise 3) ^3[Melee Weap Mode]
+- Gunkick ^3[CS1 Weapon Out]
+- Weighted Tracking Darts (8) ^3[Melee CS1]
+-- Knocksback On Hit
+- Grav Laser (Wrist Laser) ^3[CS2]
+-- Pulls On Hit
+- Dash (1) ^3[CS3]
+- Dexterity Roll ^3[CS4 Weapon Out]
+- Flash Cord (Grapple 2) ^3[CS4 Melee]
+-- Blinds/Slips/Pulls
+- Flipkick (1) ^3[Contact Jump]"
