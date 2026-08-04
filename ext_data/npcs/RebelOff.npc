@@ -9,6 +9,7 @@ RebelOff
 	armor 35
 	reactions	3
 	aim			1
+	MB_ATT_SLAVE
 	move		3
 	aggression	3
 	evasion		1
