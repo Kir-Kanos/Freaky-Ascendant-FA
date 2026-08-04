@@ -44,6 +44,7 @@ SubclassesForClass1
   Subclass26 "kte3_SithInterro"
   Subclass27 "kte2_Chiss"
   Subclass28 "kte2_Vulkar"
+  Subclass29 "kte3_Trando"
 }
 
 SubclassesForClass2
@@ -79,7 +80,7 @@ SubclassesForClass4
 	Subclass1 "kte8_InsaneSelkath"
 	Subclass2 "kte8_Cahhmakt"
 	Subclass3 "kte8_Ultimate"
-	Subclass4 "v8_HuttW"
+	Subclass4 "kte8_HuttW"
 	Subclass5 "kte8_GamoEnforcer"
 	Subclass6 "kte8_TalzPirate"
   Subclass7 "kte8_Chuundar"
@@ -96,7 +97,7 @@ SubclassesForClass5
 	Subclass5 "kte9_Atris"
 	Subclass6 "kte9_Malgus"
 	Subclass7 "kte9_Revan"
-	Subclass8 "v9_Sion"
+	Subclass8 "kte9_Sion"
 	Subclass9 "kte9_Vindican"
 	Subclass10 "kte9_Zannah"
 	Subclass11 "kte9_Malak"
@@ -109,7 +110,7 @@ SubclassesForClass6
 	Subclass3 "kte10_Yuthura"
 	Subclass4 "kte10_AjuntaGhost"
 	Subclass5 "kte10_SithSorc"
-	Subclass6 "v10_Nihilus"
+	Subclass6 "kte10_Nihilus"
 	Subclass7 "kte10_TrayaTrio"
 	Subclass8 "kte10_kallig"
 	Subclass9 "kte10_Bandon"
