@@ -8,6 +8,7 @@ JediDual
 	saber		saber_kshrt
 	saberColor	blue
 	saber2		saber_kshrt
+	MB_ATT_SLAVE
 	saber2Color	yellow
 	weapon	WP_SABER
 	MB_ATT_FORCEBLOCK 1
