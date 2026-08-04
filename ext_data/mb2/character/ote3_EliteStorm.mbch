@@ -13,8 +13,8 @@ ClassInfo
 	
 	extralives		1
 	
-	maxhealth		90
-	maxArmor 		60
+	maxhealth		80
+	maxArmor 		40
 
 	hackRate		.90
 	
