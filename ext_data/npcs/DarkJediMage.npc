@@ -6,6 +6,7 @@ DarkJediMage
 	customSkin	Darkjedi
 	MBClass		5
 	weapon		WP_SABER
+	MB_ATT_SLAVE
 	saber		saber_kshrt
 	saberColor	red
 	MB_ATT_FP_SABER_DEFENSE 1
