@@ -8,6 +8,7 @@ RepTRGuard1
 	altFire 1
 	health		100
 	armor 75
+	MB_ATT_SLAVE
 	headPitchRangeDown 30
 	reactions	5
 	aim			4
