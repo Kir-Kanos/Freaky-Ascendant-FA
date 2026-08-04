@@ -17,7 +17,7 @@ rankbasespeed 180,190
 
 	attributes				MB_ATT_AMMO,3|MB_ATT_JETPACK,1|MB_ATT_FUEL,3|MB_ATT_ASSEMBLE,3
 
-	maxhealth			55
+	maxhealth			60
 	maxarmor				25
 
 	resource			RESOURCE_FUEL
