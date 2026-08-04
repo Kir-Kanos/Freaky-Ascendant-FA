@@ -4,6 +4,7 @@ DavikBH
 	playerModel human_merc
 	customskin	dxun
 	weapon		WP_BLASTER_PISTOL
+	MB_ATT_SLAVE
 	MB_ATT_PISTOL 3
 	health		150
 	armor 50
