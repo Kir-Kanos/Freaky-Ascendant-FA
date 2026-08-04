@@ -6,6 +6,7 @@ HiddenBek2
 	weapon		WP_FLECHETTE
 	MB_ATT_FLECHETTE 1
 	altFire 1
+	MB_ATT_SLAVE
 	health		120
 	armor 40
 	headPitchRangeDown 30
