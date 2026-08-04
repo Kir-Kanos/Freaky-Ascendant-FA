@@ -33,7 +33,8 @@ ClassInfo
 	
 	uioverlay_l "gfx/icons/frontline"
 	uioverlay_r "gfx/icons/infantry"
-	
+
+	saberStanceAnim		BOTH_TRIPLE3_STAFFSTANCE
 
 	model		"sith_assassin"
 	skin		"acolyte2"
