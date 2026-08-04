@@ -6,6 +6,7 @@ SithTRGuard1
 	weapon		WP_EE4
 	MB_ATT_EE4 2
 	altFire 1
+	MB_ATT_SLAVE
 	health		75
 	armor 30
 	headPitchRangeDown 30
