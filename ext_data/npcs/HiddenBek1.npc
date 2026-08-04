@@ -5,6 +5,7 @@ HiddenBek1
 	customskin	citizen
 	weapon		WP_DISRUPTOR
 	MB_ATT_DISRUPTOR 1
+	MB_ATT_SLAVE
 	altFire 1
 	health		100
 	armor 35
