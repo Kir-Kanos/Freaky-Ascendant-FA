@@ -5,6 +5,7 @@ DarkJediDual
 	playerModel	reborn
 	customSkin	DarkJedi
 	MBClass		5
+	MB_ATT_SLAVE
 	rank		commander
 	saber		saber_kshrt
 	saberColor	red
