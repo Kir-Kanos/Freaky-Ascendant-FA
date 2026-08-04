@@ -1,4 +1,4 @@
-// Siege class definition file for KotOR II: Ubese Tracker
+
 ClassInfo
 {
 	name				"kte6_UbeseScout"
@@ -20,6 +20,10 @@ ClassInfo
 	resource	resource_energy
 	force pool 75
 	forceregen 1.6
+
+	special1HUD HUD_TRACKINGDART
+	special2HUD HUD_FRAGNADE
+
 
 	saber1      	qstaff_legends
 	saberstyle 	SS_STAFF|SS_TAVION
