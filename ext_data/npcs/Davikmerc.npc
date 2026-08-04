@@ -5,6 +5,7 @@ Davikmerc
 	customskin	dxun
 	weapon		WP_BRYAR_OLD
 	MB_ATT_BRYAR_OLD 3
+	MB_ATT_SLAVE
 	health		150
 	armor 50
 	headPitchRangeDown 30
