@@ -9,6 +9,7 @@ LaigrekWarrior
 	aim			5
 	move			5
 	aggression		5
+	MB_ATT_SLAVE
 	evasion		4
 	intelligence	5
 	rank		crewman
