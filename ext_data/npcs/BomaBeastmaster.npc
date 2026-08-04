@@ -2,6 +2,7 @@ bomabeastmaster
 {
 	displayName "Tamed Boma Beast"
 	playerModel 	bomabeast
+	MB_ATT_SLAVE
 	weapon		WP_MELEE
 	health		400
 	FL_NO_KNOCKBACK 1
