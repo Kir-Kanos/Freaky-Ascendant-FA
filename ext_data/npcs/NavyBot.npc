@@ -12,6 +12,7 @@ NavyBot
 	aggression	3
 	evasion		1
 	intelligence	5
+	MB_ATT_SLAVE
 	rank		crewman
 	playerTeam	TEAM_PLAYER
 	enemyTeam	TEAM_ENEMY
