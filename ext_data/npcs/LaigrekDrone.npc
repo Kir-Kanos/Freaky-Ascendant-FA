@@ -10,6 +10,7 @@ LaigrekDrone
 	aggression	3
 	evasion		1
 	intelligence	5
+	MB_ATT_SLAVE
 	playerTeam	TEAM_FREE
 	enemyTeam	TEAM_FREE
 	class		CLASS_WAMPA
