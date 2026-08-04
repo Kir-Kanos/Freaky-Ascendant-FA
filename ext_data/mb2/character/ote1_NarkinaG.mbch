@@ -13,8 +13,8 @@ ClassInfo
 	
 	attributes			MB_ATT_AMMO,1|MB_ATT_ASSEMBLE,1|MB_ATT_CCTRAINING,0|MB_ATT_DC_CARBINE,1|MB_ATT_TRIP_MINES,3|MB_ATT_PULSE_GRENADES,1|MB_ATT_STUN_BATON,1
 
-	maxhealth			40
-	maxarmor			20
+	maxhealth			60
+	maxarmor			25
 
 	resource			resource_energy
 	forcepool			20
