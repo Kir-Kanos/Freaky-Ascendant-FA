@@ -1,4 +1,4 @@
-//Legends Mode character file - Created by Frenzy & Leos
+//Editted by MARSHALL and stromboli
 
 ClassInfo
 {
@@ -14,11 +14,11 @@ ClassInfo
 
 	WP_RocketLauncherFlags HELD_LIFESTEAL|HELD_FLASH|HELD_FORCEFOCUS|HELD_LIFT
 
-	forcepool	125
-	rankforcepool	150
-	forceregen	1.1
-	rankForceregen 1.2
-	maxhealth	140
+	forcepool	130
+	rankforcepool	160
+	forceregen	1.2
+	rankForceregen 1.3
+	maxhealth	145
 	RankHealth 160
 
 	rateOfFire_Melee .9
@@ -38,70 +38,73 @@ ClassInfo
 	uioverlay_l "gfx/icons/support"
 	uioverlay_r "gfx/icons/infantry"
 	
-model		"sith_assassin_f"
+	model		"sith_assassin_f"
 	skin		"sith"
 	uishader	"models/players/sith_assassin_f/mb2_icon_sith"
 
 	isCustomBuild	1
-mbPoints	20
+	mbPoints	22
 
-
-c_att_skill_0  MB_ATT_FP_RAGE
-c_att_names_0  "Dark Rage"
+c_att_skill_0  MB_ATT_FP_STASIS
+c_att_names_0  "Force Stasis"
 c_att_ranks_0  1,1
 
-c_att_skill_1  MB_ATT_FP_DRAIN
-c_att_names_1  "Force Drain"
-c_att_ranks_1  0,0,1
+c_att_skill_1  MB_ATT_FP_RAGE
+c_att_names_1  "Dark Rage"
+c_att_ranks_1  1,1
 
-c_att_skill_2  MB_ATT_FP_LIGHTNING
-c_att_names_2  "Force Lightning ^3[CS4]"
-c_att_ranks_2  0,1
+c_att_skill_2  MB_ATT_FP_DRAIN
+c_att_names_2  "Force Drain"
+c_att_ranks_2  0,0,1
 
-c_att_skill_3  MB_ATT_FP_GRIP
-c_att_names_3   "Force Grip ^3[CS3]"
-c_att_ranks_3   0,0,1
+c_att_skill_3  MB_ATT_FP_LIGHTNING
+c_att_names_3  "Force Lightning ^3[CS4]"
+c_att_ranks_3  0,1
 
-c_att_skill_4	MB_ATT_RESPAWNS
-c_att_names_4	"Reinforcement"
-c_att_ranks_4	17
+c_att_skill_4  MB_ATT_FP_GRIP
+c_att_names_4   "Force Grip ^3[CS3]"
+c_att_ranks_4   0,0,1
 
-c_att_skill_5	MB_ATT_HEALING
-c_att_names_5	"Healing"
-c_att_ranks_5	0,1
+c_att_skill_5	MB_ATT_RESPAWNS
+c_att_names_5	"Reinforcement"
+c_att_ranks_5	17
 
-c_att_skill_6	MB_ATT_HEALTH
-c_att_names_6	"HP (160)"
-c_att_ranks_6	1
+c_att_skill_6	MB_ATT_HEALING
+c_att_names_6	"Healing"
+c_att_ranks_6	0,1
 
-c_att_skill_7	MB_ATT_POWER
-c_att_names_7	"FP (150)"
+c_att_skill_7	MB_ATT_HEALTH
+c_att_names_7	"HP (160)"
 c_att_ranks_7	1
 
-c_att_skill_8	MB_ATT_REGEN
-c_att_names_8	"FP regen (120%)"
+c_att_skill_8	MB_ATT_POWER
+c_att_names_8	"FP (160)"
 c_att_ranks_8	1
 
-c_att_skill_9	MB_ATT_SPY_DISGUISE
-c_att_names_9	"Disguise ^3[Toggle Melee]"
-c_att_ranks_9	1,1
+c_att_skill_9	MB_ATT_REGEN
+c_att_names_9	"FP Regen (130%)"
+c_att_ranks_9	1
 
-c_att_skill_10	MB_ATT_FLIPKICK
-c_att_names_10	"Flipkick ^3[Contact Jump]"
-c_att_ranks_10	0,1
+c_att_skill_10	MB_ATT_SPY_DISGUISE
+c_att_names_10	"Disguise ^3[Toggle Melee]"
+c_att_ranks_10	1,1
 
-c_att_skill_11	MB_ATT_BUNNY_HOP
-c_att_names_11	"Bunny Hop"
-c_att_ranks_11	1
+c_att_skill_11	MB_ATT_FLIPKICK
+c_att_names_11	"Flipkick ^3[Contact Jump]"
+c_att_ranks_11	0,1
 
-c_att_skill_12 MB_ATT_FLOAT_HOP
-c_att_names_12 "Slow Faller"
-c_att_ranks_12 0
+c_att_skill_12	MB_ATT_BUNNY_HOP
+c_att_names_12	"Bunny Hop"
+c_att_ranks_12	1
 
-c_att_skill_13 MB_ATT_ROCKET_LAUNCHER
-c_att_names_13 "Thought Bomb"
-c_att_ranks_13 2
-c_att_descs_13 "Rocket Launcher, Lifts/blinds/lifesteals/force focuses on hit"
+c_att_skill_13 MB_ATT_FLOAT_HOP
+c_att_names_13 "Slow Faller"
+c_att_ranks_13 0
+
+c_att_skill_14 MB_ATT_ROCKET_LAUNCHER
+c_att_names_14 "Thought Bomb"
+c_att_ranks_14 2
+c_att_descs_14 "Rocket Launcher, Lifts/blinds/lifesteals/force focuses on hit"
 
 }
 WeaponInfo0
@@ -156,6 +159,9 @@ Dark Side masters who forego the use of a Lightsaber in favor of martial arts an
 - Sense Immunity
 - Force Block/Focus (3)
 
+^3Abilities:
+- Flipkick (1) ^3[Contact Jump]
+- Dash (2) ^3[CS2]"
 ^3Abilities:
 - Flipkick (1) ^3[Contact Jump]
 - Dash (2) ^3[CS2]"
