@@ -7,6 +7,10 @@ ClassInfo
 	forcepowers			FP_SABER_OFFENSE,1|FP_SPEED,1|FP_LEVITATION,2|FP_PROTECT,3|FP_LIGHTNING,1|FP_GRIP,2
 	MBClass			MB_CLASS_JEDI
 
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+
 	roundnpc	"LaigrekWarrior"
 	SpawnerNPC	"LaigrekDrone"
 	
