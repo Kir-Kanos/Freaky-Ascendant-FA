@@ -7,9 +7,9 @@ EUAllowed 0
 Classes
 {
 	class1	"ktg1_Refugee"
-	class2	"h3_Cander"
-	Class3	"h7_HK47"
-	class4	"h8_Zaal"
+	class2	"ktg3_Cander"
+	Class3	"ktg7_HK47"
+	class4	"ktg8_Zaal"
 	Class5	"ktg9_JediKnight"
 	Class6	"asg10_JForce"
 }
@@ -18,9 +18,9 @@ SubclassesForClass1
 {
 	Subclass1	"ktg1_OldRepTR"
 	Subclass2	"ktg1_Freedom"
-	Subclass3	"h1_TORtroop"
+	Subclass3	"ktg1_TORtroop"
 	Subclass4	"ktg2_Carth"
-	Subclass5	"h1_Talz"
+	Subclass5	"ktg1_Talz"
 	Subclass6	"ktg1_SentinelDR"
 	Subclass7	"ktg2_OldRepOff"
 	Subclass8	"ktg1_OndRoyal"
@@ -41,7 +41,7 @@ SubclassesForClass1
 
 SubclassesForClass2
 {
-	Subclass1	"h4_Atton"
+	Subclass1	"ktg4_Atton"
 	Subclass2	"ktg5_SmugglerAce"
 	Subclass3	"ktg3_Smuggler"
 	Subclass4	"ktg4_KotorSenGuard"
@@ -51,8 +51,8 @@ SubclassesForClass2
 SubclassesForClass3
 {
 	Subclass1	"ktg7_Mira"
-	Subclass2	"h6_Mission"
-	Subclass3	"h7_T3M4"
+	Subclass2	"ktg6_Mission"
+	Subclass3	"ktg7_T3M4"
 	Subclass4	"ktg7_Dodonna"
 	Subclass5	"ktg7_Trask"
 	Subclass6	"ktg6_OldRepSniper"
@@ -61,8 +61,8 @@ SubclassesForClass3
 	Subclass9	"ktg7_GadonThek"
 	Subclass10	"ktg6_BekScout"
 	Subclass11	"ktg7_Talia"
-	Subclass12	"h7_Scavenge"
-  Subclass13	"ktg6_Komad"
+	Subclass12	"ktg7_Scavenge"
+	Subclass13	"ktg6_Komad"
  	Subclass14	"ktg7_Kelborn"
 }
 
@@ -77,7 +77,7 @@ SubclassesForClass4
 
 SubclassesForClass5
 {
-	Subclass1	"h9_JBrute"
+	Subclass1	"ktg9_JBrute"
 	Subclass2	"ktg9_Vandar"
 	Subclass3	"ktg9_Kao"
 	Subclass4	"ktg9_Handmaiden"
