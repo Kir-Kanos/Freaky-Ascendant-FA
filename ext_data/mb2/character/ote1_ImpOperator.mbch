@@ -13,8 +13,8 @@ ClassInfo
 
 	attributes			MB_ATT_CLONE_PISTOL,2|MB_ATT_EE3,2|MB_ATT_AMMO,1|MB_ATT_ASSEMBLE,2|MB_ATT_SABER_COMBO_NONE|MB_ATT_FRAGS,1|MB_ATT_DET_PACK,3
 
-	maxhealth			65
-	maxarmor			40
+	maxhealth			60
+	maxarmor			25
 
 	hackrate	.85
 
