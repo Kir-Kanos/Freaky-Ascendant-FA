@@ -7,6 +7,7 @@
 	health		50
 	altFire 1
 	armor 15
+	MB_ATT_SLAVE
 	headPitchRangeDown 30
 	reactions	3
 	aim		1
