@@ -15,8 +15,8 @@ ClassInfo
 
 classflags	CFL_STRONGAGAINSTPHYSICAL|CFL_BLOODYMELEE
 
-	maxhealth			70
-	maxarmor			20
+	maxhealth			60
+	maxarmor			25
 
 	resource			resource_stamina
 	forcepool			40
