@@ -6,6 +6,7 @@ SithTRGuard2
 	saber		kotor_vibrosword
 	weapon	WP_SABER
 	saberStyle	1
+	MB_ATT_SLAVE
 	MB_ATT_FP_SABER_DEFENSE 1
 	PBchance 8
 	MBchance 1
