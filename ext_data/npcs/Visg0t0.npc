@@ -6,6 +6,7 @@ Visg0t0
 	MBClass		11
 	weapon		WP_BOT_LASER
 	health		1000
+	MB_ATT_SLAVE
 	headYawRangeLeft		180
 	headYawRangeRight		180
 	headPitchRangeUp		0
