@@ -21,7 +21,7 @@ ClassInfo
 
 	model					"davik" 				
 	skin					"default"					
-	uishader				"models/players/davik/icon_default"
+	uishader				"models/players/davik/mb2_icon_default"
 
 	special1				EAS_HI_ENEMYSCANNER
 	special2				EAS_HI_SPAWNER
