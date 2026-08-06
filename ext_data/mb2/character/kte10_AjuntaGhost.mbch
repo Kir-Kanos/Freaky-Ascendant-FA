@@ -8,7 +8,7 @@ ClassInfo
 
     attributes          MB_ATT_JETPACK,1|MB_ATT_CORTOSIS,1|MB_ATT_FP_REPULSE||MB_ATT_WATER_BREATHING|MB_ATT_FLOAT_HOP|MB_ATT_BUNNY_HOP,1|MB_ATT_ENV_PROTECTION,3|MB_ATT_FP_MIRALUKA|MB_ATT_FORCEFOCUS,3|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,2|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_FORCEBLOCK,1|CCTRAINING,3
 
-    forcepowers         FP_PUSH,2|FP_PULL,2|FP_SABER_DEFENSE,1|FP_SABER_OFFENSE,2|FP_TELEPATHY,1|FP_SEE,2|FP_SABERTHROW,3|FP_DARKRAGE,1|FP_LIGHTNING,2|FP_LEVITATION,3|FP_GRIP,2|FP_DRAIN,2|FP_ABSORB,1|FP_STASIS,3
+    forcepowers         FP_PUSH,3|FP_PULL,3|FP_SABER_DEFENSE,1|FP_SABER_OFFENSE,2|FP_TELEPATHY,1|FP_SEE,2|FP_SABERTHROW,3|FP_LIGHTNING,2|FP_LEVITATION,3|FP_GRIP,2|FP_DRAIN,2|FP_ABSORB,1|FP_STASIS,3
 
 resource	RESOURCE_FORCE
 
@@ -34,16 +34,15 @@ saberstyle		SS_STAFF
 	jetpackStartSound 	"sound/effects/woosh22"
 	jetpackIdleSound	"sound/ambience/artus/artus_shaft"
 
-    special1            EAS_FP_REPULSE
     special2            EAS_FP_LIGHTNING
     special3            EAS_FP_DRAIN
-    special4		EAS_FP_GRIP
+    special4		EAS_FP_REPULSE
 
     modelscale          1
 
-    model               "ajunta_pall"
-    skin                "ghost"
-    uishader            "models/players/ajunta_pall/icon_ghost"
+    model               "reborn"
+    skin                "ajunta"
+    uishader            "models/players/reborn/mb2_icon_ajunta"
 
     classflags          CFL_NOPICKUPS|CFL_BPFREEJUMPS|CFL_STRONGAGAINSTPHYSICAL
 
@@ -75,13 +74,12 @@ saberstyle		SS_STAFF
 - Force Lightning (2) ^3[CS2]
 - Force Jump (3)
 - Force Flight (Jetpack)
-- Force Dark Rage (1)
 - Force Mind Trick (1)
 - Force Grip (2) ^3[CS4]
 - Force Sense (2)
 - Force Absorb (1)
-- Force Push/Pull (2)
-- Force Repulse ^3[CS1]
+- Force Push/Pull (3)
+- Force Repulse ^3[CS4]
 - Force Stasis (3)
 
 ^8Attributes:
