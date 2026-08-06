@@ -37,6 +37,7 @@ SubclassesForClass1
   Subclass19	"ktg2_Riiken"
   Subclass20	"ktg1_ClanOrdo"
   Subclass21	"ktg3_Vossk"
+  Subclass22	"ktg1_Settler"
 }
 
 SubclassesForClass2
@@ -55,7 +56,7 @@ SubclassesForClass3
 	Subclass3	"ktg7_T3M4"
 	Subclass4	"ktg7_Dodonna"
 	Subclass5	"ktg7_Trask"
-	Subclass6	"ktg6_OldRepSniper"
+	Subclass6	"ktg6_Scoundrel"
 	Subclass7 	"ktg3_Baodur"
 	Subclass8	"ktg2_NicoOkarr"
 	Subclass9	"ktg7_GadonThek"
@@ -64,6 +65,8 @@ SubclassesForClass3
 	Subclass12	"ktg7_Scavenge"
 	Subclass13	"ktg6_Komad"
  	Subclass14	"ktg7_Kelborn"
+	Subclass15  "ktg7_Roland"
+	Subclass16	"ktg7_LTGrenn"
 }
 
 SubclassesForClass4
@@ -91,6 +94,9 @@ SubclassesForClass5
 	Subclass12	"ktg9_Ven"
   Subclass13	"ktg9_Exile"
   Subclass14	"ktg9_JediChamp"
+  Subclass15	"ktg9_JGladiator"
+  Subclass16	"ktg9_JBattle"
+  Subclass17	"ktg9_JAcrobat"
 }
 
 SubclassesForClass6
@@ -105,4 +111,6 @@ SubclassesForClass6
 	Subclass8	"ktg10_JediMaster"
 	Subclass9	"ktg10_Lonna"
 	Subclass10  "ktg10_Kaevee"
+	Subclass11	"ktg10_JTradition"
+	Subclass12	"ktg10_Kreia"
 }
