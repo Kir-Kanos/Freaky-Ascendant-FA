@@ -2,7 +2,7 @@
 ClassInfo
 {
 	name				"ktg1_Settler"
-	MBClass				MB_CLASS_WOOKIE
+	MBClass				MB_CLASS_SOLDIER
 	extralives			4
 	classNumberLimit	3
 
