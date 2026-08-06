@@ -8,9 +8,9 @@ ClassInfo
 	maxhealth			125
 	maxarmor			80
 
-	attributes			MB_ATT_PISTOL,3|MB_ATT_DISRUPTOR,3|MB_ATT_PROJ,1|MB_ATT_BLASTER,1|MB_ATT_AMMO,3|MB_ATT_ANTI_MT,2|MB_ATT_FRAGS,3|MB_ATT_RALLY,1|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_TRACKING_BEACON|MB_ATT_HEALING,2|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_DART,3|MB_ATT_DODGE,2|MB_ATT_CLOAK,1|MB_ATT_ENEMYSCANNER
+	attributes			MB_ATT_PISTOL,3|MB_ATT_DISRUPTOR,3|MB_ATT_PROJ,1|MB_ATT_BLASTER,1|MB_ATT_AMMO,3|MB_ATT_ANTI_MT,2|MB_ATT_FRAGS,3|MB_ATT_RALLY,1|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_TRACKING_BEACON|MB_ATT_HEALING,2|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_DART,4|MB_ATT_DODGE,2|MB_ATT_CLOAK,2|MB_ATT_ENEMYSCANNER
 
-	basespeed			215
+	basespeed			220
 	modelscale			1.01
 
 	WP_BlasterPistolFlags	HELD_ALTRELOAD|HELD_KNOCKBACK
@@ -18,7 +18,7 @@ ClassInfo
 	WP_ProjFlags		HELD_ALTRELOAD|HELD_FLASH|HELD_BACTA
 	WP_BlasterFlags		HELD_BACTA|HELD_TRACKING|HELD_ALTRELOAD
 	WP_FragNadeFlags		HELD_TRACKING|HELD_FLASH
-	AB_TDartFlags			HELD_FORCEFOCUS|HELD_SLIPPERY
+	AB_TDartFlags			HELD_FLASH|HELD_SLIPPERY
 
 	model		"human_merc"
 	skin		"azanti"
@@ -95,7 +95,7 @@ WeaponInfo2
 	customAmmo			32
 	velocity			.80
 	ratemod				3
-	damageMod			0.40
+	damageMod			2
 		MissileMissEffect		"noghri_stick/flesh_impact"
  MissileHitHumanEffect 	"noghri_stick/flesh_impact"
  MissileHitDroidEffect 	"noghri_stick/flesh_impact"
@@ -140,7 +140,7 @@ Half of the Zhug Leadership, Azanti Focused on deception and staying far away fr
 - Zhug Dart Pistol
 -- Blaster Rifle (1)
 -- Tracks / Heals Allies On Hit
--- 60% Less Damage
+-- 100% More Damage
 -- Mag Reload
 - Zhug Dart Rifle
 -- Projectile Rifle
@@ -157,7 +157,7 @@ Half of the Zhug Leadership, Azanti Focused on deception and staying far away fr
 - Rally
 - Paranoid (Anti Mind Trick 2)
 - Zhug Unity (Stat Viewer)
-- Personal Stealth Generator (Cloak 1)
+- Personal Stealth Generator (Cloak 2)
 - Dexterity (1)
 - Healing (2)
 - Bounty Board (Tracking Beacon)
@@ -166,5 +166,5 @@ Half of the Zhug Leadership, Azanti Focused on deception and staying far away fr
 - Spotter (Enemy Scanner) ^3[CS2]
 - Grapple Hook (2) ^3[CS4]
 - Dodge (2) ^3[CS1]
-- Confusion Tracking Darts (6) ^3[CS3]
--- Applies Force Focus And Slippery"
+- Confusion Tracking Darts (4) ^3[CS3]
+-- Applies Blind And Slippery"
