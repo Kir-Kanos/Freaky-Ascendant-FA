@@ -1,0 +1,88 @@
+ClassInfo
+{
+	name				"ktg9_JAcrobat"
+	MBClass				MB_CLASS_JEDI
+	classNumberLimit	1
+	WP_SaberFlags		HELD_NODISARM
+	weapons				WP_SABER|WP_MELEE
+	attributes			MB_ATT_SABER_FAST,1|MB_ATT_DEFLECT,3|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,1|MB_ATT_BUNNY_HOP,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_DEXTERITY,3|MB_ATT_FLIPKICK,1
+
+	forcepowers			FP_SEE,1|FP_LEVITATION,3|FP_PUSH,2|FP_PULL,1|FP_SPEED,3|FP_SABER_OFFENSE,2
+
+	healthRegenAmount	1
+	healthRegenRate		1500
+	healthRegenCap		35
+
+	speed				1.08
+	rateOfFire_Melee	0.88
+	maxhealth			125
+	forcepool			110
+	forceregen			1.2
+	damageGiven			1.1
+	saberstyle			SS_DUAL|SS_FAST
+	saberDamageStyle	SS_DUAL,220|SS_FAST,130
+	saberSpecialDamage	1.35
+	saberThrowDamage	45
+	BPmultiplier		0.90
+	ASmultiplier		1.15
+	CSmultiplier		1.10
+
+	classflags			CFL_NOPICKUPS|CFL_SEEING_STEALTH|CFL_BPFREEJUMPS
+
+	flourishanim		BOTH_JUMPATTACK7
+
+	special2			EAS_HI_DEX
+	special3			EAS_FP_SPEED
+
+	uioverlay			"gfx/icons/frontline"
+
+	model				"jedi_rm"
+	skin				"legends2"
+	uishader			"models/players/jedi_rm/mb2_icon_legends2"
+	userRGB				1
+	customred			1
+	customgreen			1
+	customblue			1
+
+	saber1				saber_kshrt
+	saber2				saber_kshrt
+	sabercolor			2
+	saber2color			2
+}
+
+description	"Jedi Acrobat
+
+A speedster that excels at flanking, ambushing, and aerial combat.
+
+^2Weaponry:
+- Melee
+-- 12% faster RoF
+- Lightsaber (Dual/Blue)
+-- Saber Defense (3)
+--- BP-Free Jumps
+-- Blaster Defense (2)
+-- Blaster Deflect (3)
+-- 15% less Dual/8% more Blue damage
+-- 35% more special damage
+-- Saber Throw ^3[CS1]
+--- 50% more damage
+
+^5Force Powers:
+- Jump (3)
+- Push (2)
+- Pull (1)
+- Sense (1)
+- Speed (3) ^3[CS3]
+
+^8Attributes:
+- Bunny Hop (1)
+- Dexterity (3)
+- Force Block (2)
+- Force Focus (1)
+- Aerial Force Regen
+- Sense Immunity
+- Heal capped at 35hp
+
+^3Abilities:
+- Flipkick (1) ^3[Contact Jump]
+- Dex Roll ^3[CS2]"

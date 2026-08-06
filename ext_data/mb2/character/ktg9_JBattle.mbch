@@ -1,0 +1,82 @@
+
+
+ClassInfo
+{
+	name				"ktg9_JBattle"
+	MBClass				MB_CLASS_JEDI
+	classNumberLimit	1
+
+	weapons				WP_SABER|WP_MELEE
+	WP_SaberFlags		HELD_NODISARM
+	attributes			MB_ATT_DEFLECT,2|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,3
+
+	forcepowers			FP_SABER_OFFENSE,2|FP_ABSORB,3|FP_LEVITATION,3|FP_PUSH,3|FP_SEE,2|FP_PULL,2|FP_SPEED,3
+
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+
+
+	damageGiven			1.1
+	speed				1.07
+	maxhealth			135
+	forcepool			125
+	forceregen			1.1
+	resource			RESOURCE_FORCE
+	rateOfFire_melee	.9
+	APmultiplier		1.15
+	ASmultiplier		1.05
+	BPmutliplier		1.10
+	CSmultiplier		1.15
+	saberstyle			SS_STRONG|SS_MEDIUM
+	saberDamageStyle	SS_STRONG,450|SS_MEDIUM,300
+	saberThrowDamage	40
+	saberSpecialDamage	1.25
+	special2			EAS_FP_ABSORB
+	special3			EAS_FP_SPEED
+
+	classflags			CFL_NOPICKUPS
+
+	flourishanim		BOTH_CROUCH3
+
+	saber1			saber_kshrt
+	sabercolor		1
+
+	uioverlay			"gfx/icons/frontline"
+	modelScale			1.06
+
+	model				"jedi_zf"
+	skin				"legends2"
+	uishader			"models/players/jedi_zf/mb2_icon_legends2"
+	userRGB			1
+	customred			1
+	customgreen		1
+	customblue		1
+}
+
+description	"Jedi Battle Master
+
+An offense-oriented Jedi, characterized by powerful Lightsaber swings and solid Force abilities.
+
+^2Weaponry:
+- Melee
+-- 10% faster RoF
+- Lightsaber (Yellow/Red)
+-- Saber Defense (3)
+-- Blaster Defense/Deflect (2)
+-- 42% less Red damage
+-- 25% more special damage
+-- Saber Throw ^3[CS1]
+--- 33% more damage
+
+^5Force Powers:
+- Jump (3)
+- Push (3)
+- Pull (2)
+- Sense (2)
+- Absorb (3) ^3[CS2]
+- Speed (3) ^3[CS3]
+
+^8Attributes:
+- Heal capped at 35hp
+- Force Block/Focus (2)"

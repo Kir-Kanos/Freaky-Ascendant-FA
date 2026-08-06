@@ -1,0 +1,82 @@
+
+ClassInfo
+{
+	name				"ktg9_JGladiator"
+	MBClass				MB_CLASS_JEDI
+	classNumberLimit	1
+	weapons				WP_SABER|WP_MELEE
+	WP_SaberFlags		HELD_NODISARM
+	attributes			MB_ATT_DEFLECT,3|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,3
+
+	forcepowers			FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_PUSH,2|FP_PULL,2|FP_PROTECT,2|FP_SEE,2|FP_SPEED,3|FP_SABERTHROW,2
+
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+
+
+	maxhealth			145
+	forcepool			120
+	forceregen			1.04
+	rateOfFire_Melee	.9
+	damageGiven			1.1
+	//special1			EAS_FP_SABERTHROW
+	special2			EAS_NONE
+	special3			EAS_FP_SPEED
+	special4			EAS_FP_PROTECT
+
+	saberMaxChain		4
+	APmultiplier		1.2
+	saberThrowDamage	40
+	saberstyle			SS_FAST|SS_TAVION
+	saberDamage			240
+	saberSpecialDamage	1.25
+
+	classflags			CFL_NOPICKUPS
+
+	saber1			saber_kshrt
+	sabercolor		2
+
+	//flourishAnim		BOTH_DEFLECTSLASH__R__L_FIN
+	modelscale			1.05
+	uioverlay			"gfx/icons/frontline"
+
+	model			"jedi_kdm"
+	skin			"legends1"
+	uishader			"models/players/jedi_kdm/mb2_icon_legends1"
+	userRGB			1
+	customred		1
+	customgreen		1
+	customblue		1
+
+
+}
+
+description	"Jedi Gladiator
+
+A rushdown Jedi with uniquely high-damage and extended-combo Fast saber styles.
+
+^2Weaponry:
+- Melee
+-- 10% faster RoF
+- Lightsaber (Cyan/Blue)
+-- Saber Defense (3)
+-- Blaster Defense (2)
+-- Blaster Deflect (3)
+-- Chain Limit: 4
+-- 100% more damage
+-- 25% more special damage
+-- EX Saber Throw (2) ^3[CS1]
+--- 33% more damage
+
+^5Force Powers:
+- Jump (3)
+- Push (2)
+- Pull (2)
+- Sense (2)
+- Protect (2) ^3[CS4]
+- Speed (3) ^3[CS3]
+
+^8Attributes:
+- Heal capped at 35hp
+- Force Block/Focus (2)"
