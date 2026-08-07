@@ -73,6 +73,7 @@ SubclassesForClass3
   Subclass7 "kte7_Shaman"
   Subclass8 "kte7_Visquis"
   Subclass9 "kte7_Davik"
+  Subclass10 "kte7_Brejik"
 }
 
 SubclassesForClass4
@@ -101,6 +102,7 @@ SubclassesForClass5
 	Subclass9 "kte9_Vindican"
 	Subclass10 "kte9_Zannah"
 	Subclass11 "kte9_Malak"
+	Subclass12 "kte9_Governor"
 }
 
 SubclassesForClass6
