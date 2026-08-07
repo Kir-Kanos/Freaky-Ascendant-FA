@@ -1,0 +1,157 @@
+ClassInfo
+{
+	name				"kte7_Brejik"
+	weapons				WP_BLASTER_PISTOL|WP_MELEE|WP_SABER|WP_ROCKET_LAUNCHER|WP_THERMAL|WP_FRAG_NADE|WP_PULSE_NADE|WP_CONC_NADE
+	
+	attributes			MB_ATT_SPAWNER,1|MB_ATT_DEXTERITY,1|MB_ATT_DODGE,2|MB_ATT_MICRO_GRENADES,2|MB_ATT_ENV_PROT,1|MB_ATT_RALLY,1|MB_ATT_ANTI_MT,1|MB_ATT_PULSE_GRENADES,2|MB_ATT_FRAGS,1|MB_ATT_TRACKING_BEACON|MB_ATT_BLAST_ARMOUR|MB_ATT_HEALING,1|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_ROUNDSPAWNER,1|MB_ATT_ROCKET_LAUNCHER|MB_ATT_PISTOL,3|MB_ATT_BESKAR,1|MB_ATT_BASE_TD,5|MB_ATT_STAMINA,1
+
+	MBClass				MB_CLASS_CLONETROOPER
+
+	classNumberLimit	1
+
+	resource RESOURCE_ENERGY
+	forcepool 120
+
+	spawnerNPC "Vulkar2"
+
+	roundNPC "Vulkar1"
+	
+	maxhealth			120
+	maxarmor			100
+
+	WP_SaberFlags			HELD_SPEED
+	WP_BlasterPistolFlags		HELD_ALTRELOAD|HELD_SLOW
+
+	special1	EAS_HI_DODGE
+	special2	EAS_HI_SPRINT
+	special3	EAS_HI_DEX
+	special4 	EAS_HI_SPAWNER
+	
+	model				"serroco"
+	skin				"default2"
+	uishader			"models/players/serroco/mb2_icon_default2"
+	
+	classflags			CFL_STATVIEWER
+
+	saber1			kotor_vibrosword
+	saberstyle		SS_STRONG	
+	
+	saberdamage 140
+
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL				
+	NewWorldModel			"models/weapons2/kotor_hpistol/kotor_hpistol_w.glm"
+	NewViewModel			"models/weapons2/kotor_hpistol/kotor_hpistol.md3"
+	Icon            		"gfx/hud/w_icon_kotor_hpistol_dual"	
+	WeaponName				"Brejik's Blaster Pistol"
+	FlashSound0				"sound/weapons/kotor/fire_power1.mp3"			
+	AltFlashSound0			"sound/weapons/kotor/fire_power1.mp3"
+	MuzzleEffect  		"Blaster/MuzzleFlash01Y"
+	AltMuzzleEffect  		"Blaster/MuzzleFlash01Y"
+	MissileEffect			"Blaster/Shot03y"
+	Missile3Effect			"Blaster/Shot03y"
+	AltMissileEffect		"Blaster/Shot03y"
+	PowerupShotEffect		"Blaster/Shot03y"
+	OverchargeEffect	"Blaster/MuzzleCharge01Y"	
+	ChargeEffect		"gfx/effects/YellowFrontFlash"
+	altMissileMissEffect "Blaster/Impact_Wall01R_E"
+	altMissileHitHumanEffect "Blaster/Impact_Wall01R_E"
+	altMissileHitDroidEffect "Blaster/Impact_Wall01R_E"
+	MissileMissEffect "Blaster/Impact_Wall01R_E"
+	customammo 				900
+	Clipsize				30
+	damagemod .5
+	ratemod .35
+	velocitymod	1.1
+	ReloadTimeModifier  1.4
+hasAnimOverrides 1
+animReadyRun BOTH_ATTACK2 
+animReady BOTH_ATTACK2 
+animReadyWalk BOTH_ATTACK2 
+animReadyNoAmmo BOTH_ATTACK2 
+animAttackRun BOTH_ATTACK2 
+animAttack BOTH_ATTACK2 
+animAttackWalk BOTH_ATTACK2 
+}
+WeaponInfo1
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_oldrepswords"
+	WeaponName			"Vibrosaber" 
+	SelectSound "sound/weapons/blade/slash2.mp3"
+}
+WeaponInfo2
+{
+	WeaponToReplace		WP_ROCKET_LAUNCHER
+	WeaponBasedOff		WP_ROCKET_LAUNCHER
+	MissileMissEffect	"Grenades/EXP_Alt"
+	MissileEffect		"rockets/missile"
+	NewWorldModel		"models/weapons2/dummyblaster/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_wristrocket"
+	WeaponName			"Wrist Rockets"
+	clipSize			1
+	CustomAmmo			4
+	hasAnimOverrides	1
+	animReadyRun		TORSO_WEAPONREADY2
+	animReady			TORSO_WEAPONREADY2
+	animReadyWalk		TORSO_WEAPONREADY2
+	animReadyNoAmmo		BOTH_ATTACK2
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+	animStand			BOTH_STAND1 //lower
+	ReloadTimeModifier	1.4
+	velocityMod			1.1
+}
+
+}
+
+
+description	"Brejik
+ 
+Agressive Leader of the Black Vulkars, Uses Various Explosive Elements to get the Job Done.
+
+^2Weaponry:
+- Melee
+-- 15% Percent Faster Movement Speed
+- Brejik's Blaster Pistol 
+-- Blaster Pistol (3)
+-- 65+ RoF, 50%- Damage, Mag Reload
+-- 15% Slower Movement
+- Vibrosaber
+-- 15% Faster Movement Speed
+-- Saber Defense (2)
+-- No Blaster Defense/Deflect
+- Frag Grenade (1)
+- Pulse Grenade (2)
+- Thermal Grenade (5)
+- Concussion Grenades (2)
+- Wrist Rockets (5) (Rocket Launcher)
+-- Staggers/pushes on det
+-- 10% more velocity
+-- 40% slower reload
+
+^8Attributes:
+- Blast Armor
+- Tracking Beacon
+- Anti MT (1)
+- Environment Protection (1)
+- Beskar (1)
+- Dexterity (1)
+- Healing (1)
+- Stamina (1)
+- Rally
+- Black Vulkar Bodyguard (Vulkar Round Spawn)
+
+^8Abilities:
+- Sprint (1) ^3[CS2]
+- Dodge ^3[CS1]
+- Combat Roll ^3[CS3]
+- Call In Vulkar (Spawns Strong Melee Vulkar) ^3[CS4]"

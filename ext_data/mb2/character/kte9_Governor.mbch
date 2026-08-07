@@ -1,0 +1,114 @@
+//Stromboli
+ClassInfo
+{
+	name		"kte9_Governor"
+	MBClass	MB_CLASS_SITH
+	classNumberLimit	2
+	
+	weapons	WP_MELEE|WP_SABER
+
+	attributes	MB_ATT_DEXTERITY,1|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_ENV_PROT,1|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_ANTI_MT,1|MB_ATT_BLAST_ARMOUR|MB_ATT_SHIELD_RECHARGE,1|MB_ATT_BESKAR,1|MB_ATT_FORCEBLOCK,1|MB_ATT_FORCEFOCUS,2|MB_ATT_PSHIELD|MB_ATT_STAMINA,3|MB_ATT_RALLY
+
+	forcepowers	FP_LIGHTNING,2|FP_DRAIN,2|FP_PUSH,2|FP_PULL,2|FP_STASIS,3|FP_LEVITATION,1|FP_GRIP,2|FP_SABERTHROW,3|FP_PROTECT,1
+
+	healthRegenAmount	1
+	healthRegenRate		1500
+	healthRegenCap		35
+	
+	maxhealth 120
+
+	modelscale			1.04
+
+	maxarmor		80
+
+	knockbacktaken	.75
+	sabermaxchain	5
+
+	classflags	CFL_BPFREEJUMPS
+
+	WP_SaberFlags	HELD_CRIPPLE
+
+	baseSpeed 225
+	
+	saber1			kotor_vibrostaff
+	saberstyle		SS_STAFF
+
+	saberdamage 120
+
+	ASMultiplier 			1.05
+	BPmultiplier			1.05
+	APmultiplier			1.05
+	CSmultiplier			1.05
+	
+
+	Resource	RESOURCE_FORCE
+	forcepool	125
+	forceregen	1.5
+	
+	special2	EAS_HI_PSHIELD
+	special3	EAS_FP_DRAIN
+	special4	EAS_FP_LIGHTNING
+
+	modelscale   1.02
+
+model		"sith_warrior"
+skin		"apprentice"
+uishader	"models/players/sith_warrior/mb2_icon_apprentice"
+
+saberStanceAnim		BOTH_SPEAR_STANCE
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace	WP_SABER			
+	WeaponBasedOff	WP_SABER			
+	NewWorldModel		"models/weapons2/vibblade/saber_w.glm"  
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_oldrepswords"
+	WeaponName		"Vibrostaff"
+	SelectSound "sound/weapons/blade/slash2.mp3"
+}
+
+
+
+description	"Sith Governor
+
+A Sith Apprentice in a heavy combat suit. Has increased resilience and dueling abilities.
+
+^2Weaponry:
+- Melee
+- Dueling Vibro-Staff (Staff)
+-- Saber Defense (2)
+-- No Blaster Defense/Deflect
+-- Cripples on hit
+-- BP Free Jumps
+-- 5 Hit Combo
+-- Saber Throw (3) ^3[CS1]
+
+^8Powers:
+- Protect (1)
+- Lightning (2) ^3[CS4]
+- Drain (2) ^3[CS3]
+- Push (2)
+- Pull (2)
+- Stasis (3)
+- Jump (1)
+- Grip (2)
+
+^8Attributes:
+- Dexterity (1)
+- Knockdown Roll
+- Combat Suit (Env Protection 1)
+- Anti MT (1)
+- Blast Armor
+- Armor Regen (1)
+- Rally
+- Stamina (3)
+- Beskar (1)
+- Force Block (1)
+- Force Focus (2)
+- 25% Less Knockback Taken
+
+^3Abilities:
+- Sith Personal Shield ^3[CS3]"
