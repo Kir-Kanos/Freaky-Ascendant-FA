@@ -11,7 +11,6 @@ ClassInfo
 
 	forcepowers			FP_LEVITATION,1|FP_PUSH,3|FP_SABER_OFFENSE,3|FP_SEE,3|FP_SABERTHROW,2|FP_GRIP,3|FP_ABSORB,1|FP_LIGHTNING,3|FP_BLIND,3|FP_PULL,2
 
-
 AB_FLightningFlags	HELD_DISRUPTIFY|HELD_LIFESTEAL|HELD_CRIPPLE|HELD_LOWDAMAGE
 
 	maxhealth			110
@@ -70,7 +69,6 @@ A Jedi Sentinel with Sith Training with greater force sight and controlling powe
 -- 135% Spec Dmg mult
 -- EX Saber Throw (2) ^3[CS1]
 --- 33% more Dmg
-
 
 ^5Force Powers:
 - Jump (1)
