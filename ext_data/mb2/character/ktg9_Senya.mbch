@@ -1,0 +1,103 @@
+//Stromboli
+ClassInfo
+{
+	name		"ktg9_Senya"
+	MBClass	MB_CLASS_SITH
+	classNumberLimit	1
+	
+	weapons	WP_MELEE|WP_SABER
+
+	attributes	MB_ATT_DEXTERITY,3|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_ENV_PROT,1|MB_ATT_ANTI_MT,1|MB_ATT_BLAST_ARMOUR|MB_ATT_SHIELD_RECHARGE,1|MB_ATT_BESKAR,1|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_PSHIELD|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_FP_REPULSE|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_FLIPKICK,2|MB_ATT_STAMINA,1
+
+	forcepowers	FP_PUSH,3|FP_PULL,3|FP_STASIS,3|FP_LEVITATION,2|FP_SABERTHROW,3|FP_PROTECT,1|FP_GRIP,2
+
+	healthRegenAmount	1
+	healthRegenRate		1500
+	healthRegenCap		35
+	
+	maxhealth 110
+
+	modelscale			1.04
+
+	maxarmor		50
+
+	knockbacktaken	.80
+	sabermaxchain	3
+
+	classflags	CFL_BPFREEJUMPS
+
+	baseSpeed 230
+	
+	saber1			lightsaber_pike_legends
+	saberstyle		SS_DESANN|SS_TAVION|SS_STRONG|SS_FAST|SS_STAFF
+	sabercolor	4
+
+	saberdamage 160
+
+	ASMultiplier 			1.00
+	BPmultiplier			1.00
+	APmultiplier			1.05
+	CSmultiplier			1.00
+	
+
+	Resource	RESOURCE_FORCE
+	forcepool	115
+	forceregen	1.4
+	
+	special1	EAS_HI_SPRINT
+	special2	EAS_HI_PSHIELD
+	special3	EAS_HI_DEX
+	special4	EAS_FP_REPULSE
+
+	modelscale   1.01
+
+model		"senya"
+skin		"default"
+uishader	"models/players/senya/mb2_icon_default"
+
+saberStanceAnim		BOTH_SPEAR_STANCE
+
+}
+
+
+description	"Senya
+
+Martially focused Lightsaber Pike Users, who prefers to take on damage than reflect it.
+
+^2Weaponry:
+- Melee
+- Dueling Vibro-Staff (Staff/Cyan/Blue/Red/Purple)
+-- Saber Defense (2)
+-- No Blaster Defense/Deflect
+-- BP Free Jumps
+-- 3 Hit Combo
+-- Saber Throw (3) ^3[CS1]
+
+^8Powers:
+- Protect (1)
+- Push (3)
+- Pull (3)
+- Stasis (3)
+- Jump (2)
+- Grip (2)
+- Repulse ^3[CS4]
+
+^8Attributes:
+- Dexterity (3)
+- Strength (1)
+- Knockdown Roll
+- Combat Suit (Env Protection 1)
+- Anti MT (1)
+- Blast Armor
+- Armor Regen (1)
+- Rally
+- Stamina (3)
+- Beskar (1)
+- Force Block (2)
+- Force Focus (2)
+- 20% Less Knockback Taken
+- Flipkick (2)
+
+^3Abilities:
+- Zakuulan Personal Shield ^3[CS3]
+- Dex Roll ^3[CS2]"
