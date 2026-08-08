@@ -2,11 +2,12 @@ ClassInfo
 {
 	name				"kte2_HK50"
  classNumberLimit   	3
+ extralives				1
 	MBClass   MB_CLASS_WOOKIE
 
  weapons   WP_MELEE|WP_THERMAL
 
- attributes    MB_ATT_RECHARGE,1|MB_ATT_AMMO,3|MB_ATT_BESKAR,2|MB_ATT_BLAST_ARMOUR,1|MB_ATT_ANTI_MT,1|MB_ATT_TRACKING_BEACON|MB_ATT_FLAMETHROWER,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_ASSEMBLE,2|MB_ATT_SELFEXPLODE,1
+ attributes    MB_ATT_RECHARGE,1|MB_ATT_AMMO,3|MB_ATT_BESKAR,2|MB_ATT_BLAST_ARMOUR,1|MB_ATT_ANTI_MT,1|MB_ATT_TRACKING_BEACON|MB_ATT_FLAMETHROWER,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_ASSEMBLE,2
 	
  classflags      	CFL_SEEING_STEALTH|CFL_BLOODYMELEE|CFL_ACIDBLOOD
  WP_DCCarbineFlags	HELD_ALTRELOAD|HELD_SLOW
@@ -71,7 +72,7 @@ ClassInfo
 
 	c_att_skill_5	MB_ATT_BASE_TD	
 	c_att_names_5	"Plasma Grenade"	
-	c_att_ranks_5	2,1,1	
+	c_att_ranks_5	2,0,2	
 	c_att_descs_5	"Base Thermal Grenade, +150% Damage"
 
 	c_att_skill_6	MB_ATT_PLX1
@@ -85,11 +86,11 @@ ClassInfo
 
 	c_att_skill_8	MB_ATT_TRACKING_DART
 	c_att_names_8	"Tracking Darts"
-	c_att_ranks_8	2,2,2
+	c_att_ranks_8	2,0,0
 
 	c_att_skill_9	MB_ATT_SELFEXPLODE
 	c_att_names_9	"Overheat Internal Core"
-	c_att_ranks_9	0,2,2
+	c_att_ranks_9	2,2,2
 	c_att_descs_9	"Detonate Yourself NOW! ^3[CS3]"
 
 	c_att_skill_10	MB_ATT_SPY_DISGUISE
@@ -187,6 +188,7 @@ WeaponInfo2
 	MissileEffect		"Blaster/Shot01R"
 	altfireenabled		0
 }
+
 WeaponInfo3
 {
 	WeaponToReplace			WP_THERMAL
@@ -197,6 +199,7 @@ WeaponInfo3
 	WeaponName  				"Plasma Grenades"
 	damagemod 2.5
 }
+
 WeaponInfo4
 {
 	WeaponToReplace	WP_DET_PACK
@@ -212,6 +215,15 @@ altMissileMissEffect    "firegrenade/prim_explode_enhanced2"
 	splashRadius 400
 }
 
+WeaponInfo5
+{
+	WeaponToReplace		WP_PLX1
+	WeaponBasedOff		WP_PLX1
+	NewWorldModel		"models/weapons2/e60r_launcher/e60r_launcher_w.glm"
+	NewViewModel		"models/weapons2/e60r_launcher/e60r_launcher.md3"
+	Icon				"gfx/hud/w_icon_e60r_launcher"
+	WeaponName			"Body Count Expander"
+}
 
 description "HK-50 Assassin Droid 
 
