@@ -87,9 +87,9 @@ ClassInfo
 	c_att_descs_9	"Beskar 1, Covers Chest Only"
 
 	c_att_skill_10	MB_ATT_E_22
-	c_att_names_10	"Republic Assualt Blaster"
+	c_att_names_10	"Republic Assault Blaster"
 	c_att_ranks_10	4,4,2
-	c_att_descs_10	"100 Percent Faster Rof, 50% Less Damage, 40% Less FP Drain, 15% Slower Movement"
+	c_att_descs_10	"100%+ Rof, 50%- Damage, 40%- FP Drain, 60%- Velocity, 15% Slower Movement"
 
 	c_att_skill_11	MB_ATT_ASSEMBLE
 	c_att_names_11	"Assemble"
@@ -159,10 +159,10 @@ description	"MK-1 Sentinel Droid
 Mass-produced, Tanky Wardroids equipped with old world technology.
 
 ^2Weaponry:
-- Heavy Melee
+- Melee
 
 ^8Attributes:
-- Strength 1
+- Strength (1)
 - Blast Armor
 - 25% Less Knockback Taken
 - Reinforcements (1)
