@@ -1,0 +1,79 @@
+//Fuse
+ClassInfo
+{
+	name				"ktg10_Scourge"
+	weapons				WP_SABER|WP_MELEE
+	attributes			MB_ATT_DEFLECT,2|MB_ATT_FORCEBLOCK,3|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_BLAST_ARMOUR,1|MB_ATT_ROSHTAUNT,1|MB_ATT_WOOKIEE_FURY,2
+	
+	saberstyle SS_STRONG|SS_DESANN|SS_MEDIUM
+	saber1			lord_scourge
+	sabercolor		0
+
+	saber1_5			tyrant_leg
+	sabercolor_5		0
+	BPmultiplier		1.1
+	APmultiplier		1.25
+	ASmultiplier	    1.1
+	CSmultiplier	    1.12
+	forcepowers			FP_PUSH,2|FP_SEE,2|FP_PULL,2|FP_SABERTHROW,3|FP_LEVITATION,3|FP_GRIP,2|FP_ABSORB,2|FP_RAGE,3
+	maxhealth			125
+	maxarmor			125
+	forcepool			125
+	forceregen			0.95
+	MBClass				MB_CLASS_JEDI
+	speed				1.03
+	classNumberLimit  	1
+	damageGiven         1.0
+	saberThrowDamage  77
+	classflags 			CFL_NOPICKUPS|CFL_HEAVYMELEE
+	modelscale		1.18
+	
+	special1		EAS_FP_SABERTHROW
+	special2 		EAS_FP_RAGE
+	special3 		EAS_FP_ABSORB
+	special4 		EAS_FP_GRIP
+	resource		RESOURCE_RAGE
+	damagetaken		1.0
+	
+	 resourceRegenAmount 1
+	resourceRegenRate 150
+	resourceRegenCap 125
+
+	uioverlay_r "gfx/icons/frontline"
+	uioverlay_l	"gfx/icons/brawler"
+	
+	model			"scourge"
+	skin				"default"
+	uishader			"models/players/scourge/icon_default"
+	ragesoundoverride	"sound/chars/scourge/misc/anger1"
+}
+
+description	"Lord Scourge [Sith]
+
+An ancient sith and former Emperors Hand, Scourge turned against Vitiate by allying with the Hero of Tython to stop him wiping out all life.
+
+^2Weaponry:
+- Heavy Melee
+- Lightsaber (Yellow/Red/Purple)
+-- Blaster Defense (1)
+-- Saber Defense (3)
+-- Saber Deflect (2)
+-- 10% longer reach
+-- EX Saber Throw (3) ^3[CS1]
+--- Fixed 77 Damage
+
+^5Force Powers:
+- Jump (3)
+- Push (2) 
+- Pull (2)
+- Sense (2)
+- Rage (3) ^3[CS2]
+- Absorb (2) ^3[CS3]
+- Grip (2) ^3[CS4]
+- Force Block (3)
+- Force Focus (2)
+
+^8Attributes:
+- Blast Armor
+- Master Interrogator (Toxic Taunt)
+- Uses Rage as Resource"
