@@ -56,7 +56,7 @@ customblue 50
 	c_att_skill_1	MB_ATT_EE4
 	c_att_names_1	"Hunting Blaster Rifle"
 	c_att_ranks_1	1,2,2
-	c_att_descs_1	"EE-4, 15%+ Damage, 10%- RoF'
+	c_att_descs_1	"EE-4, 15%+ Damage, 10%- RoF"
 
 	c_att_skill_2	MB_ATT_POWER
 	c_att_names_2	"Energy Pool (110)"
