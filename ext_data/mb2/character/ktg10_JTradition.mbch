@@ -40,9 +40,9 @@ ClassInfo
 
 	uioverlay			"gfx/icons/support"
 	
-	model			"gwethenea"
-	skin				"jedihood"
-	uishader			"models/players/gwethenea/mb2_icon_jedihood"
+	model			"jedi_FemNew"
+	skin				"hf1"
+	uishader			"models/players/jedi_FemNew/mb2_icon_hf1"
 
 }
 
