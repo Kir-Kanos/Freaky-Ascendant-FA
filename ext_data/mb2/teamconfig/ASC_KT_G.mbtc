@@ -67,6 +67,7 @@ SubclassesForClass3
  	Subclass14	"ktg7_Kelborn"
 	Subclass15  "ktg7_Roland"
 	Subclass16	"ktg7_LTGrenn"
+	Subclass17  "ktg7_Theron"
 }
 
 SubclassesForClass4
@@ -75,6 +76,7 @@ SubclassesForClass4
 	Subclass2	"ktg8_Marl"
   Subclass3	"ktg8_Freyyr"
 	Subclass4	"ktg8_Bralor"
+	Subclass5	"ktg8_Jace"
 
 }
 
@@ -97,6 +99,8 @@ SubclassesForClass5
   Subclass15	"ktg9_JGladiator"
   Subclass16	"ktg9_JBattle"
   Subclass17	"ktg9_JAcrobat"
+  Subclass18	"ktg9_Satele"
+  Subclass19	"ktg9_Senya"
 }
 
 SubclassesForClass6
@@ -113,4 +117,6 @@ SubclassesForClass6
 	Subclass10  "ktg10_Kaevee"
 	Subclass11	"ktg10_JTradition"
 	Subclass12	"ktg10_Kreia"
+	Subclass13	"ktg10_Nomi"
+	Subclass14	"ktg10_Scourge"
 }
