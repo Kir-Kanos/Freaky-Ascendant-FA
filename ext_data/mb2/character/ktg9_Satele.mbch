@@ -8,9 +8,13 @@ ClassInfo
 	weapons				WP_SABER|WP_MELEE
 	WP_SaberFlags		HELD_NODISARM
 
-	attributes			MB_ATT_DEFLECT,2|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_HEALING,1|MB_ATT_SABER_COMBO,1|MB_ATT_CORTOSIS,2|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,1|MB_ATT_STAMINA,1|MB_ATT_DEXTERITY,3|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_BUNNY_HOP,1|MB_ATT_ENV_PROT,1|MB_ATT_FP_REPULSE
+	attributes			MB_ATT_DEFLECT,2|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_CORTOSIS,2|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,1|MB_ATT_STAMINA,1|MB_ATT_DEXTERITY,3|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_BUNNY_HOP,1|MB_ATT_ENV_PROT,1|MB_ATT_FP_REPULSE
 
-	forcepowers			FP_SABER_OFFENSE,2|FP_LEVITATION,3|FP_PUSH,3|FP_PULL,3|FP_SABERTHROW,3|FP_SEE,1
+	forcepowers			FP_SABER_OFFENSE,2|FP_LEVITATION,3|FP_PUSH,3|FP_PULL,3|FP_SABERTHROW,3|FP_SEE,1|FP_STASIS,2
+
+	healthRegenAmount	1
+	healthRegenRate	1500
+	healthRegenCap		35	
 
 	maxhealth			110
 
@@ -18,7 +22,7 @@ ClassInfo
 	forceregen			1.35
 	resource			RESOURCE_FORCE
 
-	classflags			CFL_NOPICKUPS
+	classflags			CFL_NOPICKUPS|CFL_BPFREEJUMPS
 
 	speed				1.07
 	damageGiven			1.1
@@ -40,8 +44,7 @@ ClassInfo
 
 	special1			EAS_HI_SPRINT
 	special2			EAS_HI_DEX
-
-	special3			EAS_FP_REPULSE
+	special4			EAS_FP_REPULSE
 
 	uioverlay			"gfx/icons/frontline"
 
@@ -77,7 +80,22 @@ A force enhanced Jedi with high telekinetic powers.
 - Push (3)
 - Pull (3)
 - Repulse ^3[CS4]
+- Sense (1)
+- Stasis (2)
 
 ^8Attributes:
 - Force Block (2)
-- Force Focus (2)"
+- Force Focus (2)
+- Stamina (1)
+- Anti MT (1)
+- Dexterity (3)
+- Bunny Hop (1)
+- Health Regen Capped at 35
+- Tutaminis (Cortosis 2/Blast Armor)
+- Knockdown Roll
+- Environmential Protection (1)
+
+^8Abilities:
+- Sprint (1) ^3[CS1]
+- Dex Roll ^3[CS2]
+"
