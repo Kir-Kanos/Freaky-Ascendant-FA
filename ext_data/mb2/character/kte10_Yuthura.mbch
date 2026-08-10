@@ -8,16 +8,16 @@ ClassInfo
 	
 	weapons				WP_MELEE|WP_SABER
 
-	attributes			MB_ATT_FORCEBLOCK,1|MB_ATT_FORCEFOCUS,1|MB_ATT_DEFLECT,3|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_DEXTERITY,3|MB_ATT_FLIPKICK,1|MB_ATT_DASH,1|MB_ATT_POISON_DART,4|MB_ATT_FLOAT_HOP|MB_ATT_RALLY|MB_ATT_DISP_FORCE,3|MB_ATT_DISP_BLOCK,1|MB_ATT_INAIR_FORCE_REGEN
+	attributes			MB_ATT_FORCEBLOCK,1|MB_ATT_FORCEFOCUS,1|MB_ATT_DEFLECT,3|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_DEXTERITY,3|MB_ATT_FLIPKICK,1|MB_ATT_DASH,1|MB_ATT_POISON_DART,4|MB_ATT_FLOAT_HOP|MB_ATT_RALLY|MB_ATT_DISP_FORCE,3|MB_ATT_DISP_BLOCK,1|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_SPEEDLUNGE|MB_ATT_INAIR_FORCE_REGEN
 
-	forcepowers			FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_PUSH,1|FP_PULL,3|FP_PROTECT,2|FP_GRIP,2|FP_DRAIN,1|FP_LIGHTNING,1|FP_SABERTHROW,3|FP_SPEED,2	
+	forcepowers			FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_PUSH,1|FP_PULL,3|FP_PROTECT,2|FP_GRIP,2|FP_DRAIN,1|FP_LIGHTNING,1|FP_SABERTHROW,3|FP_SPEED,1	
 
 AB_PDartFlags	HELD_TRACKING|HELD_FLASH
 WP_MeleeFlags	HELD_DISARM
 WP_SaberFlags	HELD_FLASH|HELD_STUN|HELD_CRIPPLE	
 
 	maxhealth		100
- maxarmor  15
+ maxarmor  5
 	healthRegenAmount 1
 	healthRegenRate 1500
 	healthRegenCap	35
@@ -80,6 +80,7 @@ A agile instructor with a precision disabling lightsaber style and cunning abili
 -- 80 Damage Saber
 -- 300% Spec Dmg Mult
 -- Much less Radius
+-- Combo Limit: 4
 -- Blinds/Cripples/Stuns (Go for the eyes!)
 -- EX Saber Throw (3) ^3[CS1]
 --- 60 Damage
@@ -89,7 +90,7 @@ A agile instructor with a precision disabling lightsaber style and cunning abili
 - Push (1)
 - Pull (3) 
 - Protect (2) ^3[CS4]
-- Force Speed (2)
+- Force Speed/Speed Lunge (1)
 - Drain (1)
 - Lightning (1)
 - Grip (2)
@@ -99,6 +100,7 @@ A agile instructor with a precision disabling lightsaber style and cunning abili
 - Force Block/Focus (1)
 - Slow Faller
 - To me Acolytes! (Rally)
+- Knockdown Roll
 - Agile Meditation (Force Regen In Air)
 
 ^8Abilities:
