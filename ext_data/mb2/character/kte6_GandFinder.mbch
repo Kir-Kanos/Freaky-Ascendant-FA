@@ -2,7 +2,7 @@
 ClassInfo
 {
 	name  			"kte6_GandFinder"
-	classNumberLimit	2
+	classNumberLimit	4
 	MBClass 		MB_CLASS_BATTLEDROID
 
 	weapons 		WP_SABER|WP_MELEE|WP_T21|WP_SONIC_NADE|WP_FLECHETTE|WP_REPEATER
