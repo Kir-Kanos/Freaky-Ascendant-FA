@@ -30,9 +30,9 @@ ClassInfo
 
 	sabermaxchain 		3
 
-	APmultiplier		1.20
+	APmultiplier		1.15
 	BPmultiplier		1.20 
-	ASmultiplier		0.90 
+	ASmultiplier		0.95
 	CSmultiplier		0.95
 
 	saberThrowDamage 	60
@@ -61,11 +61,11 @@ ClassInfo
 
 description	"Uthar Wynn
 
-Headmaster of the sith academy, he leads by stalwart example and uses his students as meatshields as he advances slowly.
+Headmaster of the sith academy, he is a tanklike force on the battlefield
 
 ^2Weaponry:
 - Melee
-- Sith Academy Double-Bladed Lightsaber (Staff/Red)
+- Lightsaber Staff (Staff/Red)
 -- Saber Defense (3)
 -- Blaster Defense (3)
 -- Blaster Deflect (3)
@@ -89,7 +89,7 @@ Headmaster of the sith academy, he leads by stalwart example and uses his studen
 - 20% Less Knockback Taken
 - Rally
 - Anti MT 1
-- ights Beacon
+- Lights Beacon
 
 ^8Abilities:
-- BP Dispenser 3"
+- Block Dispenser (3) ^3[USE In Melee]"
