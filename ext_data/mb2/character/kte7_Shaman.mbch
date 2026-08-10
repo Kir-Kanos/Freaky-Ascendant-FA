@@ -18,7 +18,7 @@ ClassInfo
 
 	maxhealth		80
 	maxarmor  80
-	basespeed		220
+	basespeed		225
 
 	WP_ClonePistolFlags    HELD_ALTRELOAD
 	WP_SaberFlags HELD_SPEED|HELD_POISON
