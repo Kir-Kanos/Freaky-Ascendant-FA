@@ -41,8 +41,6 @@ ClassInfo
 	
 	saber1			kotor_vibrosword
 	saberstyle		SS_MEDIUM|SS_STRONG|SS_FAST	
-	saber1_1			kotor_vibrostaff
-	saberstyle_1		SS_STAFF
 	
 	saberdamage 130
 		
