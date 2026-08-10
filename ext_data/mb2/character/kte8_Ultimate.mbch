@@ -21,7 +21,7 @@ classflags	CFL_BLOODYMELEE|CFL_BPFREEJUMPS|CFL_STATVIEWER
 saber1	gamo_axe_legends
 saberstyle	SS_STRONG
 
-saber1_1  		ispdvba
+saber1_1  		UltimateStaff_ASC
 saberstyle_1 	SS_STAFF
 
 saberDamageStyle SS_STRONG,250|SS_STAFF,150
