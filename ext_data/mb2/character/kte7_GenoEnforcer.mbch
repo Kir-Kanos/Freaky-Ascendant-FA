@@ -51,7 +51,7 @@ ClassInfo
 	c_att_skill_0		MB_ATT_MINIGUN
 	c_att_names_0		"Wind Up Darts"
 	c_att_ranks_0		8
-	c_att_descs_0		"Minigun, 35%- Damage, Tracking/Poison/Cripple/FF"
+	c_att_descs_0		"Minigun, 35%- Damage/FP Drain, 20%- RoF, Tracking/Poison/Cripple/FF"
 
 	c_att_skill_1		MB_ATT_THROWER
 	c_att_names_1		"Disintegration Thrower"
