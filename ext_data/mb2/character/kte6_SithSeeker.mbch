@@ -47,11 +47,11 @@ AB_TDartFlags HELD_FORCEFOCUS|HELD_CRIPPLE
 	sabercolor		0
 	saberstyle		SS_STAFF|SS_TAVION
 
-	saber1_1		royal_pike_legends
+	saber1_1		Force_Pike_ASC
 	saberstyle_1		SS_FAST|SS_MEDIUM
 
-	saber1_2		royal_pike_legends
-	saber2_2		royal_pike_legends
+	saber1_2		Force_Pike_ASC
+	saber2_2		Force_Pike_ASC
 	saberstyle_1		SS_DUAL|SS_DESANN
 }
 WeaponInfo0
