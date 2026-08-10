@@ -11,8 +11,8 @@ ClassInfo
 	
 	starthealth			70
 	maxhealth 	125
-	forcepool		85
-	forceregen	.95
+	forcepool		120
+	forceregen	.80
 	
 	extralives 2
 
