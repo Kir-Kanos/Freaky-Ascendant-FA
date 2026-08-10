@@ -104,7 +104,6 @@ model_3				"jedipack_hb"
 skin_3				"default"	
 uishader_3			"models/players/jedipack_hb/mb2_icon_default"
 
-special1 EAS_HI_DEX
 special2 EAS_HI_STIMPACK
 special3 EAS_FP_REPULSE
 special4 EAS_HI_GRAPPLEHOOK
@@ -218,7 +217,7 @@ customSpecIcon_3 "gfx/menus/alpha/icon_weap_stun"
 	c_att_skill_23 	MB_ATT_DEXTERITY
 	c_att_names_23 	"Force Agility"
 	c_att_ranks_23	0,0,2
-	c_att_descs_23	"Dexterity, Unlocks Dex Roll ^3[CS1]"
+	c_att_descs_23	"Dexterity"
 
 	c_att_skill_24 	MB_ATT_FLIPKICK
 	c_att_names_24 	"Force Kick"
