@@ -1,0 +1,52 @@
+UltimateStaff_ASC
+{
+	name					"Mandalorian War Blade"
+	saberType			SABER_STAFF
+	saberModel			"models/weapons2/sab_hilts/ispdvb/ispdvb.glm"
+	customSkin			"models/weapons2/sab_hilts/ispdvb/ispdvb_def.skin"
+ noManualDeactivate	 1
+	numBlades		2
+	saberLength			30
+	saberLength2	30
+	saberRadius			3
+	saberRadius2		3
+	saberStyle			staff
+	singleBladeStyle		dual
+	blasterBlocking			0
+	twoHanded			1
+	throwable			0
+	singleBladeThrowable	0
+	bounceOnWalls			0
+	noWallMarks			1
+	noDlight			1
+	noBlade				1
+	noIdleEffect			1
+	g2MarksShader			none
+	trailStyle			1
+	hitPersonEffect			"sparks/blood_sparks2"
+	hitOtherEffect		"sparks/spark_nosnd"
+	blockEffect			"sparks/spark_exp_nosnd"
+	soundOn	"sound/weapons/swordraiden/draw1.mp3"
+	soundLoop	"s/w/shwartz/saberhum1.wav"
+	soundOff	"s/w/shwartz/saberhup3.mp3"
+	spinsound	"s/w/v/swish2.mp3"
+	swingSound1		"sound/weapons/swordraiden/swing---.mp3"
+	swingSound2	"sound/weapons/swordraiden/swing--.mp3"
+	swingSound3	"sound/weapons/swordraiden/swing-.mp3"
+	fallSound1				"sound/weapons/sword/fall4.mp3"
+	fallSound2			"sound/weapons/sword/fall5.mp3"
+	fallSound3				"sound/weapons/sword/fall6.mp3"
+	bounceSound1			"sound/weapons/sword/stab1.mp3"
+	bounceSound2			"sound/weapons/sword/stab2.mp3"
+	bounceSound3			"sound/weapons/saber/saber_catch.mp3"
+	hitSound1	"sound/weapons/swordraiden/heavyhit1.mp3"
+	hitSound2	"sound/weapons/swordraiden/heavyhit2.mp3"
+	hitSound3	"sound/weapons/swordraiden/heavyhit3.mp3"
+	blockSound1			"sound/weapons/saber/saberbounce1.mp3"
+	blockSound2			"sound/weapons/saber/saberbounce2.mp3"
+	blockSound3			"sound/weapons/saber/saberbounce3.mp3"
+jumpAtkFwdMove LS_A_BACKFLIP_ATK
+jumpAtkRightMove LS_A3_SPECIAL
+jumpAtkLeftMove LS_A1_SPECIAL
+lungeAtkMove	LS_ROLL_STAB
+}
