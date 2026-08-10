@@ -40,7 +40,6 @@ Classinfo
 	//WalkBackward 	BOTH_WALK2
 	WalkForward 	BOTH_WALK2
 	RunForward BOTH_RUN_STAFF
-	saberStanceAnim BOTH_B1_TR___
 
 	modelscale 			0.6
 	uioverlay "gfx/icons/frontline"
