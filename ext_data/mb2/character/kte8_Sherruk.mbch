@@ -84,14 +84,16 @@ WeaponInfo0
 
 description	"Sherruk
 
-A Mandalorian rush down raider who uses looted lightsabers to great effect through his martial might.
+A Mandalorian rush down raider who uses looted weapons to great effect through his martial might.
 
 ^2Weaponry:
 - Heavy Melee
 -- 15% Faster Movement
-- Looted Lightsabers (Duals/Cyan)
+- Looted Lightsabers (Duals)
 -- No Blaster Block
 -- Saber Defense (2)
+-- BP-Free Jumps
+-- ^3Disarms On Hit
 
 ^8Attributes:
 - 40% less Kb Taken
