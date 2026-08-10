@@ -4,7 +4,7 @@ bomabeastmaster
 	playerModel 	bomabeast
 	MB_ATT_SLAVE
 	weapon		WP_MELEE
-	health		400
+	health		350
 	FL_NO_KNOCKBACK 1
 	forceImmunity     1
 	headPitchRangeDown 30
