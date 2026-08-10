@@ -35,7 +35,7 @@ saberstyle_3        SS_STRONG
     
 classflags          CFL_BLOODYMELEE|CFL_STRONGAGAINSTPHYSICAL
 
-special1            EAS_FP_RAGE
+special1            EAS_HI_RAGE
 special2            EAS_HI_BARGE
 special3            EAS_HI_BINOCULARS
 special4		EAS_HI_TRACKER
@@ -108,12 +108,16 @@ A bloodthirsty Wookiee bounty hunter. Driven by rage and lethal trap-laying, he 
 
 ^8Attributes:
 - Strength (3)
-- Tracking Darts (8)
 - 30% Less Knockback Taken
 - Blast Armor
 - Melee Resist
-- Wookiee Fury (2)
-- Barge
+- Wookiee Fury (2) ^3[CS1]
+- Barge ^3[CS2]
 - Healing (2)
 - Dexterity (1)"
+
+^8Abilities:
+- Tracking Darts (4) ^3[CS4]
+- Binoculars ^3[CS3]
+
 }
