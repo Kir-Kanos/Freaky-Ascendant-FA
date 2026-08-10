@@ -3,7 +3,7 @@ ClassInfo
 {
 	name		"kte9_Governor"
 	MBClass	MB_CLASS_SITH
-	classNumberLimit	2
+	classNumberLimit	1
 	
 	weapons	WP_MELEE|WP_SABER
 
