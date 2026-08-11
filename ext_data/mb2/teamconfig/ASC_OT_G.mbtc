@@ -6,9 +6,9 @@ EUAllowed 0
 
 Classes
 {
-	class1	"h1_Militia"
-	class2	"h4_Chir"
-	class3	"h5_AstroR2"
+	class1	"otg1_Militia"
+	class2	"otg4_Chir"
+	class3	"otg5_AstroR2"
 	class4	"otg7_Scavenge"
 	class5	"otg9_Ahsoka"
 	class6	"otg10_Obi"
@@ -19,10 +19,10 @@ SubclassesForClass1
 	Subclass1	"otg1_NPrisoner"
 	Subclass2	"otg1_RebelET"
 	Subclass3	"asg2_Luthen"
-	Subclass4	"h2_JynE"
+	Subclass4	"otg2_JynE"
 	Subclass5	"otg2_Han"
 	Subclass6	"otg2_Lando"
-	Subclass7	"h2_JanO"
+	Subclass7	"otg2_JanO"
 	Subclass8	"otg2_RebelSabo"
 	Subclass9	"otg1_RebGuerrillaHeavyGunner"
 	Subclass10	"otg1_RebGuerrillaSpotter"
@@ -30,7 +30,7 @@ SubclassesForClass1
 	Subclass12	"otg2_RebGuerrillaSalvagedDroid"
 	Subclass13	"otg2_RebOfficer"
 	Subclass14	"otg2_HonorG"
-	Subclass15	"h2_Pork"
+	Subclass15	"otg2_Pork"
 	Subclass16	"otg2_Kyle"
 }
 
@@ -45,9 +45,9 @@ SubclassesForClass2
 
 SubclassesForClass3
 {
-	Subclass1	"h5_Dash"
-	Subclass2	"h6_Andor"
-	Subclass3	"h6_Nien"
+	Subclass1	"otg5_Dash"
+	Subclass2	"otg6_Andor"
+	Subclass3	"otg6_Nien"
 	Subclass4	"otg6_RiannaS"
 	Subclass5	"otg5_BoKatan"
 }
@@ -58,8 +58,8 @@ SubclassesForClass4
 	Subclass2	"otg7_RebSapper"
 	Subclass3	"otg7_RebSpecOps"
 	Subclass4	"otg7_Hera"
-	Subclass5	"h7_Leia"
-	Subclass6	"h7_Lobot"
+	Subclass5	"otg7_Leia"
+	Subclass6	"otg7_Lobot"
 	Subclass7	"otg7_RebEngie"
 	Subclass8	"h8_Chewie"
 	Subclass9	"otg8_K2SO"
