@@ -9,7 +9,7 @@ Classes
 	class1	"ote1_ImpSold"
 	class2	"ote5_JetTr"
 	class3	"ote6_ScoutTr"
-	class4	"v8_GamoPig"
+	class4	"ote8_GamoPig"
 	class5  "ote9_Vader"
 	class6	"ote10_Palp"
 }
@@ -24,16 +24,16 @@ SubclassesForClass1
 	Subclass6	"ote1_NarkinaG"
 	Subclass7	"ote1_Thug"
 	Subclass8	"ote2_FlameTr"
-	Subclass9	"v2_Greedo"
+	Subclass9	"ote2_Greedo"
 	Subclass10	"ote3_EliteStorm"
 	Subclass11	"ote3_HeavyStorm"
-	Subclass12	"v3_Trando"
+	Subclass12	"ote3_Trando"
 	Subclass13	"ote3_DeathTr"
-	Subclass14	"v3_Bossk"
+	Subclass14	"ote3_Bossk"
 	Subclass15	"ote2_ImpOfficer"
 	Subclass16	"ote2_ISBEnforcer"
 	Subclass17	"ote1_ISBTactical"
-	Subclass18	"v3_IG88"
+	Subclass18	"ote3_IG88"
 }
 
 SubclassesForClass2
@@ -41,14 +41,14 @@ SubclassesForClass2
 	Subclass1	"ote4_PurgeTr"
 	Subclass2	"ote4_RoyalPr"
 	Subclass3	"ote4_CarnorJax"
-	Subclass4	"v4_Mara"
+	Subclass4	"ote4_Mara"
 	Subclass5	"ote5_Boba"
 	Subclass6	"ote5_P0DarkTr"
 	Subclass7	"ote5_P1DarkTr"
 	Subclass8	"ote5_P2DarkTr"
 	Subclass9	"ote5_P3DarkTr"
 	Subclass10	"ote5_GadgetMando"
-	Subclass11	"v5_Kast"
+	Subclass11	"ote5_Kast"
 	Subclass12	"ote5_Cad"
 }
 
