@@ -6,10 +6,10 @@ EUAllowed 0
 
 Classes
 {
-	class1	"h1_Militia"
+	class1	"ptg1_Militia"
 	class2	"ptg3_ClonePhase1"
 	class3	"ptg5_CloneJet"
-	class4	"h8_WookWarr"
+	class4	"ptg8_WookWarr"
 	class5	"ptg9_JYoung"
 	class6	"ptg10_JHeal"
 }
@@ -18,7 +18,7 @@ SubclassesForClass1
 {
 	Subclass1	"ptg2_Panaka"
 	Subclass2	"ptg2_Padme"
-	Subclass3	"h2_JarJar"
+	Subclass3	"ptg2_JarJar"
 	Subclass4	"ptg1_Talz"
 }
 
@@ -35,18 +35,18 @@ SubclassesForClass2
 	Subclass9    "ptg3_CloneCom"
 	Subclass10   "ptg3_Arc"
 	Subclass11   "ptg3_CloneLead"
-	Subclass12   "h3_Rex"
-	Subclass13   "h3_Delta"
+	Subclass12   "ptg3_Rex"
+	Subclass13   "ptg3_Delta"
 	Subclass14   "ptg3_Hunter"
 	Subclass15   "ptg3_Echo"
 	Subclass16   "ptg4_SenGuard"
-	Subclass17   "h3_BossNass"
+	Subclass17   "ptg3_BossNass"
 }
 
 SubclassesForClass3
 {
 	Subclass1	"ptg5_NiteOwl"
-	Subclass2	"h5_AstroR2"
+	Subclass2	"ptg5_AstroR2"
 	Subclass3	"ptg5_Skirata"
 	Subclass4	"ptg5_BoKatan"
 }
@@ -54,9 +54,9 @@ SubclassesForClass3
 SubclassesForClass4
 {
 	Subclass1	"ptg7_CloneAss"
-	Subclass2	"h8_Wreck"
-	Subclass3	"h8_Tarfful"
-	Subclass4 	"h8_Chewie"
+	Subclass2	"ptg8_Wreck"
+	Subclass3	"ptg8_Tarfful"
+	Subclass4 	"ptg8_Chewie"
 }
 
 SubclassesForClass5
