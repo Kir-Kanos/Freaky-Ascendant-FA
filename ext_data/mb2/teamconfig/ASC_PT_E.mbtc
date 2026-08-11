@@ -20,11 +20,11 @@ SubclassesForClass1
 	Subclass2	"pte1_B1Heavy"
 	Subclass3 	"pte1_B1Spec"
 	Subclass4	"pte1_NB"
-	Subclass5	"v2_Hondo"
+	Subclass5	"pte2_Hondo"
 	Subclass6	"pte2_Nightsister"
-	Subclass7	"v2_Greedo"
-	Subclass8 	"v3_Trando"
-	Subclass9	"v3_Bossk"
+	Subclass7	"pte2_Greedo"
+	Subclass8 	"pte3_Trando"
+	Subclass9	"pte3_Bossk"
 	Subclass10	"pte3_HondoGang"
 
 }
@@ -35,27 +35,27 @@ SubclassesForClass2
 	Subclass2	"pte4_MagnaG"
 	Subclass3	"pte5_Geonos"
 	Subclass4	"pte5_MaulMando"
-	Subclass5	"v5_Durge"
+	Subclass5	"pte5_Durge"
 	Subclass6	"pte5_CadRe"
-	Subclass7	"v5_Watto"
+	Subclass7	"pte5_Watto"
 	Subclass8	"pte5_PreVizsla"
 }
 
 SubclassesForClass3
 {
-	Subclass1	"v6_Aurra"
-	Subclass2	"v6_Zam"
-	Subclass3	"v7_WatTam"
-	Subclass4	"v6_Dengar"
+	Subclass1	"pte6_Aurra"
+	Subclass2	"pte6_Zam"
+	Subclass3	"pte7_WatTam"
+	Subclass4	"pte6_Dengar"
 	Subclass5	"pte6_OuterRimBH"
-	Subclass6	"v6_Tusk"
+	Subclass6	"pte6_Tusk"
 	Subclass7	"pte7_Slick"
 
 }
 
 SubclassesForClass4
 {
-	Subclass1	"v8_HuttW"
+	Subclass1	"pte8_HuttW"
 }
 
 SubclassesForClass5
