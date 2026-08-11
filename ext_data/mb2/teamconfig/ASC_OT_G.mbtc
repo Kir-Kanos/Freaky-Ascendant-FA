@@ -61,13 +61,13 @@ SubclassesForClass4
 	Subclass5	"otg7_Leia"
 	Subclass6	"otg7_Lobot"
 	Subclass7	"otg7_RebEngie"
-	Subclass8	"h8_Chewie"
+	Subclass8	"otg8_Chewie"
 	Subclass9	"otg8_K2SO"
 	Subclass10	"otg8_Zeb"
-	Subclass11	"h8_Tarfful"
-	Subclass12	"h8_WookWarr"
+	Subclass11	"otg8_Tarfful"
+	Subclass12	"otg8_WookWarr"
 	Subclass13	"otg7_Senator"
-	Subclass14	"h7_Madine"
+	Subclass14	"otg7_Madine"
 }
 
 SubclassesForClass5
