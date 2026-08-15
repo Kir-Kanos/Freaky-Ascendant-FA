@@ -1,0 +1,32 @@
+WitchZombie
+{
+	displayname	"Nightsister Zombie"
+	playerModel	ns_zombie
+	weapon	WP_MELEE
+	MB_ATT_WOOKIE_STRENGTH 1
+	rank	commander
+	reactions	5
+	aim			5
+	move		5
+	aggression	5
+	evasion		5
+	intelligence 5
+	hfov		120
+	vfov		120
+	scale		102
+	playerTeam TEAM_ENEMY
+	enemyTeam	TEAM_PLAYER
+	class		CLASS_GRAN
+	snd			firaxa
+	sndcombat	firaxa
+	sndjedi		firaxa
+	yawSpeed	120
+	walkSpeed	60
+	runSpeed	190
+	health		400
+	dismemberProbHead	60
+	dismemberProbArms	60
+	dismemberProbLegs	60
+	dismemberProbHands	60
+	dismemberProbWaist	60
+}
