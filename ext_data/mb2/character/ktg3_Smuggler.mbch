@@ -62,11 +62,6 @@ model       "human_merc"
 skin         "devaronian"
 uishader     "models/players/human_merc/mb2_icon_devaronian"
 
-model_1       "jedi_tf"
-skin_1         "dxun"
-uishader_1     "models/players/jedi_tf/mb2_icon_dxun"
-
-		
 	isCustomBuild		1
 	mbPoints			50
 	
