@@ -1,0 +1,67 @@
+name "ASC_ST_G"
+
+ClassesAllowed 6
+TimePeriod 2
+EUAllowed 0
+
+Classes
+{
+	class1	"stg1_NewRep"
+	class2	"stg4_Kyle"
+	class3	"stg5_DinMando"
+	class4	"stg7_Leia"
+	class5	"stg9_Ahsoka"
+	class6	"stg10_LukeSky"
+}
+
+SubclassesForClass1
+{
+	Subclass1	"stg1_HonorG"
+	Subclass2	"stg2_CrimsonC"
+	Subclass3	"stg2_Han"
+	Subclass4	"stg2_JanO"
+	Subclass5	"stg2_Lando"
+}
+
+SubclassesForClass2
+{
+	Subclass1	"stg3_Cara"
+	Subclass2	"stg4_Finn"
+	Subclass3	"stg4_KirKanos"
+	Subclass4	"stg4_Mara"
+	Subclass5	"stg4_MrB"
+}
+
+SubclassesForClass3
+{
+	Subclass1	"stg5_Armorer"
+	Subclass2	"stg5_Boba"
+	Subclass3	"stg5_BoKatan"
+	Subclass4	"stg5_NiteOwl"
+	Subclass5	"stg5_Paz"
+	Subclass6	"stg5_R2"
+}
+
+SubclassesForClass4
+{
+	Subclass1	"stg6_Nien"
+	Subclass2	"stg7_Greef"
+	Subclass3	"stg7_Hera"
+	Subclass4	"stg7_IG11"
+	Subclass5	"stg7_Scavenge"
+}
+
+SubclassesForClass5
+{
+	Subclass1	"stg8_Chewie"
+	Subclass2	"stg8_NRSecDroid"
+	Subclass3	"stg9_JKnight"
+}
+
+SubclassesForClass6
+{
+	Subclass1	"stg10_Grogu"
+	Subclass2	"stg10_JHeal"
+	Subclass3	"stg10_Jaden"
+	Subclass4	"stg10_Rosh"
+}
