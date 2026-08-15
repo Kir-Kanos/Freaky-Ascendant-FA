@@ -26,6 +26,8 @@ SubclassesForClass1
 	Subclass8 	"pte3_Trando"
 	Subclass9	"pte3_Bossk"
 	Subclass10	"pte3_HondoGang"
+	Subclass11	"pte1_ZombSister"
+	Subclass12	"pte2_PykeDealer"
 
 }
 
@@ -39,6 +41,7 @@ SubclassesForClass2
 	Subclass6	"pte5_CadRe"
 	Subclass7	"pte5_Watto"
 	Subclass8	"pte5_PreVizsla"
+	Subclass9	"pte5_VizslaClan"
 }
 
 SubclassesForClass3
@@ -50,6 +53,9 @@ SubclassesForClass3
 	Subclass5	"pte6_OuterRimBH"
 	Subclass6	"pte6_Tusk"
 	Subclass7	"pte7_Slick"
+	Subclass8	"pte7_MoraloEval"
+	Subclass9	"pte7_RuneHaako"
+	Subclass10	"pte7_NSWitch"
 
 }
 
