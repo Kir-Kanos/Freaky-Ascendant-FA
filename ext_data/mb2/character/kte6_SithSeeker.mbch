@@ -1,4 +1,4 @@
-ClassInfo
+																										ClassInfo
 {
 	name 			"kte6_SithSeeker"
 	MBClass 			MB_CLASS_SITH
@@ -52,7 +52,10 @@ AB_TDartFlags HELD_FORCEFOCUS|HELD_CRIPPLE
 
 	saber1_2		Force_Pike_ASC
 	saber2_2		Force_Pike_ASC
-	saberstyle_1		SS_DUAL|SS_DESANN
+	saberstyle_2		SS_DUAL|SS_DESANN
+
+saberStanceAnim		BOTH_TRIPLE3_STAFFSTANCE
+
 }
 WeaponInfo0
 {
