@@ -1,0 +1,114 @@
+ClassInfo
+{
+	name  	"pte1_ZombSister"
+	MBClass 		MB_CLASS_WOOKIE
+	extralives		4
+	weapons 		WP_MELEE
+
+	WP_MeleeFlags HELD_POISON
+	
+	
+	attributes  	MB_ATT_ASSEMBLE,3|MB_ATT_GETUPS,0|MB_ATT_WOOKIEE_FURY,3|MB_ATT_HEALING,2|MB_ATT_WOOKIE_STRENGTH,1
+	forcepowers FP_RAGE,3
+	
+	maxhealth 	100
+	starthealth 50
+		
+	
+	damageTaken 	0.40
+	damageGiven  1
+	
+	knockbackTaken 	0.4
+	knockbackGiven 	0.4
+	
+	forcepool 110
+	forceregen 4.4
+	resource RESOURCE_BATTERY
+	
+	baseSpeed 162
+	skilltimermod 1.2
+	
+	classflags CFL_DISMEMBERFRAGILE|CFL_BLOODYMELEE|CFL_NOPICKUPS	
+	
+	special1 EAS_FP_RAGE
+	special2 EAS_HI_BARGE
+	special4 EAS_FP_RAGE
+
+	hackRate 4
+	disableGunBash 1
+ rateOfFire 1
+	
+	tauntAnim 	BOTH_MAND_DUAL_PISTOLS_ATTACK
+	gloatAnim 	BOTH_GUNGAN_TAUNT
+	flourishAnim BOTH_STEADYSELF1
+	bowAnim 		BOTH_WOOKIEE_RAGE_STAND_IDLE
+	meditateAnim BOTH_INJURED_TO_COLLAPSED
+	deathAnim BOTH_INJURED_TO_COLLAPSED
+	
+	RunForward BOTH_WOOKIEE_RAGE_RUN
+	RunBackward BOTH_RUNBACK_DUAL
+	WalkForward BOTH_WALK_DUAL
+	WalkBackward BOTH_WALKBACK_DUAL
+	
+	
+	meleeMoves M_KATA|M_KICK|M_PUNCH
+	
+	modelscale 	1.01
+	uioverlay_r 	"gfx/icons/infantry"
+	uioverlay_l 	"gfx/icons/brawler"
+	
+	model 			"ns_zombie"
+	skin  			"default"
+	uishader "models/players/ns_zombie/mb2_icon_default"
+	
+	bargesoundoverride "Sound/chars/Death_Trooper/misc/taunt3.wav"
+	ragesoundoverride "Sound/chars/Death_Trooper/misc/falling1.wav"
+	
+}
+WeaponInfo0
+{
+	WeaponToReplace WP_MELEE
+	WeaponBasedOff WP_MELEE  
+	NewWorldModel	"models/weapons2/dummy/dummy.glm"
+	NewViewModel	"models/weapons2/dummy/dummy.md3"
+	Icon			"gfx/hud/w_icon_melee"
+	WeaponName	"Zombie Melee"
+	AltFlashSound0  "Sound/chars/Death_Trooper/misc/melee.wav"
+	hasAnimOverrides 1
+	animReadyRun 				BOTH_MAND_DUAL_PISTOLS_READY
+	animReady 				BOTH_MAND_DUAL_PISTOLS_READY
+	animReadyWalk BOTH_MAND_DUAL_PISTOLS_READY
+	animReadyNoAmmo BOTH_MELEE6
+	animStand 	  		LEGS_CHOKING1
+	damageMod 0.25
+}
+
+description "Nightsister Zombie 
+
+Fallen Sisters returned to have their revenge...
+
+^2Weaponry:
+- Heavy Melee
+-- 75% less Dmg
+-- Grab/slap/punch only
+
+^5Powers:
+- Fury Rush (Dark Rage 3) ^3[CS1/4]
+
+^8Attributes:
+- Reinforcements (4)
+- No weapon pickups
+- No Gunbash
+- Strength (1)
+- Fury (3)
+-- 100% faster Resource decay
+- 40% less Kb Taken/Given
+- 20% slower Skill Cd
+- 300% slower Hacking
+- Healing (2)
+-- Starting HP: 50
+- Assemble (3)
+- Getup (0)
+
+^3Abilities:
+- Lunge (Shoulder Barge) ^3[CS2 Melee]"

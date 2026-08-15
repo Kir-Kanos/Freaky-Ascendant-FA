@@ -1,0 +1,120 @@
+ClassInfo
+{
+	name  				"pte7_MoraloEval"
+	MBclass		MB_CLASS_WOOKIE
+	classNumberLimit 	1
+
+	weapons 			WP_BLASTER_PISTOL|WP_DISRUPTOR|WP_SONIC_NADE|WP_DET_PACK|WP_TRIP_MINE|WP_THERMAL
+
+	attributes 	 	MB_ATT_PISTOL,3|MB_ATT_AMMO,3|MB_ATT_HEALING,2|MB_ATT_DODGE,2|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,2|MB_ATT_DEXTERITY,2|MB_ATT_BINOCULARS|MB_ATT_TRACKING_BEACON|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_FORCEFIELD,1|MB_ATT_DRONE|MB_ATT_WOOKIEE_FURY,1|MB_ATT_DISRUPTOR,3|MB_ATT_BASE_TD,2|MB_ATT_DET_PACK,3|MB_ATT_TRIP_MINES,3|MB_ATT_SONIC_DETONATOR,1
+
+	maxhealth 		180
+	maxarmor  		80
+	
+	resource			RESOURCE_ENERGY
+	forcepool 		100
+	
+ baseSpeed 220
+
+	rageSoundOverride 	"sound/chr_d/humanmerc2/misc/death2.mp3"
+	bargeSoundOverride 	"sound/chr_d/humanmerc2/misc/pain100.mp3"
+	
+	special1 EAS_HI_FURY	
+	special2 EAS_HI_BARGE
+	special3 EAS_HI_DODGE			
+	special4 EAS_HI_DEX
+	
+	flourishAnim BOTH_STAND10_TALK1
+	
+
+	modelScale  0.99
+	model 			"Moralo"
+	skin  			"default"
+	uishader  "models/players/Moralo/mb2_icon_default"
+
+	
+	uioverlay_r "gfx/icons/scout"
+	uioverlay_l "gfx/icons/tactician"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace WP_DISRUPTOR
+	WeaponBasedOff WP_DISRUPTOR
+	NewWorldModel	"models/weapons2/relby_v10/model_w.glm"
+	NewViewModel	"models/weapons2/relby_v10/model.md3"
+	Icon	"gfx/hud/w_icon_relby_v10"
+	WeaponName "Blackmarket Disruptor Rifle"
+	FlashSound0 	"sound/weapons/cw-w5/fire_scope.mp3"
+	AltFlashSound0 "sound/weapons/cw-w5/fire_scope.mp3"
+	ChargeSound 	"sound/weapons/bowcaster/altcharge.mp3"
+	primGore	1
+	altGore	1
+	CustomAmmo  800
+	ratemod .80
+	FPChargeMult	1.2
+hasAnimOverrides 1
+animReadyRun BOTH_DC15_IDLE
+animReady BOTH_DC15_IDLE
+animReadyWalk BOTH_WESTARM5_READY
+animReadyNoAmmo BOTH_WESTARM5_ATTACK
+animAttackRun BOTH_WESTARM5_ATTACK
+animAttack BOTH_WESTARM5_ATTACK
+animAttackWalk BOTH_WESTARM5_ATTACK
+}
+
+WeaponInfo1
+{
+	WeaponToReplace 	WP_BLASTER_PISTOL
+	WeaponBasedOff WP_BLASTER_PISTOL
+	NewWorldModel    "models/weapons2/cb_pistol/pistol_w.glm"
+	NewViewModel    "models/weapons2/cb_pistol/pistol_w.md3"
+	Icon            "gfx/hud/w_icon_cb_pistol"
+	flashsound0		"sound/weapons/KYD-21/fire.mp3"
+	altFlashSound0		"sound/weapons/KYD-21/fire.mp3"
+	ChargeSound "sound/weapons/leia_pistol/altcharge.mp3"
+	WeaponName			"Rusty Blaster Pistol"
+hasAnimOverrides 1
+animReadyRun TORSO_WEAPONIDLE2
+animReady TORSO_WEAPONIDLE2
+	animReadyWalk TORSO_WEAPONIDLE2
+	animReadyNoAmmo BOTH_ATTACK2 
+	animAttackRun BOTH_ATTACK2 
+	animAttack BOTH_ATTACK2 
+	animAttackWalk BOTH_ATTACK2 
+	CustomAmmo   660
+	clipSize 33
+	rateMod 1.10
+
+}
+
+description	"Moralo Eval
+
+A tactial serial killer who specializes in setting up lethal situations and immense strength.
+
+^2Weaponry:
+- Melee
+- Rusty Blaster Pistol (3)
+- 10% Slower RoF
+- Blackmarket Disruptor Rifle (3)
+-- 20% Faster RoF
+-- 20% More FP Drain
+
+^6Inventory:
+- Electrobinoculars
+- Seeker Droid
+- Force Field
+
+^8Attributes:
+- Healing (2)
+- Tracking Beacon
+- Strength (1)
+- Anti Mindtrick (2)
+- Dexterity (2)
+- Knockdown Roll
+
+^3Abilities:
+- Barge ^3[CS2]
+- Fury (1) ^3[CS1]
+- Combat Roll ^3[CS3]
+- Dodge (2) ^3[CS4]"

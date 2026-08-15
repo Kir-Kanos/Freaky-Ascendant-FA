@@ -1,0 +1,215 @@
+ClassInfo
+{
+	name  			"pte2_PykeDealer"
+	MBClass 		MB_CLASS_BOUNTY_HUNTER
+
+	weapons 		WP_SABER|WP_MELEE|WP_STUN_BATON|WP_FRAG_NADE|WP_EE3|WP_CLONE_PISTOL|WP_CONC_NADE
+
+	classnumberlimit	3
+
+	extralives	2
+
+	attributes		MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_DEXTERITY,1|MB_ATT_STAMINA,3|MB_ATT_TRACKING_BEACON|MB_ATT_STIMPACK,1|MB_ATT_BACTA,1|MB_ATT_QUICKTHROW,1|MB_ATT_DISP_FORCE|MB_ATT_ENV_PROT,1|MB_ATT_ASSEMBLE,2|MB_ATT_STUN_BATON,1|MB_ATT_POISON_DART,4|MB_ATT_EE3,3|MB_ATT_CLONE_PISTOL,2|MB_ATT_MICRO_GRENADES,1|MB_ATT_FRAGS,2|MB_ATT_TRACKING_DART,4
+
+	saber1  		qstaff_legends
+	saberstyle  	SS_STAFF|SS_STRONG
+
+	saber1_1		electrostaff_legends
+	saberstyle_1	SS_STAFF
+
+	saber1_2		electro1h_orng_legends
+	saber2_2		electro1h_orng_legends
+	saberstyle_2	SS_DUAL
+	
+	WP_StunBatonFlags HELD_FLAME
+	WP_SaberFlags	HELD_PULSE|HELD_STUN
+	WP_FragNadeFlags	HELD_POISON|HELD_STUN|HELD_BACTA
+	WP_ClonePistolFlags	HELD_ALTRELOAD
+	WP_EE3Flags		HELD_ALTRELOAD
+	AB_TDartFlags		HELD_BACTA|HELD_LOWDAMAGE
+	AB_PDartFlags		HELD_STUN|HELD_HIGHDAMAGE
+
+	forcepowers		FP_SABER_OFFENSE,3
+
+	maxhealth 		50
+	maxarmor  		5
+
+	resource	RESOURCE_STAMINA
+	
+	forcepool		 120
+	forceregen		.9
+
+	baseSpeed 180
+
+	APmultiplier	.9
+	BPmultiplier .5
+	ASmultiplier .95
+	CSmultiplier .85
+	SaberDamage 60
+	sabermaxchain 2
+	
+	gloatAnim       BOTH_TUSKENATTACK2
+	flourishAnim    BOTH_TUSKENTAUNT1
+	saberStanceAnim	BOTH_SPEAR_STANCE
+	//SaberStanceAnim	BOTH_TRIPLE3_STAFFSTANCE
+	
+	special1 		EAS_HI_QUICKTHROW
+	special2 		EAS_HI_DEX
+	special4		EAS_HI_POISON
+
+	classFlags 
+
+	modelscale	1.09	
+
+	model			"pyke2" 
+	skin			"default"
+	uishader		"models/players/pyke2/MB2_Icon_Default"
+	
+	model_1			"pyke2" 
+	skin_1			"default3"
+	uishader_1		"models/players/pyke2/MB2_Icon_Default3"
+
+uioverlay "gfx/icons/tactician"
+
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER			
+	WeaponBasedOff		WP_SABER			
+	NewWorldModel		"models/weapons2/tusken_staff_sar/tusken_staff3.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  
+	Icon				"gfx/hud/w_icon_qstaff"
+	WeaponName			"Pyke Electro Weapon"
+	SelectSound "sound/weapons/knife/knifespin.mp3"
+}
+WeaponInfo1
+{
+WeaponToReplace WP_CLONE_PISTOL
+WeaponBasedOff WP_CLONE_PISTOL
+NewWorldModel	"models/weapons2/kotor_pistol1/pistol_w.GLM"
+NewViewModel	"models/weapons2/kotor_pistol1/model.md3"
+Icon	"gfx/hud/w_icon_disruptorpistols_dual"
+WeaponName 	"CC-420 Blaster Pistol"
+Clipsize	32
+velocityMod .80
+ratemod		.55
+damagemod	.30
+reloadtimeModifier 1.15
+customammo 800
+MuzzleEffect  "Blaster/MuzzleFlash01R"
+AltMuzzleEffect	"Blaster/MuzzleFlash01R"
+MissileEffect	"Blaster/Shot02R"
+Missile3Effect	"Blaster/Shot03R"
+MissileMissEffect "Blaster/Impact_Wall01R.efx"
+ MissileHitHumanEffect "Blaster/Impact_Wall01R.efx"
+ MissileHitDroidEffect "Blaster/Impact_Wall01R.efx"
+ altMissileMissEffect "Blaster/Impact_Wall01R.efx"
+ altMissileHitHumanEffect "Blaster/Impact_Wall01R.efx"
+ altMissileHitDroidEffect "Blaster/Impact_Wall01R.efx"
+AltMissileEffect	"Blaster/Shot04R"
+ChargeEffect		"gfx/effects/bryarfrontflash"
+FlashSound0 "sound/weapons/kotor/fire_power1.mp3"
+}
+WeaponInfo2
+{
+    WeaponToReplace     WP_EE3
+    WeaponBasedOff      WP_EE3
+    NewWorldModel       "models/weapons2/kotor_drifle/kotor_drifle_w.glm"
+    NewViewModel        "models/weapons2/kotor_drifle/kotor_drifle.md3"
+    Icon                "gfx/hud/w_icon_kotor_drifle"
+    MuzzleEffect        "Blaster/MuzzleFlash01R"
+    altMuzzleEffect     "Blaster/MuzzleFlash01R"
+    WeaponName          "CC-500 Blaster Rifle"
+    clipSize           40
+    customAmmo         400
+    	ReloadTimeModifier  1.20
+    	FPmult              1.25
+    	rateMod             1.90
+	Damagemod	    1.10
+}
+WeaponInfo3
+{
+WeaponToReplace WP_FRAG_NADE
+WeaponBasedOff WP_THERMAL
+Icon						"gfx/hud/w_thermal_grenade"
+NewWorldModel	"models/weapons/Grenade_Concussion/model.glm"
+NewViewModel	"models/weapons/Grenade_Concussion/viewmodel.md3"
+WeaponName	"Unrefined Spice Grenade"
+MissileModel "models/weapons/Grenade_Concussion/proj.md3"
+MissileMissEffect	"slime_explosion_new"
+MissileEffect "sonic_pistol/projectile"
+altMissileModel "models/weapons/Grenade_Concussion/proj.md3"
+altMissileMissEffect	"slime_explosion_new"
+altMissileEffect "sonic_pistol/projectile"
+damageMod 0.25
+}
+WeaponInfo4
+{
+	WeaponToReplace			WP_CONC_NADE
+	WeaponBasedOff			WP_CONC_NADE
+NewWorldModel	"models/weapons2/thermal/thermal_w.glm"
+NewViewModel "models/weapons2/thermal/thermal.md3"
+NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
+	Icon						"gfx/hud/w_thermal_grenade"
+	MissileModel 				"models/weapons2/thermal/thermal_proj.md3"
+	AltMissileModel			"models/weapons2/thermal/thermal_proj.md3"
+	MissileEffect 			"stone/missile1"
+	AltMissileEffect 			"stone/missile1"
+	MissileMissEffect			"smokenadeleg/explode_vol"
+	MissileHitHumanEffect	"smokenadeleg/explode_vol"
+	MissileHitDroidEffect	"smokenadeleg/explode_vol"
+	AltMissileMissEffect		"smokenadeleg/explode_vol"
+	AltMissileHitHumanEffect	"smokenadeleg/explode_vol"
+	AltMissileHitDroidEffect	"smokenadeleg/explode_vol"
+	FlashSound0		"sound/weapons/smokenade/select.mp3"
+	AltFlashSound0 	"sound/weapons/smokenade/select.mp3"
+	WeaponName  				"Smoke Grenades"
+	hasAnimOverrides 1
+	animAttackRun BOTH_THERMAL_THROW2
+	animAttack BOTH_THERMAL_THROW2
+	animAttackWalk BOTH_THERMAL_THROW2
+	animReadyRun BOTH_THERMAL_READY2
+	animReady BOTH_THERMAL_READY2
+	animReadyWalk BOTH_THERMAL_READY2
+	damageMod 0.001
+	ratemod 0.6
+}
+
+description	"Pyke Syndicate Spice Dealer
+
+A Foot soldier focused on self protection who also deals in illegal spice and poisons.
+
+^2Weaponry:
+- Melee
+- Overcharged Stun Baton
+-- Applies Flame
+- Pyke Electro Weapon
+-- Saber Defense (0)
+-- No Blaster Block
+-- 2 Swing Combo
+-- Shocks/Stuns on hit
+- CC-420 Blaster Pistol (Clone Pistol 2)
+-- 45%+ RoF/70%- Damage/25%- Velocity, Mag Reload
+- CC-500 Blaster Rifle (EE-3 3)
+-- 10% More Damage/25% More FP Mult/90% Slower RoF, Mag Reload
+- Unrefined Spice Grenade (Frag 2)
+-- Applies Poison/Stun/75%- Damage
+-- Heals Teammates (^3Use with caution, will poison/stun them)
+- Smoke Grenade (Conc 1)
+-- Applies Smoke Screen, Low Damage
+
+^8Attributes:
+- Stamina (3)
+- Dexterity (1)
+- Tracking Beacon
+- 'Upper' Spice (Stimpack 1)
+- 'Medicinal' Spice (Medpack 1)
+
+^3Abilities:
+- Dex Roll ^3[CS2]
+- Quick Throw (1) ^3[CS1]
+- Gunkick ^3[CS3]
+- Tracking Bacta Injector (Tracking Darts 4) ^3[CS3 Melee]
+-- Heals Teammates, Low Damage
+- Poison Overdose Darts (Poison Darts 4) ^3[CS4 Melee]
+-- Stuns, 100% More Damage"

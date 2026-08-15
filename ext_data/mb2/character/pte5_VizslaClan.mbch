@@ -1,0 +1,193 @@
+//Siege class def file.
+
+ClassInfo
+{
+	name			"pte5_VizslaClan"
+	classNumberLimit	3
+	MBClass		MB_CLASS_BOUNTY_HUNTER
+	weapons			WP_MELEE|WP_SABER|WP_THERMAL
+	attributes		MB_ATT_JETPACK|MB_ATT_AMMO,3|MB_ATT_ROCKET,1|MB_ATT_DEXTERITY,1|MB_ATT_FUEL,1|MB_ATT_BESKAR,1|MB_ATT_TRACKING_BEACON|MB_ATT_BLAST_ARMOUR|MB_ATT_POISON_DART,6|MB_ATT_BASE_TD,2|MB_ATT_ASSEMBLE,2
+	
+	basespeed	220
+	maxhealth 70
+	maxarmor 55
+	
+	rateoffire_melee .95
+	sabermaxchain	1
+
+	Extralives	1
+
+	resource	RESOURCE_FUEL
+	
+	saber1		arc_shiv_short
+	saberstyle	SS_TAVION|SS_DESANN
+	saber1_1		arc_shiv_short
+	saber2_1		arc_shiv_short
+	saberstyle_1	SS_DUAL
+
+	BPmultiplier		0
+	saberdamage 60
+
+	uioverlay "gfx/icons/aerial"
+	uishader "models/players/deathwatch/mb2_icon_default"
+	
+	model		"deathwatch"
+	skin 		"vizsla"
+	uishader	"models/players/deathwatch/mb2_icon_vizsla"
+	
+	modelscale      1.02	
+	
+
+	WP_BlasterPistolFlags 	HELD_ALTRELOAD
+	WP_BowcasterFlags	HELD_ALTRELOAD
+	WP_E22Flags		HELD_ALTRELOAD
+	
+
+	special1 EAS_HI_ROCKET
+	special2 EAS_HI_WRIST
+	special4 EAS_HI_POISON
+
+	isCustomBuild	1
+	mbPoints		18
+
+	c_att_skill_0	MB_ATT_BOWCASTER
+	c_att_names_0	"Relby V-4d Blaster Rifle"
+	c_att_ranks_0	2,2,2
+	c_att_descs_0	"Based on Bowcaster, Mag Reload, 50%- Damage, 20%+ FP Drain, 10%+ RoF"
+
+	c_att_skill_1	MB_ATT_MANDO_PISTOL
+	c_att_names_1	"WESTAR-35 Blaster Pistol"
+	c_att_ranks_1	0,2,4
+	c_att_descs_1	"Based On Mando Pistol, 5%+ FP Drain, 5%- RoF, Mag Reload"
+
+	c_att_skill_2	MB_ATT_E_22
+	c_att_names_2	"Wrist Microsaws"
+	c_att_ranks_2	2
+	c_att_descs_2	"Based on E22, Fast Velocity, 100%+ FP Drain, 20%+ Damage, Long Mag reload"
+	
+	c_att_skill_3	MB_ATT_WRISTLASER
+	c_att_names_3	"Wrist Laser"
+	c_att_ranks_3	4
+	c_att_descs_3	"^3[CS2]"
+
+	c_att_skill_4	MB_ATT_BESKAR
+	c_att_names_4	"Beskar"
+	c_att_ranks_4	0,2,2
+	
+	c_att_skill_5	MB_ATT_RESPAWNS
+	c_att_names_5	"Reinforcement"
+	c_att_ranks_5	6
+	
+}
+WeaponInfo0
+{
+
+	WeaponToReplace		WP_E_22
+	WeaponBasedOff		WP_E_22
+	NewWorldModel	"models/weapons2/dummyblaster/model.glm"
+	NewViewModel	"models/weapons2/dummy/dummy.md3" 	 
+	Icon			"gfx/hud/w_icon_sbdarm"
+	WeaponName		"Wrist Microsaws"
+	clipSize 4
+	CustomAmmo 32
+	hasAnimOverrides 1
+	primgore 	1
+	FlashSound0		"sound/weapons/halo_needler/fire.wav"
+	FlashSound1		"sound/weapons/halo_needler/fire.wav"
+	FlashSound2		"sound/weapons/halo_needler/fire.wav"
+	FlashSound3		"sound/weapons/halo_needler/fire.wav"
+	MissileMissEffect "effects/flechette/wall_impact"
+	MissileEffect		"effects/flechette/shot"
+	MuzzleEffect		null
+	hasAnimOverrides 1
+	animReady BOTH_MAND_FLAME_READY  //upper
+	animReadyWalk BOTH_MAND_FLAME_READY 
+	animReadyNoAmmo BOTH_MAND_FLAME_READY 
+	animReadyRun	BOTH_MAND_FLAME_READY
+	animAttackRun	BOTH_MAND_FLAME_READY
+	animAttack BOTH_MAND_FLAME_READY 
+	animAttackWalk BOTH_MAND_FLAME_READY
+	animStand BOTH_MAND_FLAME_READY  //lower
+	ReloadTimeModifier  1.4
+	velocityMod 2
+	FPMult 	 	2
+	damagemod	1.2
+}
+WeaponInfo1
+{
+ WeaponToReplace		WP_MANDO_PISTOL       			
+ WeaponBasedOff		WP_MANDO_PISTOL      			
+ NewWorldModel		"models/weapons2/westar35/westar35.glm"  
+ NewViewModel		"models/weapons2/westar35/model.md3"
+ Icon				"gfx/hud/w_icon_westar35_dual"
+ WeaponName		"Dual WESTAR-35 Blaster Pistols"   
+	MuzzleEffect		"Blaster/MuzzleFlash01Y"
+	AltMuzzleEffect	"Blaster/MuzzleFlash01Y"
+	MissileEffect		"Blaster/Shot02Y"
+	Missile3Effect	"Blaster/Shot03Y"
+	PowerupShotEffect	"Blaster/Shot04Y"
+	AltMissileEffect	"Blaster/Shot04Y"
+	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
+	ChargeEffect		"gfx/effects/yellow_bryarFrontFlash" 
+	fpmult	1.05
+	rateMod 1.05
+	customammo 750
+}
+WeaponInfo2
+{
+	WeaponToReplace	WP_SABER
+	WeaponBasedOff	WP_SABER
+	NewWorldModel		"models/weapons2/arc_shiv_short/shiv_short_w.glm"  	
+	NewViewModel		"models/weapons2/dummy/dummy.md3" 	  	
+	Icon  "gfx/hud/w_icon_arc_shiv_short"
+	WeaponName	"Integrated Vibroblade"
+}
+WeaponInfo3
+{
+	WeaponToReplace WP_BOWCASTER
+	WeaponBasedOff WP_BOWCASTER
+	NewWorldModel	"models/weapons2/relby_v10/model_w.glm"
+	NewViewModel	"models/weapons2/relby_v10/model.md3"
+	Icon	"gfx/hud/w_icon_relby_v10"
+	WeaponName "Relby-v10 Blaster Rifle"
+	FlashSound0 	"sound/weapons/cw-w5/fire_scope.mp3"
+	AltFlashSound0 "sound/weapons/cw-w5/fire_scope.mp3"
+	ChargeSound 	"sound/weapons/bowcaster/altcharge.mp3"
+	CustomAmmo  400
+	Clipsize 40
+	damageMod 0.5
+	FPChargeMult	1.2
+	Ratemod .9
+hasAnimOverrides 1
+animReadyRun BOTH_DC15_IDLE
+animReady BOTH_DC15_IDLE
+animReadyWalk BOTH_WESTARM5_READY
+animReadyNoAmmo BOTH_WESTARM5_ATTACK
+animAttackRun BOTH_WESTARM5_ATTACK
+animAttack BOTH_WESTARM5_ATTACK
+animAttackWalk BOTH_WESTARM5_ATTACK
+}
+description	"Clan Vizsla Mandolorian 
+
+Tricky warriors with many integrated weapons and a ruthless style.
+
+^2Weaponry:
+- Melee
+-- 5% Faster RoF
+- Integrated Vibroblade (Cyan And Purple/Dual Style)
+-- No Saber/Blaster Block
+-- Very Fast Swing Speed, 1 Swing Combo
+-- Low Damage (60)
+- Poison Darts (6) ^3[CS4]
+
+^8Attributes:
+- Fuel (1)
+- Dexterity (1)
+- Beskar (1)
+- Blast Armor
+- Tracking Beacon
+
+^3Abilities:
+- Jetpack
+- Gunkick ^3[CS3]
+- Rocket ^3[CS1]"
