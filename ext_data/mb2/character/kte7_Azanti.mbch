@@ -67,6 +67,7 @@ WeaponInfo1
 	NewViewModel			"models/weapons2/kotor_hpistol/kotor_hpistol.md3"
 	Icon				"gfx/hud/w_icon_kotor_hpistol"
 	flashsound0			"sound/weapons/kotor/fire_hvy.wav"
+	altflashsound0		"sound/weapons/kotor/fire_hvy.wav"
 	WeaponName			"Zhug Heavy Blaster Pistol"
 	damageMod			1.15
 	rateMod				1.20
