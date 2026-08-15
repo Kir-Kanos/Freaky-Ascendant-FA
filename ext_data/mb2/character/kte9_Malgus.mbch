@@ -10,7 +10,7 @@ ClassInfo
 
 	attributes	MB_ATT_FORCEBLOCK,1|MB_ATT_DEFLECT,2|MB_ATT_FORCEFOCUS,1|MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GETUPS,3|MB_ATT_BESKAR,1|MB_ATT_DEXTERITY,1
 
- saberDamageStyle SS_STRONG,300|SS_DESANN,300
+ saberDamageStyle SS_STRONG,300|SS_DESANN,300|SS_DUAL,220
 	saberstyle	SS_DESANN|SS_STRONG
 	APmultiplier	1.10
 	BPmultiplier	1.20
@@ -39,12 +39,20 @@ ClassInfo
 
 	uioverlay "gfx/icons/frontline"
 	modelscale	1.16
-	
-	saber1			saber_malgus_legends
+
+	saber1		saber_malgus_legends
 	sabercolor		0
-	
-	saber1_1			saber_malgus_broken_leg
+	saberstyle		SS_STRONG|SS_DESANN
+
+	saber1_1		saber_malgus_broken_leg
 	sabercolor_1		0
+	saberstyle_1		SS_STRONG|SS_DESANN
+	
+	saber1_2		saber_malgus_legends
+	saber2_2		saber_kdbl
+	sabercolor_2		0
+	saber2color_2		0
+	saberstyle_2	SS_DUAL|SS_DESANN
 
 	model	"Darthmalgus"
 	skin		"default"
@@ -72,6 +80,7 @@ A massive, tanky Sith with high-powered and long-reaching Lightsaber attacks.
 - Melee
 -- 10% faster RoF
 - Lightsaber (Red/Purple)
+- Dual Lightsabers (Dual/Purple)
 -- Saber Defense (3)
 -- Blaster Defense/Deflect (2)
 -- 125% Spec Dmg mult
