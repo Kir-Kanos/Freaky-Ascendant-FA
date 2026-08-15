@@ -1,0 +1,205 @@
+//Siege class def file.
+
+ClassInfo
+{
+	name 	"ste5_P3DarkTr"
+	weapons 	WP_MELEE|WP_BOWCASTER|WP_ROCKET_LAUNCHER
+	
+	attributes 	MB_ATT_BLAST_ARMOUR,1|MB_ATT_AMMO,3|MB_ATT_JETPACK,1|MB_ATT_FUEL,3|MB_ATT_ROCKET_LAUNCHER|MB_ATT_BOWCASTER,3|MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_BESKAR,3|MB_ATT_ANTI_MT,2|MB_ATT_TRACKING_BEACON|MB_ATT_HEALING,1|MB_ATT_ENV_PROT,3|MB_ATT_WOOKIEE_FURY
+	
+	maxhealth 		100
+	maxarmor			250
+	rankArmor	300
+
+	modelscale 			1.25
+	damageTaken   		1.0
+	DamageGiven			1.1
+	speed               0.95
+	
+	knockbackgiven		1.2
+	knockbacktaken		0.8
+	
+	classflags	CFL_STRONGAGAINSTPHYSICAL|CFL_BLOODYMELEE
+	
+	WP_RocketLauncherFlags 	HELD_ALTRELOAD|HELD_KNOCKBACK
+	WP_FragNadeFlags		HELD_FLAME|HELD_KNOCKBACK
+	WP_MeleeFlags			HELD_SPEED
+	WP_ConcNadeFlags		HELD_STUN|HELD_SONIC|HELD_LOWDAMAGE|HELD_TRACKING
+
+	bargeSoundOverride 		"sound/chars/k2so/misc/death2.mp3" //placeholder
+
+	resource	RESOURCE_FUEL
+	forcepool 200
+
+	isCustomBuild		1
+	mbPoints			10
+	
+	c_att_skill_0    MB_ATT_FRAGS
+	c_att_names_0    "Conflagrine-14 Frags"
+	c_att_ranks_0    2,2
+	c_att_descs_0    "Ignites upon damage, Splash Radius 300, -35% Damage"
+
+	c_att_skill_1    MB_ATT_MICRO_GRENADES
+	c_att_names_1    "DT Concussion Grenades"
+	c_att_ranks_1    1,2
+	c_att_descs_1    "Staggers, tracks, & sonics upon damage. -50% Damage"
+
+	c_att_skill_2    MB_ATT_THERMALS
+	c_att_names_2    "Thermal Detonator"
+	c_att_ranks_2    4
+
+	c_att_skill_3    MB_ATT_ARMOUR
+	c_att_names_3    "Armor (300)"
+	c_att_ranks_3    2
+
+	c_att_skill_4    MB_ATT_MAGNETIC_PLATING
+	c_att_names_4    "Deflector Shield"
+	c_att_ranks_4    6
+	c_att_descs_4    "Mag Plating"
+
+	c_att_skill_5    MB_ATT_CORTOSIS
+	c_att_names_5    "Cortosis Infused Phrik"
+	c_att_ranks_5    7
+
+	c_att_skill_6    MB_ATT_RESPAWNS
+	c_att_names_6    "Reinforcement"
+	c_att_ranks_6    10
+	
+	model 	"darktrooper_p3"
+	skin  	"default"
+	uishader  "models/players/DarkTrooper_p3/mb2_icon_default"
+
+	jetpackJetTag	 *jet1
+	jetpackJet2Tag *jet2
+
+	jetpackThrustEffect		"effects/jetpack_b/thrust.efx"
+	jetpackIdleEffect		"effects/jetpack_b/idle.efx"
+	
+	jetpackFinishSound 	"sound/effects/dtjetpack/finish.wav"
+	jetpackThrustSound  "sound/effects/dtjetpack/thrust.wav"
+	jetpackStartSound 	"sound/effects/dtjetpack/start.wav"
+	jetpackIdleSound	"sound/effects/dtjetpack/idle.wav"
+
+	special1 EAS_NONE
+	special2 EAS_HI_BARGE
+	special3 EAS_NONE
+	special4 EAS_NONE
+	
+	//respawncustomtime 	75000
+	classNumberLimit  	2
+	MBClass 	MB_CLASS_WOOKIE
+	
+	uioverlay_r "gfx/icons/aerial"
+	uioverlay_c "gfx/icons/brawler"
+	uioverlay_l "gfx/icons/heavy"
+	
+	meleeMoves M_UPPERCUT|M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_PUNCH|M_RLKICK
+		flourishAnim BOTH_STAND5TOAIM
+}
+
+WeaponInfo0
+{
+	WeaponToReplace			WP_BOWCASTER
+	WeaponBasedOff			WP_ROCKET_LAUNCHER
+	NewWorldModel			"models/weapons2/assault_cannon/model_w.glm"
+	NewViewModel			"models/weapons2/dummy/dummy.md3"
+	NewHandsModel			"models/weapons2/merr_sonn/merr_sonn_hand.md3"
+	Icon					"gfx/hud/w_icon_DTAC"
+	WeaponName				"Assault Cannon"
+	FlashSound0 			"sound/weapons/phase3_cannon/fire.wav"
+	AltFlashSound0 			"sound/weapons/phase3_cannon/fire.wav"
+	ChargeSound 			"sound/weapons/phase3_cannon/chargeup.wav"
+	selectSound "sound/weapons/phase3_cannon/ready.wav"
+hasAnimOverrides 1
+animReadyRun BOTH_PLX1_READY
+animReady BOTH_PLX1_READY
+animReadyWalk BOTH_PLX1_READY
+animAttackRun BOTH_PLX1_ATTACK
+animAttack BOTH_PLX1_ATTACK
+animAttackWalk BOTH_PLX1_ATTACK
+animCharge BOTH_PLX1_ATTACK
+	CustomAmmo 				1000
+	MuzzleEffect			"blaster/MuzzleFlash01B"
+	AltMuzzleEffect			"blaster/MuzzleFlash01B"
+	MissileEffect			"demp2/projectile"
+	AltMissileEffect			"demp2/projectile"
+	ChargeEffect		"gfx/effects/cloneFrontFlash"
+	damageMod 1.1
+	rateMod 0.95
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_ROCKET_LAUNCHER
+	WeaponBasedOff		WP_ROCKET_LAUNCHER
+	NewWorldModel		"models/weapons2/assault_cannon/model_w.glm"
+	NewViewModel			"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_DTAC_rocket"
+	WeaponName			"Assault Cannon Rocket Attachment"
+	FlashSound0 			"sound/weapons/phase3_rocket/fire.wav"
+	AltFlashSound0 			"sound/weapons/phase3_rocket/fire.wav"
+	selectSound "sound/weapons/phase3_rocket/ready.wav"
+hasAnimOverrides 1
+animReadyRun BOTH_PLX1_READY
+animReady BOTH_PLX1_READY
+animReadyWalk BOTH_PLX1_READY
+animAttackRun BOTH_PLX1_ATTACK
+animAttack BOTH_PLX1_ATTACK
+animAttackWalk BOTH_PLX1_ATTACK
+	CustomAmmo 			12
+	clipSize 			4
+	ReloadTimeModifier 	3.0
+	velocityMod 1.25
+	damageMod 0.40
+	rateMod 0.25
+}
+
+WeaponInfo2
+{
+	WeaponToReplace			WP_FRAG_NADE
+	WeaponBasedOff			WP_FRAG_NADE
+	NewWorldModel			"models/weapons2/fraggrenade/thermal_w.glm"
+	NewViewModel			"models/weapons2/fraggrenade/thermal_hand.md3"
+	MissileModel 			"models/weapons2/fraggrenade/thermal_proj.md3"
+	MissileMissEffect	"Grenades/EXP_Explosion"
+	missileHitHumanEffect		"Grenades/EXP_Explosion"
+	missileHitDroidEffect		"Grenades/EXP_Explosion"	
+	Icon						"gfx/hud/w_icon_fraggrenade"
+	WeaponName	"Conflagrine-14 Infused Grenade"
+	damageMod 0.65
+	splashRadius 300
+}
+
+description	"Dark Trooper Phase III [Wookiee] ^3Reworked 
+ 
+A Jetpack-equipped tank with a high-powered Assault Cannon and Rocket Launcher.
+
+^2Weaponry:
+- Melee
+- Assault Cannon (Bowcaster 3)
+-- +5% Rate of Fire
+-- +10% Damage
+- Assault Cannon Rocket Attachment (18) (RL)
+-- Pushes on hit
+-- +25% Velocity
+-- +75% Rate of Fire
+-- -60% Damage
+-- -250% Reload Speed (Mag Reload)
+-- Homing Rockets ^3[Hold Sec. ^3fire]
+
+^8Attributes:
+- +20% Knockback Given
+- -20% Knockback Taken
+- Strength (2)
+- Phrik Armor (Beskar 3)
+- Blast Armor
+- Physical Resist
+- Flat DMG Taken
+- Anti-Mind Trick (2)
+- Tracking Beacon
+- Healing (1)
+- Environmental Protection (3)
+
+^3Abilities:
+- Jetpack
+- Barge ^3[CS2]"

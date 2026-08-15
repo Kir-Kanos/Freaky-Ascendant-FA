@@ -1,0 +1,134 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name			"ste2_FOSith"
+	weapons		WP_MELEE|WP_BLASTER_PISTOL|WP_CLONE_RIFLE|WP_CONC_NADE
+	attributes	MB_ATT_AMMO,3|MB_ATT_STIMPACK|MB_ATT_HEALING,1|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,1|MB_ATT_STAMINA,3|MB_ATT_DEXTERITY,1|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_TRACKING_BEACON|MB_ATT_ASSEMBLE,3|MB_ATT_ENV_PROT,1|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_DODGE,3|MB_ATT_WOOKIEE_FURY,3|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_PISTOL,3|MB_ATT_FLIPKICK|MB_ATT_CLONERIFLE,3|MB_ATT_MICRO_GRENADES,2|MB_ATT_CLONEBLOBS,10
+
+forcepowers	FP_RAGE,3
+
+	classnumberlimit	 2
+	
+	MBClass		MB_CLASS_BOUNTY_HUNTER
+	
+	resource RESOURCE_STAMINA
+	forcepool 120
+
+	basespeed	200
+	
+	classflags	CFL_BLOODYMELEE
+
+	modelscale 1.025
+	
+	extralives		1
+
+	maxhealth		100
+
+	WP_MeleeFlags	HELD_SPEED|HELD_TRACKING
+	WP_BlasterPistolFlags	HELD_SPEED|HELD_ALTRELOAD
+	WP_CloneRifleFlags	HELD_ALTRELOAD
+	WP_ConcNadeFlags	HELD_FLAME|HELD_POISON|HELD_TRACKING
+
+	maxArmor			80
+
+	knockbacktaken 0.85
+	
+	special1			EAS_HI_DODGE
+	special2			EAS_HI_DEX
+	special4			EAS_HI_STIMPACK	
+	
+	flourishAnim BOTH_MELEE1
+	
+	uioverlay_l "gfx/icons/heavy"
+	uioverlay_r "gfx/icons/infantry"
+	
+model     "stormie_tfa"
+skin      "sith"
+uishader  "models/players/stormie_tfa/mb2_icon_sith"
+
+model_1	"trosguard"
+skin_1	"default"
+uishader_1	"models/players/trosguard/mb2_icon_default"
+
+}
+WeaponInfo0
+{
+
+	WeaponToReplace WP_CLONE_RIFLE
+	WeaponBasedOff  WP_CLONE_RIFLE
+	NewWorldModel "models/weapons2/f11d_blaster/F11D_Phasma_W.glm"
+	NewViewModel  "models/weapons2/f11d_blaster/F11D_Phasma.md3"
+	Icon  		"gfx/hud/w_icon_f11_p"
+	WeaponName  	"ST-W48 Blaster Rifle"
+	MuzzleEffect  "Blaster/MuzzleFlash01R"
+	MissileEffect	 "Blaster/Shot01R"
+	FlashSound0	    "sound/weapons/f-11d/fire.mp3"
+	clipSize			40
+	ReloadTimeModifier  0.9
+	FPMult     			0.8
+	rateMod 1.2
+	damagemod 1.1
+	AltFlashSound0 "sound/weapons/explosions/coolexplode1.wav"
+	ChargeSound "sound/weapons/bowcaster/altcharge.mp3"
+	ChargeEffect "effects/Blaster/MuzzleCharge01R.efx"
+	altMissileEffect "effects/Force/destruction.efx"
+	altMuzzleEffect "Blaster/MuzzleFlash01R"
+	altMissileMissEffect "effects/impacts/ImpactMediumRed2"
+	altMissileHitHumanEffect "effects/impacts/ImpactMediumRed2"
+	altMissileHitDroidEffect "effects/impacts/ImpactMediumRed2"
+	altWallImpact "effects/Blaster/Impact_Wall01R.efx"
+}
+WeaponInfo1
+{
+
+	WeaponToReplace 	WP_BLASTER_PISTOL
+	WeaponBasedOff  	WP_BLASTER_PISTOL
+	NewWorldModel 		"models/weapons2/SE-44C/se-44c_phasma_w.glm"
+	NewViewModel  		"models/weapons2/SE-44C/se-44c_phasma.md3"
+	Icon  				"gfx/hud/w_icon_se-44c_p"
+	WeaponName  		"SE-44C Blaster Pistol"
+    FlashSound0 		"sound/weapons/se-44c/fire.wav"
+    AltFlashSound0  	"sound/weapons/se-44c/alt_fire.wav"
+	ratemod .60
+	damagemod .50
+	fpmult	.60
+}
+
+description	"First Order Sith Trooper
+
+Indoctrinated super soldiers who focuses on great speed, strength and hunting abilties.
+
+^2Weaponry:
+- Heavy Melee
+-- 15%+ Faster Movement Speed
+-- Tracks on hit
+- SE-44C Blaster Pistol (3)
+-- 40%+ RoF, 60%- Damage, Alt Reload
+- ST-W48 Blaster Rifle (Clone Rifle 3)
+-- Low Clip Size, 20%- RoF, 10%+ Damage
+-- 10 Concussion Blobs
+- 2 Oppression Grenades (Conc)
+-- Applies Poison/Tracking/Flame
+
+^6Inventory:
+- Stimpack [CS4]
+
+^8Attributes:
+- Reinforcement (1)
+- 15% less Kb Taken
+- Stamina (3)
+- Tracking Beacon
+- Blast Armor
+- Knockdown Roll
+- Anti MT (1)
+- Mid-Air Stamina Regen
+- Trooper Fury (3)
+- Dexterity (1)
+- Strength (1)
+- Healing (1)
+
+^3Abilities:
+- Dodge (3) ^3 [CS1]
+- Dex Roll ^3[CS2]
+- Gunkick ^3[CS3]"

@@ -1,0 +1,193 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name			"ste2_FOTrooper"
+	weapons		WP_MELEE|WP_THERMAL
+	attributes	MB_ATT_AMMO,3|MB_ATT_BACTA,1
+	classnumberlimit	 4
+	
+	MBClass		MB_CLASS_BOUNTY_HUNTER
+	
+	resource RESOURCE_STAMINA
+	forcepool 100
+
+	basespeed	180
+	
+	modelscale 1.02
+	
+	extralives		1
+
+	maxhealth		80
+
+	WP_MeleeFlags	HELD_SPEED
+	WP_BlasterPistolFlags	HELD_SPEED|HELD_ALTRELOAD
+	WP_ProjFlags	HELD_ALTRELOAD|HELD_SLOW
+	WP_DCCarbineFlags	HELD_ALTRELOAD
+
+	
+	maxArmor			60
+
+	
+	knockbacktaken 0.9
+	
+	special1			EAS_HI_SPRINT
+	special2			EAS_HI_DODGE
+	special4			EAS_HI_DEX	
+	
+	
+	flourishAnim BOTH_MELEE1
+	
+	uioverlay_l "gfx/icons/heavy"
+	uioverlay_r "gfx/icons/infantry"
+	
+model     "stormie_tfa"
+skin      "default"
+uishader  "models/players/stormie_tfa/mb2_icon_default"
+
+model_1     "stormie_tfa"
+skin_1      "exe"
+uishader_1  "models/players/stormie_tfa/mb2_icon_exe"
+
+
+	isCustomBuild		1
+	mbPoints		 45
+	
+	c_att_skill_0	MB_ATT_PISTOL
+	c_att_names_0	"SE-44C Blaster Pistol"
+	c_att_ranks_0	0,2,4
+	c_att_descs_0	"Pistol, 50%- Damage/FP Drain, 40%+ RoF"
+	
+	c_att_skill_1	MB_ATT_DC_CARBINE
+	c_att_names_1	"F11-D Blaster Rifle"
+	c_att_ranks_1	2,2,2
+	c_att_descs_1	"DC Carbine, 40%+ Rof, 10%+ Damage, Low Clip, Mag Reload"
+
+	c_att_skill_2	MB_ATT_PROJECTILE_RIFLE
+	c_att_names_2	"DLT-19D Sniper Conversion"
+	c_att_ranks_2	8
+	c_att_descs_2	"Proj Rifle, 85%- Damage/FP Drain, Clipsize+, Slow"
+
+	c_att_skill_3	MB_ATT_FIRE_GRENADES
+	c_att_names_3	"Fire Grenade"
+	c_att_ranks_3	6
+
+	c_att_skill_4	MB_ATT_BASE_TD
+	c_att_names_4	"Thermal Grenades"
+	c_att_ranks_4	2,2
+
+	c_att_skill_5	MB_ATT_STAMINA
+	c_att_names_5	"Stamina"
+	c_att_ranks_5	2,2,2
+
+	c_att_skill_6	MB_ATT_DODGE
+	c_att_names_6	"Dodge"
+	c_att_ranks_6	2,2
+
+	c_att_skill_7	MB_ATT_DEXTERITY
+	c_att_names_7	"Dexterity"
+	c_att_ranks_7	4
+	c_att_descs_7	"Unlocks Dex Roll ^3[CS4]"
+
+	c_att_skill_8	MB_ATT_HEALING
+	c_att_names_8	"Healing"
+	c_att_ranks_8	2
+
+	c_att_skill_9	MB_ATT_WOOKIE_STRENGTH
+	c_att_names_9	"Trooper Strength"
+	c_att_ranks_9	4
+
+	c_att_skill_10	MB_ATT_ENV_PROT
+	c_att_names_10	"Environmental Protection"
+	c_att_ranks_10	2
+
+	c_att_skill_11	MB_ATT_ASSEMBLE
+	c_att_names_11	"Assemble"
+	c_att_ranks_11	2,2,2
+
+	c_att_skill_12	MB_ATT_RESPAWNS
+	c_att_names_12	"Reinforcements"
+	c_att_ranks_12	15
+	c_att_descs_12 "1 default"
+}
+WeaponInfo0
+{
+	WeaponToReplace 	WP_BLASTER_PISTOL
+	WeaponBasedOff  	WP_BLASTER_PISTOL
+	NewWorldModel 		"models/weapons2/SE-44C/se-44c_phasma_w.glm"
+	NewViewModel  		"models/weapons2/SE-44C/se-44c_phasma.md3"
+	Icon  				"gfx/hud/w_icon_se-44c_p"
+	WeaponName  		"SE-44C Blaster Pistol"
+    FlashSound0 		"sound/weapons/se-44c/fire.wav"
+    AltFlashSound0  	"sound/weapons/se-44c/alt_fire.wav"
+	altfireenabled	0
+	ratemod .60
+	damagemod .50
+	fpmult	.60
+
+}
+WeaponInfo1
+{
+	WeaponToReplace WP_DC_CARBINE
+	WeaponBasedOff  WP_DC_CARBINE
+	NewWorldModel "models/weapons2/f11d_blaster/F11D_Phasma_W.glm"
+	NewViewModel  "models/weapons2/f11d_blaster/F11D_Phasma.md3"
+	Icon  		"gfx/hud/w_icon_f11_p"
+	WeaponName  	"F11-D Blaster Rifle"
+	MuzzleEffect  "Blaster/MuzzleFlash01R"
+	MissileEffect	 "Blaster/Shot01R"
+	FlashSound0	    "sound/weapons/f-11d/fire.mp3"
+	AltFlashSound0	"sound/weapons/f-11d/fire.mp3"
+	altfireenabled	0
+	velocitymod	1.10
+	clipsize	36
+	ratemod		.70
+	damagemod	1.1
+}
+WeaponInfo2
+{
+	WeaponToReplace		WP_PROJ
+	WeaponBasedOff  	WP_PROJ
+	NewWorldModel 		"models/weapons2/DLT-19_HeavyBlaster/model_scope.glm"
+	NewViewModel  		"models/weapons2/DLT-19_HeavyBlaster/riflescoped.md3"
+	Icon  				"gfx/hud/w_icon_dlt19scoped"
+	WeaponName  		"DLT-19D Sniper Conversion"
+	FlashSound0			"sound/weapons/DLT19/fire.wav"	
+	MuzzleEffect  		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+	hasAnimOverrides 1
+	animReadyRun BOTH_DC15_IDLE
+	animReady BOTH_DC15_IDLE
+	animReadyWalk BOTH_DC15_READY
+	animReadyNoAmmo BOTH_DC15_ATTACK
+	animAttackRun BOTH_DC15_ATTACK
+	animAttack BOTH_DC15_ATTACK
+	animAttackWalk BOTH_DC15_ATTACK
+	animStand BOTH_STAND1
+	customAmmo 			100
+	clipSize			10
+	Damagemod			0.15
+	FPMult 				0.25
+	rateMod 0.75
+}
+
+
+description	"First Order Trooper
+
+A resilient and zealous infantry who specialize in pushing forward.
+
+^2Weaponry:
+- Melee
+-- 15%+ Faster Movement Speed
+
+^6Inventory:
+- Medpac
+
+^8Attributes:
+- Reinforcement (1)
+- 10% less Kb Taken
+- Stamina (0)
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Gunkick ^3[CS3]"

@@ -1,0 +1,113 @@
+// Air
+ClassInfo
+{
+name	"ste9_Maw"
+
+MBclass		MB_CLASS_WOOKIE
+classNumberLimit	1
+weapons		WP_MELEE|WP_SABER
+
+forcepowers	FP_PULL,1|FP_PUSH,3|FP_RAGE,3|FP_SABERTHROW,1|FP_GRIP,2|FP_HEAL,2
+
+attributes	MB_ATT_JETPACK,1|MB_ATT_DEFLECT,1|MB_ATT_FORCEBLOCK,1|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,3|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_WOOKIE_STRENGTH,3|MB_ATT_WOOKIEE_FURY,1
+classflags CFL_BLOODYMELEE|CFL_STRONGAGAINSTPHYSICAL|CFL_HEAVYMELEE|CFL_DISMEMBERFRAGILE|CFL_BPFREEJUMPS|CFL_NOPICKUPS
+disableGunbash	1
+
+jetpackThrustEffect	""
+jetpackIdleEffect	""
+	
+jetpackFinishSound 	"sound/effects/woosh4"
+jetpackThrustSound  "sound/ambience/artus/artus_shaft"
+jetpackStartSound 	"sound/effects/woosh22"
+jetpackIdleSound	"sound/ambience/artus/artus_shaft"
+
+rateOfFire_Melee	1.35
+
+maxhealth 175
+knockbackGiven 1.2
+resource RESOURCE_RAGE
+forcepool	150
+resourceRegenCap 	70
+resourceRegenAmount 1
+resourceRegenRate 255
+forceregen 2.1
+
+special1 EAS_FP_SABERTHROW		
+
+special2 EAS_FP_HEAL
+
+special3 EAS_FP_RAGE
+
+special4 EAS_FP_GRIP
+
+skilltimerMod 5
+baseSpeed 210
+meleeMoves M_BLOCK|M_KATA|M_PUNCH|M_UPPERCUT|M_KICK
+saber1 		saber_maw_legends
+sabercolor	0
+saberstyle	SS_STRONG
+saberMaxChain	 2
+saberThrowDamage	70
+APmultiplier    1.35
+BPmultiplier	.65
+CSmultiplier	1.05
+ASmultiplier	1
+
+model "maw"
+uishader	"models/players/maw/icon_default"
+modelscale 1.10
+uioverlay_r "gfx/icons/brawler"
+uioverlay_l "gfx/icons/frontline"
+
+WalkForward 	BOTH_WIND
+WalkBackward 	BOTH_SWIM_IDLE1
+RunForward 	BOTH_WIND
+RunBackward 	BOTH_WIND
+}
+ForceInfo0
+{
+Icon	"gfx/misc/dismelt.jpg"
+ForceToReplace	FP_HEAL
+ForcePowerName	"Spite"
+StartSound	"sound/chars/trandoshan1/misc/death3.mp3"
+}
+description "Maw [Wookie]
+
+Air
+
+To the one called Maw: a bitter individual that loathes all and holds loyalty to few. A strong and formidable foe, for every cord of muscle there is hatred.
+
+A rage based sith, focused on hit and runs utilizing bursts of flight with healing tools dependant on resource.
+
+^2Weaponry:
+- Heavy Melee
+-- 35% slower punches
+-- Wookie Slap
+- Maw's Lightsaber (Red)
+-- Chain Limit: 2
+-- Saber/Blaster Defense (3)
+-- Saber Deflect (1)
+-- 25% longer reach
+-- 20% more KB given
+-- Cannot Slap
+-- EX Saber Throw (1) ^3[CS1]
+--- 133% more DMG
+
+^5Force Powers:
+- Push (3)
+- Pull (1)
+- Spite (Heal 2) ^3[CS2]
+- Dark Rage (3) ^3[CS3]
+- Grip (2) ^3[CS4]
+
+^8Attributes:
+- 500% longer skill CD
+- Strength (1)
+- Fury (1)
+- Physical Resist
+- Force Block (1)
+- Force Focus (2)
+
+^3Abilities:
+- Flight (Jetpack)"
+

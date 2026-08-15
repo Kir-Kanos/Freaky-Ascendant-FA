@@ -1,0 +1,44 @@
+//Fuse
+
+ClassInfo
+{
+	name			"ste10_Sariss"
+	weapons			WP_SABER|WP_MELEE
+	saber1			saber_sariss
+	sabercolor		4
+	saberstyle		SS_FAST|SS_MEDIUM|SS_TAVION
+	forcepowers		FP_LEVITATION,3|FP_GRIP,2|FP_SABER_OFFENSE,2|FP_SABER_DEFENSE,3|FP_DEADLYSIGHT,2|FP_SEE,2
+	attributes		MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GUN_DEFENSE,2|MB_ATT_FORCEFOCUS,3|MB_ATT_FORCEBLOCK,2
+	maxhealth		120
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+	forcepool		120
+	model			"gwethenea"
+	skin			"sariss_cape"
+	uishader		"models/players/gwethenea/mb2_icon_sariss_cape"
+	MBClass			MB_CLASS_JEDI
+	classNumberLimit	1
+	saberStanceAnim         BOTH_S1_S1_BR
+}
+
+description	"Sariss [Jedi]
+
+A Fencing Class with Deadly Sight, able to damage enemies at range with ease by simply looking their way.
+
+^2Weaponry:
+- Sariss' Lightsaber
+-- Yellow/Blue/Cyan Styles
+-- Saber Defense (3)
+-- Blaster Defense (2)
+
+^5Force Powers:
+- Force Jump (3)
+- Force Grip (2)
+- Deadly Sight (2)
+- Force Sense (2)
+- Force Block (2)
+- Force Focus (3)
+
+^8Attributes:
+- Heal capped at 35hp"

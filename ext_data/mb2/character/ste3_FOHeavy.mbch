@@ -1,0 +1,190 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name			"ste3_FOHeavy"
+	weapons		WP_MELEE|WP_THERMAL
+	attributes	MB_ATT_AMMO,3|MB_ATT_BACTA,1
+	classnumberlimit	2
+
+	MBClass		MB_CLASS_CLONETROOPER
+	
+	resource RESOURCE_STAMINA
+	forcepool 100
+
+	basespeed	162
+	
+	modelscale 1.03
+	
+	extralives		1
+
+	maxhealth		120
+	
+	WP_MeleeFlags		HELD_SPEED
+	WP_MinigunFlags		HELD_SLOW
+	WP_RepeaterFlags	HELD_SLOW|HELD_ALTRELOAD
+	WP_BlasterPistolFlags	HELD_SPEED|HELD_ALTRELOAD
+
+	maxArmor			90
+
+	
+	knockbacktaken 0.8
+	
+	special1			EAS_HI_FLAME
+	special3			EAS_HI_MEDPAC
+	
+	
+	flourishAnim BOTH_MELEE1
+	
+	uioverlay_l "gfx/icons/heavy"
+	uioverlay_r "gfx/icons/infantry"
+	
+model     "stormie_tfa"
+skin      "vest"
+uishader  "models/players/stormie_tfa/mb2_icon_vest"
+
+model_1     "stormie_tfa"
+skin_1      "rgb"
+uishader_1  "models/players/stormie_tfa/mb2_icon_rgb"
+
+	userRGB_1 		1
+	customred_1	0.709
+	customgreen_1	0.12
+	customblue_1 	0.12 //def r
+
+	iscustombuild		  1
+	mbPoints		 40
+	
+	c_att_skill_0	MB_ATT_PISTOL
+	c_att_names_0	"SE-44C Blaster Pistol"
+	c_att_ranks_0	0,2,4
+	c_att_descs_0	"Pistol, 50%- Damage/FP Drain, 40%+ RoF, Fast"
+	
+	c_att_skill_1	MB_ATT_REPEATER
+	c_att_names_1	"FWMB-10 Heavy Repeater"
+	c_att_ranks_1	2,2,2
+	c_att_descs_1	"Repeater, 10%+ Damage, 20%+ RoF, 10%+ Velocity, Slow"
+
+	c_att_skill_2	MB_ATT_MINIGUN
+	c_att_names_2	"Z-6 Rotary Cannon (Minigun)"
+	c_att_ranks_2	10
+	c_att_descs_2	"38% faster RoF, 15% more Dmg, 10% more FP Dmg, Slow"
+
+	c_att_skill_3	MB_ATT_FLAMETHROWER
+	c_att_names_3	"Wrist Flamethrower"
+	c_att_ranks_3	4
+
+	c_att_skill_4	MB_ATT_FIRE_GRENADES
+	c_att_names_4	"Fire Grenade"
+	c_att_ranks_4	2,4
+
+	c_att_skill_5	MB_ATT_THERMALS
+	c_att_names_5	"Thermal Detonator"
+	c_att_ranks_5	8
+
+	c_att_skill_6	MB_ATT_BESKAR
+	c_att_names_6	"Plated Chestpiece"
+	c_att_ranks_6	4
+	c_att_descs_6	"Beskar"
+
+	c_att_skill_7	MB_ATT_HEALING
+	c_att_names_7	"Healing"
+	c_att_ranks_7	2
+
+	c_att_skill_8	MB_ATT_WOOKIE_STRENGTH
+	c_att_names_8	"Heavy Strength"
+	c_att_ranks_8	2,4
+
+	c_att_skill_9	MB_ATT_BLAST_ARMOUR
+	c_att_names_9	"Blast Armor"
+	c_att_ranks_9	2
+
+	c_att_skill_10	MB_ATT_ENV_PROT
+	c_att_names_10	"Environmental Protection"
+	c_att_ranks_10	2,2
+
+	c_att_skill_11	MB_ATT_ASSEMBLE
+	c_att_names_11	"Assemble"
+	c_att_ranks_11	2
+
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_MINIGUN
+	WeaponBasedOff		WP_MINIGUN
+	NewWorldModel		"models/weapons2/z6_rotary/model.glm"
+	NewViewModel		"models/weapons2/z6_rotary/rotary_cannon.md3"
+	NewHandsModel		"models/weapons2/z6_rotary/rotary_cannon_hand.md3"
+	NewBarrelModel		"models/weapons2/z6_rotary/rotary_cannon_barrel.md3"
+	MuzzleEffect  		"Blaster/MuzzleFlash01R"
+	altMuzzleEffect  		"Blaster/MuzzleFlash01R"
+	MissileEffect 		"Blaster/Shot02R"
+	MissileMissEffect		"Blaster/Impact_Wall01R.efx"
+	FlashSound0			"sound/weapons/minigun/fire.wav"
+	isMinigun			1
+	Icon				"gfx/hud/w_icon_rotary_cannon"
+	WeaponName			"Z-6 Rotary Blaster Cannon"
+	customammo		900
+	clipSize	300
+	altFireEnabled	1
+	FPMult     1.1
+	damageMod 1.15
+	rateMod 0.62
+isMinigun 1
+}
+WeaponInfo1
+{
+	WeaponToReplace 	WP_BLASTER_PISTOL
+	WeaponBasedOff  	WP_BLASTER_PISTOL
+	NewWorldModel 		"models/weapons2/SE-44C/se-44c_phasma_w.glm"
+	NewViewModel  		"models/weapons2/SE-44C/se-44c_phasma.md3"
+	Icon  				"gfx/hud/w_icon_se-44c_p"
+	WeaponName  		"SE-44C Blaster Pistol"
+    FlashSound0 		"sound/weapons/se-44c/fire.wav"
+    AltFlashSound0  	"sound/weapons/se-44c/alt_fire.wav"
+	ChargeSound			"sound/weapons/leia_pistol/altcharge.mp3"
+	clipSize		32
+	ReloadTimeModifier 	2
+	customammo 800
+	FPMult	0.5
+	damageMod 0.5
+	rateMod 0.6
+}
+WeaponInfo2
+{
+	WeaponToReplace 	WP_REPEATER
+	WeaponBasedOff  	WP_REPEATER
+	NewWorldModel 		"models/weapons2/FWMB-10/fwmb-10_w.glm"
+	NewViewModel  		"models/weapons2/FWMB-10/fwmb-10.md3"
+	Icon  				"gfx/hud/w_icon_fwmb-10_p"
+	MissileEffect		"Blaster/Shot01R"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	damagemod	1.10
+	rofmod		0.80
+	velocitymod	1.20
+	WeaponName  		"FWMB-10 Heavy Repeater"
+     	FlashSound0 		"sound/weapons/fwmb-10/fire.wav"
+	 MissileMissEffect "Blaster/Impact_Wall01R.efx"
+ MissileHitHumanEffect "Blaster/Impact_Wall01R.efx"
+ MissileHitDroidEffect "Blaster/Impact_Wall01R.efx"
+ altMissileMissEffect "Blaster/Impact_Wall01R.efx"
+ altMissileHitHumanEffect "Blaster/Impact_Wall01R.efx"
+ altMissileHitDroidEffect "Blaster/Impact_Wall01R.efx"
+	altfireenabled	0
+}
+
+description	"First Order Heavy Trooper
+
+A bulky trooper with heavy weaponry who excells at suppression and tanking damage.
+
+^2Weaponry:
+- Melee
+-- 15%+ Faster Movement Speed
+
+^6Inventory:
+- Medpac ^3[CS3]
+
+^8Attributes:
+- Reinforcement (1)
+- 20% less Kb Taken
+- Stamina (0)"
