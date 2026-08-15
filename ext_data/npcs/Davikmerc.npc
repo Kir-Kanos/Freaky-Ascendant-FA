@@ -10,7 +10,7 @@ Davikmerc
 	armor 50
 	headPitchRangeDown 30
 	reactions	5
-	aim		5
+	aim		3
 	move		5
 	aggression	5
 	evasion		5
