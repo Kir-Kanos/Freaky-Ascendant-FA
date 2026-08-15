@@ -7,7 +7,6 @@ ClassInfo
 	classNumberLimit		4
 	weapons			WP_MELEE|WP_THERMAL
 	extralives	1
-	basespeed	218
 	
 	attributes	MB_ATT_JETPACK|MB_ATT_AMMO,3|MB_ATT_TRACKING_BEACON|MB_ATT_BLAST_ARMOUR
 	|MB_ATT_DEXTERITY,1
