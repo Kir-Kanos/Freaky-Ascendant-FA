@@ -1,0 +1,88 @@
+name "ASC_ST_E"
+
+ClassesAllowed 6
+TimePeriod 2
+EUAllowed 0
+
+Classes
+{
+	class1	"ste1_ImpWorker"
+	class2	"ste3_FOMarsh"
+	class3	"ste4_CarnorJax"
+	class4	"ste6_ScoutTr"
+	class5	"ste9_Reborn"
+	class6	"ste10_Tavion"
+}
+
+SubclassesForClass1
+{
+	Subclass1	"ste1_Remnant"
+	Subclass2	"ste1_NTroop"
+	Subclass3	"ste1_Thug"
+	Subclass4	"ste1_Undead"
+	Subclass5	"ste2_FlameTr"
+	Subclass6	"ste2_FOSith"
+	Subclass7	"ste2_FOTrooper"
+	Subclass8	"ste2_ImpOfficer"
+
+}
+
+SubclassesForClass2
+{
+	Subclass1	"ste3_Cultforce"
+	Subclass2	"ste3_HeavyRemn"
+	Subclass3	"ste3_Peridea"
+	Subclass4	"ste3_Trando"
+	Subclass5	"ste3_FOHeavy"
+
+}
+
+SubclassesForClass3
+{
+	Subclass1	"ste5_JumpTr"
+	Subclass2	"ste5_ImpArmCom"
+	Subclass3	"ste5_P3DarkTr"
+
+}
+
+SubclassesForClass4
+{
+	Subclass1	"ste6_Mayfeld"
+	Subclass2	"ste6_Tusk"
+	Subclass3	"ste7_Enoch"
+	Subclass4	"ste7_Reelo"
+	Subclass5	"ste7_Saboteur"
+	Subclass6	"ste7_Thrawn"
+	Subclass7	"ste8_Burg"
+	Subclass8	"ste8_Galak"
+	Subclass9	"ste8_HuttW"
+	Subclass10	"ste6_Gideon"
+	Subclass11	"ste8_GamoPig"
+	Subclass12	"ste8_BlackK"
+	Subclass13	"ste7_Noghri"
+
+}
+
+SubclassesForClass5
+{
+	Subclass1	"ste9_Alora"
+	Subclass2	"ste9_Desann"
+	Subclass3	"ste9_Jacen"
+	Subclass4	"ste9_Maw"
+	Subclass5	"ste9_Kylo"
+
+}
+
+SubclassesForClass6
+{
+	Subclass1	"ste10_Boc"
+	Subclass2	"ste10_Jerec"
+	Subclass3	"ste10_Palp"
+	Subclass4	"ste10_DarkForce"
+	Subclass5	"ste10_Gorc"
+	Subclass6	"ste10_Pic"
+	Subclass7	"ste10_Ragnos"
+	Subclass8	"ste10_Sariss"
+	Subclass9	"ste10_Yun"
+
+}
