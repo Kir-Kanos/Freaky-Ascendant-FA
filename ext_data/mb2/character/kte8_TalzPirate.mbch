@@ -243,7 +243,12 @@ WeaponInfo5
 	FlashSound0			"sound/weapons/kotor/fire_light.wav"
 	AltFlashSound0		"sound/weapons/kotor/fire_power1.wav"
 	ChargeEffect		"gfx/effects/bryarfrontflash"
-  					
+ MissileMissEffect "Blaster/Impact_Wall01R.efx"
+ MissileHitHumanEffect "Blaster/Impact_Wall01R.efx"
+ MissileHitDroidEffect "Blaster/Impact_Wall01R.efx"
+ altMissileMissEffect "Blaster/Impact_Wall01R.efx"
+ altMissileHitHumanEffect "Blaster/Impact_Wall01R.efx"
+ altMissileHitDroidEffect "Blaster/Impact_Wall01R.efx"
 	FPMult     		0.90
 	customAmmo 600
 	DamageMod .90
