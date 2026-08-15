@@ -1,0 +1,76 @@
+//Fuse
+
+ClassInfo
+{
+	name			"ste10_Pic"
+	weapons			WP_SABER|WP_MELEE
+	saber1			saber_pic_legends
+	sabercolor		1
+	saberstyle		SS_TAVION
+	forcepowers		FP_LEVITATION,3|FP_TEAM_HEAL,1|FP_SABER_OFFENSE,2|FP_SABER_DEFENSE,1|FP_TEAM_FORCE,1|FP_SEE,2|FP_TELEPATHY,1|FP_SPEED,2|FP_PUSH,2
+	attributes		MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_FORCEFOCUS,1|MB_ATT_FORCEBLOCK,3|MB_ATT_BUNNY_HOP|MB_ATT_DEFLECT,0|MB_ATT_FLIPKICK,1|MB_ATT_HEALING,1|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_SABER_FAST,1
+	maxhealth		60
+	forcepool		125
+	model			"pic"
+	skin			"default"
+	uishader		"models/players/pic/icon_default"
+	modelscale		0.63
+	MBClass			MB_CLASS_JEDI
+	classNumberLimit	1
+	special1		EAS_FP_TELEPATHY
+	special2		EAS_FP_SPEED
+	special3		EAS_FP_TEAM_FORCE
+	special4		EAS_FP_TEAM_HEAL
+	APmultiplier		0.95
+	BPmultiplier		0.95
+	CSmultiplier 		0.95
+	ASmultiplier 		0.95
+	forceregen			1.25
+	classflags		CFL_BPFREEJUMPS|CFL_STRONGAGAINSTPHYSICAL
+	rateoffire_melee	0.6
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_MELEE
+	WeaponBasedOff		WP_MELEE  
+  NewWorldModel		"models/weapons2/dummy/dummy.glm"
+  NewViewModel		"models/weapons2/dummy/dummy.md3"
+  Icon			"gfx/hud/w_icon_melee.tga"
+	WeaponName		"Melee"
+	primGore		1
+	altGore			1
+	damagemod		0.66
+}
+
+description	"Picaroon C. Boodle - The Mutant Monkey Lizard [Jedi]
+
+^7Weaponry:
+- Melee
+-- +40% Rate of Fire
+-- -44% Damage
+- Pic's Lightsaber Shoto
+-- Cyan Style Only
+-- Saber Defense (2)
+-- Blaster Defense (1)
+-- -30% Reach
+-- -26% Radius
+
+^5Force Powers:
+- Jump (3)
+- Push (2)
+- Speed (2)
+- Team Heal (1) ^3[CS1]
+- Team Energize (1) ^3[CS3]
+- Mind Trick (1) ^3[CS4]
+- Sense (2)
+
+
+^8Attributes:
+- Flipkick (1) ^3[Contact Jump]
+- Heal (1)
+- Bunny Hop (1)
+- Resistant to Melee
+- In Air Force Regen
+- Force Block (3)
+- Force Focus (1)"

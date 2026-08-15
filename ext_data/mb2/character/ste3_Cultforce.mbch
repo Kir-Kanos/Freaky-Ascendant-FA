@@ -1,0 +1,137 @@
+//Fuse
+
+ClassInfo
+{
+	name				"ste3_Cultforce"
+	weapons				WP_BLASTER_PISTOL|WP_MELEE
+		
+	attributes			MB_ATT_AMMO,3|MB_ATT_DEXTERITY,1|MB_ATT_DODGE,2|MB_ATT_PISTOL,3|MB_ATT_BUNNY_HOP,1|MB_ATT_FLOAT_HOP|MB_ATT_FORCEFOCUS,1
+	
+	
+	resource RESOURCE_FORCE
+	forcepool 60
+	forceregen	.95
+	
+	extralives	3
+	
+	maxhealth			80
+	maxarmor				10
+		
+	MBClass				MB_CLASS_ARCTROOPER
+	classNumberLimit	3
+	speed				.96
+	
+	special1			EAS_FP_PUSH
+	special2 			EAS_FP_PULL
+	special3			EAS_HI_DEX
+	special4			EAS_HI_DODGE
+	
+	uioverlay_r "gfx/icons/infantry"
+	uioverlay_l "gfx/icons/hybrid"
+	
+	model			"cultist"
+	skin				"blue"
+	uishader 		"models/players/cultist/mb2_icon_blue"
+	model_1			"cultist"
+	skin_1			"brown"
+	uishader_1		"models/players/cultist/mb2_icon_brown"
+	model_2			"cultist"
+	skin_2			"red"
+	uishader_2		"models/players/cultist/mb2_icon_red"
+
+	isCustomBuild		1
+	mbPoints			3
+	hasCustomSpec 3
+	isOnlyOneSpec 1
+	
+	customSpecName_1 "Lightning"
+	customSpecIcon_1 "gfx/mp/new_f_icon_dk_l1"
+	customSpecDesc_1 "Lightning"
+	customSpecName_2 "Grip""
+	customSpecIcon_2 "gfx/mp/new_f_icon_dk_grip"
+	customSpecDesc_2 "Force Grip"
+	customSpecName_3 "Drain"
+	customSpecIcon_3 "gfx/mp/new_f_icon_dk_drain"
+	customSpecDesc_3 "Force Drain"
+	
+	c_att_skill_0 	MB_ATT_FP_LEVITATION
+	c_att_names_0 	"Force Jump"
+	c_att_ranks_0 	0,1
+	
+	c_att_skill_1 	MB_ATT_FP_PUSH	
+	c_att_names_1 	"Force Push [CS1]"
+	c_att_ranks_1 	1
+		
+	c_att_skill_2 	MB_ATT_FP_PULL
+	c_att_names_2 	"Force Pull [CS2]"
+	c_att_ranks_2 	1
+	
+	c_att_skill_3	MB_ATT_FP_LIGHTNING	
+	c_att_names_3	"Force Lightning"
+	c_att_ranks_3	0,1
+	
+	c_att_skill_15	MB_ATT_FP_LEVITATION
+	c_att_names_15	"Force Jump"
+	c_att_ranks_15	0,1
+
+	c_att_skill_16	MB_ATT_FP_PUSH
+	c_att_names_16	"Force Push [CS1]"
+	c_att_ranks_16	1
+	
+	c_att_skill_17	MB_ATT_FP_PULL
+	c_att_names_17	"Force Pull [CS2]"
+	c_att_ranks_17	1
+	
+	c_att_skill_18	MB_ATT_FP_GRIP
+	c_att_names_18	"Force Grip"
+	c_att_ranks_18	0,1
+	
+	c_att_skill_30	MB_ATT_FP_LEVITATION
+	c_att_names_30	"Force Jump"
+	c_att_ranks_30	0,1
+
+	c_att_skill_31 	MB_ATT_FP_PUSH
+	c_att_names_31	"Force Push [CS1]"
+	c_att_ranks_31	1
+	
+	c_att_skill_32 	MB_ATT_FP_PULL
+	c_att_names_32	"Force Pull [CS2]"
+	c_att_ranks_32	1
+	
+	c_att_skill_33	MB_ATT_FP_DRAIN
+	c_att_names_33	"Force Drain"
+	c_att_ranks_33	0,1
+}
+
+WeaponInfo0
+{
+WeaponToReplace WP_BLASTER_PISTOL
+WeaponBasedOff WP_BLASTER_PISTOL
+NewWorldModel "models/weapons2/blaster_two/blaster_pistol_w.glm"
+NewViewModel "models/weapons2/blaster_two/blaster_pistol.md3"
+Icon "gfx/hud/w_icon_blaster_pistol_2"
+WeaponName "Blaster Pistol"
+ChargeSound "sound/weapons/leia_pistol/altcharge.mp3"
+damageMod 1.0
+FPMult	1.1
+}
+
+description	"Disciple of Ragnos Force User [Arc Trooper]
+
+A Weak Tri-Spec force user that uses Lightning/Grip/Drain on the battlefield.
+
+^2Weaponry:
+- Melee
+- Blaster Pistol (3)
+-- +10% FP Damage
+
+^8Attributes:
+- Dexterity (1)
+- Force Focus (1)
+- Bunny Hop (1)
+- Slow Fall
+- Reinforcements (3)
+
+^3Abilities:
+- Dex Roll ^3[CS3]
+- Dodge (2) ^3[CS4]"

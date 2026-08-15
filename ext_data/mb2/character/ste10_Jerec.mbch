@@ -1,0 +1,96 @@
+//Legends Mode character file - Created by Frenzy & Leos
+
+ClassInfo
+{
+	name				"ste10_Jerec"
+
+	MBClass				MB_CLASS_SITH
+	classNumberLimit	1
+	weapons				WP_SABER|WP_MELEE
+
+	forcepowers			FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_PUSH,2|FP_PULL,2|FP_DESTRUCTION,2|FP_SEE,2|FP_SABERTHROW,3|FP_DRAIN,1|FP_LIGHTNING,1
+
+	attributes			MB_ATT_DEFLECT,3|MB_ATT_FORCEBLOCK,3|MB_ATT_FP_MIRALUKA|MB_ATT_FP_REPULSE|MB_ATT_FORCEFOCUS,3|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,3
+
+	maxhealth			135
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+	forcepool			100
+	forceregen  1.04
+ resource RESOURCE_FORCE
+	speed				.97
+ rateOfFire_Melee .9
+ damageGiven 1.1
+ special1 EAS_FP_SABERTHROW
+ meleeSpecial1 EAS_FP_REPULSE
+	special2 EAS_FP_DRAIN
+	special3 EAS_FP_DESTRUCTION
+	special4 EAS_FP_LIGHTNING
+
+	classflags CFL_NOPICKUPS
+ saberSpecialDamage 1.25
+	saber1				 saber_jerec
+	sabercolor			0
+	saberstyle			SS_TAVION|SS_MEDIUM|SS_STRONG
+	APmultiplier		1.05
+	BPmultiplier		1.3
+	saberThrowDamage 40
+ saberDamageStyle SS_TAVION,130
+ saberStanceAnim BOTH_STAND9
+
+	uioverlay "gfx/icons/support"
+	modelScale       1.03
+	model			"jerec"
+	skin				"default"
+	uishader	"models/players/jerec/mb2_icon_default"
+	
+	model_1		"jerec"
+	skin_1			"robed"
+	uishader_1	"models/players/jerec/mb2_icon_robed"
+}
+
+ForceInfo0
+{
+	ForceToReplace	FP_DESTRUCTION
+	Icon		"gfx/mp/force_destruction"
+	ForcePowerName	"Destruction"
+	//HandShader	"gfx/effects/forcePush"
+	StartSound "sound/chars/jerec/misc/destruction1.mp3"
+	//HandShaderRed	180
+	//HandShaderBlue	40
+	//HandShaderGreen	40
+	//HandShader2Red	180
+	//HandShader2Blue	40
+	//HandShader2Green	40
+}
+
+description	"Jerec
+
+A support Sith with perma-Sense and Force projectiles.
+
+^2Weaponry:
+- Melee
+-- 10% faster RoF
+- Lightsaber (Yellow/Red/Cyan)
+-- Saber Defense (3)
+-- Blaster Defense (2)
+-- Blaster Deflect (3)
+-- 8% more Cyan Dmg
+-- 125% Spec Dmg mult
+-- EX Saber Throw (3) ^3[CS1]
+--- 30% more Dmg
+
+^5Force Powers:
+- Jump (3)
+- Push (2)
+- Pull (2)
+- Repulse ^3[CS1 Melee]
+- Drain (1) ^3[CS2]
+- Destruction (2) ^3[CS3]
+- Lightning (1) ^3[CS4]
+
+^8Attributes:
+- Heal capped at 35hp
+- Miraluka Vision (2)
+- Force Block/Focus (3)"

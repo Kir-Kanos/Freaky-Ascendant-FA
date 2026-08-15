@@ -1,0 +1,87 @@
+
+Classinfo
+{
+	name				"ste10_Palp"
+	MBclass				MB_CLASS_SITH
+	classNumberLimit	1
+
+	weapons				WP_MELEE|WP_SABER
+	WP_MeleeFlags		HELD_SPEED
+	WP_SaberFlags		HELD_NODISARM
+
+	attributes			MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_FORCEBLOCK,3|MB_ATT_FORCEFOCUS,3|MB_ATT_DEFLECT,0|MB_ATT_GUN_DEFENSE,1|MB_ATT_DEXTERITY,3|MB_ATT_HEALING,1
+
+	forcepowers			FP_SABER_OFFENSE,2|FP_LIGHTNING,3|FP_PUSH,3|FP_PULL,3|FP_LEVITATION,3|FP_SEE,3|FP_GRIP,3
+	//AB_FLightningFlags	HELD_HIGHDAMAGE
+	special2			EAS_NONE
+
+	classflags			CFL_NOPICKUPS
+
+	maxhealth			100
+	forcepool			140
+
+	resource			RESOURCE_FORCE
+	forceregen			1.40
+
+	speed				0.99
+	damageGiven			1.1
+	rateOfFire_Melee	.9
+	APmultiplier		1.35
+	BPmultiplier		0.95
+	ASmultiplier		1.02
+	saberThrowDamage	40
+	saberDamageStyle	SS_STRONG,300
+	saberSpecialDamage	1.86
+	saber1				saber_sidious_legacy
+	sabercolor			0.99
+	saberstyle			SS_STRONG
+
+	modelScale			0.97
+	uioverlay			"gfx/icons/support"
+
+	model				"palpatine_tros"
+	skin				"default"
+	uishader			"models/players/palpatine_tros/mb2_icon_default"
+
+	model_1				"palpatine"
+	skin_1				"emperor3"
+	uishader_1			"models/players/palpatine/mb2_icon_emperor3"
+
+	flourishAnim		BOTH_FORCE_PROTECT_FAST
+	gloatAnim			BOTH_CONSOLE1
+	//flourishAnim		BOTH_DUAL_TAUNT
+	//WalkForward		BOTH_FORCE_2HANDEDLIGHTNING_HOLD
+}
+
+Description	"Darth Sidious
+
+The Emperor himself. A powerful but relatively frail Sith with fast Force regen and potent dark side abilities, including a corkscrew special.
+
+^2Weaponry:
+- Melee
+-- Lightweight
+-- 10% faster RoF
+- Lightsaber
+-- Saber Defense (2)
+-- Blaster Defense (1)
+-- 86% more special damage
+-- Saber Throw ^3[CS1]
+--- 33% more damage
+> Single (Red)
+-- 10% more AS
+-- 42% less damage
+> Double (Dual)
+-- 5% faster movement
+
+^5Force Powers:
+- Jump (3)
+- Push (3)
+- Pull (3)
+- Sense (3)
+- Lightning (3) ^3[CS4]
+- Grip (3) ^3[CS3]
+
+^8Attributes:
+- Healing (1)
+- Dexterity (3)
+- Force Block/Focus (3)"

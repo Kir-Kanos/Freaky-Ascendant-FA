@@ -1,0 +1,71 @@
+//Fuse
+
+ClassInfo
+{
+	name			"ste10_Boc"
+	weapons			WP_SABER|WP_MELEE
+	saber1			saber_boc
+	saber2			saber_boc
+	sabercolor		5
+	saber2color		5
+	saberstyle		SS_Dual|SS_TAVION
+	attributes		MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_FORCEFOCUS,1|MB_ATT_FORCEBLOCK,3|MB_ATT_DEXTERITY,3|MB_ATT_FLIPKICK,1|MB_ATT_DEFLECT,2|MB_ATT_SPY_DISGUISE,2|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_BUNNY_HOP|MB_ATT_HEALING,1|MB_ATT_SABER_FAST,1
+	forcepowers		FP_LEVITATION,3|FP_SABER_OFFENSE,3|FP_TELEPATHY,2|FP_SEE,1|FP_SABERTHROW,3|FP_PULL,2|FP_SPEED,3
+	maxhealth		115
+	forcepool		120
+	forceregen		1.20
+	basespeed		235
+	damageGiven		1.10
+	BPmultiplier		1.00
+	APmultiplier     	1.00
+	ASmultiplier		1.20
+	CSmultiplier		1.20
+	modelscale      	1.02
+	blockRegenRate		0.9
+	classflags		CFL_BPFREEJUMPS|CFL_SEEING_STEALTH|CFL_RUNFASTMELEE
+	model			"boc_aseca"
+	skin			"default"
+	uishader		"models/players/boc_aseca/mb2_icon_default"
+	MBClass			MB_CLASS_JEDI
+	classNumberLimit	1
+	special1		EAS_FP_SABERTHROW
+	special2		EAS_FP_TELEPATHY
+	special3		EAS_HI_DEX
+	special4		EAS_FP_PULL
+	resource		resource_force
+}
+
+description	"Boc Aseca [Jedi]
+
+An acrobatic Dark Jedi with stealth powers and fast movement.
+
+^2Weaponry:
+- Melee
+-- +15% Movement Speed
+- Boc's Dual Lightsabers
+-- Dual Style
+-- Saber Defense (2)
+-- +10% BP Regen Speed
+-- Blaster Defense (2)
+-- EX Saber Throw (3) ^3[CS1]
+
+^5Force Powers:
+- Jump (3)
+- Mind Trick (2) ^3[CS2]
+- Pull (2) ^3[CS4]
+- Sense (1)
+- Speed (3)
+
+^8Attributes:
+- Dexterity (3)
+- Bunny Hop (1)
+- Force Sense Immunity
+- In Air Force Regen
+- Heal (1)
+- Force Block (3)
+- Force Focus (1)
+- Flipkick (1) ^3[Contact Jump]
+- Disguise (2) [Switch in Melee]
+
+^3Abilities:
+- Dex Roll ^3[CS3]"
