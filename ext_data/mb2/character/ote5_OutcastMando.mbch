@@ -1,0 +1,163 @@
+/Siege class def file
+
+ClassInfo
+{
+	name			"ote5_OutcastMando"
+	MBClass		MB_CLASS_BOUNTY_HUNTER
+	classNumberLimit		4
+	weapons			WP_MELEE|WP_THERMAL
+	extralives	1
+	basespeed	218
+	
+	attributes	MB_ATT_JETPACK|MB_ATT_AMMO,3|MB_ATT_TRACKING_BEACON|MB_ATT_BLAST_ARMOUR
+	|MB_ATT_DEXTERITY,1
+
+	maxhealth	100
+	maxarmor		100
+	
+	modelscale 1.01
+	
+model       "mbmandy"
+skin        "mbrgb1"
+uishader    "models/players/mbmandy/mb2_icon_mbrgb1"
+
+	userRGB 		1
+	customred 		1
+	customgreen		1
+	customblue 		1
+
+model_1       "mbmandy"
+skin_1        "mbrgb2"
+uishader_1    "models/players/mbmandy/mb2_icon_mbrgb2"
+
+	userRGB_1 		1
+	customred_1 		1
+	customgreen_1		1
+	customblue_1 		1
+
+model_2       "mbmandyfem"
+skin_2        "rgb"
+uishader_2    "models/players/mbmandyfem/mb2_icon_rgb"
+
+	userRGB_2 		1
+	customred_2 		1
+	customgreen_2		1
+	customblue_2 		1
+
+model_3       "mbmandyfem"
+skin_3        "rgb2"
+uishader_3    "models/players/mbmandyfem/mb2_icon_rgb2"
+
+	userRGB_3 		1
+	customred_3 		1
+	customgreen_3		1
+	customblue_3		1
+
+model_4       "mbmandy"
+skin_4        "soldier"
+uishader_4    "models/players/mbmandy/mb2_icon_soldier"
+
+model_5        "mbmandy"
+skin_5       "mbc"
+uishader_5     "models/players/mbmandy/mb2_icon_mbc"
+
+model_6        "mbmandy"
+skin_6        "mbd"
+uishader_6     "models/players/mbmandy/mb2_icon_mbd"
+
+model_7        "mbmandy"
+skin_7         "mbe"
+uishader_7     "models/players/mbmandy/mb2_icon_mbe"
+
+model_8        "mbmandy"
+skin_8         "mbe2"
+uishader_8     "models/players/mbmandy/mb2_icon_mbe2"
+
+model_9        "mbmandy"
+skin_9        "mbf"
+uishader_9     "models/players/mbmandy/mb2_icon_mbf"
+
+
+	resource RESOURCE_FUEL
+
+	special1 EAS_HI_WRIST
+	special2 EAS_HI_FLAME
+	
+	WalkBackward 		BOTH_WALKBACK_DUAL
+	WalkForward BOTH_WALK_DUAL
+	isCustomBuild	1
+	mbPoints		45
+	
+	c_att_skill_0	MB_ATT_MANDO_PISTOL
+	c_att_names_0	"Westar Pistol"
+	c_att_ranks_0	2,2,6
+
+	c_att_skill_1	MB_ATT_EE3
+	c_att_names_1	"EE-3 Carbine Rifle"
+	c_att_ranks_1	4,2,2
+
+	c_att_skill_2	MB_ATT_EE4
+	c_att_names_2	"EE-4 Carbine Rifle"
+	c_att_ranks_2	4,4,4
+	
+	c_att_skill_3	MB_ATT_FLAMETHROWER
+	c_att_names_3	"Wrist Flamethrower"
+	c_att_ranks_3	4
+	c_att_descs_3	"^3[CS3]"
+
+	c_att_skill_4	MB_ATT_WRISTLASER
+	c_att_names_4	"Wrist Integrated Laser"
+	c_att_ranks_4	4
+	c_att_descs_4	"^3[CS1]"
+
+	c_att_skill_5	MB_ATT_BESKAR
+	c_att_names_5	"Beskar Infused Armor"
+	c_att_ranks_5	2,4,2
+
+	c_att_skill_6	MB_ATT_FUEL
+	c_att_names_6	"Fuel"
+	c_att_ranks_6	2,2,2
+
+	c_att_skill_7	MB_ATT_STIMPACK
+	c_att_names_7	"Combat Stimulant"
+	c_att_ranks_7	8
+	c_att_descs_7	"Stimpack"
+
+	c_att_skill_8	MB_ATT_ENV_PROT
+	c_att_names_8	"Environment Protection"
+	c_att_ranks_8	2,2
+
+	c_att_skill_9	MB_ATT_ANTI_MT
+	c_att_names_9	"Anti Mind Trick"
+	c_att_ranks_9	2,2
+
+	c_att_skill_10	MB_ATT_WOOKIE_STRENGTH
+	c_att_names_10	"Strength"
+	c_att_ranks_10	4
+
+	c_att_skill_11	MB_ATT_BASE_TD
+	c_att_names_11	"Thermal Grenade"
+	c_att_ranks_11	1,1,1
+
+	c_att_skill_12	MB_ATT_PULSE_GRENADES
+	c_att_names_12	"Pulse Grenade"
+	c_att_ranks_12	2,2
+}
+
+description	"Outcast Mandalorian 
+
+Exile Clanless Mandalorians who now work for the highest bidder.  
+
+^2Weaponry:
+- Melee
+
+^8Attributes:
+- Dexterity (1)
+- Reinforcement (1)
+- Tracking Beacon
+- Blast Armor
+- Ammo (3)
+
+^3Abilities:
+- Jetpack
+- Gunkick ^3[CS3]"
