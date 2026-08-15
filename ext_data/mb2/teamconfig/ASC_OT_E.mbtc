@@ -50,6 +50,7 @@ SubclassesForClass2
 	Subclass10	"ote5_GadgetMando"
 	Subclass11	"ote5_Kast"
 	Subclass12	"ote5_Cad"
+	Subclass13	"ote5_OutcastMando"
 }
 
 SubclassesForClass3
