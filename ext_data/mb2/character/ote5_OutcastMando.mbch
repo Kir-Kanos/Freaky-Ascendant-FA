@@ -81,6 +81,7 @@ uishader_9     "models/players/mbmandy/mb2_icon_mbf"
 
 	special1 EAS_HI_WRIST
 	special2 EAS_HI_FLAME
+	special3 EAS_HI_KICK
 	
 	WalkBackward 		BOTH_WALKBACK_DUAL
 	WalkForward BOTH_WALK_DUAL
