@@ -84,6 +84,7 @@ saberstyle_3		SS_DUAL|SS_FAST
 	uishader	"models/players/darthcognus/mb2_icon_default"
 
 tauntAnim BOTH_HAN_TAUNT
+saberStanceAnim		BOTH_TRIPLE3_STAFFSTANCE
 
 isCustomBuild	1
 mbPoints	0
