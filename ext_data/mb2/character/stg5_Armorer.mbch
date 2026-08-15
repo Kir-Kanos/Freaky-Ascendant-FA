@@ -1,0 +1,80 @@
+//Fuse's Armorer
+
+classinfo
+{
+	name	"stg5_Armorer"
+	weapons		WP_SABER|WP_MELEE
+	MBClass	MB_CLASS_MANDALORIAN
+	maxarmor	125
+	maxhealth	125
+	attributes	MB_ATT_SHIELD_RECHARGE,1|MB_ATT_BESKAR,3|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_DISP_ARMOR,2|MB_ATT_STAMINA,3|MB_ATT_GETUPS,4|MB_ATT_GUN_DEFENSE,1|MB_ATT_SABER_COMBO,2|MB_ATT_RALLY|MB_ATT_DODGE,3|MB_ATT_BLAST_ARMOUR
+	resource	resource_stamina
+	special1	EAS_HI_SPRINT
+	special2	EAS_HI_KICK
+	special3	EAS_HI_DODGE
+	model		"mando_arm"
+	skin		"default"
+	uishader	"models/players/armorer/mb2_icon_default"
+	saber1		mando_arm
+	saber2		mando_arm2
+	saberstyle	SS_DUAL
+	sabercolor	6
+	saber2color	6
+	classflags	CFL_STRONGAGAINSTPHYSICAL
+	BPmultiplier	1.05
+	APmultiplier	1.00
+	CSmultiplier	1.10
+	ASmultiplier	1.15
+	saberDamage		120
+	forcepool	125
+	forceregen	1.10
+	modelscale	.96
+	basespeed 		220
+	WP_MeleeFlags	HELD_SPEED
+	WP_SaberFlags	HELD_STUN
+	classnumberlimit	1
+}
+
+weaponinfo0
+{
+	weapontoreplace		WP_SABER
+	weaponbasedoff		WP_SABER
+	NewWorldModel		"models/weapons2/bone/saber_w.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/mb_stylehilt_dual"
+	WeaponName			"Beskar Hammer & Tongs"
+}
+
+description "The Armorer [Mandalorian]
+
+A Tanky Melee Mandalorian armed with Hammer & Tong.
+
+^1Weaponry:
+- Melee
+-- Increased Movement
+> Beskar Hammer & Tongs
+-- Based on Dual Lightsabers
+-- Dual Style Only
+-- Reduced Length on both blades
+-- Can Block Blasters/Sabers
+-- Saber Defense (2)
+-- Gun Defense (1)
+-- EX Saber Combos (2)
+
+^7Attributes:
+- Beskar (3)
+- Stamina (3)
+> Armor Dispenser (2)
+-- Hold Use on Allies
+- Armor Regen (1)
+- Rally
+- Getups (4)
+- Blast Armor
+- Resistant to Melee
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Slap/Kick ^3[CS2]
+- Dodge (3) ^3[CS3]"
+	
+	

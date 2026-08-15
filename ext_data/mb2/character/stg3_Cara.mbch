@@ -1,0 +1,164 @@
+//Kalkite
+
+ClassInfo
+{
+	name  				"stg3_Cara"
+	MBClass 				MB_CLASS_HERO
+	classNumberLimit  	1
+	weapons 			WP_MELEE|WP_SABER|WP_EE4|WP_AMBAN|WP_FRAG_NADE|WP_BLASTER_PISTOL
+
+	WP_EE4Flags			HELD_SLOW|HELD_ALTRELOAD
+	WP_MeleeFlags HELD_SPEED
+	WP_SaberFlags HELD_SPEED
+
+	attributes  		MB_ATT_AMMO,3|MB_ATT_PISTOL,1|MB_ATT_EE4,1|MB_ATT_QUICKTHROW,1|MB_ATT_FRAGS,2|MB_ATT_MAGNETIC_PLATING|MB_ATT_AMBAN,2|MB_ATT_BLAST_ARMOUR|MB_ATT_DEXTERITY,1|MB_ATT_DODGE,3|MB_ATT_HEALING,2|MB_ATT_TRACKING_BEACON|MB_ATT_WOOKIE_STRENGTH,1
+
+	maxhealth 			140
+	maxarmor  			140
+
+	resource 			RESOURCE_ENERGY
+	forcepool 			100
+	forceregen			1.50
+
+	skilltimermod 		1.0
+
+ 	knockbackTaken 0.8
+ 	knockbackGiven 1.2
+
+	speed       			0.92
+	rateOfFire_Melee	0.8
+
+	classflags			CFL_STRONGAGAINSTPHYSICAL
+
+	BPmultiplier	0
+	saber1				Clone_Knife_Jagged
+	saberstyle			SS_TAVION
+	saberDamage 100
+
+	special1 EAS_HI_DODGE
+	special2 EAS_HI_DEX
+	special3 EAS_HI_QUICKTHROW
+	
+	uioverlay "gfx/icons/heavy"
+	model 				"caradune_goh"
+	skin  				"default"
+	uishader  "models/players/caradune_goh/mb2_icon_default"
+	modelscale    1.02
+
+	flourishAnim BOTH_THROW1
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_EE4
+	WeaponBasedOff  		WP_CONCUSSION
+	NewWorldModel 		"models/weapons2/DLT-19_HeavyBlaster/model_scope.glm"
+	NewViewModel  		"models/weapons2/DLT-19_HeavyBlaster/riflescoped.md3"
+	Icon  				"gfx/hud/w_icon_dlt19scoped"
+	WeaponName  			"M-32 Light Repeating Blaster Rifle"
+	FlashSound0 		 	"sound/weapons/caradunerifle/fire.mp3"
+	AltFlashSound0	    "sound/weapons/MWC-35c/fire.mp3"
+	customammo			1260
+	ClipSize    			90
+	FPMult 				0.70
+	damageMod	0.85
+	velocityMod 0.80
+	rateMod 0.40
+	MissileEffect			"Blaster/Shot01R"
+	hasAnimOverrides 1
+	animReadyRun BOTH_MINIGUN_READY
+	animReady BOTH_MINIGUN_READY
+	animReadyWalk BOTH_MINIGUN_READY
+	animAttackRun BOTH_MINIGUN_ATTACK
+	animAttack BOTH_MINIGUN_ATTACK
+	animAttackWalk BOTH_MINIGUN_ATTACK
+	animStand BOTH_STAND2
+}
+
+WeaponInfo1
+{
+	WeaponToReplace WP_AMBAN
+	WeaponBasedOff  WP_AMBAN
+	NewWorldModel "models/weapons2/773firepuncher/773firepuncher_w.glm"
+	NewViewModel  "models/weapons2/773firepuncher/773firepuncher.md3"
+	NewBarrelModel "models/weapons2/773firepuncher/773firepuncher_barrel.md3"
+	Icon  "gfx/hud/w_icon_773firepuncher"
+	AltFlashSound0 		 	"sound/weapons/caradunesniper/fire.mp3"
+	AltMissileEffect	"Blaster/Shot04r"
+	WeaponName  "Cara's Sniper Rifle"
+	primFireEnabled 0
+	customammo	30
+	ClipSize    1
+	velocityMod 1.25
+	damageMod 1.25
+ 	FPMult 1.25
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/kotor_bpistol1/kotor_bpistol1_w.glm"
+	NewViewModel		"models/weapons2/kotor_bpistol1/kotor_bpistol1.md3"
+	Icon				"gfx/hud/w_icon_kotor_bpistol1"
+	WeaponName			"Cara's Sidearm Pistol"
+	FlashSound0 		 	"sound/weapons/caradunepistol/fire.mp3"
+	velocityMod 1.15
+	damageMod 0.75
+ 	FPMult 1.15
+	rateMod 0.80
+}
+
+WeaponInfo3
+{
+	WeaponToReplace	WP_SABER
+	WeaponBasedOff	WP_SABER
+	NewWorldModel		"models/weapons2/vibroknife/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_prisonknife"
+	WeaponName		"Jagged Vibroknife"
+}
+
+description	"Cara Dune
+
+A tanky brawler with a heavy suppression rifle, sniper, and knife.
+
+^2Weaponry:
+- Melee
+-- +15% Movement Speed
+- M-32 Light Repeating Blaster Rifle (EE-4 1)
+-- +60% Rate of Fire
+-- -35% FP Damage
+-- -15% Movement Speed
+-- -15% Damage
+- Cara's Sniper Rifle (Amban 2)
+-- +25% Velocity
+-- +25% Damage
+-- +25% FP Damage
+- Cara's Sidearm Pistol (Pistol 1)
+-- +15% FP Damage
+-- +15% Velocity
+-- -25% Damage
+-- +15% Movement Speed
+- Jagged Vibroknife (Cyan Saber)
+-- No Saber/Blaster Block
+-- 60% less Reach
+-- 100 Damage
+- Frag Grenade (2)
+
+
+^8Attributes:
+- 20% more Kb Given
+- 20% less Kb Taken
+- Dexterity (1)
+- Strength (1)
+- Healing (2)
+- Magnetic Plating
+- Blast Armor
+- Physical Resist
+- Tracking Beacon
+
+^3Abilities:
+- Dodge (3) ^3[CS1]
+- Dex Roll ^3[CS2]
+- Quickthrow (1) ^3[CS3]"
