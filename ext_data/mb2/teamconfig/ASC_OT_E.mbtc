@@ -70,6 +70,7 @@ SubclassesForClass3
 	Subclass13	"ote7_Thrawn"
 	Subclass14	"ote6_OuterRimBH"
 	Subclass15	"ote7_ISBOfficer"
+    Subclass16  "ote6_Commando"
 }
 
 SubclassesForClass4
