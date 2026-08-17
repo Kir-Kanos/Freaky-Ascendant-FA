@@ -212,7 +212,7 @@ AltMissileEffect    "firegrenade/prim_explode_enhanced2"
 MissileMissEffect    "firegrenade/prim_explode_enhanced2"
 altMissileMissEffect    "firegrenade/prim_explode_enhanced2"
 	WeaponName	"Thermal Charge"
-	splashRadius 400
+	splashRadius 330
 }
 
 WeaponInfo5
