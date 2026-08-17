@@ -48,7 +48,9 @@ ClassInfo
 	gloatAnim			BOTH_MINDTRICK1
 
 	saber1				saber_justice
-	sabercolor			2
+	sabercolor			2 
+
+	saberStanceAnim		BOTH_DOOKU_STANCE
 
 	uioverlay			"gfx/icons/support"
 	modelscale			.99
