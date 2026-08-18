@@ -1,0 +1,150 @@
+
+ClassInfo
+{
+	name				"ote4_Boushh"
+	MBClass				MB_CLASS_BATTLEDROID
+	weapons				WP_MELEE|WP_THERMAL|WP_BLASTER_PISTOL|WP_SABER|WP_TRIP_MINE
+
+	maxhealth			65
+	maxarmor			125
+
+	attributes			MB_ATT_AMMO,3|MB_ATT_ENV_PROT,3|MB_ATT_TRACKING_BEACON|MB_ATT_DODGE,3|MB_ATT_DEXTERITY,3|MB_ATT_TRACKING_DART,8|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_CCTRAINING,3|MB_ATT_FLOAT_HOP|MB_ATT_BUNNY_HOP,1|MB_ATT_GRAPPLE_HOP|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,1|MB_ATT_FLIPKICK,1|MB_ATT_THERMALS,2|MB_ATT_TRIP_MINES,3
+
+	classflags	CFL_STRONGAGAINSTPHYSICAL|CFL_HEAVYMELEE|CFL_BLOODYMELEE|CFL_BPFREEJUMPS
+
+	forcepowers	FP_SABER_DEFENSE,2|FP_SABER_OFFENSE,2
+
+	basespeed			215
+	modelscale			.96
+
+	skilltimermod			.6
+
+	resource	resource_energy
+	force pool 100
+	forceregen 1.6
+
+	special1HUD HUD_TRACKINGDART
+
+	saber1      	boushh_staff
+	saberstyle 	SS_STAFF
+
+ 	saberDamageStyle SS_STAFF,90
+
+	APmultiplier		.9
+	BPmultiplier		1.10
+	ASmultiplier		1.10
+	CSmultiplier		1.20
+
+	WP_SaberFlags		HELD_PULSE|HELD_STUN|HELD_TRACKING|HELD_LIFESTEAL
+	AB_TDartFlags 		HELD_CRIPPLE|HELD_POISON
+	WP_BlasterPistolFlags	HELD_ALTRELOAD|HELD_LIFESTEAL
+	WP_RealTDFlags	HELD_HEAL|HELD_HIGHDAMAGE|HELD_FLAME|HELD_LIFESTEAL|HELD_FLASH
+	WP_TripMineFlags	HELD_HIGHDAMAGE|HELD_TRACKING|HELD_LIFESTEAL
+	AB_GHookFlags	HELD_POISON|HELD_SLIPPERY|HELD_CRIPPLE
+	
+	model				"boushh"
+	skin				"default"
+	uishader			"models/players/boushh/mb2_icon_default"
+
+	special1	EAS_HI_DODGE
+	special2	EAS_HI_DEX
+	special3	EAS_HI_TRACKER
+	special4	EAS_HI_KICK
+	meleespecial4	EAS_HI_GRAPPLEHOOK
+
+	classNumberLimit	1
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/blaster_three/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/blaster_three/blaster_pistol.md3"
+	Icon				"gfx/hud/w_icon_blaster_pistol_3"
+	WeaponName			"Boushh's Model 44 Blaster"
+	FlashSound0			"sound/weapons/han_pistol/fire.mp3"
+	altFlashSound0		"sound/weapons/han_pistol/alt_fire.mp3"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	clipSize			10
+	FPMult				.8
+	damagemod			.8
+	ReloadTimeModifier	1.2
+	CustomAmmo			800
+	rateMod				.70
+	velocityMod			1.1
+	Missile3Effect			"blaster/Shot07R"
+	AltMissileEffect		"blaster/Shot07R"
+	PowerupShotEffect		"blaster/Shot04R"
+	MissileEffect			"blaster/Shot03R"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_JANGO_PISTOL_IDLE
+	animReady			BOTH_JANGO_PISTOL_IDLE
+	animReadyWalk		TORSO_WEAPONIDLE2
+	animReadyNoAmmo		BOTH_ATTACK2
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+}
+WeaponInfo1
+{
+WeaponToReplace			WP_TRIP_MINE
+WeaponBasedOff			WP_TRIP_MINE
+NewWorldModel		"models/weapons/Grenade_Concussion/model.glm"
+NewViewModel		"models/map_objects/mp/bacta.md3"
+NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
+	Icon				"gfx/hud/w_icon_stungrenade"
+	MissileModel		"models/map_objects/mp/bacta.md3"
+	WeaponName			"High Yield Prox-Mines"
+	primFireEnabled		0
+}
+WeaponInfo2
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/dummyblaster/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_chirrut_staff"
+	WeaponName			"Boushh's Staff"
+}
+
+}
+
+description	"Boushh
+
+A agile bounty hunter with explosive power who enjoys the kill a little too much.
+
+^2Weaponry:
+- Heavy Melee
+- Thermal Detonator (2)
+-- Heals In Hand, 100%+ Damage
+-- Applies Drain/Ignite/Flash
+- Boushh's Model 44 Blaster (3)
+-- 30%+ RoF, Drains On Hit, Mag Reload
+-- 20%- Damage/FP Drain, 10%+ Velocity
+- Boushh's Staff (Staff Saber)
+-- Saber Defense (2), BP Free Jumps, 90 Damage
+-- Tracks/Pulses/Staggers On Hit
+- High Yield Prox-Mines (3)
+-- Flashes/Drains, 100%+ Damage, Sec Fire Only
+
+^8Attributes:
+- Dexterity (3)
+- Tracking Beacon
+- Knockdown Roll
+- Close Combat (3)
+- Slow Faller/Grapple Hop/Bunny Hop (1)
+- Anti MT (1)
+- 40% Faster CDs
+- Blast Armor/Melee Resist
+- Ubese Environment Protection Suit (Env Protect 3)
+- Advanced Filters (Water Breathing)
+
+^3Abilities:
+- Flipkick ^3[Contact JUMP]
+- Dodge (3) ^3[CS1]
+- Dex Roll ^3[CS2]
+- Gunkick ^3[CS4]
+- Specialty Tracking Darts (8) ^3[CS3]
+-- Poisons/Cripples
+- Infection Whip (Grapple Hook 2) ^3[CS4 ^3Melee]
+-- Applies Blind/Slippery/Poison"
