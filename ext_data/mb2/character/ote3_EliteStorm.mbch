@@ -51,22 +51,6 @@ ClassInfo
 	skin_2		"sarge"
 	uishader_2 	"models/players/stormie/mb2_icon_sarge"
 
-	model_3		"stormie"
-	skin_3		"novatrooper"
-	uishader_3	"models/players/stormie/mb2_icon_novatrooper"
-
-	model_4 	"Shoretrooper"
-	skin_4		"elite"
-	uishader_4 	"models/players/Shoretrooper/mb2_icon_elite"
-
-		model_5		"stormpilot_fml"
-	skin_5		"rgb"
-	uishader_5	"models/players/stormpilot_fml/mb2_icon_rgb"
-	userRGB_5 	1
-	customred_5 	0.709
-	customgreen_5	0.12
-	customblue_5 	0.12 //def r
-
 	isCustomBuild		1
 	mbPoints			40
 
