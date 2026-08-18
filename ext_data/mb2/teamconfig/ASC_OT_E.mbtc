@@ -37,6 +37,7 @@ SubclassesForClass1
 	Subclass19	"ote3_Nova"
 	Subclass20	"ote2_Shadow"
 	Subclass21	"ote3_Shore"
+	Subclass22	"ote2_PykeDealer"
 }
 
 SubclassesForClass2
@@ -54,6 +55,7 @@ SubclassesForClass2
 	Subclass11	"ote5_Kast"
 	Subclass12	"ote5_Cad"
 	Subclass13	"ote5_OutcastMando"
+	Subclass14	"ote4_Boushh"
 }
 
 SubclassesForClass3
