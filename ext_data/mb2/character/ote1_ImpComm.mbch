@@ -30,30 +30,17 @@ model_1			"stormie"
 skin_1  		"mimban_legends"
 uishader_1  	"models/players/stormie/mb2_icon_mimban"
 
-model_2		"stormie"
-skin_2		"tfushadow"
-uishader_2 	"models/players/stormie/mb2_icon_tfushadow"
+model_2		"snowtrooper"
+skin_2		"default"
+uishader_2 	"models/players/snowtrooper/mb2_icon_default"
 
-model_3		"snowtrooper"
+model_3		"swamptrooper"
 skin_3		"default"
-uishader_3 	"models/players/snowtrooper/mb2_icon_default"
+uishader_3 	"models/players/swamptrooper/mb2_icon_default"
 
-model_4			"Shoretrooper"
-skin_4		"default"
-uishader_4 	"models/players/Shoretrooper/mb2_icon_default"
-
-model_5 	"Shoretrooper"
-skin_5		"squadleader"
-uishader_5 	"models/players/Shoretrooper/mb2_icon_squadleader"
-
-model_6		"swamptrooper"
-skin_6		"default"
-uishader_6 	"models/players/swamptrooper/mb2_icon_default"
-
-model_7		"swamptrooper"
-skin_7		"new"
-uishader_7 	"models/players/swamptrooper/mb2_icon_new"
-
+model_4		"swamptrooper"
+skin_4		"new"
+uishader_4 	"models/players/swamptrooper/mb2_icon_new"
 
 	isCustomBuild		1
 	mbPoints			54
