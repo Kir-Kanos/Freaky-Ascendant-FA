@@ -34,6 +34,9 @@ SubclassesForClass1
 	Subclass16	"ote2_ISBEnforcer"
 	Subclass17	"ote1_ISBTactical"
 	Subclass18	"ote3_IG88"
+	Subclass19	"ote3_Nova"
+	Subclass20	"ote2_Shadow"
+	Subclass21	"ote3_Shore"
 }
 
 SubclassesForClass2
