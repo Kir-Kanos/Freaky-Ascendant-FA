@@ -60,12 +60,6 @@ uishader_2	"models/players/scouttrooper/mb2_icon_swamp"
 model_3	"scouttrooper"
 skin_3	"swamp2"
 uishader_3	"models/players/scouttrooper/mb2_icon_swamp2"
-model_4	"scouttrooper"
-skin_4	"novaofficer"
-uishader_4	"models/players/scouttrooper/mb2_icon_novaofficer"
-model_5	"scouttrooper"
-skin_5	"commando"
-uishader_5	"models/players/scouttrooper/mb2_icon_commando"
 special1	EAS_HI_SPRINT
 special2	EAS_HI_DEX
 special3	EAS_HI_DASH
