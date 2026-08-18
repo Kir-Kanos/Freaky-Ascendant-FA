@@ -1,0 +1,240 @@
+ClassInfo
+{
+	name				"ote2_Shadow"
+	MBClass				MB_CLASS_ELITETROOPER
+	classNumberLimit	3
+	extralives			2
+
+	weapons				WP_MELEE|WP_BLASTER_PISTOL|WP_FRAG_NADE|WP_CONC_NADE
+
+	attributes			MB_ATT_PISTOL,3|MB_ATT_AMMO,3|MB_ATT_FRAGS,2|MB_ATT_MICRO_GRENADES,1|MB_ATT_BLAST_ARMOUR|MB_ATT_ASSEMBLE,3|MB_ATT_DEXTERITY,1|MB_ATT_STAMINA,2|MB_ATT_CLOAK,2|MB_ATT_ANTI_MT,1|MB_ATT_TRACKING_BEACON|MB_ATT_GRAPPLE_HOOK,1|MB_ATT_QUICKTHROW,1
+
+	maxhealth			80
+	MaxArmor			40
+
+	resource			RESOURCE_STAMINA
+	forcepool			80
+	forceregen			1.8
+
+	basespeed		190
+
+	WP_BlasterFlags 	HELD_ALTRELOAD|HELD_SPEED
+	WP_BlasterPistolFlags	HELD_CRIPPLE|HELD_ALTRELOAD|HELD_SPEED
+	WP_DLT20AFlags		HELD_ALTRELOAD
+	WP_EE4Flags		HELD_ALTRELOAD|HELD_SLOW
+	WP_ConcNadeFlags	HELD_SONIC|HELD_SPEED
+	WP_FragNadeFlags	HELD_SPEED
+	WP_MeleeFlags		HELD_SPEED
+
+	special1			EAS_HI_SPRINT
+	special2			EAS_HI_QUICKTHROW
+	special3			EAS_HI_DEX
+	special4			EAS_HI_GRAPPLEHOOK
+
+	model				"stormie"
+	skin				"shadow"
+	uishader			"models/players/stormie/mb2_icon_shadow"
+
+	model_1				"stormie"
+	skin_1				"vader"
+	uishader_1			"models/players/stormie/mb2_icon_vader"
+
+	model_2				"stormie"
+	skin_2				"tfushadow"
+	uishader_2			"models/players/stormie/mb2_icon_tfushadow"
+
+	isCustomBuild		1
+	mbPoints			1
+
+	c_att_skill_0		MB_ATT_BLASTER
+	c_att_names_0		"Specialty E-11 Blaster Rifle"
+	c_att_ranks_0		1,0,0
+	c_att_descs_0		"20%- RoF, 20%+ Damage/FP Drain/Velocity, Lightweight, Mag Reload"
+
+	c_att_skill_1		MB_ATT_EE4
+	c_att_names_1		"DLT-19D Shadow Rifle"
+	c_att_ranks_1		1,0
+	c_att_descs_1		"EE4, 15%+ RoF, 5%+, 10%- FP Drain, Mag Reload, Heavyweight"
+
+	c_att_skill_2		MB_ATT_DLT20A
+	c_att_names_2		"DLT-20A Precision Blaster"
+	c_att_ranks_2		1,0,0
+	c_att_descs_2		"20%+ Damage/FP Mult, 35%+ Velocity, 50%- RoF, Mag Reload"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER
+	WeaponBasedOff		WP_BLASTER
+	NewWorldModel		"models/weapons2/blaster_r/blaster_w.glm"
+	NewViewModel		"models/weapons2/blaster_r/blaster.md3"
+	Icon				"gfx/hud/w_icon_e11"
+	WeaponName			"Specialty E-11 Blaster Rifle"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot02R"
+	AltMissileEffect	"Blaster/Shot03R"
+	FlashSound0			"sound/weapons/silencedpistol/fire.wav"
+	customAmmo			600
+	clipSize			38
+	Ratemod				1.2
+	Damagemod			1.2
+	FPMult				1.2
+	Velocitymod			1.2
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_EE4
+	WeaponBasedOff		WP_EE4
+	NewWorldModel		"models/weapons2/DLT-19_HeavyBlaster/model_scope.glm"
+	NewViewModel		"models/weapons2/DLT-19_HeavyBlaster/riflescoped.md3"
+	Icon				"gfx/hud/w_icon_dlt19scoped"
+	WeaponName			"DLT-19D Shadow Rifle"
+	FlashSound0			"sound/weapons/DLT19/fire.wav"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_DC15_IDLE
+	animReady			BOTH_DC15_IDLE
+	animReadyWalk		BOTH_DC15_READY
+	animReadyNoAmmo		BOTH_DC15_ATTACK
+	animAttackRun		BOTH_DC15_ATTACK
+	animAttack			BOTH_DC15_ATTACK
+	animAttackWalk		BOTH_DC15_ATTACK
+	animStand			BOTH_STAND1
+	customAmmo			800
+	clipSize			80
+	FPMult				0.70
+	rateMod				0.70
+	damagemod			.70
+	velocitymod 			1.10
+	
+}
+WeaponInfo2
+{
+ WeaponToReplace  WP_DLT20A
+ WeaponBasedOff WP_DLT20A
+ NewWorldModel  "models/weapons2/dlt20a/dlt20a_w.glm"
+ NewViewModel  "models/weapons2/dlt20a/dlt20a.md3"
+ Icon    "gfx/hud/w_icon_DLT20a"
+ WeaponName   "DLT-20A Precision Rifle"
+ MuzzleEffect  "Blaster/MuzzleFlash01R"
+ MissileEffect  "Blaster/Shot01R"
+ Missile3Effect  "Blaster/Shot01R"
+ damagemod 1.20
+ ratemod 1.50
+ Fpmult	1.20
+ velocitymod 1.35
+hasAnimOverrides	1
+	animReadyRun		BOTH_WESTARM5_RUN1
+	animReady			BOTH_WESTARM5_READY
+	animReadyWalk		BOTH_WESTARM5_READY
+	animReadyNoAmmo		BOTH_WESTARM5_ATTACK
+	animAttackRun		BOTH_WESTARM5_ATTACK
+	animAttack			BOTH_WESTARM5_ATTACK
+	animAttackWalk		BOTH_WESTARM5_SCOPED_ATTACK
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_CONC_NADE
+	WeaponBasedOff		WP_CONC_NADE
+	NewWorldModel		"models/weapons2/Stormi_TD/stormiTD_w.glm"
+	NewViewModel		"models/weapons2/Stormi_TD/stormiTD.md3"
+	MissileModel		"models/weapons2/Stormi_TD/stormiTD_proj.md3"
+	AltMissileModel		"models/weapons2/Stormi_TD/stormiTD_proj.md3"
+	altMissileMissEffect	"grenades/EXP_alt"
+	Icon				"gfx/hud/w_icon_StormiTD"
+	MissileMissEffect			"grenades/exp_sonic"
+	MissileHitHumanEffect		"grenades/exp_sonic"
+	MissileHitDroidEffect		"grenades/exp_sonic"
+	WeaponName			"Class-C Sonic Detonator"
+}
+
+WeaponInfo4
+{
+	WeaponToReplace		WP_FRAG_NADE
+	WeaponBasedOff		WP_FRAG_NADE
+	NewWorldModel  "models/weapons/Grenade_Concussion/model.glm"
+ 	NewViewModel  "models/map_objects/mp/bacta.md3"
+	MissileModel "models/map_objects/mp/bacta.md3"
+	altMissileModel "models/map_objects/mp/bacta.md3"
+ 	Icon    "gfx/hud/w_icon_stungrenade"
+	MissileEffect				"stone/missile1"
+	AltMissileEffect			"stone/missile1"
+	MissileMissEffect			"smokenadeleg/explode_vol"
+	MissileHitHumanEffect		"smokenadeleg/explode_vol"
+	MissileHitDroidEffect		"smokenadeleg/explode_vol"
+	AltMissileMissEffect		"smokenadeleg/explode_vol"
+	AltMissileHitHumanEffect	"smokenadeleg/explode_vol"
+	AltMissileHitDroidEffect	"smokenadeleg/explode_vol"
+	FlashSound0			"sound/weapons/smokenade/select.mp3"
+	AltFlashSound0		"sound/weapons/smokenade/select.mp3"
+	WeaponName			"Class-O Particulate Canister"
+	hasAnimOverrides	1
+	animAttackRun		BOTH_THERMAL_THROW2
+	animAttack			BOTH_THERMAL_THROW2
+	animAttackWalk		BOTH_THERMAL_THROW2
+	animReadyRun		BOTH_THERMAL_READY2
+	animReady			BOTH_THERMAL_READY2
+	animReadyWalk		BOTH_THERMAL_READY2
+	damageMod			0.000
+	ratemod				0.6
+}
+
+WeaponInfo5
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/se-14c_pistol/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/se-14c_pistol/blaster_pistol.md3"
+	Icon				"gfx/hud/w_icon_se-14c"
+	WeaponName			"SE-14C Infiltrator Pistol"
+	FlashSound0			"sound/weapons/SE-14c/fire.wav"
+	altFlashSound0		"sound/weapons/SE-14c/fire.wav"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	damagemod 1.20
+	fpmult	1.20
+	ratemod	1.80
+	velocitymod	1.10
+	hasAnimOverrides	1
+	animReadyNoAmmo		BOTH_PISTOL_IDLE
+	animStand			BOTH_PISTOL_IDLE
+	animReadyRun		BOTH_PISTOL_IDLE
+	animReady			BOTH_PISTOL_IDLE
+}
+
+
+description	"Shadow Trooper
+
+Ghost Infantry utilizing active camouflage and squad tactics.
+
+^2Weaponry:
+- Melee
+- SE-14C Infiltrator Pistol (3)
+-- 80% Slower RoF
+-- 20% More Damage/FP Drain
+-- 10% More Velocity
+-- Cripples On Hit
+- Class-C Sonic Detonator (1)
+-- Concussion Grenade, Applies Sonic On Hit
+- Class-O Particulate Canister (2)
+-- Frag Grenade
+-- Emits Smoke Screen On Detonation
+
+^8Attributes:
+- Reinforcement (2)
+- Blast Armor
+- Assemble (3)
+- Dexterity (1)
+- Stamina (2)
+- Cloaking Device (2)
+- Anti-Mind Trick (1)
+- Tracking Beacon
+
+^3Abilities:
+- Sprint (2) ^3[CS1]
+- Dex Roll ^3[CS3]
+- Quickthrow (1) ^3[CS2]
+- Grapple Hook (1) ^3[CS4]"
