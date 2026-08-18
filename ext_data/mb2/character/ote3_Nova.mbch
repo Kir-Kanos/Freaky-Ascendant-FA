@@ -1,0 +1,218 @@
+
+ClassInfo
+{
+	name				"ote3_Nova"
+	weapons				WP_MELEE|WP_M5|WP_FRAG_NADE|WP_BLASTER_PISTOL|WP_DISRUPTOR|WP_PLX1|WP_PULSE_NADE
+
+	attributes			MB_ATT_PISTOL,3|MB_ATT_AMMO,3|MB_ATT_PULSE_GRENADES,2|MB_ATT_DEXTERITY,1|MB_ATT_STAMINA,3|MB_ATT_BLAST_ARMOUR|MB_ATT_ASSEMBLE,3|MB_ATT_WESTARM5,3|MB_ATT_PLX1,1|MB_ATT_DISRUPTOR,1|MB_ATT_ANTI_MT,1|MB_ATT_TRACKING_BEACON|MB_ATT_GRAPPLE_HOOK,1|MB_ATT_DODGE,2
+
+	maxhealth			100
+	maxarmor			100
+
+	MBClass				MB_CLASS_ARCTROOPER
+	classNumberLimit	2
+	resource			RESOURCE_STAMINA
+	forcepool			110
+	forceregen			1
+
+	speed				0.96
+
+	WP_PLX1Flags	HELD_FLASH|HELD_FLAME|HELD_KNOCKBACK|HELD_SLOW
+	WP_MeleeFlags	HELD_SPEED
+	WP_DisruptorFlags HELD_CRIPPLE|HELD_ALTRELOAD
+
+	extralives			1
+
+	knockbackTaken		0.9
+
+	flourishAnim		TORSO_HANDSIGNAL4
+
+	special1			EAS_HI_SPRINT
+	special2			EAS_HI_DODGE
+	special3			EAS_HI_DEX
+	special4			EAS_HI_GRAPPLEHOOK
+
+	modelscale			1.01
+	uioverlay_l			"gfx/icons/heavy"
+	uioverlay_r			"gfx/icons/infantry"
+
+	model				"stormie"
+	skin				"novatrooper"
+	uishader			"models/players/stormie/mb2_icon_novatrooper"
+
+ 	model_1  			"scouttrooper"
+	skin_1   			"novaofficer"
+ 	uishader_1   			"models/players/scouttrooper/mb2_icon_novaofficer"
+	
+
+	//respawncustomtime	30000
+
+	isCustomBuild		1
+	mbPoints			1
+
+	c_att_skill_0		MB_ATT_ARC_RIFLE_SCOPE
+	c_att_names_0		"E-11S Scope"
+	c_att_ranks_0		1
+	c_att_descs_0		"M5 Scope Attachment"
+
+	c_att_skill_1		MB_ATT_ARC_RIFLE_GRENADELAUNCHER
+	c_att_names_1		"E-11S Pulse Launcher"
+	c_att_ranks_1		1
+	c_att_descs_1		"M5 Grenade Launcher"
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_M5
+	WeaponBasedOff		WP_M5
+	NewWorldModel		"models/weapons2/blaster_r/blaster_w.glm"
+	NewViewModel		"models/weapons2/blaster_r/blaster.md3"
+	Icon				"gfx/hud/w_icon_E11"
+	WeaponName			"E-11S Blaster Rifle"
+	MuzzleEffect			"Blaster/MuzzleFlash01R"
+	AltMuzzleEffect			"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot02R"
+	AltMissileEffect		"Blaster/Shot03R"
+	MissileMissEffect		"Blaster/Impact_Wall01"
+	altMissileMissEffect		"Blaster/Impact_Wall01"
+	MissileHitHumanEffect		"Blaster/Impact_Wall01"
+	altMissileHitHumanEffect	"Blaster/Impact_Wall01"
+	MissileHitDroidEffect		"Blaster/Impact_Wall01"
+	altMissileHitDroidEffect	"Blaster/Impact_Wall01"
+	FlashSound0			"sound/weapons/blaster/fire.mp3"
+	altFlashSound0		"sound/weapons/ee3/sniperfire.MP3"
+	customAmmo			768
+	clipSize			60
+	Ratemod	1.25
+	Damagemod	1.10
+	FPmult		1.10
+	velocitymod	1.20
+hasAnimOverrides	1
+	animReadyRun		BOTH_WESTARM5_RUN1
+	animReady			BOTH_WESTARM5_READY
+	animReadyWalk		BOTH_WESTARM5_READY
+	animReadyNoAmmo		BOTH_WESTARM5_ATTACK
+	animAttackRun		BOTH_WESTARM5_ATTACK
+	animAttack			BOTH_WESTARM5_ATTACK
+	animAttackWalk		BOTH_WESTARM5_SCOPED_ATTACK
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/imp_pistol/pistol_w.glm"
+	NewViewModel		"models/weapons2/imp_pistol/pistol_fpv.md3"
+	Icon				"gfx/hud/w_icon_imp_pistol"
+	WeaponName			"RK-3 Blaster Pistol"
+	customAmmo			700
+	clipSize			24
+	MissileMissEffect		"Blaster/Impact_Wall01"
+	altMissileMissEffect		"Blaster/Impact_Wall01"
+	MissileHitHumanEffect		"Blaster/Impact_Wall01"
+	altMissileHitHumanEffect	"Blaster/Impact_Wall01"
+	MissileHitDroidEffect		"Blaster/Impact_Wall01"
+	altMissileHitDroidEffect	"Blaster/Impact_Wall01"
+	FlashSound0			"sound/weapons/firegun/fire.wav"
+	altFlashSound0		"sound/weapons/firegun/fire.wav"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	ratemod	1.6
+	damagemod	1.2
+	FPMult		1.2
+	velocitymod	1.4
+	hasAnimOverrides	1
+	animReadyNoAmmo		BOTH_PISTOL_IDLE
+	animStand			BOTH_PISTOL_IDLE
+	animReadyRun		BOTH_PISTOL_IDLE
+	animReady			BOTH_PISTOL_IDLE
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_PLX1
+	WeaponBasedOff		WP_PLX1
+	NewWorldModel		"models/weapons2/e60r_launcher/e60r_launcher_w.glm"
+	NewViewModel		"models/weapons2/e60r_launcher/e60r_launcher.md3"
+	Icon				"gfx/hud/w_icon_e60r_launcher"
+	WeaponName			"Thermite Cannon"
+	damagemod .5
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_DISRUPTOR
+	WeaponBasedOff		WP_DISRUPTOR
+	NewWorldModel		"models/weapons2/kotor_drifle/kotor_drifle_w.glm"
+	NewViewModel		"models/weapons2/kotor_drifle/kotor_drifle.md3"
+	Icon				"gfx/hud/w_icon_kotor_drifle"
+	FlashSound0			"sound/weapons/RC_Sniper/fire.mp3"
+	altFlashSound0		"sound/weapons/RC_Sniper/fire.mp3"
+	MuzzleEffect			"Blaster/MuzzleFlash01B"
+	altMuzzleEffect			"Blaster/MuzzleFlash01B"
+	WeaponName			"Thermal Bore Rifle"
+	clipSize			30
+	customAmmo			700
+	damageMod			1.20
+	ReloadTimeModifier		1.4
+	FPmult				1.20
+	rateMod				.75
+	MissileMissEffect		"Blaster/Impact_Wall01"
+	altMissileMissEffect		"Blaster/Impact_Wall01"
+	MissileHitHumanEffect		"Blaster/Impact_Wall01"
+	altMissileHitHumanEffect	"Blaster/Impact_Wall01"
+	MissileHitDroidEffect		"Blaster/Impact_Wall01"
+	altMissileHitDroidEffect	"Blaster/Impact_Wall01"
+	hasAnimOverrides	1
+	animAttackRun		BOTH_ATTACK4
+	animAttack			BOTH_ATTACK4
+	animAttackWalk		BOTH_ATTACK4
+	disruptorBeam1		"gfx/effects/disrupt_beam_blue"
+	disruptorBeam2		"gfx/effects/disrupt_beam_blue"
+	selectSound			"sound/weapons/dc17m/select.mp3"
+}
+
+description	"Nova Trooper
+
+Elite Precision Heavy Gunners with effective frontline potential.
+
+^2Weaponry:
+- Melee
+-- 15% Faster Movement
+- RK-3 Blaster PIstol (3)
+-- 60% Slower RoF
+-- 20% More damage/FP Drain
+-- 40% More Velocity
+- E-11S Blaster Rifle (3)
+-- Based On WESTAR-M5
+-- 25% Slower RoF
+-- 10% More Damage/FP Drain
+-- 20% More Velocity
+- Thermite Cannon (1)
+-- Based on PLX
+-- 50% Less Damage
+-- Ignites/Blinds/Knocksback
+-- Heavyweight
+- Thermal Bore Rifle (1)
+-- Disruptor Rifle
+-- 20% More Damage/FP Drain
+-- 25% Faster RoF
+-- Cripples On Hit
+-- Mag Reload
+- Pulse Grenades (2)
+
+^8Attributes:
+- Reinforcement (1)
+- 10% less knockback taken
+- Stamina (3)
+- Dexterity (1)
+- Blast Armor
+- Assemble (3)
+- Anti MT (1)
+- Tracking Beacon
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Dex Roll ^3[CS3]
+- Dodge (2) ^3[CS2]
+- Grapplehook (1) ^3[CS4]"

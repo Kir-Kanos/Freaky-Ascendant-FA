@@ -1,0 +1,126 @@
+ClassInfo
+{
+	name				"ote3_Shore"
+	MBClass				MB_CLASS_ELITETROOPER
+	classNumberLimit	4
+	extralives			3
+
+	weapons				WP_MELEE|WP_BLASTER_PISTOL|WP_CONC_NADE|WP_STUN_BATON
+
+	attributes			MB_ATT_PISTOL,2|MB_ATT_AMMO,3|MB_ATT_MICRO_GRENADES,1|MB_ATT_BLAST_ARMOUR|MB_ATT_ASSEMBLE,3|MB_ATT_WATER_BREATHING,1|MB_ATT_STAMINA,1|MB_ATT_DODGE,2|MB_ATT_BINOCULARS|MB_ATT_BESKAR,1|MB_ATT_STUN_BATON,1
+
+	maxhealth			65
+	MaxArmor			25
+
+	WP_T21Flags HELD_SLOW
+
+	basespeed			165
+
+	special1	EAS_HI_SPRINT
+	special2	EAS_HI_DODGE
+	special4	EAS_HI_BINOCULARS
+
+	model				"shoretrooper"
+	skin				"default"
+	uishader			"models/players/shoretrooper/mb2_icon_default"
+
+	model_1				"shoretrooper"
+	skin_1				"squadleader"
+	uishader_1			"models/players/shoretrooper/mb2_icon_squadleader"
+	
+	model_2				"shoretrooper"
+	skin_2				"elite"
+	uishader_2			"models/players/shoretrooper/mb2_icon_elite"
+
+	isCustomBuild		1
+	mbPoints			1
+
+	c_att_skill_0		MB_ATT_E_22
+	c_att_names_0		"E-22 Patrol Rifle"
+	c_att_ranks_0		1,0,0
+	c_att_descs_0		"40%- Damage/FP Mult, 40%+ RoF"
+
+	c_att_skill_1		MB_ATT_T21
+	c_att_names_1		"T-21 Sentry Repeater"
+	c_att_ranks_1		1,0,0
+	c_att_descs_1		"30%+ RoF, 50%- Damage/FP Mult, 20%- Velocity, Heavyweight"
+
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_CONC_NADE
+	WeaponBasedOff		WP_CONC_NADE
+	NewWorldModel		"models/weapons2/Stormi_TD/stormiTD_w.glm"
+	NewViewModel		"models/weapons2/Stormi_TD/stormiTD.md3"
+	Icon				"gfx/hud/w_icon_StormiTD"
+	WeaponName			"Concussion Grenade"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/kotor_hobpistol/kotor_hobpistol_w.glm"
+	NewViewModel		"models/weapons2/kotor_hobpistol/kotor_hobpistol.md3"
+	Icon				"gfx/hud/w_icon_kotor_hobpistol"
+	WeaponName			"E-11P Blaster Pistol"
+	FlashSound0			"sound/weapons/blaster/fire.mp3"
+	altFlashSound0		"sound/weapons/blaster/fire.mp3"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+}
+
+WeaponInfo2
+{
+	WeaponToReplace WP_T21
+	WeaponBasedOff  WP_T21
+	NewWorldModel		"models/weapons2/t-21/t-21_w.glm"
+	NewViewModel		"models/weapons2/t-21/t-21.md3"
+	Icon			"gfx/hud/w_icon_t-21"
+	WeaponName		"T-21 Sentry Repeater"
+	customAmmo 2000
+	velocityMod .80
+	damagemod	.50
+	fpmult	.50
+	ratemod	.70
+	ReloadTimeModifier 2.2
+}
+
+WeaponInfo3
+{
+	WeaponToReplace WP_E_22
+	WeaponBasedOff  WP_E_22
+	NewWorldModel		"models/weapons2/e_22/e_22_w.glm"
+	NewViewModel		"models/weapons2/e_22/e_22.md3"
+	Icon			"gfx/hud/w_icon_e_22"
+	WeaponName		"E-22 Patrol Rifle"
+	customAmmo 1440
+   	Ratemod	.60
+	DamageMod 0.60
+	fpmult	0.60
+	ReloadTimeModifier 2.2
+}
+
+description	"Shoretrooper
+
+Coastal Defense Infantry. Heavily armored and highly resilient.
+
+^2Weaponry:
+- Melee
+- E-11P Blaster Pistol (2)
+- Concussion Grenade (1)
+- Stun Baton (1)
+
+^8Attributes:
+- Reinforcement (3)
+- Blast Armor
+- Assemble (3)
+- Amphibious (Water Breathing)
+- Beskar (1)
+- Stamina (1)
+
+^8Abilities:
+- Dodge (2) ^3[CS2]
+- Sprint (1) ^3[CS1]
+- Binoculars ^3[CS4]"
