@@ -38,6 +38,8 @@ SubclassesForClass1
 	Subclass20	"ote2_Shadow"
 	Subclass21	"ote3_Shore"
 	Subclass22	"ote2_PykeDealer"
+	Subclass23	"ote2_Ponda"
+	Subclass24	"ote1_SnowTrooper"
 }
 
 SubclassesForClass2
