@@ -1,0 +1,165 @@
+
+ClassInfo
+{
+	name				"pte3_IG86"
+	MBClass				MB_CLASS_BATTLEDROID
+	classNumberLimit	2
+	extralives		1
+	weapons				WP_MELEE|WP_CRYO_NADE
+	WP_E22Flags		HELD_ALTRELOAD
+	WP_MeleeFlags		HELD_SPEED
+	WP_BlasterFlags		HELD_ALTRELOAD
+	
+
+	attributes			MB_ATT_RECHARGE,2|MB_ATT_BESKAR,2|MB_ATT_AMMO,3|MB_ATT_BLAST_ARMOUR|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_SHIELD_RECHARGE,1|MB_ATT_ANTI_MT,1|MB_ATT_TRACKING_BEACON|MB_ATT_ENV_PROT,1|MB_ATT_DEXTERITY,1|MB_ATT_MAGNETIC_PLATING|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_ASSEMBLE,3|MB_ATT_CRYOBAN_GRENADES,1
+
+	special1			EAS_HI_DEX
+	meleespecial1		EAS_HI_DEX
+
+	maxhealth			40
+	maxarmor			40
+	speed				1.04
+	knockbackTaken		0.90
+	hackRate			0.90
+
+	classflags			CFL_STRONGAGAINSTPHYSICAL|CFL_DISMEMBERFRAGILE|CFL_BLOODYMELEE
+
+	forcepool			50
+	resource			RESOURCE_BATTERY
+
+	forceregen			1.4
+
+	meleeMoves			M_UPPERCUT|M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_PUNCH|M_RLKICK
+
+	saberStanceAnim		BOTH_SABERDUAL_STANCE
+	flourishAnim		BOTH_PAIN10
+	gloatAnim			BOTH_STAND5TOAIM
+	tauntAnim			BOTH_ENGAGETAUNT
+	//bowAnim			BOTH_DEFLECTSLASH__R__L_FIN
+	WalkForward			BOTH_SBD_WALK1
+	WalkBackward		BOTH_SBD_WALKBACK1
+	//drawAnim			BOTH_A6_FB
+	//altFireAnim		BOTH_PISTOL_ATTACK
+
+	uioverlay			"gfx/icons/heavy"
+	modelscale			1.06
+
+	model				"IG88"
+	skin				"default"
+	uishader			"models/players/IG88/mb2_icon_default"
+
+	model_1				"IG88"
+	skin_1				"ig88b"
+	uishader_1			"models/players/IG88/mb2_icon_ig88b"
+
+	model_2				"IG88"
+	skin_2				"ig88c"
+	uishader_2			"models/players/IG88/mb2_icon_ig88c"
+
+	isCustomBuild		1
+	mbPoints			3
+
+	c_att_skill_0		MB_ATT_BLASTER
+	c_att_names_0		"E-5 Specialty Rifle"
+	c_att_ranks_0		1,0,0
+	c_att_descs_0		"E-11, Mag Reload, 10%- RoF, 10%+ FP Drain/Damage/Velocity"
+
+	c_att_skill_1		MB_ATT_E_22
+	c_att_names_1		"Assassin Rifle"
+	c_att_ranks_1		1,0,0
+	c_att_descs_1		"E-22, 40%+ RoF, 30%- Damage/FP Mult, 20%+ Velocity, Mag Reload"
+
+	c_att_skill_2		MB_ATT_DEXTERITY
+	c_att_names_2		"Dexterity"
+	c_att_ranks_2		0,1
+
+	c_att_skill_3		MB_ATT_RESPAWNS
+	c_att_names_3		"Reinforcement"
+	c_att_ranks_3		1
+	c_att_descs_3		"1 by Default"
+}
+
+WeaponInfo0
+
+{
+
+	WeaponToReplace		WP_E_22
+	WeaponBasedOff		WP_E_22
+	NewWorldModel	"models/weapons2/som3_rifle/som3_rifle_w.glm"
+	NewViewModel	"models/weapons2/som3_rifle/som3_rifle.md3"
+	Icon		"gfx/hud/w_icon_som3_rifle"
+	FlashSound0 "sound\weapons\crosshair\snipe.wav"
+	altFlashSound0 "sound\weapons\crosshair\snipe.wav"
+	WeaponName		"Assassin Rifle"  
+	MuzzleEffect	"Blaster/MuzzleFlash01R"
+	altMuzzleEffect "Blaster/MuzzleFlash01R"
+        MissileEffect	"Blaster/Shot02R"
+	AltMissileEffect	"Blaster/Shot02R"
+	clipSize 40
+	customAmmo 960
+	rateMod 0.6
+	velocityMod 1.2
+	damageMod 0.7
+	fpMult 0.7
+	reloadTimeModifier 1.4
+	hasAnimOverrides 1
+	animReadyRun		BOTH_WESTARM5_RUN1
+	animReady			BOTH_WESTARM5_READY
+	animReadyWalk		BOTH_WESTARM5_SCOPED_ATTACK
+	animReadyNoAmmo		BOTH_WESTARM5_ATTACK
+	animAttackRun		BOTH_WESTARM5_SCOPED_ATTACK
+	animAttack			BOTH_WESTARM5_SCOPED_ATTACK
+	animAttackWalk		BOTH_WESTARM5_SCOPED_ATTACK
+	selectSound "sound/weapons/silencedpistol/select.wav"
+
+}
+
+WeaponInfo1
+
+{
+
+	WeaponToReplace		WP_BLASTER
+	WeaponBasedOff		WP_BLASTER 
+	NewWorldModel 		"models/weapons2/e5/e5_w.glm"
+	NewViewModel 		"models/weapons2/e5/e5.md3"
+	Icon				"gfx/hud/w_icon_e5"
+	WeaponName			"E-5 Specialty Rifle"
+	velocitymod 1.10
+	ratemod	1.10
+	damagemod	1.10
+	FPMult 				1.10
+	Velocitymod			1.10
+	hasAnimOverrides 1
+	animReadyRun		BOTH_JANGO_PISTOL_IDLE
+	animReady			BOTH_JANGO_PISTOL_IDLE
+	animReadyWalk		BOTH_JANGO_PISTOL_IDLE
+	animReadyNoAmmo		BOTH_ATTACK2
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+
+}
+
+description "IG-86 Sentinel Droid
+
+A mass produced assassin droid.
+
+^2Weaponry:
+- Heavy Melee
+- Cyroban Grenade (1)
+
+^8Attributes:
+- 10% faster hacking
+- 10% less knockback taken
+- Recharge (2)
+-- Regen: 10/10s
+- Strength (1)
+- Elemental Resist (1)
+- Beskar (2)
+- Mag Plating
+- Assemble (3)
+- Blast Armor
+- Melee Resist
+- Armor Regen (1)
+- Anti-Mind Trick (1)
+- Tracking Beacon"
