@@ -81,34 +81,22 @@ ClassInfo
 	model_6		"human_merc" 				
 	skin_6		"kaleesh"			
 	uishader_6	"models/players/human_merc/mb2_icon_kaleesh"
-	
-	model_7		"pyke2"
-	skin_7		"default"
-	uishader_7 	"models/players/pyke2/mb2_icon_default"
-	
-	model_8		"pyke2"
-	skin_8		"default3"
-	uishader_8	"models/players/pyke2/mb2_icon_default3"
-	
-	model_9		"ponda_baba"
-	skin_9		"default"
-	uishader_9	"models/players/ponda_baba/mb2_icon_default"
 
-	model_10		"barada"
+	model_7		"barada"
+	skin_7 		"default"
+	uishader_7 	"models/players/barada/mb2_icon_default"
+	
+	model_8		"human_merc"
+	skin_8 		"arcona"
+	uishader_8 	"models/players/human_merc/mb2_icon_arcona"
+	
+	model_9		"human_merc"
+	skin_9 		"key_carrier"
+	uishader_9 	"models/players/human_merc/mb2_icon_key_carrier"
+	
+	model_10		"human_merc"
 	skin_10 		"default"
-	uishader_10 	"models/players/barada/mb2_icon_default"
-	
-	model_11		"human_merc"
-	skin_11 		"arcona"
-	uishader_11 	"models/players/human_merc/mb2_icon_arcona"
-	
-	model_12		"human_merc"
-	skin_12 		"key_carrier"
-	uishader_12 	"models/players/human_merc/mb2_icon_key_carrier"
-	
-	model_13		"human_merc"
-	skin_13 		"default"
-	uishader_13 	"models/players/human_merc/mb2_icon_default"
+	uishader_10 	"models/players/human_merc/mb2_icon_default"
 	
 	isCustomBuild		1
 	mbPoints			47
