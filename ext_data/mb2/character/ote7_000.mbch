@@ -1,0 +1,161 @@
+
+ClassInfo
+{
+	name				"ote7_000"
+	MBClass				MB_CLASS_BATTLEDROID
+	weapons				WP_MELEE|WP_TRIP_MINE|WP_DC_CARBINE|WP_STUN_BATON|WP_FRAG_NADE
+
+	maxhealth			80
+	maxarmor			80
+
+	attributes		MB_ATT_ANTI_MT,2|MB_ATT_TRACKING_BEACON|MB_ATT_HEALING,1|MB_ATT_TRACKING_DART,6|MB_ATT_DODGE,3|MB_ATT_ENEMYSCANNER|MB_ATT_TRIP_MINES,4|MB_ATT_DC_CARBINE,3|MB_ATT_CCTRAINING,3|MB_ATT_SPY_DISGUISE,1|MB_ATT_ROSHTAUNT|MB_ATT_WRISTLASER|MB_ATT_FRAGS,3|MB_ATT_STUN_BATON,2|MB_ATT_BLAST_ARMOUR|MB_ATT_MAGNETIC_PLATING|MB_ATT_ENV_PROT,1|MB_ATT_DISP_FORCE,1
+
+	basespeed			140
+	modelscale			1
+
+	hackrate	.50
+
+	WP_FragNadeFlags		HELD_POISON|HELD_KNOCKDOWN|HELD_SLIPPERY|HELD_FLASH|HELD_SONIC
+	AB_TDartFlags			HELD_FORCEFOCUS|HELD_SLIPPERY|HELD_CRIPPLE|HELD_POISON|HELD_FLASH
+	WP_MeleeFlags			HELD_SLIPPERY|HELD_POISON|HELD_HIGHDAMAGE|HELD_TRACKING|HELD_CRIPPLE|HELD_LIFESTEAL|HELD_FORCEFOCUS|HELD_SPEED
+	WP_DCCarbineFlags HELD_POISON|HELD_TRACKING|HELD_SLIPPERY|HELD_CRIPPLE|HELD_FORCEFOCUS|HELD_ALTRELOAD
+	AB_WLaserFlags	HELD_PULL|HELD_LOWDAMAGE
+	WP_TripMineFlags	HELD_LIFT|HELD_TRACKING|HELD_FREEZE|HELD_DISARM|HELD_FLASH|HELD_FORCEFOCUS
+
+	model		"4lom"
+	skin		"TZero"
+	uishader	"models/players/4lom/mb2_icon_TZero"
+
+	classflags			CFL_STATVIEWER|CFL_BLOODYMELEE|CFL_DISMEMBERFRAGILE
+
+	special1			EAS_HI_DODGE
+	special2			EAS_HI_WRIST
+	special3			EAS_HI_TRACKER
+	special4			EAS_HI_ENEMYSCANNER
+
+	deathAnim			BOTH_SBD_DEATH1
+
+	resource		resource_battery
+
+	forcepool 150
+	forceregen 3.5
+
+	classNumberLimit	1
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_DC_CARBINE
+	WeaponBasedOff		WP_DC_CARBINE
+	NewWorldModel		"models/weapons2/proj_rifle/proj_rifle_w.glm"
+	NewViewModel		"models/weapons2/proj_rifle/proj_rifle.md3"
+	Icon				"gfx/hud/w_icon_proj_rifle"
+	WeaponName			"Dioxis Dart Rifle"
+	clipsize			20
+	customAmmo			400
+	damagemod			.45
+	velocitymod			2
+	MuzzleEffect null
+	MissileMissEffect		"noghri_stick/flesh_impact"
+ 	MissileHitHumanEffect 	"noghri_stick/flesh_impact"
+ 	MissileHitDroidEffect 	"noghri_stick/flesh_impact"
+	FlashSound0	"sound/weapons/silencedpistol/fire.wav"
+	FlashSound1	"sound/weapons/silencedpistol/fire.wav"
+	FlashSound2	"sound/weapons/silencedpistol/fire.wav"
+	FlashSound3	"sound/weapons/silencedpistol/fire.wav"
+	FlashSound4	"sound/weapons/silencedpistol/fire.wav"
+	MissileEffect	"halo_shotgun/shot"
+	primGore	1
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_TRIP_MINE
+	WeaponBasedOff		WP_TRIP_MINE
+	NewWorldModel		"models/weapons2/laser_trap/laser_trap_w.glm"
+	NewViewModel		"models/weapons2/laser_trap/laser_trap.md3"
+	NewHandsModel		"models/weapons2/laser_trap/laser_trap_hand.md3"
+	Icon				"gfx/hud/w_icon_tripmine"
+	WeaponName			"Submission Mines"
+	rateMod				0.9
+	damagemod	1.2
+}
+WeaponInfo2
+{
+ 	WeaponToReplace  WP_FRAG_NADE
+	WeaponBasedOff   WP_FRAG_NADE
+	NewWorldModel  "models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel  "models/map_objects/mp/bacta.md3"
+	NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
+ 	Icon    "gfx/hud/w_icon_stungrenade"
+	MissileModel "models/map_objects/mp/bacta.md3"
+	AltMissileModel "models/map_objects/mp/bacta.md3"
+	missileEffect				"hutt/toxic_breath"
+	altmissileEffect			"hutt/toxic_breath"
+	MissileMissEffect			"slime_explosion_new"
+	MissileHitHumanEffect	"slime_explosion_new"
+	MissileHitDroidEffect	"slime_explosion_new"
+	AltMissileMissEffect		"slime_explosion_new"
+	AltMissileHitHumanEffect	"slime_explosion_new"
+	AltMissileHitDroidEffect	"slime_explosion_new"
+	FlashSound0		"sound/weapons/smokenade/select.mp3"
+	AltFlashSound0 	"sound/weapons/smokenade/select.mp3"
+	WeaponName  				"Knock-Out Canister"
+	hasAnimOverrides 1
+	animAttackRun BOTH_THERMAL_THROW2
+	animAttack BOTH_THERMAL_THROW2
+	animAttackWalk BOTH_THERMAL_THROW2
+	animReadyRun BOTH_THERMAL_READY2
+	animReady BOTH_THERMAL_READY2
+	animReadyWalk BOTH_THERMAL_READY2
+	ratemod 0.5
+	splashRadius 200
+}
+
+
+
+description	"000
+
+A torturous droid equipped with a wide variety of sadistic tools. 
+
+^2Weaponry:
+- Torturous Melee
+-- Cripples/Slips/Poisons/Tracks
+-- Drains/Force Focuses
+-- 15% Faster Movement
+-- 100% More Damage
+- Dioxis Dart Rifle (3)
+-- DC Carbine (3)
+-- Tracks/Slips/Poisons/Cripples/Force Focuses
+-- Mag Reload
+-- 55% Less Damage
+- Knockout Canister (3)
+-- Frag Grenade
+-- Blinds/Sonic Shocks/Slips/Knocksdown/Poisons
+-- Smaller Radius
+-- 50% Faster RoF
+- Submission Mines (4)
+-- Lifts/Tracks/Blinds/Disarms/Freezes/Force Focuses
+-- 20% More Damage
+- Stun Baton (2)
+
+^8Attributes:
+- Anti Mind Trick (2)
+- Stat Viewer
+- Healing (1)
+- Tracking Beacon
+- Close Combat (3)
+- Environmential Protection (1)
+- Blast Armor
+- Mag Plating
+- Toxic Taunt
+
+^3Abilities:
+- Enemy Scanner ^3[CS4]
+- Grav-Wrist Laser ^3[CS2]
+-- 50% Less Damage, Pulls On Hit
+- Dodge (3) ^3[CS1]
+- Lethal Tracking Darts (6) ^3[CS3]
+-- Applies Force Focus/Slippery/Blind/Cripple/Poison
+- Resource Dispenser (1) ^3[USE In Melee]
+- Disguise (1) ^3[Style Swap In Melee]"
