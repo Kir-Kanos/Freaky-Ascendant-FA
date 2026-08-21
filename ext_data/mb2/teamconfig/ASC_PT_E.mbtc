@@ -28,6 +28,7 @@ SubclassesForClass1
 	Subclass10	"pte3_HondoGang"
 	Subclass11	"pte1_ZombSister"
 	Subclass12	"pte2_PykeDealer"
+	Subclass13	"pte3_IG86"
 
 }
 
@@ -72,6 +73,7 @@ SubclassesForClass5
 	Subclass3	"pte9_Ventres"
 	Subclass4	"pte9_Grievous"
 	Subclass5	"pte9_Savage"
+	Subclass6	"pte9_Qimir"
 }
 
 SubclassesForClass6
