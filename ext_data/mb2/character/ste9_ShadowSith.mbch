@@ -1,0 +1,74 @@
+
+ClassInfo
+{
+	name				"ste9_ShadowSith"
+	MBClass				MB_CLASS_SITH
+	extralives			1
+
+	weapons				WP_MELEE|WP_SABER
+	WP_SaberFlags		HELD_NODISARM
+
+	attributes			MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GUN_DEFENSE,1|MB_ATT_DEFLECT,2|MB_ATT_FORCEBLOCK,1|MB_ATT_CORTOSIS|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,1|MB_ATT_TRACKING_BEACON|MB_ATT_ENV_PROT,1|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_CLOAK,2
+
+	forcepowers			FP_SABER_OFFENSE,3|FP_LEVITATION,2|FP_LIGHTNING,1|FP_GRIP,1|FP_SABER_DEFENSE,3
+	classflags			CFL_NOPICKUPS|CFL_SEEING_STEALTH
+	special2			EAS_HI_CLOAK
+
+	forcepool			100
+
+	maxhealth		100
+	maxarmor		25
+
+	rateOfFire_Melee	1
+
+	uioverlay_l			"gfx/icons/frontline"
+	uioverlay_r			"gfx/icons/infantry"
+
+	model				"shadowtrooper"
+	skin				"default"
+	uishader			"models/players/shadowtrooper/mb2_icon_default"
+
+	model_1				"shadowtrooper"
+	skin_1				"new_rgb"
+	uishader_1			"models/players/shadowtrooper/mb2_icon_new_rgb"
+
+	userRGB	1
+
+	saber1			single_104
+	sabercolor		0
+	saberstyle		SS_MEDIUM|SS_STRONG|SS_FAST
+
+	classNumberLimit	2
+
+}
+
+description	"Shadow Trooper
+
+Cortosis Lined Stealth Dark Jedi.
+
+^2Weaponry:
+- Melee
+- Lightsaber (Yellow/Red/Blue)
+-- Saber Throw ^3[CS1]
+-- Saber Defense (3)
+-- Blaster Defense (1)
+-- Blaster Deflect (2)
+
+^3Powers:
+- Grip (1)
+- Lightning (1)
+- Jump (2)
+
+^8Attributes:
+- Reinforcement (1)
+- Force Focus (1)
+- Force Block (1)
+- Cortosis (1)
+- Knockdown Roll
+- Anti MT (1)
+- Blast Armor 
+- Tracking Beacon
+- Environmental Protection (1)
+
+^8Abilities:
+- Cloak (2) ^3[CS2]"
