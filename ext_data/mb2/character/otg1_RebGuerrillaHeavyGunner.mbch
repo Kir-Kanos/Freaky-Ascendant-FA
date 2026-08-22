@@ -12,8 +12,8 @@ ClassInfo
 	rateOfFire_Melee	1
 	basespeed	180
 	extralives		1
-	maxhealth		120
-	maxArmor 		120
+	maxhealth		100
+	maxArmor 		80
 	damageTaken	.85
 	resource RESOURCE_STAMINA
 	forcepool 20
