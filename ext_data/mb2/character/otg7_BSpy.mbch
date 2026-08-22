@@ -10,7 +10,7 @@ ClassInfo
 	
 	attributes	MB_ATT_AMMO,3|MB_ATT_TRACKING_BEACON|MB_ATT_THROWER_PLASMA|MB_ATT_DET_PACK,4|MB_ATT_DEXTERITY,2
 	maxhealth	80
-	MaxArmor	50
+	MaxArmor	80
 	
 	resource		RESOURCE_ENERGY
 	forcepool	200
