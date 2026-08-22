@@ -9,8 +9,8 @@ ClassInfo
 	WP_SaberFlags		HELD_STUN
 	attributes			MB_ATT_PISTOL,2|MB_ATT_BLASTER,2|MB_ATT_MICRO_GRENADES,1|MB_ATT_FRAGS,1|MB_ATT_AMMO,3|MB_ATT_ASSEMBLE,3|MB_ATT_CCTRAINING,1|MB_ATT_SABER_COMBO_NONE
 
-	maxhealth			75
-	maxarmor			35
+	maxhealth			60
+	maxarmor			25
 
 	resource			resource_energy
 	forcepool			25
