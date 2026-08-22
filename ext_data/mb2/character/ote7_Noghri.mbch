@@ -9,8 +9,8 @@ ClassInfo
 	maxhealth	100
 	rankhealth 120,150
 	
-	maxarmor	80
-	rankarmor 100
+	maxarmor	100
+	rankarmor 80
 	
 	basespeed 230
 	rankbaseSpeed 240,260
