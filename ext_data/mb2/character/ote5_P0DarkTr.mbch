@@ -7,10 +7,8 @@ ClassInfo
 	
 	attributes 	MB_ATT_BLAST_ARMOUR,1|MB_ATT_AMMO,3|MB_ATT_JETPACK,1|MB_ATT_FUEL,3|MB_ATT_SHOTGUN,2|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_BESKAR,1|MB_ATT_ANTI_MT,2|MB_ATT_TRACKING_BEACON|MB_ATT_HEALING,3|MB_ATT_ASSEMBLE,3|MB_ATT_FUELREGEN,1|MB_ATT_DEXTERITY,2|MB_ATT_TRACKING_DART,2|MB_ATT_ENV_PROT,1
 	
-	maxhealth 		75
-	maxarmor			100
-	rankHealth  100,125,150
-	rankArmor	125,150,200
+	maxhealth 		100
+	maxarmor			80
 
 	modelscale 			1.05
 	damageTaken   		1.0
@@ -34,7 +32,7 @@ ClassInfo
 	special3 		EAS_HI_DEX
 
 	isCustomBuild		1
-	mbPoints			18
+	mbPoints			10
 	
 	c_att_skill_0	MB_ATT_SHOTGUN
 	c_att_names_0	"Heavy ARC Caster"
@@ -54,13 +52,6 @@ ClassInfo
 	c_att_names_3	"Reinforcement"
 	c_att_ranks_3	6
 
-	c_att_skill_4	MB_ATT_HEALTH
-	c_att_names_4	"Health (100/125/150)"
-	c_att_ranks_4	2,2,2
-
-	c_att_skill_5	MB_ATT_ARMOUR
-	c_att_names_5	"Armor (125/150/200)"
-	c_att_ranks_5	2,2,4
 	
 	model 		"darktrooper_p0"
 	skin 		"default"
