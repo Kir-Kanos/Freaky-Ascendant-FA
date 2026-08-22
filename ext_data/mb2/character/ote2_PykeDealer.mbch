@@ -57,8 +57,6 @@ ClassInfo
 	special2 		EAS_HI_DEX
 	special4		EAS_HI_POISON
 
-	classFlags 
-
 	modelscale	1.09	
 
 	model			"pyke2" 
