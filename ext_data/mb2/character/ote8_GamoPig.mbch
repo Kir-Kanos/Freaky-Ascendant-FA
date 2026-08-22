@@ -14,8 +14,8 @@ ClassInfo
 
 	attributes			MB_ATT_A280,3|MB_ATT_AMMO,3|MB_ATT_WOOKIE_HEALTH,3|MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_ASSEMBLE,2|MB_ATT_WOOKIEE_FURY,1|MB_ATT_HEALING,2|MB_ATT_BLAST_ARMOUR,1|MB_ATT_BASE_TD,2|MB_ATT_BARGE,1
 
-	maxhealth			100
-	maxarmor			80
+	maxhealth			300
+	maxarmor			50
 
 	skilltimerMod		0.4
 	speed				1.09
