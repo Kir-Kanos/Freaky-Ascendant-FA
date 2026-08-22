@@ -3,7 +3,7 @@ ClassInfo
 {
 	name				"ote3_EliteStorm"
 	weapons			WP_MELEE|WP_BLASTER_PISTOL
-	attributes		MB_ATT_AMMO,3|MB_ATT_DODGE,2|MB_ATT_BLAST_ARMOUR|MB_ATT_ASSEMBLE,1|MB_ATT_PISTOL,2|MB_ATT_BACTA
+	attributes		MB_ATT_AMMO,3|MB_ATT_DODGE,2|MB_ATT_ASSEMBLE,1|MB_ATT_PISTOL,2|MB_ATT_BACTA
 	
 	MBClass			MB_CLASS_CLONETROOPER
 	
@@ -242,7 +242,6 @@ A Veteran Stormtrooper who specializes in leadership, combat skills and utility.
 - Medpac ^3[CS3]
 
 ^8Attributes:
-- Blast Armor
 - Reinforcement (1)
 - Dexterity (1)
 - Assemble (1)
