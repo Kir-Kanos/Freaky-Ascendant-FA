@@ -6,7 +6,7 @@ ClassInfo
 	MBClass				MB_CLASS_BOUNTY_HUNTER
 	weapons				WP_MELEE|WP_STUN_BATON|WP_BLASTER_PISTOL
 
-	attributes			MB_ATT_DODGE,3|MB_ATT_RALLY,1|MB_ATT_AMMO,3|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_BEACON|MB_ATT_ASSEMBLE,1|MB_ATT_ANTI_MT,2|MB_ATT_TRACKING_DART,12|MB_ATT_GRAPPLE_HOOK,1|MB_ATT_STUN_BATON,1|MB_ATT_HEALING,1|MB_ATT_PISTOL,3|MB_ATT_QUICKTHROW,1
+	attributes			MB_ATT_DODGE,3|MB_ATT_RALLY,1|MB_ATT_AMMO,3|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_BEACON|MB_ATT_ASSEMBLE,1|MB_ATT_ANTI_MT,2|MB_ATT_TRACKING_DART,12|MB_ATT_GRAPPLE_HOOK,1|MB_ATT_STUN_BATON,1|MB_ATT_PISTOL,3|MB_ATT_QUICKTHROW,1
 
 	maxhealth			80
 	maxarmor			80
@@ -152,11 +152,10 @@ An intel officer who specializes in gathering info for their team and ambushing 
 - Tactical Acumen (+15% Melee Movement Speed)
 - Security Specialist (+40% Hack Speed)
 - ISB Comm-Link (Tracking Beacon)
-- Resilience (Healing 1)
 
 ^3Abilities:
 - Dodge (2) ^3[CS1]
 - Gunkick ^3[CS3]
 - Grapple-Hook (1) ^3[CS4 Melee]
 - Quickthrow (1) ^3[CS4]
-- Tracking-Darts (12) ^3[CS2]"
+- Tracking-Darts (24) ^3[CS2]"
