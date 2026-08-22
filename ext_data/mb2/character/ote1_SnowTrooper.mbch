@@ -12,7 +12,7 @@ ClassInfo
 	WP_CryoNadeFlags	HELD_CRIPPLE
 	WP_DetPackFlags		HELD_FREEZE|HELD_CRIPPLE
 
-	maxhealth			65
+	maxhealth			60
 
 	maxArmor			25
 
