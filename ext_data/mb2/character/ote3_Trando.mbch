@@ -22,10 +22,9 @@ ClassInfo
 	rankAS				1.3
 	BPMultiplier		0
 
-	maxhealth			225
-	rankHealth			275
+	maxhealth	100
 
-	maxarmor			10
+	maxarmor		80
 
 	rateOfFire_Melee	.9
 	rankROFMelee		.65
@@ -123,13 +122,9 @@ Mag reload"
 	c_att_descs_17		"80% less velocity, 80% slower RoF, 80% slower mag reload,
 Heavyweight, Primary fire only"
 
-	c_att_skill_18		MB_ATT_HEALTH
-	c_att_names_18		"Health (275)"
+	c_att_skill_18		MB_ATT_BLAST_ARMOUR
+	c_att_names_18		"Blast Armor"
 	c_att_ranks_18		0
-
-	c_att_skill_19		MB_ATT_BLAST_ARMOUR
-	c_att_names_19		"Blast Armor"
-	c_att_ranks_19		0
 
 
 	c_att_skill_30		MB_ATT_ROF_MELEE_MULTIPLIER
