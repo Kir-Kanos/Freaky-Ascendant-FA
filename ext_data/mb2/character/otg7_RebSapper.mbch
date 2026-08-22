@@ -20,7 +20,7 @@ resourceRegenRate 1000
 resourceRegenAmount 5
 resourceRegenCap 65
 
-maxhealth 85
+maxhealth 80
 MaxArmor 80
 
 armourRegenAmount 2
