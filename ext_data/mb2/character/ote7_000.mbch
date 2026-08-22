@@ -108,8 +108,6 @@ WeaponInfo2
 	animReadyRun BOTH_THERMAL_READY2
 	animReady BOTH_THERMAL_READY2
 	animReadyWalk BOTH_THERMAL_READY2
-	ratemod 0.5
-	splashRadius 200
 }
 
 
@@ -123,7 +121,7 @@ A torturous droid equipped with a wide variety of sadistic tools.
 -- Cripples/Slips/Poisons/Tracks
 -- Drains/Force Focuses
 -- 15% Faster Movement
--- 100% More Damage
+-- High Damage
 - Dioxis Dart Rifle (3)
 -- DC Carbine (3)
 -- Tracks/Slips/Poisons/Cripples/Force Focuses
@@ -132,8 +130,6 @@ A torturous droid equipped with a wide variety of sadistic tools.
 - Knockout Canister (3)
 -- Frag Grenade
 -- Blinds/Sonic Shocks/Slips/Knocksdown/Poisons
--- Smaller Radius
--- 50% Faster RoF
 - Submission Mines (4)
 -- Lifts/Tracks/Blinds/Disarms/Freezes/Force Focuses
 -- 20% More Damage
