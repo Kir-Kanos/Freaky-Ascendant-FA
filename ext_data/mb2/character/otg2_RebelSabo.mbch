@@ -6,8 +6,7 @@ weapons WP_MELEE
 forcepowers FP_BLIND,3
 attributes MB_ATT_TRACKING_BEACON|MB_ATT_TRACKING_DART,3|MB_ATT_DASH,2|MB_ATT_DEXTERITY,2|MB_ATT_THROWER_LIGHTNING|MB_ATT_STAMINA,3|MB_ATT_WRISTLASER|MB_ATT_WHISTLINGBIRD,1|MB_ATT_SPY_DISGUISE,3
 maxhealth 80
-MaxArmor 20
-rankArmor 30,60,80
+MaxArmor 40
 resource resource_stamina
 forcepool 80
 rankForcePool 100,120
@@ -38,7 +37,7 @@ uioverlay "gfx/icons/tactician"
 	uishader		"models/players/rebel_partisan/mb2_icon_cyber"
 	
 isCustomBuild 1
-mbPoints 50
+mbPoints 45
 c_att_skill_1 MB_ATT_TRAD_BOWCASTER
 c_att_names_1 "Two-shot Toxin Bowcaster:"
 c_att_ranks_1 5,10
@@ -69,18 +68,15 @@ c_att_ranks_8 1,1,1
 c_att_skill_9 MB_ATT_RESPAWNS
 c_att_names_9 "Reinforcements:"
 c_att_ranks_9 5,10
-c_att_skill_10 MB_ATT_ARMOUR
-c_att_names_10 "Armor (25,50,80):"
-c_att_ranks_10 2,4,9
-c_att_skill_11 MB_ATT_GRAPPLE_HOOK
-c_att_names_11 "Grapple Hook ^3[CS3]:"
-c_att_ranks_11 2,2,2
-c_att_skill_12 MB_ATT_FLIPKICK
-c_att_names_12 "Flipkick"
-c_att_ranks_12 1
-c_att_skill_13 MB_ATT_POWER
-c_att_names_13 "Force Pool (100/120)"
-c_att_ranks_13 2,2
+c_att_skill_10 MB_ATT_GRAPPLE_HOOK
+c_att_names_10 "Grapple Hook ^3[CS3]:"
+c_att_ranks_10 2,2,2
+c_att_skill_11 MB_ATT_FLIPKICK
+c_att_names_11 "Flipkick"
+c_att_ranks_11 1
+c_att_skill_12 MB_ATT_POWER
+c_att_names_12 "Force Pool (100/120)"
+c_att_ranks_12 2,2
 }
 WeaponInfo0
 {
