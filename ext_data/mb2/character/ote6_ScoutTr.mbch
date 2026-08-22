@@ -10,8 +10,7 @@ attributes	MB_ATT_ASSEMBLE,2|MB_ATT_GUN_DEFENSE,0|MB_ATT_DEFLECT,0|MB_ATT_AMMO,4
 MBClass	MB_CLASS_HERO
 classNumberLimit	3
 maxhealth	80
-RankHealth 100
-maxarmor	75
+maxarmor	40
 ArmourRegenRate	500
 ArmourRegenCap	40
 rankArmourRegenAmount 1
@@ -163,37 +162,33 @@ c_att_skill_20	MB_ATT_THERMALS
 c_att_names_20	"Thermal Detonator"
 c_att_ranks_20	2
 
-c_att_skill_21	MB_ATT_HEALTH
-c_att_names_21	"HP (100)"
-c_att_ranks_21	1
+c_att_skill_21 MB_ATT_BASESPEED
+c_att_names_21 "Speed (192)"
+c_att_ranks_21 1
 
-c_att_skill_22 MB_ATT_BASESPEED
-c_att_names_22 "Speed (192)"
-c_att_ranks_22 1
+c_att_skill_22	MB_ATT_ARMOUR_REGEN_AMOUNT
+c_att_names_22	"Armor Regen (1/.5s to 40)"
+c_att_ranks_22	3
 
-c_att_skill_23	MB_ATT_ARMOUR_REGEN_AMOUNT
-c_att_names_23	"Armor Regen (1/.5s to 40)"
-c_att_ranks_23	3
+c_att_skill_23	MB_ATT_ROF_MULTIPLIER
+c_att_names_23	"RoF (100/110%)"
+c_att_ranks_23 2,2
 
-c_att_skill_24	MB_ATT_ROF_MULTIPLIER
-c_att_names_24	"RoF (100/110%)"
-c_att_ranks_24 2,2
+c_att_skill_24	MB_ATT_POWER
+c_att_names_24	"Stamina Pool (100/120)"
+c_att_ranks_24	1,1
 
-c_att_skill_25	MB_ATT_POWER
-c_att_names_25	"Stamina Pool (100/120)"
-c_att_ranks_25	1,1
+c_att_skill_25	MB_ATT_STAMINA
+c_att_names_25	"Stamina ^3[CS1]"
+c_att_ranks_25	0,0,1
 
-c_att_skill_26	MB_ATT_STAMINA
-c_att_names_26	"Stamina ^3[CS1]"
-c_att_ranks_26	0,0,1
+c_att_skill_26	MB_ATT_DEXTERITY
+c_att_names_26	"Dexterity ^3[CS2]"
+c_att_ranks_26	0,1
 
-c_att_skill_27	MB_ATT_DEXTERITY
-c_att_names_27	"Dexterity ^3[CS2]"
-c_att_ranks_27	0,1
-
-c_att_skill_28	MB_ATT_DASH
-c_att_names_28	"Dash ^3[CS3]"
-c_att_ranks_28	2,0
+c_att_skill_27	MB_ATT_DASH
+c_att_names_27	"Dash ^3[CS3]"
+c_att_ranks_27	2,0
 
 c_att_skill_30	MB_ATT_PISTOL
 c_att_names_30	"EC-17 Hold-Out Pistol"
