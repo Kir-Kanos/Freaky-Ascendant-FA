@@ -27,7 +27,6 @@ ClassInfo
 	special2HUD HUD_WRISTLASER
 
 	special1 EAS_HI_FLAME
-	special2 
  special3 EAS_NONE
 	uioverlay_l "gfx/icons/aerial"
 	uioverlay_r "gfx/icons/infantry"
