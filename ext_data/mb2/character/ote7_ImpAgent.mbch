@@ -100,34 +100,30 @@ uishader_4	"models/players/stormie/mb2_icon_vader"
 	c_att_names_5	"Reinforcement"
 	c_att_ranks_5	20
 	c_att_descs_5 "1 default"
-	
-	c_att_skill_6	MB_ATT_ARMOUR
-	c_att_names_6	"Armor (10/15/20)"
-	c_att_ranks_6	1,2,3
 
-	c_att_skill_7	MB_ATT_ARMOUR_REGEN_AMOUNT
-	c_att_names_7	"> Armor Regen (20/20s)"
-	c_att_ranks_7	5
+	c_att_skill_6	MB_ATT_ARMOUR_REGEN_AMOUNT
+	c_att_names_6	"> Armor Regen (20/20s)"
+	c_att_ranks_6	5
 
-	c_att_skill_8	MB_ATT_RECHARGE
-	c_att_names_8	"Battery Recharge"
-	c_att_ranks_8	2,2,6
+	c_att_skill_7	MB_ATT_RECHARGE
+	c_att_names_7	"Battery Recharge"
+	c_att_ranks_7	2,2,6
 
-	c_att_skill_9	MB_ATT_SPY_DISGUISE
-	c_att_names_9	"Disguise ^3[Toggle Melee]"
-	c_att_ranks_9	3,3,3
+	c_att_skill_8	MB_ATT_SPY_DISGUISE
+	c_att_names_8	"Disguise ^3[Toggle Melee]"
+	c_att_ranks_8	3,3,3
 
-	c_att_skill_10	MB_ATT_WRISTLASER
-	c_att_names_10	"Wrist Laser ^3[CS1]"
-	c_att_ranks_10	5
+	c_att_skill_9	MB_ATT_WRISTLASER
+	c_att_names_9	"Wrist Laser ^3[CS1]"
+	c_att_ranks_9	5
 
-	c_att_skill_11	MB_ATT_TRACKING_DART
-	c_att_names_11	"Tracking Darts ^3[CS2 Melee]"
-	c_att_ranks_11	0,2,2
+	c_att_skill_10	MB_ATT_TRACKING_DART
+	c_att_names_10	"Tracking Darts ^3[CS2 Melee]"
+	c_att_ranks_10	0,2,2
 
-	c_att_skill_12	MB_ATT_DASH
-	c_att_names_12	"Dash ^3[CS3]"
-	c_att_ranks_12	0,1
+	c_att_skill_11	MB_ATT_DASH
+	c_att_names_11	"Dash ^3[CS3]"
+	c_att_ranks_11	0,1
 }
 
 WeaponInfo0
