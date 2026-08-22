@@ -25,7 +25,7 @@ ClassInfo
 
 	special1HUD HUD_TRACKINGDART
 
-	saber1      	boushh_staff
+	saber1      	boushh_staff_asc
 	saberstyle 	SS_STAFF
 
  	saberDamageStyle SS_STAFF,90
@@ -42,9 +42,9 @@ ClassInfo
 	WP_TripMineFlags	HELD_HIGHDAMAGE|HELD_TRACKING|HELD_LIFESTEAL
 	AB_GHookFlags	HELD_POISON|HELD_SLIPPERY|HELD_CRIPPLE
 	
-	model				"boushh"
+	model				"Boushh_asc"
 	skin				"default"
-	uishader			"models/players/boushh/mb2_icon_default"
+	uishader			"models/players/Boushh_asc/mb2_icon_default"
 
 	special1	EAS_HI_DODGE
 	special2	EAS_HI_DEX
@@ -140,11 +140,11 @@ A agile bounty hunter with explosive power who enjoys the kill a little too much
 - Advanced Filters (Water Breathing)
 
 ^3Abilities:
-- Flipkick ^3[Contact JUMP]
+- Flipkick (1) ^3[Contact JUMP]
 - Dodge (3) ^3[CS1]
 - Dex Roll ^3[CS2]
 - Gunkick ^3[CS4]
-- Specialty Tracking Darts (8) ^3[CS3]
+- Specialty Tracking Darts (16) ^3[CS3]
 -- Poisons/Cripples
 - Infection Whip (Grapple Hook 2) ^3[CS4 ^3Melee]
 -- Applies Blind/Slippery/Poison"
