@@ -12,8 +12,7 @@ ClassInfo
 
 	classflags	CFL_BLOODYMELEE
 
-	attributes  		MB_ATT_AMMO,3|MB_ATT_DEXTERITY,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_PSHIELD|MB_ATT_ENV_PROT,2|MB_ATT_TRACKING_BEACON|MB_ATT_ANTI_MT,1|MB_ATT_BLAST_ARMOUR|MB_ATT_HEALING,2|MB_ATT_BESKAR,3|MB_ATT_WHISTLINGBIRD|MB_ATT_DASH,2|MB_ATT_WRISTLASER|MB_ATT_FLAMETHROWER|MB_ATT_FLIPKICK,1
-
+	attributes  		MB_ATT_AMMO,3|MB_ATT_DEXTERITY,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_PSHIELD|MB_ATT_ENV_PROT,2|MB_ATT_TRACKING_BEACON|MB_ATT_ANTI_MT,1|MB_ATT_BLAST_ARMOUR|MB_ATT_HEALING,2|MB_ATT_BESKAR,2|MB_ATT_WHISTLINGBIRD|MB_ATT_WRISTLASER|MB_ATT_FLAMETHROWER|MB_ATT_FLIPKICK,1
 
 	forcepowers		FP_SABER_OFFENSE,3|FP_SABER_DEFENSE,2
 	forcepool 100
@@ -23,17 +22,17 @@ ClassInfo
 	
 	resource	RESOURCE_ENERGY
 
-	skilltimermod	.65
+	skilltimermod	.40
 
-	basespeed 235
+	basespeed 240
 	
 	maxhealth 		175
 	
 	maxarmor			100	
 	 
 	ASmultiplier		1.05
-	APmultiplier		.8
-	BPmultiplier		.8
+	APmultiplier		.85
+	BPmultiplier		.85
 	CSmultiplier		1.20
 
 	saberMaxChain 6
@@ -45,16 +44,15 @@ ClassInfo
 
 	saberstyle	SS_DUAL
 
-
 	special1 EAS_HI_WRIST
 meleespecial1 EAS_HI_WRIST
 	special2 EAS_HI_FLAME
 meleespecial2 EAS_HI_FLAME
-	special3 EAS_HI_DASH
-	special4 EAS_HI_DEX
+	special3 EAS_HI_DEX
+	special4 EAS_HI_WHISTLING_BIRDS
 meleespecial4	EAS_HI_WHISTLING_BIRDS
 
-	knockbackTaken		.60
+	knockbackTaken		.80
 	
 	gloatAnim   BOTH_VICTORY_FAST
 
@@ -96,13 +94,13 @@ A Mandalorian rush down raider who uses looted weapons to great effect through h
 -- ^3Disarms On Hit
 
 ^8Attributes:
-- 40% less Kb Taken
+- 20% less Kb Taken
 - Strength (1)
 - Dexterity (1)
 - Blast Armor
-- Beskar (3)
+- Beskar (2)
 - Healing (2)
-- 35% Faster Cooldowns
+- 60% Faster Cooldowns
 - Anti Mind Trick (1)
 - Tracking Beacon
 - Environmental Protection (2)
@@ -110,7 +108,6 @@ A Mandalorian rush down raider who uses looted weapons to great effect through h
 
 ^3Abilities:
 - Mandalorian Combat Shield
-- Dash (2) ^3[CS3]
 - Wrist Laser ^3[CS1]
 - Wrist Flamethrower ^3[CS2]
 - Vambrace Microrockets ^3[CS4 Melee]
