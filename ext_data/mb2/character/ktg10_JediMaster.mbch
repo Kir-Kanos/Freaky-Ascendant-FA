@@ -30,6 +30,10 @@ ClassInfo
 	model		"jedi_spanki"
 	skin		"formVII"
 	uishader	"models/players/jedi_spanki/mb2_icon_formVII"
+
+	model_1		"jedi_spanki"
+	skin_1		"formIII"
+	uishader_1	"models/players/jedi_spanki/mb2_icon_formIII"
 	
 	saber1			saber_kshrt
 	sabercolor		3
