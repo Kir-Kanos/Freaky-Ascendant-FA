@@ -4,62 +4,102 @@ ClassInfo
 	name				"stg5_BoKatan"
 	MBClass				MB_CLASS_MANDALORIAN
 	classNumberLimit	1
-	weapons				WP_MELEE|WP_MANDO_PISTOL|WP_FRAG_NADE
-	attributes			MB_ATT_BESKAR,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_JETPACK|MB_ATT_AMMO,3|MB_ATT_MANDO_PISTOL,3|MB_ATT_FUEL,2|MB_ATT_WRISTLASER,1|MB_ATT_ROCKET,1|MB_ATT_POISON_DART,3|MB_ATT_FUELREGEN,1|MB_ATT_BUNNY_HOP,1|MB_ATT_FRAGS,2|MB_ATT_FORCEBLOCK,1|MB_ATT_HEALING,2|MB_ATT_TRACKING_BEACON|MB_ATT_DEXTERITY,1
-
-	maxhealth			125
-	maxarmor			125
-	rateoffire_melee	0.95
-
-	special1			EAS_HI_ROCKET
-	meleespecial1		EAS_HI_ROCKET
-	//special2			EAS_HI_WRIST
-	//meleespecial2		EAS_HI_WRIST
-	special3			EAS_HI_DASH
-	meleespecial4		EAS_HI_POISON
-
+	weapons				WP_MELEE|WP_MANDO_PISTOL|WP_SABER
+	
+	attributes			MB_ATT_BESKAR,3|MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_JETPACK|MB_ATT_AMMO,3|MB_ATT_MANDO_PISTOL,1|MB_ATT_FUEL,2|MB_ATT_FUELREGEN,1|MB_ATT_BUNNY_HOP,1|MB_ATT_FORCEBLOCK,1|MB_ATT_HEALING,1
+	
+	maxhealth		125
+	maxarmor			100
+	rateoffire	1
+	speed       	1
+	special1		EAS_HI_ROCKET
+	special2 	EAS_HI_WRIST
+	special3	EAS_HI_WHISTLING_BIRDS
+	special4 	EAS_HI_GRAPPLEHOOK
+	AB_WLaserFlags HELD_LOWDAMAGE|HELD_SONIC
+	WP_BlasterFlags HELD_ALTRELOAD|HELD_PULSE
+	//AB_GRAPPLEHOOKFlags coming soon!
 	resource			resource_fuel
-	forcepool			35
-	basespeed			250
+	forcepool 		20
+	rankForcePool	35,60,85
 
-	saber1				legends_darksaber
-	saberstyle			SS_MEDIUM|SS_DESANN
-	saberDamageStyle	SS_MEDIUM,200|SS_DESANN,240
+	saber1	darksaber_ascendancy
+	saberstyle SS_DUAL
+	saber2	energyshield_leg
 
-	forcepowers			FP_SABER_OFFENSE,1
-	APmultiplier		1.20
-	BPmultiplier		1.1
-
-	special1HUD			HUD_POISONDART
-	special2HUD			HUD_WRISTLASER
-
-	modelscale			1.01
-	model				"BoKatan"
-	skin				"default"
-	uishader			"models/players/BoKatan/mb2_icon_default"
-	uioverlay_r			"gfx/icons/aerial"
-	uioverlay_l			"gfx/icons/hybrid"
-
+	BPmultiplier		0.8
+	APmultiplier		0.8
+	rankAP		1.05,1.1,1.15
+	saberDamage 		240
+	saberMaxChain 1
+	rankSaberMaxChain 2,3,4	
+	modelscale   1.01
+	model		"BoKatan"
+	skin			"default"
+	uishader  	"models/players/BoKatan/mb2_icon_default"
+	uioverlay_r 	"gfx/icons/aerial"
+	uioverlay_l 	"gfx/icons/hybrid"
+	
+	//respawncustomtime  50000	
 	isCustomBuild		1
-	mbPoints			4
+	mbPoints			35
 
-	c_att_skill_0		MB_ATT_SABER
-	c_att_names_0		"The Darksaber (Yellow/Purple)"
-	c_att_ranks_0		4
-	c_att_descs_0		"Saber Defense (1), No Blaster Block, 16/40% less damage"
+//saber
+c_att_skill_0	MB_ATT_FP_SABER_DEFENSE
+c_att_names_0	"Saber Defense"
+c_att_ranks_0	0,4,4
+c_att_desc_0	"0.8 BP Mult + SD1 by default"
 
-	c_att_skill_1		MB_ATT_SONIC_DETONATOR
-	c_att_names_1		"Sonic Detonator"
-	c_att_ranks_1		1
+c_att_skill_1	MB_ATT_GUN_DEFENSE
+c_att_names_1	"Blaster Defense"
+c_att_ranks_1	4,4
 
-	c_att_skill_2		MB_ATT_FLAMETHROWER
-	c_att_names_2		"W. Flamethrower ^3[MWM CS2]"
-	c_att_ranks_2		2
-	c_att_descs_2		"Toggle Melee Weapon Mode to swap Wrist Flamethrower/Laser"
+c_att_skill_2	MB_ATT_AP_MULTIPLIER
+c_att_names_2	"Saber AP (1.1/1.15/1.2)"
+c_att_ranks_2	2,2,4
+c_att_descs_2	"Default 0.8"
 
-	c_att_skill_3		MB_ATT_DASH
-	c_att_names_3		"Dash ^3[CS3]"
-	c_att_ranks_3		1,0
+c_att_skill_3	MB_ATT_SABER_MAXCHAIN
+c_att_names_3	"Saber Chain Limit (2/3/4)"
+c_att_ranks_3	0,2,2
+c_att_descs_3	"Default 1"
+
+c_att_skill_4	MB_ATT_SS_REDSTYLE
+c_att_names_4	"Red Saber Style:"
+c_att_ranks_4	0
+
+c_att_skill_5	MB_ATT_POWER
+c_att_names_5	"Fuel Pool (35/60/85):"
+c_att_ranks_5	2,3,4
+
+c_att_skill_6	MB_ATT_FUELREGEN
+c_att_names_6	"Fuel Regen"
+c_att_ranks_6	1,2
+
+c_att_skill_7	MB_ATT_KNOCKDOWN_ROLL
+c_att_names_7	"Knockdown Roll"
+c_att_ranks_7	5
+
+c_att_skill_8	MB_ATT_DEXTERITY
+c_att_names_8	"Dexterity"
+c_att_ranks_8	1,2,3
+
+c_att_skill_9	MB_ATT_ROCKET
+c_att_names_9	"Jetpack Rocket ^3[CS1]"
+c_att_ranks_9	2
+
+c_att_skill_10	MB_ATT_WRISTLASER
+c_att_names_10	"Wrist Laser ^3[CS2]"
+c_att_ranks_10	1
+
+c_att_skill_11	MB_ATT_WHISTLINGBIRD
+c_att_names_11	"Whistling Birds ^3[CS3]"
+c_att_ranks_11	2
+
+c_att_skill_12	MB_ATT_GRAPPLE_HOOK
+c_att_names_12	"Whipcord Launcher ^3[CS4]"
+c_att_ranks_12	3
+c_att_descs_12	"Stuns/cripples/pulls on hit"
 }
 
 WeaponInfo0
@@ -88,9 +128,9 @@ WeaponInfo1
 	AltMissileEffect	"Blaster/Shot04Y"
 	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
 	ChargeEffect		"gfx/effects/yellow_bryarFrontFlash"
-	damageMod			1.1
-	fpmult				1.1
-	rateMod				1.1
+	fpmult	1.15
+	rateMod 1.4
+	damageMod 1.15
 	customammo			750
 }
 
@@ -118,5 +158,4 @@ A quick and versatile Mandalorian with a tough suit of armor.
 ^3Abilities:
 - Jetpack
 -- Rocket ^3[CS1]
-- Wrist Laser ^3[CS2]
-- Poison Darts (3) ^3[Melee CS4]"
+- Wrist Laser ^3[CS2]"
