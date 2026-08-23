@@ -37,13 +37,9 @@ ClassInfo
 	skin		"chiss"
 	uishader	"models/players/jedi_spanki/mb2_icon_chiss"
 
-	model_1		"obiwan_ep3"
-	skin_1		"xaoxing"
-	uishader_1	"models/players/XaoXing/mb2_icon_default"
-
-	model_2		"jedi_tf"
-	skin_2		"legends2"
-	uishader_2	"models/players/jedi_tf/mb2_icon_legends2"
+	model_1	    "jedi_tf"
+	skin_1		"legends2"
+	uishader_1	"models/players/jedi_tf/mb2_icon_legends2"
 
 
 	saber1			saber_kdbl
