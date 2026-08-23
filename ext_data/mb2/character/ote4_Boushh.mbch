@@ -8,16 +8,16 @@ ClassInfo
 	maxhealth			65
 	maxarmor			125
 
-	attributes			MB_ATT_AMMO,3|MB_ATT_ENV_PROT,3|MB_ATT_TRACKING_BEACON|MB_ATT_DODGE,3|MB_ATT_DEXTERITY,3|MB_ATT_TRACKING_DART,8|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_CCTRAINING,3|MB_ATT_FLOAT_HOP|MB_ATT_BUNNY_HOP,1|MB_ATT_GRAPPLE_HOP|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,1|MB_ATT_FLIPKICK,1|MB_ATT_THERMALS,2|MB_ATT_TRIP_MINES,3
+	attributes			MB_ATT_AMMO,3|MB_ATT_ENV_PROT,3|MB_ATT_TRACKING_BEACON|MB_ATT_DODGE,3|MB_ATT_DEXTERITY,3|MB_ATT_TRACKING_DART,8|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_CCTRAINING,3|MB_ATT_FLOAT_HOP|MB_ATT_BUNNY_HOP,1|MB_ATT_GRAPPLE_HOP|MB_ATT_ANTI_MT,1|MB_ATT_FLIPKICK,1|MB_ATT_THERMALS,2|MB_ATT_TRIP_MINES,3
 
-	classflags	CFL_STRONGAGAINSTPHYSICAL|CFL_HEAVYMELEE|CFL_BLOODYMELEE|CFL_BPFREEJUMPS
+	classflags	CFL_HEAVYMELEE|CFL_BLOODYMELEE|CFL_BPFREEJUMPS
 
-	forcepowers	FP_SABER_DEFENSE,2|FP_SABER_OFFENSE,2
+	forcepowers	FP_SABER_DEFENSE,1|FP_SABER_OFFENSE,2
 
-	basespeed			215
+	basespeed			210
 	modelscale			.96
 
-	skilltimermod			.6
+	skilltimermod			.80
 
 	resource	resource_energy
 	force pool 100
@@ -28,19 +28,20 @@ ClassInfo
 	saber1      	boushh_staff_asc
 	saberstyle 	SS_STAFF
 
- 	saberDamageStyle SS_STAFF,90
+ 	saberDamageStyle SS_STAFF,80
 
 	APmultiplier		.9
-	BPmultiplier		1.10
-	ASmultiplier		1.10
-	CSmultiplier		1.20
+	BPmultiplier		.75
+	ASmultiplier		1.05
+	CSmultiplier		1.10
 
 	WP_SaberFlags		HELD_PULSE|HELD_STUN|HELD_TRACKING|HELD_LIFESTEAL
-	AB_TDartFlags 		HELD_CRIPPLE|HELD_POISON
+	WP_MeleeFlags		HELD_CRIPPLE|HELD_LIFESTEAL
+	AB_TDartFlags 		HELD_CRIPPLE|HELD_POISON|HELD_LIFESTEAL
 	WP_BlasterPistolFlags	HELD_ALTRELOAD|HELD_LIFESTEAL
 	WP_RealTDFlags	HELD_HEAL|HELD_HIGHDAMAGE|HELD_FLAME|HELD_LIFESTEAL|HELD_FLASH
 	WP_TripMineFlags	HELD_HIGHDAMAGE|HELD_TRACKING|HELD_LIFESTEAL
-	AB_GHookFlags	HELD_POISON|HELD_SLIPPERY|HELD_CRIPPLE
+	AB_GHookFlags	HELD_POISON|HELD_FLASH|HELD_CRIPPLE|HELD_LIFESTEAL
 	
 	model				"Boushh_asc"
 	skin				"default"
@@ -66,8 +67,8 @@ WeaponInfo0
 	altFlashSound0		"sound/weapons/han_pistol/alt_fire.mp3"
 	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
 	clipSize			10
-	FPMult				.8
-	damagemod			.8
+	FPMult				.7
+	damagemod			.7
 	ReloadTimeModifier	1.2
 	CustomAmmo			800
 	rateMod				.70
@@ -115,15 +116,16 @@ A agile bounty hunter with explosive power who enjoys the kill a little too much
 
 ^2Weaponry:
 - Heavy Melee
+-- Cripples/Drains On Hit
 - Thermal Detonator (2)
 -- Heals In Hand, 100%+ Damage
 -- Applies Drain/Ignite/Flash
 - Boushh's Model 44 Blaster (3)
 -- 30%+ RoF, Drains On Hit, Mag Reload
--- 20%- Damage/FP Drain, 10%+ Velocity
+-- 30%- Damage/FP Drain, 10%+ Velocity
 - Boushh's Staff (Staff Saber)
--- Saber Defense (2), BP Free Jumps, 90 Damage
--- Tracks/Pulses/Staggers On Hit
+-- Saber Defense (1), BP Free Jumps, 80 Damage
+-- Tracks/Pulses/Stagger/Drain On Hit
 - High Yield Prox-Mines (3)
 -- Flashes/Drains, 100%+ Damage, Sec Fire Only
 
@@ -134,8 +136,7 @@ A agile bounty hunter with explosive power who enjoys the kill a little too much
 - Close Combat (3)
 - Slow Faller/Grapple Hop/Bunny Hop (1)
 - Anti MT (1)
-- 40% Faster CDs
-- Blast Armor/Melee Resist
+- 20% Faster CDs
 - Ubese Environment Protection Suit (Env Protect 3)
 - Advanced Filters (Water Breathing)
 
@@ -145,6 +146,6 @@ A agile bounty hunter with explosive power who enjoys the kill a little too much
 - Dex Roll ^3[CS2]
 - Gunkick ^3[CS4]
 - Specialty Tracking Darts (16) ^3[CS3]
--- Poisons/Cripples
+-- Poisons/Cripples/Drains
 - Infection Whip (Grapple Hook 2) ^3[CS4 ^3Melee]
--- Applies Blind/Slippery/Poison"
+-- Applies Blind/Cripples/Poison/Drains"
