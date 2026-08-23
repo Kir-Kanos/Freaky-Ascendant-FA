@@ -140,7 +140,7 @@ WeaponInfo2
 	animReadyWalk		BOTH_PISTOL_READY
 	animReadyNoAmmo		BOTH_PISTOL_ATTACK
 	animAttackRun		BOTH_PISTOL_ATTACK
-	animAttack			_ATTACK
+	animAttack			BOTH_PISTOL_ATTACK
 	animAttackWalk		BOTH_PISTOL_ATTACK
 	animCharge			BOTH_PISTOL_ATTACK
 }
