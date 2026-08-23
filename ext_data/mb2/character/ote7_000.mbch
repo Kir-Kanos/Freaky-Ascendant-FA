@@ -51,7 +51,7 @@ WeaponInfo0
 	NewViewModel		"models/weapons2/proj_rifle/proj_rifle.md3"
 	Icon				"gfx/hud/w_icon_proj_rifle"
 	WeaponName			"Dioxis Dart Rifle"
-	clipsize			20
+	clipsize			40
 	customAmmo			400
 	damagemod			.45
 	velocitymod			2
@@ -124,13 +124,13 @@ A torturous droid equipped with a wide variety of sadistic tools.
 -- High Damage
 - Dioxis Dart Rifle (3)
 -- DC Carbine (3)
--- Tracks/Slips/Poisons/Cripples/Force Focuses
+-- Tracks/Poisons/Cripples/Force Focuses
 -- Mag Reload
 -- 55% Less Damage
-- Knockout Canister (3)
+- Knockout Canister (4)
 -- Frag Grenade
 -- Blinds/Sonic Shocks/Slips/Knocksdown/Poisons
-- Submission Mines (4)
+- Submission Mines (5)
 -- Lifts/Tracks/Blinds/Disarms/Freezes/Force Focuses
 -- 20% More Damage
 - Stun Baton (2)
@@ -152,6 +152,6 @@ A torturous droid equipped with a wide variety of sadistic tools.
 -- 50% Less Damage, Pulls On Hit
 - Dodge (3) ^3[CS1]
 - Lethal Tracking Darts (6) ^3[CS3]
--- Applies Force Focus/Slippery/Blind/Cripple/Poison
+-- Applies Force Focus/Blind/Cripple/Poison
 - Resource Dispenser (1) ^3[USE In Melee]
 - Disguise (1) ^3[Style Swap In Melee]"
