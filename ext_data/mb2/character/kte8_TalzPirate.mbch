@@ -19,7 +19,7 @@ ClassInfo
 	WP_ThermalFlags	HELD_FREEZE|HELD_DISARM
 	WP_ThrowerFlags HELD_ALTRELOAD
 
-	attributes		MB_ATT_ASSEMBLE,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_WOOKIEE_FURY,3|MB_ATT_GETUPS,2|MB_ATT_DEXTERITY,1|MB_ATT_THROWER_ICE|MB_ATT_BINOCULARS|MB_ATT_TRACKING_BEACON|MB_ATT_FP_SABER_DEFENSE,0
+	attributes		MB_ATT_ASSEMBLE,1|MB_ATT_STAMINA,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_WOOKIEE_FURY,3|MB_ATT_GETUPS,2|MB_ATT_DEXTERITY,1|MB_ATT_THROWER_ICE|MB_ATT_BINOCULARS|MB_ATT_TRACKING_BEACON|MB_ATT_FP_SABER_DEFENSE,0
 
 	saberDamage 55
 	saberSpecialDamage 2
@@ -34,10 +34,10 @@ ClassInfo
 	saber1_2			kotor_vibrosword
 	saberstyle_2		SS_STRONG|SS_DESANN	
 
-	BPmultiplier		1.2
+	BPmultiplier		.8
 	APmultiplier		1.15
-	ASmultiplier 	1
- CSmultiplier  1
+	ASmultiplier 	1.1
+ CSmultiplier  1.1
 
  	special1 EAS_HI_SPRINT
 	special2 EAS_HI_FURY
@@ -55,7 +55,7 @@ ClassInfo
 
  	knockbackTaken 0.6
 
-	baseSpeed 205
+	baseSpeed 190
  tauntAnim BOTH_ENGAGETAUNT
 	flourishAnim BOTH_TUSKENTAUNT1
 	gloatAnim  BOTH_VICTORY_FAST
@@ -111,7 +111,7 @@ ClassInfo
 	c_att_skill_6	MB_ATT_DC_CARBINE
 	c_att_names_6	"Broken Repeater Rifle"
 	c_att_ranks_6	2,2,2
-	c_att_descs_6	"DC Carbine, 50%+ RoF, 60%- Damage, No Alt Fire, Mag Reload"
+	c_att_descs_6	"DC Carbine, 40%+ RoF, 60%- Damage, No Alt Fire, Mag Reload"
 
 	c_att_skill_6	MB_ATT_BASE_TD
 	c_att_names_6	"Cold Front Thermal Grenades"
@@ -194,9 +194,9 @@ WeaponInfo3
 	FlashSound3			"sound/weapons/kotor/fire_power1.wav"
 	FPMult				.4
 	damagemod			.4
-	rateMod .5
-	clipsize 200
-	customAmmo 1000
+	rateMod .6
+	clipsize 150
+	customAmmo 900
 	hasAnimOverrides 1
 	animReadyRun BOTH_STAND3
 	animReady BOTH_STAND3
@@ -298,6 +298,6 @@ Indigenous Pirates equipped with scavenged gear and a cold, cold arsenal.
 - Assemble (1)
 
 ^3Abilities:
-- Sprint ^3[CS1]
+- Sprint (1) ^3[CS1]
 - Barge ^3[CS3]
 - Binoculars ^3[CS4]"
