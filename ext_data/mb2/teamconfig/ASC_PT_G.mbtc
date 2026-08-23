@@ -82,4 +82,5 @@ SubclassesForClass6
 	Subclass3	"ptg10_JTradition"
 	Subclass4	"ptg10_JKindredAbs"
 	Subclass5	"ptg10_JKindredProt"
+	Subclass6	"ptg10_JMystic"
 }
