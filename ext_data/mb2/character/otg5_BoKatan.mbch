@@ -1,24 +1,38 @@
+
 ClassInfo
 {
-	name			"otg5_BoKatan"
-	MBClass			MB_CLASS_MANDALORIAN
+	name				"otg5_BoKatan"
+	MBClass				MB_CLASS_MANDALORIAN
 	classNumberLimit	1
+	weapons				WP_MELEE|WP_MANDO_PISTOL|WP_SABER
 	
-	weapons			WP_MELEE|WP_MANDO_PISTOL
+	attributes			MB_ATT_BESKAR,3|MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_JETPACK|MB_ATT_AMMO,3|MB_ATT_MANDO_PISTOL,1|MB_ATT_FUEL,2|MB_ATT_FUELREGEN,1|MB_ATT_BUNNY_HOP,1|MB_ATT_FORCEBLOCK,1|MB_ATT_HEALING,1
 	
-	attributes		MB_ATT_BESKAR,3|MB_ATT_JETPACK|MB_ATT_AMMO,3|MB_ATT_FUEL,2|MB_ATT_BUNNY_HOP,1|MB_ATT_HEALING,1|MB_ATT_MANDO_PISTOL,3
-	
-	maxhealth	125
-	maxarmor	100
-	special1	EAS_HI_ROCKET
+	maxhealth		125
+	maxarmor			100
+	rateoffire	1
+	speed       	1
+	special1		EAS_HI_ROCKET
 	special2 	EAS_HI_WRIST
+	special3	EAS_HI_WHISTLING_BIRDS
 	special4 	EAS_HI_GRAPPLEHOOK
+	AB_WLaserFlags HELD_LOWDAMAGE|HELD_SONIC
 	WP_BlasterFlags HELD_ALTRELOAD|HELD_PULSE
-	AB_GHookFlags HELD_CRIPPLE|HELD_STUN|HELD_PULL
+	//AB_GRAPPLEHOOKFlags coming soon!
 	resource			resource_fuel
-	forcepool 		30
-	rankForcePool	45,60,75
-	rankROFMelee .9,.8,.7
+	forcepool 		20
+	rankForcePool	35,60,85
+
+	saber1	darksaber_ascendancy
+	saberstyle SS_DUAL
+	saber2	energyshield_leg
+
+	BPmultiplier		0.8
+	APmultiplier		0.8
+	rankAP		1.05,1.1,1.15
+	saberDamage 		240
+	saberMaxChain 1
+	rankSaberMaxChain 2,3,4	
 	modelscale   1.01
 	model		"BoKatan"
 	skin			"default"
@@ -28,126 +42,120 @@ ClassInfo
 	
 	//respawncustomtime  50000	
 	isCustomBuild		1
-	mbPoints			15
+	mbPoints			35
 
-	c_att_skill_0	MB_ATT_ROCKET
-	c_att_names_0	"Jetpack Rocket ^3[CS1]"
-	c_att_ranks_0	2
+//saber
+c_att_skill_0	MB_ATT_FP_SABER_DEFENSE
+c_att_names_0	"Saber Defense"
+c_att_ranks_0	0,4,4
+c_att_desc_0	"0.8 BP Mult + SD1 by default"
 
-	c_att_skill_1	MB_ATT_WRISTLASER
-	c_att_names_1	"Wrist Laser ^3[CS2]"
-	c_att_ranks_1	1
+c_att_skill_1	MB_ATT_GUN_DEFENSE
+c_att_names_1	"Blaster Defense"
+c_att_ranks_1	4,4
 
-	c_att_skill_2	MB_ATT_BLASTER
-	c_att_names_2	"Shock Dart Launcher"
-	c_att_ranks_2	1
-	c_att_descs_2	"Based on E11 1/Shocks on hit, prim only."
+c_att_skill_2	MB_ATT_AP_MULTIPLIER
+c_att_names_2	"Saber AP (1.1/1.15/1.2)"
+c_att_ranks_2	2,2,4
+c_att_descs_2	"Default 0.8"
 
-	c_att_skill_3	MB_ATT_GRAPPLE_HOOK
-	c_att_names_3	"Whipcord Launcher ^3[CS4]"
-	c_att_ranks_3	1
-	c_att_descs_3	"Stuns/cripples/pulls on hit"
+c_att_skill_3	MB_ATT_SABER_MAXCHAIN
+c_att_names_3	"Saber Chain Limit (2/3/4)"
+c_att_ranks_3	0,2,2
+c_att_descs_3	"Default 1"
 
-	c_att_skill_4	MB_ATT_POWER
-	c_att_names_4	"Fuel Pool (45/60/75):"
-	c_att_ranks_4	1,2,2
+c_att_skill_4	MB_ATT_SS_REDSTYLE
+c_att_names_4	"Red Saber Style:"
+c_att_ranks_4	0
 
-	c_att_skill_5	MB_ATT_FUELREGEN
-	c_att_names_5	"Fuel Regen"
-	c_att_ranks_5	1,3
+c_att_skill_5	MB_ATT_POWER
+c_att_names_5	"Fuel Pool (35/60/85):"
+c_att_ranks_5	2,3,4
 
-	c_att_skill_6	MB_ATT_DEXTERITY
-	c_att_names_6	"Dexterity"
-	c_att_ranks_6	1,2,3
+c_att_skill_6	MB_ATT_FUELREGEN
+c_att_names_6	"Fuel Regen"
+c_att_ranks_6	1,2
 
-	c_att_skill_7	MB_ATT_WOOKIE_STRENGTH
-	c_att_names_7	"Beskar Gauntlets (Strength):"
-	c_att_ranks_7	2
+c_att_skill_7	MB_ATT_KNOCKDOWN_ROLL
+c_att_names_7	"Knockdown Roll"
+c_att_ranks_7	5
 
-	c_att_skill_8	MB_ATT_ROF_MELEE_MULTIPLIER
-	c_att_names_8	"Melee ROF (+10%,20%,30%)"
-	c_att_ranks_8	1,2,3
+c_att_skill_8	MB_ATT_DEXTERITY
+c_att_names_8	"Dexterity"
+c_att_ranks_8	1,2,3
 
-	c_att_skill_9	MB_ATT_FLIPKICK
-	c_att_names_9	"Flipkick"
-	c_att_ranks_9	1
+c_att_skill_9	MB_ATT_ROCKET
+c_att_names_9	"Jetpack Rocket ^3[CS1]"
+c_att_ranks_9	2
+
+c_att_skill_10	MB_ATT_WRISTLASER
+c_att_names_10	"Wrist Laser ^3[CS2]"
+c_att_ranks_10	1
+
+c_att_skill_11	MB_ATT_WHISTLINGBIRD
+c_att_names_11	"Whistling Birds ^3[CS3]"
+c_att_ranks_11	2
+
+c_att_skill_12	MB_ATT_GRAPPLE_HOOK
+c_att_names_12	"Whipcord Launcher ^3[CS4]"
+c_att_ranks_12	3
+c_att_descs_12	"Stuns/cripples/pulls on hit"
 }
 
 WeaponInfo0
 {
-	WeaponToReplace 		WP_SABER
-	WeaponBasedOff  		WP_SABER
-	NewWorldModel  		"models/weapons2/saber_plasma/saber_darksaber3.glm"
-	NewViewModel  		"models/weapons2/dummy/dummy.md3"
-	Icon  				"gfx/hud/w_icon_darksaber"
-	WeaponName  			"The Darksaber"
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/saber_plasma/saber_darksaber3.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_darksaber"
+	WeaponName			"The Darksaber"
 }
 
 WeaponInfo1
 {
-    WeaponToReplace		WP_MANDO_PISTOL       			
-    WeaponBasedOff		WP_MANDO_PISTOL      			
-    NewWorldModel		"models/weapons2/westar35/westar35.glm"  
-    NewViewModel		"models/weapons2/westar35/model.md3"
-    Icon				"gfx/hud/w_icon_westar35_dual"
-    WeaponName		"Dual WESTAR-35 Blaster Pistols"   
+	WeaponToReplace		WP_MANDO_PISTOL
+	WeaponBasedOff		WP_MANDO_PISTOL
+	NewWorldModel		"models/weapons2/westar35/westar35.glm"
+	NewViewModel		"models/weapons2/westar35/model.md3"
+	Icon				"gfx/hud/w_icon_westar35_dual"
+	WeaponName			"Dual WESTAR-35 Blaster Pistols"
 	MuzzleEffect		"Blaster/MuzzleFlash01Y"
-	AltMuzzleEffect	"Blaster/MuzzleFlash01Y"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01Y"
 	MissileEffect		"Blaster/Shot02Y"
-	Missile3Effect	"Blaster/Shot03Y"
+	Missile3Effect		"Blaster/Shot03Y"
 	PowerupShotEffect	"Blaster/Shot04Y"
 	AltMissileEffect	"Blaster/Shot04Y"
-	ChargeSound		"sound/weapons/leia_pistol/altcharge.mp3"
-	ChargeEffect		"gfx/effects/yellow_bryarFrontFlash" 
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	ChargeEffect		"gfx/effects/yellow_bryarFrontFlash"
 	fpmult	1.15
 	rateMod 1.4
 	damageMod 1.15
-}
-WeaponInfo2
-{
-	WeaponToReplace WP_BLASTER
-	WeaponBasedOff WP_BLASTER
-	NewWorldModel "models/weapons2/dummyblaster/model.glm"
-	NewViewModel "models/weapons2/dummy/dummy.md3"
-	Icon "gfx/marvel/maghand"
-	WeaponName "Electroshock Darts"
-	clipSize 2
-	customAmmo 8
-	hasAnimOverrides 1
-	animReady BOTH_FORCE_2HANDEDLIGHTNING_START
-	animReadyWalk BOTH_FORCE_2HANDEDLIGHTNING_START
-	animReadyNoAmmo BOTH_FORCE_2HANDEDLIGHTNING
-	animStand BOTH_FORCE_2HANDEDLIGHTNING_START
-	animReadyRun BOTH_FORCE_2HANDEDLIGHTNING_START
-	animAttack BOTH_WRISTSHOT
-	animAttackWalk BOTH_WRISTSHOT
-	animAttackRun BOTH_WRISTSHOT
-	FlashSound0 "sound/weapons/mgun/alt_fire.wav"
-	MuzzleEffect "Blaster/MuzzleFlash04B"
-	MissileEffect "blaster/Shot03B"
-	altfireenabled 0
+	customammo			750
 }
 
-description	"Bo-Katan Kryze [Bounty Hunter] ^3Reworked - Marshall
- 
-A speedy Jetpack user who wields a Saber and Dual Pistols.
+description	"Bo-Katan Kryze
+
+A quick and versatile Mandalorian with a tough suit of armor.
 
 ^2Weaponry:
 - Melee
+-- 5% faster RoF
 - Dual WESTAR-35 Blaster Pistols (3)
--- 15% more FP DMG, 15% more HP DMG
--- 40% slower RoF
+-- 10% more damage/FP damage
+-- 10% slower RoF
+- Frag Grenades (2)
 
 ^8Attributes:
 - Bunny Hop (1)
+- Dexterity (1)
 - Fuel Regen (1)
 - Beskar (3)
 - Healing (1)
 - Force Block (1)
+- Tracking Beacon
 
-^3Abilities: 
+^3Abilities:
 - Jetpack
-- Rocket ^3[CS1]
-- Wrist Laser ^3[CS2]
-- Whistling Birds ^3[CS3]
-- Whipcord Launcher ^3[CS4]"
+-- Rocket ^3[CS1]
+- Wrist Laser ^3[CS2]"
