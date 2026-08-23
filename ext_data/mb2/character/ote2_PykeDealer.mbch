@@ -9,7 +9,7 @@ ClassInfo
 
 	extralives	2
 
-	attributes		MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_DEXTERITY,1|MB_ATT_STAMINA,3|MB_ATT_TRACKING_BEACON|MB_ATT_STIMPACK,1|MB_ATT_BACTA,1|MB_ATT_QUICKTHROW,1|MB_ATT_DISP_FORCE|MB_ATT_ENV_PROT,1|MB_ATT_ASSEMBLE,2|MB_ATT_STUN_BATON,1|MB_ATT_POISON_DART,4|MB_ATT_EE3,3|MB_ATT_CLONE_PISTOL,2|MB_ATT_MICRO_GRENADES,1|MB_ATT_FRAGS,2|MB_ATT_TRACKING_DART,4
+	attributes		MB_ATT_FP_SABER_DEFENSE,0|MB_ATT_DEXTERITY,1|MB_ATT_STAMINA,3|MB_ATT_TRACKING_BEACON|MB_ATT_STIMPACK,1|MB_ATT_BACTA,1|MB_ATT_QUICKTHROW,1|MB_ATT_DISP_FORCE|MB_ATT_ENV_PROT,1|MB_ATT_ASSEMBLE,2|MB_ATT_STUN_BATON,1|MB_ATT_POISON_DART,4|MB_ATT_STUN_BATON,1|MB_ATT_EE3,3|MB_ATT_CLONE_PISTOL,2|MB_ATT_MICRO_GRENADES,1|MB_ATT_FRAGS,2|MB_ATT_TRACKING_DART,4
 
 	saber1  		qstaff_legends
 	saberstyle  	SS_STAFF|SS_STRONG
@@ -27,12 +27,12 @@ ClassInfo
 	WP_ClonePistolFlags	HELD_ALTRELOAD
 	WP_EE3Flags		HELD_ALTRELOAD
 	AB_TDartFlags		HELD_BACTA|HELD_LOWDAMAGE
-	AB_PDartFlags		HELD_STUN|HELD_HIGHDAMAGE
+	AB_PDartFlags		HELD_FORCEFOCUS|HELD_CRIPPLE|HELD_HIGHDAMAGE
 
 	forcepowers		FP_SABER_OFFENSE,3
 
 	maxhealth 		50
-	maxarmor  		5
+	maxarmor  		50
 
 	resource	RESOURCE_STAMINA
 	
@@ -175,11 +175,11 @@ NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
 
 description	"Pyke Syndicate Spice Dealer
 
-A Foot soldier focused on self protection who also deals in illegal spice and poisons.
+Hmm...Spice...
 
 ^2Weaponry:
 - Melee
-- Overcharged Stun Baton
+- Overcharged Stun Baton (1)
 -- Applies Flame
 - Pyke Electro Weapon
 -- Saber Defense (0)
@@ -197,7 +197,6 @@ A Foot soldier focused on self protection who also deals in illegal spice and po
 -- Applies Smoke Screen, Low Damage
 
 ^8Attributes:
-- Stamina (3)
 - Dexterity (1)
 - Tracking Beacon
 - 'Upper' Spice (Stimpack 1)
@@ -207,7 +206,7 @@ A Foot soldier focused on self protection who also deals in illegal spice and po
 - Dex Roll ^3[CS2]
 - Quick Throw (1) ^3[CS1]
 - Gunkick ^3[CS3]
-- Tracking Bacta Injector (Tracking Darts 4) ^3[CS3 Melee]
+- Tracking Bacta Injector (Tracking Darts 8) ^3[CS3 Melee]
 -- Heals Teammates, Low Damage
-- Poison Overdose Darts (Poison Darts 4) ^3[CS4 Melee]
--- Stuns, 100% More Damage"
+- Poison Overdose Darts (Poison Darts 8) ^3[CS4 Melee]
+-- Force Focus/Cripple, 100% More Damage"
