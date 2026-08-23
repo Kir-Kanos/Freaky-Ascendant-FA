@@ -49,6 +49,7 @@ SubclassesForClass3
 	Subclass2	"ptg5_AstroR2"
 	Subclass3	"ptg5_Skirata"
 	Subclass4	"ptg5_BoKatan"
+	Subclass5	"ptg6_Cross"
 }
 
 SubclassesForClass4
