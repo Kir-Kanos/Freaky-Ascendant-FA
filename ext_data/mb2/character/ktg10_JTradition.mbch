@@ -40,9 +40,9 @@ ClassInfo
 
 	uioverlay			"gfx/icons/support"
 	
-	model			"jedi_FemNew"
-	skin				"hf1"
-	uishader			"models/players/jedi_FemNew/mb2_icon_hf1"
+	model		"obiwan_ep3"
+	skin		"xaoxing"
+	uishader	"models/players/XaoXing/mb2_icon_default"
 
 }
 
