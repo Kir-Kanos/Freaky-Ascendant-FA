@@ -48,6 +48,16 @@ ClassInfo
 	saber2				saber_kshrt
 	sabercolor			2
 	saber2color			2
+
+	saber1_1		saber_kshrt
+	saber2_1		saber_kshrt
+	sabercolor_1		3
+	saber2color_1		4
+
+	saber1_2		saber_kshrt
+	saber2_2		saber_kshrt
+	sabercolor_2		4
+	saber2color_2		4
 }
 
 description	"Jedi Acrobat
