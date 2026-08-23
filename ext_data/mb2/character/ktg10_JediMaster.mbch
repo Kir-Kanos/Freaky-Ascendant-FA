@@ -30,10 +30,6 @@ ClassInfo
 	model		"jedi_spanki"
 	skin		"formVII"
 	uishader	"models/players/jedi_spanki/mb2_icon_formVII"
-
-	model_1		"jedi_female"
-	skin_1		"rcnaat"
-	uishader_1	"models/players/jedi_female/mb2_icon_rcnaat"
 	
 	saber1			saber_kshrt
 	sabercolor		3
