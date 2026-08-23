@@ -6,7 +6,7 @@ EUAllowed 0
 
 Classes
 {
-	class1	"otg1_Militia"
+	class1	"otg1_Rebel"
 	class2	"otg4_Chir"
 	class3	"otg5_AstroR2"
 	class4	"otg7_Scavenge"
@@ -16,22 +16,23 @@ Classes
 
 SubclassesForClass1
 {
-	Subclass1	"otg1_NPrisoner"
-	Subclass2	"otg1_RebelET"
-	Subclass3	"otg2_Luthen"
-	Subclass4	"otg2_JynE"
-	Subclass5	"otg2_Han"
-	Subclass6	"otg2_Lando"
-	Subclass7	"otg2_JanO"
-	Subclass8	"otg2_RebelSabo"
-	Subclass9	"otg1_RebGuerrillaHeavyGunner"
-	Subclass10	"otg1_RebGuerrillaSpotter"
-	Subclass11	"otg1_RebGuerrillaMechanic"
-	Subclass12	"otg2_RebGuerrillaSalvagedDroid"
-	Subclass13	"otg2_RebOfficer"
-	Subclass14	"otg2_HonorG"
-	Subclass15	"otg2_Pork"
-	Subclass16	"otg2_Kyle"
+	Subclass1	"otg1_Militia"
+	Subclass2	"otg1_NPrisoner"
+	Subclass3	"otg1_RebelET"
+	Subclass4	"otg2_Luthen"
+	Subclass5	"otg2_JynE"
+	Subclass6	"otg2_Han"
+	Subclass7	"otg2_Lando"
+	Subclass8	"otg2_JanO"
+	Subclass9	"otg2_RebelSabo"
+	Subclass10	"otg1_RebGuerrillaHeavyGunner"
+	Subclass11	"otg1_RebGuerrillaSpotter"
+	Subclass12	"otg1_RebGuerrillaMechanic"
+	Subclass13	"otg2_RebGuerrillaSalvagedDroid"
+	Subclass14	"otg2_RebOfficer"
+	Subclass15	"otg2_HonorG"
+	Subclass16	"otg2_Pork"
+	Subclass17	"otg2_Kyle"
 }
 
 SubclassesForClass2
