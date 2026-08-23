@@ -42,13 +42,9 @@ ClassInfo
 	skin		"zabrak"					
 	uishader	"models/players/jedipack_hb/MB2_Icon_zabrak"
 
-	model_1		"jedi_spanki"
-	skin_1		"formIII"
-	uishader_1	"models/players/jedi_spanki/mb2_icon_formIII"
-
-	model_2		"jedi_tf"
-	skin_2		"JT"
-	uishader_2	"models/players/jedi_tf/mb2_icon_JT"
+	model_1 	"jedi_tf"
+	skin_1		"JT"
+	uishader_1	"models/players/jedi_tf/mb2_icon_JT"
 
 	saber1		saber_kshrt
 	saber2		saber_kshrt
