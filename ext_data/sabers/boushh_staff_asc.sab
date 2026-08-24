@@ -22,6 +22,7 @@ boushh_staff_asc
 	trailStyle		2
 	noIdleEffect	1
 	onInWater		1
+	blasterblocking		0
 	bounceOnWalls	0
 	noManualDeactivate	1
 	hitDeflect		0
