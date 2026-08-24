@@ -14,7 +14,7 @@ ClassInfo
 
 AB_FLightningFlags 	HELD_CRIPPLE|HELD_TRACKING|HELD_DISRUPTIFY
 WP_MeleeFlags HELD_BACTA
-WP_SaberFlags HELD_FORCEFOCUS|HELD_KNOCKDOWN
+WP_SaberFlags HELD_FORCEFOCUS|HELD_FLAME|HELD_KNOCKBACK
 
 	maxhealth	120
 	healthRegenAmount 1
@@ -104,7 +104,7 @@ An Academic Investigative Jedi who wields the fringes of Jedi Knowledge.
 -- Saber/Blaster Defense (2)
 -- Blaster Deflect (3)
 -- EX Saber Throw (2) ^3[CS1]
--- Thunderous Strikes (Knockdown/Force Focus) On Hit
+-- Lightning Strikes (Flame/Force Focus/Knockback) On Hit
 -- Very Low Damage Saber Strikes (80Y/60B)
 
 ^5Force Powers:
@@ -116,7 +116,7 @@ An Academic Investigative Jedi who wields the fringes of Jedi Knowledge.
 -- Cripples/Tracks
 - Incinerate (Deadly Sight 1) ^3[CS2]
 - Force Blast (Destruction 1)
-- Repulse 
+- Repulse ^3[CS4]
 - Sever Force (Drain 2)
 
 ^8Attributes:
