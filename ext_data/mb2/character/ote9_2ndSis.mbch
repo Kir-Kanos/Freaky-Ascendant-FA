@@ -1,0 +1,112 @@
+ClassInfo
+{
+	name				"ote9_2ndSis"
+	MBClass				MB_CLASS_SITH
+	classNumberLimit	1
+
+	WP_SaberFlags		HELD_NODISARM|HELD_CRIPPLE
+	WP_FragNadeFlags	HELD_FLASH|HELD_STUN|HELD_CRIPPLE
+	weapons				WP_SABER|WP_MELEE|WP_FRAG_NADE
+
+	saber1			saber_trilla_legends
+	sabercolor		0
+
+	saberstyle			SS_STAFF|SS_TAVION|SS_STRONG
+
+	attributes			MB_ATT_DEFLECT,2|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GUN_DEFENSE,2|MB_ATT_ANTI_MT,2|MB_ATT_DASH,2|MB_ATT_FRAGS,3|MB_ATT_TRACKING_BEACON|MB_ATT_QUICKTHROW,3
+
+	forcepowers			FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_PUSH,2|FP_PULL,2|FP_SEE,2|FP_GRIP,2|FP_STASIS,3|FP_SABERTHROW,3
+
+	saberDamage			160
+
+	saberThrowDamage	45
+
+	special2	EAS_HI_DASH
+	special3	EAS_HI_QUICKTHROW
+
+	resource			RESOURCE_FORCE
+	forcepool			120
+	forceregen			1.35
+
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+
+	classflags			CFL_NOPICKUPS|CFL_STATVIEWER|CFL_SEEING_STEALTH
+
+	APmultiplier		1.10
+	BPmultiplier		1.05
+	ASmultiplier		1.10
+	CSmultiplier		1.10
+
+	maxhealth			115
+	maxarmor			35
+
+	basespeed			235
+
+	model				"secondsister"
+	skin				"default"
+	uishader			"models/players/secondsister/mb2_icon_default"
+
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_FRAG_NADE
+	WeaponBasedOff		WP_FRAG_NADE
+	NewWorldModel		"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel		"models/weapons/Grenade_Concussion/viewmodel.md3"
+	MissileModel		"models/weapons/Grenade_Concussion/proj.md3"
+	altMissileModel		"models/weapons/Grenade_Concussion/proj.md3"
+	altMissileMissEffect		"Grenades/EXP_Flash"
+	MissileMissEffect			"Grenades/EXP_Flash"
+	altMissileHitHumanEffect	"Grenades/EXP_Flash"
+	missileHitHumanEffect		"Grenades/EXP_Flash"
+	altMissileHitDroidEffect	"Grenades/EXP_Flash"
+	missileHitDroidEffect		"Grenades/EXP_Flash"
+
+	Icon				"gfx/hud/w_icon_stungrenade"
+	WeaponName			"Flashbang Grenades"
+	primFireEnabled		0
+	damagemod			0.000
+	ratemod				0.5
+
+}
+
+description	"2nd Sister (Trilla Suduri)
+
+A tactical Inquistor with Flash Bangs and High Versatility.
+
+^2Weaponry:
+- Melee
+- Second Sister's Lightsaber (Staff/Red/Cyan Styles)
+-- Cripples On Hit
+-- Saber Throw (3)
+-- Saber Defense (3)
+-- Blaster Defense (2)
+-- Deflect (2)
+-- 45 Saber Throw Damage
+-- 160 Saber Damage
+- Flash Grenade (3)
+-- Frag Grenade
+-- No Damage, 50% Faster RoF
+-- Blinds/Stuns/Cripples On Det
+
+^5Force Powers:
+- Push (2)
+- Pull (2)
+- Grip (2)
+- Sense (2)
+- Jump (3)
+- Stasis (3)
+
+^8Attributes:
+- Health Regen Capped At 35
+- Force Block (2)
+- Force Focus (2)
+- Anti Mindtrick (2)
+- Tracking Beacon
+- Stat Viewer
+
+^8Abilities:
+- Dash (2) ^3[CS2]
+- Quickthrow (3) ^[CS3]"

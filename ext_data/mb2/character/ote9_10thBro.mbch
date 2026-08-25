@@ -1,0 +1,99 @@
+ClassInfo
+{
+	name				"ote9_10thBro"
+	MBClass				MB_CLASS_SITH
+	classNumberLimit	1
+
+	WP_SaberFlags		HELD_NODISARM|HELD_TRACKING
+	WP_MeleeFlags		HELD_FORCEFOCUS|HELD_CRIPPLE|HELD_TRACKING
+	
+	weapons				WP_SABER|WP_MELEE
+
+	saber1				saber_inquisitor5_shoto
+	sabercolor			0
+	saber2				saber_inquisitor5_shoto
+	saber2color			0
+	saberstyle			SS_DUAL
+
+	attributes			MB_ATT_DEFLECT,2|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GUN_DEFENSE,2|MB_ATT_TRACKING_DART,6|MB_ATT_DEXTERITY,3|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_FLOAT_HOP|MB_ATT_TRACKING_BEACON|MB_ATT_ANTI_MT,2|MB_ATT_FP_MIRALUKA
+
+	forcepowers			FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_PUSH,2|FP_PULL,2|FP_SEE,3|FP_GRIP,2
+
+	resource			RESOURCE_FORCE
+	forcepool			110
+	forceregen			1.2
+
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+
+	rateOfFire_Melee .70
+
+	classflags			CFL_NOPICKUPS|CFL_STATVIEWER|CFL_SEEING_STEALTH|CFL_BLOODYMELEE|CFL_STRONGAGAINSTPHYSICAL
+
+	APmultiplier		1.1
+	BPmultiplier		1
+	ASmultiplier		1.15
+	CSmultiplier		1.05
+	
+	saberDamageStyle	SS_DUAL,180
+	
+	maxhealth			100
+	maxarmor			35
+
+	saberStanceAnim		BOTH_DOOKU_STANCE
+
+	basespeed			250
+
+	special2			EAS_HI_ENEMYSCANNER
+	special3			EAS_HI_DEX
+	special4			EAS_HI_TRACKER
+
+	model				"tenthbrother"
+	skin				"default"
+	uishader			"models/players/tenthbrother/mb2_icon_default"
+
+}
+
+description	"10th Brother (Prosset Dibs)
+
+A hyper-mobile dual-shoto Inquisitor scout and tracker.
+
+^2Weaponry:
+- Melee
+-- Tracks On Hit
+-- 30% Faster Swings
+-- Cripples/Force Focuses On Hit
+- Dual Inquisitor Shoto Sabers (Dual Style)
+-- Tracks On Hit
+-- Saber Defense (3)
+-- Blaster Defense (2)
+-- Deflect (2)
+
+^5Force Powers:
+- Grip (2)
+- Push (2)
+- Pull (2)
+- Sense (3)
+- Jump (3)
+
+^8Attributes:
+- Portable Radar
+- Stat Viewer
+- Sense Immunity
+- Dexterity (3)
+- Force Block (2)
+- Miraluka (Perma Sense)
+- Force Focus (1)
+- Knockdown Roll
+- Tracking Beacon
+- Aerial Force Regen
+- Health Regen Capped At 35
+- Slow Faller
+- Melee Resist
+- Anti MT (2)
+
+^3Abilities:
+- Dexterity Roll ^3[CS3]
+- Tracking Darts (12) ^3[CS4]
+- Enemy Scanner ^3[CS2]"

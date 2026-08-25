@@ -1,0 +1,93 @@
+ClassInfo
+{
+	name				"ote10_Tualon"
+	MBClass				MB_CLASS_SITH
+	classNumberLimit	1
+
+	WP_SaberFlags		HELD_NODISARM
+	weapons				WP_SABER|WP_MELEE
+
+	saber1				saber_inquisitor_legends
+	sabercolor			0
+	saberstyle			SS_STAFF|SS_FAST
+
+	attributes			MB_ATT_DEFLECT,2|MB_ATT_FORCEBLOCK,3|MB_ATT_FORCEFOCUS,2|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GUN_DEFENSE,3|MB_ATT_TRACKING_BEACON|MB_ATT_LIGHTS_BEACON|MB_ATT_DEXTERITY,1
+
+	forcepowers			FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_PUSH,2|FP_PULL,3|FP_SEE,2|FP_TELEPATHY,2|FP_SABERTHROW,3
+
+	resource			RESOURCE_FORCE
+	forcepool			120
+	forceregen			1.3
+
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+
+	hackrate .8
+
+	classflags			CFL_NOPICKUPS|CFL_SEEING_STEALTH|CFL_STATVIEWER
+
+	APmultiplier		.90
+	BPmultiplier		1.15
+	ASmultiplier		1.05
+	CSmultiplier		1.05
+	
+	saberDamageStyle	SS_STAFF,260|SS_FAST,140
+	
+	maxhealth			100
+	maxarmor			40
+
+	rateOfFire_Melee .90
+
+	basespeed			225
+
+	saberThrowDamage	45
+
+	special2			EAS_FP_TELEPATHY
+	special3			EAS_HI_DEX
+
+	saberStanceAnim		BOTH_SABERCOPTER_STANCE
+	jumpAnim			BOTH_SABERCOPTER_IDLE
+
+	uioverlay			"gfx/icons/frontline"
+
+	model				"tualon"
+	skin				"default"
+	uishader			"models/players/tualon/mb2_icon_default"
+}
+
+description	"Inquisitor Tualon Yaluna
+
+A calculated and defensive Inquisitor who excels at controlling the flow of combat.
+
+^2Weaponry:
+- Melee
+-- 10% Faster Swings
+- Inquisitor Lightsaber (Staff/Blue Style Saber)
+-- Cannot Be Disarmed
+-- Saber Defense (3)
+-- Blaster Defense (3)
+-- Deflect (2)
+-- Saber Throw (3)
+-- 45 Damage On Saber Throw
+
+^5Force Powers:
+- Mindtrick (2) ^3[CS2]
+- Push (2)
+- Pull (3)
+- Sense (2)
+- Jump (3)
+
+^8Attributes:
+- Light's Beacon
+- Tracking Beacon
+- 20% Faster Hacking
+- Dexterity (1)
+- Health Regen Capped at 35
+- Stat Viewer
+- Sense Immunity
+- Force Block (3)
+- Force Focus (2)
+
+^3Abilities:
+- Dexterity Roll ^3[CS3]"

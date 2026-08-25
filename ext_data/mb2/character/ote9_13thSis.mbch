@@ -1,0 +1,97 @@
+ClassInfo
+{
+	name				"ote9_13thSis"
+	MBClass				MB_CLASS_SITH
+	classNumberLimit	1
+
+	WP_SaberFlags		HELD_NODISARM|HELD_LIFESTEAL
+	weapons				WP_SABER|WP_MELEE|WP_SONIC_NADE
+
+	saber1				saber_inquisitor_legends
+	sabercolor			0
+	saberstyle			SS_STAFF|SS_DESANN
+
+	attributes			MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,1|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_TRACKING_BEACON|MB_ATT_SONIC_DETONATOR,1|MB_ATT_PSHIELD|MB_ATT_DEXTERITY,3|MB_ATT_DEFLECT,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_FLIPKICK,2|MB_ATT_SPEEDLUNGE
+
+	forcepowers			FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_PUSH,2|FP_PULL,2|FP_SEE,1|FP_DARKRAGE,3|FP_SPEED,1|FP_GRIP,1|FP_SABERTHROW,2|FP_SPEEDLUNGE
+
+	resource			RESOURCE_FORCE
+	forcepool			110
+	forceregen			1.2
+
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+
+	classflags			CFL_NOPICKUPS|CFL_HEAVYMELEE|CFL_BLOODYMELEE|CFL_STRONGAGAINSTPHYSICAL
+
+	APmultiplier		1.10
+	BPmultiplier		.80
+	ASmultiplier		1.15
+	CSmultiplier		1.15
+
+	hackrate	.9
+	
+	saberDamageStyle	SS_STAFF,280|SS_DESANN,300
+	saberSpecialDamage	1.25
+	
+	maxhealth			100
+	maxarmor			20
+	rateOfFire_Melee	.9
+
+	basespeed			245
+
+	saberThrowDamage	40
+
+	special2			EAS_FP_DARKRAGE
+	special3			EAS_HI_DEX
+	special4			EAS_HI_PSHIELD
+
+	saberStanceAnim		BOTH_SABERCOPTER_STANCE
+	jumpAnim			BOTH_SABERCOPTER_IDLE
+
+	uioverlay			"gfx/icons/frontline"
+	model				"13thsister"
+	skin				"default"
+	uishader			"models/players/13thsister/mb2_icon_default"
+}
+
+description	"13th Sister (Iskat Akaris)
+
+A sadistic and agile Inquisitor who prefers spree killing.
+
+^2Weaponry:
+- Heavy Melee
+- Inquisitor Lightsaber (Staff/Purple Style Saber)
+-- Lifesteal On Hit
+-- Saber Defense (3)
+-- Blaster Deflect (2)
+-- Blaster Defense (1)
+-- Saber Throw (2)
+-- 40 Damage Saber Throw
+- Sonic Grenade (1)
+
+^5Force Powers:
+- Dark Rage (3) ^3[CS2]
+- Speed (1)
+-- Speed Lunge
+- Push (2)
+- Pull (2)
+- Jump (3)
+- Grip (1)
+- Sense (1)
+
+^8Attributes:
+- Dexterity (3)
+- Force Block (2)
+- Health Regen Capped at 35
+- Melee Resist
+- 10% Faster Hacking
+- Force Focus (1)
+- Knockdown Roll
+- Tracking Beacon
+
+^3Abilities:
+- Personal Shield ^3[CS4]
+- Flipkick (2) ^3[Contact Jump]
+- Dexterity Roll ^3[CS3]"
