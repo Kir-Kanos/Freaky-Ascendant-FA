@@ -93,12 +93,18 @@ SubclassesForClass4
 SubclassesForClass5
 {
 	Subclass1	"ote9_ShadowG"
-	Subclass2	"ote9_Inquis"
-	Subclass3	"ote9_Maul"
+	Subclass2	"ote9_2ndSis"
+	Subclass3	"ote9_11thBro"
+	Subclass4	"ote9_10thBro"
+	Subclass5	"ote9_13thSis"
+	Subclass6	"ote9_Maul"
 }
 
 SubclassesForClass6
 {
 	Subclass1	"ote10_SecretApp"
 	Subclass2	"ote10_Starkiller"
+	Subclass3	"ote10_Tualon"
+	Subclass4	"ote10_GrandInquis"
+	Subclass5	"ote10_InquisBarriss"
 }
