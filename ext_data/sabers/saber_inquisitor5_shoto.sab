@@ -1,0 +1,16 @@
+saber_inquisitor5_shoto
+{
+	name		"Tenth Brother"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_inquisitor5_single.glm"
+	saberLength 20
+	saberColor	red
+
+	soundOn		"sound/weapons/saber/saberon_inq.wav"
+	soundOff	"sound/weapons/saber/saberoff_inq.wav"
+	soundLoop	"sound/weapons/saber/saberhum_inq.wav"
+
+	swingSound1	"sound/weapons/saber/inqhup1.wav"
+	swingSound2	"sound/weapons/saber/inqhup2.wav"
+	swingSound3	"sound/weapons/saber/inqhup3.wav"
+}
