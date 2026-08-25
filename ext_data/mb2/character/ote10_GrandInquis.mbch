@@ -1,0 +1,89 @@
+ClassInfo
+{
+	name				"ote10_GrandInquis"
+	MBClass				MB_CLASS_SITH
+	classNumberLimit	1
+
+	WP_SaberFlags		HELD_NODISARM|HELD_DISARM
+	AB_FLightningFlags	HELD_CRIPPLE|HELD_HIGHDAMAGE
+	weapons				WP_SABER|WP_MELEE
+
+	saber1				saber_inquisitor_legends
+	sabercolor			0.98
+
+	saber1_1			saber_inquisitor9_legends
+	sabercolor_1		0.98
+	saberstyle			SS_STAFF|SS_MEDIUM|SS_FAST|SS_TAVION|SS_DESANN|SS_STRONG
+
+	attributes			MB_ATT_DEFLECT,3|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,2|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_GUN_DEFENSE,2|MB_ATT_ANTI_MT,2|MB_ATT_RALLY|MB_ATT_TRACKING_BEACON|MB_ATT_FLOAT_HOP|MB_ATT_DISP_FORCE,1|MB_ATT_DISP_BLOCK,1
+
+	forcepowers			FP_SABER_OFFENSE,3|FP_LEVITATION,2|FP_PUSH,2|FP_PULL,3|FP_SEE,2|FP_LIGHTNING,1|FP_GRIP,2|FP_TELEPATHY,1|FP_SABERTHROW,1
+
+	resource			RESOURCE_FORCE
+	forcepool			120
+	forceregen			1.2
+
+	classflags			CFL_NOPICKUPS|CFL_STATVIEWER|CFL_SEEING_STEALTH
+
+	saberStanceAnim			BOTH_TRIPLE3_STAFFSTANCE
+	jumpAnim			BOTH_SABERCOPTER_STANCE
+
+	APmultiplier		1.1
+	BPmultiplier		1.15
+	ASmultiplier		1.05
+	CSmultiplier		1.05
+
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+	
+	special2	EAS_FP_LIGHTNING
+
+	maxhealth			125
+	maxarmor			40
+
+	basespeed			230
+
+	model				"GI_rebels"
+	skin				"default"
+	uishader			"models/players/GI_rebels/mb2_icon_default"
+
+}
+
+description	"The Grand Inquisitor
+
+The Leader Of The Inquistors, leveraging deep knowledge of Jedi combat forms to break down targets.
+
+^2Weaponry:
+- Melee
+- Grand Inquisitor's Saber (Staff/All Single Styles)
+-- Disarm Target On Hit
+-- Saber Defense (3)
+-- Blaster Defense (2)
+-- Deflect (3)
+-- Saber Throw (1)
+
+^5Force Powers:
+- Push (2)
+- Pull (3)
+- Grip (2)
+- Lightning (1)
+-- Cripples
+-- 100% More Damage
+- Sense (2)
+- Jump (2)
+- Mind Trick (1)
+
+^8Attributes:
+- Rally
+- Stat Viewer
+- Sense Immunity
+- Force Block (2)
+- Force Focus (2)
+- Health Regen Capped at 35
+- Anti Mindtrick (2)
+- Tracking Beacon
+- Slow Faller
+
+^8Abilities:
+- Briefing (Force/Block Dispenser 1) ^3[USE In Melee]"
