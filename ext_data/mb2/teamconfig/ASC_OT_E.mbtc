@@ -41,6 +41,7 @@ SubclassesForClass1
 	Subclass23	"ote2_Ponda"
 	Subclass24	"ote1_SnowTrooper"
 	Subclass25	"ote2_Iden"
+	Subclass26	"ote1_PreMor"
 }
 
 SubclassesForClass2
@@ -99,6 +100,7 @@ SubclassesForClass5
 	Subclass4	"ote9_10thBro"
 	Subclass5	"ote9_13thSis"
 	Subclass6	"ote9_Maul"
+	Subclass7	"ote9_Maris"
 }
 
 SubclassesForClass6
