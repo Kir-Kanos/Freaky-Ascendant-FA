@@ -52,7 +52,7 @@ WeaponInfo0
 	customAmmo 			240
 	VelocityMod .75
 	rateMod .9
-	damageMod 1.15
+	damageMod 1.35
 	clipsize 8
 	FPMult 2.7
 	reloadTimeModifier 1.5
@@ -85,7 +85,7 @@ A mid range gunner utilizing a heavy scrap-thrower alongside an explosive gas ca
 -- 10% slower RoF
 - Pneumatic Junk Cannon (T-21 1)
 -- 10% slower RoF
--- 15% more damage
+-- 35% more damage
 -- 25% slower velocity
 -- 170% more FP damage
 -- 50% slower reload
