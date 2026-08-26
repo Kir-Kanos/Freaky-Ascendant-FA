@@ -10,15 +10,10 @@ ClassInfo
 	
 	maxhealth		125
 	maxarmor			100
-	rateoffire	1
-	speed       	1
-	special1		EAS_HI_ROCKET
+	special1	EAS_HI_DEX
 	special2 	EAS_HI_WRIST
-	special3	EAS_HI_WHISTLING_BIRDS
+	special3	EAS_HI_STIMPACK
 	special4 	EAS_HI_GRAPPLEHOOK
-	AB_WLaserFlags HELD_LOWDAMAGE|HELD_SONIC
-	WP_BlasterFlags HELD_ALTRELOAD|HELD_PULSE
-	//AB_GRAPPLEHOOKFlags coming soon!
 	resource			resource_fuel
 	forcepool 		20
 	rankForcePool	35,60,85
@@ -39,8 +34,6 @@ ClassInfo
 	uishader  	"models/players/BoKatan/mb2_icon_default"
 	uioverlay_r 	"gfx/icons/aerial"
 	uioverlay_l 	"gfx/icons/hybrid"
-	
-	//respawncustomtime  50000	
 	isCustomBuild		1
 	mbPoints			35
 
@@ -52,7 +45,7 @@ c_att_desc_0	"0.8 BP Mult + SD1 by default"
 
 c_att_skill_1	MB_ATT_GUN_DEFENSE
 c_att_names_1	"Blaster Defense"
-c_att_ranks_1	4,4
+c_att_ranks_1	4,4,8
 
 c_att_skill_2	MB_ATT_AP_MULTIPLIER
 c_att_names_2	"Saber AP (1.1/1.15/1.2)"
@@ -74,7 +67,7 @@ c_att_ranks_5	2,3,4
 
 c_att_skill_6	MB_ATT_FUELREGEN
 c_att_names_6	"Fuel Regen"
-c_att_ranks_6	1,2
+c_att_ranks_6	1,2,4
 
 c_att_skill_7	MB_ATT_KNOCKDOWN_ROLL
 c_att_names_7	"Knockdown Roll"
@@ -83,23 +76,20 @@ c_att_ranks_7	5
 c_att_skill_8	MB_ATT_DEXTERITY
 c_att_names_8	"Dexterity"
 c_att_ranks_8	1,2,3
+c_att_desc_8	"Dex roll ^3[CS1]"
 
-c_att_skill_9	MB_ATT_ROCKET
-c_att_names_9	"Jetpack Rocket ^3[CS1]"
+c_att_skill_9	MB_ATT_STIMPACK
+c_att_names_9	"Stimpack ^3[CS3]"
 c_att_ranks_9	2
 
 c_att_skill_10	MB_ATT_WRISTLASER
 c_att_names_10	"Wrist Laser ^3[CS2]"
 c_att_ranks_10	1
 
-c_att_skill_11	MB_ATT_WHISTLINGBIRD
-c_att_names_11	"Whistling Birds ^3[CS3]"
-c_att_ranks_11	2
+c_att_skill_11 MB_ATT_WHISTLINGBIRD
+c_att_names_11 "Whistling Birds ^3[CS4]"
+c_att_ranks_11 1,1,1
 
-c_att_skill_12	MB_ATT_GRAPPLE_HOOK
-c_att_names_12	"Whipcord Launcher ^3[CS4]"
-c_att_ranks_12	3
-c_att_descs_12	"Stuns/cripples/pulls on hit"
 }
 
 WeaponInfo0
@@ -134,28 +124,28 @@ WeaponInfo1
 	customammo			750
 }
 
-description	"Bo-Katan Kryze
+description	"Bo-Katan Kryze [Mandalorian] ^3Reworked - Marshall
 
-A quick and versatile Mandalorian with a tough suit of armor.
+A quick and versatile Mandalorian with a tough suit of armor. Leans heavier on saber shield combo, but has a small assortment of utility gadgets.
+
+^2Weaponry:
 
 ^2Weaponry:
 - Melee
--- 5% faster RoF
 - Dual WESTAR-35 Blaster Pistols (3)
--- 10% more damage/FP damage
--- 10% slower RoF
-- Frag Grenades (2)
+-- 15% more FP DMG, 15% more HP DMG
+-- 40% slower RoF
 
 ^8Attributes:
 - Bunny Hop (1)
-- Dexterity (1)
 - Fuel Regen (1)
 - Beskar (3)
 - Healing (1)
 - Force Block (1)
-- Tracking Beacon
 
-^3Abilities:
+^3Abilities: 
 - Jetpack
--- Rocket ^3[CS1]
-- Wrist Laser ^3[CS2]"
+- Rocket ^3[CS1]
+- Wrist Laser ^3[CS2]
+- Whistling Birds ^3[CS3]
+- Stimpack ^3[CS4]"
