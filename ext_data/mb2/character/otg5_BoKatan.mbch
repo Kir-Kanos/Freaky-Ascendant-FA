@@ -12,13 +12,11 @@ ClassInfo
 	maxarmor			100
 	rateoffire	1
 	speed       	1
-	special1		EAS_HI_ROCKET
 	special2 	EAS_HI_WRIST
 	special3	EAS_HI_WHISTLING_BIRDS
 	special4 	EAS_HI_GRAPPLEHOOK
-	AB_WLaserFlags HELD_LOWDAMAGE|HELD_SONIC
 	WP_BlasterFlags HELD_ALTRELOAD|HELD_PULSE
-	//AB_GRAPPLEHOOKFlags coming soon!
+	AB_GHookFlags HELD_CRIPPLE|HELD_STUN|HELD_PULL
 	resource			resource_fuel
 	forcepool 		20
 	rankForcePool	35,60,85
@@ -28,8 +26,8 @@ ClassInfo
 	saber2	energyshield_leg
 
 	BPmultiplier		0.8
-	APmultiplier		0.8
-	rankAP		1.05,1.1,1.15
+	APmultiplier		1
+	rankAP		1.1,1.15
 	saberDamage 		240
 	saberMaxChain 1
 	rankSaberMaxChain 2,3,4	
@@ -42,21 +40,21 @@ ClassInfo
 	
 	//respawncustomtime  50000	
 	isCustomBuild		1
-	mbPoints			35
+	mbPoints			30
 
 //saber
 c_att_skill_0	MB_ATT_FP_SABER_DEFENSE
 c_att_names_0	"Saber Defense"
-c_att_ranks_0	0,4,4
+c_att_ranks_0	0,4
 c_att_desc_0	"0.8 BP Mult + SD1 by default"
 
 c_att_skill_1	MB_ATT_GUN_DEFENSE
 c_att_names_1	"Blaster Defense"
-c_att_ranks_1	4,4
+c_att_ranks_1	4
 
 c_att_skill_2	MB_ATT_AP_MULTIPLIER
-c_att_names_2	"Saber AP (1.1/1.15/1.2)"
-c_att_ranks_2	2,2,4
+c_att_names_2	"Saber AP (1.1/1.15)"
+c_att_ranks_2	2,2
 c_att_descs_2	"Default 0.8"
 
 c_att_skill_3	MB_ATT_SABER_MAXCHAIN
@@ -84,22 +82,26 @@ c_att_skill_8	MB_ATT_DEXTERITY
 c_att_names_8	"Dexterity"
 c_att_ranks_8	1,2,3
 
-c_att_skill_9	MB_ATT_ROCKET
-c_att_names_9	"Jetpack Rocket ^3[CS1]"
-c_att_ranks_9	2
+c_att_skill_9	MB_ATT_WRISTLASER
+c_att_names_9	"Wrist Laser ^3[CS2]"
+c_att_ranks_9	1
 
-c_att_skill_10	MB_ATT_WRISTLASER
-c_att_names_10	"Wrist Laser ^3[CS2]"
-c_att_ranks_10	1
+c_att_skill_10	MB_ATT_WHISTLINGBIRD
+c_att_names_10	"Whistling Birds ^3[CS3]"
+c_att_ranks_10	2
 
-c_att_skill_11	MB_ATT_WHISTLINGBIRD
-c_att_names_11	"Whistling Birds ^3[CS3]"
-c_att_ranks_11	2
+c_att_skill_11	MB_ATT_GRAPPLE_HOOK
+c_att_names_11	"Whipcord Launcher ^3[CS4]"
+c_att_ranks_11	3
+c_att_descs_11	"Stuns/cripples/pulls on hit"
 
-c_att_skill_12	MB_ATT_GRAPPLE_HOOK
-c_att_names_12	"Whipcord Launcher ^3[CS4]"
-c_att_ranks_12	3
-c_att_descs_12	"Stuns/cripples/pulls on hit"
+c_att_skill_12	MB_ATT_WOOKIE_STRENGTH
+c_att_names_12	"Beskar Gauntlets (Strength):"
+c_att_ranks_12	2
+
+c_att_skill_13	MB_ATT_ROF_MELEE_MULTIPLIER
+c_att_names_13	"Melee ROF (+10%,20%,30%)"
+c_att_ranks_13	1,2
 }
 
 WeaponInfo0
@@ -134,28 +136,25 @@ WeaponInfo1
 	customammo			750
 }
 
-description	"Bo-Katan Kryze
+description	"Bo-Katan Kryze [Mandalorian] ^3Reworked - Marshall
 
-A quick and versatile Mandalorian with a tough suit of armor.
+A quick and versatile Mandalorian with a tough suit of armor. Able to obtain a balance of saber utility and an arsenal of gadgets.
 
 ^2Weaponry:
 - Melee
--- 5% faster RoF
 - Dual WESTAR-35 Blaster Pistols (3)
--- 10% more damage/FP damage
--- 10% slower RoF
-- Frag Grenades (2)
+-- 15% more FP DMG, 15% more HP DMG
+-- 40% slower RoF
 
 ^8Attributes:
 - Bunny Hop (1)
-- Dexterity (1)
 - Fuel Regen (1)
 - Beskar (3)
 - Healing (1)
 - Force Block (1)
-- Tracking Beacon
 
-^3Abilities:
+^3Abilities: 
 - Jetpack
--- Rocket ^3[CS1]
-- Wrist Laser ^3[CS2]"
+- Wrist Laser ^3[CS2]
+- Whistling Birds ^3[CS3]
+- Whipcord Launcher ^3[CS4]"
