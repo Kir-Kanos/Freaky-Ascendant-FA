@@ -4,11 +4,11 @@ ClassInfo
 {
 	name			"ptg3_CloneGuard"
 	weapons		WP_MELEE|WP_SABER
-	attributes	MB_ATT_AMMO,3|MB_ATT_STAMINA,1|MB_ATT_ASSEMBLE,2|MB_ATT_DEXTERITY,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_DEFLECT,0|MB_ATT_THROWER_FLAME
+	attributes	MB_ATT_AMMO,3|MB_ATT_STAMINA,1|MB_ATT_ASSEMBLE,2|MB_ATT_DEXTERITY,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_DEFLECT,0
 	
 	MBClass		MB_CLASS_CLONETROOPER
 	WP_SaberFlags HELD_PULSE
-	WP_ThrowerFlags HELD_CRIPPLE|HELD_SLOW|HELD_POISON
+	WP_EE3Flags HELD_CRIPPLE|HELD_SLOW|HELD_POISON
 	WP_SonicNadeFlags HELD_CRIPPLE
 	WP_DetPackFlags HELD_KNOCKDOWN
 	resource RESOURCE_STAMINA
@@ -17,7 +17,7 @@ ClassInfo
 	modelscale 1.02
 	extralives	2
 	maxhealth	80
-	maxArmor	40
+	maxArmor	80
 
 	APmultiplier		.5
 	BPmultiplier		.5
@@ -65,10 +65,10 @@ ClassInfo
 	c_att_names_2	"> Clone Rifle Ion Blobs"
 	c_att_ranks_2	1,1,1
 
-	c_att_skill_3	MB_ATT_THROWER
+	c_att_skill_3	MB_ATT_EE3
 	c_att_names_3	"R-88 Suppressor Riot Rifle"
-	c_att_ranks_3	5
-	c_att_descs_3	"Based on flamethrower, poisons/slows, -80% damage"
+	c_att_ranks_3	5,1,1
+	c_att_descs_3	"Based on EE3, poisons/slows, -80% damage"
 
 	c_att_skill_4	MB_ATT_SONIC_DETONATOR
 	c_att_names_4	"Snare Grenades"
@@ -84,14 +84,9 @@ ClassInfo
 	c_att_names_6	"Grappling Hook ^3[CS4 Melee]"
 	c_att_ranks_6	1,1
 
-	c_att_skill_7	MB_ATT_RESPAWNS
-	c_att_names_7	"Respawns"
-	c_att_ranks_7	4
-	c_att_descs_7	"One by default"
-
-	c_att_skill_8	MB_ATT_BESKAR
-	c_att_names_8 	"Beskar Plating"
-	c_att_ranks_8 	1,2,2
+	c_att_skill_7	MB_ATT_BESKAR
+	c_att_names_7 	"Beskar Plating"
+	c_att_ranks_7 	2,2,2
 }
 
 WeaponInfo0
@@ -113,22 +108,53 @@ WeaponInfo1
 	Icon	"gfx/hud/w_icon_purgesticks"
 	WeaponName	"Riot Gear"
 } 
-
 WeaponInfo2
 {
-	WeaponToReplace WP_THROWER
-	WeaponBasedOff WP_THROWER
+	WeaponToReplace		WP_EE3
+	WeaponBasedOff		WP_EE3
 	NewWorldModel "models/weapons2/stouker_concussion/disruptor_w.glm"
 	NewViewModel "models/weapons2/stouker_concussion/disruptor_w.md3"		
 	Icon	"gfx\hud\w_icon_stouker_c_rifle"
 	WeaponName "R-88 Suppressor Riot Rifle"
-	customAmmo 350
-	clipsize 10
-	ReloadTimeModifier 1.5
-	ratemod 3
-	damagemod 0.2
-}
+	//MissileEffect		"ships/tractor_beam"
+	MissileEffect		"Grenades/GlowCryoB"
+	MuzzleEffect		"Flamethrower/ice"
+	altMissileEffect	"Grenades/GlowCryoB"
+	altMuzzleEffect		"Flamethrower/ice"
+	FlashSound0			"sound/underground/poweroff2.mp3"
+	FlashSound1			"sound/underground/poweroff2.mp3"
+	FlashSound2			"sound/underground/poweroff2.mp3"
+	FlashSound3			"sound/underground/poweroff2.mp3"
+	AltFlashSound0		"sound/ambience/fuelpump_04a.mp3"
+	AltFlashSound1		"sound/ambience/fuelpump_02b.mp3"
+	AltFlashSound2		"sound/ambience/fuelpump_04c.mp3"
+	AltFlashSound3		"sound/ambience/fuelpump_04b.mp3"
+	MissileMissEffect			"wat_leg/beaker_det/impact"
+	MissileHitHumanEffect		"wat_leg/beaker_det/impact"
+	MissileHitDroidEffect		"wat_leg/beaker_det/impact"
+	altMissileMissEffect		"wat_leg/beaker_det/impact"
+	AltMissileHitHumanEffect	"wat_leg/beaker_det/impact"
+	AltMissileHitDroidEffect	"wat_leg/beaker_det/impact"
+	ReloadTimeModifier	1.4
+	customAmmo			396
+	clipSize			8
+	velocityMod			0.5
+	rateMod				0.7
 
+	hasAnimOverrides	1
+	animReadyRun		BOTH_WESTARM5_IDLE
+	animReady			BOTH_WESTARM5_IDLE
+	animReadyWalk		BOTH_WESTARM5_READY
+	animReadyNoAmmo		BOTH_WESTARM5_ATTACK
+	animReadyZoom		BOTH_WESTARM5_IDLE
+	animReadyZoomRun	BOTH_WESTARM5_IDLE
+
+	animAttackRun		BOTH_WESTARM5_ATTACK
+	animAttack			BOTH_WESTARM5_ATTACK
+	animAttackWalk		BOTH_WESTARM5_ATTACK
+	animAttackZoom		BOTH_HEADSHAKE
+	animAttackZoomRun	BOTH_HEADSHAKE
+}
 
 description	"Coruscant Guard
 

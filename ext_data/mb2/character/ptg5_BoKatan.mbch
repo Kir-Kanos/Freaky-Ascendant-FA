@@ -6,7 +6,7 @@ ClassInfo
 	
 	weapons			WP_MELEE|WP_MANDO_PISTOL
 	
-	attributes		MB_ATT_BESKAR,3|MB_ATT_JETPACK|MB_ATT_AMMO,3|MB_ATT_FUEL,2|MB_ATT_BUNNY_HOP,1|MB_ATT_HEALING,1|MB_ATT_MANDO_PISTOL,3
+	attributes		MB_ATT_BESKAR,3|MB_ATT_JETPACK|MB_ATT_AMMO,3|MB_ATT_FUEL,2|MB_ATT_BUNNY_HOP,1|MB_ATT_HEALING,1|MB_ATT_MANDO_PISTOL,3|MB_ATT_TRACKING_BEACON
 	
 	maxhealth	125
 	maxarmor	100
@@ -112,7 +112,7 @@ WeaponInfo2
 	Icon "gfx/marvel/maghand"
 	WeaponName "Electroshock Darts"
 	clipSize 2
-	customAmmo 8
+	customAmmo 10
 	hasAnimOverrides 1
 	animReady BOTH_FORCE_2HANDEDLIGHTNING_START
 	animReadyWalk BOTH_FORCE_2HANDEDLIGHTNING_START
@@ -128,9 +128,9 @@ WeaponInfo2
 	altfireenabled 0
 }
 
-description	"Bo-Katan Kryze [Bounty Hunter] ^3Reworked - Marshall
+description	"Bo-Katan Kryze [Mandalorian] ^3Reworked - Marshall
  
-A speedy Jetpack user who wields a Saber and Dual Pistols.
+A speedy Jetpack user who wields a Saber and Dual Pistols. Gadget heavy and dexterous.
 
 ^2Weaponry:
 - Melee
@@ -144,6 +144,7 @@ A speedy Jetpack user who wields a Saber and Dual Pistols.
 - Beskar (3)
 - Healing (1)
 - Force Block (1)
+- Tracking Beacon
 
 ^3Abilities: 
 - Jetpack
