@@ -1,0 +1,158 @@
+
+ClassInfo
+{
+	name				"ote2_Beckett"
+	weapons				WP_MANDO_PISTOL|WP_MELEE|WP_FRAG_NADE|WP_PROJ|WP_BLASTER
+	attributes			MB_ATT_FRAGS,2|MB_ATT_MANDO_PISTOL,3|MB_ATT_HEALING,2|MB_ATT_AMMO,3|MB_ATT_DASH,2|MB_ATT_DODGE,3|MB_ATT_BLAST_ARMOUR|MB_ATT_BACTA,1|MB_ATT_DEXTERITY,1|MB_ATT_PROJECTILE_RIFLE,1|MB_ATT_BLASTER,2|MB_ATT_ANTI_MT,2|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_TRACKING_BEACON|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_GRAPPLE_HOP|MB_ATT_BUNNY_HOP,0|MB_ATT_SPY_DISGUISE,1
+	maxhealth			125
+	maxarmor			40
+	speed				1.0
+	modelscale			1.02
+	rateOfFire			1
+	MBClass				MB_CLASS_HERO
+
+	WP_ProjFlags HELD_ALTRELOAD
+	WP_MandoPistolFlags HELD_ALTRELOAD
+	WP_BlasterFlags	HELD_ALTRELOAD|HELD_TRACKING|HELD_LOWDAMAGE
+	WP_MeleeFlags HELD_TRACKING
+	WP_FragNadeFlags HELD_TRACKING
+
+	classNumberLimit	1
+
+	skilltimermod	.90
+
+	hackrate	.75
+
+	resource			RESOURCE_ENERGY
+	forcepool			140
+	forceregen			1.3
+
+	special1HUD			HUD_FRAGNADE
+
+	model				"beckett"
+	skin				"default"
+	uishader			"models/players/beckett/mb2_icon_default"
+
+	special1			EAS_HI_DODGE
+	meleespecial1		EAS_HI_DODGE
+	special2			EAS_HI_DASH
+	special3			EAS_HI_DEX
+	special4			EAS_HI_KICK
+	meleespecial4			EAS_HI_GRAPPLEHOOK
+
+	uioverlay			"gfx/icons/spec_infantry"
+
+	tauntAnim BOTH_HAN_TAUNT
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_MANDO_PISTOL
+	WeaponBasedOff		WP_MANDO_PISTOL
+	NewWorldModel		"models/weapons2/dx13_pistol/model_w.glm"
+	CorrectedWorldModel "models/weapons2/dx13_pistol/model_w.glm"
+	NewViewModel		"models/weapons2/dx13_pistol/model.md3"
+	Icon				"gfx/hud/w_icon_dx_13_dual"
+	WeaponName			"Beckett's Arsenal"
+	MissileEffect		"Blaster/Shot03R"
+	Missile3Effect		"Blaster/Shot03R"
+	PowerupShotEffect	"Blaster/Shot04R"
+	AltMissileEffect	"Blaster/Shot03R"
+	FlashSound0			"sound/weapons/firegun/fire.wav"
+	altFlashSound0		"sound/weapons/firegun/fire.wav"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_PAIN16
+	animReady			BOTH_PAIN16
+	animReadyWalk		BOTH_PAIN16
+	animReadyNoAmmo		BOTH_DUAL_PISTOLS_DRAW
+	animRunAttackR		BOTH_DUAL_PISTOLS_ATTACK_R
+	animRunAttackL		BOTH_DUAL_PISTOLS_ATTACK_L
+	animWalkAttackR		BOTH_DUAL_PISTOLS_ATTACK_R
+	animWalkAttackL		BOTH_DUAL_PISTOLS_ATTACK_L
+	animCharge			BOTH_DUAL_PISTOLS_READY
+	animStand			BOTH_STAND9
+	customAmmo			1000
+	clipsize			24
+	rateMod				0.85
+	FPMult				1.15
+	velocityMod			1.1
+	damageMod			1.15
+}
+WeaponInfo1
+{
+	WeaponToReplace		WP_PROJ
+	WeaponBasedOff		WP_PROJ
+	NewWorldModel		"models/weapons2/a280/a280_w.glm"
+	NewViewModel		"models/weapons2/a280/a280.md3"
+	NewHandsModel		"models/weapons2/a280/a280_hand.md3"
+	Icon				"gfx/hud/w_icon_A280"
+	WeaponName			"Smuggler A280-CFE Rifle"
+	MissileEffect		"Blaster/Shot03R"
+	FlashSound0	"sound/weapons/ee3/sniperfire.mp3"
+	clipsize 15
+	customammo	400
+	damagemod	.25
+	ratemod		.55
+	fpmult		.25
+	velocitymod	1.6
+	altMissileMissEffect "Blaster/Impact_Wall01R_E"
+	altMissileHitHumanEffect "Blaster/Impact_Wall01R_E"
+	altMissileHitDroidEffect "Blaster/Impact_Wall01R_E"
+	MissileMissEffect "Blaster/Impact_Wall01R_E"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_DC15_READY
+	animReady			BOTH_DC15_READY
+	animReadyWalk		BOTH_DC15_READY
+	animReadyNoAmmo		BOTH_WESTARM5_SCOPED_ATTACK
+	animAttackRun		BOTH_WESTARM5_SCOPED_ATTACK
+	animAttack			BOTH_WESTARM5_SCOPED_ATTACK
+	animAttackWalk		BOTH_WESTARM5_SCOPED_ATTACK
+	animStand			BOTH_DC15_READY
+}
+
+description	"Tobias Beckett
+
+An adaptable gunslinger with a wide skillset.
+
+^2Weaponry:
+- Melee
+- Beckett's Arsenal
+-- Mando Pistols (3)
+-- 15% more FP damage/Damage
+-- 15% Faster RoF
+-- 15% More Velocity
+-- Low Ammo, Mag Reload
+- Frag Grenades (2)
+-- Cripples/Tracks On Hit
+- Smuggler A280-CFE Rifle
+-- Projectile Rifle
+-- 75% Less Damage/FP Drain
+-- 60% Faster RoF
+-- 60% Faster Velocity
+-- 15 Round Clip
+- E-11 Blaster Rifle (2)
+-- Tracks, 50% Less Damage
+-- Mag Reload
+
+^6Inventory:
+- Medpac ^3[CS4]
+
+^8Attributes:
+- Healing (2)
+- Grapple Hop
+- Bunny Hop (0)
+- 25% Faster Hack Rate
+- 10% Faster Cooldowns
+- Tracking Beacon
+- Knockdown Roll
+- Anti MT (2)
+- Dexterity (1)
+- Blast Armor
+
+^3Abilities:
+- Dodge (3) ^3[CS1]
+- Dash (2) ^3[CS2]
+- Gunkick ^3[CS4]
+- Combat Roll ^3[CS3]
+- Grapple Hook (2) ^3[CS4 Melee]
+- Disguise (1) ^3[Change Style In MELEE]"
