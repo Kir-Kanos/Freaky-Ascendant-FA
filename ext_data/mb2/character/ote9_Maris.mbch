@@ -1,0 +1,95 @@
+
+ClassInfo
+{
+	name				"ote9_Maris"
+	MBClass				MB_CLASS_SITH
+	classNumberLimit	1
+
+	weapons				WP_SABER|WP_MELEE
+	WP_SaberFlags		HELD_NODISARM|HELD_FORCEFOCUS|HELD_PULL|HELD_STUN|HELD_CRIPPLE
+	WP_MeleeFlags		HELD_FORCEFOCUS|HELD_CRIPPLE|HELD_POISON
+
+	attributes		MB_ATT_FORCEBLOCK,1|MB_ATT_FORCEFOCUS,3|MB_ATT_BUNNY_HOP,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_DEXTERITY,3|MB_ATT_FLIPKICK,1|MB_ATT_INAIR_FORCE_REGEN,1|MB_ATT_CLOAK,2|MB_ATT_DEFLECT,3|MB_ATT_DASH,1|MB_ATT_FP_REPULSE
+
+	forcepowers			FP_LEVITATION,3|FP_SPEED,3|FP_PULL,2|FP_SABER_OFFENSE,2|FP_TELEPATHY,3|FP_BLIND,1|FP_PUSH,2|FP_SABERTHROW,3
+
+	maxhealth			110
+	forcepool			110
+	forceregen			1.07
+
+	basespeed 250
+
+	skillmodtimer		1.6
+
+	saberstyle			SS_DUAL
+	saberSpecialDamage	1.35
+	BPmultiplier		0.95
+	APmultiplier		1.05
+	ASmultiplier		1.15
+	CSmultiplier		1.05
+	saberThrowDamage	40
+	saberdamage		85
+
+	saberStanceAnim		BOTH_SABER_STARKILLER_STANCE
+
+	damageGiven			1.1
+
+	classflags			CFL_SEEING_STEALTH|CFL_NOPICKUPS|CFL_BLOODYMELEE|CFL_HEAVYMELEE
+
+	special1			EAS_FP_SABERTHROW
+	meleespecial1			EAS_FP_REPULSE
+	special2			EAS_HI_DEX
+	special3			EAS_HI_DASH
+	special4			EAS_HI_CLOAK
+
+	uioverlay			"gfx/icons/frontline"
+
+	model				"marisbrood"
+	skin				"default"
+	uishader			"models/players/marisbrood/mb2_icon_default"
+
+	saber1				saber_maris_asc
+	sabercolor			0
+	saber2				saber_maris_asc
+	saber2color			0
+
+}
+
+description "Maris Brood
+
+A fast, dual-wielding assassin with effective stealth and ambush skills.
+
+^2Weaponry:
+- Heavy Melee
+-- Applies Poison/Cripple/Force Focus
+- Dual Guard Shotos (Dual Style Saber)
+-- Short Length
+-- Low Damage (85)
+-- Saber Defense (2)
+-- Blaster Defense (2)
+-- Blaster Deflect (3)
+-- Applies Pull, Stun, Cripple, and Force Focus
+-- Saber Throw (3) ^3[CS1] (Deals 40 damage)
+
+^5Force Powers:
+- Jump (3)
+- Push (2)
+- Pull (2)
+- Speed (3)
+- Mind Trick (3)
+- Blind (1)
+- Repulse (1) ^3[Melee CS1]
+
+^8Attributes:
+- Bunny Hop (1)
+- Dexterity (3) ^3[CS2]
+- Dash (1) ^3[CS3]
+- Cloak (2) ^3[CS4]
+- 60% Slower Cooldowns
+- Force Block (1)
+- Force Focus (3)
+- Aerial Force Regen
+- Sense Immunity
+
+^3Abilities:
+- Flipkick (1) ^3[Contact Jump]"
