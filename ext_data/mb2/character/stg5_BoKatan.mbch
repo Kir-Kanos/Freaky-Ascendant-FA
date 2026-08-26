@@ -13,7 +13,7 @@ ClassInfo
 	special1	EAS_HI_DEX
 	special2 	EAS_HI_WRIST
 	special3	EAS_HI_STIMPACK
-	special4 	EAS_HI_GRAPPLEHOOK
+	special4 	EAS_HI_WHISTLING_BIRDS
 	resource			resource_fuel
 	forcepool 		20
 	rankForcePool	35,60,85
