@@ -3,7 +3,7 @@ ClassInfo
 {
 	name				"asg1_RebGuerrillaSpotter"
 	weapons				WP_MELEE|WP_BLASTER_PISTOL
-	attributes			MB_ATT_PISTOL,1|MB_ATT_TRACKING_DART,3|MB_ATT_GETUPS,2|MB_ATT_ASSEMBLE,1|MB_ATT_STAMINA,2
+	attributes			MB_ATT_PISTOL,1|MB_ATT_TRACKING_DART,3|MB_ATT_GETUPS,2|MB_ATT_ASSEMBLE,1|MB_ATT_STAMINA,2|MB_ATT_CCTRAINING,2
 	WP_BlasterPistolFlags HELD_ALTRELOAD
 	maxhealth			80
 	maxarmor			80
@@ -94,6 +94,7 @@ Backliner utilizing a low damage automatic pistol alongside good mobility and tr
 - Electrobinoculars
 
 ^8Attributes:
+- Close Combat Training (2)
 - 70% less KB given
 - Reinforcement (1)
 - Getups (2)

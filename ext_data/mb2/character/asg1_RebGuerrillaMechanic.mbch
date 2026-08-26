@@ -3,9 +3,10 @@ ClassInfo
 {
 	name				"asg1_RebGuerrillaMechanic"
 	weapons				WP_MELEE|WP_SABER|WP_STUN_BATON
-	attributes			MB_ATT_DISP_ARMOR,1|MB_ATT_PISTOL,2
+	attributes			MB_ATT_DISP_ARMOR,1|MB_ATT_PISTOL,2|MB_ATT_CCTRAINING,1
 	WP_StunBatonFlags HELD_PULSE
 	WP_SaberFlags	HELD_STUN
+	WP_BlasterPistolFlags HELD_FLAME|HELD_ALTRELOAD
 	maxhealth			80
 	maxarmor			80
 	
@@ -149,6 +150,7 @@ Backliner with the ability to repair armor, low survivability and little combat 
 - Seeker Drone ^3[CS4]
 
 ^8Attributes:
+- Close Combat Training (1)
 - 20% less KB given
 - 50% less KB taken
 - Reinforcement (1)

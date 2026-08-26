@@ -5,7 +5,7 @@ ClassInfo
 	weapons			WP_MELEE|WP_MINIGUN
 	WP_MinigunFlags	HELD_ALTRELOAD|HELD_STUN
 	WP_MeleeFlags	HELD_SPEED
-	attributes		MB_ATT_ASSEMBLE,1|MB_ATT_MINIGUN,1|MB_ATT_STAMINA,1|MB_ATT_TRACKING_BEACON|MB_ATT_BESKAR,1
+	attributes		MB_ATT_ASSEMBLE,1|MB_ATT_MINIGUN,1|MB_ATT_STAMINA,1|MB_ATT_TRACKING_BEACON|MB_ATT_BESKAR,1|MB_ATT_CCTRAINING,1
 	MBClass			MB_CLASS_SOLDIER
 	modelscale      	1.1
 	classNumberLimit	1
@@ -79,6 +79,7 @@ Slow frontliner utilizing a heavy stagger gun alongside good lightsaber and midd
 -- Clipsize (125)
 
 ^8Attributes:
+- Close Combat Training (1)
 - Reinforcement (1)
 - 90% less KB taken
 - 80% less KB given

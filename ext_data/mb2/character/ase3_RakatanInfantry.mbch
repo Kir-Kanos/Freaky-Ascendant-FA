@@ -3,21 +3,20 @@
 ClassInfo
 {
 name	"ase3_RakatanInfantry"
-MBClass	MB_CLASS_WOOKIE
+MBClass	MB_CLASS_SITH
 weapons	WP_SABER|WP_MELEE
 WP_SHOTGUNFlags HELD_PULSE|HELD_AMMOREGEN|HELD_KNOCKBACK
-WP_RepeaterFlags HELD_AMMOREGEN|HELD_PULSE
+WP_RepeaterFlags HELD_PULSE
 WP_CloneRifleFlags HELD_ALTRELOAD
-attributes	MB_ATT_HEALING,2|MB_ATT_ASSEMBLE,2|MB_ATT_GUN_DEFENSE,0|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_WOOKIEE_FURY,2|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_CLONEBLOBS,1|MB_ATT_FORCEBLOCK,2
+attributes	MB_ATT_HEALING,1|MB_ATT_ASSEMBLE,2|MB_ATT_GUN_DEFENSE,0|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_WOOKIEE_FURY,2|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_CLONEBLOBS,1|MB_ATT_FORCEBLOCK,2|MB_ATT_REPEATER_NADES,3|MB_ATT_BARGE,1
 classflags	CFL_BLOODYMELEE
 classNumberLimit	4
-forcepowers	FP_RAGE,1|FP_LEVITATION,1
+forcepowers	FP_DARKRAGE,1|FP_LEVITATION,1
 resource RESOURCE_RAGE
 resourceRegenAmount 1
 resourceRegenRate 400
 forcepool	60
-forceregen .05
-rankForcepool 100,125
+rankForcepool 125
 uioverlay_l "gfx/icons/infantry"
 uioverlay_c "gfx/icons/hybrid"
 uioverlay_r "gfx/icons/brawler"
@@ -27,8 +26,10 @@ rankArmor	25
 basespeed	210
 skilltimermod	3.0
 damageTaken		0.85
-special1 EAS_MELEE
-special2 EAS_FP_RAGE
+special1 EAS_FP_DARKRAGE
+meleeSpecial EAS_FP_DARKRAGE
+special2			EAS_HI_BARGE
+meleespecial2		EAS_HI_BARGE
 special3 EAS_FP_REPULSE
 rankSaberDamage 260
 saberdamage 120
@@ -51,7 +52,7 @@ uishader_1	"models/players/Rakata/mb2_icon_default3"
 hasCustomSpec 2
 isOnlyOneSpec 1
 isCustomBuild	1
-mbPoints 20
+mbPoints 0
 customSpecName_1 "Soldier"
 customSpecIcon_1 "gfx/menus/alpha/icon_Weap_Accuracy"
 customSpecDesc_1 "^7A supportive and suppressive gunner."
@@ -59,11 +60,11 @@ c_att_skill_0	MB_ATT_RESPAWNS
 c_att_ranks_0	0,0
 c_att_names_0	"Reinforcements"
 c_att_skill_2	MB_ATT_CLONERIFLE
-c_att_ranks_2	15
+c_att_ranks_2	0
 c_att_names_2	"Rakatan Blaster (Clone Rifle)"
-c_att_descs_2	"^72 Concussion Blobs, +10% DMG, 45% Longer Reload, 5% Slower RoF"
+c_att_descs_2	"^72 Concussion Blobs, +25% DMG, 45% Longer Reload, -20% RoF"
 c_att_skill_3	MB_ATT_ARMOUR
-c_att_ranks_3	5
+c_att_ranks_3	0
 c_att_names_3	"Armor (25)"
 customSpecName_2 "Sorcerer"
 customSpecIcon_2 "gfx/menus/alpha/Icon_SaberCustom"
@@ -72,13 +73,13 @@ c_att_skill_15	MB_ATT_RESPAWNS
 c_att_ranks_15	0
 c_att_names_15	"Reinforcements"
 c_att_skill_17	MB_ATT_FP_PUSH
-c_att_ranks_17	0,10
+c_att_ranks_17	0,0
 c_att_names_17	"Push"
 c_att_skill_18	MB_ATT_PULL
 c_att_ranks_18	0
 c_att_names_18	"Pull"
 c_att_skill_19	MB_ATT_HEALING
-c_att_ranks_19	0,0,10
+c_att_ranks_19	0,0
 c_att_names_19 	"Healing"
 c_att_skill_21	MB_ATT_SHOTGUN
 c_att_ranks_21	0
@@ -87,10 +88,11 @@ c_att_descs_21	"^7-20% RoF, -60% DMG, 150x Longer Reload"
 c_att_skill_22	MB_ATT_REPEATER
 c_att_ranks_22	0
 c_att_names_22	"Lightning Shockwave (Repeater)"
-c_att_descs_22	"^7+20% RoF, 150x Longer Reload, +30% Velocity, Alt-Fire Only"
+c_att_descs_22	"^7-80% RoF, 150x Longer Reload, +30% Velocity, Alt-Fire Only,
+6 Shots"
 c_att_skill_23	MB_ATT_POWER
-c_att_ranks_23  0,0
-c_att_names_23  "Rage Pool (100/125)"
+c_att_ranks_23  0
+c_att_names_23  "Rage Pool (125)"
 }
 WeaponInfo0
 {
@@ -118,7 +120,7 @@ firingAnim	BOTH_FORCE_DRAIN_GRAB_HOLD
 AnimStand BOTH_FORCE_2HANDEDLIGHTNING_RELEASE
 animReady BOTH_FORCE_DRAIN_GRAB_START
 animReadyWalk BOTH_FORCE_DRAIN_GRAB_START
-animReadyNoAmmo BOTH_FORCE_2HANDEDLIGHTNING_RELEASE
+animReadyNoAmmo BOTH_FORCE_DRAIN_GRAB_START
 animAttack BOTH_FORCE_DRAIN_GRAB_HOLD
 animAttackWalk BOTH_FORCE_DRAIN_GRAB_HOLD
 animReadyRun	BOTH_FORCE_DRAIN_GRAB_START
@@ -131,7 +133,7 @@ PrimFireEnabled		1
 WeaponInfo1
 {
 WeaponToReplace WP_REPEATER
-WeaponBasedOff WP_REPEATER
+WeaponBasedOff WP_FRAG_NADE
 NewWorldModel		"models/weapons2/dummyblaster/model.glm"
 NewViewModel		"models/weapons2/dummy/dummy.md3"
 Icon	"gfx/effects/rakatanrepeater.tga"
@@ -142,10 +144,11 @@ altMissileEffect	"effects/demp2/projectile.efx" //effects/ships/imp_torpshot.efx
 altMuzzleEffect	"effects/force/lightningwide.efx"
 altMissileMissEffect "effects/Grenades/EXP_Pulsenade.efx"
 altFlashSound0 "sound/weapons/force/lightning.wav"	
-Clipsize	25
-customAmmo 75
-rateMod .8
-reloadTimeModifier 150
+Clipsize	-1
+customAmmo -1
+splashRadius		80
+rateMod 1.8
+reloadTimeModifier 2
 damageMod 1
 velocityMod	1.3
 hasAnimOverrides 1
@@ -171,7 +174,7 @@ NewWorldModel		"models/weapons2/golan_arms/rakatagolan_arms_w.glm"
 NewViewModel		"models/weapons2/golan_arms/rakatagolan_arms.md3"
 NewBarrelModel		"models/weapons2/golan_arms/rakatagolan_arms_barrel.md3"
 Icon	"gfx/effects/w_icon_flechette.tga"
-FlashSound0 "sound/weapons/repeater/fire_old.wav"
+FlashSound0 "sound/weapons/Heavycaster/fire.wav"
 MissileHitDroidEffect "effects/Blaster/Impact_Wall01R.efx"
 MissileEffect "blaster/Shot09R"
 WeaponName "Rakatan Blaster"
@@ -188,9 +191,9 @@ altMissileHitDroidEffect "effects/impacts/ImpactMediumRed2"
 altWallImpact "effects/Blaster/Impact_Wall01R.efx"
 Clipsize	30
 customAmmo 400
-rateMod 1.05
+rateMod 1.2
 reloadTimeModifier 1.45
-damageMod 1.1
+damageMod 1.25
 velocityMod	1
 }
 ForceInfo0
@@ -202,7 +205,7 @@ StartSound	"sound/chars/rakata/misc/pain100.wav"
 LoopSound	"sound/chars/rakata/misc/death1.wav"
 }
 
-description "Rakatan Infantry [Wookie]
+description "Rakatan Infantry [Sith]
 
 Air
 
@@ -227,4 +230,7 @@ A hybrid Rakatan soldier hailing from the Infinite Empire era with aggressive fo
 - Assemble (2)
 - Strength (1)
 - Fury (2)
-- 300% Longer Skill CD"
+- 300% Longer Skill CD
+
+^3Abilities:
+- Barge 1 ^3[Melee CS2]"
