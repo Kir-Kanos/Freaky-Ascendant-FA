@@ -1,0 +1,71 @@
+mando_asc
+{
+	name		"Mandalore's Mythosaur Axe"
+	saberType	SABER_LANCE
+	saberModel	"models/weapons2/saber_forcepike/saber_forcepike.glm"
+	numBlades		2
+        saberLength		40
+	soundOn	"sound/weapons/swordraiden/draw1.mp3"
+	soundLoop	"s/w/shwartz/saberhum1.wav"
+	soundOff	"s/w/shwartz/saberhup3.mp3"
+        saberstyle              tavion
+        singlebladestyle        medium
+        lockable		0
+	disarmable		0
+	blocking		0
+	twoHanded		1
+	saberRadius		5	
+	breakParryBonus		0
+	parryBonus		0
+	disarmBonus 	        0
+	noWallMarks		1
+	noDlight		1
+	noBlade			1
+	noClashFlare 		0
+	trailStyle		0
+	noIdleEffect		1
+	onInWater		1
+	damagescale             1
+	knockbackScale		2.0
+        transitionDamage	0
+	notInMP			0
+	noDismemberment		0
+        noRollStab		0
+	noPullAttack		1
+	noBackAttack		0
+	BlasterBlocking 	0
+	noStabDown		0
+	noWallRuns		1
+	noWallFlips		1
+	noWallGrab		1
+	noFlips			1
+	noCartwheels		1
+	noKicks			1
+	noMirrorAttacks		1
+        noManualDeactivate      1
+	flourishAnim            BOTH_VICTORY_MEDIUM
+        tauntAnim               BOTH_VICTORY_FAST
+        gloatAnim               BOTH_VICTORY_FAST
+	spinsound	"sound/weapons/blade/spin.mp3"
+
+	swingSound1	"sound/weapons/blade/swing1.mp3"
+	swingSound2	"sound/weapons/blade/swing2.mp3"
+	swingSound3	"sound/weapons/blade/swing3.mp3"
+
+	fallSound1	"sound/weapons/blade/fall1.mp3"
+	fallSound2	"sound/weapons/blade/fall2.mp3"
+	fallSound3	"sound/weapons/blade/fall3.mp3"
+
+	hitSound1	"sound/weapons/blade/slash1.mp3"
+	hitSound2	"sound/weapons/blade/slash2.mp3"
+	hitSound3	"sound/weapons/blade/slash3.mp3"
+
+	blockSound1	"sound/weapons/blade/block1.mp3"
+	blockSound2	"sound/weapons/blade/block2.mp3"
+	blockSound3	"sound/weapons/blade/block3.mp3"
+
+	bounceSound1	"sound/weapons/blade/bounce1.mp3"	
+	bounceSound2	"sound/weapons/blade/bounce2.mp3"
+	bounceSound3	"sound/weapons/blade/bounce3.mp3"
+
+}
