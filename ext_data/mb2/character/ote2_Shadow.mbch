@@ -54,7 +54,7 @@ ClassInfo
 	c_att_skill_1		MB_ATT_EE4
 	c_att_names_1		"DLT-19D Shadow Rifle"
 	c_att_ranks_1		1,0
-	c_att_descs_1		"EE4, 30%+ RoF, 40%- Damage/FP Drain, 10%+ Velocity, Mag Reload, Heavyweight"
+	c_att_descs_1		"EE4, 45%+ RoF, 45%- Damage/FPD, 15%+ Velocity, Mag Reload, Heavy"
 
 	c_att_skill_2		MB_ATT_DLT20A
 	c_att_names_2		"DLT-20A Precision Blaster"
@@ -104,11 +104,11 @@ WeaponInfo1
 	animAttackWalk		BOTH_DC15_ATTACK
 	animStand			BOTH_STAND1
 	customAmmo			800
-	clipSize			80
-	FPMult				0.60
-	rateMod				0.70
-	damagemod			.60
-	velocitymod 			1.10
+	clipSize			45
+	FPMult				0.65
+	rateMod				0.65
+	damagemod			0.65
+	velocitymod 			1.15
 	
 }
 WeaponInfo2
