@@ -29,6 +29,7 @@ ClassInfo
 	WP_BlasterPistolFlags	HELD_ALTRELOAD
 	WP_CloneRifleFlags 	HELD_ALTRELOAD
 	WP_SaberFlags			HELD_SPEED
+	WP_MeleeFlags			HELD_SPEED
 	
 	uioverlay_r "gfx/icons/infantry"
 	uioverlay_c "gfx/icons/hybrid"
