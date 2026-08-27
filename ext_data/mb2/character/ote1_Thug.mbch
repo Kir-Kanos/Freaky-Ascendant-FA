@@ -197,6 +197,7 @@ WeaponInfo2
 	Icon						"gfx/hud/w_icon_fraggrenade"
 	WeaponName					"Cheap Frag Grenades"
  splashRadius 300
+	damagemod 0.50
 	altFireEnabled				0
 }
 
