@@ -34,47 +34,29 @@ uishader_1    "models/players/mbmandy/mb2_icon_mbrgb2"
 	customgreen_1		1
 	customblue_1 		1
 
-model_2       "mbmandyfem"
-skin_2        "rgb"
-uishader_2    "models/players/mbmandyfem/mb2_icon_rgb"
+model_2       "mbmandy"
+skin_2        "soldier"
+uishader_2    "models/players/mbmandy/mb2_icon_soldier"
 
-	userRGB_2 		1
-	customred_2 		1
-	customgreen_2		1
-	customblue_2 		1
+model_3        "mbmandy"
+skin_3       "mbc"
+uishader_3     "models/players/mbmandy/mb2_icon_mbc"
 
-model_3       "mbmandyfem"
-skin_3        "rgb2"
-uishader_3    "models/players/mbmandyfem/mb2_icon_rgb2"
-
-	userRGB_3 		1
-	customred_3 		1
-	customgreen_3		1
-	customblue_3		1
-
-model_4       "mbmandy"
-skin_4        "soldier"
-uishader_4    "models/players/mbmandy/mb2_icon_soldier"
+model_4        "mbmandy"
+skin_4        "mbd"
+uishader_4     "models/players/mbmandy/mb2_icon_mbd"
 
 model_5        "mbmandy"
-skin_5       "mbc"
-uishader_5     "models/players/mbmandy/mb2_icon_mbc"
+skin_5         "mbe"
+uishader_5     "models/players/mbmandy/mb2_icon_mbe"
 
 model_6        "mbmandy"
-skin_6        "mbd"
-uishader_6     "models/players/mbmandy/mb2_icon_mbd"
+skin_6         "mbe2"
+uishader_6     "models/players/mbmandy/mb2_icon_mbe2"
 
 model_7        "mbmandy"
-skin_7         "mbe"
-uishader_7     "models/players/mbmandy/mb2_icon_mbe"
-
-model_8        "mbmandy"
-skin_8         "mbe2"
-uishader_8     "models/players/mbmandy/mb2_icon_mbe2"
-
-model_9        "mbmandy"
-skin_9        "mbf"
-uishader_9     "models/players/mbmandy/mb2_icon_mbf"
+skin_7         "mbf"
+uishader_7     "models/players/mbmandy/mb2_icon_mbf"
 
 	resource RESOURCE_FUEL
 
@@ -88,7 +70,7 @@ uishader_9     "models/players/mbmandy/mb2_icon_mbf"
 	mbPoints		40
 	
 	c_att_skill_0	MB_ATT_MANDO_PISTOL
-	c_att_names_0	"Westar Pistol"
+	c_att_names_0	"WESTAR Blaster Pistol"
 	c_att_ranks_0	2,2,6
 
 	c_att_skill_1	MB_ATT_EE3
