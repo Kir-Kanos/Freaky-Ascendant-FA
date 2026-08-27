@@ -35,7 +35,7 @@ saberstyle_3        SS_STRONG
     
 classflags          CFL_BLOODYMELEE|CFL_STRONGAGAINSTPHYSICAL
 
-special1            EAS_HI_RAGE
+special1            EAS_HI_FURY
 special2            EAS_HI_BARGE
 special3            EAS_HI_BINOCULARS
 special4		EAS_HI_TRACKER
