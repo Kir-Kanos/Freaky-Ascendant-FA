@@ -62,14 +62,6 @@ model_2		"tie_pilot"
 skin_2		"kubazb"
 uishader_2	"models/players/tie_pilot/mb2_icon_kubazb"
 
-model_3		"stormie"
-skin_3		"shadow"
-uishader_3	"models/players/stormie/mb2_icon_shadow"
-
-model_4 	"stormie"
-skin_4 		"vader"
-uishader_4	"models/players/stormie/mb2_icon_vader"
-
 	isCustomBuild	1
 	mbPoints	50
 
