@@ -31,6 +31,7 @@ ClassInfo
 
 	WP_BlasterPistolFlags	HELD_ALTRELOAD
 	WP_BlasterFlags		HELD_ALTRELOAD
+	WP_MeleeFlags		HELD_SPEED
 	WP_SaberFlags		HELD_SPEED
 	WP_E22Flags		HELD_ALTRELOAD|HELD_SLOW
 	WP_MinigunFlags		HELD_SLOW
