@@ -38,8 +38,13 @@ ClassInfo
 	special2		EAS_HI_PSHIELD
 	special3		EAS_HI_SPAWNER
 	special4		EAS_HI_STIMPACK
-	
 
+	WalkForward			BOTH_WALK6
+	WalkBackward		BOTH_WALK6
+	idleanim			BOTH_STAND4
+	gloatanim			BOTH_TALKCOMM1START
+	flourishanim		BOTH_STAND1_TALK1
+	
 	uioverlay_r "gfx/icons/infantry"
 	uioverlay_c "gfx/icons/hybrid"
 	uioverlay_l "gfx/icons/spec_infantry"
