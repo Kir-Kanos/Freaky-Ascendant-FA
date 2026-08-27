@@ -8,9 +8,7 @@ ClassInfo
 	MBClass				MB_CLASS_ELITETROOPER
 	weapons				WP_MELEE|WP_THERMAL
 
-	classflags			CFL_STATVIEWER
-
-	attributes			MB_ATT_DODGE,2|MB_ATT_RALLY,1|MB_ATT_AMMO,3|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_BEACON|MB_ATT_LIGHTS_BEACON|MB_ATT_ASSEMBLE,1|MB_ATT_SENTRY|MB_ATT_DRONE|MB_ATT_BACTA
+	attributes			MB_ATT_DODGE,2|MB_ATT_RALLY,1|MB_ATT_AMMO,3|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_BEACON|MB_ATT_LIGHTS_BEACON|MB_ATT_ASSEMBLE,1
 
 	maxhealth			105
 	maxarmor			5
@@ -22,7 +20,6 @@ ClassInfo
 	spawnernpc	"RebelOff"
 	
 	WP_E22Flags	HELD_DISRUPTIFY|HELD_FLAME|HELD_PULSE|HELD_ALTRELOAD|HELD_TRACKING
-	WP_MeleeFlags			HELD_SPEED
 
 	basespeed			190
 	
@@ -57,13 +54,12 @@ ClassInfo
 	special1			EAS_HI_DODGE		
 	special2			EAS_HI_SENTRY_GUN	
 	special3			EAS_HI_SEEKER		
-	special4			EAS_HI_MEDPAC	
 
 	gloatAnim			BOTH_TALKCOMM1START
 	flourishAnim		TORSO_HANDSIGNAL3
 
 isCustomBuild	1
-mbPoints		40
+mbPoints		50
 
 c_att_skill_0		MB_ATT_PISTOL
 c_att_names_0		"DL-44 Low Power Blaster Pistol"
@@ -105,20 +101,28 @@ c_att_skill_8		MB_ATT_DODGE
 c_att_names_8		"Dodge"
 c_att_ranks_8		0,0,4
 
-c_att_skill_9		MB_ATT_FP_PROTECT
-c_att_names_9		"Order: Protect"
-c_att_ranks_9		12
-c_att_descs_9		"Protect 1"
+c_att_skill_9		MB_ATT_DRONE
+c_att_names_9		"Seeker Droid"
+c_att_ranks_9		8
 
-c_att_skill_10		MB_ATT_FP_TEAM_FORCE
-c_att_names_10		"Order: Inspire"
-c_att_ranks_10		12
-c_att_descs_10		"Force Energize 1"
+c_att_skill_10		MB_ATT_SENTRY
+c_att_names_10		"Sentry Droid"
+c_att_ranks_10		6
 
-c_att_skill_11		MB_ATT_ROUNDSPAWNER
-c_att_names_11		"Order: Recruit"
-c_att_ranks_11		6
-c_att_descs_11		"Start All Lives With A Rebel Ally"
+c_att_skill_11		MB_ATT_FP_PROTECT
+c_att_names_11		"Order: Protect"
+c_att_ranks_11		12
+c_att_descs_11		"Protect 1"
+
+c_att_skill_12		MB_ATT_FP_TEAM_FORCE
+c_att_names_12		"Order: Inspire"
+c_att_ranks_12		12
+c_att_descs_12		"Force Energize 1"
+
+c_att_skill_13		MB_ATT_ROUNDSPAWNER
+c_att_names_13		"Order: Recruit"
+c_att_ranks_13		6
+c_att_descs_13		"Start All Lives With A Rebel Ally"
 
 }
 WeaponInfo0
@@ -205,7 +209,6 @@ A customizable multilife Rebel Officer with several gadgets who can specialize i
 - Rally
 - Empathic Leadership (Ally Stat Viewer)
 - Voice of the Rebellion (Lights Beacon)
-- Tactical Know-how (+15% Melee Movement Speed)
 - Inherited Knowledge (+30% Hack Speed)
 - Commlink Device (Tracking Beacon)
 
