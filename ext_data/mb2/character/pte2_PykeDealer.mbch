@@ -91,7 +91,7 @@ WeaponName 	"CC-420 Blaster Pistol"
 Clipsize	32
 velocityMod .80
 ratemod		.55
-damagemod	.30
+damagemod	.40
 reloadtimeModifier 1.15
 customammo 800
 MuzzleEffect  "Blaster/MuzzleFlash01R"
@@ -122,7 +122,7 @@ WeaponInfo2
     customAmmo         400
     	ReloadTimeModifier  1.20
     	FPmult              1.25
-    	rateMod             1.90
+    	rateMod             1.30
 	Damagemod	    1.10
 }
 WeaponInfo3
@@ -187,9 +187,9 @@ Hmm...Spice...
 -- 2 Swing Combo
 -- Shocks/Stuns on hit
 - CC-420 Blaster Pistol (Clone Pistol 2)
--- 45%+ RoF/70%- Damage/25%- Velocity, Mag Reload
+-- 45%+ RoF/60%- Damage/25%- Velocity, Mag Reload
 - CC-500 Blaster Rifle (EE-3 3)
--- 10% More Damage/25% More FP Mult/90% Slower RoF, Mag Reload
+-- 10% More Damage/25% More FP Mult/30% Slower RoF, Mag Reload
 - Unrefined Spice Grenade (Frag 2)
 -- Applies Poison/Stun/75%- Damage
 -- Heals Teammates (^3Use with caution, will poison/stun them)
