@@ -28,7 +28,7 @@ ClassInfo
 	classflags			CFL_NOPICKUPS|CFL_SEEING_STEALTH|CFL_STATVIEWER
 
 	APmultiplier		.90
-	BPmultiplier		1.15
+	BPmultiplier		1.10
 	ASmultiplier		1.05
 	CSmultiplier		1.05
 	
