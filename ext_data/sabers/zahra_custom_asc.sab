@@ -1,0 +1,53 @@
+zahra_custom_asc
+{
+	name		"Zahra's Custom Blade"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/kotor_vibroswords/vibroblade_w.glm"
+	soundOn	"sound/weapons/swordraiden/draw1.mp3"
+	soundLoop	"s/w/shwartz/saberhum1.wav"
+	soundOff	"s/w/shwartz/saberhup3.mp3"
+	saberLength	28
+	saberRadius	3
+ knockbackScale 0.2
+	throwable	0
+	disarmable	1
+	noDlight	1
+	noblade		1
+	noIdleEffect	1
+	onInWater	1
+	noWallMarks	1
+	trailStyle	2
+	noManualDeactivate	0
+	useGoreConfig	1
+	BlasterBlocking 0
+	spinsound	"s/w/k/knifespin.mp3"
+
+	swingSound1		"sound/weapons/swordraiden/swing3.mp3"
+	swingSound2		"sound/weapons/swordraiden/swing2.mp3"
+	swingSound3		"sound/weapons/swordraiden/swing1.mp3"
+	hitSound1		"sound/weapons/swordraiden/heavyhit1.mp3"
+	hitSound2		"sound/weapons/swordraiden/heavyhit2.mp3"
+	hitSound3		"sound/weapons/swordraiden/heavyhit3.mp3"
+
+	fallSound1	"sound/weapons/vibblade/fall1.mp3"
+	fallSound2	"sound/weapons/vibblade/fall1.mp3"
+	fallSound3	"sound/weapons/vibblade/fall1.mp3"
+
+	blockSound1	"sound/weapons/swordraiden/Cblock1.mp3"
+	blockSound2	"sound/weapons/swordraiden/Cblock2.mp3"
+	blockSound3	"sound/weapons/swordraiden/Cblock3.mp3"
+
+	bounceSound1 "sound/weapons/swordraiden/Cbounce1.mp3"
+	bounceSound2	"sound/weapons/swordraiden/Cbounce2.mp3"
+	bounceSound3	"sound/weapons/swordraiden/Cbounce3.mp3"
+	g2MarksShader "gfx/damage/bloodcutmark"
+	g2WeaponMarkShader "gfx/effects/bloodsplat"
+	blockEffect	"melee_weap/block"
+	hitPersonEffect "melee_weap/attack"
+	hitOtherEffect	"melee_weap/other"
+
+	gloatAnim BOTH_VICTORY_FAST
+	jumpAtkLeftMove LS_TAUNTAUN_ATTACK_RIGHT
+	jumpAtkRightMove LS_TAUNTAUN_ATTACK_LEFT
+	drawAnim BOTH_A6_LR
+}
