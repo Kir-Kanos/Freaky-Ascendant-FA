@@ -26,7 +26,7 @@ ClassInfo
 	classflags			CFL_NOPICKUPS|CFL_STATVIEWER|CFL_SEEING_STEALTH
 
 	saberStanceAnim			BOTH_TRIPLE3_STAFFSTANCE
-	jumpAnim			BOTH_SABERCOPTER_STANCE
+	jumpAnim			BOTH_SABERCOPTER_IDLE
 
 	APmultiplier		1.1
 	BPmultiplier		1.15
