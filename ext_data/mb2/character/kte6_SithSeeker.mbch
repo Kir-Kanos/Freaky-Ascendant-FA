@@ -4,6 +4,7 @@
 	MBClass 			MB_CLASS_SITH
 	
 	weapons			WP_SABER|WP_MELEE
+
 	
 	attributes		MB_ATT_FORCEBLOCK,1|MB_ATT_FORCEFOCUS,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_TRACKING_BEACON|MB_ATT_DEXTERITY,3|MB_ATT_CLOAK,2|MB_ATT_BINOCULARS|MB_ATT_TRACKING_DART,3
 
@@ -18,7 +19,9 @@
 
 	classNumberLimit	3
 
-AB_TDartFlags HELD_FORCEFOCUS|HELD_CRIPPLE
+	AB_TDartFlags HELD_FORCEFOCUS|HELD_CRIPPLE|HELD_LIFESTEAL
+	WP_MeleeFlags HELD_FORCEFOCUS|HELD_LIFESTEAL
+	WP_SaberFlags HELD_FORCEFOCUS|HELD_LIFESTEAL
 
  saberSpecialDamage 1.50
  saberDamageStyle SS_STAFF,80|SS_TAVION,60|SS_FAST,50|SS_MEDIUM,80|SS_DESANN,90|SS_DUAL,65
@@ -33,9 +36,13 @@ AB_TDartFlags HELD_FORCEFOCUS|HELD_CRIPPLE
 	classflags		CFL_NOPICKUPS
 	
 	special1 EAS_HI_TRACKER
+	meleespecial1 EAS_HI_TRACKER
 	special2 EAS_HI_CLOAK
+	meleespecial2 EAS_HI_CLOAK
 	special3 EAS_HI_DEX
+	meleespecial3 EAS_HI_DEX
 	special4 EAS_HI_BINOCULARS
+	meleespecial4 EAS_HI_BINOCULARS
 	
 	uioverlay "gfx/icons/frontline"
 	
@@ -76,13 +83,15 @@ Multi-life Dark Jedi pawns who seek out force users and attempt to ambush unsusp
 
 ^2Weaponry:
 - Melee
+-- Life Steals/Force Focuses
 - Sith Force Pike
 -- Staff Pike (Staff/Cyan)
 -- Single Pike (Blue/Yellow)
 -- Dual Pikes (Dual/Purple)
+-- Life Steals/Force Focuses
 -- Saber Defense (1)
--- 150% Spec Dmg mult
--- Much less Damage
+-- 50%+ Saber Spec Dmg mult
+-- Much less Damage on hit
 
 ^5Force Powers:
 - Jump (2)
@@ -97,8 +106,9 @@ Multi-life Dark Jedi pawns who seek out force users and attempt to ambush unsusp
 - Tracking Beacon
 
 ^8Abilities:
-- Force Dampeners (Tracking Darts 3) ^3[CS1]
--- Causes Force Focus/Cripple On HIt
+- Force Dampeners (Tracking Darts 6) ^3[CS1]
+-- Causes Force Focus/Cripple On Hit
+-- Life Steals
 - Cloaking Device (2) ^3[CS2]
 - Binoculars ^3[CS4]
 - Dex Roll ^3[CS3]"
