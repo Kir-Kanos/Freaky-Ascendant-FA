@@ -47,7 +47,7 @@ ClassInfo
 	mbPoints			1
 
 	c_att_skill_0		MB_ATT_BLASTER
-	c_att_names_0		"Specialty E-11 Blaster Rifle"
+	c_att_names_0		"E-11I Blaster Rifle"
 	c_att_ranks_0		1,0,0
 	c_att_descs_0		"20%- RoF, 20%+ Damage/FP Drain/Velocity, Lightweight, Mag Reload"
 
@@ -69,7 +69,7 @@ WeaponInfo0
 	NewWorldModel		"models/weapons2/blaster_r/blaster_w.glm"
 	NewViewModel		"models/weapons2/blaster_r/blaster.md3"
 	Icon				"gfx/hud/w_icon_e11"
-	WeaponName			"Specialty E-11 Blaster Rifle"
+	WeaponName			"E-11I Blaster Rifle"
 	MuzzleEffect		"Blaster/MuzzleFlash01R"
 	AltMuzzleEffect		"Blaster/MuzzleFlash01R"
 	MissileEffect		"Blaster/Shot02R"
