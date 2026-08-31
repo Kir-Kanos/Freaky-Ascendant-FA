@@ -1,0 +1,121 @@
+ClassInfo
+{
+	name				"ote8_Guri"
+	weapons				WP_MELEE|WP_BLASTER_PISTOL
+	attributes			MB_ATT_PISTOL,1|MB_ATT_AMMO,2|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_ANTI_MT,2|MB_ATT_MAGNETIC_PLATING,1|MB_ATT_DEXTERITY,3|MB_ATT_DASH,2|MB_ATT_DODGE,3|MB_ATT_HEALING,1|MB_ATT_FP_MIRALUKA|MB_ATT_BLAST_ARMOUR|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_TRACKING_BEACON|MB_ATT_SPY_DISGUISE,1|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_BUNNY_HOP,1|MB_ATT_FLOAT_HOP|MB_ATT_ENV_PROT,1|MB_ATT_FLIPKICK,2|MB_ATT_RECHARGE,3|MB_ATT_CCTRAINING,3|MB_ATT_CORTOSIS,1|MB_ATT_DASH_JUMP
+
+	forcepowers			FP_SEE,1
+
+	maxhealth			100
+	maxarmor			75
+	basespeed			225
+	modelscale			0.98
+	MBClass				MB_CLASS_BATTLEDROID
+
+	knockbackTaken		0.90
+	classNumberLimit	1
+	classflags			CFL_BLOODYMELEE|CFL_HEAVYMELEE|CFL_SEEING_STEALTH|CFL_STRONGAGAINSTPHYSICAL|CFL_STATVIEWER
+
+	WP_MeleeFlags		HELD_CRIPPLE|HELD_TRACKING|HELD_HIGHDAMAGE
+	WP_BlasterPistolFlags	HELD_TRACKING|HELD_ALTRELOAD
+
+	deathAnim			BOTH_SBD_DEATH1
+
+	rateOfFire_Melee	.9
+
+	resource			RESOURCE_BATTERY
+	forcepool			120
+	forceRegen			2
+	meleeknockback_flat 100
+	skilltimermod		0.5
+	hackrate			0.80
+
+	model				"guri"
+	skin				"default"
+	uishader			"models/players/guri/icon_default"
+
+	special1			EAS_HI_DODGE
+	special2			EAS_HI_DASH
+	special3			EAS_HI_DEX
+	special4			EAS_HI_KICK
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/scout_pistol/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/scout_pistol/blaster_pistol.md3"
+	Icon				"gfx/hud/w_icon_scout_pistol"
+	WeaponName			"Concealed Hold-Out Blaster"
+	clipsize			5
+	customammo			60
+	damagemod			0.5
+	FPmult				0.5
+	ratemod				1.2
+	hasAnimOverrides	1
+	animReadyRun		BOTH_ATTACK2
+	animReady			BOTH_ATTACK2
+	animReadyWalk		BOTH_ATTACK2
+	animReadyNoAmmo		BOTH_ATTACK2
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+	animStand			BOTH_ATTACK2
+}
+
+ForceInfo0
+{
+	ForceToReplace		FP_SEE
+	Icon				"gfx/forcepowers/radar"
+	ForcePowerName		"Enhanced Senses"
+	StartSound			"sound/ambience/kotor/consolebeep03.mp3"
+	LoopSound			"sound/ambience/cp_02_lp.wav"
+}
+
+description	"Guri
+
+A state-of-the-art Human Replica Droid programmed for lethal, unarmed combat.
+
+^2Weaponry:
+- Heavy Melee
+-- 100% More Damage
+-- 10% Faster Swings
+-- Cripples/Tracks
+-- 100 Flat Knockback
+- Concealed Hold-Out Blaster (1)
+-- 50% Less Damage/FP Drain
+-- 20% Slower RoF
+-- Low Ammo, Mag Reload
+-- Tracks targets on hit
+
+^8Attributes:
+- Magnetic Plating
+- Blast Armor
+- 10% Less KB Taken
+- Melee Resist
+- Ally Stat Viewer
+- Strength (1)
+- Passive Auto-Repair (Healing 1)
+- Cortosis (1)
+- Tracking Beacon
+- Battery Recharge (3)
+- Environmental Protection (1)
+- Enhanced Senses (Miraluka Sense 1)
+- Mind Trick Immunity (Anti-MT 2)
+- Slow Faller
+- Bunny Hop (1)
+- Aerial Battery Regen
+- Knockdown Roll
+- 20% Faster Hack Speed
+- 50% Faster Cooldowns
+- Dexterity (3)
+- Force Sense Immunity
+
+^3Abilities:
+- Dodge (3) ^3[CS1]
+- Flipkick (2) ^3[Contact Jump]
+- Disguise (1) ^3[Style Swap In MELEE]
+- Dash Jump (2) ^3[CS2]
+- Dex Roll ^3[CS3]
+- Gunkick (3) ^3[CS4]"
