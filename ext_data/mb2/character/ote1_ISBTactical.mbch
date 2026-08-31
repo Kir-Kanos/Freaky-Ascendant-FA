@@ -101,7 +101,7 @@ ClassInfo
 	c_att_descs_11		"^3[CS2]"
 
 	c_att_skill_12		MB_ATT_GRAPPLE_HOOK
-	c_att_names_12		"Grapple hook"
+	c_att_names_12		"Grapple Hook"
 	c_att_ranks_12		4
 	c_att_descs_12		"Grapple Hook ^3[CS4]"
 
