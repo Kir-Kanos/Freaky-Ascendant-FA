@@ -1,0 +1,116 @@
+ClassInfo
+{
+	name				"ote7_Evazan"
+	MBClass				MB_CLASS_BOUNTY_HUNTER
+	classNumberLimit	1
+	weapons				WP_MELEE|WP_BLASTER_PISTOL|WP_FRAG_NADE
+
+	attributes			MB_ATT_PISTOL,3|MB_ATT_FRAGS,6|MB_ATT_QUICKTHROW,3|MB_ATT_POISON_DART,10|MB_ATT_DISP_HEALTH,3|MB_ATT_DISP_ARMOR,3|MB_ATT_AMMO,3|MB_ATT_ANTI_MT,2|MB_ATT_TRACKING_BEACON|MB_ATT_DODGE,3|MB_ATT_TRACKING_DART,10|MB_ATT_HEALING,3
+
+	forcepowers	FP_TELEPATHY,3
+
+	classflags			CFL_STATVIEWER|CFL_RUNFASTMELEE
+
+	skilltimermod	.60
+
+	hackrate	.80
+
+	resource		RESOURCE_STAMINA
+	
+	forceregen		.75
+
+	AB_PDartFlags	HELD_CRIPPLE|HELD_TRACKING
+	AB_TDartFlags	HELD_FORCEFOCUS|HELD_POISON
+	WP_FragNadeFlags	HELD_POISON|HELD_FORCEFOCUS|HELD_TRACKING|HELD_CRIPPLE|HELD_FLASH
+
+	maxhealth			100
+	maxarmor			50
+
+	special1	EAS_HI_DODGE
+	special2	EAS_HI_QUICKTHROW
+	special3	EAS_HI_POISON
+	special4	EAS_HI_TRACKER
+
+	speed				1.0
+
+	model				"evazan"
+	skin				"default"
+	uishader			"models/players/evazan/icon_default"
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_FRAG_NADE
+	WeaponBasedOff		WP_FRAG_NADE
+	NewWorldModel		"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel		"models/weapons/Grenade_Concussion/viewmodel.md3"
+	MissileModel		"models/weapons/Grenade_Concussion/proj.md3"
+	altMissileModel		"models/weapons/Grenade_Concussion/proj.md3"
+	missileEffect				"hutt/toxic_breath"
+	altmissileEffect			"hutt/toxic_breath"
+	MissileMissEffect			"slime_explosion_new"
+	MissileHitHumanEffect	"slime_explosion_new"
+	MissileHitDroidEffect	"slime_explosion_new"
+	AltMissileMissEffect		"slime_explosion_new"
+	AltMissileHitHumanEffect	"slime_explosion_new"
+	AltMissileHitDroidEffect	"slime_explosion_new"
+	Icon				"gfx/hud/w_icon_stungrenade"
+	WeaponName			"Chemical Grenade"
+	primFireEnabled		0
+	splashradius	250
+	damagemod			0.000
+	ratemod				0.5
+
+}
+WeaponInfo1
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/se-14c_pistol/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/se-14c_pistol/blaster_pistol.md3"
+	Icon				"gfx/hud/w_icon_se-14c"
+	WeaponName			"SE-14C Blaster Pistol"
+	FlashSound0			"sound/weapons/SE-14c/fire.wav"
+	altFlashSound0		"sound/weapons/SE-14c/fire.wav"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+}
+
+ForceInfo0
+{
+	ForceToReplace		FP_TELEPATHY
+	Icon				"gfx/menus/alpha/icon_weap_stun"
+	ForcePowerName		"Hallucinogenic Mist"
+}
+
+description	"Dr. Cornelius Evazan
+
+A disgraced Surgeon, he uses his chemical expertise to assist and disorient.
+
+^2Weaponry:
+- Melee
+- 15% Faster Movement
+- SE-14C Blaster Pistol (3)
+- Chemical Grenade (6)
+-- 0 Damage
+-- Applies Poison/Blind/Cripple/Force Focus/Tracking
+-- Large Radius
+
+^8Powers:
+- Hallucinogenic Mist (Mindtrick 3)
+
+^8Attributes:
+- Medical Scanner (Stat Viewer)
+- Dodge (3)
+- Healing (3)
+- Tracking Beacon
+- Anti MT (2)
+- 40% Faster Cooldowns
+- 20% Faster Hacking
+
+^8Abilites:
+- Advanced Tracking Darts ^3[CS4]
+-- Applies Poison/Cripple
+- Quickthrow (3) ^3[CS2]
+- Dodge (3) ^3[CS1]
+- Advanced Poison Darts (20) ^3[CS3]
+-- Applies Tracking/Force Focus
+- Health/Armor Dispenser (3) ^3[USE In Melee]"
