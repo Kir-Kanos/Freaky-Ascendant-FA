@@ -8,9 +8,6 @@ ClassInfo
 	WP_DetPackFlags	HELD_POISON|HELD_EXPLOSIVE|HELD_STUN
 	WP_SonicNadeFlags	HELD_TRACKING
 	
-	
-	
-	
 	attributes  	MB_ATT_MANDO_PISTOL,1|MB_ATT_HEALING,1|MB_ATT_AMMO,3|MB_ATT_DODGE,3|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_DART,4|MB_ATT_ANTI_MT,1|MB_ATT_STAMINA,2|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_TRACKING_BEACON|MB_ATT_STIMPACK
 	classflags	CFL_RUNFASTMELEE|CFL_HEAVYMELEE|CFL_BLOODYMELEE
 	forcepowers 	FP_SABER_OFFENSE,3
@@ -33,10 +30,6 @@ ClassInfo
 	model 		"isb_agont"
 	skin		"default"
 	uishader  	"models/players/isb_agont/icon_default"
-	
-	model_1		"agentkallus"
-	skin_1		"default"
-	uishader_1	"models/players/agentkallus/mb2_icon_default"
 	
 	forcepool 	50
 	forceregen	3
