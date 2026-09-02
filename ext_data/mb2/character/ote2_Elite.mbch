@@ -1,0 +1,217 @@
+ClassInfo
+{
+	name				"ote2_Elite"
+	weapons				WP_MELEE|WP_BLASTER_PISTOL
+	attributes			MB_ATT_AMMO,3|MB_ATT_PISTOL,2|MB_ATT_BLAST_ARMOUR|MB_ATT_STAMINA,3|MB_ATT_DODGE,2
+	
+	MBClass				MB_CLASS_ARCTROOPER
+	classNumberLimit	2
+	
+	maxhealth			80
+	
+	maxArmor 			40
+	
+	speed				1.01
+
+	hackRate			.90
+	
+	resource 			RESOURCE_STAMINA
+	forcepool 			80
+	forceregen			2.2
+	
+	WP_MeleeFlags 		HELD_SPEED
+	WP_SHOTGUNFlags		HELD_ALTRELOAD
+	WP_FragNadeFlags	HELD_FLASH|HELD_CRIPPLE
+	
+	flourishAnim 		BOTH_STAND5TOAIM
+	
+	knockbacktaken 		1
+	
+	special1			EAS_HI_DODGE
+	special2			EAS_HI_SPRINT
+	special3			EAS_HI_DEX
+	special4			EAS_HI_GRAPPLEHOOK
+	
+	uioverlay_l 		"gfx/icons/infantry"
+	
+	model				"stormie"
+	skin				"tfucomm"
+	uishader			"models/players/stormie/mb2_icon_tfucomm"
+
+	isCustomBuild		1
+	mbPoints			50
+
+	c_att_skill_0		MB_ATT_BLASTER
+	c_att_names_0		"Modified E-11 Blaster Rifle"
+	c_att_ranks_0		2,2,2
+	c_att_descs_0		"+5% Velocity & Damage"
+
+	c_att_skill_1		MB_ATT_SHOTGUN
+	c_att_names_1		"Imperial Vanguard Shotgun"
+	c_att_ranks_1		6,6
+	c_att_descs_1		"+5% Rate of Fire, -35% Damage"
+
+	c_att_skill_2		MB_ATT_FRAGS
+	c_att_names_2		"Flashbang Grenades"
+	c_att_ranks_2		2,2
+	c_att_descs_2		"0 Damage, Large Radius, Cripples/Blinds"
+
+	c_att_skill_3		MB_ATT_MICRO_GRENADES
+	c_att_names_3		"Smoke Grenade"
+	c_att_ranks_3		2
+	c_att_descs_3		"Obscures vision, 0 Damage"
+
+	c_att_skill_4		MB_ATT_KNOCKDOWN_ROLL
+	c_att_names_4		"Knockdown Roll"
+	c_att_ranks_4		4
+
+	c_att_skill_5		MB_ATT_DEXTERITY
+	c_att_names_5		"Combat Roll"
+	c_att_ranks_5		4
+	c_att_descs_5		"Dexterity (1) & Dex Roll ^3[CS3]"
+
+	c_att_skill_6		MB_ATT_GRAPPLE_HOOK
+	c_att_names_6		"Grapple Hook"
+	c_att_ranks_6		2,4
+	c_att_descs_6		"^3[CS4]"
+
+	c_att_skill_7		MB_ATT_RALLY
+	c_att_names_7		"Rally"
+	c_att_ranks_7		4
+
+	c_att_skill_8		MB_ATT_RESPAWNS
+	c_att_names_8		"Reinforcements"
+	c_att_ranks_8		10,16
+
+	c_att_skill_9		MB_ATT_ASSEMBLE
+	c_att_names_9		"Assemble"
+	c_att_ranks_9		2,2,2
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_SHOTGUN
+	WeaponBasedOff		WP_SHOTGUN
+	NewWorldModel		"models/weapons2/dc-15_ext/dc-15_ext_w.glm"
+	NewViewModel		"models/weapons2/dc-15_ext/dc-15_ext.md3"
+	Icon			"gfx/hud/w_icon_clonerifle_blobs"
+	WeaponName 			"Imperial Vanguard Shotgun"
+	FlashSound0	"sound/weapons/kotor/fire_power1.wav"
+	clipSize 			36
+	altFireEnabled 		0
+	Customammo 			200
+	ReloadTimeModifier 	1.4
+	ratemod 			0.95
+	damagemod 			0.65
+	MissileEffect		"Blaster/Shot01R"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	hasAnimOverrides 	1
+	animReadyWalk 		BOTH_WESTARM5_READY
+	animReadyNoAmmo 	BOTH_WESTARM5_ATTACK
+	animAttackRun 		BOTH_WESTARM5_ATTACK
+	animAttack 			BOTH_WESTARM5_ATTACK
+	animAttackWalk 		BOTH_WESTARM5_ATTACK
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_BLASTER
+	WeaponBasedOff		WP_BLASTER
+	NewWorldModel		"models/weapons2/blaster_r/blaster_w.glm"
+	NewViewModel		"models/weapons2/blaster_r/blaster.md3"
+	Icon				"gfx/hud/w_icon_E11"
+	WeaponName			"Modified E-11 Blaster Rifle"
+	customAmmo			680
+	clipsize			48
+	Velocitymod 		1.05
+	damagemod 			1.05
+}
+
+WeaponInfo2 
+{
+	WeaponToReplace		WP_CONC_NADE
+	WeaponBasedOff		WP_CONC_NADE
+	NewWorldModel		"models/weapons2/thermal/thermal_w.glm"
+	NewViewModel 		"models/weapons2/thermal/thermal.md3"
+	NewHandsModel 		"models/weapons2/thermal/thermal_hand.md3"
+	Icon				"gfx/hud/w_thermal_grenade"
+	MissileModel 		"models/weapons2/thermal/thermal_proj.md3"
+	AltMissileModel		"models/weapons2/thermal/thermal_proj.md3"
+	MissileEffect 		"stone/missile1"
+	AltMissileEffect 	"stone/missile1"
+	MissileMissEffect	"smokenadeleg/explode_vol"
+	MissileHitHumanEffect "smokenadeleg/explode_vol"
+	MissileHitDroidEffect "smokenadeleg/explode_vol"
+	AltMissileMissEffect "smokenadeleg/explode_vol"
+	AltMissileHitHumanEffect "smokenadeleg/explode_vol"
+	AltMissileHitDroidEffect "smokenadeleg/explode_vol"
+	FlashSound0			"sound/weapons/smokenade/select.mp3"
+	AltFlashSound0 		"sound/weapons/smokenade/select.mp3"
+	WeaponName 			"Smoke Grenade"
+	hasAnimOverrides 	1
+	animAttackRun 		BOTH_THERMAL_THROW2
+	animAttack 			BOTH_THERMAL_THROW2
+	animAttackWalk 		BOTH_THERMAL_THROW2
+	animReadyRun 		BOTH_THERMAL_READY2
+	animReady 			BOTH_THERMAL_READY2
+	animReadyWalk 		BOTH_THERMAL_READY2
+	damageMod 			0.0000
+	ratemod 			0.6
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/se-14c_pistol/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/se-14c_pistol/blaster_pistol.md3"
+	Icon				"gfx/hud/w_icon_se-14c"
+	WeaponName			"SE-14C Blaster Pistol"
+	FlashSound0			"sound/weapons/SE-14c/fire.wav"
+	altFlashSound0		"sound/weapons/SE-14c/fire.wav"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+}
+
+WeaponInfo4
+
+{	
+
+	WeaponToReplace	WP_FRAG_NADE
+	WeaponBasedOff	WP_FRAG_NADE
+	NewWorldModel	"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel	"models/weapons/Grenade_Concussion/viewmodel.md3"
+	MissileModel "models/weapons/Grenade_Concussion/proj.md3"
+	altMissileModel "models/weapons/Grenade_Concussion/proj.md3"
+	altMissileMissEffect	"Grenades/EXP_Flash"
+	MissileMissEffect	"Grenades/EXP_Flash"
+	altMissileHitHumanEffect	"Grenades/EXP_Flash"
+	missileHitHumanEffect	"Grenades/EXP_Flash"
+	altMissileHitDroidEffect	"Grenades/EXP_Flash"
+	missileHitDroidEffect	"Grenades/EXP_Flash"
+	Icon	"gfx/hud/w_icon_stungrenade"
+	WeaponName	"Flash Bang"
+	damagemod 0.000
+	splashradius	280
+	ratemod 0.6
+	MissileEffect "repeater/projectile"
+	AltMissileEffect "repeater/projectile"
+
+}
+
+description	"Elite Stormtrooper
+
+Veteran Stormtroopers with enhanced weaponry and equipment for self preservation.
+
+^2Weaponry:
+- Melee
+- SE-14C Blaster Pistol (2)
+
+^8Attributes:
+- Blast Armor
+- Assemble
+- Stamina (3)
+- 10% Faster Hack Rate
+
+^8Abilities:
+- Dodge (2) ^3[CS1]
+- Sprint (3) ^3[CS2]"
