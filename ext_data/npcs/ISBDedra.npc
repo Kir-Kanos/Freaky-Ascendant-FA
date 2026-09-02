@@ -1,0 +1,43 @@
+ISBDedra
+{
+ playerModel Mudtrooper
+ displayName "ISB Tactical Agent"
+ customSkin	 "tactician"
+
+ weapon WP_MELEE
+ weapon		WP_DLT20a
+ MB_ATT_DLT20a 1
+ MB_ATT_SLAVE 1
+ altFire 1
+ health	 80
+ armor	 60
+
+ reactions 3
+ aim   3
+ move  3
+ aggression 3
+ evasion  3
+ intelligence 4
+
+ rank  crewman
+ playerTeam TEAM_PLAYER
+ enemyTeam TEAM_ENEMY
+ class	CLASS_STORMTROOPER
+
+ scale 100
+ height	 65
+ crouchheight 39 //40p
+ runSpeed 200
+ yawspeed 100
+ headPitchRangeDown 30
+
+ snd   ic_df2
+ sndcombat ic_df2
+ sndextra ic_df2
+
+ dismemberProbHead 15
+ dismemberProbArms 15
+ dismemberProbLegs 15
+ dismemberProbHands 15
+ dismemberProbWaist 15
+}
