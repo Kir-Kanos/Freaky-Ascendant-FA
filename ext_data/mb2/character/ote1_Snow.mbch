@@ -1,7 +1,7 @@
 
 ClassInfo
 {
-	name				"ote1_SnowTrooper"
+	name				"ote1_Snow"
 	weapons				WP_MELEE|WP_BLASTER_PISTOL
 	attributes			MB_ATT_AMMO,3|MB_ATT_PISTOL,2|MB_ATT_CCTRAINING,3|MB_ATT_DEXTERITY,1|MB_ATT_BLAST_ARMOUR|MB_ATT_ENV_PROT,2
 	MBClass				MB_CLASS_SOLDIER
