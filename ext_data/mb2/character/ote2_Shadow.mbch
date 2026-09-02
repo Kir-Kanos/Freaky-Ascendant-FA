@@ -39,10 +39,6 @@ ClassInfo
 	skin_1				"vader"
 	uishader_1			"models/players/stormie/mb2_icon_vader"
 
-	model_2				"stormie"
-	skin_2				"tfushadow"
-	uishader_2			"models/players/stormie/mb2_icon_tfushadow"
-
 	isCustomBuild		1
 	mbPoints			1
 
