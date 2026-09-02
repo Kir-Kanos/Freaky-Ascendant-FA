@@ -25,8 +25,8 @@ SubclassesForClass1
 	Subclass7	"ote1_Thug"
 	Subclass8	"ote2_FlameTr"
 	Subclass9	"ote2_Greedo"
-	Subclass10	"ote3_EliteStorm"
-	Subclass11	"ote3_HeavyStorm"
+	Subclass10	"ote2_Elite"
+	Subclass11	"ote3_Heavy"
 	Subclass12	"ote3_Trando"
 	Subclass13	"ote3_DeathTr"
 	Subclass14	"ote3_Bossk"
@@ -39,11 +39,15 @@ SubclassesForClass1
 	Subclass21	"ote3_Shore"
 	Subclass22	"ote2_PykeDealer"
 	Subclass23	"ote2_Ponda"
-	Subclass24	"ote1_SnowTrooper"
+	Subclass24	"ote1_Snow"
 	Subclass25	"ote2_Iden"
 	Subclass26	"ote1_PreMor"
 	Subclass27	"ote2_Beckett"
 	Subclass28	"ote3_Swamp"
+	Subclass29	"ote3_Mortar"
+	Subclass30	"ote2_Evo"
+	Subclass31	"ote3_Sarge"
+	Subclass32	"ote3_Shock"
 }
 
 SubclassesForClass2
@@ -62,6 +66,7 @@ SubclassesForClass2
 	Subclass12	"ote5_Cad"
 	Subclass13	"ote5_OutcastMando"
 	Subclass14	"ote4_Boushh"
+	Subclass15	"ote4_Kallus"
 }
 
 SubclassesForClass3
@@ -85,6 +90,7 @@ SubclassesForClass3
 	Subclass17	"ote7_000"
 	Subclass18	"ote7_Zahra"
 	Subclass19	"ote7_Evazan
+	Subclass20	"ote7_Dedra"
 }
 
 SubclassesForClass4
