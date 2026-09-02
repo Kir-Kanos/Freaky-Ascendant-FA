@@ -40,28 +40,24 @@ ClassInfo
 	customblue 	0.08 //def brown
 	
 	model_1		"stormie"
-	skin_1		"mortar"
-	uishader_1 	"models/players/stormie/mb2_icon_mortar"
-	
-	model_2		"stormie"
-	skin_2		"sandtrooper_rgb"
-	uishader_2  	"models/players/stormie/mb2_icon_sandtrooper_rgb"
-	userRGB_2 	1
-	customred_2 	0.471  
-	customgreen_2	0.237  
-	customblue_2 	0.08 //def brown
+	skin_1		"sandtrooper_rgb"
+	uishader_1  	"models/players/stormie/mb2_icon_sandtrooper_rgb"
+	userRGB_1 	1
+	customred_1 	0.471  
+	customgreen_1	0.237  
+	customblue_1 	0.08 //def brown
 
-    model_3		"stormie"
-	skin_3		"sullust"
-	uishader_3	"models/players/stormie/mb2_icon_sullust"
+    model_2		"stormie"
+	skin_2		"sullust"
+	uishader_2	"models/players/stormie/mb2_icon_sullust"
 	
-	model_4		"stormie"
-	skin_4		"chimaera_rgb"
-	uishader_4	"models/players/stormie/mb2_icon_chimaera_rgb"
-	userRGB_4 	1
-	customred_4 	1
-	customgreen_4	1
-	customblue_4 	1 //def w
+	model_3		"stormie"
+	skin_3		"chimaera_rgb"
+	uishader_3	"models/players/stormie/mb2_icon_chimaera_rgb"
+	userRGB_3 	1
+	customred_3 	1
+	customgreen_3	1
+	customblue_3 	1 //def w
 	
 	//model_4 	"stormie_tfa"
 	//skin_4  	"vest"
