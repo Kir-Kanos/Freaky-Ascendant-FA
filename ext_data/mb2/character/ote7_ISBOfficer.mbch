@@ -14,7 +14,7 @@ ClassInfo
 
 	classflags			CFL_STATVIEWER|CFL_SEEING_STEALTH
 
-	WP_StunBatonFlags		HELD_TRACKING|HELD_KNOCKBACK|HELD_FLASH|HELD_CRIPPLE
+	WP_StunBatonFlags		HELD_TRACKING|HELD_CRIPPLE|HELD_LOWDAMAGE
 	WP_BlasterPistolFlags		HELD_TRACKING|HELD_ALTRELOAD
 	WP_MeleeFlags			HELD_SPEED|HELD_TRACKING
 	WP_SonicNadeFlags		HELD_TRACKING
@@ -26,18 +26,13 @@ ClassInfo
 	forcepool			80
 	forceregen			1.05
 
-
-model		"imperial_fml"
+model		"imperial"
 skin		"ISB"
-uishader	"models/players/imperial_fml/mb2_icon_ISB"
+uishader	"models/players/imperial/mb2_icon_ISB"
 
-model_1		"imperial"
+model_1		"imptrench"
 skin_1		"ISB"
-uishader_1	"models/players/imperial/mb2_icon_ISB"
-
-model_2		"imptrench"
-skin_2		"ISB"
-uishader_2	"models/players/imptrench/mb2_icon_ISB"
+uishader_1	"models/players/imptrench/mb2_icon_ISB"
 
 	modelscale			1
 	uioverlay_r 		"gfx/icons/tactician"
@@ -136,8 +131,9 @@ An intel officer who specializes in gathering info for their team and ambushing 
 ^2Weaponry:
 - Melee
 -- Applies Tracking
-- Stun-Baton (2)
--- Applies Tracking/Knockback/Cripple/Blind
+- Stun-Baton (1)
+-- Applies Tracking/Cripple
+-- Low Damage
 - ISB Modified RK-3 Pistol
 -- Applies Tracking
 -- Mag Reload
