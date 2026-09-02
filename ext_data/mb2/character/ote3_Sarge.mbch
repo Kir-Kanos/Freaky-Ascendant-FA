@@ -1,0 +1,162 @@
+ClassInfo
+{
+	name				"ote3_Sarge"
+	weapons				WP_MELEE|WP_BLASTER_PISTOL
+	attributes			MB_ATT_AMMO,3|MB_ATT_PISTOL,2|MB_ATT_BLAST_ARMOUR|MB_ATT_BINOCULARS|MB_ATT_STAMINA,2|MB_ATT_QUICKTHROW,2|MB_ATT_RALLY|MB_ATT_TRACKING_BEACON
+	
+	MBClass				MB_CLASS_CLONETROOPER
+	classNumberLimit	2
+
+	WP_T21Flags	HELD_SLOW
+	
+	maxhealth			80
+	
+	maxArmor 			40
+
+	speed				1.00
+
+	special1			EAS_HI_DODGE
+	special2			EAS_HI_SPRINT
+	special3			EAS_HI_QUICKTHROW
+
+	classflags	CFL_STATVIEWER
+	
+	uioverlay_l 		"gfx/icons/officer"
+
+	model				"stormie"
+	skin				"sarge"
+	uishader			"models/players/stormie/mb2_icon_sarge"
+
+	isCustomBuild		1
+	mbPoints			50
+
+	c_att_skill_0		MB_ATT_T21
+	c_att_names_0		"T-21 Light Repeating Blaster"
+	c_att_ranks_0		4,4,2
+
+	c_att_skill_1		MB_ATT_BLASTER
+	c_att_names_1		"E-11 Blaster Rifle"
+	c_att_ranks_1		2,2,2
+
+	c_att_skill_2		MB_ATT_EE3
+	c_att_names_2		"DH-17 Burst Carbine"
+	c_att_ranks_2		2,0,2
+	c_att_descs_2		"EE-3, 10% Faster RoF, 10% Lower Damage"
+
+	c_att_skill_3		MB_ATT_CRYOBAN_GRENADES
+	c_att_names_3		"Cryo Grenades"
+	c_att_ranks_3		2,2
+
+	c_att_skill_4		MB_ATT_MICRO_GRENADES
+	c_att_names_4		"Concussion Grenades"
+	c_att_ranks_4		2,4
+
+	c_att_skill_5		MB_ATT_FRAGS
+	c_att_names_5		"Smoke Grenades"
+	c_att_ranks_5		2,0
+
+	c_att_skill_6		MB_ATT_BASE_TD
+	c_att_names_6		"Thermal Grenades"
+	c_att_ranks_6		2,0,0
+
+	c_att_skill_7		MB_ATT_DODGE
+	c_att_names_7		"Dodge"
+	c_att_ranks_7		2,2
+	c_att_descs_7		"^3[CS1]"
+
+	c_att_skill_8		MB_ATT_FORCEFIELD
+	c_att_names_8		"Deployable Forcefield"
+	c_att_ranks_8		8
+
+	c_att_skill_9		MB_ATT_RESPAWNS
+	c_att_names_9		"Reinforcements"
+	c_att_ranks_9		14,18
+
+	c_att_skill_10		MB_ATT_ASSEMBLE
+	c_att_names_10		"Assemble"
+	c_att_ranks_10		2
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/se-14c_pistol/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/se-14c_pistol/blaster_pistol.md3"
+	Icon				"gfx/hud/w_icon_se-14c"
+	WeaponName			"SE-14C Blaster Pistol"
+	FlashSound0			"sound/weapons/SE-14c/fire.wav"
+	altFlashSound0		"sound/weapons/SE-14c/fire.wav"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+}
+WeaponInfo1
+{
+	WeaponToReplace			WP_FRAG_NADE
+	WeaponBasedOff			WP_FRAG_NADE
+NewWorldModel	"models/weapons2/thermal/thermal_w.glm"
+NewViewModel "models/weapons2/thermal/thermal.md3"
+NewHandsModel "models/weapons2/thermal/thermal_hand.md3"
+	Icon						"gfx/hud/w_thermal_grenade"
+	MissileModel 				"models/weapons2/thermal/thermal_proj.md3"
+	AltMissileModel			"models/weapons2/thermal/thermal_proj.md3"
+	MissileEffect 			"stone/missile1"
+	AltMissileEffect 			"stone/missile1"
+	MissileMissEffect			"smokenadeleg/explode_vol"
+	MissileHitHumanEffect	"smokenadeleg/explode_vol"
+	MissileHitDroidEffect	"smokenadeleg/explode_vol"
+	AltMissileMissEffect		"smokenadeleg/explode_vol"
+	AltMissileHitHumanEffect	"smokenadeleg/explode_vol"
+	AltMissileHitDroidEffect	"smokenadeleg/explode_vol"
+	FlashSound0		"sound/weapons/smokenade/select.mp3"
+	AltFlashSound0 	"sound/weapons/smokenade/select.mp3"
+	WeaponName  				"Smoke Grenade"
+	hasAnimOverrides 1
+	animAttackRun BOTH_THERMAL_THROW2
+	animAttack BOTH_THERMAL_THROW2
+	animAttackWalk BOTH_THERMAL_THROW2
+	animReadyRun BOTH_THERMAL_READY2
+	animReady BOTH_THERMAL_READY2
+	animReadyWalk BOTH_THERMAL_READY2
+	damageMod 0.001
+	ratemod 0.6
+}
+WeaponInfo2
+{
+	WeaponToReplace		WP_EE3
+	WeaponBasedOff		WP_EE3
+	NewWorldModel		"models/weapons2/dh-17/dh-17_w.glm"
+	NewViewModel		"models/weapons2/dh-17/dh-17_FA.md3"
+	Icon				"gfx/hud/w_icon_dh-17"
+	WeaponName			"DH-17 Burst Carbine"
+	MissileEffect		"Blaster/Shot02r"
+	AltMissileEffect			"Blaster/Shot03r"
+	FlashSound0			"sound/weapons/blaster/fire.mp3"
+	FlashSound1			"sound/weapons/blaster/fire.mp3"
+	FlashSound2			"sound/weapons/blaster/fire.mp3"
+	FlashSound3			"sound/weapons/blaster/fire.mp3"
+	AltFlashSound0		"sound/weapons/firegun/fire.wav"
+	AltFlashSound1		"sound/weapons/firegun/fire.wav"
+	AltFlashSound2		"sound/weapons/firegun/fire.wav"
+	AltFlashSound3		"sound/weapons/firegun/fire.wav"
+	AltFlashSound4		"sound/weapons/firegun/fire.wav"
+	AltMissileMissEffect "Blaster/Impact_Wall01R_E"
+	damagemod	.90
+	ratemod		.90
+}
+description	"Stormtrooper Squad Leader
+
+Customizable Stormtrooper Spearheads with Leadership potential.
+
+^2Weaponry:
+- Melee
+- SE-14C Blaster Pistol (2)
+
+^8Attributes:
+- Blast Armor
+- Rally
+- Tracking Beacon
+- Stamina (2)
+
+^8Abilities:
+- Quickthrow (2) ^3[CS3]
+- Sprint (2) ^3[CS2]"

@@ -1,0 +1,146 @@
+ClassInfo
+{
+	name				"ote4_Kallus"
+	MBClass				MB_CLASS_HERO
+	classNumberLimit	1
+
+	weapons				WP_MELEE|WP_BLASTER_PISTOL|WP_M5|WP_SABER|WP_FRAG_NADE
+
+	saber1				electrostaff_legends
+	sabercolor			5
+	saberstyle			SS_STAFF
+	saberdamage			60
+	sabermaxchain		3
+
+	ASmultiplier 1.10
+	CSmultiplier 1.10
+	BPmultiplier .85
+	APmultiplier 1.10
+
+	WP_BlasterPistolFlags	HELD_ALTRELOAD
+	WP_SaberFlags			HELD_PULSE|HELD_DISARM|HELD_STUN|HELD_TRACKING
+	WP_MeleeFlags			HELD_SPEED|HELD_CRIPPLE|HELD_TRACKING
+
+	resource	RESOURCE_ENERGY
+	forcepool	135
+	forceregen	1.4
+
+	skilltimermod	.85
+
+	attributes			MB_ATT_PISTOL,3|MB_ATT_WESTARM5,2|MB_ATT_AMMO,3|MB_ATT_DODGE,3|MB_ATT_DEXTERITY,2|MB_ATT_HEALING,2|MB_ATT_FRAGS,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_ENV_PROT,1|MB_ATT_ANTI_MT,2|MB_ATT_TRACKING_BEACON|MB_ATT_QUICKTHROW,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_KNOCKDOWN ROLL|MB_ATT_BLAST_ARMOUR|MB_ATT_BARGE
+
+	classflags			CFL_SEEING_STEALTH
+
+	hackrate			.75
+
+	maxhealth			100
+	maxarmor			80
+
+	baseSpeed			235
+
+	special1			EAS_HI_DODGE
+	special2			EAS_HI_QUICKTHROW
+	special3			EAS_HI_DEX
+	special4			EAS_HI_KICK
+	meleespecial4			EAS_HI_BARGE
+
+	model		"agentkallus"
+	skin		"default"
+	uishader	"models/players/agentkallus/mb2_icon_default"
+
+	bargeSoundOverride	"sound/chr_d/humanmerc2/misc/pain100.mp3"
+
+	uioverlay			"gfx/icons/hybrid"
+	modelscale			1.02
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/imp_pistol/pistol_w.glm"
+	NewViewModel		"models/weapons2/imp_pistol/pistol_fpv.md3"
+	Icon				"gfx/hud/w_icon_imp_pistol"
+	WeaponName			"RK-3 Blaster Pistol"
+	customAmmo			400
+	clipSize			15
+	animReadyRun		BOTH_ATTACK2
+	animReady			BOTH_ATTACK2
+	animReadyWalk		BOTH_ATTACK2
+	animReadyNoAmmo		BOTH_ATTACK2
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+}
+
+Weaponinfo1
+{
+	WeaponToReplace WP_M5
+	WeaponBasedOff WP_M5
+	NewWorldModel	"models/weapons2/e_22/e_22_w.glm"
+	NewViewModel	"models/weapons2/e_22/e_22.md3"
+	NewHandsModel	"models/weapons2/e_22/e_22_hand.md3"
+	Icon	"gfx/hud/w_icon_e_22"
+	WeaponName	"Kallus's Bo-Rifle"
+	MuzzleEffect	"Blaster/MuzzleFlash01R"
+	AltMuzzleEffect	"Blaster/MuzzleFlash01R"
+	MissileEffect	"Blaster/Shot09R"
+	FlashSound0	"sound/weapons/e_22/fire.mp3"
+	altFlashSound0	"sound/weapons/e_22/alt_fire.mp3"
+	customammo	999
+	velocityMod	1.25
+	rateMod 1.7
+	damageMod	1.15
+	FpMult	1.15
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/electrostaff/electrostaff.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_purgesticks"
+	WeaponName			"Bo-Electro Staff"
+}
+
+description "Agent Alexsandr Kallus
+
+Aggressive ISB Hybrid with high mobility and flexibility.
+
+^2Weaponry:
+- Heavy Melee
+-- Cripples/Tracking On Hit
+- RK-3 Blaster Pistol (3)
+-- Mag Reload
+- Kallus's Bo-Rifle (2)
+-- Based on the M5
+-- 25% Increased Velocity
+-- 70% Slower ROF
+-- 15% More Damage/FP Drain
+- Bo-Electro Staff 
+-- Staff Style Saber 
+-- Low Damage (80)
+-- 3 Chain Limit
+-- Applies Pulse/Tracking/Disarm/Stun on Hit
+-- Saber Defense (1) 
+- Frag Grenades (2)
+
+^8Attributes:
+- Dexterity (2) 
+- Sense Immunity
+- Anti-Mind Trick (2)
+- Healing (2)
+- Blast Armor
+- Environmental Protection (1)
+- Tracking Beacon
+- Knockdown Roll
+- 15% Faster Skill Cooldowns
+- 25% Faster Hacking Speed
+
+^3Abilities:
+- Dodge (3) ^3[CS1]
+- Gunkick ^3[CS4 Weapon Out]
+- Quickthrow (1) ^3[CS2]
+- Dexterity Roll ^3[CS3]
+- Shoulder Barge ^3[CS4 Melee]"
