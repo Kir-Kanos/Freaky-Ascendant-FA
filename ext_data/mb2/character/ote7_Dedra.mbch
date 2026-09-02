@@ -1,0 +1,148 @@
+
+ClassInfo
+{
+	name				"ote7_Dedra"
+	MBClass				MB_CLASS_SOLDIER
+	classNumberLimit	1
+
+	weapons				WP_MELEE|WP_BLASTER_PISTOL|WP_STUN_BATON|WP_SONIC_NADE|WP_FRAG_NADE
+
+	WP_BlasterPistolFlags		HELD_CRIPPLE|HELD_TRACKING|HELD_ALTRELOAD|HELD_KNOCKBACK
+	WP_MeleeFlags			HELD_SPEED|HELD_TRACKING
+	WP_StunBatonFlags		HELD_TRACKING|HELD_CRIPPLE|HELD_LOWDAMAGE
+	WP_FragNadeFlags		HELD_TRACKING|HELD_FLASH|HELD_CRIPPLE
+	WP_SonicNadeFlags		HELD_TRACKING|HELD_CRIPPLE
+
+	attributes			MB_ATT_HEALING,3|MB_ATT_RALLY|MB_ATT_SPAWNER|MB_ATT_ROUNDSPAWNER|MB_ATT_AMMO,3|MB_ATT_PETCONTROL|MB_ATT_PISTOL,3|MB_ATT_QUICKTHROW,3|MB_ATT_TRACKING_DART,12|MB_ATT_ANTI_MT,2|MB_ATT_TRACKING_BEACON|MB_ATT_FRAGS,3|MB_ATT_ENEMYSCANNER|MB_ATT_DISP_FORCE,3|MB_ATT_SONIC_DETONATOR,1
+
+	spawnerNPC			"KXDedra"
+	roundNPC			"ISBDedra"
+
+	hackrate .50
+
+	baseSpeed			225
+
+	classflags			CFL_STATVIEWER|CFL_SEEING_STEALTH
+
+	skilltimermod		2
+
+	maxhealth			150
+	maxarmor			50
+
+	forcepowers			FP_SUMMON,1
+	resource			RESOURCE_FUEL
+
+	forcepool			400
+
+	special1			EAS_HI_QUICKTHROW
+	meleespecial1		EAS_HI_QUICKTHROW
+	special2			EAS_HI_SPAWNER
+	special3			EAS_HI_ENEMYSCANNER
+	special4			EAS_HI_TRACKER
+
+	model		"imperial_fml"
+	skin		"ISB"
+	uishader	"models/players/imperial_fml/mb2_icon_ISB"
+
+	WalkForward			BOTH_WALK6
+	WalkBackward		BOTH_WALK6
+	idleanim			BOTH_STAND4
+	gloatanim			BOTH_TALKCOMM1START
+	flourishanim		BOTH_STAND1_TALK1
+
+	uioverlay			"gfx/icons/tactician"
+	modelscale			.98
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/blaster_three/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/blaster_three/blaster_pistol.md3"
+	Icon				"gfx/hud/w_icon_blaster_pistol_3"
+	WeaponName			"Dedra's Power-5 Blaster"
+	customAmmo			700
+	clipSize			42
+	FlashSound0			"sound/weapons/firegun/fire.wav"
+	altFlashSound0		"sound/weapons/firegun/fire.wav"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	damagemod	.90
+	hasAnimOverrides	1
+	animReadyRun		BOTH_ATTACK2
+	animReady			BOTH_ATTACK2
+	animReadyWalk		BOTH_ATTACK2
+}
+
+WeaponInfo1
+{	
+	WeaponToReplace	WP_FRAG_NADE
+	WeaponBasedOff	WP_FRAG_NADE
+	NewWorldModel	"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel	"models/weapons/Grenade_Concussion/viewmodel.md3"
+	MissileModel "models/weapons/Grenade_Concussion/proj.md3"
+	altMissileModel "models/weapons/Grenade_Concussion/proj.md3"
+	altMissileMissEffect	"Grenades/EXP_Flash"
+	MissileMissEffect	"Grenades/EXP_Flash"
+	altMissileHitHumanEffect	"Grenades/EXP_Flash"
+	missileHitHumanEffect	"Grenades/EXP_Flash"
+	altMissileHitDroidEffect	"Grenades/EXP_Flash"
+	missileHitDroidEffect	"Grenades/EXP_Flash"
+	Icon	"gfx/hud/w_icon_stungrenade"
+	WeaponName	"Flash Bang"
+	damagemod 0.000
+	ratemod 0.6
+	MissileEffect "repeater/projectile"
+	AltMissileEffect "repeater/projectile"
+}
+
+
+ForceInfo0
+{
+	ForceToReplace		FP_SUMMON
+	Icon				"gfx/2d/logos/mb_empire"
+	ForcePowerName		"Deploy"
+}
+
+description "Dedra Meero
+
+A persistent ISB Leader with a personal squadron to assist operations.
+
+^2Weaponry:
+- Melee 
+-- Applies Tracking
+-- 15% Faster Movement Speed
+- Dedra's Power-5 Blaster (3
+-- 10% Less Damage
+-- Mag Reload
+-- Applies Tracking/Knockback/Cripple
+- Stun Baton (1)
+-- Applies Tracking/Cripple
+-- 50% Less Damage
+- Flash Bang Grenades (3)
+-- Based On Frag
+-- Large Quickthrow Radius
+-- 0 Damage, Tracks/Cripples/Blinds
+- Sonic Detonator (1)
+-- Cripples/Tracks
+
+^5Powers:
+- Deploy (Summon 1) ISB Tactical Agent)
+
+^8Attributes:
+- Rally
+- 50% Faster Hacking Speed
+- Stat Viewer
+- Sense Immunity
+- Anti-Mind Trick (2)
+- Healing (3)
+- Tracking Beacon
+- ISB Tactical Agent Escort (Bodyguard)
+
+^3Abilities:
+- Quickthrow (3) ^3[CS1]
+- Enemy Scanner ^3[CS3]
+- Call In KX Security Droid Escort (Spawner) ^3[CS2]
+- Tracking Darts (12) ^3[CS4]
+- Inform (Force Dispenser 3) ^3[USE In Melee]"

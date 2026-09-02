@@ -1,0 +1,155 @@
+ClassInfo
+{
+	name				"ote3_Shock"
+	weapons				WP_MELEE|WP_BLASTER_PISTOL
+	attributes			MB_ATT_AMMO,3|MB_ATT_PISTOL,2|MB_ATT_BLAST_ARMOUR|MB_ATT_ENV_PROT,1|MB_ATT_DODGE,1
+	
+	MBClass				MB_CLASS_CLONETROOPER
+	classNumberLimit	2
+	
+	maxhealth			80
+	
+	maxArmor 			40
+
+	speed				0.95
+
+	WP_EE4Flags			HELD_SLOW|HELD_ALTRELOAD
+	WP_DLT20AFlags			HELD_SLOW|HELD_ALTRELOAD
+	WP_PLX1Flags			HELD_SLOW|HELD_PULSE|HELD_PULL|HELD_STUN
+	WP_MeleeFlags			HELD_CRIPPLE|HELD_SPEED
+
+	special4		EAS_HI_GRAPPLEHOOK
+	special1		EAS_HI_PSHIELD
+	
+	uioverlay_l 		"gfx/icons/heavy"
+
+	model				"stormie"
+	skin				"shock"
+	uishader			"models/players/stormie/mb2_icon_shock"
+
+	isCustomBuild		1
+	mbPoints			50
+
+	c_att_skill_0		MB_ATT_EE4
+	c_att_names_0		"DLT-19D Heavy Blaster"
+	c_att_ranks_0		8,2
+	c_att_descs_0		"EE-4, +50% RoF, 45%- Damage/FP Drain, Heavyweight, Mag Reload"
+
+	c_att_skill_1		MB_ATT_DLT20A
+	c_att_names_1		"DLT-20A Suppression Rifle"
+	c_att_ranks_1		2,2,2
+	c_att_descs_1		"15%+ RoF, 10%- Damage, Very Large Clipsize, Mag reload"
+
+	c_att_skill_2		MB_ATT_PULSE_GRENADES
+	c_att_names_2		"Pulse Grenades"
+	c_att_ranks_2		2,4
+	
+	c_att_skill_3		MB_ATT_PLX1
+	c_att_names_3		"Implosion Displacer Missile"
+	c_att_ranks_3		6
+	c_att_descs_3		"PLX, 90%- Damage, Pulses/Pulls To Explosion/Stuns, Large Radius"
+
+	c_att_skill_4		MB_ATT_PSHIELD
+	c_att_names_4		"Personal Shield"
+	c_att_ranks_4		10
+
+	c_att_skill_5		MB_ATT_RESPAWNS
+	c_att_names_5		"Reinforcements"
+	c_att_ranks_5		14,18
+
+	c_att_skill_6		MB_ATT_ASSEMBLE
+	c_att_names_6		"Assemble"
+	c_att_ranks_6		2,2
+
+	c_att_skill_7		MB_ATT_GRAPPLE_HOOK
+	c_att_names_7		"Grapple Hook"
+	c_att_ranks_7		6
+	c_att_descs_7		"^3[CS4 Melee]"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_EE4
+	WeaponBasedOff		WP_EE4
+	NewWorldModel		"models/weapons2/DLT-19_HeavyBlaster/model_scope.glm"
+	NewViewModel		"models/weapons2/DLT-19_HeavyBlaster/riflescoped.md3"
+	Icon				"gfx/hud/w_icon_dlt19scoped"
+	WeaponName			"DLT-19D Heavy Blaster"
+	FlashSound0			"sound/weapons/DLT19/fire.wav"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_DC15_IDLE
+	animReady			BOTH_DC15_IDLE
+	animReadyWalk		BOTH_DC15_READY
+	animReadyNoAmmo		BOTH_DC15_ATTACK
+	animAttackRun		BOTH_DC15_ATTACK
+	animAttack			BOTH_DC15_ATTACK
+	animAttackWalk		BOTH_DC15_ATTACK
+	animStand			BOTH_STAND1
+	customAmmo			768
+	clipSize			64
+	Damagemod			0.55
+	FPMult				0.55
+	rateMod				0.50
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_DLT20A
+	WeaponBasedOff		WP_DLT20A
+	NewWorldModel		"models/weapons2/dlt20a/dlt20a_w.glm"
+	NewViewModel		"models/weapons2/dlt20a/dlt20a.md3"
+	Icon				"gfx/hud/w_icon_dlt20a"
+	WeaponName			"DLT-20A Suppression Rifle"
+	ratemod	.85
+	damagemod .90
+	clipsize	200
+	customammo	1000
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/se-14c_pistol/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/se-14c_pistol/blaster_pistol.md3"
+	Icon				"gfx/hud/w_icon_se-14c"
+	WeaponName			"SE-14C Blaster Pistol"
+	FlashSound0			"sound/weapons/SE-14c/fire.wav"
+	altFlashSound0		"sound/weapons/SE-14c/fire.wav"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	damagemod	.85
+	ratemod		.75
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_PLX1
+	WeaponBasedOff		WP_ROCKET_LAUNCHER
+	NewWorldModel		"models/weapons2/MiniMag_launcher/launcher_w.glm"
+	NewViewModel		"models/weapons2/MiniMag_launcher/launcher.md3"
+	Icon				"gfx/hud/w_icon_MiniMag"
+	WeaponName			"Implosion Displacer Missile"
+	damagemod	.1
+	splashradius	340
+}
+
+description	"Shock Trooper
+
+Frontline Suppression units that are excellent Bodyguards.
+
+^2Weaponry:
+- Melee
+-- Cripples On Hit
+-- 15% Faster Movement Speed
+- SE-14C Blaster Pistol (2)
+-- 15%- Damage
+-- 25%+ RoF
+
+^8Attributes:
+- Blast Armor
+- Environmental Protection (1)
+
+^8Abilities:
+- Dodge (1) ^3[CS1]"

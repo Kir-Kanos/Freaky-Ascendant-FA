@@ -1,0 +1,240 @@
+
+ClassInfo
+{
+	name				"ote3_Mortar"
+	weapons				WP_MELEE|WP_CLONE_PISTOL|WP_THERMAL
+	attributes			MB_ATT_AMMO,4|MB_ATT_CLONE_PISTOL,2|MB_ATT_GETUPS,2|MB_ATT_BLAST_ARMOUR|MB_ATT_UGL|MB_ATT_TRACKING_BEACON
+	MBClass				MB_CLASS_CLONETROOPER
+	modelscale			1.01
+
+	classNumberLimit	2
+
+	maxhealth			80
+	maxArmor			80
+
+	basespeed			165
+	resource			RESOURCE_STAMINA
+	forcepool			100
+
+	extralives	1
+
+	flourishAnim		BOTH_STAND5TOAIM
+	knockbacktaken		0.85
+
+	WP_UGLFlags			HELD_STUN|HELD_CRIPPLE
+
+	WP_CryoNadeFlags	HELD_CRIPPLE
+
+	WP_SonicNadeFlags	HELD_HIGHDAMAGE|HELD_PULL	
+
+	WP_RocketLauncherFlags	HELD_CRIPPLE|HELD_PULL|HELD_STUN
+
+	WP_ClonePistolFlags	HELD_ALTRELOAD
+
+	WP_ThermalFlags		HELD_HIGHDAMAGE
+
+	WP_DetPackFlags		HELD_KNOCKBACK|HELD_KNOCKDOWN
+
+
+	uioverlay_l			"gfx/icons/heavy"
+	uioverlay_r			"gfx/icons/infantry"
+
+	model				"stormie"
+	skin				"mortar"
+	uishader			"models/players/stormie/mb2_icon_mortar"
+
+	isCustomBuild		1
+	mbPoints			25
+
+	c_att_skill_0		MB_ATT_BLASTER
+	c_att_names_0		"E-11 Blaster Rifle"
+	c_att_ranks_0		2,4
+
+	c_att_skill_1		MB_ATT_REPEATER
+	c_att_names_1		"Imperial Heavy Repeater"
+	c_att_ranks_1		10
+	c_att_descs_1		"75% more velocity, 45% less damage, 45% less FP damage,
+50% slower mag reload"
+
+	c_att_skill_2		MB_ATT_REPEATER_NADES
+	c_att_names_2		"> Repeater Blobs"
+	c_att_ranks_2		4,4
+
+	c_att_skill_3		MB_ATT_FRAGS
+	c_att_names_3		"Frag Grenades"
+	c_att_ranks_3		4,4
+
+	c_att_skill_4		MB_ATT_FIRE_GRENADES
+	c_att_names_4		"Fire Grenades"
+	c_att_ranks_4		4,4
+
+	c_att_skill_5		MB_ATT_SONIC_DETONATOR
+	c_att_names_5		"Sonic Imploders"
+	c_att_ranks_5		4,4
+	c_att_descs_5		"Pulls on det, 100% more damage"
+
+	c_att_skill_6		MB_ATT_CRYOBAN_GRENADES
+	c_att_names_6		"Cryo Grenades"
+	c_att_ranks_6		3,3
+	c_att_descs_6		"Slows on det"
+
+	c_att_skill_7		MB_ATT_MICRO_GRENADES
+	c_att_names_7		"V-59 Conc Grenades"
+	c_att_ranks_7		2,2,2
+
+	c_att_skill_8		MB_ATT_DET_PACK
+	c_att_names_8		"Detpacks"
+	c_att_ranks_8		2,0,0
+	c_att_descs_8		"Knocks Down/Back"
+
+	c_att_skill_9		MB_ATT_BASE_TD
+	c_att_names_9		"Thermal Grenades"
+	c_att_ranks_9		2,0,0
+	c_att_descs_9		"100% More Damage"
+
+	c_att_skill_10		MB_ATT_PLX1
+	c_att_names_10		"MiniMag PTL Launcher"
+	c_att_ranks_10		2,4,6
+
+	c_att_skill_11		MB_ATT_ROCKET_LAUNCHER
+	c_att_names_11		"Concussion Launcher"
+	c_att_ranks_11		6
+	c_att_descs_11		"Rocket Launcher, 55%+ Velocity, 65%- Damage, Pulls, Cripples, Staggers"
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_PLX1
+	WeaponBasedOff		WP_ROCKET_LAUNCHER
+	NewWorldModel		"models/weapons2/MiniMag_launcher/launcher_w.glm"
+	NewViewModel		"models/weapons2/MiniMag_launcher/launcher.md3"
+	Icon				"gfx/hud/w_icon_MiniMag"
+	WeaponName			"MiniMag PTL Launcher"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_CLONE_PISTOL
+	WeaponBasedOff		WP_CLONE_PISTOL
+	NewWorldModel		"models/weapons2/se-14c_pistol/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/se-14c_pistol/blaster_pistol.md3"
+	Icon				"gfx/hud/w_icon_se-14c"
+	WeaponName			"SE-14C Blaster Pistol"
+	FlashSound0			"sound/weapons/SE-14c/fire.wav"
+	altFlashSound0		"sound/weapons/SE-14c/fire.wav"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	MuzzleEffect				"Blaster/MuzzleFlash01R"
+	AltMuzzleEffect				"Blaster/MuzzleFlash01R"
+	MissileEffect				"Blaster/Shot02r"
+	Missile3Effect				"Blaster/Shot04r"
+	AltMissileEffect			"Blaster/Shot04r"
+	PowerupShotEffect			"Blaster/Shot04r"
+	ChargeEffect				"gfx/effects/bryarfrontflash"
+	MissileMissEffect			"Blaster/Impact_Wall01"
+	MissileHitHumanEffect		"Blaster/Impact_Wall01"
+	MissileHitDroidEffect		"Blaster/Impact_Wall01"
+	altMissileMissEffect		"Blaster/Impact_Wall01"
+	altMissileHitHumanEffect	"Blaster/Impact_Wall01"
+	altMissileHitDroidEffect	"Blaster/Impact_Wall01"
+	FPMult		1.20
+	ratemod		0.80
+	damagemod	1.20
+	customAmmo			600
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_FRAG_NADE
+	WeaponBasedOff		WP_FRAG_NADE
+	NewWorldModel		"models/weapons2/Stormi_TD/stormiTD_w.glm"
+	NewViewModel		"models/weapons2/Stormi_TD/stormiTD.md3"
+	MissileModel		"models/weapons2/Stormi_TD/stormiTD_proj.md3"
+	AltMissileModel		"models/weapons2/Stormi_TD/stormiTD_proj.md3"
+	altMissileMissEffect	"grenades/EXP_alt"
+	Icon				"gfx/hud/w_icon_StormiTD"
+	WeaponName			"Frag Grenades"
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_REPEATER
+	WeaponBasedOff		WP_REPEATER
+	NewWorldModel		"models/weapons2/heavy_repeater/heavy_repeater_w.glm"
+	NewViewModel		"models/weapons2/heavy_repeater/heavy_repeater.md3"
+	NewHandsModel		"models/weapons2/heavy_repeater/heavy_repeater_hand.md3"
+	NewBarrelModel		"models/weapons2/heavy_repeater/heavy_repeater_barrel.md3"
+	Icon  				"gfx/doom_wpicons/w_icon_repeater"
+	WeaponName			"Imperial Heavy Repeater"
+	MuzzleEffect  		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+	AltFlashSound0		"sound/weapons/repeater/alt_fire_old"
+	AltMissileMissEffect	"repeater/concussion"
+	AltMissileHitHumanEffect	"repeater/concussion"
+	AltMissileHitDroidEffect 	"repeater/concussion"
+	MissileMissEffect			"Blaster/Impact_Wall01"
+	MissileHitHumanEffect		"Blaster/Impact_Wall01"
+	MissileHitDroidEffect		"Blaster/Impact_Wall01"
+	damagemod .55
+	FPmult	.55
+	velocitymod	1.75
+	hasAnimOverrides 1
+	reloadTimeModifier 1.5
+	animReadyRun BOTH_WESTARM5_IDLE
+	animReady BOTH_WESTARM5_IDLE
+	animStand BOTH_STAND1
+}
+
+WeaponInfo4
+{
+	WeaponToReplace		WP_ROCKET_LAUNCHER
+	WeaponBasedOff		WP_ROCKET_LAUNCHER
+	MuzzleEffect		"concussion/altmuzzle_flash"
+	MissileEffect		"concussion/shot"
+	FlashSound0			"sound/weapons/acparray/fire.wav"
+	MissileSound		"sound/weapons/upl/missleloop.wav"
+	MissileMissEffect	"repeater/concussion"
+	MissileHitHumanEffect	"repeater/concussion"
+	MissileHitDroidEffect 	"repeater/concussion"
+	NewWorldModel		"models/weapons2/mwc-35c/model_w.glm"
+	NewViewModel		"models/weapons2/mwc-35c/model.md3"
+	Icon				"gfx/hud/w_icon_mwc-35c"
+	WeaponName			"Concussion Launcher"
+	clipSize			1
+	CustomAmmo			7
+	ReloadTimeModifier	1.4
+	altfireenabled		0
+	velocityMod			1.55
+	damagemod			.35
+	hasAnimOverrides	1
+	animReadyRun		BOTH_WESTARM5_READY
+	animReady			BOTH_WESTARM5_READY
+	animReadyWalk		BOTH_WESTARM5_READY
+	animReadyNoAmmo		BOTH_WESTARM5_ATTACK
+	animAttackRun		BOTH_WESTARM5_ATTACK
+	animAttack			BOTH_WESTARM5_ATTACK
+	animAttackWalk		BOTH_WESTARM5_ATTACK
+	animStand			BOTH_DC15_READY
+}
+
+
+description	"Artillery Stormtrooper
+
+A master of indirect fire and bombardment.
+
+^2Weaponry:
+- Melee
+- SE-14C Blaster Pistol (2)
+-- Based On Clone Pistol
+-- 20% More Damage/FP Drain
+-- 20% Faster RoF
+-- Mag Reload
+- Universal Grenade Launcher
+-- Staggers/Cripples On Hit
+
+
+^8Attributes:
+- 15% less knockback Taken
+- Getup (2)
+- Tracking Beacon
+- Blast Armor"
