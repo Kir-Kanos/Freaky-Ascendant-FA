@@ -1,0 +1,156 @@
+
+ClassInfo
+{
+	name				"stg1_Pilot"
+	MBClass				MB_CLASS_SOLDIER
+	extralives			4
+	classNumberLimit		3
+	weapons				WP_MELEE|WP_SABER|WP_DC_CARBINE|WP_FRAG_NADE
+	WP_DCCarbineFlags		HELD_ALTRELOAD
+	WP_SaberFlags			HELD_CRIPPLE
+	WP_FragNadeFlags		HELD_TRACKING
+	attributes			MB_ATT_DC_CARBINE,1|MB_ATT_AMMO,1|MB_ATT_ASSEMBLE,3|MB_ATT_CCTRAINING,3|MB_ATT_DEXTERITY,1|MB_ATT_SABER_COMBO_NONE|MB_ATT_FRAGS,1|MB_ATT_TRACKING_BEACON|MB_ATT_DODGE,2|MB_ATT_QUICKTHROW,1|MB_ATT_KNOCKDOWN_ROLL
+
+	maxhealth			65
+	maxarmor			25
+
+	basespeed 195
+
+	saber1				Legends_Knife_Spy
+	forcepowers			FP_SABER_OFFENSE,3
+	saberstyle			SS_FAST|SS_TAVION
+	BPmultiplier		0
+	APmultiplier		0.6
+	ASmultiplier		1.15
+	saberDamage			45
+
+	resource			resource_energy
+	forcepool			100
+	forceregen			1.2
+
+	special1			EAS_HI_DODGE
+	special2			EAS_HI_QUICKTHROW
+	special3			EAS_HI_DEX
+	special4			EAS_HI_KICK
+
+	saberStanceAnim		BOTH_SABERDUAL_STANCE
+	gloatAnim			BOTH_VICTORY_FAST
+	flourishanim		BOTH_STAND5TOAIM
+
+	uioverlay			"gfx/icons/infantry"
+	modelscale			1.00
+	
+	model			"leia_esb"
+	skin				"resistance"
+	uishader			"models/players/leia_esb/mb2_icon_resistance"
+
+	model_1			"leia_esb"
+	skin_1			"newrepublic"
+	uishader_1			"models/players/leia_esb/mb2_icon_newrepublic"
+
+	model_2			"poe"
+	skin_2			"abednedo"
+	uishader_2			"models/players/poe/mb2_icon_abednedo"
+
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/vibroknife/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_prisonknife"
+	WeaponName			"Survival Knife"
+}
+
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_DC_CARBINE
+	WeaponBasedOff		WP_DC_CARBINE
+	NewWorldModel		"models/weapons2/Glie-44/Glie-44_w.glm" 
+	NewViewModel		"models/weapons2/Glie-44/Glie-44.md3"
+	Icon				"gfx/hud/w_icon_glie-44" 
+	WeaponName			"Glie-44 Reserve Pistol"
+	FlashSound0			"sound/weapons/Glie-44/fire.wav"
+	FlashSound1			"sound/weapons/Glie-44/fire.wav"
+	FlashSound2			"sound/weapons/Glie-44/fire.wav"
+	FlashSound3			"sound/weapons/Glie-44/fire.wav"
+	FlashSound4			"sound/weapons/Glie-44/fire.wav"
+	FlashSound5			"sound/weapons/Glie-44/fire.wav"
+	MissileEffect			"Blaster/Shot02b"
+	Missile1Effect			"Blaster/Shot02b"
+	Missile2Effect			"Blaster/Shot02b"
+	Missile3Effect			"Blaster/Shot02b"	
+	Missile4Effect			"Blaster/Shot02b"
+	Missile5Effect			"Blaster/Shot02b"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	hasAnimOverrides	1
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+	animReadyNoAmmo		BOTH_PISTOL_IDLE
+	animStand			BOTH_PISTOL_IDLE
+	animReadyRun		BOTH_PISTOL_IDLE
+	animReady			BOTH_PISTOL_IDLE
+	animReadyWalk		BOTH_ATTACK2
+	ratemod	1.1
+	damagemod 1.2
+	clipsize 32
+	FPMult 1.2
+	customAmmo 150
+	reloadTimeModifier 1.4
+}
+
+WeaponInfo2
+{
+	WeaponToReplace	WP_FRAG_NADE
+	WeaponBasedOff	WP_FRAG_NADE
+	NewWorldModel	"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel	"models/weapons/Grenade_Concussion/viewmodel.md3"
+	Icon	"gfx/hud/w_icon_stungrenade"
+	MissileModel	"models/weapons/Grenade_Concussion/proj.md3"
+	MissileMissEffect			"mustafar/volcano1"
+	MissileHitHumanEffect	"mustafar/volcano1"
+	MissileHitDroidEffect	"mustafar/volcano1"
+	Weaponname			"Signal Flare"
+	altfireenabled 0
+	damageMod 0
+	splashRadius 500
+}
+
+
+description	"Alliance Pilot
+
+Agile pilots who rely on their quick-thinking and resilience to survive.
+
+^2Weaponry:
+- Melee
+- Survival Knife (Cyan/Blue Saber)
+-- No Saber/Blaster Block
+-- No Saber Training
+-- Low Damage, Cripples On Hit
+- Glie-44 Reserve Pistol
+-- DC Carbine (1)
+-- Small Clip, Mag Reload
+-- 10%- RoF, 20%+ Damage/FP Drain
+- Signal Flare
+-- Frag Grenade (1)
+-- Large Radius, 99% Less Damage
+-- Tracks On Hit
+
+^8Attributes:
+- Reinforcements (4)
+- Close Combat Training (3)
+- Assemble (3)
+- Tracking Beacon
+- Dexterity (1)
+- Knockdown Roll
+
+^8Abilities:
+- Dex Roll ^3[CS3]
+- Dodge (2) ^3[CS1]
+- Quickthrow (1) ^3[CS2]
+- Gunkick ^3[CS4]"
