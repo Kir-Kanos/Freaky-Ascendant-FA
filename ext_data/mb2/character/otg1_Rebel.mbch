@@ -33,7 +33,7 @@ ClassInfo
 	
 	extralives		4
 	
-		uioverlay 	"gfx/icons/infantry"
+	uioverlay 	"gfx/icons/infantry"
 	model		"rebel" 				 
 	skin		"default"					 
 	uishader	"models/players/rebel/mb2_icon_default"
@@ -43,108 +43,72 @@ ClassInfo
 	uishader_1	"models/players/rebel/mb2_icon_default_tan"
 	
 	model_2		"rebel" 				 
-	skin_2		"newrepublic"					 
-	uishader_2	"models/players/rebel/mb2_icon_newrepublic"
+	skin_2		"rgb"			 
+	uishader_2	"models/players/rebel/mb2_icon_rgb"
+	userRGB_2   	 	1
+	customred_2 		1
+	customgreen_2		1
+	customblue_2 		1 //def w
 	
-	model_3		"rebel" 				 
-	skin_3		"rgb"			 
-	uishader_3	"models/players/rebel/mb2_icon_rgb"
-	userRGB_3 		1
-	customred_3 		1
-	customgreen_3		1
-	customblue_3 		1 //def w
+	model_3		"gwethenea" 				 
+	skin_3		"rebel"					 
+	uishader_3	"models/players/gwethenea/mb2_icon_rebel"
 	
-	model_4		"rebel" 				 
-	skin_4		"Desert"					 
-	uishader_4	"models/players/rebel/mb2_icon_desert"
-	
-	model_5		"gwethenea" 				 
-	skin_5		"rebel"					 
-	uishader_5	"models/players/gwethenea/mb2_icon_rebel"
-	
-	model_6		"gwethenea" 				 
-	skin_6		"rebel_jacket"					 
-	uishader_6	"models/players/gwethenea/mb2_icon_rebel_jacket"	
+	model_4		"gwethenea" 				 
+	skin_4		"rebel_jacket"					 
+	uishader_4	"models/players/gwethenea/mb2_icon_rebel_jacket"	
 
-	model_7		"jedi_hm"
-	skin_7 		"hothelite2"
-	uishader_7 	"models/players/jedi_hm/mb2_icon_hothelite2"	
+	model_5		"jedi_hm"
+	skin_5 		"hothelite2"
+	uishader_5 	"models/players/jedi_hm/mb2_icon_hothelite2"	
 	
-	model_8		"jedi_hm" 				 
-	skin_8		"hothelite4"					 
-	uishader_8	"models/players/jedi_hm/mb2_icon_hothelite4"
+	model_6		"jedi_hm" 				 
+	skin_6		"hothelite4"					 
+	uishader_6	"models/players/jedi_hm/mb2_icon_hothelite4"
 	
-	model_9		"jedi_hf" 				 
-	skin_9		"hoth"					 
-	uishader_9	"models/players/jedi_hf/mb2_icon_hoth"
+	model_7		"jedi_hf" 				 
+	skin_7		"hoth"					 
+	uishader_7	"models/players/jedi_hf/mb2_icon_hoth"
 	
-	model_10	                "jedi_tf" 				 
-	skin_10		"hoth_rgb"					 
-	uishader_10	"models/players/jedi_tf/mb2_icon_hoth_rgb"
-	userRGB_10	1
-	customred_10 0
-	customgreen_10 0.59
-	customblue_10 0.69
+	model_8	                "jedi_tf" 				 
+	skin_8		"hoth_rgb"					 
+	uishader_8	"models/players/jedi_tf/mb2_icon_hoth_rgb"
+	userRGB_8	1
+	customred_8 0
+	customgreen_8 0.59
+	customblue_8 0.69
 	
-	model_11	"jedi_hf" 				 
-	skin_11		"ponytail"					 
-	uishader_11	"models/players/jedi_hf/mb2_icon_ponytail"
-	userRGB_11 		1
+	model_9	"jedi_hf" 				 
+	skin_9		"ponytail"					 
+	uishader_9	"models/players/jedi_hf/mb2_icon_ponytail"
+	userRGB_9 		1
+	customred_9 		1
+	customgreen_9		1
+	customblue_9		1 //def w
+	
+	model_10	"leia_esb"
+	skin_10		"alliance"
+	uishader_10	"models/players/leia_esb/mb2_icon_alliance"
+	userRGB_10 		1
+	customred_10 		0.945
+	customgreen_10	0.510
+	customblue_10 	0.099 //def o
+	
+	model_11	"jedi_tm" 				 
+	skin_11		"citizen"			 
+	uishader_11	"models/players/jedi_tm/mb2_icon_citizen"
+	userRGB_11 	1
 	customred_11 		1
-	customgreen_11		1
-	customblue_11 		1 //def w
+	customgreen_11	1
+	customblue_11 	1 //def w
 	
-	model_12	"rebel_pilot"
-	skin_12		"rgb"
-	uishader_12	"models/players/rebel_pilot/mb2_icon_rgb"
-	userRGB_12		1
-	customred_12 		0.945
-	customgreen_12	0.510
-	customblue_12 	0.099 //def o
+	model_12	"rebel" 				 
+	skin_12		"ishitib"					 
+	uishader_12	"models/players/rebel/mb2_icon_ishitib"
 	
-	model_13	"leia_esb"
-	skin_13		"alliance"
-	uishader_13	"models/players/leia_esb/mb2_icon_alliance"
-	userRGB_13 		1
-	customred_13 		0.945
-	customgreen_13	0.510
-	customblue_13 	0.099 //def o
-	
-	model_14	"rebel_pilot"
-	skin_14		"rgb_sull"
-	uishader_14	"models/players/rebel_pilot/mb2_icon_rgb_sull"
-	userRGB_14 	1
-	customred_14 		0.709
-	customgreen_14	0.12
-	customblue_14 	0.12 //def r
-	
-	model_15 	"leia_esb"
-	skin_15 	"tyria"
-	uishader_15 "models/players/leia_esb/mb2_icon_tyria"
-	
-	model_16	"jedi_tm" 				 
-	skin_16		"citizen"			 
-	uishader_16	"models/players/jedi_tm/mb2_icon_citizen"
-	userRGB_16 	1
-	customred_16 		1
-	customgreen_16	1
-	customblue_16 	1 //def w
-	
-	model_17	"jedi_tf" 				 
-	skin_17		"Diapassik_rgb"					 
-	uishader_17	"models/players/jedi_tf/mb2_icon_diapassik_rgb"
-	userRGB_17 	1
-	customred_17 		1
-	customgreen_17	1
-	customblue_17 	1 //def w
-
-	model_18	"rebel" 				 
-	skin_18		"ishitib"					 
-	uishader_18	"models/players/rebel/mb2_icon_ishitib"
-	
-	model_19	"tholothian" 				 
-	skin_19		"default"					 
-	uishader_19	"models/players/tholothian/mb2_icon_default"
+	model_13	"tholothian" 				 
+	skin_13		"default"					 
+	uishader_13	"models/players/tholothian/mb2_icon_default"
 }
 
 WeaponInfo0
