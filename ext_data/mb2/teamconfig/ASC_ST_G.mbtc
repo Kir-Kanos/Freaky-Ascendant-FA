@@ -22,6 +22,7 @@ SubclassesForClass1
 	Subclass4	"stg2_JanO"
 	Subclass5	"stg2_Lando"
 	Subclass6	"stg2_Iden"
+	Subclass7	"stg1_Pilot"
 }
 
 SubclassesForClass2
