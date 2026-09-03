@@ -38,14 +38,6 @@ ClassInfo
 	skin				"newrepublic"
 	uishader			"models/players/rebel/mb2_icon_newrepublic"
 
-	model_1			"leia_esb"
-	skin_1				"newrepublic"
-	uishader_1			"models/players/leia_esb/mb2_icon_newrepublic"
-	userRGB_1			1
-	customred_1		0.945
-	customgreen_1		0.510
-	customblue_1		0.099 //def o
-
 }
 
 WeaponInfo0
