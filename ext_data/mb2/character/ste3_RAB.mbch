@@ -1,0 +1,183 @@
+ClassInfo
+{
+	name				"ste3_RAB"
+	MBClass				MB_CLASS_BATTLEDROID
+	classNumberLimit	2
+
+	weapons				WP_MELEE|WP_DC_CARBINE|WP_CONC_NADE|WP_FRAG_NADE
+
+	attributes			MB_ATT_DC_CARBINE,1|MB_ATT_AMMO,3|MB_ATT_BLAST_ARMOUR,1|MB_ATT_TRACKING_BEACON,3|MB_ATT_ANTI_MT,2|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_MICRO_GRENADES,4|MB_ATT_FRAG_NADE,3|MB_ATT_CORTOSIS,1|MB_ATT_CCTRAINING,2|MB_ATT_ENV_PROT,1|MB_ATT_RECHARGE,1|MB_ATT_QUICKTHROW,1|MB_ATT_FAKE_WOOKIEE|MB_ATT_BESKAR,3|MB_ATT_PSHIELD|MB_ATT_MAGNETIC_PLATING|MB_ATT_HEALING,3
+
+	WP_DCCarbineFlags		HELD_SLOW|HELD_TRACKING|HELD_ALTRELOAD|HELD_CRIPPLE
+	WP_ConcNadeFlags		HELD_FLASH|HELD_CRIPPLE|HELD_TRACKING
+	WP_FragNadeFlags		HELD_POISON|HELD_SONIC|HELD_CRIPPLE
+	WP_MeleeFlags			HELD_CRIPPLE
+
+	maxhealth			75
+	maxarmor			135
+
+	special1	EAS_HI_QUICKTHROW
+	special2	EAS_HI_QUICKTHROW
+
+	resource			RESOURCE_BATTERY
+	forcepool			75
+
+	classflags			CFL_STRONGAGAINSTPHYSICAL|CFL_BLOODYMELEE|CFL_HEAVYMELEE
+
+	deathAnim			BOTH_SBD_DEATH1
+	meleeknockback_flat	60
+	knockbackTaken		0.60
+
+	basespeed	155
+
+	modelscale			1.08
+
+	model				"RAB-24"
+	skin				"default"
+	uishader			"models/players/RAB-24/mb2_icon_default"
+
+	special1			EAS_HI_QUICKTHROW
+	meleespecial1		EAS_HI_QUICKTHROW
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_DC_CARBINE
+	WeaponBasedOff		WP_DC_CARBINE
+	NewWorldModel		"models/weapons2/DLT-19_HeavyBlaster/model_scope.glm"
+	NewViewModel		"models/weapons2/DLT-19_HeavyBlaster/riflescoped.md3"
+	NewHandsModel		"models/weapons2/DLT-19_HeavyBlaster/riflescoped_hand.md3"
+	Icon				"gfx/hud/w_icon_dlt19scoped"
+	WeaponName			"DLT-19 Targeting Cannon"
+	FlashSound0			"sound/weapons/DLT19/fire.wav"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+	clipsize			200
+	customammo			3000
+	rateMod				0.50
+	damageMod			0.45
+	FPMult				0.40
+	velocitymod			1.15
+	hasAnimOverrides	1
+	animReadyRun		BOTH_ATTACK3
+	animReady		BOTH_ATTACK3
+	animReadyWalk		BOTH_ATTACK3
+	animReadyNoAmmo		BOTH_ATTACK3
+	animAttackRun		BOTH_ATTACK3
+	animAttack		BOTH_ATTACK3
+	animAttackWalk		BOTH_ATTACK3
+	animStand			BOTH_WOOKIEE_RAGE_STAND
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_CONC_NADE
+	WeaponBasedOff		WP_CONC_NADE
+	NewWorldModel		"models/weapons2/thermal/thermal_w.glm"
+	NewViewModel		"models/weapons2/thermal/thermal.md3"
+	NewHandsModel		"models/weapons2/thermal/thermal_hand.md3"
+	Icon				"gfx/hud/w_thermal_grenade"
+	MissileModel		"models/weapons2/thermal/thermal_proj.md3"
+	AltMissileModel		"models/weapons2/thermal/thermal_proj.md3"
+	MissileEffect				"stone/missile1"
+	AltMissileEffect			"stone/missile1"
+	MissileMissEffect			"smokenadeleg/explode_vol"
+	MissileHitHumanEffect		"smokenadeleg/explode_vol"
+	MissileHitDroidEffect		"smokenadeleg/explode_vol"
+	AltMissileMissEffect		"smokenadeleg/explode_vol"
+	AltMissileHitHumanEffect	"smokenadeleg/explode_vol"
+	AltMissileHitDroidEffect	"smokenadeleg/explode_vol"
+	FlashSound0			"sound/weapons/smokenade/select.mp3"
+	AltFlashSound0		"sound/weapons/smokenade/select.mp3"
+	WeaponName			"Smoke Grenade"
+	customammo			4
+	hasAnimOverrides	1
+	animAttackRun		BOTH_THERMAL_THROW2
+	animAttack			BOTH_THERMAL_THROW2
+	animAttackWalk		BOTH_THERMAL_THROW2
+	animReadyRun		BOTH_THERMAL_READY2
+	animReady			BOTH_THERMAL_READY2
+	animReadyWalk		BOTH_THERMAL_READY2
+	damageMod			0.000
+	ratemod				0.3
+	splashRadius		300
+
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_FRAG_NADE
+	WeaponBasedOff		WP_FRAG_NADE
+	NewWorldModel		"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel		"models/map_objects/mp/bacta.md3"
+	NewHandsModel		"models/weapons2/thermal/thermal_hand.md3"
+	Icon				"gfx/hud/w_icon_stungrenade"
+	MissileModel		"models/map_objects/mp/bacta.md3"
+	AltMissileModel		"models/map_objects/mp/bacta.md3"
+	MissileEffect		"sonic_pistol/projectile"
+	MissileMissEffect			"slime_explosion_new"
+	MissileHitHumanEffect	"slime_explosion_new"
+	MissileHitDroidEffect	"slime_explosion_new"
+	AltMissileMissEffect		"slime_explosion_new"
+	AltMissileHitHumanEffect	"slime_explosion_new"
+	AltMissileHitDroidEffect	"slime_explosion_new"
+	FlashSound0			"sound/weapons/smokenade/select.mp3"
+	AltFlashSound0		"sound/weapons/smokenade/select.mp3"
+	WeaponName			"Disorder Grenade"
+	customammo			3
+	hasAnimOverrides	1
+	animAttackRun		BOTH_THERMAL_THROW2
+	animAttack			BOTH_THERMAL_THROW2
+	animAttackWalk		BOTH_THERMAL_THROW2
+	animReadyRun		BOTH_THERMAL_READY2
+	animReady			BOTH_THERMAL_READY2
+	animReadyWalk		BOTH_THERMAL_READY2
+	damageMod			0.5
+	ratemod				0.3
+	splashRadius		300
+}
+
+description	"RAB-24 Imperial Remnant Heavy War Droid
+
+A advanced Imperial Remnant War Droid with high suppression and tracking abilities.
+
+^2Weaponry:
+- Heavy Droid Melee
+-- Cripples On Hit
+-- 60 Flat Knockback On Slap
+- DLT-19 Targeting Cannon (1)
+-- DC Carbine 
+-- 50% More RoF
+-- 60% Less Damage
+-- 65% Less Force Drain
+-- 15% Faster Velocity
+-- Slow Movement
+-- Tracks/Cripples On Hit
+-- Mag Reload
+- Smoke Grenades (4)
+-- 0 Damage
+-- Large Radius, Blinds/Cripples/Tracks
+-- 60% Faster RoF
+- Disorder Grenades (3)
+-- Frag Grenade
+-- 50% Less Damage
+-- Large Radius, Cripples/Poisons/Sonic Shocks
+-- 60% Faster RoF
+
+^8Attributes:
+- Blast Armor 
+- Tank Like Attributes
+- 40% Less Knockback Taken
+- Personal Shield 
+- Cortosis (1)
+- Close Combat Training (2)
+- Environmental Protection (1)
+- Battery Recharge (1)
+- Tracking Beacon
+- Healing (3)
+- Anti-Mind Trick (2)
+- Strength (1)
+
+^8Abilities:
+- Quickthrow (1) ^3[CS1]"
