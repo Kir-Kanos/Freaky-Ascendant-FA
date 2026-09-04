@@ -24,6 +24,7 @@ SubclassesForClass1
 	Subclass6	"ste2_FOSith"
 	Subclass7	"ste2_FOTrooper"
 	Subclass8	"ste2_ImpOfficer"
+	Subclass9	"ste2_Vel"
 
 }
 
