@@ -1,0 +1,226 @@
+ClassInfo
+{
+	name				"ste2_Vel"
+	MBClass				MB_CLASS_BOUNTY_HUNTER
+	classNumberLimit	1
+
+	weapons				WP_MELEE|WP_SABER|WP_THERMAL
+
+	attributes			MB_ATT_HEALING,2|MB_ATT_AMMO,3|MB_ATT_DODGE,3|MB_ATT_BLAST_ARMOUR,1|MB_ATT_TRACKING_BEACON,1|MB_ATT_TRACKING_DART,6|MB_ATT_DEXTERITY,2|MB_ATT_ANTI_MT,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_WRISTLASER,1|MB_ATT_FLAMETHROWER,1|MB_ATT_BASE_TD,2
+
+	WP_ConcNadeFlags		HELD_FLASH|HELD_FLAME
+	AB_TDartFlags			HELD_CRIPPLE|HELD_POISON
+	AB_WLaserFlags			HELD_PULL
+	WP_EE3Flags			HELD_ALTRELOAD|HELD_NODISARM
+	WP_MandoPistolFlags		HELD_NODISARM|HELD_ALTRELOAD
+	WP_RocketLauncherFlags	HELD_NODISARM|HELD_STUN
+	WP_MeleeFlags			HELD_CRIPPLE|HELD_TRACKING
+	WP_SaberFlags			HELD_POISON|HELD_STUN|HELD_CRIPPLE
+	WP_ThermalFlags			HELD_TRACKING|HELD_FLAME|HELD_CRIPPLE|HELD_HIGHDAMAGE
+
+	maxhealth			150
+	maxarmor			45
+	basespeed			235
+
+	resource			RESOURCE_ENERGY
+	forcepool			100
+
+	classflags			CFL_BLOODYMELEE|CFL_SEEING_STEALTH
+
+	saber1				Legends_Knife_Jagged
+	saberstyle			SS_DESANN
+
+	ASMultiplier	1.40
+	BPMultiplier	0
+	CSMultiplier	1.05
+	APMultiplier	.65
+	
+	saberdamage	80
+
+	modelscale			0.98
+	model				"gwethenea"
+	skin				"ailyn_vel"
+	uishader			"models/players/gwethenea/mb2_icon_ailyn_vel"
+
+ 	WalkBackward  BOTH_WALKBACK_DUAL
+ 	WalkForward   BOTH_WALK_DUAL
+
+	special1			EAS_HI_DODGE
+	meleespecial1		EAS_HI_DODGE
+	special2			EAS_HI_FLAME
+	meleespecial2		EAS_HI_FLAME
+	special3			EAS_HI_WRIST
+	meleespecial3		EAS_HI_WRIST
+	special4			EAS_HI_KICK
+	meleespecial4		EAS_HI_TRACKER
+
+	tauntAnim			BOTH_STAND1_TALK3
+	gloatAnim			BOTH_STAND1_TALK1
+	flourishAnim		BOTH_STAND1_TALK2
+
+	isCustomBuild		1
+	mbPoints			5
+
+	c_att_skill_0		MB_ATT_MANDO_PISTOL
+	c_att_names_0		"Mandalorian Heavy Pistol"
+	c_att_ranks_0		2,0,0
+	c_att_descs_0		"WESTAR, 35%+ Damage/FP Drain, 20%+ Velocity, 35%- RoF, Mag Reload"
+
+	c_att_skill_1		MB_ATT_EE3
+	c_att_names_1		"Imposters EE-3 Carbine Rifle"
+	c_att_ranks_1		2,0,0
+	c_att_descs_1		"EE-3, 35%+ RoF, 35%- Damage/FP Drain, 15%+ Velocity, Mag Reload"
+
+	c_att_skill_2		MB_ATT_ROCKET_LAUNCHER
+	c_att_names_2		"Wrist Rockets (2) (RL)"
+	c_att_ranks_2		1
+	c_att_descs_2		"Staggers on det, 70% more velocity, 35% less damage, 170% longer reload"
+
+	c_att_skill_3		MB_ATT_MICRO_GRENADES
+	c_att_names_3		"Rhydonium Flash-Charge"
+	c_att_ranks_3		1,1
+	c_att_descs_3		"Concussion Grenade, Flashes/Ignites"
+
+	c_att_skill_4		MB_ATT_DEXTERITY
+	c_att_names_4		"Dexterity"
+	c_att_ranks_4		0,0,1
+
+	c_att_skill_5		MB_ATT_KNOCKDOWN_ROLL
+	c_att_names_5		"Knockdown Roll"
+	c_att_ranks_5		1
+
+	c_att_skill_6		MB_ATT_FLIPKICK
+	c_att_names_6		"Flipkick"
+	c_att_ranks_6		1,1
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_MANDO_PISTOL
+	WeaponBasedOff		WP_MANDO_PISTOL
+	NewWorldModel		"models/weapons2/kotor_hpistol/kotor_hpistol_w.glm"
+	NewViewModel		"models/weapons2/kotor_hpistol/kotor_hpistol.md3"
+	Icon				"gfx/hud/w_icon_kotor_hpistol_dual"
+	WeaponName			"Mandalorian Heavy Pistol"
+	FlashSound0			"sound/weapons/kotor/fire_hvy.wav"
+	AltFlashSound0		"sound/weapons/kotor/fire_power1.wav"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	MuzzleEffect		"Blaster/MuzzleCharge01R"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot03r"
+	Missile3Effect		"Blaster/Shot03r"
+	AltMissileEffect	"Blaster/Shot03r"
+	PowerupShotEffect	"Blaster/Shot04r"	
+	altMissileMissEffect "Blaster/Impact_Wall01R_E"
+	altMissileHitHumanEffect "Blaster/Impact_Wall01R_E"
+	altMissileHitDroidEffect "Blaster/Impact_Wall01R_E"
+	MissileMissEffect 	"Blaster/Impact_Wall01R_E"
+	ChargeEffect		"gfx/effects/bryarfrontflash"
+	customammo			1500
+	Clipsize			28
+	FPMult				1.35
+	Damagemod			1.35
+	rateMod				1.35
+	velocitymod			1.20
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_CONC_NADE
+	WeaponBasedOff		WP_CONC_NADE
+	NewWorldModel		"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel		"models/map_objects/mp/bacta.md3"
+	MissileModel 		"models/map_objects/mp/bacta.md3"
+	altMissileModel 	"models/map_objects/mp/bacta.md3"
+	Icon				"gfx/hud/w_icon_stungrenade"
+	WeaponName			"Rhydonium Flash-Charge"
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_ROCKET_LAUNCHER
+	WeaponBasedOff		WP_ROCKET_LAUNCHER
+	NewWorldModel		"models/weapons2/dummyblaster/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_wristrocketjango"
+	WeaponName			"Wrist Rockets"
+	clipSize			1
+	CustomAmmo			1
+	velocityMod			1.7
+	damageMod			0.65
+	reloadTimeModifier	2.70
+	altMissileMissEffect		"Grenades/EXP_Alt"
+	altMissileHitHumanEffect	"Grenades/EXP_Alt"
+	altMissileHitDroidEffect	"Grenades/EXP_Alt"
+	altMissileEffect			"rockets/missile"
+	hasAnimOverrides	1
+	animReady			BOTH_JANGO_PISTOL_IDLE
+	animReadyWalk		BOTH_JANGO_PISTOL_IDLE
+	animReadyRun		BOTH_JANGO_PISTOL_IDLE
+	animReadyNoAmmo		BOTH_MAND_PISTOL_IDLE
+	animStand			BOTH_JANGO_PISTOL_IDLE
+	animAttack			BOTH_BLASTER_ATTACK
+	animAttackWalk		BOTH_BLASTER_ATTACK
+	animAttackRun		BOTH_BLASTER_ATTACK
+	animCharge			BOTH_FORCE_DRAIN_START
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_EE3
+	WeaponBasedOff		WP_EE3
+	NewWorldModel		"models/weapons2/ee-3/ee-3_w.glm"
+	NewViewModel		"models/weapons2/ee-3/ee-3.md3"
+	Icon				"gfx/hud/w_icon_ee-3"
+	WeaponName			"Imposters EE-3 Carbine Rifle"
+	MissileEffect		"Blaster/Shot02r"
+	Missile3Effect		"Blaster/Shot02r"
+	AltMissileEffect	"Blaster/Shot02r"
+	customAmmo			1000
+	clipsize			90
+	damageMod			0.65
+	ratemod				0.65
+	FPMult				0.65
+	velocitymod			1.15
+}
+
+WeaponInfo4
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/vibroknife/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_prisonknife"
+	WeaponName			"Venom Coated Vibroknife"
+}
+
+description	"Ailyn Vel
+
+A relentless tracker and bounty hunter, driven by a lifelong vendetta against her father.
+
+^2Weaponry:
+- Melee
+-- Cripples/Tracks On Hit
+- Venom Coated Vibroknife (Purple Style Saber)
+-- Poisons/Cripples/Staggers
+-- No Blaster/Saber Defense
+-- No Blaster Deflect
+- Thermal Grenades (2)
+-- Inflicts Flame/Tracking/Cripple
+-- 100% More Damage
+
+^8Attributes:
+- Blast Armor (1)
+- Healing (2)
+- Dexterity (2)
+- Anti-Mind Trick (1)
+- Strength (1)
+- Force Sense Immunity
+
+^3Abilities:
+- Dodge (3) ^3[CS1]
+- Wrist Grav-Laser (Pulls on hit) ^3[CS3]
+- Wrist Flamethrower ^3[CS2]
+- Inhibitor Darts (Tracking Darts 12) ^3[Melee CS4]
+-- Cripples/Poisons On Hit
+- Gunkick ^3[CS4]"
