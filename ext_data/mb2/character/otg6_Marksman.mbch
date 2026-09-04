@@ -1,0 +1,271 @@
+ClassInfo
+{
+	name				"otg6_Marksman"
+	weapons				WP_MELEE|WP_BLASTER_PISTOL|WP_THERMAL|WP_SABER
+
+	attributes			MB_ATT_AMMO,3|MB_ATT_PISTOL,2|MB_ATT_DEXTERITY,1|MB_ATT_ANTI_MT,1
+
+WP_ProjFlags	HELD_ALTRELOAD
+WP_E22Flags	HELD_ALTRELOAD
+WP_BlasterPistolFlags	HELD_ALTRELOAD
+WP_SaberFlags	HELD_CRIPPLE
+WP_ConcNadeFlags HELD_TRACKING
+WP_TripMineFlags	HELD_POISON|HELD_FLAME|HELD_CRIPPLE|HELD_TRACKING
+AB_TDartFlags	HELD_CRIPPLE
+
+classnumberlimit	2
+
+
+	MBClass				MB_CLASS_ELITETROOPER
+
+	maxhealth			80
+
+	maxArmor			40
+
+	saber1				Legends_Knife_Jagged
+	saberstyle			SS_DESANN
+
+	ASMultiplier	1.3
+	BPMultiplier	0
+	CSMultiplier	1.05
+	APMultiplier	.40
+	
+	saberdamage	60
+
+	basespeed	220
+
+	classflags	CFL_SEEING_STEALTH
+
+	forcepool			100
+	extralives			1.3
+
+	resource			RESOURCE_ENERGY
+
+	special1			EAS_HI_DODGE
+	special2			EAS_HI_DEX
+	special3			EAS_HI_TRACKER
+	special4			EAS_HI_GRAPPLEHOOK
+
+	flourishAnim		TORSO_SURRENDER_START
+
+	model				"rebel_guerilla"
+	skin				"poncho"
+	uishader			"models/players/rebel_guerilla/mb2_icon_poncho"
+
+	model_1				"gwethenea"
+	skin_1				"guerilla"
+	uishader_1			"models/players/gwethenea/mb2_icon_guerilla"
+
+	model_2				"gwethenea"
+	skin_2				"swamp"
+	uishader_2			"models/players/gwethenea/mb2_icon_swamp"
+
+	model_3				"gwethenea"
+	skin_3				"sniper"
+	uishader_3			"models/players/gwethenea/mb2_icon_sniper"
+
+	model_4			"gwethenea"
+	skin_4				"guerilla_twilek"
+	userRGB_4			1
+	customred_4		1
+	customgreen_4		1
+	customblue_4		1
+	uishader_4			"models/players/gwethenea/mb2_icon_guerilla_twilek"
+
+	isCustomBuild		1
+	mbPoints			30
+
+	c_att_skill_0		MB_ATT_PISTOL
+	c_att_names_0		"Recon DL-44 Blaster Pistol"
+	c_att_ranks_0		0,0,4
+
+	c_att_skill_1		MB_ATT_E_22
+	c_att_names_1		"A280 Precision Rifle"
+	c_att_ranks_1		2,2,2
+	c_att_descs_1		"E-22, 30%+ Damage/FP Drain, 35%- RoF, 80%+ Velocity, Mag Reload"
+
+	c_att_skill_2		MB_ATT_PROJECTILE_RIFLE
+	c_att_names_2		"E-17d Sniper Rifle"
+	c_att_ranks_2		8
+	c_att_descs_2		"Proj, 5 Shots, Mag Reload, 80%- RoF, 70%- Damage"
+
+	c_att_skill_3		MB_ATT_TRIP_MINES
+	c_att_names_3		"Dirty Bomb"
+	c_att_ranks_3		2,2
+	c_att_descs_3		"Trip Mine, 50%- Damage, Poisons/Flames/Tracks/Cripples"
+
+	c_att_skill_4		MB_ATT_MICRO_GRENADES
+	c_att_names_4		"Concussion Grenade"
+	c_att_ranks_4		2,4
+	c_att_descs_4		"Tracks On Hit"
+
+	c_att_skill_5		MB_ATT_GRAPPLE_HOOK
+	c_att_names_5		"Grapple Hook"
+	c_att_ranks_5		2,2
+	c_att_descs_5		"^3[CS4 Melee]"
+
+	c_att_skill_6		MB_ATT_TRACKING_DART
+	c_att_names_6		"Tracing Dart"
+	c_att_ranks_6		2,0,0
+	c_att_descs_6		"Tracking Dart, Cripples On Hit ^3[CS3 Melee]"
+
+	c_att_skill_7		MB_ATT_KNOCKDOWN_ROLL
+	c_att_names_7		"Knockdown Roll"
+	c_att_ranks_7		8
+
+	c_att_skill_8		MB_ATT_RESPAWNS
+	c_att_names_8		"Reinforcement"
+	c_att_ranks_8		10
+	c_att_descs_8		"1 default"
+
+	c_att_skill_9		MB_ATT_ASSEMBLE
+	c_att_names_9		"Assemble"
+	c_att_ranks_9		2
+
+	c_att_skill_10		MB_ATT_TRACKING_BEACON
+	c_att_names_10		"Tracking Beacon"
+	c_att_ranks_10		2
+
+	c_att_skill_11		MB_ATT_DODGE
+	c_att_names_11		"Dodge ^3[CS1]"
+	c_att_ranks_11		0,0,2
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_PROJ
+	WeaponBasedOff		WP_PROJ
+	NewWorldModel		"models/weapons2/dlt20a/dlt20a_w.glm"
+	NewViewModel		"models/weapons2/dlt20a/dlt20a.md3"
+	Icon				"gfx/hud/w_icon_dlt20a"
+	WeaponName			"E-17d Sniper Rifle"
+	MuzzleEffect		"Blaster/MuzzleCharge01R"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"blaster/Shot03R"
+	AltMissileEffect 	"blaster/Shot03R"
+	clipsize			5
+	FlashSound0			"sound/weapons/DLT19/fire.wav"
+	AltFlashSound0		"sound/weapons/DLT19/fire.wav"
+	ratemod				1.8
+	fpmult				.3
+	damagemod			.3
+	ReloadTimeModifier	1.6
+	customammo			160
+	altMissileMissEffect "Blaster/Impact_Wall01R_E"
+	altMissileHitHumanEffect "Blaster/Impact_Wall01R_E"
+	altMissileHitDroidEffect "Blaster/Impact_Wall01R_E"
+	MissileMissEffect	"Blaster/Impact_Wall01R_E"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_WESTARM5_RUN1
+	animReady			BOTH_WESTARM5_READY
+	animReadyWalk		BOTH_WESTARM5_READY
+	animReadyNoAmmo		BOTH_WESTARM5_ATTACK
+	animAttackRun		BOTH_WESTARM5_ATTACK
+	animAttack			BOTH_WESTARM5_ATTACK
+	animAttackWalk		BOTH_WESTARM5_SCOPED_ATTACK
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/blaster_three/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/blaster_three/blaster_pistol.md3"
+	Icon				"gfx/hud/w_icon_blaster_pistol_3"
+	FlashSound0			"sound/weapons/han_pistol/alt_fire.mp3"
+	altFlashSound0		"sound/weapons/han_pistol/alt_fire.mp3"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	WeaponName			"Recon DL-44 Blaster Pistol"
+	clipSize			24
+	customAmmo			500
+	damagemod			.95
+	ratemod				1.20
+	velocitymod			2
+	hasAnimOverrides	1	
+	animReadyRun		BOTH_ATTACK2
+	animReady			BOTH_ATTACK2
+	animReadyWalk		BOTH_ATTACK2
+	animReadyNoAmmo		BOTH_ATTACK2
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_E_22
+	WeaponBasedOff		WP_E_22
+	NewWorldModel		"models/weapons2/a280/a280_w.glm"
+	NewViewModel		"models/weapons2/a280/a280.md3"
+	NewHandsModel		"models/weapons2/a280/a280_hand.md3"
+	Icon				"gfx/hud/w_icon_A280"
+	WeaponName			"A280 Precision Rifle"
+	clipSize			45
+	altFlashSound0		"sound/weapons/ee3/sniperfire.mp3"
+	FlashSound0			"sound/weapons/ee3/sniperfire.mp3"
+	altMissileMissEffect "Blaster/Impact_Wall01R_E"
+	altMissileHitHumanEffect "Blaster/Impact_Wall01R_E"
+	altMissileHitDroidEffect "Blaster/Impact_Wall01R_E"
+	MissileMissEffect	"Blaster/Impact_Wall01R_E"
+	MissileEffect		"blaster/Shot01R"
+	AltMissileEffect 	"blaster/Shot01R"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_WESTARM5_RUN1
+	animReady			BOTH_WESTARM5_READY
+	animReadyWalk		BOTH_WESTARM5_READY
+	animReadyNoAmmo		BOTH_WESTARM5_ATTACK
+	animAttackRun		BOTH_WESTARM5_ATTACK
+	animAttack			BOTH_WESTARM5_ATTACK
+	animAttackWalk		BOTH_WESTARM5_SCOPED_ATTACK
+	damagemod			1.30
+	ratemod				1.35
+	velocitymod			1.80
+	fpmult				1.30
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_TRIP_MINE
+	WeaponBasedOff		WP_TRIP_MINE
+	NewWorldModel		"models/weapons2/laser_trap/laser_trap_w.glm"
+	NewViewModel		"models/weapons2/laser_trap/laser_trap.md3"
+	NewHandsModel		"models/weapons2/laser_trap/laser_trap_hand.md3"
+	Icon				"gfx/hud/w_icon_tripmine"
+	WeaponName			"Dirty Bomb"
+	Splashradius		280
+	damagemod			.5
+}
+
+WeaponInfo4
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/vibroknife/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_prisonknife"
+	WeaponName			"Jagged Vibroknife"
+}
+
+
+description "Rebel Marksman
+
+Units suited for long-range combat and ambush operations.
+
+^2Weaponry:
+- Melee
+- Jagged Knife (Purple Style Saber)
+-- No Saber Defense/Blaster Defense
+-- No Blaster Deflect
+-- 60 Damage, Cripples On Hit
+- Recon DL-44 Blaster Pistol (2)
+-- 5% Less Damage
+-- 20% Slower RoF
+-- 100% Faster Velocity
+
+^3Attributes:
+- Reinforcement (1)
+- Sense Immunity (Passive)
+- Mind Trick Resist (1)
+- Dexterity (1)
+
+^8Abilities:
+- Dodge ^3[CS1]
+- Dex Roll ^3[CS2]"
