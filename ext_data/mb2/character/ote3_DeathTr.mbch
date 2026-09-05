@@ -44,10 +44,6 @@ ClassInfo
   skin_1  		"commander"
   uishader_1  	"models/players/deathtrooper/mb2_icon_commander"
   
-  model_2	"deathtrooper"
-  skin_2 "undead"
-  uishader_2	"models/players/deathtrooper/mb2_icon_undead"
-  
   //respawncustomtime 30000
   isCustomBuild 1
   mbPoints 5
