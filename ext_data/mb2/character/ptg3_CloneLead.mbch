@@ -78,10 +78,6 @@ ClassInfo
 	model_10		"clonetrooper_p2"
 	skin_10			"thorn"
 	uishader_10		"models/players/clonetrooper_p2/mb2_icon_thorn"
-	
-	model_11		"clonetrooper_p2"
-	skin_11			"fox"
-	uishader_11		"models/players/clonetrooper_p2/mb2_icon_fox"
 
 	saberStanceAnim		BOTH_STAND9
 	flourishAnim BOTH_SPINATTACK7
