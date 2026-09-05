@@ -38,77 +38,53 @@ ClassInfo
 	skin_3  	"legends"
 	uishader_3  "models/players/rebel_guerilla/mb2_icon_default"
 	
-	model_4		"gwethenea" 				
-	skin_4		"guerilla"					
-	uishader_4	"models/players/gwethenea/mb2_icon_guerilla"
+	model_4 	"rebel_pathfinder"
+	skin_4 	"desert"
+	uishader_4  "models/players/rebel_pathfinder/mb2_icon_desert"
 	
-	model_5		"gwethenea" 				 
-	skin_5		"guerilla_twilek"	
-	userRGB_5 	1
-	customred_5 		1
-	customgreen_5	1
-	customblue_5 	1 //def w				 
-	uishader_5	"models/players/gwethenea/mb2_icon_guerilla_twilek"
+	model_5 	"rebel_guerilla"
+	skin_5  	"sullustan"
+	uishader_5 "models/players/rebel_guerilla/mb2_icon_sullustan"
 	
-	model_6		"gwethenea" 				 
-	skin_6		"swamp"					 
-	uishader_6	"models/players/gwethenea/mb2_icon_swamp"
+	model_6	   "rebel_magma"
+	skin_6  	"sullustan"
+	uishader_6 "models/players/rebel_magma/mb2_icon_sullustan"
 	
-	model_7		"rebel_pathfinder"
-	skin_7 	"desert"
-	uishader_7  "models/players/rebel_pathfinder/mb2_icon_desert"
+	model_7 	"rebel_commando"
+	skin_7  	"bith_desert"
+	uishader_7  "models/players/rebel_commando/mb2_icon_bith_desert"
 	
-	model_8		"rebel_militia"
-	skin_8  	"default"
-	uishader_8  "models/players/rebel_militia/mb2_icon_default"
+	model_8	"rebel_commando"
+	skin_8  	"duros_scarif"
+	uishader_8 "models/players/rebel_commando/mb2_icon_duros_scarif"
 	
-	model_9		"rebel_militiasab"
-	skin_9  	"default"
-	uishader_9  "models/players/rebel_militiasab/mb2_icon_default"
+	model_9	"rebel_commando"
+	skin_9  	"aqualish_scarif"
+	uishader_9 "models/players/rebel_commando/mb2_icon_aqualish_scarif"
 	
-	model_10	"rebel_guerilla"
-	skin_10  	"sullustan"
-	uishader_10 "models/players/rebel_guerilla/mb2_icon_sullustan"
+	model_10	"rebel_commando"
+	skin_10   	"quarren"
+	uishader_10 "models/players/rebel_commando/mb2_icon_quarren"
 	
-	model_11	"rebel_magma"
-	skin_11  	"sullustan"
-	uishader_11 "models/players/rebel_magma/mb2_icon_sullustan"
+	model_11	"rebel_commando"
+	skin_11		"nikto_desert"
+	uishader_11 "models/players/rebel_commando/mb2_icon_nikto_desert"
 	
 	model_12	"rebel_commando"
-	skin_12  	"bith_desert"
-	uishader_12 "models/players/rebel_commando/mb2_icon_bith_desert"
+	skin_12		"gotal_hoth"
+	uishader_12 "models/players/rebel_commando/mb2_icon_gotal_hoth"
 	
 	model_13	"rebel_commando"
-	skin_13  	"duros_scarif"
-	uishader_13 "models/players/rebel_commando/mb2_icon_duros_scarif"
+	skin_13 	"snivvian"
+	uishader_13 "models/players/rebel_commando/mb2_icon_snivvian"
 	
-	model_14	"rebel_commando"
-	skin_14   	"aqualish_scarif"
-	uishader_14 "models/players/rebel_commando/mb2_icon_aqualish_scarif"
+	model_14	"rebel_partisan"
+	skin_14 	"elite"
+	uishader_14 "models/players/rebel_partisan/mb2_icon_elite"
 	
-	model_15	"rebel_commando"
-	skin_15   	"quarren"
-	uishader_15 "models/players/rebel_commando/mb2_icon_quarren"
-	
-	model_16	"rebel_commando"
-	skin_16		"nikto_desert"
-	uishader_16 "models/players/rebel_commando/mb2_icon_nikto_desert"
-	
-	model_17	"rebel_commando"
-	skin_17		"gotal_hoth"
-	uishader_17 "models/players/rebel_commando/mb2_icon_gotal_hoth"
-	
-	model_18	"rebel_commando"
-	skin_18 	"snivvian"
-	uishader_18 "models/players/rebel_commando/mb2_icon_snivvian"
-	
-	model_19	"rebel_partisan"
-	skin_19 	"elite"
-	uishader_19 "models/players/rebel_partisan/mb2_icon_elite"
-	
-	model_20	"rebel_partisan"
-	skin_20 	"default"
-	uishader_20 "models/players/rebel_partisan/mb2_icon_default"
+	model_15	"rebel_partisan"
+	skin_15 	"default"
+	uishader_15 "models/players/rebel_partisan/mb2_icon_default"
 
 	
 	isCustomBuild	1
