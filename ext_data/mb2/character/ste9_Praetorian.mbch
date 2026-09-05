@@ -1,0 +1,143 @@
+
+ClassInfo
+{
+	name				"ste9_Praetorian"
+	MBClass				MB_CLASS_SITH
+	classNumberLimit	3
+	extralives			1
+	weapons				WP_SABER|WP_MELEE
+
+	WP_MeleeFlags			HELD_SPEED|HELD_CRIPPLE
+	WP_SaberFlags			HELD_STUN|HELD_CRIPPLE
+	AB_GHookFlags			HELD_STUN|HELD_CRIPPLE|HELD_FLAME|HELD_PULSE|HELD_PULL
+
+	attributes			MB_ATT_ASSEMBLE,3|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_DEXTERITY,3|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_FLIPKICK,2|MB_ATT_BESKAR,2|MB_ATT_CORTOSIS,1|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,1|MB_ATT_STAMINA,1|MB_ATT_DASH_JUMP|MB_ATT_BUNNY_HOP,1|MB_ATT_FLOAT_HOP|MB_ATT_ENV_PROT,1|MB_ATT_DASH,1|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_GRAPPLE_HOP|MB_ATT_PSHIELD|MB_ATT_WOOKIE_STRENGTH,1
+
+	forcepowers			FP_SABER_OFFENSE,3
+	resource			RESOURCE_ENERGY
+	forcepool			100
+	forceregen			1.04
+
+	saberDamageStyle	SS_STRONG,120|SS_DESANN,100|SS_FAST,65|SS_STAFF,90
+
+	knockbackTaken		0.90
+
+	classflags	CFL_BLOODYMELEE|CFL_BPFREEJUMPS
+
+	maxhealth			80
+	maxarmor			80
+	basespeed			235
+
+	knockb
+
+	special1			EAS_HI_SPRINT
+	special2			EAS_HI_DEX
+	special3			EAS_HI_DASH
+	special4			EAS_HI_GRAPPLEHOOK
+
+	saberDamage			100
+	saberMaxChain		3
+
+	saberstyle1			SS_MEDIUM|SS_DESANN
+	saber1				electro-bisento_asc
+
+	saberstyle_1			SS_FAST|SS_STRONG
+	saber1_1			electro-chain_whip_asc
+
+	saberstyle_2			SS_STRONG|SS_DESANN
+	saber1_2			vibro-voluge_asc
+
+	saberstyle_3			SS_DUAL|SS_DESANN
+	saber1_3			vibro-arbir_blades_asc
+	saber2_3			vibro-arbir_blades_asc
+
+	saberstyle_4			SS_STAFF|SS_STRONG
+	saber1_4			vibro-arbir_blades_staff_asc
+
+	BPmultiplier		1.1
+	APmultiplier		1.1
+	CSmultiplier		1.05
+	ASmultiplier		1.1
+
+	rateoffire_melee	0.90
+
+	modelscale			1.01
+
+	model				"praetorian_guard"
+	skin				"default"
+	uishader			"models/players/praetorian_guard/mb2_icon_default"
+
+	model_1				"praetorian_guard"
+	skin_1				"secondguard"
+	uishader_1			"models/players/praetorian_guard/mb2_icon_secondguard"
+
+	model_2				"praetorian_guard"
+	skin_2				"thirdguard"
+	uishader_2			"models/players/praetorian_guard/mb2_icon_thirdguard"
+
+
+	tauntAnim			BOTH_STAND1_TALK3
+	gloatAnim			BOTH_HEADNOD
+	flourishAnim		BOTH_HEADNOD
+	saberStanceAnim		BOTH_TRIPLE3_STAFFSTANCE
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/dummyblaster/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_forcepike"
+	WeaponName			"Praetorian Melee Weapon"
+	selectSound			"s/w/t/staffswing4.mp3"
+}
+
+
+description	"Praetorian Guard
+
+Elite, highly trained personal bodyguards to Supreme Leader Snoke, equipped with advanced modular melee weaponry and unmatched agility.
+
+^2Weaponry:
+- Melee
+-- Cripples On Hit
+-- Fast Movement
+-- 10% Faster Attack Rate
+- Praetorian Melee Weapon (Various Style Saber)
+-- Bisento (Yellow/Purple)
+-- Chain Whip (Red/Blue)
+-- Voulge (Red/Purple)
+-- Dual Blades (Duals/Purple)
+-- Staff (Staff/Purple)
+-- No Blaster Block/Deflect
+-- Saber Defense (2)
+-- Cripples/Staggers On Hit
+-- BP Free Jumps
+-- Fast Styles Do Less Damage and Vice Versa
+
+^8Attributes:
+- Reinforcement (1)
+- Dexterity (3)
+- Stamina (1)
+- Assemble (3)
+- Knockdown Roll
+- Dash Hop
+- Bunny Hop (1)
+- Slow Faller
+- Strength (1)
+- Personal Shield
+- Blast Armor
+- Cortosis (1)
+- Beskar (2)
+- Anti-Mind Trick (1)
+- Environmental Protection (1)
+- Grapple Hop 
+
+^3Abilities:
+- Sprint (1) ^3[CS1]
+- Flipkick (2) ^3[Contact Jump]
+- Dex Roll ^3[CS2]
+- Dash ^3[CS3]
+- Electro Whip ^3[CS4]
+-- Ignites/Staggers/Cripples/Pulses/Pulls On Hit"
