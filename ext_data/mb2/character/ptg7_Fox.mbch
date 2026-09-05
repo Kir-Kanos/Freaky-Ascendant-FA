@@ -1,0 +1,206 @@
+ClassInfo
+{
+	name				"ptg7_Fox"
+	MBClass				MB_CLASS_CLONETROOPER
+	classNumberLimit	1
+
+	weapons				WP_SABER|WP_MELEE|WP_CLONE_PISTOL|WP_TRIP_MINE|WP_FRAG_NADE
+	
+	WP_FragNadeFlags	HELD_TRACKING|HELD_FLASH|HELD_CRIPPLE
+	WP_TripMineFlags	HELD_TRACKING|HELD_PULSE|HELD_PULL|HELD_FLASH|HELD_CRIPPLE
+	WP_ClonePistolFlags	HELD_ALTRELOAD|HELD_CRIPPLE
+	WP_SaberFlags	HELD_CRIPPLE|HELD_STUN|HELD_TRACKING|HELD_PULSE|HELD_SPEED
+	WP_MeleeFlags	HELD_CRIPPLE|HELD_TRACKING|HELD_SPEED
+	AB_TDartFlags	HELD_CRIPPLE|HELD_PULL
+	AB_GHookFlags	HELD_TRACKING|HELD_PULL|HELD_SLIPPERY|HELD_PULSE
+
+	special1hud	HUD_TRACKINGDART
+	special2hud	HUD_FRAGNADE
+
+	attributes			MB_ATT_RALLY|MB_ATT_CLONE_PISTOL,2|MB_ATT_AMMO,3|MB_ATT_HEALING,2|MB_ATT_BLAST_ARMOUR|MB_ATT_DEXTERITY,1|MB_ATT_QUICKTHROW,3|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_TRIP_MINES,3|MB_ATT_FRAGS,4|MB_ATT_ENEMYSCANNER|MB_ATT_TRACKING_DART,4|MB_ATT_GETUPS,3|MB_ATT_DISP_FORCE,3|MB_ATT_GRAPPLE_HOP|MB_ATT_TRACKING_BEACON|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_ANTI_MT,2
+
+
+	resource			RESOURCE_STAMINA
+	forcepool			150
+	forceregen			1.15
+
+	classflags	CFL_BLOODYMELEE|CFL_STATVIEWER|CFL_STRONGAGAINSTPHYSICAL
+
+	hackrate	.80
+
+	maxhealth			140
+	maxarmor			115
+
+	basespeed 	225
+
+	BPmultiplier		0
+	saber1				soldierbaton_legends
+	saberstyle			SS_DESANN
+	saberDamage			60
+	saberMaxChain		5
+
+	knockbackTaken		0.85
+
+	APMultiplier		1.2
+	ASMultiplier		1.45
+	CSMUltiplier		1.05	
+
+	skilltimermod	2
+
+	special1			EAS_HI_QUICKTHROW
+	special2			EAS_HI_ENEMYSCANNER
+	special3			EAS_HI_KICK
+	meleespecial3			EAS_HI_TRACKER
+	special4			EAS_HI_DEX
+	meleespecial4		EAS_HI_GRAPPLEHOOK
+
+	uioverlay_r			"gfx/icons/heavy"
+	uioverlay_l			"gfx/icons/spec_infantry"
+	modelscale			1.03
+
+	model			"clonetrooper_p2"
+	skin				"fox"
+	uishader			"models/players/clonetrooper_p2/mb2_icon_fox"
+
+
+	saberStanceAnim		BOTH_STAND9
+	flourishAnim		BOTH_SPINATTACK7
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/stunbaton/stun_w.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_soldierbaton"
+	WeaponName			"Overcharged Shock Baton"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_CLONE_PISTOL
+	WeaponBasedOff		WP_CLONE_PISTOL
+	NewWorldModel		"models/weapons2/dc-17/dc-17_w.glm"
+	NewViewModel		"models/weapons2/dc-17/dc-17.md3"
+	NewHandsModel		"models/weapons2/dc-17/dc-17_hand.md3"
+	Icon				"gfx/hud/w_icon_dc-17_dual"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	altMuzzleEffect		"Blaster/MuzzleFlash01B"
+	FlashSound0			"sound/weapons/kotor/fire_hvy.wav"
+	AltFlashSound0		"sound/weapons/kotor/fire_power1.wav"
+	ChargeSound			"sound/weapons/demp2/altCharge.mp3"
+	ChargeEffect		"gfx/effects/cloneFrontFlash"
+	OverchargeEffect	"gfx/effects/cloneFrontFlash"
+	missileEffect		"Blaster/Shot03B"
+	altMissileEffect	"Blaster/Shot03B"
+	Missile3Effect		"Blaster/Shot03B"
+	PowerupShotEffect	"Blaster/Shot04B"
+	WeaponName			"Fox's DC-17 Clone Pistol"
+	clipSize			14
+	customAmmo			1368
+	reloadTimeModifier	1.25
+	velocityMod			1.25
+	damagemod	1.85
+	ratemod		1.20
+	FPmult		1.45
+	hasAnimOverrides	1
+	animReadyRun		BOTH_JANGO_PISTOL_IDLE
+	animReady			BOTH_JANGO_PISTOL_IDLE
+	animReadyWalk		TORSO_WEAPONIDLE2
+	animReadyNoAmmo		BOTH_ATTACK2
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_TRIP_MINE
+	WeaponBasedOff		WP_TRIP_MINE
+	NewWorldModel		"models/weapons2/laser_trap/laser_trap_w.glm"
+	NewViewModel		"models/weapons2/laser_trap/laser_trap.md3"
+	NewHandsModel		"models/weapons2/laser_trap/laser_trap_hand.md3"
+	Icon				"gfx/hud/w_icon_tripmine"
+	WeaponName			"Containment Device"
+	rateMod				0.9
+}
+
+WeaponInfo3
+{	
+	WeaponToReplace	WP_FRAG_NADE
+	WeaponBasedOff	WP_FRAG_NADE
+	NewWorldModel	"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel	"models/weapons/Grenade_Concussion/viewmodel.md3"
+	MissileModel "models/weapons/Grenade_Concussion/proj.md3"
+	altMissileModel "models/weapons/Grenade_Concussion/proj.md3"
+	altMissileMissEffect	"Grenades/EXP_Flash"
+	MissileMissEffect	"Grenades/EXP_Flash"
+	altMissileHitHumanEffect	"Grenades/EXP_Flash"
+	missileHitHumanEffect	"Grenades/EXP_Flash"
+	altMissileHitDroidEffect	"Grenades/EXP_Flash"
+	missileHitDroidEffect	"Grenades/EXP_Flash"
+	Icon	"gfx/hud/w_icon_stungrenade"
+	WeaponName	"Tactical Flash Bang"
+	damagemod 0.000
+	ratemod 0.6
+	Splashradius	275
+	MissileEffect "repeater/projectile"
+	AltMissileEffect "repeater/projectile"
+}
+
+
+
+description	"Commander Fox
+
+A security inclined commander with high synergy with Coruscant Guard and defensive units.
+
+^2Weaponry:
+- Melee
+-- Cripples On Hit
+-- Fast Movement
+- Overcharged Shock-Baton (Purple Style Saber)
+-- No Saber/Blaster Block
+-- No Blaster Deflect
+-- 5 Swing Limit
+-- Cripples/Stuns/Shocks/Tracks
+-- Fast Movement
+- Fox's DC-17 Clone Pistol (2)
+-- 85% More Damage
+-- 45% More FP Drain
+-- 20% Slower RoF
+-- Cripples On Hit
+- Tactical Flash Bang (4)
+-- Frag Grenade
+-- 0 Damage, Large Radius
+-- Flashes/Cripples/Tracks
+- Containment Device (3)
+-- Tripmine
+-- Applies Tracking/Pulse/Pull/Cripple
+-- Blinds Target
+
+^8Attributes:
+- Knockdown Roll
+- Healing (3)
+- Blast Armor
+- Dexterity (1)
+- 100% Slower Cooldowns
+- Security Detail (Stat Viewer)
+- Get Ups (3)
+- Anti MT (2)
+- Grapple Hop
+- Tracking Beacon
+- Melee Resist
+- Rally
+- 15% less knockback taken
+
+^3Abilities:
+- Enemy Scanner ^3[CS2]
+- Quickthrow (3) ^3[CS1]
+- Gunkick ^3[CS3 Weapon]
+- Tether Dart ^3[CS3 Melee]
+-- Tracking Darts, Pulls/Cripples Target
+- Shock Cord (Grapple Hook 2) ^3[CS4 Melee]
+-- Shocks/Pulls/Slips/Tracks
+- Dex Roll ^3[CS4 Weapon]"
