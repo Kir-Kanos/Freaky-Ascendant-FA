@@ -58,7 +58,6 @@ WeaponInfo0
 	MissileEffect		"Blaster/Shot03B"
 	customAmmo			240
 	clipsize			24
-	ammoPerShot			12
 	AltFireEnabled		0
 	damageMod			.25
 	fpmult				.25
