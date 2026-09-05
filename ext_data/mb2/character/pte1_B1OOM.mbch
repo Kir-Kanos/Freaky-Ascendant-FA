@@ -4,7 +4,7 @@ ClassInfo
 {
 	name			"pte1_B1OOM"
 	extralives	2
-	MBClass		MB_CLASS_SOLDIER
+	MBClass		MB_CLASS_BATTLEDROID
 	weapons			WP_MELEE
 
 	classnumberlimit	3
