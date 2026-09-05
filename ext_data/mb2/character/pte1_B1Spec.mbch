@@ -4,7 +4,7 @@ ClassInfo
 {
 	name			"pte1_B1Spec"
 	extralives	1
-	MBClass		MB_CLASS_SOLDIER
+	MBClass		MB_CLASS_BATTLEDROID
 	weapons			WP_MELEE
 	classnumberlimit	3
 	WP_MeleeFlags	HELD_SPEED
