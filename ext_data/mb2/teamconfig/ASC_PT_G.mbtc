@@ -57,6 +57,7 @@ SubclassesForClass4
 	Subclass2	"ptg8_Wreck"
 	Subclass3	"ptg8_Tarfful"
 	Subclass4 	"ptg8_Chewie"
+	Suvclass5	"ptg7_Fox"
 }
 
 SubclassesForClass5
