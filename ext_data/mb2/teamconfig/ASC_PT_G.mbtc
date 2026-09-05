@@ -80,7 +80,9 @@ SubclassesForClass6
 	Subclass1	"ptg10_Obi"
 	Subclass2	"ptg10_PloK"
 	Subclass3	"ptg10_JTradition"
-	Subclass4	"ptg10_JKindredAbs"
-	Subclass5	"ptg10_JKindredProt"
-	Subclass6	"ptg10_JMystic"
+	Subclass4	"ptg10_Tiplar"
+	Subclass5	"ptg10_Tiplee"
+	Subclass6	"ptg10_Luminara"
+	Subclass7	"ptg10_Barriss"
+	Subclass8	"ptg10_JMystic"
 }
