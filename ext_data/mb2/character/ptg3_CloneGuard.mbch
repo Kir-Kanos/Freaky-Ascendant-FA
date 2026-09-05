@@ -4,7 +4,7 @@ ClassInfo
 {
 	name			"ptg3_CloneGuard"
 	weapons		WP_MELEE|WP_SABER
-	attributes	MB_ATT_AMMO,3|MB_ATT_STAMINA,1|MB_ATT_ASSEMBLE,2|MB_ATT_DEXTERITY,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_DEFLECT,0
+	attributes	MB_ATT_AMMO,3|MB_ATT_STAMINA,1|MB_ATT_ASSEMBLE,2|MB_ATT_DEXTERITY,1|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_GUN_DEFENSE,1|MB_ATT_DEFLECT,0|MB_ATT_TRACKING_BEACON
 	
 	MBClass		MB_CLASS_CLONETROOPER
 	WP_SaberFlags HELD_PULSE
@@ -160,7 +160,6 @@ description	"Coruscant Guard
 
 Clone troopers with weaponry designed to stun, detain and disarm criminals.
 
-
 ^2Weaponry:
 - Melee
 - DC-15s Clone Pistol (1)
@@ -168,15 +167,13 @@ Clone troopers with weaponry designed to stun, detain and disarm criminals.
 -- Cyan Style
 -- Saber/Blaster Defense (1)
 
-^6Inventory:
-- Medpac ^3[CS3]
-
 ^8Attributes:
 - Reinforcement (1)
 - 10% less Kb Taken
 - Stamina (3)
 - Assemble (2)
 - Dexterity (1)
+- Tracking Beacon
 
 ^3Abilities:
 - Sprint ^3[CS1]"
