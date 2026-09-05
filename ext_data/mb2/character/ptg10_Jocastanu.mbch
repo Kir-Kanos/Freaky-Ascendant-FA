@@ -1,0 +1,155 @@
+//CONVERTED BY MARSHALL
+//MADE BY AIR
+ClassInfo
+{
+	name			"h10_Jocastanu"
+	MBClass		MB_CLASS_JEDI
+	classNumberLimit	1
+
+	weapons			WP_MELEE|WP_SABER
+
+	WP_SaberFlags HELD_NODISARM
+	WP_ConcussionFlags	HELD_SLOW|HELD_DISRUPTIFY|HELD_FORCEFOCUS
+
+	attributes		MB_ATT_FORCEBLOCK,3|MB_ATT_DEFLECT,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,2|MB_ATT_WOOKIEE_FURY,2
+
+	forcepowers		FP_SABER_OFFENSE,2|FP_LEVITATION,2|FP_PUSH,2|FP_PULL,2|FP_SEE,3|FP_SABERTHROW,2|FP_TELEPATHY,1|MB_ATT_FORCEFOCUS,1
+
+	basespeed	220
+
+	forcepool	140
+	forceregen 	.001
+	resource			RESOURCE_RAGE
+	resourceRegenAmount	1
+	resourceRegenRate	200
+	resourceRegenCap	95
+	
+	roundNPC	"jocastayoungling"
+
+	maxhealth	110
+	 healthRegenAmount 1
+	healthRegenRate 850
+	healthRegenCap	50
+	skilltimermod 2
+	damageGiven 1.1
+
+	saberstyle		SS_DESANN
+	saberDamageStyle SS_DESANN,240
+	rankSaberMaxChain	4
+	saberThrowDamage 50
+	saberSpecialDamage 1.4
+	
+	BPmultiplier	0.9
+	APmultiplier	0.9
+	ASmultiplier 	1.1
+	CSmultiplier	1.1
+ 
+ 	isCustomBuild		1
+	isOnlyOneSpec		1
+	hasCustomSpec		2
+	mbPoints			0
+
+	customSpecName_1	"Librarian"
+	customSpecIcon_1	"gfx/menus/alpha/Icon_Weap_BeskarChest"
+
+	customSpecName_2	"Survivor"
+	customSpecIcon_2	"gfx/menus/alpha/icon_weap_accuracy"
+
+
+	c_att_skill_0		MB_ATT_FP_SUMMON
+	c_att_names_0		"Summon Youngling"
+	c_att_ranks_0		0
+
+	c_att_skill_1		MB_ATT_RALLY
+	c_att_names_1		"Rally"
+	c_att_ranks_1		0
+	
+	c_att_skill_2		MB_ATT_BASESEEKER
+	c_att_names_2		"Seeker Droid"
+	c_att_ranks_2		0
+
+
+	c_att_skill_15	MB_ATT_FP_DARKRAGE	
+	c_att_names_15	"Dark Rage"
+	c_att_ranks_15	0	
+
+	c_att_skill_16	MB_ATT_CONCUSSION	
+	c_att_names_16	"Lightsaber Rifle (Conc R.)"
+	c_att_ranks_16	0,0,0
+	c_att_descs_16	"Heavyweight, Applies focus, Disruptifies, 15% less damage,
+	Altfire only, 4000% longer reload"
+
+	c_att_skill_17	MB_ATT_SABER_MAXCHAIN		
+	c_att_names_17	"Saber Chain Limit (4)"	
+	c_att_ranks_17	0
+	
+ 
+	classflags CFL_NOPICKUPS
+
+	//special1 EAS_FP_SABERTHROW
+	
+	saber1			saber_jocasta
+	sabercolor		4
+
+	uioverlay "gfx/icons/support"
+	model   "JocastaNu"
+	skin		 	"default"
+	uishader  	"models/players/JocastaNu/mb2_icon_default"
+	
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_CONCUSSION
+	WeaponBasedOff		WP_CONCUSSION
+	NewWorldModel		"models/weapons2/beamRIFLE/beamrifle_w.glm"
+	NewViewModel		"models/weapons2/beamRIFLE/model.md3
+	Icon				"gfx/hud/w_icon_beamrifle"
+	WeaponName			"Lightsaber Rifle"
+	
+	CustomAmmo			20
+	clipsize			20
+	
+	primFireEnabled	0
+	
+MissileEffect				"gfx/effects/clone_blob"
+MissileMissEffect			"gfx/effects/clone_blob"
+MissileHitHumanEffect		"gfx/effects/clone_blob"
+MissileHitDroidEffect		"gfx/effects/clone_blob"
+	
+//MissileEffect				"gfx/effects/Blue_B_Bolt"
+//MissileMissEffect			"effects/sparks/spark_nosnd.efx"
+//MissileHitHumanEffect		"effects/sparks/spark_nosnd.efx"
+//MissileHitDroidEffect		"effects/sparks/spark_nosnd.efx"
+
+	damageMod			.85	//64 damage
+	reloadTimeModifier 400
+}
+
+description	"Jocasta Nu
+
+Chief librarian of the jedi temple, a wise leader and a vengeful foe.
+
+^2Weaponry:
+- Melee
+- Lightsaber (Purple)
+-- 20% less damage (240)
+-- Saber Defense (2)
+-- Blaster Defense	(1)
+-- Saber Deflect (3)
+-- 25% more special damage
+-- EX Saber Throw (2) ^3[CS1]
+--- 50% more damage
+
+^5Force Powers:
+- Jump (2)
+- Push (2)
+- Pull (2)
+- Sense (1)
+
+^8Attributes:
+- Fury (2)
+-- Regen: 1/.2s
+-- Healing 1hp/.85s to 50
+- Force Block (3)
+- Force Focus (1)
+- 100% slower skill cooldown"
