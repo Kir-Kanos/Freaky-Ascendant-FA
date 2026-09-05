@@ -1,0 +1,46 @@
+jocastayoungling
+{
+	fullName			"jocastayoungling"
+	playerModel			youngling
+      customSkin        afri2_helmet
+      scale				60
+      weapon            WP_SABER
+      saber 			saber_youngling
+      saberstyle 		1
+      saberstyle 		2
+      saberColor       	random
+      saberRadius       2
+      saberLength       24
+      FP_LEVITATION     2
+      FP_PUSH           1
+	  FP_PULL           1
+      height            52
+	MB_ATT_GUN_DEFENSE 1
+	MB_ATT_DEFLECT 1
+	RESOURCE_FORCE 1
+	forcePowerMax	40
+	Pbchance 10
+	MBchance 1
+	SBchance 0
+	aggression		5
+	aim				4
+	evasion			4
+	intelligence	4
+	move        	2
+	reactions		4
+	rank			commander
+	playerTeam		TEAM_ENEMY 
+	enemyTeam       TEAM_PLAYER
+	health			60
+	earshot       	1024
+	visrange		2048
+	vigilance		0.8
+	hfov			160
+	vfov			160
+	class			CLASS_JEDI
+	yawSpeed		120
+	walkSpeed		80
+	runspeed		140
+	snd				jaden_male
+	noDismember		1
+}
