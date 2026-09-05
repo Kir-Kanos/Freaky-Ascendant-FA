@@ -37,8 +37,8 @@ ClassInfo
 	special1			EAS_HI_DEX
 	special2			EAS_HI_SPAWNER
 	meleespecial2			EAS_HI_POISON
-	special3			EAS_HI_PETCONTROL
-	meleespecial3		EAS_HI_TRACKER
+	special3			EAS_HI_KICK
+	meleespecial3			EAS_HI_TRACKER
 	special4			EAS_HI_CLOAK
 
 
@@ -110,7 +110,7 @@ Twin assassins, agile and dexterious, they see combat more as a dance than as an
 - Endocrine Booster (Stimpack)
 
 ^8Attributes:
-- Seeraa, The Twin Sun
+- Seeraa, The Twin Sun (Pet Viewer/Body Guard)
 - Invisible to Sense
 - Bounty Board (Tracking Beacon)
 - Armor Regen (1)
@@ -126,6 +126,6 @@ Twin assassins, agile and dexterious, they see combat more as a dance than as an
 - Call Seeraa, The Twin Sun ^3[CS2]
 - Poison Darts (6) ^3[Melee CS2]
 - Dex Roll ^3[CS1]
-- Twin Bond (Pet Control) ^3[CS3]
+- Gunkick ^3[CS3 Weapon Out]
 - Tracking Darts (6) ^3[Melee CS3]
 - Gunkick ^3[CS3]"
