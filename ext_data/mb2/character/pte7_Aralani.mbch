@@ -1,0 +1,135 @@
+ClassInfo
+{
+	name				"pte7_Aralani"
+	classNumberLimit	1
+	MBClass				MB_CLASS_SITH
+
+	weapons				WP_BLASTER_PISTOL|WP_MELEE|WP_FRAG_NADE|WP_CRYO_NADE|WP_PULSE_NADE
+
+	attributes			MB_ATT_PISTOL,3|MB_ATT_AMMO,3|MB_ATT_RALLY|MB_ATT_FLIPKICK,1|MB_ATT_FRAGS,2|MB_ATT_CRYOBAN_GRENADES,2|MB_ATT_PULSE_GRENADES,3|MB_ATT_DASH,1|MB_ATT_BLAST_ARMOUR,1|MB_ATT_DISP_FORCE,3|MB_ATT_DISP_BLOCK,3|MB_ATT_USE_DISTANCE,7|MB_ATT_POISON_DART,5|MB_ATT_BACTA_BIG,1|MB_ATT_QUICKTHROW,1|MB_ATT_GETUPS,3|MB_ATT_TRACKING_BEACON|MB_ATT_ANTI_MT,2|MB_ATT_HEALING,1|MB_ATT_DEXTERITY,1|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_ENV_PROT,1
+
+	forcepowers			FP_SEE,2
+
+	classflags			CFL_STATVIEWER
+	AB_PDartFlags		HELD_CRIPPLE|HELD_FORCEFOCUS
+
+	resource			RESOURCE_FORCE
+	forcepool			100
+
+	hackrate			0.75
+
+	maxhealth			120
+	maxarmor			120
+	damageTaken			0.9
+	speed				0.95
+	rateoffire_melee	0.95
+
+	special1HUD			HUD_POISONDART
+	special2HUD			HUD_FRAGNADE
+
+	special1			EAS_HI_DASH
+	meleespecial1		EAS_HI_DASH
+	special2			EAS_HI_KICK
+	meleespecial2		EAS_HI_POISON
+	special3			EAS_HI_MEDPAC_BIG
+	special4			EAS_HI_QUICKTHROW
+
+	WalkForward			BOTH_WALK6
+	WalkBackward		BOTH_WALK6
+	idleanim			BOTH_STAND4
+	gloatanim			BOTH_TALKCOMM1START
+	flourishanim		BOTH_STAND1_TALK1
+
+	uioverlay_r			"gfx/icons/tactician"
+	uioverlay_l			"gfx/icons/medic"
+	modelscale			1.01
+
+	model				"imperial_fml"
+	skin				"aralani"
+	uishader			"models/players/imperial_fml/mb2_icon_aralani"
+}
+
+ForceInfo0
+{
+	ForceToReplace		FP_SEE
+	Icon				"gfx/marvel/spidersense"
+	ForcePowerName		"Tactical Assessment"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_MANDO_PISTOL
+	NewWorldModel		"models/weapons/KYD-21_Pistol/model.glm"
+	NewViewModel		"models/weapons/KYD-21_Pistol/model.md3"
+	FlashSound0			"sound/weapons/spy_pistol/fire.mp3"
+	AltFlashSound0		"sound/weapons/spy_pistol/fire.mp3"
+	Icon				"gfx/hud/w_icon_kyd-21"
+	WeaponName			"Chiss Charric Pistol"
+	customAmmo			700
+	clipSize			21
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	ChargeEffect		"gfx/effects/blueFrontFlash"
+	OverchargeEffect	"Blaster/MuzzleCharge01B"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	altMuzzleEffect		"Blaster/MuzzleFlash01B"
+	PowerupShotEffect	"Blaster/Shot04B"
+	missileEffect		"Blaster/Shot03B"
+	missile3Effect		"Blaster/Shot03B"
+	altMissileEffect	"Blaster/Shot03B"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_ATTACK2
+	animReady			BOTH_ATTACK2
+	animReadyWalk		BOTH_ATTACK2
+	animReadyNoAmmo		BOTH_ATTACK2
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+	animCharge			BOTH_ATTACK2
+	animStand			BOTH_ATTACK2
+	FPMult				1.5
+	velocityMod			1.4
+}
+
+description	"Admiral Ar'alani
+
+A brilliant strategist and commander of the Chiss Expansionary Defense Fleet.
+
+^2Weaponry:
+- Melee
+-- 5% faster RoF
+- Chiss Charric Pistol (3)
+-- 40% Faster Velocity
+-- 50% more FP damage to Jedi
+- Frag Grenades (2)
+- Pulse Grenades (3)
+- Cryoban Grenade (2)
+
+^5Powers:
+- Tactical Assessment (Sense 2)
+
+^6Inventory:
+- Advanced Medpac ^3[CS3]
+
+^8Attributes:
+- Blast Armor
+- Environmental Protection (1)
+- Healing (1)
+- Dexterity (1)
+- Knockdown Roll
+- Tracking Beacon
+- Rally
+- Tactical Acumen (Ally Stat Viewer)
+- Anti-Mind Trick (2)
+- Fast Slicing (25% Faster)
+- Getup (3)
+
+^3Abilities:
+- Enhanced Planning (Resource/Block Dispenser 3) ^3[USE In Melee]
+-- +7 range
+- Dash (1) ^3[CS1]
+- Flipkick (1) ^3[Contact Jump]
+- Gunkick ^3[CS2]
+- Quickthrow (1) ^3[CS4]
+- Chiss Neurotoxin Darts (10) ^3[Melee CS2]
+-- Applies Cripple and Force Focus"
