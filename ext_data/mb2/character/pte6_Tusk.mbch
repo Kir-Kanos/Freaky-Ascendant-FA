@@ -1,40 +1,41 @@
 
 ClassInfo
 {
-	name				"pte6_Tusk"
+	name				"v6_Tusk1"
 	MBClass				MB_CLASS_WOOKIE
 	extralives			1
 	classNumberLimit	4
 
-	weapons				WP_SABER|WP_MELEE|WP_CLONE_PISTOL|WP_PROJ|WP_CONC_NADE
+	weapons				WP_SABER|WP_MELEE|WP_CLONE_PISTOL
+	attributes			MB_ATT_CLONE_PISTOL,3|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_HEALING,1|MB_ATT_SABER_COMBO_NONE|MB_ATT_GETUPS,2|MB_ATT_WOOKIEE_FURY,2
 
-	attributes			MB_ATT_AMMO,3|MB_ATT_CLONE_PISTOL,3|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_MICRO_GRENADES,2|MB_ATT_HEALING,1|MB_ATT_WOOKIEE_FURY,3|MB_ATT_SABER_COMBO_NONE|MB_ATT_GETUPS,2
-
-	forcepowers			FP_SABER_OFFENSE,1
-	forcepool			150
+	forcepowers			
+	forcepool			50
 	resource			RESOURCE_RAGE
-	forceregen			0.01
+	forceregen			.01
 
-	maxhealth			90
-	maxarmor			75
+	maxhealth			200
+	maxarmor			0
 
-	basespeed			232
+	basespeed			225
 
-	WP_ProjFlags		HELD_ALTRELOAD|HELD_STUN
+	WP_ProjFlags		HELD_ALTRELOAD|HELD_STUN|HELD_SLOW
 	WP_ClonePistolFlags	HELD_ALTRELOAD
-	WP_SaberFlags		HELD_SPEED
+	WP_SaberFlags		HELD_CRIPPLE|HELD_POISON|HELD_SPEED
 
 	rageSoundOverride	"sound/chars/tusken/misc/rage.mp3"
 	bargeSoundOverride	"sound/chars/tusken/misc/anger3.mp3"
 
 	APmultiplier		1.2
-	ASmultiplier		1.1
+	CSmultiplier		1.05
+	ASmultiplier		1
 	BPmultiplier		0
 
-	saberDamage			130
+	saberDamage			120
 	saberspecialDamage	2
 
 	meleeMoves			M_UPPERCUT|M_BLOCK|M_FBKICK|M_JUMPKICK|M_KATA|M_KICK|M_LEGSWEEP|M_PUNCH|M_RLKICK
+	
 
 	saber1				Gaffi_legends
 	saber1_1			Gaffi_legends2
@@ -43,11 +44,13 @@ ClassInfo
 
 	flourishAnim		BOTH_VICTORY_FAST
 	gloatAnim			BOTH_TUSKENTAUNT1
+	
+	roundNPC	"Howler"
 
 	modelscale			1.03
-	uioverlay_l			"gfx/icons/scout"
-	uioverlay_c			"gfx/icons/brawler"
-	uioverlay_r			"gfx/icons/infantry"
+	uioverlay_r			"gfx/icons/scout"
+	uioverlay_l			"gfx/icons/brawler"
+	//uioverlay_r			"gfx/icons/infantry"
 
 	model				"tusken_jk3"
 	skin				"default"
@@ -64,11 +67,29 @@ ClassInfo
 	model_3				"tusken_fem_jk3"
 	skin_3				"default"
 	uishader_3			"models/players/tusken_fem_jk3/mb2_icon_default"
+	
+	isCustomBuild		1
+	mbPoints			1
+
+	customSpecName_1	"Raider"
+	customSpecIcon_1	"gfx/menus/alpha/Icon_Weap_Velocity"
+
+
+	c_att_skill_0		MB_ATT_FP_SUMMON
+	c_att_names_0		"Summon Howler"
+	c_att_ranks_0		1,0,0
+
+	c_att_skill_1		MB_ATT_PROJECTILE_RIFLE
+	c_att_names_1		"Tusken Cycler Rifle"
+	c_att_ranks_1		1
+	c_att_descs_1		"Heavyweight, Staggers on hit, 55% slower mag reload, 25% more FP damage"
 
 	special1			EAS_NONE
 	special2			EAS_NONE
 	meleespecial1		EAS_NONE
 	meleespecial2		EAS_NONE
+	meleespecial3		EAS_NONE
+	special4			EAS_FP_SUMMON
 }
 
 WeaponInfo0
@@ -89,16 +110,20 @@ WeaponInfo1
 	NewViewModel		"models/weapons2/dummy/dummy.md3"
 	Icon				"gfx/hud/w_icon_tuskenpistol_dual"
 	altFireEnabled		0
-	WeaponName			"Dual Projectile Pistols"
-	primHitscanShot		1
-	altHitscanShot		1
+	WeaponName			"Dual Slug Pistols"
 	primGore			1
 	altGore				1
-	PrimHitscanTracer	100
-	AltHitscanTracer	100
-	FPMult				0.9
-	CustomAmmo			560
-	clipsize			40
+	damageMod			1.2
+	FPMult				1.3
+	CustomAmmo			700
+	clipsize			22
+	ratemod				1.2
+	velocityMod			1.45
+	AltFireEnabled		0
+	reloadTimeModifier 2.3
+	
+	
+	MissileEffect			"effects/flechette/shot" \\ effects/tusken/shot
 	FlashSound0			"sound/weapons/bar/fire.wav"
 	MuzzleEffect		"halo_pistol/Muzzle_Flash"
 	MissileMissEffect			"tusken/hitwall"
@@ -107,8 +132,6 @@ WeaponInfo1
 	AltMissileHitHumanEffect	"tusken/hit"
 	MissileHitDroidEffect		"tusken/hitwall"
 	AltMissileHitDroidEffect	"tusken/hitwall"
-	damageMod			.85
-	ratemod				0.94
 	hasAnimOverrides	1
 	animReadyRun		BOTH_SABERDUAL_STANCE
 	animReady			BOTH_SABERDUAL_STANCE
@@ -123,29 +146,64 @@ WeaponInfo1
 WeaponInfo2
 {
 	WeaponToReplace		WP_PROJ
-	WeaponBasedOff		WP_DISRUPTOR
+	WeaponBasedOff		WP_PROJ
 	NewWorldModel		"models/weapons2/tusken_sniper/model_w.glm"
 	NewViewModel		"models/weapons2/tusken_sniper/model.md3"
 	FlashSound0			"sound/weapons/tusken_cycler/fire.mp3"
 	Icon				"gfx/hud/w_icon_tuskenSniper"
-	WeaponName			"Tusken Cycler Projectile Rifle"
+	WeaponName			"Tusken Cycler Rifle"
 	altMissileEffect			"tusken/shot"
-	MissileEffect				"tusken/shot"
+	MissileEffect				"effects/flechette/alt_shot"
 	MissileMissEffect			"tusken/hitwall"
 	altMissileMissEffect		"tusken/hitwall"
 	MissileHitHumanEffect		"tusken/hit"
 	AltMissileHitHumanEffect	"tusken/hit"
 	MissileHitDroidEffect		"tusken/hitwall"
 	AltMissileHitDroidEffect	"tusken/hitwall"
-	CustomAmmo			15
+	CustomAmmo			30
 	clipsize			1
-	ReloadTimeModifier	1.35
-	damageMod			.9
+	FPMult				1.25
+	ReloadTimeModifier	1.55
+	damageMod			1
 }
+ForceInfo0
+{
+	ForceToReplace		FP_SUMMON
+	Icon				"Gfx/misc/ring"
+	ForcePowerName		"Beastmasters Whistle"
+	startSound			"sound/chars/tusken/misc/cover3.mp3"
+}
+
+///WeaponInfo3
+///{
+WeaponToReplace  WP_THERMAL
+WeaponBasedOff 	WP_THERMAL
+NewWorldModel  "models/weapons2/thermal/thermal_w.glm"
+NewViewModel  "models/weapons2/thermal/thermal.md3"
+NewHandsModel  "models/weapons2/thermal/thermal_hand.md3"
+
+Icon    "gfx/hud/w_thermal_grenade"
+WeaponName   "Fermented Black Melon"
+
+MissileModel	"models/weapons2/thermal/thermal.md3"
+
+MissileMissEffect	"effects/Grenades/EXP_Gas"
+MissileHitDroidEffect  "slime_explosion_new"
+MissileHitHumanEffect  "slime_explosion_new"
+altMissileMissEffect	"effects/Grenades/EXP_Gas"
+altMissileHitDroidEffect "slime_explosion_new"
+altMissileHitHumanEffect "slime_explosion_new"
+
+primFireEnabled	1
+altFireEnabled	0
+
+damageMod   .2
+SplashRadius  300 //1.5x
+///}
 
 description	"Tusken Raider
 
-Sand people with a unique blend of Melee weapons, slug-based guns, and Wookiee characteristics.
+Sand people with a unique blend of melee, slug-based guns, pet spawning and Wookiee characteristics.
 
 ^2Weaponry:
 - Melee
@@ -153,7 +211,7 @@ Sand people with a unique blend of Melee weapons, slug-based guns, and Wookiee c
 -- No Saber/Blaster Block
 -- No Saber Training
 -- Lightweight
--- 100% more special damage
+-- Cripples & poisons on hit
 > Tusken Gaffi Stick
 -- 14% more AS
 -- 20% more knockback
@@ -161,22 +219,18 @@ Sand people with a unique blend of Melee weapons, slug-based guns, and Wookiee c
 -- 30% longer
 -- 25% more knockback
 -- 7% less AS
-- Dual Projectile Pistols (Clone Pistols 3)
--- Hitscan rounds
--- 6% faster RoF
--- 15% less damage
--- 10% less FP damage
+- Dual Projectile Pistols (Clone Pistol 3)
+-- 5% more DMG
+-- 20% slower RoF
+-- 130% slower reload
+-- 30% more FP drain
+-- 60% more velocity
 -- Mag reload
 -- Primary fire only
-- V-59 Conc Grenades (2)
-- Tusken Cycler Projectile Rifle
--- Staggers on hit
--- 10% less damage
--- 35% slower mag reload
 
 ^8Attributes:
 - Reinforcement (1)
-- Fury (3)
+- Fury (2)
 -- 99% slower decay
 - Getup (2)
 - Strength (1)

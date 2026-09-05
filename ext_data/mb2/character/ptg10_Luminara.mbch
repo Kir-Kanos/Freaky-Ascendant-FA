@@ -1,0 +1,102 @@
+// Air
+ClassInfo
+{
+	name			"h10_Luminara"
+	weapons			WP_MELEE|WP_SABER
+	
+	
+	saberstyle		SS_STRONG
+	WP_SaberFlags 	HELD_NODISARM
+	saberDamageStyle SS_STRONG,500
+	saberSpecialDamage	2
+	saberThrowDamage 50 //149.5% of default but 150% looks better
+	saber1			saber_luminara
+	sabercolor		3
+	
+	
+	forcepowers		FP_LEVITATION,3|FP_PUSH,3|FP_SEE,2|FP_SABERTHROW,2
+	attributes		MB_ATT_FORCEBLOCK,2|MB_ATT_DEFLECT,3|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,1|MB_ATT_FP_SABER_DEFENSE,3
+	
+	basespeed		220
+	
+	BPmultiplier	.85
+	APmultiplier	1.25
+	ASmultiplier 	.95
+	CSmultiplier	1
+	
+	meleeMoves			M_UPPERCUT|M_BLOCK|M_JUMPKICK|M_KICK|M_LEGSWEEP|M_RLKICK
+
+	
+	forcepool	120
+	forceregen .85
+
+	damageGiven 2
+	maxhealth	125
+	
+	skilltimermod 1.4
+	
+	modelscale	1
+	
+	forceregen	1
+	
+	
+	MBClass		MB_CLASS_JEDI
+	classflags CFL_NOPICKUPS
+
+
+	special1	EAS_FP_SABERTHROW
+	special2	EAS_MELEE
+	
+	classNumberLimit	1
+	
+	uioverlay "gfx/icons/support"
+	
+	model		"luminara"
+	skin		"default"
+	uishader	"models/players/luminara/mb2_icon_default"
+}
+
+description	"Master Luminara Unduli
+
+Pros:
+100% more deflect damage
+50% more throw damage
+Red style saber with 500 damage + knockdown
++25% to AP
+High martial arts damage
+High saber special damage
+Sense 3
+Saber Defense 3
+
+Cons:
+Slow movement speed
+Very bad regen
+Blaster defense 1
+40% slower cooldowns
+-15% to BP
+Can't kata/punch
+Only has push
+
+^2Weaponry:
+- Melee
+-- Can't punch/kata
+-- 100% more damage
+- Lightsaber (Red)
+-- Saber Defense (2)
+-- Blaster Defense (1)
+-- Saber Deflect (3)
+--- 200% deflect damage
+-- EX Saber Throw (2) ^3[CS1]
+--- 50% more damage
+-- Slap ^3[CS2]
+
+^5Force Powers:
+- Jump (3)
+- Push (3)
+- Sense (2)
+
+^8Attributes:
+- Healing (1)
+- Force Block (2)
+- Force Focus (2)
+- 40% slower skill cooldown"
