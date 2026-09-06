@@ -1,7 +1,7 @@
 // Air
 ClassInfo
 {
-	name			"h10_Luminara"
+	name			"ptg10_Luminara"
 	weapons			WP_MELEE|WP_SABER
 	
 	
