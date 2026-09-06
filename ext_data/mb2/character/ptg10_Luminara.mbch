@@ -24,9 +24,6 @@ ClassInfo
 	ASmultiplier 	.95
 	CSmultiplier	1
 	
-	meleeMoves			M_UPPERCUT|M_BLOCK|M_JUMPKICK|M_KICK|M_LEGSWEEP|M_RLKICK
-
-	
 	forcepool	120
 	forceregen 1
 
@@ -52,13 +49,21 @@ ClassInfo
 	skin		"default"
 	uishader	"models/players/luminara/mb2_icon_default"
 }
+WeaponInfo0
+{
+    WeaponToReplace        WP_MELEE
+    WeaponBasedOff        WP_MELEE
+    NewWorldModel        "models/weapons2/dummyblaster/model.glm"
+    NewViewModel        "models/weapons2/dummy/dummy.md3"
+    Icon                gfx/hud/w_icon_melee_na.tga
+    WeaponName            "Luminara Melee"
+    damageMod            .5
+}
 
 description	"Master Luminara Unduli
 
 ^2Weaponry:
 - Melee
--- Can't punch/kata
--- 100% more damage
 - Lightsaber (Red)
 -- Saber Defense (2)
 -- Blaster Defense (1)
