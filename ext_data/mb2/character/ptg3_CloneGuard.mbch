@@ -8,7 +8,7 @@ ClassInfo
 	
 	MBClass		MB_CLASS_CLONETROOPER
 	WP_SaberFlags HELD_PULSE
-	WP_EE3Flags HELD_CRIPPLE|HELD_SLOW|HELD_POISON
+	WP_EE3Flags HELD_CRIPPLE|HELD_SLOW
 	WP_SonicNadeFlags HELD_CRIPPLE
 	WP_DetPackFlags HELD_KNOCKDOWN
 	resource RESOURCE_STAMINA
@@ -138,8 +138,6 @@ WeaponInfo2
 	ReloadTimeModifier	1.4
 	customAmmo			396
 	velocityMod			0.5
-	rateMod				0.7
-
 	hasAnimOverrides	1
 	animReadyRun		BOTH_WESTARM5_IDLE
 	animReady			BOTH_WESTARM5_IDLE
