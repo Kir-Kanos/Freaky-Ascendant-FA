@@ -11,7 +11,7 @@ ClassInfo
 	forcepool 50
 	
 	modelscale 1.02
-	classNumberLimit	1
+	classNumberLimit	2
 	extralives		1
 	maxhealth		80
 	maxArmor		80
@@ -44,7 +44,7 @@ NewWorldModel	"models/weapons2/cp-50_repeater/cp-50_repeater_w.glm"
 NewViewModel	"models/weapons2/cp-50_repeater/cp-50_repeater.md3"
 Icon	"gfx/hud/w_icon_cp-50_repeater"
 WeaponName "DP-23 Shotgun"
-clipSize 60
+clipSize 30
 altFireEnabled 0
 Customammo 600
 ReloadTimeModifier 1.2
