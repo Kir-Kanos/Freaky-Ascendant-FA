@@ -11,7 +11,7 @@ ClassInfo
 	forcepool 50
 	
 	modelscale 1.02
-	
+	classNumberLimit	1
 	extralives		1
 	maxhealth		80
 	maxArmor		80
