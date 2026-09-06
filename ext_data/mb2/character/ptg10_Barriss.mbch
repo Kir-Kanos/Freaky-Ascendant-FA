@@ -5,7 +5,7 @@ ClassInfo
 	weapons			WP_MELEE|WP_SABER
 	
 	saberstyle		SS_FAST
-	WP_SaberFlags 	HELD_CRIPPLE|HELD_STUN|HELD_NODISARM
+	WP_SaberFlags 	HELD_CRIPPLE|HELD_NODISARM
 	saberDamageStyle	 SS_FAST,130
 	saberThrowDamage 40
 	saber1			saber_barriss_legends
