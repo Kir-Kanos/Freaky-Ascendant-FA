@@ -1,7 +1,7 @@
 // Air
 ClassInfo
 {
-	name			"h10_Barriss"
+	name			"ptg10_Barriss"
 	weapons			WP_MELEE|WP_SABER
 	
 	saberstyle		SS_FAST
