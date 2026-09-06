@@ -28,7 +28,7 @@ ClassInfo
 
 	
 	forcepool	120
-	forceregen .85
+	forceregen 1
 
 	damageGiven 2
 	maxhealth	125
