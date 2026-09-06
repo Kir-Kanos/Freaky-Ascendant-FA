@@ -1,7 +1,7 @@
 // Air
 ClassInfo
 {
-	name			"h10_Luminara"
+	name			"ptg10_Luminara"
 	weapons			WP_MELEE|WP_SABER
 	
 	
@@ -36,9 +36,6 @@ ClassInfo
 	skilltimermod 1.4
 	
 	modelscale	1
-	
-	forceregen	1
-	
 	
 	MBClass		MB_CLASS_JEDI
 	classflags CFL_NOPICKUPS
