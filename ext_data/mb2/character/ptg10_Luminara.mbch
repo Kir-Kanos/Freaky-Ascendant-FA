@@ -55,25 +55,6 @@ ClassInfo
 
 description	"Master Luminara Unduli
 
-Pros:
-100% more deflect damage
-50% more throw damage
-Red style saber with 500 damage + knockdown
-+25% to AP
-High martial arts damage
-High saber special damage
-Sense 3
-Saber Defense 3
-
-Cons:
-Slow movement speed
-Very bad regen
-Blaster defense 1
-40% slower cooldowns
--15% to BP
-Can't kata/punch
-Only has push
-
 ^2Weaponry:
 - Melee
 -- Can't punch/kata
