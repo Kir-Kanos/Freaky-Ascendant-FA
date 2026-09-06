@@ -46,15 +46,11 @@ ClassInfo
  
  	isCustomBuild		1
 	isOnlyOneSpec		1
-	hasCustomSpec		2
+	hasCustomSpec		1
 	mbPoints			0
 
 	customSpecName_1	"Librarian"
 	customSpecIcon_1	"gfx/menus/alpha/Icon_Weap_BeskarChest"
-
-	customSpecName_2	"Survivor"
-	customSpecIcon_2	"gfx/menus/alpha/icon_weap_accuracy"
-
 
 	c_att_skill_0		MB_ATT_FP_SUMMON
 	c_att_names_0		"Summon Youngling"
@@ -67,21 +63,6 @@ ClassInfo
 	c_att_skill_2		MB_ATT_BASESEEKER
 	c_att_names_2		"Seeker Droid"
 	c_att_ranks_2		0
-
-
-	c_att_skill_15	MB_ATT_FP_DARKRAGE	
-	c_att_names_15	"Dark Rage"
-	c_att_ranks_15	0	
-
-	c_att_skill_16	MB_ATT_CONCUSSION	
-	c_att_names_16	"Lightsaber Rifle (Conc R.)"
-	c_att_ranks_16	0,0,0
-	c_att_descs_16	"Heavyweight, Applies focus, Disruptifies, 15% less damage,
-	Altfire only, 4000% longer reload"
-
-	c_att_skill_17	MB_ATT_SABER_MAXCHAIN		
-	c_att_names_17	"Saber Chain Limit (4)"	
-	c_att_ranks_17	0
 	
  
 	classflags CFL_NOPICKUPS
