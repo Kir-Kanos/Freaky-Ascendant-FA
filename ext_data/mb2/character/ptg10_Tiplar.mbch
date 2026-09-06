@@ -36,11 +36,11 @@ ClassInfo
 
 	uioverlay "gfx/icons/support"
 
-	saber1		tiplee_legends
+	saber		tiplee_legends
 	sabercolor	4
-	model_1 	"tiplee"
-	skin_1		"default"
-	uishader_1	"models/players/tiplee/mb2_icon_default"
+	model 	"tiplee"
+	skin		"default"
+	uishader	"models/players/tiplee/mb2_icon_default"
 
 }
 
