@@ -52,24 +52,6 @@ ClassInfo
 
 description	"Padawan Barriss Offee
 
-Pros:
-Blue style saber that cripples & staggers on hit
-Lights beacon
-Mind trick 2
-Fast movement
-High FP regen
-20% more melee/deflect damage
-+5% to AP/AS/CS
-
-Cons:
-Low FP pool
-40% slower cooldowns
--10% to BP
-Push 1
-Deflect 1
-Sense 1
-Focus 1
-
 ^2Weaponry:
 - Melee
 -- 20% more damage
