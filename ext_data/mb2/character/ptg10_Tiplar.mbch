@@ -3,7 +3,8 @@ ClassInfo
 {
 	name			"ptg10_Tiplar"
 	weapons			WP_MELEE|WP_SABER
-	saberstyle		SS_MEDIUM|SS_FAST
+	saberstyle		SS_FAST
+	saberDamageStyle SS_FAST,130
 	forcepowers		FP_SABER_OFFENSE,1|FP_LEVITATION,3|FP_PUSH,3|FP_PULL,1|FP_PROTECT,1|FP_SEE,1|FP_SABERTHROW,2
 	attributes		MB_ATT_FORCEBLOCK,2|MB_ATT_DEFLECT,2|MB_ATT_FORCEFOCUS,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,1|MB_ATT_LIGHTS_BEACON
 
@@ -13,7 +14,6 @@ ClassInfo
 	APmultiplier	1
 	ASmultiplier 	1.0
 	CSmultiplier	1.05
-	saberDamageStyle SS_FAST,130
 	saberThrowDamage 40
 	forcepool	120
 	forceregen	1.1
