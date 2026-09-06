@@ -10,7 +10,7 @@ ClassInfo
 	WP_PLX1Flags	HELD_PULSE
 	resource RESOURCE_STAMINA
 	forcepool 100
-	
+	classNumberLimit	1
 	modelscale 1.02
 	extralives	1
 	maxhealth	80
