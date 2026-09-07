@@ -45,9 +45,13 @@ knockbackgiven 1.1
 	skilltimermod 1.25
 	
 	special1	EAS_HI_WRIST
+	meleespecial1	EAS_HI_WRIST
 	special2	EAS_HI_BARGE
+	meleespecial2 	EAS_HI_BARGE
 	special3	EAS_HI_STIMPACK
+	meleespecial3	EAS_HI_STIMPACK
 	special4	EAS_HI_GRAPPLEHOOK
+	meleespecial4	EAS_HI_GRAPPLEHOOK
 	
 	resource	RESOURCE_STAMINA
 	
