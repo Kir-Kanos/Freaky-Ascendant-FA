@@ -15,6 +15,8 @@ ClassInfo
 
 	skilltimermod	2
 
+	extralives	1
+
 	resource	RESOURCE_BATTERY
 
 	forcepool	40
@@ -46,12 +48,10 @@ WeaponInfo0
 {
 	WeaponToReplace		WP_SHOTGUN
 	WeaponBasedOff		WP_SHOTGUN
-	NewWorldModel		"models/weapons2/golan_arms/golan_arms_w.glm"
-	NewViewModel		"models/weapons2/golan_arms/golan_arms.md3"
-	NewBarrelModel		"models/weapons2/golan_arms/golan_arms_barrel.md3"
-	NewHandsModel		"models/weapons2/golan_arms/golan_arms_hand.md3"
-	Icon				"gfx/hud/w_icon_golancr1"
-	WeaponName			"FC-1 Flechette Launcher"
+	NewWorldModel		"models/weapons2/sherruck_blaster/sher_rifle_w.glm"
+	NewViewModel		"models/weapons2/sherruck_blaster/sher_rifle.md3"
+	Icon				"gfx/hud/w_icon_sherruck"
+	WeaponName			"FC-2 Electro Launcher"
 	FlashSound0			"sound/weapons/kotor/fire_power1.wav"
 	AltFlashSound0		"sound/weapons/kotor/fire_power1.wav"
 	MuzzleEffect		"Blaster/MuzzleFlash01B"
@@ -95,7 +95,7 @@ Lightning Charged Elite Infantry with strong crowd control and Anti-Jedi Synergy
 -- Pulse/Cripple On Hit
 - Stun Baton (2)
 - SE-14C Blaster Pistol (1)
-- FC-1 Flechette Launcher (2)
+- FC-2 Electro Launcher (2)
 -- Based On Shotgun
 -- Pulses/Stuns On Hit
 -- 15% Slower Movement
@@ -115,6 +115,7 @@ Lightning Charged Elite Infantry with strong crowd control and Anti-Jedi Synergy
 - 100% Slower Cooldowns
 - Blast Armour
 - Magnetic Plating
+- Reinforcements (1)
 
 ^8Abilities:
 - Shockfield Generator ^3[CS1]
