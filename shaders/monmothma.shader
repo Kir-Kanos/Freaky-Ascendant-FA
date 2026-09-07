@@ -1,0 +1,66 @@
+// HERO
+
+// Mon Mothma
+
+models/players/monmothma/mouth_eyes
+{
+	q3map_novertexshadows
+    {
+        map models/players/monmothma/mouth_eyes
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+}
+
+models/players/monmothma/boots_hips
+{
+    {
+        map models/players/monmothma/boots_hips
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map models/players/monmothma/boots_hips_spec
+        blendFunc GL_SRC_ALPHA GL_ONE
+        glow
+        detail
+        alphaGen lightingSpecular
+    }
+}
+
+models/players/monmothma/dress
+{
+    {
+        map models/players/monmothma/dress
+        blendFunc GL_ONE GL_ZERO
+        rgbGen lightingDiffuse
+    }
+    {
+        map models/players/monmothma/dress_spec
+        blendFunc GL_SRC_ALPHA GL_ONE
+        glow
+        detail
+        alphaGen lightingSpecular
+    }
+}
+
+models/players/monmothma/dress_rgb
+{
+    {
+        map models/players/monmothma/dress_rgb
+        rgbGen lightingDiffuseEntity
+    }
+    {
+        map models/players/monmothma/dress_rgb
+        blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+        detail
+        rgbGen lightingDiffuse
+    }
+    {
+        map models/players/monmothma/dress_spec
+        blendFunc GL_SRC_ALPHA GL_ONE
+        glow
+        detail
+        alphaGen lightingSpecular
+    }
+}
