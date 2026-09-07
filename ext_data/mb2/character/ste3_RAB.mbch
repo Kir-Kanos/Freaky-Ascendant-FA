@@ -56,8 +56,8 @@ WeaponInfo0
 	clipsize			200
 	customammo			3000
 	rateMod				0.50
-	damageMod			0.45
-	FPMult				0.40
+	damageMod			0.55
+	FPMult				0.55
 	velocitymod			1.15
 	hasAnimOverrides	1
 	animReadyRun		BOTH_ATTACK3
@@ -149,8 +149,8 @@ A advanced Imperial Remnant War Droid with high suppression and tracking abiliti
 - DLT-19 Targeting Cannon (1)
 -- DC Carbine 
 -- 50% More RoF
--- 60% Less Damage
--- 65% Less Force Drain
+-- 45% Less Damage
+-- 45% Less Force Drain
 -- 15% Faster Velocity
 -- Slow Movement
 -- Tracks/Cripples On Hit
