@@ -15,6 +15,7 @@ electro-bisento_asc
 	idleInBack		1
 	noManualDeactivate	1
 	throwable		0
+	blasterblocking		0
 
 	bounceOnWalls	1
 	noManualDeactivate	1
@@ -69,6 +70,7 @@ electro-chain_whip_asc
 	idleInBack		1
 	noManualDeactivate	1
 	throwable		0
+	blasterblocking		0
 
 	soundOn			"sound/weapons/sword/draw1.wav"
 	soundLoop		"sound/weapons/baton/idle.wav"
@@ -112,6 +114,7 @@ vibro-voluge_asc
 	idleInBack		1
 	noManualDeactivate	1
 	throwable		0
+	blasterblocking		0
 
 	soundOn			"sound/weapons/sword/draw1.wav"
 	soundLoop		"sound/weapons/baton/idle.wav"
@@ -155,6 +158,7 @@ vibro-arbir_blades_asc
 	idleInBack		1
 	noManualDeactivate	1
 	throwable		0
+	blasterblocking		0
 
 	soundOn			"sound/weapons/sword/draw1.wav"
 	soundLoop		"sound/weapons/baton/idle.wav"
@@ -199,6 +203,7 @@ vibro-arbir_blades_staff_asc
 	idleInBack		1
 	noManualDeactivate	1
 	throwable		0
+	blasterblocking		0
 
 	soundOn			"sound/weapons/sword/draw1.wav"
 	soundLoop		"sound/weapons/baton/idle.wav"
