@@ -8,7 +8,7 @@ ClassInfo
 
 forcepowers	FP_RAGE,3
 
-	classnumberlimit	 2
+	classnumberlimit	 3
 	
 	MBClass		MB_CLASS_BOUNTY_HUNTER
 	
@@ -46,10 +46,6 @@ forcepowers	FP_RAGE,3
 model     "stormie_tfa"
 skin      "sith"
 uishader  "models/players/stormie_tfa/mb2_icon_sith"
-
-model_1	"trosguard"
-skin_1	"default"
-uishader_1	"models/players/trosguard/mb2_icon_default"
 
 }
 WeaponInfo0
