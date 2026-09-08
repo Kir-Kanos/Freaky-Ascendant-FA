@@ -1,0 +1,152 @@
+ClassInfo
+{
+	name				"ste8_Cardinal"
+	classNumberLimit	1
+	MBClass				MB_CLASS_ARCTROOPER
+
+	weapons				WP_MELEE|WP_BLASTER_PISTOL|WP_DC_CARBINE|WP_FRAG_NADE|WP_FIRE_NADE
+
+	attributes			MB_ATT_PISTOL,1|MB_ATT_AMMO,3|MB_ATT_RALLY,1|MB_ATT_DC_CARBINE,1|MB_ATT_STAMINA,2|MB_ATT_DEXTERITY,2|MB_ATT_HEALING,2|MB_ATT_FRAGS,1|MB_ATT_FIRE_GRENADES,1|MB_ATT_BLAST_ARMOUR|MB_ATT_BARGE,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_DISP_BLOCK,2|MB_ATT_DISP_FORCE,2|MB_ATT_FLIPKICK,1|MB_ATT_KNOCKDOWN_ROLL
+
+	maxhealth			125
+	maxarmor			125
+
+	basespeed	180
+
+	damageTaken			0.95
+	rateoffire_melee	0.9
+
+	resource			RESOURCE_STAMINA
+	forcepool			125
+
+	special1HUD			HUD_FRAGNADE
+	special2HUD			HUD_FIRENADE
+
+	classflags			CFL_HEAVYMELEE|CFL_BLOODYMELEE|CFL_STATVIEWER|CFL_STRONGAGAINSTPHYSICAL
+
+	model				"stormie_tfa"
+	skin				"cardinal"
+	uishader			"models/players/stormie_tfa/mb2_icon_cardinal"
+	modelscale			1.12
+
+	bargeSoundOverride	"sound/chars/stormie_tfa/misc/taunt4.mp3"
+
+	special1			EAS_HI_SPRINT
+	special2			EAS_HI_DEX
+	special3			EAS_HI_BARGE
+	special4			EAS_HI_GRAPPLEHOOK
+
+	WP_DCCarbineFlags	HELD_ALTRELOAD
+	WP_MeleeFlags		HELD_CRIPPLE|HELD_SPEED
+
+	RunForward			BOTH_WOOKIEE_RAGE_RUN
+	WalkBackward		BOTH_WALKBACK_DUAL
+	WalkForward			BOTH_WALK_DUAL
+
+	knockbackgiven		1.1
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/SE-44C/se-44c_phasma_w.glm"
+	NewViewModel		"models/weapons2/SE-44C/se-44c_phasma.md3"
+	Icon				"gfx/hud/w_icon_se-44c_p"
+	WeaponName			"SE-44C Blaster Pistol"
+	FlashSound0			"sound/weapons/se-44c/fire.wav"
+	AltFlashSound0		"sound/weapons/se-44c/alt_fire.wav"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	clipSize			6
+	ReloadTimeModifier	2
+	customammo			600
+	FPMult				1.15
+	damageMod			1.15
+	rateMod				0.6
+	hasAnimOverrides	1
+	animReadyRun		TORSO_WEAPONIDLE2
+	animReady			BOTH_ATTACK2
+	animReadyWalk		TORSO_WEAPONIDLE2
+	animReadyNoAmmo		BOTH_ATTACK2
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_DC_CARBINE
+	WeaponBasedOff		WP_DC_CARBINE
+	NewWorldModel		"models/weapons2/f11d_blaster/F11D_Phasma_W.glm"
+	NewViewModel		"models/weapons2/f11d_blaster/F11D_Phasma.md3"
+	Icon				"gfx/hud/w_icon_f11_p"
+	WeaponName			"F-11D Blaster Rifle"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01R"
+	AltMissileEffect	"Blaster/Shot01R"
+	FlashSound0			"sound/weapons/f-11d/fire.mp3"
+	FlashSound1			"sound/weapons/f-11d/fire.mp3"
+	FlashSound2			"sound/weapons/f-11d/fire.mp3"
+	FlashSound3			"sound/weapons/f-11d/fire.mp3"
+	AltFlashSound0		"sound/weapons/f-11d/fire.mp3"
+	AltFlashSound1		"sound/weapons/f-11d/fire.mp3"
+	AltFlashSound2		"sound/weapons/f-11d/fire.mp3"
+	AltFlashSound3		"sound/weapons/f-11d/fire.mp3"
+	customAmmo			1500
+	clipSize			30
+	ReloadTimeModifier	1.4
+	rateMod				0.6
+	damageMod			0.65
+	fpmult				0.65
+	hasAnimOverrides	1
+	animReady			TORSO_WEAPONIDLE3
+	animReadyRun		TORSO_WEAPONIDLE3
+	animReadyWalk		TORSO_WEAPONREADY3
+	animReadyNoAmmo		BOTH_ATTACK3
+	animAttack			BOTH_ATTACK3
+	animAttackRun		BOTH_ATTACK3
+	animAttackWalk		BOTH_ATTACK3
+	animStand			BOTH_STAND1
+}
+
+description	"Captain Cardinal
+
+Crimson Armored CQC Instructor with rush down potential.
+
+^2Weaponry:
+- Heavy Melee
+-- 10% faster RoF
+-- Fast Movement
+-- Cripples On Hit
+- SE-44C Blaster Pistol (1)
+-- 40% faster RoF
+-- 15% more damage/FP damage
+-- 100% slower reload
+- F-11D Blaster Rifle (DC Carb 1)
+-- 40% faster RoF
+-- 35% less damage/FP damage
+-- 30 Shot Clip
+-- 40% slower mag reload
+- Frag Grenade (1)
+- Fire Grenade (1)
+
+^8Attributes:
+- Strength (2)
+- Stamina (3)
+- Dexterity (2)
+- Blast Armor
+- Barge
+- Knockdown Roll
+- Melee Resist
+- Healing (2)
+- Stat Viewer
+- Rally
+- 10% more knockback given
+
+^3Abilities:
+- Sprint (3) ^3[CS1]
+- Dex Roll ^3[CS2]
+- Grapple Hook (2) ^3[CS4]
+- Flipkick (1) ^3[Contact Jump]
+- Instruct (Force/Resource Dispenser 2) ^3[USE In Melee]"
