@@ -1,0 +1,135 @@
+ClassInfo
+{
+	name				"ste3_SovProt"
+	MBClass				MB_CLASS_ELITETROOPER
+	classNumberLimit	2
+	extralives			1
+	weapons				WP_MELEE|WP_E_22|WP_DC_CARBINE
+
+	WP_E22Flags			HELD_ALTRELOAD
+	WP_DCCarbineFlags		HELD_ALTRELOAD
+	WP_MeleeFlags			HELD_CRIPPLE
+
+	attributes			MB_ATT_KNOCKDOWN_ROLL|MB_ATT_ASSEMBLE,3|MB_ATT_DC_CARBINE,1|MB_ATT_E_22,1|MB_ATT_AMMO,3|MB_ATT_BLAST_ARMOUR,1|MB_ATT_MAGNETIC_PLATING,1|MB_ATT_ENV_PROT,1|MB_ATT_CORTOSIS,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_ANTI_MT,1|MB_ATT_DODGE,3|MB_ATT_FORCEFIELD|MB_ATT_TRACKING_BEACON|MB_ATT_BESKAR,2
+
+	classflags	CFL_STRONGAGAINSTPHYSICAL
+
+	resource			RESOURCE_STAMINA
+	forcepool			100
+	forceregen			1.00
+
+	maxhealth			80
+	maxarmor			80
+	speed				0.90
+
+	rateoffire_melee	0.90
+
+	modelscale			1.06
+	uioverlay_r			"gfx/icons/hybrid"
+
+	model	"trosguard"
+	skin	"default"
+	uishader "models/players/trosguard/mb2_icon_default"
+
+	tauntAnim			BOTH_STAND1_TALK3
+	gloatAnim			BOTH_HEADNOD
+	flourishAnim		BOTH_HEADNOD
+
+	special1	EAS_HI_DODGE
+	special4	EAS_HI_SHIELD
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_E_22
+	WeaponBasedOff		WP_E_22
+	NewWorldModel		"models/weapons2/kotor_brifle1/kotor_brifle1_w.glm"
+	NewViewModel		"models/weapons2/kotor_brifle1/kotor_brifle1.md3"
+	Icon				"gfx/hud/w_icon_kotor_brifle1"
+	WeaponName			"SP-C10 Blaster Carbine"
+	MissileEffect		"blaster/Shot03R"
+	AltMissileEffect	"blaster/Shot03R"
+	FlashSound0			"sound/weapons/dc17m/fire.wav"
+	AltFlashSound0		"sound/weapons/dc17m/alt_fire.wav"
+	SelectSound			"sound/weapons/dc17m/select.mp3"
+	clipsize	20
+	damagemod	1.1
+	ratemod		.5
+	velocitymod	1.25
+	fpmult		1.1
+	hasAnimOverrides	1
+	animReadyRun		BOTH_WESTARM5_RUN1
+	animReadyWalk		BOTH_WESTARM5_READY
+	animReady			BOTH_WESTARM5_READY
+	animAttackRun		BOTH_ATTACK4
+	animAttack			BOTH_ATTACK4
+	animAttackWalk		BOTH_ATTACK4
+	animStand			BOTH_WESTARM5_READY
+
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_DC_CARBINE
+	WeaponBasedOff		WP_DC_CARBINE
+	NewWorldModel		"models/weapons2/SE-44C/se-44c_phasma_w.glm"
+	NewViewModel		"models/weapons2/SE-44C/se-44c_phasma.md3"
+	Icon				"gfx/hud/w_icon_se-44c_p"
+	WeaponName			"SE-44C Spread Pistol"
+	FlashSound0			"sound/weapons/kotor/fire_hvy.wav"
+	Clipsize	10
+	damagemod	.75
+	ratemod		.005
+	fpmult		.75
+	velocitymod	1.40
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect			"blaster/Shot02R"
+	hasAnimOverrides	1
+	animReadyRun		TORSO_WEAPONIDLE2
+	animReady			TORSO_WEAPONIDLE2
+	animReadyWalk		TORSO_WEAPONIDLE2
+	animReadyNoAmmo		BOTH_ATTACK2
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+}
+
+description	"Sovereign Protector
+
+Elite Vanguards with high resistances and powerful weaponry.
+
+^2Weaponry:
+- Melee
+-- Cripples on hit
+-- 10% faster RoF
+- SP-C10 Blaster Carbine (E-22) (1)
+-- Mag Reload
+-- +30% Damage/FP Drain
+-- +30% Velocity
+-- +50% RoF
+-- Small Clipsize
+- SE-44C Auto Pistol (DC Carbine) (1)
+-- Mag Reload
+-- +99.95 RoF
+-- +40 Velocity
+-- -25% Damage/FP Drain
+-- Small Mag Size
+
+^8Attributes:
+- Reinforcement (1)
+- Beskar Armor (2)
+- Cortosis Armor (1)
+- Strength (1)
+- Blast Armor
+- Magnetic Plating
+- Environmental Protection (1)
+- Melee Resist
+- Anti-Mind Trick (1)
+- Tracking Beacon
+- Assemble (3)
+- Knockdown Roll
+
+^8Abilities:
+- Dodge (3) ^3[CS1]
+- Forcefield ^3[CS4]"
