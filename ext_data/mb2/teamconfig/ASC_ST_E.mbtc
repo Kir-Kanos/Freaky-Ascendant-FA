@@ -7,7 +7,7 @@ EUAllowed 0
 Classes
 {
 	class1	"ste1_ImpWorker"
-	class2	"ste3_FOMarsh"
+	class2	"ste3_FOHeavy"
 	class3	"ste4_CarnorJax"
 	class4	"ste6_ScoutTr"
 	class5	"ste9_Reborn"
@@ -34,8 +34,7 @@ SubclassesForClass2
 	Subclass2	"ste3_HeavyRemn"
 	Subclass3	"ste3_Peridea"
 	Subclass4	"ste3_Trando"
-	Subclass5	"ste3_FOHeavy"
-	Subclass6	"ste3_RAB"
+	Subclass5	"ste3_RAB"
 
 }
 
@@ -44,6 +43,7 @@ SubclassesForClass3
 	Subclass1	"ste5_JumpTr"
 	Subclass2	"ste5_ImpArmCom"
 	Subclass3	"ste5_P3DarkTr"
+	Subclass4	"ste4_Phasma"
 
 }
 
@@ -62,6 +62,8 @@ SubclassesForClass4
 	Subclass11	"ste8_GamoPig"
 	Subclass12	"ste8_BlackK"
 	Subclass13	"ste7_Noghri"
+	Subclass14	"ste7_Pyre"
+	Subclass15	"ste8_Cardinal"
 
 }
 
