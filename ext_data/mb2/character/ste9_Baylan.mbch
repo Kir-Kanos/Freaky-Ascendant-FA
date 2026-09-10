@@ -1,0 +1,95 @@
+ClassInfo
+{
+	name				"ste9_Baylan"
+	MBClass				MB_CLASS_SITH
+	classNumberLimit	1
+	weapons				WP_SABER|WP_MELEE
+
+	saber1				saber_baylan_asc
+	sabercolor			1
+	saberstyle			SS_MEDIUM|SS_STRONG
+
+	attributes			MB_ATT_FORCEBLOCK,3|MB_ATT_DEFLECT,3|MB_ATT_GUN_DEFENSE,2|MB_ATT_FORCEFOCUS,2|MB_ATT_CORTOSIS,1|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_ENV_PROT,1|MB_ATT_ANTI_MT,2|MB_ATT_BLAST_ARMOUR|MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_BESKAR,1
+
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+
+	forcepowers			FP_SABER_OFFENSE,3|FP_SABER_DEFENSE,3|FP_LEVITATION,1|FP_PUSH,3|FP_PULL,3|FP_SEE,2|FP_PROTECT,1|FP_SABERTHROW,2
+
+	classflags	CFL_STATVIEWER|CFL_STRONGAGAINSTPHYSICAL
+
+	WP_SaberFlags	HELD_STUN|HELD_CRIPPLE
+
+	resource			RESOURCE_FORCE
+	forcepool			130
+	forceregen			1.25
+
+	APMultiplier	1.30
+	ASMultiplier	1.10
+	CSMultiplier	1.10
+	BPMultiplier	1.25	
+
+	sabermaxchain	2
+
+	knockbacktaken		0.8
+	knockbackgiven		1.40
+
+	maxhealth			140
+	maxarmor			60
+
+	speed				0.95
+
+	modelscale			1.11
+
+	saberStanceAnim	BOTH_TRIPLE3_YELLOWSTANCE
+
+	model				"baylanskoll"
+	skin				"default"
+	uishader			"models/players/baylanskoll/mb2_icon_default"
+
+	model_1				"baylanskoll"
+	skin_1				"cloak"
+	uishader_1			"models/players/baylanskoll/mb2_icon_cloak"
+
+	model_2				"baylanskoll"
+	skin_2				"hood"
+	uishader_2			"models/players/baylanskoll/mb2_icon_hood"
+}
+
+description	"Baylan Skoll
+
+An imposing Dark Jedi with heavy hitting and focused strikes.
+
+^2Weaponry:
+- Lightsaber (Red/Yellow Style)
+-- Saber Defense (3) 
+-- Blaster Defense (2)
+-- Blaster Deflect (3)
+-- Saber Throw (2)
+-- Cripples/Staggers On Hit
+-- 2 Swing Limit
+-- 15% Longer Length
+
+^5Powers:
+- Push (3)
+- Pull (3)
+- Jump (1)
+- Sense (2)
+- Protect (1)
+
+^8Attributes:
+- Cortosis (1)
+- 20% Less Knockback Taken
+- 40% More Knockback Given
+- Melee Resist
+- Force Block (3)
+- Healing Capped At 35
+- Anti MT (2)
+- Strength (2)
+- Stat Viewer
+- Beskar (1)
+- Environmental Protection (1)
+- Blast Armor
+- Force Focus (2)
+- Knockdown Roll"
