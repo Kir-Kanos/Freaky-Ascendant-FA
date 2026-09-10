@@ -1,0 +1,76 @@
+ClassInfo
+{
+	name				"ste10_Snoke"
+	MBClass				MB_CLASS_SITH
+	classNumberLimit	1
+	weapons				WP_MELEE
+
+	attributes			MB_ATT_FORCEBLOCK,5|MB_ATT_RALLY,1|MB_ATT_FP_REPULSE|MB_ATT_HEALING,3|MB_ATT_BLAST_ARMOUR|MB_ATT_LIGHTS_BEACON|MB_ATT_USE_DISTANCE,10|MB_ATT_ENV_PROT,1|MB_ATT_ROSHTAUNT|MB_ATT_DISP_FORCE,3|MB_ATT_SHOCKWAVE|MB_ATT_FORCEFOCUS,2
+
+	forcepowers			FP_PUSH,3|FP_PULL,3|FP_GRIP,3|FP_LIGHTNING,3|FP_SEE,1|FP_TELEPATHY,1|FP_ABSORB,1
+
+	AB_FLightningFlags	HELD_LIFESTEAL
+	AB_FRepulseFlags	HELD_LIFT
+	WP_MeleeFlags		HELD_FORCEFOCUS
+
+	classflags	CFL_STATVIEWER
+
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+
+	skilltimermod	3
+
+	resource			RESOURCE_FORCE
+	forcepool			160
+	forceregen			1.35
+
+	maxhealth			200
+	maxarmor			20
+	speed				0.85
+
+	modelscale			1.16
+
+	model	"snoke"
+	skin	"default"
+	uishader	"models/players/snoke/mb2_icon_default"
+
+	special1 EAS_FP_REPULSE
+	special2 EAS_HI_SHOCKWAVE
+
+}
+
+description	"Supreme Leader Snoke
+
+A large force master with high force block and many supportive powers.
+
+^2Weaponry:
+- Melee
+-- Force Focus On Hit
+
+^3Powers:
+- Push (3) 
+- Pull (3) 
+- Grip (3) 
+- Absorb (1)
+- Lightning (3) 
+-- Lifesteal On Hit
+- Sense (1) 
+- Mind Trick (1)
+
+^8Attributes:
+- Rally 
+- Force Block (5)
+- 200% Slower Cooldowns
+- Health Regen Capped At 35
+- Force Focus (2)
+- Light's Beacon
+- Force Interface (+10 Use Distance)
+- Environmental Protection (1)
+- Toxic Taunt
+- Stat Viewer
+- Blast Armor
+
+^8Abilities:
+- Lightning Shockwave ^3[CS2]
+- Lifting Repulse ^3[CS1]"
