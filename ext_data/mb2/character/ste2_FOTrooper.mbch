@@ -5,7 +5,6 @@ ClassInfo
 	name			"ste2_FOTrooper"
 	weapons		WP_MELEE|WP_THERMAL
 	attributes	MB_ATT_AMMO,3|MB_ATT_BACTA,1
-	classnumberlimit	 4
 	
 	MBClass		MB_CLASS_BOUNTY_HUNTER
 	
