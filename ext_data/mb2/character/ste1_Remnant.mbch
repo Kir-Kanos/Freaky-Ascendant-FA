@@ -35,23 +35,6 @@ ClassInfo
 	skin				"L_remnant"
 	uishader			"models/players/stormie/mb2_icon_remnant"
 
-	model_1				"stormie"
-	skin_1				"L_default"
-	uishader_1			"models/players/stormie/mb2_icon_legends"
-
-	model_2				"snowtrooper"
-	skin_2				"default"
-	uishader_2			"models/players/snowtrooper/mb2_icon_default"
-
-	model_3				"Shoretrooper"
-	skin_3				"tank"
-	uishader_3			"models/players/Shoretrooper/mb2_icon_tank"
-
-	model_4				"mudtrooper"
-	skin_4				"Driver"
-	uishader_4			"models/players/mudtrooper/mb2_icon_driver"
-
-
 	isCustomBuild		1
 	mbPoints			58
 
