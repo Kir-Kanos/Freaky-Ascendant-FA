@@ -25,6 +25,9 @@ SubclassesForClass1
 	Subclass7	"ste2_FOTrooper"
 	Subclass8	"ste2_ImpOfficer"
 	Subclass9	"ste2_Vel"
+	Subclass10	"ste1_Snow"
+	Subclass11	"ste1_RemPilot"
+	Subclass12	"ste1_RemOperator"
 
 }
 
@@ -36,6 +39,10 @@ SubclassesForClass2
 	Subclass4	"ste3_Trando"
 	Subclass5	"ste3_RAB"
 	Subclass6	"ste3_SovProt"
+	Subclass7	"ste3_Swamp"
+	Subclass8	"ste3_Shore"
+	Subclass9	"ste3_Veteran"
+	Subclass10	"ste3_Mortar"
 
 }
 
@@ -45,6 +52,7 @@ SubclassesForClass3
 	Subclass2	"ste5_ImpArmCom"
 	Subclass3	"ste5_P3DarkTr"
 	Subclass4	"ste4_Phasma"
+	Subclass5	"ste5_OutcastMando"
 
 }
 
@@ -65,6 +73,9 @@ SubclassesForClass4
 	Subclass13	"ste7_Noghri"
 	Subclass14	"ste7_Pyre"
 	Subclass15	"ste8_Cardinal"
+	Subclass16	"ste7_RemSpec"
+	Subclass17	"ste6_OuterRimBH"
+	Subclass18	"ste6_Commando"
 
 }
 
