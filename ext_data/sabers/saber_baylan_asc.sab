@@ -1,0 +1,10 @@
+saber_baylan_asc
+{
+	name		"Baylan Skoll (Ahsoka)"
+	saberType	SABER_SINGLE
+	saberModel	"models/weapons2/saber_plasma/saber_baylan.glm"
+	soundOn		"sound/weapons/saber/Plasma/or_saberon.wav"
+	soundOff	"sound/weapons/saber/Plasma/or_saberoff.wav"
+	soundLoop	"sound/weapons/saber/Plasma/or_saberhum.wav"
+	saberLength 46
+}
