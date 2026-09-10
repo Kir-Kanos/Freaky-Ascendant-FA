@@ -4,7 +4,7 @@ ClassInfo
 
  name    "ote6_Commando"
  MBClass    MB_CLASS_HERO
- classNumberLimit 2
+ classNumberLimit 3
  extralives   1
  weapons    WP_MELEE|WP_SABER
 
