@@ -77,6 +77,9 @@ SubclassesForClass5
 	Subclass5	"ste9_Kylo"
 	Subclass6	"ste9_ShadowSith"
 	Subclass7	"ste9_Praetorian"
+	Subclass8	"ste9_Baylan"
+	Subclass9	"ste9_Shin"
+	Subclass10	"ste9_Krayt"
 
 }
 
@@ -91,5 +94,8 @@ SubclassesForClass6
 	Subclass7	"ste10_Ragnos"
 	Subclass8	"ste10_Sariss"
 	Subclass9	"ste10_Yun"
+	Subclass10	"ste10_Snoke"
+	Subclass11	"ste10_Maladi"
+	Subclass12	"ste10_Wyyrlok"
 
 }
