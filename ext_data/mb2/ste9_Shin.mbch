@@ -1,0 +1,97 @@
+ClassInfo
+{
+	name				"ste9_Shin"
+	MBClass				MB_CLASS_SITH
+	classNumberLimit	1
+	weapons				WP_SABER|WP_MELEE
+
+	saber1				saber_shin
+	sabercolor			1
+	saberstyle			SS_DESANN|SS_TAVION|SS_MEDIUM
+
+	attributes			MB_ATT_FORCEBLOCK,2|MB_ATT_DEFLECT,2|MB_ATT_FORCEFOCUS,3|MB_ATT_GUN_DEFENSE,2|MB_ATT_DEXTERITY,3|MB_ATT_BUNNY_HOP,1|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_TRACKING_BEACON|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_ANTI_MT,1|MB_ATT_FLOAT_HOP|MB_ATT_STAMINA,1
+
+	forcepowers			FP_SABER_OFFENSE,3|FP_SABER_DEFENSE,2|FP_LEVITATION,3|FP_PUSH,3|FP_PULL,2|FP_SEE,3|FP_SABERTHROW,1
+
+	WP_MeleeFlags	HELD_FORCEFOCUS|HELD_TRACKING|HELD_CRIPPLE
+	WP_SaberFlags	HELD_TRACKING
+
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+
+	APMultiplier 1.1
+	BPMultiplier .90
+
+	classflags CFL_BPFREEJUMPS|CFL_SEEING_STEALTH|CFL_BLOODYMELEE
+
+	saberStanceAnim	BOTH_DESANN_STANCE
+
+	WalkForward  BOTH_WALK2
+	RunForward BOTH_SABERSTAFF_RUN
+
+	resource			RESOURCE_FORCE
+	forcepool			110
+	forceregen			1.10
+
+	maxhealth			100
+	maxarmor			25
+
+	speed				1.045
+
+	modelscale			0.98
+
+	special2	EAS_HI_SPRINT
+	special4	EAS_HI_DEX
+
+	model				"shinhati"
+	skin				"default"
+	uishader			"models/players/shinhati/mb2_icon_default"
+
+	model_1				"shinhati"
+	skin_1				"cloak"
+	uishader_1			"models/players/shinhati/mb2_icon_cloak"
+
+	model_2				"shinhati"
+	skin_2				"hood"
+	uishader_2			"models/players/shinhati/mb2_icon_hood"
+
+}
+
+description	"Shin Hati
+
+A pursuing Force User with a mixed fighting style.
+
+^2Weaponry:
+- Melee
+-- Cripples/Tracks/Force Focuses
+- Lightsaber (Purple/Cyan/Yellow Style)
+-- BP Free Jumps
+-- Blaster Deflect (2)
+-- Saber/Blaster Defense (2)
+-- Saber Throw (1) ^3[CS1]
+-- Tracks On Hit
+
+^5Powers:
+- Jump (3) 
+- Sense (3) 
+- Push (3)
+- Pull (2)
+
+^8Attributes:
+- Force Block (2)
+- Tracking Beacon
+- Knockdown Roll
+- Dexterity (3)
+- Stamina (1)
+- Anti MT (1)
+- Healing Capped at 35
+- Force Focus (3)
+- Slow Faller 
+- Sense Immunity
+- Bunny Hop (1)
+- Aerial Force Regen
+
+^8Abilities:
+- Sprint (1) ^3[CS2]
+- Dex Roll ^3[CS4]"

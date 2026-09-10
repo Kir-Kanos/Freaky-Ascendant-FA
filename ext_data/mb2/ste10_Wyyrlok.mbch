@@ -1,0 +1,89 @@
+ClassInfo
+{
+	name				"ste10_Wyyrlok"
+	MBClass				MB_CLASS_SITH
+	classNumberLimit	1
+
+	weapons				WP_SABER|WP_MELEE
+
+	attributes			MB_ATT_DEFLECT,0|MB_ATT_FORCEBLOCK,1|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,0|MB_ATT_ANTI_MT,2|MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_BLAST_ARMOUR|MB_ATT_FP_REPULSE|MB_ATT_WATER_BREATHING
+
+	forcepowers			FP_SABER_OFFENSE,1|FP_SABER_DEFENSE,1|FP_LEVITATION,1|FP_PUSH,2|FP_DRAIN,3|FP_LIGHTNING,3|FP_TELEPATHY,3|FP_SEE,3|FP_PROTECT,1|FP_DESTRUCTION,2
+
+	WP_SaberFlags HELD_KNOCKBACK|HELD_FORCEFOCUS
+	AB_FLightningFlags	HELD_FLAME
+
+	maxhealth			100
+	maxarmor			20
+
+	forcepool			180
+	forceregen			1.35
+	resource			RESOURCE_FORCE
+
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+
+	speed				.87
+	damageGiven			0.9
+
+	special1			EAS_FP_REPULSE
+	special2			EAS_FP_DRAIN
+	special3			EAS_FP_LIGHTNING
+	special4			EAS_FP_DESTRUCTION
+
+	classflags			CFL_NOPICKUPS
+
+	saberStanceAnim		BOTH_DOOKU_STANCE
+
+	modelscale		1.09
+
+	saber1				dual_3
+	sabercolor			0
+	saberstyle			SS_DESANN
+	APmultiplier		0.75
+	BPmultiplier		0.85
+
+	saberdamage	120
+
+	model				"Darthwyyrlok"
+	skin				"default"
+	uishader			"models/players/darthwyyrlok/mb2_icon_default"
+}
+
+ForceInfo0
+{
+	ForceToReplace		FP_DESTRUCTION
+	Icon				"gfx/mp/force_destruction"
+	ForcePowerName		"Sith Ruin"
+}
+
+description	"Darth Wyyrlok III
+
+The Lorekeeper and premier Sith Sorcerer. Focuses on psychological warfare, and a barrage of force powers.
+
+^2Weaponry:
+- Lightsaber (Purple)
+-- Saber Defense (1)
+-- Blaster Defense (0)
+-- Blaster Deflect (0)
+-- Low Damage Saber (120)
+-- Knocks Back and Force Focuses On Hit
+
+^5Force Powers:
+- Jump (1)
+- Push (2)
+- Force Protect (1)
+- Mind Trick (3)
+- Drain (3) ^3[CS2]
+- Repulse ^3[CS1]
+- Lightning (3) ^3[CS3]
+-- Ignites On Hit
+- Sith Ruin (Destruction 2) ^3[CS4]
+
+^8Attributes:
+- Force Focus (2)
+- Water Breathing
+- Healing Capped At 35
+- Force Block (1)
+- Anti-Mind Trick (2)"
