@@ -34,9 +34,9 @@ ClassInfo
  	skin  				"swamp"
  	uishader  			"models/players/scouttrooper/mb2_icon_swamp"
 
- 	model_3   			"scouttrooper"
-	skin_3    			"swamp2"
-	uishader_3 			"models/players/scouttrooper/mb2_icon_swamp2"
+ 	model_1   			"scouttrooper"
+	skin_1    			"swamp2"
+	uishader_1			"models/players/scouttrooper/mb2_icon_swamp2"
 
 	isCustomBuild		1
 	mbPoints			35
