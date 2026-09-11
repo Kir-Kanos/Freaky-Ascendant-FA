@@ -47,6 +47,12 @@ ClassInfo
 
 	skilltimermod	2
 
+	WalkForward			BOTH_WALK6
+	WalkBackward		BOTH_WALK6
+	idleanim			BOTH_STAND4
+	gloatanim			BOTH_TALKCOMM1START
+	flourishanim		BOTH_STAND1_TALK1
+
 	special1			EAS_HI_QUICKTHROW
 	special2			EAS_HI_ENEMYSCANNER
 	special3			EAS_HI_KICK
