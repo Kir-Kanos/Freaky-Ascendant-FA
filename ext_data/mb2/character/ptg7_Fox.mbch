@@ -62,7 +62,6 @@ ClassInfo
 	skin				"fox"
 	uishader			"models/players/clonetrooper_p2/mb2_icon_fox"
 
-
 	saberStanceAnim		BOTH_STAND9
 	flourishAnim		BOTH_SPINATTACK7
 
@@ -113,6 +112,7 @@ WeaponInfo1
 	animAttackRun		BOTH_ATTACK2
 	animAttack			BOTH_ATTACK2
 	animAttackWalk		BOTH_ATTACK2
+	animCharge			BOTH_ATTACK2
 }
 
 WeaponInfo2
@@ -158,34 +158,26 @@ A security inclined commander with high synergy with Coruscant Guard and defensi
 
 ^2Weaponry:
 - Melee
--- Cripples On Hit
--- Fast Movement
+-- Cripples On Hit, Fast Movement
 - Overcharged Shock-Baton (Purple Style Saber)
 -- No Saber/Blaster Block
--- No Blaster Deflect
--- 5 Swing Limit
+-- 5 Swing Limit, Fast Movement, Low (60) Damage
 -- Cripples/Stuns/Shocks/Tracks
--- Fast Movement
 - Fox's DC-17 Clone Pistol (2)
--- 85% More Damage
--- 45% More FP Drain
--- 20% Slower RoF
--- Cripples On Hit
-- Tactical Flash Bang (4)
--- Frag Grenade
+-- 85% More Damage/45% More FP Drain
+-- 20% Slower RoF/Cripples On Hit
+- Tactical Flash Bang (Frag Grenade 4)
 -- 0 Damage, Large Radius
 -- Flashes/Cripples/Tracks
-- Containment Device (3)
--- Tripmine
--- Applies Tracking/Pulse/Pull/Cripple
--- Blinds Target
+- Containment Device (Tripmine 3)
+-- Applies Tracking/Pulse/Pull/Cripple/Blinds
 
 ^8Attributes:
 - Knockdown Roll
 - Healing (3)
 - Blast Armor
 - Dexterity (1)
-- 100% Slower Cooldowns
+- 100% Slower CD
 - Security Detail (Stat Viewer)
 - Get Ups (3)
 - Anti MT (2)
