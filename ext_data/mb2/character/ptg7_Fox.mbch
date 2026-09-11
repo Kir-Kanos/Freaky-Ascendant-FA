@@ -141,12 +141,6 @@ WeaponInfo3
 	NewViewModel	"models/weapons/Grenade_Concussion/viewmodel.md3"
 	MissileModel "models/weapons/Grenade_Concussion/proj.md3"
 	altMissileModel "models/weapons/Grenade_Concussion/proj.md3"
-	altMissileMissEffect	"Grenades/EXP_Flash"
-	MissileMissEffect	"Grenades/EXP_Flash"
-	altMissileHitHumanEffect	"Grenades/EXP_Flash"
-	missileHitHumanEffect	"Grenades/EXP_Flash"
-	altMissileHitDroidEffect	"Grenades/EXP_Flash"
-	missileHitDroidEffect	"Grenades/EXP_Flash"
 	Icon	"gfx/hud/w_icon_stungrenade"
 	WeaponName	"Tactical Flash Bang"
 	damagemod 0.000
