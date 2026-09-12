@@ -24,22 +24,24 @@ SubclassesForClass1
 
 SubclassesForClass2
 {
-Subclass1    "ptg3_ClonePhase2"
-Subclass2    "ptg3_Clone212"
-Subclass3    "ptg3_Clone501"
-Subclass4    "ptg3_CloneGuard"
-Subclass5    "ptg3_ReconClone"
-Subclass6    "ptg3_CloneMarine"
-Subclass7    "ptg3_CloneCom"
-Subclass8    "ptg3_Arc"
-Subclass9    "ptg3_AlphaArc"
-Subclass10   "ptg3_CloneLead"
-Subclass11   "ptg3_Rex"
-Subclass12   "ptg3_Delta"
-Subclass13   "ptg3_Hunter"
-Subclass14   "ptg3_Echo"
-Subclass15   "ptg4_SenGuard"
-Subclass16   "ptg3_BossNass"
+Subclass1	 "ptg1_Naboo"
+Subclass2    "ptg3_ClonePhase2"
+Subclass3    "ptg3_Clone212"
+Subclass4    "ptg3_Clone501"
+Subclass5	 "ptg3_Clone327"
+Subclass6    "ptg3_CloneGuard"
+Subclass7    "ptg3_ReconClone"
+Subclass8    "ptg3_CloneMarine"
+Subclass9    "ptg3_CloneCom"
+Subclass10   "ptg3_Arc"
+Subclass11   "ptg3_AlphaArc"
+Subclass12   "ptg3_CloneLead"
+Subclass13   "ptg3_Rex"
+Subclass14   "ptg3_Delta"
+Subclass15   "ptg3_Hunter"
+Subclass16   "ptg3_Echo"
+Subclass17   "ptg4_SenGuard"
+Subclass18   "ptg3_BossNass"
 }
 
 SubclassesForClass3
@@ -58,6 +60,8 @@ SubclassesForClass4
 	Subclass3	"ptg8_Tarfful"
 	Subclass4 	"ptg8_Chewie"
 	Subclass5	"ptg7_Fox"
+	Subclass6	"ptg6_Bly"
+	Subclass7	"ptg7_Cody"
 }
 
 SubclassesForClass5
