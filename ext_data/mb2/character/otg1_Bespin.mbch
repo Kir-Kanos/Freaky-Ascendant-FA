@@ -1,0 +1,192 @@
+
+ClassInfo
+{
+	name				"otg1_Bespin"
+	MBClass				MB_CLASS_CLONETROOPER
+	weapons				WP_MELEE|WP_SABER|WP_MANDO_PISTOL|WP_STUN_BATON|WP_BLASTER|WP_FRAG_NADE
+	attributes			MB_ATT_ASSEMBLE,3|MB_ATT_GRAPPLE_HOOK,1|MB_ATT_STAMINA,1|MB_ATT_AMMO,3|MB_ATT_SABER_COMBO_NONE|MB_ATT_ANTI_MT,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_TRACKING_BEACON|MB_ATT_DODGE,1|MB_ATT_QUICKTHROW,1|MB_ATT_MANDO_PISTOL,2|MB_ATT_STUN_BATON,1|MB_ATT_BLASTER,1|MB_ATT_FRAGS,1
+
+	WP_BlasterFlags		HELD_ALTRELOAD
+	WP_SaberFlags		HELD_STUN
+	WP_MandoPistolFlags	HELD_ALTRELOAD
+	resource			RESOURCE_STAMINA
+	forcepool			80
+	speed				.95
+	
+	classNumberLimit   	2
+
+	extralives			4
+
+	special1			EAS_HI_DODGE
+	special2			EAS_HI_SPRINT
+	special3			EAS_HI_QUICKTHROW
+	special4			EAS_HI_GRAPPLEHOOK
+
+	saber1				soldierbaton_legends
+	forcepowers			FP_SABER_OFFENSE,3
+	saberstyle			SS_TAVION
+
+	saberDamage			50
+	BPmultiplier		0
+	APmultiplier		0.8
+	CSmultiplier		1.02
+	ASmultiplier		1.05
+	saberStanceAnim		BOTH_SABERDUAL_STANCE
+	flourishAnim		BOTH_STAND5TOAIM
+	gloatAnim			BOTH_VICTORY_FAST
+
+	maxhealth			65
+
+	maxArmor			25
+
+	//uioverlay			"gfx/icons/infantry"
+
+	model				"bespin_cop"
+	skin				"default"
+	uishader			"models/players/bespin_cop/mb2_icon_default"
+
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_MANDO_PISTOL
+	WeaponBasedOff		WP_MANDO_PISTOL
+	NewWorldModel		"models/weapons2/elg-3a/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/elg-3a/blaster_pistol.md3"
+	Icon				"gfx/hud/w_icon_elg-3a"
+	WeaponName			"Relby-K23 Blaster Pistol"
+	FlashSound0			"sound/weapons/spy_pistol/fire.mp3"
+	AltFlashSound0		"sound/weapons/spy_pistol/fire.mp3"
+	MuzzleEffect		"Blaster/MuzzleFlash01G"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01G"
+	MissileEffect		"Blaster/Shot11G"
+	Missile3Effect		"Blaster/Shot02G"
+	AltMissileEffect	"Blaster/Shot02G"
+	PowerupShotEffect	"Blaster/Shot04G"
+	ChargeEffect		"gfx/effects/greenFrontFlash"
+	OverchargeEffect	"Blaster/MuzzleCharge01G"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	clipsize			40
+	CustomAmmo			660
+	damageMod			1.35
+	fpmult				1.35
+	rateMod				1.2
+	hasAnimOverrides 1
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+	animReadyNoAmmo		BOTH_PISTOL_IDLE
+	animCharge			BOTH_ATTACK2
+	animStand			BOTH_PISTOL_IDLE
+	animReadyRun		BOTH_PISTOL_IDLE
+	animReady			BOTH_PISTOL_IDLE
+	animReadyWalk		BOTH_ATTACK2
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/stunbaton/stun_w.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_soldierbaton"
+	WeaponName			"Shock Baton"
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_BLASTER
+	WeaponBasedOff		WP_BLASTER
+	NewWorldModel		"models/weapons2/dh-17/dh-17_w.glm"
+	NewViewModel		"models/weapons2/dh-17/dh-17_FA.md3"
+	Icon				"gfx/hud/w_icon_dh-17"
+	WeaponName			"DH-17 Police Rifle"
+	ratemod	.70
+	damagemod	.80
+	clipsize	10
+	velocitymod	1.05
+	hasAnimOverrides	1
+	animReadyRun		BOTH_WESTARM5_RUN1
+	animReadyWalk		BOTH_WESTARM5_READY
+	animReady			BOTH_WESTARM5_READY
+	animAttackRun		BOTH_ATTACK4
+	animAttack			BOTH_ATTACK4
+	animAttackWalk		BOTH_ATTACK4
+	animStand			BOTH_WESTARM5_READY
+	animCharge			BOTH_ATTACK4
+}
+
+WeaponInfo3
+
+{
+
+	WeaponToReplace		WP_FRAG_NADE
+	WeaponBasedOff		WP_FRAG_NADE
+	NewWorldModel	"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel	"models/weapons/Grenade_Concussion/viewmodel.md3"
+	Icon	"gfx/hud/w_icon_stungrenade"
+	MissileModel	"models/weapons/Grenade_Concussion/proj.md3"
+	AltMissileModel	"models/weapons/Grenade_Concussion/proj.md3"
+	MissileEffect				"stone/missile1"
+	AltMissileEffect			"stone/missile1"
+	MissileMissEffect			"smokenadeleg/explode_vol"
+	MissileHitHumanEffect		"smokenadeleg/explode_vol"
+	MissileHitDroidEffect		"smokenadeleg/explode_vol"
+	AltMissileMissEffect		"smokenadeleg/explode_vol"
+	AltMissileHitHumanEffect	"smokenadeleg/explode_vol"
+	AltMissileHitDroidEffect	"smokenadeleg/explode_vol"
+	FlashSound0			"sound/weapons/smokenade/select.mp3"
+	AltFlashSound0		"sound/weapons/smokenade/select.mp3"
+	WeaponName			"Smoke Grenade"
+	hasAnimOverrides	1
+	animAttackRun		BOTH_THERMAL_THROW2
+	animAttack			BOTH_THERMAL_THROW2
+	animAttackWalk		BOTH_THERMAL_THROW2
+	animReadyRun		BOTH_THERMAL_READY2
+	animReady			BOTH_THERMAL_READY2
+	animReadyWalk		BOTH_THERMAL_READY2
+	damageMod			0.000
+	ratemod				0.6
+
+}
+
+description "Bespin Wing Guard
+
+Quick, versatile security units equipped for disabling criminals and quick takedowns.
+
+^2Weaponry:
+- Melee
+- Relby-K23 Blaster Pistol (2)
+-- Mandalorian Pistol
+-- 35% More Damage/FP Drain
+-- 20% Slower RoF
+-- Mag Reload
+- DH-17 Police Rifle (1)
+-- Based On Blaster Rifle
+-- 30% Faster RoF
+-- 20% Less Damage
+-- 5% Faster Velocity
+-- Mag Reload, 5 Shot Clip
+- Shock Baton (Cyan Style Saber)
+-- Stuns on hit
+-- Low Damage (50)
+-- No Blaster/Saber Defense
+-- No Blaster Deflect
+-- No Saber Training
+- Smoke Grenade (1)
+-- Frag Grenade
+-- No Damage, Smoke Screen On Det
+
+^8Attributes:
+- Reinforcements (4)
+- Assemble (3)
+- Strength (1)
+- Anti MT (1)
+- Tracking Beacon
+- Ammo (3)
+- Stamina (1)
+
+^3Abilities:
+- Dodge (1) ^3[CS1]
+- Sprint (1) ^3[CS2]
+- Quickthrow (1) ^3[CS3]
+- Grappling Hook (1) ^3[CS4]"

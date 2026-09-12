@@ -1,0 +1,226 @@
+ClassInfo
+{
+	name				"ptg3_Clone327"
+	weapons				WP_MELEE|WP_CLONE_PISTOL
+	attributes			MB_ATT_AMMO,3|MB_ATT_CLONE_PISTOL,1|MB_ATT_SPRINT|MB_ATT_ENV_PROT,1|MB_ATT_TRACKING_BEACON,1
+	MBClass				MB_CLASS_CLONETROOPER
+
+	resource			RESOURCE_STAMINA
+	forcepool			100
+
+	modelscale			1.02
+
+	speed				1.03
+
+	WP_CloneRifleFlags	HELD_ALTRELOAD
+	WP_DCCarbineFlags 	HELD_ALTRELOAD
+	WP_ClonePistolFlags	HELD_ALTRELOAD
+	WP_SaberFlags		HELD_CRIPPLE|HELD_POISON
+
+	model				"clonetrooper_p2"
+	skin				"327"
+	uishader			"models/players/clonetrooper_p2/mb2_icon_327"
+
+	extralives			1
+
+	maxhealth			80
+
+	maxArmor			40
+
+	knockbacktaken		0.9
+
+	APmultiplier		0.4
+	BPmultiplier		0
+	CSmultiplier		1.00
+	ASmultiplier		1.00
+
+	saber1				arc_shiv_legends
+	saberstyle			SS_TAVION
+	saberdamage			60
+
+	special1			EAS_HI_SPRINT
+	special2			EAS_HI_DEX
+	special3			EAS_HI_KICK
+	special4			EAS_HI_GRAPPLEHOOK
+	meleespecial4		EAS_HI_GRAPPLEHOOK
+
+	isCustomBuild		1
+	mbPoints			40
+
+	c_att_skill_0		MB_ATT_SABER
+	c_att_names_0		"Vibro-Shiv"
+	c_att_ranks_0		2
+	c_att_descs_0		"Cyan Saber, No BP, Fast Swings, Cripples And Poisons On Hit, Low Damage"
+
+	c_att_skill_1		MB_ATT_CLONE_PISTOL
+	c_att_names_1		"DC-15s Dual Pistols"
+	c_att_ranks_1		0,2,2
+	c_att_descs_1		"Mag Reload"
+
+	c_att_skill_2		MB_ATT_DC_CARBINE
+	c_att_names_2		"DC-15S Ambush Carbine"
+	c_att_ranks_2		2,2,2
+	c_att_descs_2		"5% Less Velocity, 50% Faster RoF, 30% Less Damage, Mag Reload"
+
+	c_att_skill_3		MB_ATT_CLONERIFLE
+	c_att_names_3		"DC-15A Precision Rifle"
+	c_att_ranks_3		4,4
+	c_att_descs_3		"90% More Damage, 85% Slower RoF, 35% More Velocity"
+
+	c_att_skill_4		MB_ATT_FRAGS
+	c_att_names_4		"Frag Grenade"
+	c_att_ranks_4		4
+
+	c_att_skill_5		MB_ATT_MICRO_GRENADES
+	c_att_names_5		"Smoke Grenades"
+	c_att_ranks_5		2,2
+	c_att_descs_5		"Concussion Grenade, 0 Damage, Smoke Screen"
+
+	c_att_skill_6		MB_ATT_RESPAWNS
+	c_att_names_6		"Reinforcement"
+	c_att_ranks_6		20
+	c_att_descs_6		"1 default"
+
+	c_att_skill_7		MB_ATT_ASSEMBLE
+	c_att_names_7		"Assemble"
+	c_att_ranks_7		2,2
+
+	c_att_skill_8		MB_ATT_DEXTERITY
+	c_att_names_8		"Dexterity"
+	c_att_ranks_8		2,4
+	c_att_descs_8		"Unlocks Dex Roll ^3[CS3]"
+
+	c_att_skill_9		MB_ATT_STAMINA
+	c_att_names_9		"Stamina"
+	c_att_ranks_9		2,2,2
+
+	c_att_skill_10		MB_ATT_GRAPPLE_HOOK
+	c_att_names_10		"Grappling Hook ^3[Melee CS4]"
+	c_att_ranks_10		0,2
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_CLONE_RIFLE
+	WeaponBasedOff		WP_CLONE_RIFLE
+	NewWorldModel		"models/weapons2/dc-15a/dc-15a_w.glm"
+	NewViewModel		"models/weapons2/dc-15a/dc-15a.md3"
+	Icon				"gfx/hud/w_icon_clonerifle"
+	WeaponName			"DC-15A Precision Rifle"
+	damageMod			1.90
+	rateMod				1.85
+	velocitymod			1.35
+	clipSize			10
+	customAmmo			340
+	FlashSound0  "sound/vehicles/weapons/yt-1300_turret/fire1.mp3"
+	FlashSound1  "sound/vehicles/weapons/yt-1300_turret/fire1.mp3"
+	FlashSound2  "sound/vehicles/weapons/yt-1300_turret/fire1.mp3"
+	FlashSound3  "sound/vehicles/weapons/yt-1300_turret/fire1.mp3"
+	MissileEffect		"blaster/Shot03B"
+	AltMissileEffect 	"blaster/Shot03B"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_WESTARM5_RUN1
+	animReady			BOTH_WESTARM5_READY
+	animReadyWalk		BOTH_WESTARM5_READY
+	animReadyNoAmmo		BOTH_WESTARM5_ATTACK
+	animAttackRun		BOTH_WESTARM5_ATTACK
+	animAttack			BOTH_WESTARM5_ATTACK
+	animAttackWalk		BOTH_WESTARM5_SCOPED_ATTACK
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_DC_CARBINE
+	WeaponBasedOff		WP_DC_CARBINE
+	NewWorldModel		"models/weapons2/dc-15s/dc-15s_w.glm"
+	NewViewModel		"models/weapons2/dc-15s/dc-15s.md3"
+	Icon				"gfx/hud/w_icon_dc-15s"
+	WeaponName			"DC-15S Ambush Carbine"
+	rateMod				0.50
+	damageMod			0.70
+	clipsize			20
+	customAmmo			900
+	velocity	.95
+	FlashSound0	  "sound/weapons/z6/fire.wav"
+	FlashSound1	  "sound/weapons/z6/fire.wav"
+	FlashSound2	  "sound/weapons/z6/fire.wav"
+	FlashSound3	  "sound/weapons/z6/fire.wav"
+	altFlashSound0	"sound/weapons/lpa_nn-14/alt_fire.wav"
+	altFlashSound1	"sound/weapons/lpa_nn-14/alt_fire.wav"
+	altFlashSound2	"sound/weapons/lpa_nn-14/alt_fire.wav"
+	altFlashSound3	"sound/weapons/lpa_nn-14/alt_fire.wav"
+	hasAnimOverrides	1
+	animReady			TORSO_WEAPONIDLE3
+	animReadyRun		TORSO_WEAPONIDLE3
+	animReadyWalk		TORSO_WEAPONREADY3
+	animReadyNoAmmo		BOTH_ATTACK3
+	animAttack			BOTH_ATTACK3
+	animAttackRun		BOTH_ATTACK3
+	animAttackWalk		BOTH_ATTACK3
+	animStand			BOTH_STAND1
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_CONC_NADE
+	WeaponBasedOff		WP_CONC_NADE
+	NewWorldModel		"models/weapons2/thermal/thermal_w.glm"
+	NewViewModel		"models/weapons2/thermal/thermal.md3"
+	NewHandsModel		"models/weapons2/thermal/thermal_hand.md3"
+	Icon				"gfx/hud/w_thermal_grenade"
+	MissileModel		"models/weapons2/thermal/thermal_proj.md3"
+	AltMissileModel		"models/weapons2/thermal/thermal_proj.md3"
+	MissileEffect				"stone/missile1"
+	AltMissileEffect			"stone/missile1"
+	MissileMissEffect			"smokenadeleg/explode_vol"
+	MissileHitHumanEffect		"smokenadeleg/explode_vol"
+	MissileHitDroidEffect		"smokenadeleg/explode_vol"
+	AltMissileMissEffect		"smokenadeleg/explode_vol"
+	AltMissileHitHumanEffect	"smokenadeleg/explode_vol"
+	AltMissileHitDroidEffect	"smokenadeleg/explode_vol"
+	FlashSound0			"sound/weapons/smokenade/select.mp3"
+	AltFlashSound0		"sound/weapons/smokenade/select.mp3"
+	WeaponName			"Smoke Grenade"
+	hasAnimOverrides	1
+	animAttackRun		BOTH_THERMAL_THROW2
+	animAttack			BOTH_THERMAL_THROW2
+	animAttackWalk		BOTH_THERMAL_THROW2
+	animReadyRun		BOTH_THERMAL_READY2
+	animReady			BOTH_THERMAL_READY2
+	animReadyWalk		BOTH_THERMAL_READY2
+	damageMod			0.001
+	ratemod				0.6
+}
+
+WeaponInfo3
+{
+ WeaponToReplace  WP_SABER
+ WeaponBasedOff  WP_SABER
+ NewWorldModel  "models/weapons2/arc_shiv/saber_w.glm"
+ NewViewModel  "models/weapons2/dummy/dummy.md3"
+
+ Icon    "models/weapons2/arc_shiv/w_icon_arc_shiv"
+ WeaponName   "Vibro-Shiv"
+
+}
+
+
+
+description	"327th Clone Trooper
+
+Clone troopers characterized by skirmishing ability and gritty weaponry.
+
+^2Weaponry:
+- Melee
+- DC-15s Clone Pistol (1)
+
+^8Attributes:
+- Reinforcement (1)
+- Environment Protection (1)
+- Tracking Beacon 
+- Stamina (0)
+- 10% less knockback taken
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Gunkick ^3[CS3]"
