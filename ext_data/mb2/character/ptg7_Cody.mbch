@@ -1,0 +1,184 @@
+ClassInfo
+{
+	name				"ptg7_Cody"
+	MBClass				MB_CLASS_CLONETROOPER
+	classNumberLimit	1
+
+	weapons				WP_MELEE|WP_SABER|WP_CLONE_PISTOL|WP_DC_CARBINE|WP_FRAG_NADE|WP_PULSE_NADE|WP_DET_PACK
+	attributes			MB_ATT_RALLY|MB_ATT_CLONE_PISTOL,2|MB_ATT_DC_CARBINE,3|MB_ATT_FRAGS,2|MB_ATT_PULSE_GRENADES,3|MB_ATT_AMMO,3|MB_ATT_STAMINA,3|MB_ATT_DEXTERITY,2|MB_ATT_HEALING,2|MB_ATT_BLAST_ARMOUR|MB_ATT_QUICKTHROW,1|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_FORCEFIELD|MB_ATT_DISP_ARMOR,2|MB_ATT_ENV_PROT,1|MB_ATT_TRACKING_BEACON|MB_ATT_ANTI_MT,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_DET_PACK,4
+
+	WP_FragNadeFlags	HELD_PULL|HELD_STUN|HELD_TRACKING|HELD_SLIPPERY
+	WP_PulseNadeFlags	HELD_CRIPPLE
+	WP_DetPackFlags		HELD_HIGHDAMAGE|HELD_PULSE
+
+	classflags			CFL_STATVIEWER|CFL_BLOODYMELEE
+	forcepowers			FP_TEAM_FORCE,1
+
+	speed				1.03
+
+	resource			RESOURCE_STAMINA
+	forcepool			120
+	forceregen			1.15
+
+	maxhealth			145
+	maxarmor			120
+
+	BPmultiplier		0
+	saber1				Clone_Knife_Jagged
+	saberstyle			SS_TAVION
+	saberDamage			100
+
+	knockbackTaken		0.80
+	APMultiplier		1.1
+
+	special1			EAS_HI_SPRINT
+	special2			EAS_HI_DEX
+	special3			EAS_HI_QUICKTHROW
+	special4			EAS_HI_SHIELD
+	meleespecial4		EAS_HI_GRAPPLEHOOK
+
+	uioverlay_r			"gfx/icons/heavy"
+	uioverlay_l			"gfx/icons/spec_infantry"
+	modelscale			1.02
+
+	model				"clonetrooper_p2"
+	skin				"212_cody"
+	uishader			"models/players/clonetrooper_p2/mb2_icon_212_cody"
+
+	saberStanceAnim		BOTH_STAND9
+	gloatanim			BOTH_TALKCOMM1START
+	flourishanim		BOTH_STAND1_TALK1
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/vibroknife/model.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_prisonknife"
+	WeaponName			"Jagged Vibroknife"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_DC_CARBINE
+	WeaponBasedOff		WP_DC_CARBINE
+	NewWorldModel		"models/weapons2/dc-15s/dc-15s_w.glm"
+	NewViewModel		"models/weapons2/dc-15s/dc-15s.md3"
+	Icon				"gfx/hud/w_icon_dc-15s"
+	WeaponName			"Cody's DC-15S Carbine"
+	damagemod			1.05
+	ratemod				0.70
+	velocitymod			1.15
+	altFireEnabled		0
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_CLONE_PISTOL
+	WeaponBasedOff		WP_CLONE_PISTOL
+	NewWorldModel		"models/weapons2/dc-17/dc-17_w.glm"
+	NewViewModel		"models/weapons2/dc-17/dc-17.md3"
+	NewHandsModel		"models/weapons2/dc-17/dc-17_hand.md3"
+	Icon				"gfx/hud/w_icon_dc-17"
+	missileEffect		"Blaster/Shot03B"
+	altMissileEffect	"Blaster/Shot03B"
+	Missile3Effect		"Blaster/Shot03B"
+	PowerupShotEffect	"Blaster/Shot04B"
+	WeaponName			"Cody's DC-17 Clone Pistol"
+	clipSize			30
+	customAmmo			300
+	damagemod			1.15
+	ratemod				0.85
+	hasAnimOverrides	1
+	animReadyRun		BOTH_JANGO_PISTOL_IDLE
+	animReady			BOTH_JANGO_PISTOL_IDLE
+	animReadyWalk		TORSO_WEAPONIDLE2
+	animReadyNoAmmo		BOTH_ATTACK2
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+	animCharge			BOTH_ATTACK2
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_DET_PACK
+	WeaponBasedOff		WP_DET_PACK
+	NewWorldModel		"models/weapons2/detpack/det_pack_w.glm"
+	NewViewModel		"models/weapons2/detpack/det_pack.md3"
+	Icon				"gfx/hud/w_icon_detpack"
+	WeaponName			"Ion Bomb"
+}
+
+WeaponInfo4
+{
+	WeaponToReplace		WP_FRAG_NADE
+	WeaponBasedOff		WP_FRAG_NADE
+	NewWorldModel		"models/weapons2/kotor_gfrag/thermal_w.glm"
+	NewViewModel		"models/weapons2/kotor_gfrag/thermal.md3"
+	MissileModel		"models/weapons2/kotor_gfrag/thermal_proj_1.md3"
+	AltMissileModel		"models/weapons2/kotor_gfrag/thermal_proj_2.md3"
+	Icon				"gfx/hud/w_icon_kotor_fraggrenade"
+	WeaponName			"Grav-Grenade"
+}
+
+ForceInfo0
+{
+	ForceToReplace		FP_TEAM_FORCE
+	Icon				"gfx/2d/logos/mb_clonerepublic.tga"
+	ForcePowerName		"Elite Tactics"
+}
+
+description	"Commander Cody
+
+Leader of the 212th Attack Battalion, specialized in frontline tactical command.
+
+^2Weaponry:
+- Melee
+- Jagged Vibroknife (Cyan Style)
+-- No Blaster/Saber Defense
+-- No Blaster Deflect
+-- Low Damage (100)
+- Cody's DC-17 Clone Pistol (2)
+-- +15% More Damage/RoF
+- Cody's DC-15S Clone Carbine (3)
+-- +5% More Damage
+-- +30% Faster RoF
+-- +15% Faster Velocity
+-- Primary Fire Only
+- Grav-Grenades (Frag Grenade 2)
+-- On Hit Pulls/Tracks/Slips/Staggers
+- Pulse Grenades (3)
+-- On Hit Cripples
+- Ion Bombs (Detpack 4)
+-- 100% More Damage
+-- Pulses On Hit
+
+^6Inventory:
+- Portable Forcefield ^3[CS4]
+
+^5Powers:
+- Elite Tactics (Team Energize 1)
+
+^8Attributes:
+- Rally
+- Blast Armor
+- Environmential Protection (1)
+- Healing (2)
+- Anti-Mind Trick (1)
+- Tracking Beacon
+- Stamina (3)
+- Dexterity (2)
+- Strength (1)
+- Knockdown Roll
+- 20% Less Knockback Taken
+- Stat Viewer
+
+^3Abilities:
+- Sprint (2)^3[CS1]
+- Dex Roll ^3[CS2]
+- Quickthrow (1) ^3[CS3]
+- Armor Dispenser (2) ^3[USE In Melee]
+- Grappling Hook (2) ^3[Melee CS4]"
