@@ -60,8 +60,9 @@ SubclassesForClass4
 	Subclass3	"ptg8_Tarfful"
 	Subclass4 	"ptg8_Chewie"
 	Subclass5	"ptg7_Fox"
-	Subclass6	"ptg6_Bly"
-	Subclass7	"ptg7_Cody"
+	Subclass6	"ptg8_Thorn"
+	Subclass7	"ptg6_Bly"
+	Subclass8	"ptg7_Cody"
 }
 
 SubclassesForClass5
@@ -77,6 +78,7 @@ SubclassesForClass5
 	Subclass9	"ptg9_Kit"
 	Subclass10	"ptg9_QuiGon"
 	Subclass11 	"ptg10_RahmKota"
+	Subclass12	"ptg10_ShaakTi"
 }
 
 SubclassesForClass6
