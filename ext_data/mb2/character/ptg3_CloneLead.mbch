@@ -35,49 +35,38 @@ ClassInfo
 	uioverlay_r "gfx/icons/heavy"
 	uioverlay_l "gfx/icons/spec_infantry"
 	modelscale   1.02
+	
 	model			"clonetrooper_p2"
-	skin			"212_cody"
-	uishader		"models/players/clonetrooper_p2/mb2_icon_212_cody"
+	skin			"fives"
+	uishader		"models/players/clonetrooper_p2/mb2_icon_fives"
 	
 	model_1			"clonetrooper_p2"
-	skin_1			"fives"
-	uishader_1		"models/players/clonetrooper_p2/mb2_icon_fives"
+	skin_1			"gree"
+	uishader_1		"models/players/clonetrooper_p2/mb2_icon_gree"
 	
 	model_2			"clonetrooper_p2"
-	skin_2			"gree"
-	uishader_2		"models/players/clonetrooper_p2/mb2_icon_gree"
+	skin_2			"nemec"
+	uishader_2		"models/players/clonetrooper_p2/mb2_icon_nemec"
 	
 	model_3			"clonetrooper_p2"
-	skin_3			"nemec"
-	uishader_3		"models/players/clonetrooper_p2/mb2_icon_nemec"
-	
-	model_4			"clonetrooper_p2"
-	skin_4			"21_bacara"
-	uishader_4		"models/players/clonetrooper_p2/mb2_icon_21_bacara"
+	skin_3			"21_bacara"
+	uishader_3		"models/players/clonetrooper_p2/mb2_icon_21_bacara"
 
+	model_4			"clonetrooper_p2"
+	skin_4			"91_neyo"
+	uishader_4		"models/players/clonetrooper_p2/mb2_icon_91_neyo"
+	
 	model_5			"clonetrooper_p2"
-	skin_5			"91_neyo"
-	uishader_5		"models/players/clonetrooper_p2/mb2_icon_91_neyo"
+	skin_5			"104_wolffe"
+	uishader_5		"models/players/clonetrooper_p2/mb2_icon_104_wolffe"
 	
 	model_6			"clonetrooper_p2"
-	skin_6			"104_wolffe"
-	uishader_6		"models/players/clonetrooper_p2/mb2_icon_104_wolffe"
+	skin_6			"327_deviss"
+	uishader_6		"models/players/clonetrooper_p2/mb2_icon_327_deviss"
 	
 	model_7			"clonetrooper_p2"
-	skin_7			"327_bly"
-	uishader_7		"models/players/clonetrooper_p2/mb2_icon_327_bly"
-	
-	model_8			"clonetrooper_p2"
-	skin_8			"327_deviss"
-	uishader_8		"models/players/clonetrooper_p2/mb2_icon_327_deviss"
-	
-	model_9			"clonetrooper_p2"
-	skin_9			"Doom"
-	uishader_9		"models/players/clonetrooper_p2/mb2_icon_doom"
-	
-	model_10		"clonetrooper_p2"
-	skin_10			"thorn"
-	uishader_10		"models/players/clonetrooper_p2/mb2_icon_thorn"
+	skin_7			"Doom"
+	uishader_7		"models/players/clonetrooper_p2/mb2_icon_doom"
 
 	saberStanceAnim		BOTH_STAND9
 	flourishAnim BOTH_SPINATTACK7
