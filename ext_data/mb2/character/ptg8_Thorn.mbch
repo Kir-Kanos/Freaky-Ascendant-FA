@@ -1,0 +1,120 @@
+ClassInfo
+{
+	name				"ptg8_Thorn"
+	MBClass				MB_CLASS_CLONETROOPER
+	classNumberLimit	1
+
+	weapons				WP_MINIGUN|WP_PLX1|WP_MELEE
+	
+	WP_PLX1Flags		HELD_FLASH|HELD_CRIPPLE|HELD_STUN|HELD_TRACKING|HELD_SONIC
+	WP_MinigunFlags		HELD_ALTRELOAD|HELD_CRIPPLE
+	WP_MeleeFlags		HELD_CRIPPLE|HELD_SPEED
+
+	attributes			MB_ATT_MINIGUN,1|MB_ATT_PLX1,3|MB_ATT_BARGE,1|MB_ATT_AMMO,3|MB_ATT_HEALING,2|MB_ATT_BLAST_ARMOUR|MB_ATT_GETUPS,3|MB_ATT_ANTI_MT,2|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_TRACKING_BEACON|MB_ATT_GRAPPLE_HOOK,1|MB_ATT_STAMINA,1
+
+	resource			RESOURCE_STAMINA
+	forcepool			120
+	forceregen			1.1
+
+	classflags			CFL_BLOODYMELEE|CFL_STATVIEWER|CFL_STRONGAGAINSTPHYSICAL
+
+	maxhealth			150
+	maxarmor			120
+
+	basespeed 			175
+	knockbackTaken		0.50
+
+	special1			EAS_HI_SPRINT
+	special2			EAS_HI_BARGE
+	special3			EAS_HI_KICK
+	special4			EAS_HI_GRAPPLEHOOK
+
+	modelscale			1.09
+
+	bargeSoundOverride	"sound/chars/clone_bf2/misc/taunt.mp3"
+
+	model				"clonetrooper_p2"
+	skin				"thorn"
+	uishader			"models/players/clonetrooper_p2/mb2_icon_thorn"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_PLX1
+	WeaponBasedOff		WP_PLX1
+	NewWorldModel		"models/weapons2/plx-1/plx-1_w.glm"
+	NewViewModel		"models/weapons2/plx-1/plx-1.md3"
+	Icon				"gfx/hud/w_icon_plx-1"
+	WeaponName			"PLX-1 Flash Suppressor"
+	damagemod			0.05
+	velocitymod	1.2
+	ReloadTimeModifier 0.35
+	clipSize			3
+	customAmmo			9
+	Splashradius		325
+	missileEffect		"repeater/projectile"
+	altMissileEffect	"repeater/projectile"
+	MissileMissEffect	"Grenades/EXP_Conc_E"
+	altMissileMissEffect	"Grenades/EXP_Conc_E"
+	missileHitHumanEffect	"Grenades/EXP_Conc_E"
+	altMissileHitHumanEffect	"Grenades/EXP_Conc_E"
+	missileHitDroidEffect	"Grenades/EXP_Conc_E"
+	altMissileHitDroidEffect	"Grenades/EXP_Conc_E"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_MINIGUN
+	WeaponBasedOff		WP_MINIGUN
+	NewWorldModel		"models/weapons2/z6_rotary/model.glm"
+	NewViewModel		"models/weapons2/z6_rotary/rotary_cannon.md3"
+	NewHandsModel		"models/weapons2/z6_rotary/rotary_cannon_hand.md3"
+	NewBarrelModel		"models/weapons2/z6_rotary/rotary_cannon_barrel.md3"
+	Icon				"gfx/hud/w_icon_rotary_cannon"
+	WeaponName			"Z-6 'Hammer' Blaster Cannon"
+	customammo			3000
+	clipSize			450
+	isMinigun			1
+	altFireEnabled		1
+	FPMult				1.1
+	damageMod			1.1
+	rateMod				0.60
+}
+
+description	"Commander Thorn
+
+A heavy suppression tank built for choke point lockdowns and crowd control.
+
+^2Weaponry:
+- Melee
+-- Cripples On Hit
+-- Fast Movement
+- Z-6 'Hammer' Blaster Cannon (Minigun 1)
+-- 10% More Damage
+-- 40% Faster RoF
+-- 10% Higher FP Drain
+-- Cripples On Hit
+-- Mag Reload
+- PLX-1 Flash Suppressor (3)
+-- 3-Round Clip (9 Ammo Total)
+-- 95% Less Damage
+-- 20% Faster Velocity
+-- Flashes/Cripples/Knocks Back/Stuns/Tracks/Sonic On Hit
+
+^8Attributes:
+- Strength (1)
+- Healing (2)
+- Blast Armour
+- Stamina (1)
+- Tracking Beacon
+- Get Ups (3)
+- Anti MT (2)
+- Melee Resist
+- 50% Less Knockback Taken
+- Security Detail (Stat Viewer)
+
+^3Abilities:
+- Sprint (1) ^3[CS1]
+- Barge ^3[CS2]
+- Gunkick ^3[CS3]
+- Grapple Hook (1) ^3[CS4]"

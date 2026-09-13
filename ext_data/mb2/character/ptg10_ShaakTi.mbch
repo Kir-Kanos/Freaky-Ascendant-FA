@@ -1,0 +1,95 @@
+ClassInfo
+{
+	name				"ptg10_ShaakTi"
+	MBClass				MB_CLASS_JEDI
+	classNumberLimit	1
+	weapons				WP_SABER|WP_MELEE
+	WP_SaberFlags		HELD_NODISARM|HELD_DISARM|HELD_CRIPPLE|HELD_KNOCKBACK
+
+	attributes			MB_ATT_DEFLECT,3|MB_ATT_FORCEBLOCK,1|MB_ATT_BLAST_ARMOUR,1|MB_ATT_DEXTERITY,3|MB_ATT_RALLY,1|MB_ATT_ENV_PROT,1|MB_ATT_USE_DISTANCE,10|MB_ATT_GUN_DEFENSE,2|MB_ATT_FORCEFOCUS,3|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_TRACKING_BEACON|MB_ATT_FLOAT_HOP|MB_ATT_DISP_FORCE,3|MB_ATT_DISP_BLOCK,3|MB_ATT_FP_REPULSE
+
+	knockbackGiven 1.45
+
+	forcepowers			FP_SABER_OFFENSE,3|FP_SABER_DEFENSE,3|FP_LEVITATION,3|FP_PUSH,2|FP_PULL,2|FP_SEE,3|FP_PROTECT,1|FP_STASIS,1|FP_TEAM_FORCE,1
+
+	AB_FRepulseFlags	HELD_LIFT|HELD_TRACKING|HELD_CRIPPLE
+	healthRegenAmount	1
+	healthRegenRate		1500
+	healthRegenCap		35
+
+	maxhealth			135
+	maxarmor			10
+	forcepool			115
+	forceregen			1.3
+	rateOfFire_Melee	.9
+	damageGiven			1.1
+
+	special2			EAS_HI_DEX
+	special3			EAS_FP_PROTECT
+	special4			EAS_FP_REPULSE
+
+	APmultiplier		1.05
+	BPmultiplier		1.05
+	ASmultiplier		1.05
+	CSmultiplier		1.05
+	saberstyle			SS_DESANN|SS_FAST|SS_STRONG|SS_MEDIUM
+	saberDamageStyle	SS_DESANN,200|SS_MEDIUM,140|SS_FAST,80|SS_STRONG,220
+	saberSpecialDamage	3
+
+	classflags			CFL_NOPICKUPS|CFL_BPFREEJUMPS|CFL_STATVIEWER
+
+	saber1				saber_shaak_ti_legends
+	sabercolor			4
+
+	saberStanceAnim		BOTH_TRIPLE3_REDSTANCE
+	modelscale			1.03
+	uioverlay			"gfx/icons/frontline"
+
+	model				"shaakti"
+	skin				"default"
+	uishader			"models/players/shaakti/mb2_icon_default"
+}
+
+description	"Jedi Master Shaak Ti
+
+A tactical Jedi master who synergizes well with clones.
+
+^2Weaponry:
+- Melee
+-- 10% faster RoF
+- Lightsaber (Purple/Blue/Yellow/Red Style)
+-- Cripples/Disarms/Knocks Back On Hit
+-- Saber Defense (3)
+-- Blaster Deflect (3)
+-- Blaster Defense (2)
+-- 300% more special damage
+-- All Styles Lower Damage
+
+^5Force Powers:
+- Jump (3)
+- Push (2)
+- Pull (2)
+- Sense (3)
+- Protect (1) ^3[CS3]
+- Repulse (1) ^3[CS4]
+-- Lifts/Tracks/Cripples On Damage Done
+- Stasis (1)
+- Force Energize (1)
+
+^8Attributes:
+- Dexterity (3)
+- Rally
+- Force Focus (3)
+- 45% More Knockback Given
+- Blast Armour
+- Knockdown Roll
+- Tracking Beacon
+- Force Interface (Use Distance +10)
+- Environmental Protection (1)
+- Force Block (1)
+- Health Healing (Capped at 35)
+- Stat Viewer
+
+^8Abilities:
+- Dex Roll ^3[CS2]
+- Instruct (Force/Block Dispenser 3) ^3[USE In Melee]"
