@@ -91,14 +91,14 @@ WeaponInfo1
 	MuzzleEffect		"Blaster/MuzzleFlash01R"
 	MissileEffect		"Blaster/Shot01R"
 	hasAnimOverrides	1
-	animReadyRun		BOTH_DC15_IDLE
-	animReady			BOTH_DC15_IDLE
-	animReadyWalk		BOTH_DC15_READY
-	animReadyNoAmmo		BOTH_DC15_ATTACK
-	animAttackRun		BOTH_DC15_ATTACK
-	animAttack			BOTH_DC15_ATTACK
-	animAttackWalk		BOTH_DC15_ATTACK
-	animStand			BOTH_STAND1
+	animReadyRun		BOTH_STAND3
+	animReady			BOTH_STAND3
+	animReadyWalk		BOTH_STAND3
+	animReadyNoAmmo		BOTH_ATTACK3
+	animAttackRun		BOTH_ATTACK3
+	animAttack			BOTH_ATTACK3
+	animAttackWalk		BOTH_ATTACK3
+	animStand			BOTH_WOOKIEE_RAGE_STAND
 	customAmmo			800
 	clipSize			45
 	FPMult				0.65
@@ -123,13 +123,14 @@ WeaponInfo2
  Fpmult	1.20
  velocitymod 1.35
 hasAnimOverrides	1
-	animReadyRun		BOTH_WESTARM5_RUN1
-	animReady			BOTH_WESTARM5_READY
-	animReadyWalk		BOTH_WESTARM5_READY
-	animReadyNoAmmo		BOTH_WESTARM5_ATTACK
-	animAttackRun		BOTH_WESTARM5_ATTACK
-	animAttack			BOTH_WESTARM5_ATTACK
-	animAttackWalk		BOTH_WESTARM5_SCOPED_ATTACK
+	animReadyRun		BOTH_DC15_IDLE
+	animReady			BOTH_DC15_IDLE
+	animReadyWalk		BOTH_DC15_READY
+	animReadyNoAmmo		BOTH_DC15_ATTACK
+	animAttackRun		BOTH_DC15_ATTACK
+	animAttack			BOTH_DC15_ATTACK
+	animAttackWalk		BOTH_DC15_ATTACK
+	animStand			BOTH_STAND1
 }
 
 WeaponInfo3
