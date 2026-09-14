@@ -79,14 +79,15 @@ WeaponInfo0
 	MuzzleEffect		"Blaster/MuzzleFlash01R"
 	MissileEffect		"Blaster/Shot01R"
 	hasAnimOverrides	1
-	animReadyRun		BOTH_DC15_IDLE
-	animReady			BOTH_DC15_IDLE
-	animReadyWalk		BOTH_DC15_READY
-	animReadyNoAmmo		BOTH_DC15_ATTACK
-	animAttackRun		BOTH_DC15_ATTACK
-	animAttack			BOTH_DC15_ATTACK
-	animAttackWalk		BOTH_DC15_ATTACK
-	animStand			BOTH_STAND1
+	animReadyRun		BOTH_STAND3
+	animReady			BOTH_STAND3
+	animReadyWalk		BOTH_STAND3
+	animReadyNoAmmo		BOTH_ATTACK3
+	animAttackRun		BOTH_ATTACK3
+	animAttack			BOTH_ATTACK3
+	animAttackWalk		BOTH_ATTACK3
+	animStand			BOTH_WOOKIEE_RAGE_STAND
+	//animStand			BOTH_SPEAR_STANCE
 	customAmmo			768
 	clipSize			64
 	Damagemod			0.55
@@ -102,6 +103,16 @@ WeaponInfo1
 	NewViewModel		"models/weapons2/dlt20a/dlt20a.md3"
 	Icon				"gfx/hud/w_icon_dlt20a"
 	WeaponName			"DLT-20A Suppression Rifle"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_STAND3
+	animReady			BOTH_STAND3
+	animReadyWalk		BOTH_STAND3
+	animReadyNoAmmo		BOTH_ATTACK3
+	animAttackRun		BOTH_ATTACK3
+	animAttack			BOTH_ATTACK3
+	animAttackWalk		BOTH_ATTACK3
+	animStand			BOTH_WOOKIEE_RAGE_STAND
+	//animStand			BOTH_SPEAR_STANCE
 	ratemod	.85
 	damagemod .90
 	clipsize	200
