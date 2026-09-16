@@ -28,7 +28,7 @@ ClassInfo
 	speed				1.05
 	damageGiven			1.15
 
-	special2			EAS_FP_DASH
+	special2			EAS_HI_DASH
 	special3			EAS_FP_LIGHTNING
 	special4			EAS_HI_POISON
 
