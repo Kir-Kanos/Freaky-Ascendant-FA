@@ -50,7 +50,11 @@ WeaponInfo0
 	NewHandsModel		"models/weapons2/DLT-19_HeavyBlaster/riflescoped_hand.md3"
 	Icon				"gfx/hud/w_icon_dlt19scoped"
 	WeaponName			"DLT-19 Targeting Cannon"
+	FlashSound1			"sound/weapons/DLT19/fire.wav"
+	FlashSound2			"sound/weapons/DLT19/fire.wav"
+	FlashSound3			"sound/weapons/DLT19/fire.wav"
 	FlashSound0			"sound/weapons/DLT19/fire.wav"
+	FlashSound5 		"sound/weapons/DLT19/fire.wav"
 	MuzzleEffect		"Blaster/MuzzleFlash01R"
 	MissileEffect		"Blaster/Shot01R"
 	clipsize			200
