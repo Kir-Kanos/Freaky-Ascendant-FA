@@ -57,16 +57,12 @@ ClassInfo
 	uishader_4		"models/players/clonetrooper_p2/mb2_icon_91_neyo"
 	
 	model_5			"clonetrooper_p2"
-	skin_5			"104_wolffe"
-	uishader_5		"models/players/clonetrooper_p2/mb2_icon_104_wolffe"
+	skin_5			"327_deviss"
+	uishader_5		"models/players/clonetrooper_p2/mb2_icon_327_deviss"
 	
 	model_6			"clonetrooper_p2"
-	skin_6			"327_deviss"
-	uishader_6		"models/players/clonetrooper_p2/mb2_icon_327_deviss"
-	
-	model_7			"clonetrooper_p2"
-	skin_7			"Doom"
-	uishader_7		"models/players/clonetrooper_p2/mb2_icon_doom"
+	skin_6			"Doom"
+	uishader_6		"models/players/clonetrooper_p2/mb2_icon_doom"
 
 	saberStanceAnim		BOTH_STAND9
 	flourishAnim BOTH_SPINATTACK7
