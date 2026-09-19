@@ -47,16 +47,12 @@ ClassInfo
 	uishader_3  "models/players/clonetrooper_p2/mb2_icon_13"
 
 	model_4     "clonetrooper_p2"
-	skin_4      "332"
-	uishader_4  "models/players/clonetrooper_p2/mb2_icon_332"
+	skin_4      "kamino_security"
+	uishader_4  "models/players/clonetrooper_p2/mb2_icon_kamino_security"
 
-	model_5     "clonetrooper_p2"
-	skin_5      "kamino_security"
-	uishader_5  "models/players/clonetrooper_p2/mb2_icon_kamino_security"
-
-	model_6    "clonetrooper_p2"
-	skin_6     "maceunit"
-	uishader_6 "models/players/clonetrooper_p2/mb2_icon_maceunit"
+	model_5    "clonetrooper_p2"
+	skin_5     "maceunit"
+	uishader_5 "models/players/clonetrooper_p2/mb2_icon_maceunit"
 
 
 	isCustomBuild	 1
