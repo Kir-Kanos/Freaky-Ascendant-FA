@@ -29,19 +29,21 @@ Subclass2    "ptg3_ClonePhase2"
 Subclass3    "ptg3_Clone212"
 Subclass4    "ptg3_Clone501"
 Subclass5	 "ptg3_Clone327"
-Subclass6    "ptg3_CloneGuard"
-Subclass7    "ptg3_ReconClone"
-Subclass8    "ptg3_CloneMarine"
-Subclass9    "ptg3_CloneCom"
-Subclass10   "ptg3_Arc"
-Subclass11   "ptg3_AlphaArc"
-Subclass12   "ptg3_CloneLead"
-Subclass13   "ptg3_Rex"
-Subclass14   "ptg3_Delta"
-Subclass15   "ptg3_Hunter"
-Subclass16   "ptg3_Echo"
-Subclass17   "ptg4_SenGuard"
-Subclass18   "ptg3_BossNass"
+Subclass6	 "ptg3_Clone91"
+Subclass7	 "ptg3_Clone104"
+Subclass8    "ptg3_CloneGuard"
+Subclass9    "ptg3_Clone41"
+Subclass10    "ptg3_CloneMarine"
+Subclass11    "ptg3_CloneCom"
+Subclass12   "ptg3_Arc"
+Subclass13   "ptg3_AlphaArc"
+Subclass14   "ptg3_CloneLead"
+Subclass15   "ptg3_Rex"
+Subclass16   "ptg3_Delta"
+Subclass17   "ptg3_Hunter"
+Subclass18   "ptg3_Echo"
+Subclass19   "ptg4_SenGuard"
+Subclass20   "ptg3_BossNass"
 }
 
 SubclassesForClass3
@@ -63,6 +65,7 @@ SubclassesForClass4
 	Subclass6	"ptg8_Thorn"
 	Subclass7	"ptg6_Bly"
 	Subclass8	"ptg7_Cody"
+	Subclass9	"ptg7_Wolffe"
 }
 
 SubclassesForClass5
@@ -77,8 +80,9 @@ SubclassesForClass5
 	Subclass8	"ptg9_Ahsoka"
 	Subclass9	"ptg9_Kit"
 	Subclass10	"ptg9_QuiGon"
-	Subclass11 	"ptg10_RahmKota"
-	Subclass12	"ptg10_ShaakTi"
+	Subclass11	"ptg9_Aayla"
+	Subclass12 	"ptg10_RahmKota"
+	Subclass13	"ptg10_ShaakTi"
 }
 
 SubclassesForClass6
