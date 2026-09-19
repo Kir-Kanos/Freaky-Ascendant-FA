@@ -83,15 +83,19 @@ WeaponInfo0
 	NewHandsModel       "models/weapons2/dc-15a/dc-15a_hand.md3"
 	MuzzleEffect		"Blaster/MuzzleFlash01B"
 	AltMuzzleEffect		"Blaster/MuzzleFlash01B"
-	MissileEffect		"blaster/Shot04B"
-	AltMissileEffect	"Blaster/Shot03B"
-	FlashSound0			"sound/weapons/dc17m/alt_fire.wav"
-    AltFlashSound0      "sound/weapons/Bf2005Cr/fire.wav"
+	MissileEffect		"blaster/Shot03B"
+	FlashSound0		    "sound/weapons/Bf2005Cr/fire.wav"
 	Icon				"gfx/hud/w_icon_clonerifle"
 	WeaponName			"DC-15LE Rapid Repeater"
     rateMod             0.8
 	velocityMod			0.9
 	damagemod			0.9
+	MissileMissEffect			"Blaster/Impact_Wall01B_E"
+	MissileHitHumanEffect		"Blaster/Impact_Wall01B_E"
+	MissileHitDroidEffect		"Blaster/Impact_Wall01B_E"
+	altMissileMissEffect		"Blaster/Impact_Wall01B_E"
+	altMissileHitHumanEffect	"Blaster/Impact_Wall01B_E"
+	altMissileHitDroidEffect	"Blaster/Impact_Wall01B_E"
 }
 
 description	"501st Clone Trooper
