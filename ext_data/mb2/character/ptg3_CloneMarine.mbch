@@ -33,6 +33,10 @@ ClassInfo
 	skin        "default"
 	uishader    "models/players/clonemarine/mb2_icon_default"
 
+	model_1     "clonetrooper_p2"
+	skin_1      "21a"
+	uishader_1  "models/players/clonetrooper_p2/mb2_icon_21a"
+
 	isCustomBuild	1
 	mbPoints	3
 
