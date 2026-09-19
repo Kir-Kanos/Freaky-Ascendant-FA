@@ -1,0 +1,100 @@
+ClassInfo
+{
+	name				"ptg9_Aayla"
+	MBClass				MB_CLASS_JEDI
+	classNumberLimit	1
+	WP_SaberFlags		HELD_NODISARM|HELD_POISON
+	WP_MeleeFlags		HELD_POISON
+	
+	weapons				WP_SABER|WP_MELEE
+	attributes			MB_ATT_DEFLECT,2|MB_ATT_FORCEBLOCK,2|MB_ATT_FORCEFOCUS,1|MB_ATT_BUNNY_HOP,1|MB_ATT_GUN_DEFENSE,2|MB_ATT_FP_SABER_DEFENSE,3|MB_ATT_INAIR_FORCE_REGEN|MB_ATT_DEXTERITY,3|MB_ATT_FLIPKICK,1|MB_ATT_DISGUISE,2|MB_ATT_ENV_PROT,1|MB_ATT_KNOCKDOWN_ROLL
+
+	forcepowers			FP_SEE,1|FP_LEVITATION,3|FP_PUSH,2|FP_PULL,2|FP_SPEED,1|FP_TELEPATHY,1|FP_SABER_OFFENSE,2|FP_SABERTHROW,3
+
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+
+	skilltimermod		.85
+
+	speed				1.08
+	rateOfFire_Melee	0.95
+	maxhealth			125
+	forcepool			100
+	forceregen			1.2
+	damageGiven			1.0
+	saberstyle			SS_DUAL|SS_TAVION
+	saberDamageStyle	SS_DUAL,220|SS_TAVION,130
+	saberSpecialDamage	1.35
+	saberThrowDamage	45
+	BPmultiplier		0.90
+	ASmultiplier		1.08
+	CSmultiplier		1.12
+
+	meleeknockback_flat 85
+
+	classflags			CFL_NOPICKUPS|CFL_SEEING_STEALTH|CFL_BPFREEJUMPS|CFL_BLOODYMELEE|CFL_HEAVYMELEE
+
+	flourishanim		BOTH_JUMPATTACK7
+
+	special2			EAS_HI_DEX
+	special3			EAS_FP_SPEED
+
+	uioverlay			"gfx/icons/frontline"
+
+	model				"aayla"
+	skin				"default"
+	uishader			"models/players/aayla/mb2_icon_default"
+
+	saber1				saber_aayla_legends
+	sabercolor			4
+	saber2				saber_aayla2
+	saber2color			3
+
+	saberStanceAnim		BOTH_TRIPLE3_STAFFSTANCE
+
+}
+
+description	"Aayla Secura
+
+A Jedi Infiltration Master with high agility and resilience.
+
+^2Weaponry:
+- Heavy Melee
+-- 5% faster RoF
+-- Poisons On Hit
+-- Melee Specials Do 85 Flat Knockback
+- Lightsaber (Dual/Cyan Style)
+-- Saber Defense (3)
+-- Blaster Defense (2)
+-- Blaster Deflect (2)
+-- BP-Free Jumps
+-- Cannot Be Disarmed
+-- Poisons On Hit
+-- 35% more special damage
+-- Saber Throw (3) [45 Damage]
+
+^5Force Powers:
+- Jump (3)
+- Push (2)
+- Pull (2)
+- Speed - Speed Lunge (1) ^3[CS3]
+- Mind Trick (1)
+- Sense (1)
+
+^8Attributes:
+- Dexterity (3)
+- Environmental Protection (1)
+- Knockdown Roll
+- Bunny Hop (1)
+- Healing Capped at 35
+- Force Block (2)
+- Force Focus (1)
+- In-Air Force Regen
+- Sense Stealth
+- 15% Faster Skill Cooldowns
+
+^3Abilities:
+- Disguise (2) ^3[Style Swap In Melee]
+- Dex Roll ^3[CS2]
+- Flipkick (1) ^3[Contact Jump]"

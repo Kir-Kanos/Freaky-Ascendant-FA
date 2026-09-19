@@ -1,0 +1,271 @@
+//Legends Mode character file - Created by MARSHALL (And Stromboli King for edits and additions)
+ClassInfo
+{
+	name				"ptg3_Clone41"
+	weapons				WP_MELEE|WP_EE3|WP_THERMAL
+
+	attributes			MB_ATT_AMMO,3|MB_ATT_EE3,2|MB_ATT_BLAST_ARMOUR,1|MB_ATT_STAMINA,1|MB_ATT_TRACKING_BEACON|MB_ATT_QUICKTHROW,1|MB_ATT_GRAPPLE_HOOK,1
+
+	maxhealth			80
+	maxarmor			40
+	rankarmor			80
+
+	resource			RESOURCE_STAMINA
+	speed				1.09
+	MBClass				MB_CLASS_ARCTROOPER
+	classNumberLimit	4
+	modelscale			1.02
+
+	WP_ThermalFlags	HELD_POISON
+	WP_E22Flags	HELD_ALTRELOAD
+	WP_EE3Flags	HELD_ALTRELOAD
+
+	extralives	1
+
+	WP_FragNadeFlags 	HELD_TRACKING
+	WP_DetPackFlags		HELD_PULSE|HELD_FLAME|HELD_DISRUPTIFY|HELD_LOWDAMAGE|HELD_KNOCKBACK|HELD_KNOCKDOWN
+	WP_TripMineFlags 	HELD_SONIC|HELD_LOWDAMAGE|HELD_TRACKING
+	WP_DLT20AFlags		HELD_ALTRELOAD
+
+	flourishAnim 		TORSO_HANDSIGNAL4
+	gloatAnim 			BOTH_STAND5TOAIM
+
+	model				"clonetrooper_p2"
+	skin				"41g"
+	uishader			"models/players/clonetrooper_p2/mb2_icon_41g"
+	model_1				"clonetrooper_p2"
+	skin_1				"41"
+	uishader_1			"models/players/clonetrooper_p2/mb2_icon_41"
+	model_2				"clonetrooper_p2"
+	skin_2				"41_ranger"
+	uishader_2			"models/players/clonetrooper_p2/mb2_icon_41_ranger"
+
+	special1			EAS_HI_SPRINT
+	special3			EAS_HI_QUICKTHROW
+	special4			EAS_HI_GRAPPLEHOOK
+
+	uioverlay 			"gfx/icons/scout"
+
+	isCustomBuild		1
+	mbPoints			0
+	hasCustomSpec		2
+	isOnlyOneSpec		1
+
+	customSpecName_1	"Ranger"
+	customSpecIcon_1	"gfx/menus/alpha/icon_weap_accuracy"
+	customSpecDesc_1	"mister sniper"
+
+	customSpecName_2	"Trooper"
+	customSpecIcon_2	"gfx/menus/alpha/icon_weap_damage"
+	customSpecDesc_2	"yummy multilife"
+
+	c_att_skill_0		MB_ATT_PROJECTILE_RIFLE
+	c_att_names_0		"Valken-38x Projectile Rifle"
+	c_att_ranks_0		0
+	c_att_descs_0		"Proj. Rifle"
+
+	c_att_skill_1		MB_ATT_TRIP_MINES
+	c_att_names_1		"Disruptor Mines"
+	c_att_ranks_1		0,0
+	c_att_descs_1		"Tripmine, Applies Sonic/Smoke/Tracking on hit"
+
+	c_att_skill_2		MB_ATT_DET_PACK
+	c_att_names_2		"Overcharged Ion Bomb"
+	c_att_ranks_2		0,0
+	c_att_descs_2		"Detpack, Applies Burn/Pulse/Knockdown/Knockback"
+
+	c_att_skill_3		MB_ATT_FRAGS
+	c_att_names_3		"Spotting Flare"
+	c_att_ranks_3		0
+	c_att_descs_3		"Frag, Large radius grenade, Applies Tracking, 0 Damage"
+
+	c_att_skill_4		MB_ATT_GRAPPLE_HOOK
+	c_att_names_4		"Grappling Hook ^3[CS4 Melee]"
+	c_att_ranks_4		0,0
+
+	c_att_skill_5		MB_ATT_ARMOUR
+	c_att_names_5		"Armor (80)"
+	c_att_ranks_5		0
+
+
+	c_att_skill_15		MB_ATT_E_22
+	c_att_names_15		"DC-15A Elite Rifle"
+	c_att_ranks_15		0,0,0
+	c_att_descs_15		"E-22, 30%+ Velocity/Damage/FP Drain, 15%- RoF, Mag Reload"
+
+	c_att_skill_16		MB_ATT_EE3
+	c_att_names_16		"DC-15S Burst Repeater"
+	c_att_ranks_16		0,0,0
+	c_att_descs_16		"EE-3, 10%+ Damage, 10%+ Velocity, 5%- RoF, Mag Reload"
+
+	c_att_skill_17		MB_ATT_BASE_TD
+	c_att_names_17		"Noxious Thermal Grenades"
+	c_att_ranks_17		0,0,0
+	c_att_descs_17		"Thermal Grenades, Poison On Hit"
+
+	c_att_skill_18		MB_ATT_RESPAWNS
+	c_att_names_18		"Reinforcements"
+	c_att_ranks_18		0
+	c_att_descs_18		"1 Default"
+
+	c_att_skill_19		MB_ATT_KNOCKDOWN_ROLL
+	c_att_names_19		"Knockdown Roll"
+	c_att_ranks_19		0
+
+	c_att_skill_20		MB_ATT_ASSEMBLE
+	c_att_names_20		"Assemble"
+	c_att_ranks_20		0
+
+
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_PROJ
+	WeaponBasedOff		WP_PROJ
+	NewWorldModel 		"models/weapons2/dlt-18_repeater/dlt-18_repeater_w.glm"
+	NewViewModel  		"models/weapons2/dlt-18_repeater/dlt-18_repeater.md3"
+	Icon  				"gfx/hud/w_icon_dlt-18"
+	FlashSound0  		"sound/weapons/Glie-44/alt_fire.wav"
+	WeaponName			"Valken-38x Projectile Rifle"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	MissileEffect		"Blaster/Shot10B"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_DET_PACK
+	WeaponBasedOff		WP_DET_PACK
+	NewWorldModel 		"models/weapons2/detpack/det_pack_w.glm"
+	NewViewModel 		"models/weapons2/detpack/det_pack.md3"
+	Icon 				"gfx/hud/w_icon_detpack"
+	WeaponName			"Overcharged Ion Bomb"
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_TRIP_MINE
+	WeaponBasedOff		WP_TRIP_MINE
+	NewWorldModel		"models/weapons2/thermal/thermal_w.glm"
+	NewViewModel 		"models/weapons2/thermal/thermal.md3"
+	NewHandsModel 		"models/weapons2/thermal/thermal_hand.md3"
+	Icon				"gfx/hud/w_thermal_grenade"
+	MissileModel 		"models/weapons2/thermal/thermal_proj.md3"
+	AltMissileModel		"models/weapons2/thermal/thermal_proj.md3"
+	MissileEffect 		"stone/missile1"
+	AltMissileEffect 	"stone/missile1"
+	MissileMissEffect			"smokenadeleg/explode_vol"
+	MissileHitHumanEffect	"smokenadeleg/explode_vol"
+	MissileHitDroidEffect	"smokenadeleg/explode_vol"
+	AltMissileMissEffect		"smokenadeleg/explode_vol"
+	AltMissileHitHumanEffect	"smokenadeleg/explode_vol"
+	AltMissileHitDroidEffect	"smokenadeleg/explode_vol"
+	FlashSound0			"sound/weapons/smokenade/select.mp3"
+	AltFlashSound0 		"sound/weapons/smokenade/select.mp3"
+	WeaponName			"Disruptor Mine"
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_FRAG_NADE
+	WeaponBasedOff		WP_FRAG_NADE
+	NewWorldModel		"models/weapons/Grenade_Concussion/model.glm"
+	NewViewModel		"models/weapons/Grenade_Concussion/viewmodel.md3"
+	Icon				"gfx/hud/w_icon_stungrenade"
+	MissileModel		"models/weapons/Grenade_Concussion/proj.md3"
+	MissileMissEffect	"mustafar/volcano1"
+	MissileHitHumanEffect	"mustafar/volcano1"
+	MissileHitDroidEffect	"mustafar/volcano1"
+	WeaponName			"Spotting Flare"
+	altfireenabled 		0
+	damageMod 			0.01
+	splashRadius 		500
+}
+
+WeaponInfo4
+{
+	WeaponToReplace		WP_EE3
+	WeaponBasedOff		WP_EE3
+	NewWorldModel		"models/weapons2/dc-15s/dc-15s_w.glm"
+	NewViewModel		"models/weapons2/dc-15s/dc-15s.md3"
+	Icon				"gfx/hud/w_icon_dc-15s"
+	WeaponName			"DC-15S Burst Repeater"
+	FlashSound0			"sound/weapons/dc-15s/fire.wav"
+	FlashSound1			"sound/weapons/dc-15s/fire.wav"
+	FlashSound2			"sound/weapons/dc-15s/fire.wav"
+	FlashSound3			"sound/weapons/dc-15s/fire.wav"
+	FlashSound4			"sound/weapons/dc-15s/fire.wav"
+	AltFlashSound0		"sound/weapons/firegun/fire.wav"
+	AltFlashSound1		"sound/weapons/firegun/fire.wav"
+	AltFlashSound2		"sound/weapons/firegun/fire.wav"
+	AltFlashSound3		"sound/weapons/firegun/fire.wav"
+	AltFlashSound4		"sound/weapons/firegun/fire.wav"
+	customammo			500
+	clipsize			32
+	damageMod			1.10
+	rateMod				1.05
+	velocityMod			1.10
+	MissileEffect		"Blaster/Shot01B"
+	AltMissileEffect	"Blaster/Shot03B"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01B"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_WESTARM5_RUN1
+	animReady			BOTH_WESTARM5_READY
+	animReadyWalk		BOTH_WESTARM5_READY
+	animReadyNoAmmo		BOTH_WESTARM5_ATTACK
+	animAttackRun		BOTH_WESTARM5_ATTACK
+	animAttack			BOTH_WESTARM5_ATTACK
+	animAttackWalk		BOTH_WESTARM5_SCOPED_ATTACK
+}
+
+WeaponInfo5
+{
+	WeaponToReplace		WP_E_22
+	WeaponBasedOff		WP_E_22
+	NewWorldModel		"models/weapons2/dc-15a/dc-15a_w.glm"
+	NewViewModel		"models/weapons2/dc-15a/dc-15a.md3"
+	Icon				"gfx/hud/w_icon_clonerifle"
+	WeaponName			"DC-15A Elite Rifle"
+	customammo			400
+	clipSize			40
+	damageMod			1.3
+	FPMult				1.3
+	ratemod				1.15
+	velocitymod			1.3
+	FlashSound0 "sound\weapons\crosshair\snipe.wav"
+	altFlashSound0 "sound\weapons\crosshair\snipe.wav"
+	altFireEnabled		1
+	MissileEffect		"Blaster/Shot02B"
+	AltMissileEffect	"Blaster/Shot02B"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01B"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_WESTARM5_RUN1
+	animReady			BOTH_WESTARM5_READY
+	animReadyWalk		BOTH_WESTARM5_READY
+	animReadyNoAmmo		BOTH_WESTARM5_ATTACK
+	animAttackRun		BOTH_WESTARM5_SCOPED_ATTACK
+	animAttack			BOTH_WESTARM5_SCOPED_ATTACK
+	animAttackWalk		BOTH_WESTARM5_SCOPED_ATTACK
+}
+
+description	"41st Clone Trooper
+
+^2Weaponry:
+- Melee
+- DC-15S Burst Repeater (2)
+-- EE-3
+-- 10%+ Damage/Velocity
+-- 5%- RoF
+
+^8Attributes:
+- Blast Armor
+- Tracking Beacon
+- Stamina (1)
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Quickthrow (1) ^3[CS3]
+- Grapple Hook (1) ^3[CS4]"

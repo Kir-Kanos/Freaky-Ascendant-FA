@@ -1,0 +1,123 @@
+ClassInfo
+{
+	name				"ptg7_Wolffe"
+	weapons				WP_MELEE|WP_CLONE_PISTOL|WP_CRYO_NADE|WP_PULSE_NADE
+	attributes			MB_ATT_AMMO,3|MB_ATT_CLONE_PISTOL,3|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_FP_MIRALUKA|MB_ATT_RALLY,1|MB_ATT_DISP_HEALTH,1|MB_ATT_BLAST_ARMOUR,1|MB_ATT_ENV_PROT,1|MB_ATT_PULSE_GRENADES,2|MB_ATT_FLOAT_HOP,1|MB_ATT_DODGE,2|MB_ATT_QUICKTHROW,1|MB_ATT_DEXTERITY,2|MB_ATT_GRAPPLE_HOP|MB_ATT_HEALING,1|MB_ATT_CRYOBAN_GRENADES,2|MB_ATT_JETPACK
+
+	forcepowers			FP_SEE,3
+	MBClass				MB_CLASS_CLONETROOPER
+	classNumberLimit	1
+
+	resource			RESOURCE_STAMINA
+	forcepool			125
+	forceregen			1.6
+
+	classflags			CFL_STATVIEWER
+
+	modelscale			1.01
+	basespeed			215
+
+	Hackrate			.75
+
+	WP_ClonePistolFlags	HELD_ALTRELOAD|HELD_NODISARM|HELD_KNOCKBACK
+
+	model				"clonetrooper_p2"
+	skin				"104_wolffe"
+	uishader			"models/players/clonetrooper_p2/mb2_icon_104_wolffe"
+
+	model_1				"clonetrooper_p1"
+	skin_1				"104_wolffe"
+	uishader_1			"models/players/clonetrooper_p1/mb2_icon_104_wolffe"
+
+	maxhealth			125
+	maxArmor			100
+
+	special1			EAS_HI_DODGE
+	special2			EAS_HI_QUICKTHROW
+	special3			EAS_HI_DEX
+	special4			EAS_HI_KICK
+	meleespecial4		EAS_HI_GRAPPLEHOOK
+
+	jetpackJetTag		"*r_leg_foot"		//*r_leg_foot"
+	jetpackJet2Tag		"*l_leg_foot"		//"*l_leg_foot"
+	jetpackJetOffset	"0, 0, 10" // 30"
+	jetpackJet2Offset	"0, 0, 10" // 0, 0, 30"
+	jetpackJetAngles	"0, -70, 0"
+	jetpackJet2Angles	"0, 70, 0"
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_CLONE_PISTOL
+	WeaponBasedOff		WP_CLONE_PISTOL
+	NewWorldModel		"models/weapons2/dc-17_cw/dc-17_w.glm"
+	NewViewModel		"models/weapons2/dc-17_cw/dc-17_cw.md3"
+	NewHandsModel		"models/weapons2/dc-17_cw/dc-17_cw_hand.md3"
+	Icon				"gfx/hud/w_icon_dc-17_cw_dual"
+	WeaponName			"Dual DC-17 Hand Blasters"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01B"
+	MissileEffect		"Blaster/Shot03B"
+	Missile3Effect		"Blaster/Shot03B"
+	AltMissileEffect	"Blaster/Shot03B"
+	PowerupShotEffect	"Blaster/Shot04B"
+	damageMod			1.35
+	FPMult				1.35
+	rateMod				1.1
+	velocitymod			0.50
+	clipSize			30
+	customAmmo			1000
+	FlashSound0			"sound/weapons/firegun/fire.wav"
+	altFlashSound0		"sound/weapons/firegun/fire.wav"
+	ChargeEffect		"gfx/effects/cloneFrontFlash"
+	OverchargeEffect	"gfx/effects/cloneFrontFlash"
+}
+
+ForceInfo0
+{
+	ForceToReplace		FP_SEE
+	Icon				"gfx/forcepowers/radar"
+	ForcePowerName		"Enhanced Optic"
+	StartSound			"sound/ambience/kotor/consolebeep03.mp3"
+	LoopSound			"sound/ambience/cp_02_lp.wav"
+}
+
+description	"Commander Wolffe 
+
+An Airborne Commander with Jetboots and high synergy with mobile teammates.
+
+^2Weaponry:
+- Melee
+- Dual DC-17 Hand Blasters (3)
+-- Cannot Be Disarmed
+-- Knockback On Hit
+-- 35% More Damage/FP Mult
+-- 10% Less RoF
+-- 50% Less Velocity
+- Pulse Grenade (2)
+- Cryo Grenade (2)
+
+^5Powers:
+- Cybernetic Optic (Sense 3)
+
+^8Attributes:
+- 25% Faster Hack Speed
+- Healing (1)
+- Blast Armor
+- Environmental Protection (1)
+- Slow Faller
+- Grapple Hop
+- Dexterity (2)
+- Jet Boots (Jetpack)
+- Rally
+- Constant Survey (Miraluka Vision)
+- Empathy (Stat Viewer)
+
+^3Abilities:
+- Quickthrow (1) ^3[CS2]
+- Dodge ^3[CS1]
+- Dex Roll ^3[CS3]
+- Gunkick ^3[CS4]
+- Grappling Hook (2) ^3[Melee CS4]
+- Health Dispenser (1) ^3[USE In Melee]"

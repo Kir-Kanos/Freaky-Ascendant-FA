@@ -1,0 +1,200 @@
+ClassInfo
+{
+	name				"ptg3_Clone104th"
+	weapons				WP_MELEE|WP_BLASTER_PISTOL
+	attributes			MB_ATT_AMMO,3|MB_ATT_SPRINT|MB_ATT_ASSEMBLE,1|MB_ATT_PISTOL,1
+	MBClass				MB_CLASS_CLONETROOPER
+	classNumberLimit	4
+
+	resource			RESOURCE_STAMINA
+	forcepool			100
+
+	classflags	CFL_STATVIEWER
+
+	modelscale			1.01
+	speed				1.07
+
+	skilltimermod		1.6
+
+	WP_BlasterPistolFlags	HELD_ALTRELOAD
+	WP_CloneRifleFlags	HELD_ALTRELOAD
+
+	model				"clonetrooper_p2"
+	skin				"104"
+	uishader			"models/players/clonetrooper_p2/mb2_icon_104"
+
+	model_1				"clonetrooper_p1"
+	skin_1				"104"
+	uishader_1			"models/players/clonetrooper_p1/mb2_icon_104"
+	
+	model_2				"clonetrooper_p2"
+	skin_2				"104_comet"
+	uishader_2			"models/players/clonetrooper_p2/mb2_icon_104_comet"
+
+	model_3				"clonetrooper_p2"
+	skin_3				"104_boost"
+	uishader_3			"models/players/clonetrooper_p2/mb2_icon_104_boost"
+
+	model_4				"clonetrooper_p2"
+	skin_4				"104_sinker"
+	uishader_4			"models/players/clonetrooper_p2/mb2_icon_104_sinker"
+
+	extralives			2
+
+	maxhealth			80
+	maxArmor			40
+
+	rankHack			.84
+
+	isCustomBuild		1
+	mbPoints			11
+
+	special1			EAS_HI_SPRINT
+	special2			EAS_HI_DASH
+	special4			EAS_HI_GRAPPLEHOOK
+	meleespecial4		EAS_HI_GRAPPLEHOOK
+
+	c_att_skill_0		MB_ATT_PISTOL
+	c_att_names_0		"DC-17 Hand Blaster"
+	c_att_ranks_0		0,1,2
+	c_att_descs_0		"Pistol, 20%+ Damage, 20%- RoF, 30%- Velocity, Mag Reload"
+
+	c_att_skill_1		MB_ATT_CLONERIFLE
+	c_att_names_1		"DC-15A Compact Rifle"
+	c_att_ranks_1		1,1,2
+	c_att_descs_1		"Clone Rifle, 10%+ Damage, 10%+ RoF, 30%- Velocity, Mag Reload"
+
+	c_att_skill_2		MB_ATT_WESTARM5
+	c_att_names_2		"DC-15S Specialist Carbine"
+	c_att_ranks_2		2,4
+	c_att_descs_2		"M5, 5%+ Damage/RoF/FP Drain, 30%- Velocity"
+
+	c_att_skill_3		MB_ATT_ARC_RIFLE_GRENADELAUNCHER
+	c_att_names_3		"Carbine Grenade Launcher"
+	c_att_ranks_3		2
+	c_att_descs_3		"M5 Pulse Grenade Launcher (Comes with 1 Grenade Chambered)"
+
+	c_att_skill_4		MB_ATT_CRYOBAN_GRENADES
+	c_att_names_4		"Cryo Grenade"
+	c_att_ranks_4		1,1
+
+	c_att_skill_5		MB_ATT_GRAPPLE_HOOK
+	c_att_names_5		"Grappling Hook"
+	c_att_ranks_5		1,1
+	c_att_descs_5		"^3[Melee CS4]"
+
+	c_att_skill_6		MB_ATT_DASH
+	c_att_names_6		"Dash"
+	c_att_ranks_6		4
+	c_att_descs_6		"^3[CS2]"
+
+	c_att_skill_7		MB_ATT_STAMINA
+	c_att_names_7		"Stamina"
+	c_att_ranks_7		1,1,1
+
+	c_att_skill_8		MB_ATT_ASSEMBLE
+	c_att_names_8		"Assemble"
+	c_att_ranks_8		0,1,1
+
+	c_att_skill_9		MB_ATT_HACK_MULTIPLIER
+	c_att_names_9		"Hack Speed (118%)"
+	c_att_ranks_9		1
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/dc-17_cw/dc-17_w.glm"
+	NewViewModel		"models/weapons2/dc-17_cw/dc-17_cw.md3"
+	NewHandsModel		"models/weapons2/dc-17_cw/dc-17_cw_hand.md3"
+	Icon				"gfx/hud/w_icon_dc-17_cw_dual"
+	WeaponName			"DC-17 Blaster Pistol"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01B"
+	MissileEffect		"Blaster/Shot03B"
+	Missile3Effect		"Blaster/Shot03B"
+	AltMissileEffect	"Blaster/Shot03B"
+	PowerupShotEffect	"Blaster/Shot04B"
+	damageMod			1.20
+	rateMod				1.20
+	velocitymod			0.70
+	clipSize			26
+	customAmmo			600
+	FlashSound0			"sound/weapons/firegun/fire.wav"
+	altFlashSound0		"sound/weapons/firegun/fire.wav"
+	ChargeEffect		"gfx/effects/cloneFrontFlash"
+	OverchargeEffect	"gfx/effects/cloneFrontFlash"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_JANGO_PISTOL_IDLE
+	animReady			BOTH_JANGO_PISTOL_IDLE
+	animReadyWalk		BOTH_MAND_PISTOL_READY
+	animReadyNoAmmo		BOTH_MAND_PISTOL_ATTACK
+	animAttackRun		BOTH_MAND_PISTOL_ATTACK
+	animAttack			BOTH_MAND_PISTOL_ATTACK
+	animAttackWalk		BOTH_MAND_PISTOL_ATTACK
+	animStand			BOTH_MAND_PISTOL_READY
+	animCharge			BOTH_MAND_PISTOL_ATTACK
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_CLONE_RIFLE
+	WeaponBasedOff		WP_CLONE_RIFLE
+	NewWorldModel		"models/weapons2/dc-15_ext/dc-15_ext_w.glm"
+	NewViewModel		"models/weapons2/dc-15_ext/dc-15_ext.md3"
+	Icon				"gfx/hud/w_icon_clonerifle"
+	WeaponName			"DC-15A Compact Rifle"
+	damageMod			1.10
+	rateMod				0.90
+	velocitymod			0.70
+	clipSize			15
+	customAmmo			1000
+	hasAnimOverrides	1
+	animReadyRun		BOTH_STAND3
+	animReady			BOTH_STAND3
+	animReadyWalk		BOTH_STAND3
+	animAttack			BOTH_ATTACK4
+	animReadyNoAmmo		BOTH_ATTACK3
+	animAttackRun		BOTH_ATTACK3
+	animAttackWalk		BOTH_ATTACK3
+	animStand			BOTH_WOOKIEE_RAGE_STAND
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_M5
+	WeaponBasedOff		WP_M5
+	NewWorldModel		"models/weapons2/dc-15s/dc-15s_w.glm"
+	NewViewModel		"models/weapons2/dc-15s/dc-15s.md3"
+	Icon				"gfx/hud/w_icon_dc-15s"
+	WeaponName			"DC-15S Specialist Carbine"
+	FlashSound0			"sound/weapons/clonecarbine/fire.wav"
+	FlashSound1			"sound/weapons/clonecarbine/fire1.wav"
+	FlashSound2			"sound/weapons/clonecarbine/fire2.wav"
+	FlashSound3			"sound/weapons/clonecarbine/fire3.wav"
+	damagemod	1.05
+	FPmult		1.05
+	ratemod		.95
+	clipsize	80
+	velocitymod 	.70
+}
+
+description	"104th Clone Trooper
+
+Clone troopers characterized by teamplay tactics and high operating power.
+
+^2Weaponry:
+- Melee
+- DC-17 Hand Blaster (1)
+-- Pistol
+-- Mag Reload
+-- 20%+ Damage, 20%- RoF, 30%- Velocity
+
+^8Attributes:
+- Assemble (1)
+- Empathy (Stat Viewer)
+- 60% Slower Cooldowns
+
+^3Abilities:
+- Sprint ^3[CS1]"

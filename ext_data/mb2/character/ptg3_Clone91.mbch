@@ -1,0 +1,201 @@
+ClassInfo
+{
+	name				"ptg3_Clone91"
+	weapons				WP_MELEE
+	attributes			MB_ATT_AMMO,3|MB_ATT_SPRINT|MB_ATT_STAMINA,1|MB_ATT_TRACKING_BEACON|MB_ATT_BINOCULARS|MB_ATT_DODGE,1
+
+	classNumberLimit	4
+
+	WP_DLT20AFlags		HELD_ALTRELOAD
+	WP_ClonePistolFlags	HELD_ALTRELOAD	
+	WP_DCCarbineFlags	HELD_ALTRELOAD|HELD_CRIPPLE
+	WP_DetPackFlags		HELD_LIFT|HELD_TRACKING
+	WP_FireNadeFlags	HELD_TRACKING
+	
+	MBClass				MB_CLASS_CLONETROOPER
+
+	resource			RESOURCE_STAMINA
+	forcepool			100
+
+	speed				1.10
+	modelscale			1.01
+
+	extralives			2
+
+	maxhealth			80
+
+	maxArmor			40
+
+	knockbacktaken		0.9
+
+	saber1				arc_shiv_legends
+	saberstyle			SS_TAVION
+
+	special1			EAS_HI_DODGE
+	special2			EAS_HI_SPRINT
+	special3			EAS_HI_DEX
+	special4			EAS_HI_TRACKER
+
+	uioverlay_r			"gfx/icons/tactical"
+
+	model				"clonetrooper_p2"
+	skin				"91"
+	uishader			"models/players/clonetrooper_p2/mb2_icon_91"
+
+	isCustomBuild		1
+	mbPoints			11
+
+	c_att_skill_0		MB_ATT_CLONE_PISTOL
+	c_att_names_0		"DC-15s Auto Pistol"
+	c_att_ranks_0		2
+	c_att_descs_0		"Clone Pistol, 75%+ RoF, 75%- Damage/FP Drain, Mag Reload"
+
+	c_att_skill_1		MB_ATT_DC_CARBINE
+	c_att_names_1		"DC-15S Stun Carbine"
+	c_att_ranks_1		1,1,1
+	c_att_descs_1		"Carbine, 30%- Damage, 35%- RoF, 20%- Velocity, Cripples On Hit"
+
+	c_att_skill_2		MB_ATT_DLT20A
+	c_att_names_2		"DC-15A Marksman Rifle"
+	c_att_ranks_2		1,2,1
+	c_att_descs_2		"DLT20A, 30%+ Velocity, 20%+ Damage/FP Drain, 65%- RoF, Mag Reload"
+
+	c_att_skill_3		MB_ATT_TRACKING_DART
+	c_att_names_3		"Tracking Darts"
+	c_att_ranks_3		1,0,0
+	c_att_descs_3		"^3[CS4 Melee]"
+
+	c_att_skill_4		MB_ATT_FIRE_GRENADES
+	c_att_names_4		"Fire Grenade"
+	c_att_ranks_4		2
+	c_att_descs_4		"Tracks On Hit"
+
+	c_att_skill_5		MB_ATT_DET_PACK
+	c_att_names_5		"Detpack"
+	c_att_ranks_5		2,0,0
+	c_att_descs_5		"Lifts And Tracks On Hit"
+
+	c_att_skill_6		MB_ATT_ASSEMBLE
+	c_att_names_6		"Assemble"
+	c_att_ranks_6		1,1,1
+
+	c_att_skill_7		MB_ATT_DEXTERITY
+	c_att_names_7		"Dexterity (Dex Roll)"
+	c_att_ranks_7		2
+	c_att_descs_7		"^3[CS3]"
+
+	c_att_skill_8		MB_ATT_DODGE
+	c_att_names_8		"Dodge"
+	c_att_ranks_8		0,1,1
+	c_att_descs_8		"^3[CS1]"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_DLT20A
+	WeaponBasedOff		WP_DLT20A
+	NewWorldModel		"models/weapons2/dc-15a/dc-15a_w.glm"
+	NewViewModel		"models/weapons2/dc-15a/dc-15a.md3"
+	Icon				"gfx/hud/w_icon_clonerifle"
+	WeaponName			"DC-15A Marksman Rifle"
+	customammo			400
+	clipSize			40
+	damageMod			1.20
+	FPMult				1.20
+	ratemod				1.55
+	velocitymod			1.30
+	FlashSound0			"sound/chars/cadbane/misc/cadblast"
+	AltFlashSound0		"sound/chars/cadbane/misc/cadblast"
+	altFireEnabled		1
+	MissileEffect		"Blaster/Shot01B"
+	AltMissileEffect	"Blaster/Shot03B"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01B"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_WESTARM5_RUN1
+	animReady			BOTH_WESTARM5_READY
+	animReadyWalk		BOTH_WESTARM5_READY
+	animReadyNoAmmo		BOTH_WESTARM5_ATTACK
+	animAttackRun		BOTH_WESTARM5_SCOPED_ATTACK
+	animAttack			BOTH_WESTARM5_SCOPED_ATTACK
+	animAttackWalk		BOTH_WESTARM5_SCOPED_ATTACK
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_CLONE_PISTOL
+	WeaponBasedOff		WP_CLONE_PISTOL
+	NewWorldModel		"models/weapons2/dc-17/dc-17_w.glm"
+	NewViewModel		"models/weapons2/dc-17/dc-17.md3"
+	NewHandsModel		"models/weapons2/dc-17/dc-17_hand.md3"
+	Icon				"gfx/hud/w_icon_dc-17_dual"
+	WeaponName			"DC-15s Auto Pistol"
+	ChargeEffect		"gfx/effects/cloneFrontFlash"
+	OverchargeEffect	"gfx/effects/cloneFrontFlash"
+	FlashSound0			"sound/weapons/dc-15s/fire.wav"
+	AltFlashSound0		"sound/weapons/dc-15s/fire.wav"
+	clipSize			30
+	customammo			300
+	ratemod				.25
+	damagemod			.25
+	fpmult				.25
+	hasAnimOverrides	1
+	animReadyRun		BOTH_JANGO_PISTOL_IDLE
+	animReady			BOTH_JANGO_PISTOL_IDLE
+	animReadyWalk		BOTH_MAND_PISTOL_READY
+	animReadyNoAmmo		BOTH_MAND_PISTOL_ATTACK
+	animAttackRun		BOTH_MAND_PISTOL_ATTACK
+	animAttack			BOTH_MAND_PISTOL_ATTACK
+	animAttackWalk		BOTH_MAND_PISTOL_ATTACK
+	animStand			BOTH_MAND_PISTOL_READY
+	animCharge			BOTH_MAND_PISTOL_ATTACK
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_DC_CARBINE
+	WeaponBasedOff		WP_DC_CARBINE
+	NewWorldModel		"models/weapons2/dc-15s/dc-15s_w.glm"
+	NewViewModel		"models/weapons2/dc-15s/dc-15s.md3"
+	Icon				"gfx/hud/w_icon_dc-15s"
+	WeaponName			"DC-15S Stun Carbine"
+	customammo			300
+	clipsize			40
+	damageMod			0.70
+	rateMod				1.35
+	velocityMod			.8
+	FlashSound0			"sound/weapons/spy_pistol/fire.mp3"
+	FlashSound1			"sound/weapons/spy_pistol/fire.mp3"
+	FlashSound2			"sound/weapons/spy_pistol/fire.mp3"
+	FlashSound3			"sound/weapons/spy_pistol/fire.mp3"
+	FlashSound4			"sound/weapons/spy_pistol/fire.mp3"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_DC15_IDLE
+	animReady			BOTH_DC15_IDLE
+	animReadyWalk		BOTH_DC15_READY
+	animReadyNoAmmo		BOTH_DC15_ATTACK
+	animAttackRun		BOTH_DC15_ATTACK
+	animAttack			BOTH_DC15_ATTACK
+	animAttackWalk		BOTH_DC15_ATTACK
+	animStand			BOTH_STAND1
+}
+
+description	"91st Clone Trooper
+
+Clone troopers characterized by scouting equipment and grounded speed.
+
+^2Weaponry:
+- Melee
+
+^6Inventory:
+- Binoculars 
+
+^8Attributes:
+- Reinforcement (2)
+- Stamina (1)
+- 10% less knockback taken
+- Tracking Beacon
+
+^3Abilities:
+- Dodge ^3[CS1]
+- Sprint (1) ^3[CS2]"
