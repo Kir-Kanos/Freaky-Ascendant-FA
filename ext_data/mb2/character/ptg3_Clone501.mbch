@@ -31,6 +31,11 @@ ClassInfo
 	skin        "501"
 	uishader    "models/players/clonetrooper_p2/mb2_icon_501"
 
+	model_1     "clonetrooper_p2"
+	skin_1      "332"
+	uishader_1  "models/players/clonetrooper_p2/mb2_icon_332"
+
+
 	isCustomBuild	 1
 	mbPoints		 11
 	
