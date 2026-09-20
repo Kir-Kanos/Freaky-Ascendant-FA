@@ -58,14 +58,15 @@ SubclassesForClass3
 SubclassesForClass4
 {
 	Subclass1	"ptg7_CloneAss"
-	Subclass2	"ptg8_Wreck"
-	Subclass3	"ptg8_Tarfful"
-	Subclass4 	"ptg8_Chewie"
-	Subclass5	"ptg7_Fox"
-	Subclass6	"ptg8_Thorn"
-	Subclass7	"ptg6_Bly"
-	Subclass8	"ptg7_Cody"
-	Subclass9	"ptg7_Wolffe"
+	Subclass2	"ptg7_CloneOps"
+	Subclass3	"ptg8_Wreck"
+	Subclass4	"ptg8_Tarfful"
+	Subclass5 	"ptg8_Chewie"
+	Subclass6	"ptg7_Fox"
+	Subclass7	"ptg8_Thorn"
+	Subclass8	"ptg6_Bly"
+	Subclass9	"ptg7_Cody"
+	Subclass10	"ptg7_Wolffe"
 }
 
 SubclassesForClass5
