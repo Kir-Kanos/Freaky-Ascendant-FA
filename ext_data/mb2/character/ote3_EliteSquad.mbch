@@ -1,0 +1,209 @@
+ClassInfo
+{
+	name				"ote3_EliteSquad"
+	weapons				WP_MELEE|WP_CLONE_PISTOL
+	attributes			MB_ATT_AMMO,3|MB_ATT_CLONE_PISTOL,1|MB_ATT_SPRINT|MB_ATT_ASSEMBLE,1
+
+	MBClass				MB_CLASS_CLONETROOPER
+
+	classNumberLimit	2
+
+	WP_PLX1Flags	HELD_FLAME|HELD_CRIPPLE|HELD_TRACKING|HELD_STUN
+
+	resource			RESOURCE_STAMINA
+	forcepool			60
+	forceregen			1.0
+
+	modelscale			1.02
+
+	extralives			2
+
+	maxhealth			80
+
+	maxArmor			40
+
+	knockbacktaken		0.9
+
+	saber1				arc_shiv_legends
+	saberstyle			SS_TAVION
+
+	special1			EAS_HI_SPRINT
+
+	uioverlay_r			"gfx/icons/soldier"
+
+	model				"clonetrooper_p2"
+	skin				"elitesquad"
+	uishader			"models/players/clonetrooper_p2/mb2_icon_elitesquad"
+
+	isCustomBuild		1
+	mbPoints			35
+
+	c_att_skill_0		MB_ATT_CLONE_PISTOL
+	c_att_names_0		"Imperial DC-17 Pistol"
+	c_att_ranks_0		0,1
+	c_att_descs_0		"Clone Pistol"
+
+	c_att_skill_1		MB_ATT_DC_CARBINE
+	c_att_names_1		"DC-15S Operations Carbine"
+	c_att_ranks_1		1,1,1
+	c_att_descs_1		"Clone Carbine"
+
+	c_att_skill_2		MB_ATT_CLONERIFLE
+	c_att_names_2		"Converted DC-15A Rifle"
+	c_att_ranks_2		2,4
+	c_att_descs_2		"Clone Rifle"
+
+	c_att_skill_3		MB_ATT_T21
+	c_att_names_3		"DC-15LE Suppression Repeater"
+	c_att_ranks_3		4,2
+	c_att_descs_3		"T-21, 10%- Damage, 10%+ Velocity/RoF"
+
+	c_att_skill_4		MB_ATT_FIRE_GRENADES
+	c_att_names_4		"Incendiary Grenades"
+	c_att_ranks_4		3,3
+
+	c_att_skill_5		MB_ATT_EWEB
+	c_att_names_5		"Deployable E-Web Turret"
+	c_att_ranks_5		4
+
+	c_att_skill_6		MB_ATT_BLAST_ARMOUR
+	c_att_names_6		"Blast Armor"
+	c_att_ranks_6		3
+
+	c_att_skill_7		MB_ATT_PLX1
+	c_att_names_7		"MiniMag Blaze Munitions"
+	c_att_ranks_7		6,6
+	c_att_descs_7		"PLX, 80%- Damage, 60%+ Velocity, Splash Radius+, Ignites/Tracks/Staggers/Cripples"
+
+	c_att_skill_8		MB_ATT_TRACKING_BEACON
+	c_att_names_8		"Tracking Beacon"
+	c_att_ranks_8		2
+
+	c_att_skill_9		MB_ATT_ASSEMBLE
+	c_att_names_9		"Assemble"
+	c_att_ranks_9		1,2,2
+
+	c_att_skill_10		MB_ATT_STAMINA
+	c_att_names_10		"Stamina"
+	c_att_ranks_10		2,2,2
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_CLONE_RIFLE
+	WeaponBasedOff		WP_CLONE_RIFLE
+	NewWorldModel		"models/weapons2/dc-15a/dc-15a_w.glm"
+	NewViewModel		"models/weapons2/dc-15a/dc-15a.md3"
+	Icon			"gfx/hud/w_icon_clonerifle"
+	WeaponName			"Converted DC-15A Rifle"
+	
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+	AltMissileEffect	"Blaster/Shot01R"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_DC_CARBINE
+	WeaponBasedOff		WP_DC_CARBINE
+	NewWorldModel		"models/weapons2/dc-15s/dc-15s_w.glm"
+	NewViewModel		"models/weapons2/dc-15s/dc-15s.md3"
+	Icon				"gfx/hud/w_icon_dc-15s"
+	WeaponName			"DC-15S Operations Carbine"
+	
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot02R"
+	
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_CLONE_PISTOL
+	WeaponBasedOff		WP_CLONE_PISTOL
+	NewWorldModel		"models/weapons2/dc-17/dc-17_w.glm"
+	NewViewModel		"models/weapons2/dc-17/dc-17.md3"
+	Icon				"gfx/hud/w_icon_dc-17"
+	WeaponName			"Imperial DC-17 Pistol"
+	
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot02R"
+	AltMissileEffect	"Blaster/Shot02R"
+	ChargeEffect				"gfx/effects/bryarfrontflash"
+	MissileMissEffect			"Blaster/Impact_Wall01"
+	MissileHitHumanEffect		"Blaster/Impact_Wall01"
+	MissileHitDroidEffect		"Blaster/Impact_Wall01"
+	altMissileMissEffect		"Blaster/Impact_Wall01"
+	altMissileHitHumanEffect	"Blaster/Impact_Wall01"
+	altMissileHitDroidEffect	"Blaster/Impact_Wall01"
+
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_T21
+	WeaponBasedOff		WP_T21
+	NewWorldModel		"models/weapons2/dc-15_ext/dc-15_ext_w.glm"
+	NewViewModel		"models/weapons2/dc-15_ext/dc-15_ext.md3"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"blaster/Shot04R"
+	AltMissileEffect	"Blaster/Shot03R"
+	FlashSound0			"sound/weapons/dc17m/alt_fire.wav"
+   	AltFlashSound0      "sound/weapons/Bf2005Cr/fire.wav"
+	Icon				"gfx/hud/w_icon_clonerifle"
+	WeaponName			"DC-15LE Suppression Repeater"
+        rateMod             0.9
+	velocityMod			1.1
+	damagemod			0.9
+}
+
+WeaponInfo4
+{
+	WeaponToReplace	WP_PLX1
+	WeaponBasedOff	WP_PLX1
+
+	NewWorldModel		"models/weapons2/MiniMag_launcher/launcher_w.glm"
+	NewViewModel		"models/weapons2/MiniMag_launcher/launcher.md3"
+
+	Icon				"gfx/hud/w_icon_MiniMag"
+
+	WeaponName	"MiniMag Blaze Munitions"
+
+	Damagemod .2
+	VelocityMod 1.6
+	splashRadius	350
+
+	FlashSound0	"sound/weapons/halo_rocket/fire.wav"
+
+ altMuzzleEffect "firegrenade/prim_explode_new"
+ altmissileEffect	"atst/side_alt_shot"
+	altmissileMissEffect	"tarkin/explosion"
+	altMissileHitHumanEffect	"tarkin/explosion"
+	altMissileHitDroidEffect	"tarkin/explosion"
+
+ MuzzleEffect  "firegrenade/prim_explode_new"
+	missileEffect "atst/side_alt_shot"
+	missileMissEffect	"tarkin/explosion"
+	MissileHitHumanEffect	"tarkin/explosion"
+	MissileHitDroidEffect	"tarkin/explosion"
+}
+
+description	"Elite Squad Conscript
+
+Project War Mantle recruits replacing the Republic's clone army.
+
+^2Weaponry:
+- Melee
+- Imperial DC-17 Pistol (1)
+
+^8Attributes:
+- Reinforcement (2)
+- Stamina (0)
+- Assemble (1)
+- Gunbash
+- 10% less knockback taken
+
+^3Abilities:
+- Sprint ^3[CS1]"
