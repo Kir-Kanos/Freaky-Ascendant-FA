@@ -13,7 +13,7 @@ ClassInfo
 	
 	speed 1.09
 	
-	forcepowers	FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_SPEED,2|FP_PUSH,2|FP_PULL,2|FP_SABERTHROW,3|FP_TEAM_FORCE,1|FP_SEE,1
+	forcepowers	FP_SABER_OFFENSE,3|FP_LEVITATION,3|FP_SPEED,2|FP_PUSH,2|FP_PULL,2|FP_TEAM_FORCE,1|FP_SEE,1
 	healthRegenAmount 1
 	healthRegenRate 1500
 	healthRegenCap	35
@@ -66,7 +66,6 @@ A Master Duelist with leadership skills specializing in high-speed combat and di
 - Push (2)
 - Pull (2)
 - Jump (3)
-- Saber Throw (3)
 - Team Energize (1)
 
 ^8Attributes:
