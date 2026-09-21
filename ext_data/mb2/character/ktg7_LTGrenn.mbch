@@ -12,7 +12,7 @@ ClassInfo
 	WP_TripMineFlags	HELD_TRACKING
 	WP_DLT20AFlags		HELD_ALTRELOAD
 	WP_BlasterPistolFlags	HELD_ALTRELOAD
-	WP_MinigunFlags		HELD_POISON|HELD_ALTRELOAD|HELD_CRIPPLE|HELD_FORCEFOCUS|HELD_TRACKING|HELD_SLIPPERY
+	WP_MinigunFlags		HELD_POISON|HELD_ALTRELOAD|HELD_CRIPPLE|HELD_FORCEFOCUS|HELD_TRACKING
 
 	resource 		RESOURCE_STAMINA
 	forcepool 		120
@@ -139,8 +139,8 @@ WeaponInfo4
 	//animStand			BOTH_SPEAR_STANCE
 	ReloadTimeModifier  1.4
 	velocityMod 2.5
-	FPMult 	 	.5
-	damagemod 	.5
+	FPMult 	 	.55
+	damagemod 	.55
 
 }
 WeaponInfo5
@@ -191,9 +191,9 @@ Chief of the TSF.
 -- 35%+ Damage, 10%- RoF, 10%+ Velocity
 - Suppression Cannon 
 -- Minigun (2)
--- Cripples/Poisons/Slips/Force Focuses/Tracks
+-- Cripples/Poisons/Force Focuses/Tracks
 -- Mag Reload
--- 10% Less Damage/FP Drain
+-- 45% Less Damage/FP Drain
 - Perimeter Sensor Explosive
 -- Tripmine (3)
 -- Tracks
