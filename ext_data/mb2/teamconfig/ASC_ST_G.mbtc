@@ -32,6 +32,7 @@ SubclassesForClass2
 	Subclass3	"stg4_KirKanos"
 	Subclass4	"stg4_Mara"
 	Subclass5	"stg4_MrB"
+	Subclass6	"stg4_Jod"
 }
 
 SubclassesForClass3
@@ -51,6 +52,9 @@ SubclassesForClass4
 	Subclass3	"stg7_Hera"
 	Subclass4	"stg7_IG11"
 	Subclass5	"stg7_Scavenge"
+	Subclass7	"stg7_Tyria"
+	Subclass8	"stg7_Poe"
+	Subclass9	"stg6_Dia"
 }
 
 SubclassesForClass5
@@ -58,6 +62,8 @@ SubclassesForClass5
 	Subclass1	"stg8_Chewie"
 	Subclass2	"stg8_NRSecDroid"
 	Subclass3	"stg9_JKnight"
+	Subclass4	"stg9_QuRahn"
+	Subclass5	"stg9_Jaina"
 }
 
 SubclassesForClass6
@@ -67,4 +73,5 @@ SubclassesForClass6
 	Subclass3	"stg10_Jaden"
 	Subclass4	"stg10_Rosh"
 	Subclass5	"stg10_JMystic"
+	Subclass6	"stg10_Corran"
 }
