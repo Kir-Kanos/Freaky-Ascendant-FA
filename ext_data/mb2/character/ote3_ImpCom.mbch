@@ -1,0 +1,304 @@
+ClassInfo
+{
+	name				"ote3_ImpCom"
+	MBClass				MB_CLASS_CLONETROOPER
+	classNumberLimit	2
+	extralives			1
+
+	weapons				WP_BLASTER_PISTOL|WP_SABER|WP_FRAG_NADE
+
+	WP_DCCarbineFlags	HELD_ALTRELOAD
+	WP_DisruptorFlags	HELD_ALTRELOAD
+	WP_BlasterFlags		HELD_ALTRELOAD
+	WP_SaberFlags		HELD_NODISARM
+	AB_WBirdsFlags		HELD_PULL
+	WP_TripMineFlags	HELD_TRACKING
+
+	special1HUD			HUD_FRAGNADE
+
+	spawnerNPC			"probe_leg"
+
+	attributes			MB_ATT_STAMINA,2|MB_ATT_PISTOL,1|MB_ATT_DEXTERITY,1|MB_ATT_BLAST_ARMOUR|MB_ATT_AMMO,3|MB_ATT_FRAGS,1|MB_ATT_FP_MIRALUKA|MB_ATT_PETCONTROL
+
+	BPmultiplier		0
+	saber1				cc
+	saberstyle			SS_TAVION
+	saberMaxChain		1
+	saberDamage			100
+
+	maxhealth			75
+	maxarmor			40
+	damageTaken			.9
+
+	armourRegenCap		40
+	armourRegenAmount	2
+	armourRegenRate		1000
+
+	healthRegenAmount	1
+	healthRegenrate		1000
+	healthRegenCap		25
+
+	basespeed			180
+	rankbasespeed			220
+
+	HackRate		.85
+	knockbackTaken		.85
+
+	gloatAnim			BOTH_ARMSCROSSED_TAUNT
+	flourishAnim		BOTH_FISTBUMP
+
+	special1	EAS_HI_SPRINT
+	meleespecial1	EAS_HI_SPRINT
+	special2	EAS_HI_SPAWNER
+	meleespecial2	EAS_HI_SPAWNER
+	special4	EAS_HI_WHISTLING_BIRDS
+	meleespecial4	EAS_HI_WHISTLING_BIRDS
+
+	modelscale			1.02
+	uioverlay_r			"gfx/icons/spec_infantry"
+
+	model				"clonerc2"
+	skin				"rgb"
+	uishader			"models/players/clonerc2/mb2_icon_rgb"
+	userRGB			0
+	customred		0.5
+	customgreen		0.5
+	customblue		0.5
+
+	model_1				"clonerc2"
+	skin_1				"commando"
+	uishader_1			"models/players/clonerc2/mb2_icon_commando"
+
+	isCustomBuild		1
+	mbPoints			0
+	hasCustomSpec		3
+	isOnlyOneSpec		1
+
+	customSpecName_1	"Assault Operative"
+	customSpecIcon_1	"gfx/menus/alpha/icon_weap_damage"
+
+	customSpecName_2	"Imperial Marksman"
+	customSpecIcon_2	"gfx/menus/alpha/icon_weap_accuracy"
+
+	customSpecName_3	"Anti-Armor Heavy"
+	customSpecIcon_3	"gfx/menus/alpha/icon_weap_fire"
+
+	c_att_skill_0		MB_ATT_DC_CARBINE
+	c_att_names_0		"DC-17m Carbine"
+	c_att_ranks_0		0
+	c_att_descs_0		"DC Carbine, 35% faster RoF, 10% less FP drain, 25% slower mag reload"
+
+	c_att_skill_1		MB_ATT_BASESPEED
+	c_att_names_1		"Move Speed (220)"
+	c_att_ranks_1		0,0
+
+	c_att_skill_2		MB_ATT_WOOKIE_STRENGTH
+	c_att_names_2		"Commando Strength"
+	c_att_ranks_2		0
+
+	c_att_skill_3		MB_ATT_FP_PUSH
+	c_att_names_3		"Repulsor Blast"
+	c_att_ranks_3		0
+	c_att_descs_3		"Force Push"
+
+	c_att_skill_4		MB_ATT_SONIC_DETONATOR
+	c_att_names_4		"Sonic Grenade"
+	c_att_ranks_4		0
+
+
+	c_att_skill_15		MB_ATT_DISRUPTOR
+	c_att_names_15		"DLT-19x Targeting Blaster"
+	c_att_ranks_15		0
+	c_att_descs_15		"Disruptor, 120% more damage/FP drain, 10% slower RoF, 75% slower mag reload"
+
+	c_att_skill_16		MB_ATT_TRACKING_BEACON
+	c_att_names_16		"Tracking Beacon"
+	c_att_ranks_16		0
+	c_att_descs_16		"Tag enemies for squad visibility"
+
+	c_att_skill_17		MB_ATT_TRIP_MINES
+	c_att_names_17		"Trip Mines"
+	c_att_ranks_17		0,0
+	c_att_descs_17		"Tracks On Hit"
+
+	c_att_skill_18		MB_ATT_SPAWNER
+	c_att_names_18		"Viper Recon Probe Droid"
+	c_att_ranks_18		0
+	c_att_descs_18		"Spawnable NPC, High HP, ^3[CS1]"
+
+	c_att_skill_19		MB_ATT_FP_SEE
+	c_att_names_19		"Infrared Tactical Scanner"
+	c_att_ranks_19		0,0,0
+	c_att_descs_19		"Force Sense, Comes With Miraluka"
+
+
+	c_att_skill_30		MB_ATT_PLX1
+	c_att_names_30		"PLX-1 Rocket Launcher"
+	c_att_ranks_30		0,0
+
+	c_att_skill_31		MB_ATT_BLASTER
+	c_att_names_31		"Modifed E-11 Carbine"
+	c_att_ranks_31		0,0
+	c_att_descs_31		"E-11, 20%+ RoF, 10%- Damage, 15%- Velocity, Mag Reload"
+
+	c_att_skill_32		MB_ATT_DET_PACK
+	c_att_names_32		"Det Pack"
+	c_att_ranks_32		0,0,0
+
+	c_att_skill_33		MB_ATT_WHISTLINGBIRD
+	c_att_names_33		"Grav Micro-Rockets"
+	c_att_ranks_33		0
+	c_att_descs_33		"Whistling Birds, Pulls On Hit ^[CS1]"
+
+	c_att_skill_34		MB_ATT_PULSE_GRENADES
+	c_att_names_34		"Pulse Grenade"
+	c_att_ranks_34		0
+
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_DC_CARBINE
+	WeaponBasedOff		WP_MANDO_PISTOL
+	NewWorldModel		"models/weapons2/DC-17m/blaster.glm"
+	NewViewModel		"models/weapons2/DC-17m/blaster.md3"
+	FlashSound0			"sound/weapons/dc17m/fire.wav"
+	FlashSound1			"sound/weapons/dc17m/fire.wav"
+	FlashSound2			"sound/weapons/dc17m/fire.wav"
+	FlashSound3			"sound/weapons/dc17m/fire.wav"
+	FlashSound4			"sound/weapons/dc17m/fire.wav"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"blaster/Shot02R"
+	MissileMissEffect			"Blaster/Impact_Wall01"
+	MissileHitHumanEffect		"Blaster/Impact_Wall01"
+	MissileHitDroidEffect		"Blaster/Impact_Wall01"
+	Icon				"gfx/hud/w_icon_dc-17mB"
+	WeaponName			"Converted DC-17m Carbine"
+
+	customAmmo			720
+	clipSize			90
+	FPMult				.9
+	rateMod				.65
+	ReloadTimeModifier	1.25
+
+	hasAnimOverrides	1
+	animReadyRun		TORSO_WEAPONIDLE3
+	animReady			TORSO_WEAPONIDLE3
+	animReadyWalk		TORSO_WEAPONREADY3
+	animReadyNoAmmo		BOTH_ATTACK3
+	animAttackRun		BOTH_ATTACK3
+	animAttack			BOTH_ATTACK3
+	animAttackWalk		BOTH_ATTACK3
+	animStand			BOTH_STAND1
+	selectSound			"sound/weapons/dc17m/select.mp3"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_DISRUPTOR
+	WeaponBasedOff		WP_DISRUPTOR
+	NewWorldModel		"models/weapons2/DLT-19_HeavyBlaster/model_scope.glm"
+	NewViewModel		"models/weapons2/DLT-19_HeavyBlaster/riflescoped.md3"
+	Icon				"gfx/hud/w_icon_dlt19scoped"
+	WeaponName			"DLT-19x Targeting Blaster"
+	FlashSound0			"sound/weapons/RC_Sniper/fire.mp3"
+	altFlashSound0		"sound/weapons/RC_Sniper/fire.mp3"
+	clipSize			25
+	customAmmo			250
+	damageMod			2.2
+	ReloadTimeModifier	1.75
+	FPmult				2.2
+	rateMod				1.1
+	hasAnimOverrides 1
+animReadyRun  BOTH_WESTARM5_RUN1
+animReady	BOTH_WESTARM5_READY
+animReadyWalk  BOTH_WESTARM5_SCOPED_READY
+animReadyNoAmmo	 BOTH_WESTARM5_ATTACK
+animAttackRun  BOTH_WESTARM5_SCOPED_ATTACK
+animAttack	 BOTH_WESTARM5_SCOPED_ATTACK
+animAttackWalk	BOTH_WESTARM5_SCOPED_ATTACK
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_BLASTER
+	WeaponBasedOff		WP_BLASTER
+	NewWorldModel		"models/weapons2/blaster_r/blaster_w.glm"
+	NewViewModel		"models/weapons2/blaster_r/blaster.md3"
+	Icon				"gfx/hud/w_icon_E11"
+	WeaponName			"Modifed E-11 Carbine"
+	FlashSound0			"sound/weapons/blaster/fire.mp3"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+	ratemod	.80
+	damagemod	.90
+	velocitymod	.85
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_MANDO_PISTOL
+	NewWorldModel		"models/weapons2/dc-15/dc-15_w.glm"
+	NewViewModel		"models/weapons2/dc-15/dc-15.md3"
+	NewHandsModel		"models/weapons2/dc-15/dc-15_hand.md3"
+	Icon				"gfx/hud/w_icon_clonepistol"
+	WeaponName			"Outdated DC-15s Pistol"
+	FlashSound0			"sound/weapons/dc-15s/fire.wav"
+	AltFlashSound0		"sound/weapons/dc-15s/fire.wav"
+	MuzzleEffect		"Blaster/MuzzleFlash02R"
+	MissileEffect		"blaster/Shot02R"
+	MissileMissEffect		"Blaster/Impact_Wall01"
+	MissileHitHumanEffect		"Blaster/Impact_Wall01"
+	MissileHitDroidEffect		"Blaster/Impact_Wall01"
+
+	clipSize			15
+	ReloadTimeModifier	2
+	customammo			435
+	rateMod				0.6
+}
+
+WeaponInfo4
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/arc_shiv_short/shiv_short_w.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_arc_shiv_short"
+	WeaponName			"Knuckle Plate Vibroblade"
+	altFireEnabled		0
+}
+
+ForceInfo0
+{
+	ForceToReplace		FP_PUSH
+	Icon				"gfx/forcepowers/push"
+	ForcePowerName		"Repulsor Gauntlet"
+	HandShader			"gfx/effects/dekashield2"
+}
+
+description "Imperial Clone Commando
+
+Left over republic commandos. Soon to be Obsolete.
+
+^2Weaponry:
+- Knuckle Plate Vibroblade (Cyan Saber)
+-- No Saber/Blaster Block, Chain Limit: 1
+-- 50% extra knockback
+- DC-15s Side Arm Blaster (Pistol 1)
+-- 50%+ RoF, Slow Reload
+- Frag Grenade (1)
+
+^8Attributes:
+- Health Regen: 1/s to 25
+- Armor Regen: 2/s to 40
+- Blast Armor
+- Stamina (2)
+-  Dexterity (1)
+- 15% Knockback Resistance
+- Enhanced Teamwork (Pet Control)
+- Advanced Sensors (Miraluka)
+- 15% Faster Hacking
+
+^8Abilities:
+- Sprint (2) ^3[CS1]"

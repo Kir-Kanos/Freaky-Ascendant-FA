@@ -1,0 +1,110 @@
+ClassInfo
+{
+	name				"stg10_Corran"
+	MBClass				MB_CLASS_JEDI
+	classNumberLimit	1
+
+	weapons				WP_MELEE|WP_SABER|WP_BLASTER_PISTOL|WP_SONIC_NADE
+
+	saber1				single_4
+	sabercolor			6
+	saberstyle			SS_MEDIUM|SS_STRONG
+
+	APmultiplier		1.10
+	BPmultiplier		1.10
+
+	WP_MeleeFlags	HELD_CRIPPLE|HELD_TRACKING
+	WP_SaberFlags	HELD_TRACKING
+	WP_BlasterPistolFlags	HELD_TRACKING|HELD_KNOCKBACK|HELD_ALTRELOAD
+	WP_SonicNadeFlags	HELD_FREEZE
+
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+
+	forcepowers			FP_LEVITATION,3|FP_SEE,3|FP_TELEPATHY,3|FP_ABSORB,3|FP_BLIND,3|FP_TEAM_FORCE,2|FP_SABER_DEFENSE,2|FP_SABER_OFFENSE,3
+
+	attributes			MB_ATT_FORCEFOCUS,1|MB_ATT_FORCEBLOCK,2|MB_ATT_PISTOL,3|MB_ATT_AMMO,3|MB_ATT_TRACKING_BEACON,1|MB_ATT_DEFLECT,2|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,2|MB_ATT_SONIC_DETONATOR,1|MB_ATT_GUN_DEFENSE,1
+
+	maxhealth			100
+	maxarmor			50
+
+	forcepool			120
+	forceregen			1.25
+
+	basespeed			225
+
+	special2			EAS_FP_BLIND
+	special3			EAS_FP_TEAM_FORCE
+	special4			EAS_FP_TELEPATHY
+
+	model				"corran"
+	skin				"default"
+	uishader			"models/players/corran/mb2_icon_default"
+
+	model_1				"corran"
+	skin_1				"robed"
+	uishader_1			"models/players/corran/mb2_icon_robed"
+
+	model_2				"corran"
+	skin_2				"hooded"
+	uishader_2			"models/players/corran/mb2_icon_hooded"
+
+
+	uioverlay			"gfx/icons/jedi"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/blaster_two/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/blaster_two/blaster_pistol.md3"
+	Icon				"gfx/hud/w_icon_blaster_pistol"
+	WeaponName			"CorSec Heavy Tagging Pistol"
+
+	clipSize			6
+	customAmmo			120
+
+	damagemod			1.50
+	FPMult				1.50
+	ratemod				1.55
+	velocitymod			1.30
+
+}
+
+description	"Corran Horn
+
+Jedi Master, former CorSec detective, and Rogue Squadron pilot. Lacking telekinetic ability, Corran relies on energy absorption, optical manipulation, tactical marksmanship, and his silver dual-phase lightsaber.
+
+^2Weaponry:
+- Melee
+-- Tracks/Cripples On Hit
+- CorSec Heavy Tagging Pistol (3)
+-- 2-Round Mag Reload
+-- 50%+ Damage/FP Drain
+-- 55%- RoF, 30%+ Velocity
+-- Tracks/Knockback On Hit
+- Lightsaber (Yellow/Red Style)
+-- Saber Defense (2)
+-- Blaster Deflect (2)
+-- Blaster Defense (1)
+-- Tracks On Hit
+- Sonic Detonator (1)
+-- Freezes On Hit
+
+^5Force Powers:
+- Jump (3)
+- Sense (3)
+- Mindtrick (3) ^3[CS4]
+- Absorb (3)
+- Force Blind (3) ^3[CS2]
+- Force Energize (2) ^3[CS3]
+
+^8Attributes:
+- Blast Armor
+- Anti MT (2)
+- Healing Capped at 35
+- Tracking Beacon (CorSec Detective)
+- Force Focus (1)
+- Force Block (2)"
