@@ -1,0 +1,112 @@
+ClassInfo
+{
+	name				"stg9_Jaina"
+	MBClass				MB_CLASS_JEDI
+	classNumberLimit	1
+
+	weapons				WP_MELEE|WP_SABER|WP_BLASTER_PISTOL|WP_WELDER|WP_CONC_NADE
+
+	saber1				single_1
+	sabercolor			5
+	saberstyle			SS_TAVION|SS_MEDIUM|SS_STRONG
+
+	WP_SaberFlags	HELD_STUN
+
+	APmultiplier		1.05
+	BPmultiplier		1.05
+
+	forcepowers			FP_LEVITATION,3|FP_PUSH,2|FP_PULL,2|FP_SEE,2|FP_SABER_DEFENSE,2|FP_SABER_OFFENSE,3|FP_TELEPATHY,1|FP_SABERTHROW,1
+
+	attributes			MB_ATT_FORCEFOCUS,1|MB_ATT_FORCEBLOCK,2|MB_ATT_PISTOL,2|MB_ATT_AMMO,3|MB_ATT_DEXTERITY,3|MB_ATT_DEFLECT,2|MB_ATT_RALLY,1|MB_ATT_MICRO_GRENADES,1|MB_ATT_TRACKING_BEACON|MB_ATT_BACTA|MB_ATT_FORCEFIELD|MB_ATT_WELDER,1|MB_ATT_FLIPKICK,1|MB_ATT_BLAST_ARMOUR
+
+	maxhealth			105
+	maxarmor			40
+
+	healthRegenAmount 1
+	healthRegenRate 1500
+	healthRegenCap	35
+
+	rateOfFire_Melee	.90
+
+	forcepool			115
+	hackrate			.85
+	forceregen			1.15
+
+	basespeed			230
+
+	special2			EAS_HI_DEX
+	special3			EAS_HI_MEDPAC
+	special4			EAS_HI_SHIELD
+
+	model				"jaina"
+	skin				"default"
+	uishader			"models/players/jaina/mb2_icon_default"
+
+	saberStanceAnim		BOTH_TRIPLE3_STAFFSTANCE
+
+	uioverlay			"gfx/icons/jedi"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/blaster_two/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/blaster_two/blaster_pistol.md3"
+	Icon				"gfx/hud/w_icon_blaster_pistol"
+	WeaponName			"Pilot DL-44 Pistol"
+	ratemod	1.35
+	damagemod 1.40
+	FPmult	1.40
+	velocitymod	1.20
+	hasAnimOverrides	1
+	animReadyRun		BOTH_JANGO_PISTOL_IDLE
+	animReady			BOTH_JANGO_PISTOL_IDLE
+	animReadyWalk		TORSO_WEAPONIDLE2
+	animReadyNoAmmo		BOTH_ATTACK2
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+}
+
+description	"Jaina Solo
+
+The Sword of the Jedi and veteran Rogue Squadron pilot, equipped with her flight suit, heavy blaster, purple saber, and field repair tools.
+
+^2Weaponry:
+- Melee
+- 10% Faster RoF
+- Pilot DL-44 Pistol (2)
+-- 35%- RoF
+-- 40%+ Damage/FP Drain
+-- 20%+ Velocity
+- Welder (1)
+- Concussion Grenade (1)
+- Lightsaber (Cyan,Yellow/Red)
+-- Saber Defense (2)
+-- Blaster Deflect (2)
+-- Blaster Defense (2)
+-- Staggers On Hit
+-- Saber Throw (1) ^3[CS1]
+
+^5Force Powers:
+- Jump (3)
+- Push (2)
+- Pull (2)
+- Sense (2)
+- Mindtrick (1)
+
+^8Attributes:
+- Rally
+- Blast Armor
+- Tracking Beacon
+- 15% Faster Hacking 
+- Force Focus (1)
+- Force Block (2)
+- Healing Capped at 35
+
+^8Abilities:
+- Flipkick (1) ^3[Contact Jump]
+- Deploy Forcefield ^3[CS4]
+- Bacta Injection ^3[CS3]
+- Dex Roll ^3[CS2]"

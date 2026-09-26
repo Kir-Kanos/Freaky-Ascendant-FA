@@ -1,0 +1,176 @@
+ClassInfo
+{
+	name				"stg6_Dia"
+	weapons				WP_MELEE|WP_BLASTER_PISTOL|WP_DC_CARBINE|WP_TRIP_MINE|WP_SONIC_NADE|WP_SABER
+
+	attributes			MB_ATT_AMMO,3|MB_ATT_PISTOL,3|MB_ATT_DC_CARBINE,3|MB_ATT_TRIP_MINES,3|MB_ATT_SONIC_DETONATOR,1|MB_ATT_DODGE,3|MB_ATT_HEALING,3|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,2|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_TRACKING_BEACON|MB_ATT_GRAPPLE_HOP|MB_ATT_BUNNY_HOP,0|MB_ATT_DEXTERITY,3|MB_ATT_FLOAT_HOP|MB_ATT_GRAPPLE_HOOK,3|MB_ATT_CLOAK,2|MB_ATT_SPY_DISGUISE,1|MB_ATT_DASH,1|MB_ATT_FLIPKICK,2
+
+	maxhealth			100
+	maxarmor			100
+
+	classNumberLimit	1
+
+	forcepool	120
+	forceregen	1.2
+
+	classflag			CFL_SEEING_STEALTH
+
+	hackrate			.85
+
+	rateOfFire_Melee		.65
+
+	MBClass				MB_CLASS_HERO
+
+	AB_GHookFlags	HELD_SLIPPERY|HELD_PULL
+
+	BPmultiplier		0
+	ASmultiplier		1.26
+	CSmultiplier		1.26
+
+	saber1			soldierbaton_legends
+	saber2			soldierbaton_legends
+	saberstyle		SS_TAVION|SS_DUAL
+
+	saberdamage	80
+
+	model				"jedi_tf"
+	skin				"Diapassik_rgb"
+	uishader			"models/players/jedi_tf/mb2_icon_diapassik_rgb"
+	userRGB				0
+	customred			0.0
+	customgreen			0.4
+	customblue			1.0
+
+	WP_SaberFlags		HELD_TRACKING|HELD_PULSE
+	WP_MeleeFlags		HELD_TRACKING
+	WP_BlasterPistolFlags	HELD_ALTRELOAD
+	WP_DCCarbineFlags	HELD_ALTRELOAD
+	WP_TripMineFlags	HELD_PULSE|HELD_TRACKING|HELD_DISARM
+	
+	special1			EAS_HI_DODGE
+	special2			EAS_HI_DASH
+	special3			EAS_HI_DEX
+	special4			EAS_HI_GRAPPLEHOOK
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/blaster_three/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/blaster_three/blaster_pistol.md3"
+	Icon				"gfx/hud/w_icon_blaster_pistol_3"
+	WeaponName			"DL-44 Auto Pistol"
+
+	FlashSound0			"sound/weapons/kotor/fire_light.wav"
+	altFlashSound0		"sound/weapons/kotor/fire_light.wav"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	clipSize			90
+	FPMult				.60
+	damagemod			.60
+	CustomAmmo			600
+	rateMod				.60
+	velocityMod			1.05
+	Missile3Effect		"blaster/Shot07R"
+	AltMissileEffect	"blaster/Shot07R"
+	PowerupShotEffect	"blaster/Shot07R"
+	MissileEffect		"blaster/Shot07R"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_JANGO_PISTOL_IDLE
+	animReady			BOTH_JANGO_PISTOL_IDLE
+	animReadyWalk		TORSO_WEAPONIDLE2
+	animReadyNoAmmo		BOTH_ATTACK2
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_DC_CARBINE
+	WeaponBasedOff		WP_DC_CARBINE
+	NewWorldModel		"models/weapons2/blaster_r/blaster_w.glm"
+	NewViewModel		"models/weapons2/blaster_r/blaster.md3"
+	Icon				"gfx/hud/w_icon_E11"
+	WeaponName			"E-11 Sweeper Carbine"
+	FlashSound0			"sound/weapons/blaster/alt_fire.mp3"
+	FlashSound1			"sound/weapons/blaster/alt_fire.mp3"
+	FlashSound2			"sound/weapons/blaster/alt_fire.mp3"
+	FlashSound3			"sound/weapons/blaster/alt_fire.mp3"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+	MissileMissEffect			"Blaster/Impact_Wall01"
+	MissileHitHumanEffect		"Blaster/Impact_Wall01"
+	MissileHitDroidEffect		"Blaster/Impact_Wall01"
+	altfireenabled		0
+	ratemod				.70
+	damagemod			.90
+	customammo			900
+	clipsize			46
+	hasAnimOverrides	1
+	animReadyRun		BOTH_STAND3
+	animReady			BOTH_STAND3
+	animReadyWalk		BOTH_STAND3
+	animReadyNoAmmo		BOTH_ATTACK3
+	animAttackRun		BOTH_ATTACK3
+	animAttack			BOTH_ATTACK3
+	animAttackWalk		BOTH_ATTACK3
+	animStand			BOTH_WOOKIEE_RAGE_STAND
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/stunbaton/stun_w.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_soldierbaton"
+	WeaponName			"Shock Baton"
+}
+
+description	"Dia Passik
+
+Agile Covert Operator.
+
+^2Weaponry:
+- Melee
+-- 35% Faster Swing Speed
+- Dual Shock Batons (Dual/Cyan Style Saber)
+-- No Blaster/Saber Defense
+-- No Blaster Deflect
+-- Pulses/Tracks On Hit
+-- Low Damage (80)
+- DL-44 Auto Pistol (3)
+-- 40%+ RoF
+-- 40%- Damage/FP Drain
+-- Mag Reload
+- E-11 Sweeper Carbine (3)
+-- Based On Clone Carbine
+-- 30%+ RoF
+-- 10%- Damage
+-- Primary Fire Only
+- Sabotage Trip Mines (3)
+-- Ignites/Disarms/Tracks On Hit
+- Sonic Detonator (1)
+
+^8Attributes:
+- Cloak (2)
+- Seeing Stealth
+- Knockdown Roll
+- Flipkick (2)
+- Dexterity (3)
+- Slow Faller
+- Tracking Beacon
+- Blast Armor
+- Anti-Mindtrick (2)
+- Healing (3)
+- Ammo (3)
+
+^8Abilities:
+- Dodge (3) ^3[CS1]
+- Dash (1) ^3[CS2]
+- Dex Roll ^3[CS3]
+- Flipkick (2) ^3[Contact Jump]
+- Disguise (1) ^[Style Swap In Melee]
+- Grapple Hook (3) ^3[CS4]
+-- Pulls/Slips On Hit"
