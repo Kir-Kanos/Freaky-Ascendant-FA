@@ -81,12 +81,12 @@ special1HUD			HUD_TRACKINGDART
  c_att_skill_2  MB_ATT_PROJECTILE_RIFLE
  c_att_names_2  "DLT-19X Long Rifle"
  c_att_ranks_2  8
- c_att_descs_2	"Proj, 75% Less Damage/FP Drain, Increased Clip Size, Mag Reload"
+ c_att_descs_2	"Proj, 66% Less Damage/FP Drain, Increased Clip Size, Mag Reload"
 
  c_att_skill_3  MB_ATT_EE4
  c_att_names_3  "EE-4 Burst Carbine"
  c_att_ranks_3  2,4
- c_att_descs_3  "25%- Damage/Velocity/FP Drain, 40%+ RoF, Mag Reload, Small Clip"
+ c_att_descs_3  "10%- Damage/Velocity/FP Drain, 55%+ RoF, Mag Reload, Small Clip"
 
  c_att_skill_4  MB_ATT_KNOCKDOWN_ROLL
  c_att_names_4  "Knockdown Roll"
@@ -174,8 +174,8 @@ AltMissileEffect 	"blaster/Shot03R"
  FlashSound0			"sound/weapons/DLT19/fire.wav"
  AltFlashSound0			"sound/weapons/DLT19/fire.wav"
  ratemod    1.30
- fpmult    .25
- damagemod   .25
+ fpmult    .33
+ damagemod   .33
  ReloadTimeModifier 1.4
  customammo   160
 	altMissileMissEffect "Blaster/Impact_Wall01R_E"
@@ -200,9 +200,9 @@ WeaponInfo2
  NewViewModel		"models/weapons2/EE4_carbine/blaster.md3"
  Icon				"gfx/hud/w_icon_ee-4"
  WeaponName   "EE-4 Burst Carbine"
- damagemod   .75
- ratemod    .50
- fpmult    .75
+ damagemod   .90
+ ratemod    .45
+ fpmult    .90
  clipsize 20
  customammo   750
  velocitymod .75
@@ -216,6 +216,16 @@ WeaponInfo2
 	altMissileHitHumanEffect	"Blaster/Impact_Wall01"
 	MissileHitDroidEffect		"Blaster/Impact_Wall01"
 	altMissileHitDroidEffect	"Blaster/Impact_Wall01"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_STAND3
+	animReady			BOTH_STAND3
+	animReadyWalk		BOTH_STAND3
+	animReadyNoAmmo		BOTH_ATTACK3
+	animAttackRun		BOTH_ATTACK3
+	animAttack			BOTH_ATTACK3
+	animAttackWalk		BOTH_ATTACK3
+	animStand			BOTH_WOOKIEE_RAGE_STAND
+	//animStand			BOTH_SPEAR_STANCE
 }
 
 WeaponInfo3
