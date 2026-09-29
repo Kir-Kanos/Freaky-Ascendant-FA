@@ -107,7 +107,7 @@ WeaponInfo1
 ForceInfo0
 {
 	ForceToReplace		FP_TEAM_FORCE
-	Icon		gfx/2d/logos/mb_mand.tga"
+	Icon		"gfx/2d/logos/mb_mand.tga"
 	ForcePowerName		"Mandalore's Will"
 }
 
