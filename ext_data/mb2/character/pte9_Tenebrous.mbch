@@ -1,0 +1,101 @@
+ClassInfo
+{
+	name				"pte9_Tenebrous"
+	MBClass				MB_CLASS_JEDI
+	classNumberLimit	1
+
+	weapons				WP_SABER|WP_MELEE
+
+	saber1				saber_nobushi
+	sabercolor			0
+	saberstyle			SS_FAST|SS_MEDIUM
+
+	AB_FLightningFlags	HELD_HIGHDAMAGE|HELD_DISRUPTIFY
+
+	attributes			MB_ATT_FORCEBLOCK,3|MB_ATT_CORTOSIS,1|MB_ATT_MAGNETIC_PLATING|MB_ATT_BLAST_ARMOUR|MB_ATT_ENV_PROT,1|MB_ATT_ANTI_MT,2|MB_ATT_DEFLECT,3|MB_ATT_BESKAR,1|MB_ATT_FORCEFOCUS,2|MB_ATT_GUN_DEFENSE,2|MB_ATT_DISP_ARMOR,1|MB_ATT_WATER_BREATHING|MB_ATT_TRACKING_BEACON
+
+	classflags			CFL_SEEING_STEALTH|CFL_STATVIEWER
+
+	maxhealth			120
+	maxarmor			20
+
+	basespeed			240
+
+	forcepool			120
+	forceregen			1.2
+
+	saberStanceAnim 	BOTH_STAND9
+
+	forcepowers			FP_LEVITATION,3|FP_SABER_OFFENSE,3|FP_SABER_DEFENSE,2|FP_LIGHTNING,2|FP_SEE,3|FP_PUSH,2|FP_PULL,2|FP_GRIP,1
+
+APmultiplier 1.10
+
+BPmultiplier 1.05
+
+	special1			EAS_FP_LIGHTNING
+	special2			EAS_FP_SEEING
+	special3			EAS_FP_GRIP
+
+	model				"darthtenebrous"
+	skin				"default"
+	uishader			"models/players/darthtenebrous/mb2_icon_default"
+
+	modelscale			1.11
+
+	uioverlay_r			"gfx/icons/sith"
+	uioverlay_l			"gfx/icons/tactician"
+}
+ForceInfo0
+{
+    ForceToReplace    FP_LIGHTNING
+    Icon            "gfx/mp/new_f_icon_dk_l1"
+    ForcePowerName    "Crimson Lightning"
+    Coneeffect  "effects/mp/drainwide.efx"
+}
+ForceInfo1
+{
+	ForceToReplace		FP_GRIP
+	Icon				"gfx/mp/new_f_icon_dk_grip"
+	ForcePowerName		"Force Kill"
+	gripDamage			45
+}
+
+description	"Darth Tenebrous
+
+Bith Sith Master, with specialized high damage force powers.
+
+^2Weaponry:
+- Melee
+- Lightsaber (Blue/Yellow Style)
+-- Blaster Defense (2)
+-- Saber Defense (2)
+-- Blaster Deflect (3)
+
+^8Force Powers:
+- Jump (3)
+- Push (2)
+- Pull (2)
+- Kill (Grip 1) ^3[CS3]
+-- 460% more damage
+- Crimson Lightning (2) ^3[CS1]
+-- 100% More Damage
+- Sense (3) ^3[CS2]
+- Defense (2)
+- Deflect (3)
+
+^8Attributes:
+- Anti-MT (2)
+- Force Sense Immunity
+- Force Focus (2)
+- Force Block (3)
+- Beskar (1)
+- Cortosis (1)
+- Magnetic Plating
+- Blast Armor
+- Environmental Protection (1)
+- Water Breathing
+- Stat Viewer
+- Tracking Beacon
+
+^8Abilites:
+- Armor Dispenser (1) ^3[USE In Melee]"
