@@ -1,0 +1,201 @@
+ClassInfo
+{
+	name				"ste7_Pellaeon"
+	MBClass				MB_CLASS_COMMANDER
+	classNumberLimit	1
+
+	weapons				WP_MELEE|WP_EE3|WP_MINIGUN|WP_CRYO_NADE|WP_TRIP_MINE|WP_PULSE_NADE
+
+	WP_EE3Flags			HELD_ALTRELOAD
+	WP_TripMineFlags	HELD_TRACKING|HELD_KNOCKDOWN
+	WP_PulseNadeFlags	HELD_DISRUPTIFY|HELD_HIGHDAMAGE|HELD_FLAME|HELD_CRIPPLE
+	WP_CryoNadeFlags	HELD_LIFT
+
+	attributes			MB_ATT_EE3,3|MB_ATT_MINIGUN,1|MB_ATT_CRYOBAN_GRENADES,3|MB_ATT_TRIP_MINES,3|MB_ATT_AMMO,3|MB_ATT_RALLY,1|MB_ATT_DODGE,2|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,2|MB_ATT_HEALING,2|MB_ATT_DISP_HEALTH,2|MB_ATT_PULSE_GRENADES,1|MB_ATT_TRACKING_BEACON|MB_ATT_LIGHTS_BEACON|MB_ATT_FORCEFIELD|MB_ATT_SHIELD_RECHARGE,1|MB_ATT_DRONE
+
+	forcepowers			FP_ABSORB,1
+
+	classflags			CFL_STATVIEWER
+
+	maxhealth			125
+	maxarmor			115
+
+	basespeed			225
+
+	resource			RESOURCE_ENERGY
+	forcepool			100
+	forceregen			1.0
+
+	special1			EAS_HI_DODGE
+	meleespecial1		EAS_HI_DODGE
+	special2			EAS_HI_SHIELD
+	special3			EAS_HI_BASESEEKER
+	special4			EAS_HI_MEDPAC
+
+	WalkForward			BOTH_WALK6
+	WalkBackward		BOTH_WALK6
+	gloatAnim			TORSO_HANDSIGNAL4
+	flourishanim		BOTH_TALKCOMM1START
+
+	model				"imperial"
+	skin				"pellaeon"
+	uishader			"models/players/imperial/mb2_icon_pellaeon"
+
+	modelscale			1.0
+
+	uioverlay_r			"gfx/icons/tactician"
+	uioverlay_l			"gfx/icons/commander"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_EE3
+	WeaponBasedOff		WP_EE3
+	NewWorldModel		"models/weapons2/blaster_r/blaster_w.glm"
+	NewViewModel		"models/weapons2/blaster_r/blaster.md3"
+	Icon				"gfx/hud/w_icon_e11"
+	WeaponName			"E-11 Tactical Rifle"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01R"
+	AltMissileEffect	"Blaster/Shot01R"
+
+	clipSize			48
+	customAmmo			720
+
+	damageMod			1.10
+	FPMult				1.15
+	velocityMod			1.10
+
+	FlashSound0			"sound/weapons/blaster/fire.mp3"
+	FlashSound1			"sound/weapons/blaster/fire.mp3"
+	FlashSound2			"sound/weapons/blaster/fire.mp3"
+	FlashSound3			"sound/weapons/blaster/fire.mp3"
+	FlashSound4			"sound/weapons/blaster/fire.mp3"
+	AltFlashSound0		"sound/weapons/blaster/fire.mp3"
+	AltFlashSound1		"sound/weapons/blaster/fire.mp3"
+	AltFlashSound2		"sound/weapons/blaster/fire.mp3"
+	AltFlashSound3		"sound/weapons/blaster/fire.mp3"
+	AltFlashSound4		"sound/weapons/blaster/fire.mp3"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_MINIGUN
+	WeaponBasedOff		WP_MINIGUN
+	NewWorldModel		"models/items/datapad.glm"
+	NewViewModel		"models/items/datapad.md3"
+
+	Icon				"models/weapons2/halo_melee/icon.png"
+	WeaponName			"Coordinated Strike"
+
+	SelectSound			"sound/weapons/bryar/select.mp3"
+	AltFlashSound0		"sound/interface/pickup_battery.mp3"
+	FlashSound0			"sound/chars/gunray/misc/taunt4.mp3"
+
+	isMinigun			0
+	damageMod			0.01
+	fpmult				1
+	velocityMod			99999
+	splashRadius		42
+	clipSize			10
+	rateMod				29
+	customAmmo			-1
+
+	altMuzzleEffect				null
+	altMissileEffect			null
+	altMissileMissEffect		"sbd/impact_cannon"
+	AltMissileHitHumanEffect	"sbd/impact_cannon"
+	AltMissileHitDroidEffect	"sbd/impact_cannon"
+	AltMissileModel		"models/weapons2/dummy/dummy.md3"
+
+	MuzzleEffect				null
+	MissileEffect				null
+	MissileMissEffect			"sbd/impact_cannon"
+	MissileHitHumanEffect		"sbd/impact_cannon"
+	MissileHitDroidEffect		"sbd/impact_cannon"
+	MissileModel		"models/weapons2/dummy/dummy.md3"
+
+	hasAnimOverrides	1
+	animReadyRun		BOTH_DATAPAD_IDLE
+	animReady			BOTH_DATAPAD_IDLE
+	animReadyWalk		BOTH_DATAPAD_IDLE
+	animReadyNoAmmo		BOTH_DATAPAD_IDLE
+	animAttackRun		BOTH_DATAPAD_USE
+	animAttack			BOTH_DATAPAD_USE
+	animAttackWalk		BOTH_DATAPAD_USE
+	animCharge			BOTH_DATAPAD_USE
+	animStand			BOTH_DATAPAD_IDLE
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_CRYO_NADE
+	WeaponBasedOff		WP_CRYO_NADE
+	NewWorldModel		"models/weapons2/kotor_gfrag/thermal_w.glm"
+	NewViewModel		"models/weapons2/kotor_gfrag/thermal.md3"
+	MissileModel		"models/weapons2/kotor_gfrag/thermal_proj_1.md3"
+	AltMissileModel		"models/weapons2/kotor_gfrag/thermal_proj_2.md3"
+	Icon				"gfx/hud/w_icon_kotor_fraggrenade"
+	WeaponName			"Stasis Grenade"
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_PULSE_NADE
+	WeaponBasedOff		WP_PULSE_NADE
+ 	NewWorldModel  "models/weapons/Grenade_Concussion/model.glm"
+ 	NewViewModel  "models/weapons2/dummy/dummy.md3"
+	MissileModel		"models/map_objects/mp/bacta.md3"
+	altMissileModel		"models/map_objects/mp/bacta.md3"
+	Icon				"gfx/hud/w_icon_stungrenade"
+	WeaponName			"Unstable Fuel Canister"
+}
+
+ForceInfo0
+{
+	ForceToReplace		FP_ABSORB
+	Icon				"gfx/menus/classes/com.tga"
+	ForcePowerName		"Stoic Resolve"
+}
+
+description	"Captain Gilad Pellaeon
+
+Methodical Imperial Fleet Officer focusing on tactical coordination.
+
+^2Weaponry:
+- Melee
+- E-11 Tactical Rifle (3)
+-- EE-3
+-- 10% more damage & 15% more FP drain
+-- 10% faster velocity
+-- Extended Power Cell (72 mag)
+- Coordinated Strike Datapad (1)
+- Stasis Grenade (3)
+-- Cryo Grenade
+-- Lifts targets in stasis on det
+- Unstable Fuel Canister (1)
+-- Pulse Grenades
+-- Disintegrates, ignites, and cripples on det
+- Trip Mines (3)
+-- Tracks targets and knocks down on det
+
+^5Powers:
+- Stoic Resolve (Absorb 1)
+
+^8Attributes:
+- Discipline (Anti-MT 2)
+- Blast Armor
+- Healing (2)
+- Rally
+- Fleet Commander (Ally Stat Viewer)
+- Fleet Tactical Scanner (Tracking Beacon)
+- Tactical Illumination (Light Beacon)
+- Armor Regen (1)
+
+^3Abilities:
+- Health Dispenser (2) ^3[USE In Melee]
+- Dodge (2) ^3[CS1]
+- Portable Forcefield ^3[CS2]
+- Seeker Droid ^3[CS3]
+- Field Medpac Supplies (2) ^3[CS4]"
