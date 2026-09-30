@@ -1,0 +1,203 @@
+ClassInfo
+{
+	name				"ste7_Daala"
+	MBClass				MB_CLASS_COMMANDER
+	classNumberLimit	1
+
+	weapons				WP_BLASTER_PISTOL|WP_MELEE|WP_SONIC_NADE|WP_FIRE_NADE|WP_FRAG_NADE
+
+	WP_BlasterPistolFlags	HELD_PULL|HELD_ALTRELOAD
+	WP_SonicNadeFlags		HELD_POISON|HELD_FLAME|HELD_CRIPPLE
+	WP_FragNadeFlags		HELD_PULL|HELD_CRIPPLE
+	WP_FireNadeFlags		HELD_FLASH|HELD_CRIPPLE
+
+	attributes			MB_ATT_PISTOL,3|MB_ATT_AMMO,3|MB_ATT_SONIC_DETONATOR,4|MB_ATT_FIRE_GRENADES,2|MB_ATT_FRAGS,4|MB_ATT_RALLY,1|MB_ATT_DODGE,2|MB_ATT_DASH,1|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,2|MB_ATT_HEALING,3|MB_ATT_TRACKING_BEACON|MB_ATT_QUICKTHROW,3|MB_ATT_DEXTERITY,1|MB_ATT_DISP_FORCE,3|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_WOOKIEE_FURY,2
+
+	classflags			CFL_STATVIEWER
+
+	forcepowers	FP_RAGE,3
+
+	maxhealth			135
+	maxarmor			110
+
+	basespeed			235
+
+	resource			RESOURCE_ENERGY
+	forcepool			120
+	forceregen			1.3
+
+	special1HUD			HUD_SONICNADE
+	special2HUD			HUD_FRAGNADE
+
+	special1			EAS_HI_DODGE
+	meleespecial1		EAS_HI_DODGE
+	special2			EAS_HI_QUICKTHROW
+	special3			EAS_HI_DASH
+	special4			EAS_HI_KICK
+
+	WalkForward			BOTH_WALK6
+	WalkBackward		BOTH_WALK6
+	gloatAnim			TORSO_HANDSIGNAL4
+	flourishanim		BOTH_TALKCOMM1START
+
+	model				"imperial_fml"
+	skin				"daala"
+	uishader			"models/players/imperial_fml/mb2_icon_daala"
+
+	modelscale			1.0
+
+	uioverlay_r			"gfx/icons/tactician"
+	uioverlay_l			"gfx/icons/spec_infantry"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/kotor_pistol1/pistol_w.GLM"
+	NewViewModel		"models/weapons2/kotor_pistol1/model.md3"
+	Icon				"gfx/hud/w_icon_disruptorpistols_dual"
+	WeaponName			"Experimental Singularity Pistol"
+
+	clipSize			12
+	customAmmo			480
+
+	damageMod			1.65
+	FPMult				1.50
+	velocityMod			1.30
+	rateMod				1.45
+	ReloadTimeModifier	1.25
+
+	FlashSound0			"sound/weapons/kotor/fire_power1.wav"
+	altFlashSound0		"sound/weapons/kotor/fire_power1.wav"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+
+	hasAnimOverrides	1
+	animReadyRun		BOTH_JANGO_PISTOL_IDLE
+	animReady			BOTH_JANGO_PISTOL_IDLE
+	animReadyWalk		TORSO_WEAPONIDLE2
+	animReadyNoAmmo		BOTH_ATTACK2
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_SONIC_NADE
+	WeaponBasedOff		WP_SONIC_NADE
+	NewWorldModel		"models/weapons2/sonic_detonator/sonic_det_w.glm"
+	NewViewModel		"models/weapons2/sonic_detonator/sonic_det.md3"
+	MissileModel		"models/weapons2/sonic_detonator/sonic_det_proj.md3"
+	AltMissileModel		"models/weapons2/sonic_detonator/sonic_det_proj.md3"
+
+	Icon				"gfx/hud/w_icon_sonic_det"
+	WeaponName			"Nerve Gas Emitter"
+
+	missileEffect		"effects/Grenades/GlowGasB"
+	altmissileEffect	"effects/Grenades/GlowGasB"
+
+	MissileMissEffect			"slime_explosion_new"
+	MissileHitHumanEffect		"slime_explosion_new"
+	MissileHitDroidEffect		"slime_explosion_new"
+	AltMissileMissEffect		"slime_explosion_new"
+	AltMissileHitHumanEffect	"slime_explosion_new"
+	AltMissileHitDroidEffect	"slime_explosion_new"
+	Splashradius 260
+	Splashdamage 20
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_FIRE_NADE
+	WeaponBasedOff		WP_FIRE_NADE
+	NewWorldModel		"models/weapons2/kotor_gfrag/thermal_w.glm"
+	NewViewModel		"models/weapons2/kotor_gfrag/thermal.md3"
+	MissileModel		"models/weapons2/kotor_gfrag/thermal_proj_1.md3"
+	AltMissileModel		"models/weapons2/kotor_gfrag/thermal_proj_2.md3"
+	Icon				"gfx/hud/w_icon_kotor_fraggrenade"
+	WeaponName			"Immolation Grenade"
+	splashradius	200
+	Splashdamage 35
+	altfireenabled 0
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_FRAG_NADE
+	WeaponBasedOff		WP_FRAG_NADE
+	NewWorldModel		"models/weapons2/kes_pgren/laser_trap_w.glm"
+	NewViewModel		"models/weapons2/kes_pgren/laser_trap_w.md3"
+	MissileModel		"models/weapons2/kes_pgren/laser_trap_proj.md3"
+	altMissileModel		"models/weapons2/kes_pgren/laser_trap_proj.md3"
+	missileMissEffect		"Grenades/EXP_BaseThermal"
+	MissileHitHumanEffect	"Grenades/EXP_BaseThermal"
+	MissileHitDroidEffect	"Grenades/EXP_BaseThermal"
+	AltmissileMissEffect		"Grenades/EXP_BaseThermal"
+	AltMissileHitHumanEffect	"Grenades/EXP_BaseThermal"
+	AltMissileHitDroidEffect	"Grenades/EXP_BaseThermal"
+	splashradius	225
+
+	Icon				"gfx/hud/w_icon_rpgren"
+	WeaponName			"Quickthrow Grav-Charge"
+	missileEffect		"effects/Grenades/GlowSonicB"
+	altmissileEffect	"effects/Grenades/GlowSonicB"
+
+	damageMod			0
+	ratemod				.2
+}
+
+ForceInfo0
+{
+	ForceToReplace		FP_RAGE
+	Icon				"gfx/2d/logos/mb_empire.tga"
+	ForcePowerName		"Warlord's Rage"
+}
+
+
+description	"Admiral Natasi Daala
+
+Scorched Earth Commander with experimental equipment and an aggressive playstyle.
+
+^2Weaponry:
+- Melee
+- Experimental Singularity Pistol (3)
+-- Pulls on hit
+-- 65% more damage & 50% more FP drain
+-- 30% faster velocity
+-- 45% slower RoF & 25% slower reload
+- Nerve Gas Emitter (4)
+-- Sonic Grenade
+-- Poisons, burns, and cripples on hit
+-- Reduced Splash Radius
+-- 20 Additional Splash Damage
+- Immolation Grenade (2)
+-- Fire Grenade
+-- Flashes and cripples on hit
+-- Increased Splash Radius
+-- 35 Additional Splash
+- Quickthrow Grav-Charge (4)
+-- Frag Grenade
+-- Pulls and cripples on det
+-- 0 Damage, Increased Alt-Fire Splash Radius
+
+^5Powers::
+- Warlord's Rage (Rage 3)
+
+^8Attributes:
+- Interrogation Resistance (Anti-MT 2)
+- Blast Armor
+- Healing (3)
+- Hot-Headed (Fury 2)
+- Rally
+- Tactical Acumen (Ally Stat Viewer)
+- Tracking Beacon
+- Dexterity (1)
+- Knockdown Roll
+
+^3Abilities:
+- Dodge (2) ^3[CS1]
+- Quick Throw (3) ^3[CS2]
+- Dash (1) ^3[CS3]
+- Gunkick ^3[CS4]
+- Lead Through Fear (Force Dispenser 3) ^3[USE In Melee]"

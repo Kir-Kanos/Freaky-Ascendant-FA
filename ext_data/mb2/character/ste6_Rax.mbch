@@ -1,0 +1,142 @@
+ClassInfo
+{
+	name				"ste6_Rax"
+	MBClass				MB_CLASS_HERO
+	classNumberLimit	1
+
+	weapons				WP_MELEE|WP_DC_CARBINE|WP_DET_PACK|WP_TRIP_MINE|WP_CONC_NADE
+
+	WP_DCCarbineFlags	HELD_ALTRELOAD
+	WP_DetPackFlags		HELD_HIGHDAMAGE|HELD_KNOCKDOWN
+	WP_TripMineFlags	HELD_TRACKING|HELD_SONIC
+	WP_ConcNadeFlags	HELD_POISON|HELD_CRIPPLE
+
+	attributes			MB_ATT_DC_CARBINE,1|MB_ATT_DET_PACK,6|MB_ATT_TRIP_MINES,4|MB_ATT_AMMO,3|MB_ATT_DODGE,3|MB_ATT_BLAST_ARMOUR|MB_ATT_ANTI_MT,2|MB_ATT_HEALING,1|MB_ATT_TRACKING_BEACON|MB_ATT_CLOAK,2|MB_ATT_DISP_ARMOR,2|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_RALLY|MB_ATT_SENTRY|MB_ATT_BASESEEKER|MB_ATT_ENEMYSCANNER|MB_ATT_MICRO_GRENADES,2|MB_ATT_STIMPACK
+
+	classflags			CFL_STATVIEWER|CFL_SEEING_STEALTH
+
+	maxhealth			115
+	maxarmor			90
+
+	hackrate			0.80
+
+	basespeed			235
+
+	resource			RESOURCE_ENERGY
+	forcepool			100
+	forceregen			1.0
+
+	special1			EAS_HI_DODGE
+	meleespecial1		EAS_HI_DODGE
+	special2			EAS_HI_CLOAK
+	meleespecial2			EAS_HI_CLOAK
+	special3			EAS_HI_STIMPACK
+	meleespecial3			EAS_HI_STIMPACK
+	special4			EAS_HI_ENEMYSCANNER
+	meleespecial4			EAS_HI_ENEMYSCANNER
+
+	WalkForward			BOTH_WALK6
+	WalkBackward		BOTH_WALK6
+	gloatAnim			TORSO_HANDSIGNAL4
+	flourishanim		BOTH_TALKCOMM1START
+
+	model				"gallius_rax"
+	skin				"default"
+	uishader			"models/players/gallius_rax/mb2_icon_default"
+
+	modelscale			1.0
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_DC_CARBINE
+	WeaponBasedOff		WP_DC_CARBINE
+	NewWorldModel		"models/weapons2/se-14c_pistol/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/se-14c_pistol/blaster_pistol.md3"
+	Icon				"gfx/hud/w_icon_se-14c"
+	WeaponName			"Counselor's Sidearm"
+
+	FlashSound0			"sound/weapons/SE-14c/fire.wav"
+	FlashSound1			"sound/weapons/SE-14c/fire.wav"
+	FlashSound2			"sound/weapons/SE-14c/fire.wav"
+	FlashSound3			"sound/weapons/SE-14c/fire.wav"
+	FlashSound4			"sound/weapons/SE-14c/fire.wav"
+	FlashSound5			"sound/weapons/SE-14c/fire.wav"
+
+	MissileEffect		"Blaster/Shot03r"
+	Missile1Effect		"Blaster/Shot03r"
+	Missile2Effect		"Blaster/Shot03r"
+	Missile3Effect		"Blaster/Shot03r"
+	Missile4Effect		"Blaster/Shot03r"
+	Missile5Effect		"Blaster/Shot03r"
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+
+	hasAnimOverrides	1
+	animReadyRun		BOTH_JANGO_PISTOL_IDLE
+	animReady			BOTH_JANGO_PISTOL_IDLE
+	animReadyWalk		TORSO_WEAPONIDLE2
+	animReadyNoAmmo		BOTH_ATTACK2
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+
+	damageMod			2.60
+	FPMult				2.60
+	rateMod				2.60
+	velocity			0.80
+	clipSize			26
+	customAmmo			540
+	reloadTimeModifier	1.40
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_DET_PACK
+	WeaponBasedOff		WP_DET_PACK
+	NewWorldModel		"models/weapons2/detpack/det_pack_w.glm"
+	NewViewModel		"models/weapons2/detpack/det_pack.md3"
+	Icon				"gfx/hud/w_icon_detpack"
+	WeaponName			"Sabotage Explosive Charge"
+	splashRadius		300
+}
+
+description	"Gallius Rax
+
+A shadowy operative who deals in information.
+
+^2Weaponry:
+- Melee
+- Counselor's Sidearm (1)
+-- 160% slower RoF
+-- 160% higher damage/FP drain
+-- 20% Less Velocity
+-- Low Clipsize
+-- 40% Slower Mag Reload
+- Sabotage Explosive Charge (6)
+-- Detpack
+-- 100% More Damage
+-- Knocks Down On Hit
+-- Expanded splash radius
+- Trip Mines (4)
+-- Sonic Effect/Tracking On Hit
+- Concussion Grenades (2)
+-- Cripples/Poisons On Hit
+
+^8Attributes:
+- Discipline (Anti-MT 2)
+- Blast Armor
+- Healing (1)
+- Contingency Intel (Tracking Beacon)
+- Ghost Protocol (Immune to Force Seeing)
+- Advanced Slicing (20% faster hack rate)
+- Knockdown Roll
+- Rally
+- Sentry Turret
+- Defensive Seeker Drone
+
+^3Abilities:
+- Armor Dispenser (2) ^3[USE In Melee]
+- Dodge (3) ^3[CS1]
+- Cloaking Device (2) ^3[CS2]
+- Stimpack ^3[CS3]
+- Enemy Scanner ^3[CS4]"
