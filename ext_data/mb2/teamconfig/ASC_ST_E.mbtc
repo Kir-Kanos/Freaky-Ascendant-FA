@@ -76,6 +76,9 @@ SubclassesForClass4
 	Subclass16	"ste7_RemSpec"
 	Subclass17	"ste6_OuterRimBH"
 	Subclass18	"ste6_Commando"
+	Subclass19	"ste6_Rax"
+	Subclass20	"ste7_Daala"
+	Subclass21	"ste7_Pellaeon"
 
 }
 
