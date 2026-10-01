@@ -163,34 +163,34 @@ Scorched Earth Commander with experimental equipment and an aggressive playstyle
 - Melee
 - Experimental Singularity Pistol (3)
 -- Pulls on hit
--- 65% more damage & 50% more FP drain
+-- 65% more damage/50% more FP drain
 -- 30% faster velocity
--- 45% slower RoF & 25% slower reload
+-- 45% slower RoF/25% slower reload
 - Nerve Gas Emitter (4)
 -- Sonic Grenade
--- Poisons, burns, and cripples on hit
+-- Poisons/Burns/Cripples on hit
 -- Reduced Splash Radius
 -- 20 Additional Splash Damage
 - Immolation Grenade (2)
 -- Fire Grenade
--- Flashes and cripples on hit
+-- Flashes/Cripples on hit
 -- Increased Splash Radius
--- 35 Additional Splash
+-- 35 Additional Splash Damage
 - Quickthrow Grav-Charge (4)
 -- Frag Grenade
--- Pulls and cripples on det
+-- Pulls/Cripples on det
 -- 0 Damage, Increased Alt-Fire Splash Radius
 
 ^5Powers::
 - Warlord's Rage (Rage 3)
 
 ^8Attributes:
-- Interrogation Resistance (Anti-MT 2)
+- Anti-MT (2)
 - Blast Armor
 - Healing (3)
 - Hot-Headed (Fury 2)
 - Rally
-- Tactical Acumen (Ally Stat Viewer)
+- Stat Viewer
 - Tracking Beacon
 - Dexterity (1)
 - Knockdown Roll
