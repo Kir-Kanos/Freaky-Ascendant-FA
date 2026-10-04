@@ -43,6 +43,7 @@ SubclassesForClass2
 	Subclass8	"ste3_Shore"
 	Subclass9	"ste3_Veteran"
 	Subclass10	"ste3_Mortar"
+	Subclass11	"ste3_DeathGang"
 
 }
 
@@ -79,6 +80,7 @@ SubclassesForClass4
 	Subclass19	"ste6_Rax"
 	Subclass20	"ste7_Daala"
 	Subclass21	"ste7_Pellaeon"
+	Subclass22	"ste8_Joris"
 
 }
 
