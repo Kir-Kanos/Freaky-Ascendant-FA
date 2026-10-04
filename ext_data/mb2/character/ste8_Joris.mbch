@@ -1,0 +1,135 @@
+ClassInfo
+{
+	name				"ste8_Joris"
+	MBClass				MB_CLASS_HERO
+	classNumberLimit	1
+
+	weapons				WP_MELEE|WP_BLASTER_PISTOL|WP_FLECHETTE|WP_THERMAL|WP_SONIC_NADE|WP_CONCUSSION
+
+	attributes			MB_ATT_PISTOL,2|MB_ATT_FLECHETTE,3|MB_ATT_AMMO,3|MB_ATT_CLOAK,2|MB_ATT_BLAST_ARMOUR,1|MB_ATT_ANTI_MT,2|MB_ATT_TRACKING_BEACON,1|MB_ATT_BARGE,1|MB_ATT_WOOKIE_STRENGTH,2|MB_ATT_FLECHETTE_NADES,5|MB_ATT_HEALING,2|MB_ATT_BACTA,1|MB_ATT_THERMALS,1|MB_ATT_SPAWNER,1|MB_ATT_PETCONTROL|MB_ATT_RALLY,1|MB_ATT_BASE_TD,5|MB_ATT_SONIC_DETONATOR,1|MB_ATT_DEXTERITY,1|MB_ATT_DISP_BLOCK,3|MB_ATT_TRACKING_DART,3|MB_ATT_CONCUSSION,3
+
+	maxhealth			300
+	maxarmor			105
+	modelscale			1.11
+	baseSpeed			195
+
+	resource			RESOURCE_STAMINA
+
+	spawnerNPC			"probe_leg"
+
+	knockbackTaken		0.65
+	knockbackGiven		1.20
+
+	WP_FlechetteFlags	HELD_ALTRELOAD
+	WP_ConcussionFlags	HELD_ALTRELOAD|HELD_KNOCKBACK
+
+	model				"rax_joris"
+	skin				"default"
+	uishader			"models/players/rax_joris/mb2_icon_default"
+
+	special1			EAS_HI_DEX
+	special2			EAS_HI_SPAWNER
+	special3			EAS_HI_BARGE
+	special4			EAS_HI_KICK
+	meleespecial4			EAS_HI_TRACKER
+
+	bargeSoundOverride	"sound/chars/rax/misc/jump1.mp3"
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_FLECHETTE
+	WeaponBasedOff		WP_FLECHETTE
+	NewWorldModel		"models/weapons2/golan_arms/golan_arms_w.glm"
+	NewViewModel		"models/weapons2/golan_arms/golan_arms.md3"
+	NewBarrelModel		"models/weapons2/golan_arms/golan_arms_barrel.md3"
+	NewHandsModel		"models/weapons2/golan_arms/golan_arms_hand.md3"
+	Icon				"gfx/hud/w_icon_golancr1"
+	WeaponName			"FC-1 Flechette Launcher"
+	customAmmo			900
+	clipsize			90
+	AltFireEnabled		1
+	damageMod			1.1
+	ReloadTimeModifier	1.1
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/blaster_two/blaster_pistol_w.glm"
+	NewViewModel		"models/weapons2/blaster_two/blaster_pistol.md3"
+	Icon				"gfx/hud/w_icon_blaster_pistol_2"
+	WeaponName			"Imperial Sidearm"
+	customAmmo			300
+}
+
+WeaponInfo2
+
+{
+	WeaponToReplace		WP_CONCUSSION
+	WeaponBasedOff		WP_CONCUSSION
+	NewWorldModel		"models/weapons2/lj-50_concussion/lj-50_concussion_w.glm"
+	NewViewModel		"models/weapons2/lj-50_concussion/lj-50_concussion.md3"
+	Icon				"gfx/hud/w_icon_lj-50_concussion"
+	WeaponName			"LJ-50 Concussion Rifle"
+	clipsize			60
+	customAmmo			180
+	Altfireenabled		0
+	rateMod				1.4
+	reloadTimeModifier	1.4
+	velocityMod			.4
+ splashRadius 160
+	hasAnimOverrides	1
+ animReadyRun TORSO_WEAPONREADY3
+	animReady		TORSO_WEAPONREADY3
+	animReadyWalk		BOTH_WESTARM5_READY
+	animReadyNoAmmo		BOTH_WESTARM5_ATTACK
+	animAttackRun		BOTH_ATTACK3
+	animAttack		BOTH_ATTACK3
+	animAttackWalk		BOTH_WESTARM5_ATTACK
+}
+description	"Warden Rax Joris
+
+A cowardly brute with controlling explosives and leadership potential.
+
+^2Weaponry:
+- Melee
+- Imperial Sidearm (2)
+- FC-1 Flechette Launcher (3)
+-- 10% more damage
+-- 10% Longer Mag Reload
+-- 10 Alt Fire Grenades
+- LJ-50 Concussion Rifle (3)
+-- 40%- RoF
+-- 40%- Mag Reload
+-- 60%- Velocity
+-- Knocks Back On Hit
+-- Damaging Splash Radius
+- Thermal Detonator (1)
+- Thermal Grenades (5)
+- Sonic Detonator (1)
+
+^6Inventory:
+- Bacta Medpac
+- Viper Probe Droid ^3(Support Beacon [CS2])
+- Cloak (2)
+
+^8Attributes:
+- Wookiee Strength (2)
+- 20%+ Knockback Given
+- 35%- Knockback Taken
+- Tracking Beacon
+- Pet Control
+- Blast Armor
+- Anti Mindtrick (2)
+- Healing (2)
+- Dexterity (1)
+- Rally
+
+^3Abilities:
+- Tracking Darts (6) ^3[CS4 Melee]
+- Dexterity Roll ^3[CS1]
+- Shoulder Barge ^3[CS3 Melee]
+- Gunkick ^3[CS3]
+- Repair Arms (BP Dispenser 3) ^3[USE In Melee]"
