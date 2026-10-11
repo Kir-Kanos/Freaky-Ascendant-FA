@@ -28,6 +28,7 @@ SubclassesForClass1
 	Subclass10	"ste1_Snow"
 	Subclass11	"ste1_RemPilot"
 	Subclass12	"ste1_RemOperator"
+	Subclass13	"ste2_FOSurvivor"
 
 }
 
@@ -54,6 +55,7 @@ SubclassesForClass3
 	Subclass3	"ste5_P3DarkTr"
 	Subclass4	"ste4_Phasma"
 	Subclass5	"ste5_OutcastMando"
+	Subclass6	"ste4_FOExe"
 
 }
 
@@ -81,6 +83,7 @@ SubclassesForClass4
 	Subclass20	"ste7_Daala"
 	Subclass21	"ste7_Pellaeon"
 	Subclass22	"ste8_Joris"
+	Subclass23	"ste7_Hux"
 
 }
 
