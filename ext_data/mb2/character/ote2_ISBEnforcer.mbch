@@ -97,12 +97,12 @@ WeaponInfo0
 {
 	WeaponToReplace 	WP_MANDO_PISTOL
 	WeaponBasedOff  	WP_BLASTER_PISTOL
-	NewWorldModel	"models/weapons2/kotor_pistol1/pistol_w.GLM"
-NewViewModel	"models/weapons2/kotor_pistol1/model.md3"
-Icon	"gfx/hud/w_icon_disruptorpistols_dual"
+	NewWorldModel		"models/weapons2/imp_pistol/pistol_w.glm"
+	NewViewModel		"models/weapons2/imp_pistol/pistol_fpv.md3"
+	Icon				"gfx/hud/w_icon_imp_pistol"
 	WeaponName  		"RK-3 Blaster Pistol"
-	FlashSound0			"sound/weapons/SE-14c/fire.mp3" 		
-	altFlashSound0		"sound/weapons/SE-14c/fire.mp3" 
+	FlashSound0			"sound/weapons/firegun/fire.wav"
+	altFlashSound0		"sound/weapons/firegun/fire.wav"
 	ChargeSound			"sound/weapons/leia_pistol/altcharge.mp3"	
 	ClipSize 			54
 	ReloadTimeModifier 	1
