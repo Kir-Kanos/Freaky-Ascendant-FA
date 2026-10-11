@@ -5,17 +5,17 @@ ClassInfo
 	MBClass				MB_CLASS_ELITETROOPER
  classNumberLimit		4
 	extralives      		1
-	weapons					WP_MELEE|WP_BLASTER_PISTOL|WP_THERMAL
+	weapons					WP_MELEE|WP_CLONE_PISTOL|WP_THERMAL
 
 classflags	CFL_RUNFASTMELEE
-WP_BlasterPistolFlags	HELD_ALTRELOAD
+WP_ClonePistolFlags	HELD_ALTRELOAD
 AB_WLaserFlags		HELD_LOWDAMAGE|HELD_CRIPPLE
 
 basespeed 170
 rankbasespeed 180,190
 
 
-	attributes				MB_ATT_AMMO,3|MB_ATT_JETPACK,1|MB_ATT_FUEL,3|MB_ATT_ASSEMBLE,3
+	attributes				MB_ATT_AMMO,3|MB_ATT_JETPACK,1|MB_ATT_FUEL,3|MB_ATT_ASSEMBLE,3|MB_ATT_CLONE_PISTOL,1
 
 	maxhealth			60
 	maxarmor				25
@@ -45,58 +45,81 @@ rankbasespeed 180,190
 isCustomBuild	1
 mbPoints	24
 
-c_att_skill_0	MB_ATT_BLASTER
-c_att_names_0	"E-11 Blaster Rifle"
-c_att_ranks_0	2,2,2
+c_att_skill_0	MB_ATT_CLONE_PISTOL
+c_att_names_0	"Lightweight SE-14C Pistol"
+c_att_ranks_0	0,2,4
+c_att_descs_0	"Clone Pistols, 10%- Damage/RoF/FP Drain/Velocity, Mag Reload"
 
-c_att_skill_1	MB_ATT_DISRUPTOR
-c_att_names_1	"Disruptor Rifle"
-c_att_ranks_1	2,6
+c_att_skill_1	MB_ATT_BLASTER
+c_att_names_1	"E-11 Blaster Rifle"
+c_att_ranks_1	2,2,2
 
-c_att_skill_2	MB_ATT_TRIP_MINES
-c_att_names_2	"Tripmine"
-c_att_ranks_2	2
+c_att_skill_2	MB_ATT_DISRUPTOR
+c_att_names_2	"Disruptor Rifle"
+c_att_ranks_2	2,6
 
-c_att_skill_3	MB_ATT_BLAST_ARMOUR
-c_att_names_3	"Blast Armor"
+c_att_skill_3	MB_ATT_TRIP_MINES
+c_att_names_3	"Tripmine"
 c_att_ranks_3	2
 
-c_att_skill_4	MB_ATT_FLAMETHROWER
-c_att_names_4	"Integrated Flamethrower"
-c_att_ranks_4	8
-c_att_descs_4	"Wrist Flamethrower ^3[CS2]"
+c_att_skill_4	MB_ATT_BLAST_ARMOUR
+c_att_names_4	"Blast Armor"
+c_att_ranks_4	2
 
-c_att_skill_5	MB_ATT_WRISTLASER
-c_att_names_5	"Wrist Laser"
-c_att_ranks_5	6
-c_att_descs_5	"Low Damage, Inflicts Cripple ^3[CS1]"
+c_att_skill_5	MB_ATT_FLAMETHROWER
+c_att_names_5	"Integrated Flamethrower"
+c_att_ranks_5	8
+c_att_descs_5	"Wrist Flamethrower ^3[CS2]"
 
-c_att_skill_6	MB_ATT_BASE_TD
-c_att_names_6	"Micro Thermal Grenade"
-c_att_ranks_6	0,2
+c_att_skill_6	MB_ATT_WRISTLASER
+c_att_names_6	"Wrist Laser"
+c_att_ranks_6	6
+c_att_descs_6	"Low Damage, Inflicts Cripple ^3[CS1]"
 
-c_att_skill_7	MB_ATT_BASESPEED
-c_att_names_7	"Enhanced Conditioning"
-c_att_ranks_7	4,4
-c_att_descs_7	"Improves speed from 170 to 180, 190."
+c_att_skill_7	MB_ATT_BASE_TD
+c_att_names_7	"Thermal Grenade"
+c_att_ranks_7	0,2
 
-c_att_skill_8	MB_ATT_RESPAWNS
-c_att_names_8	"Reinforcements"
-c_att_ranks_8	4,12
-c_att_descs_8	"1 Default"
+c_att_skill_8	MB_ATT_BASESPEED
+c_att_names_8	"Enhanced Conditioning"
+c_att_ranks_8	4,4
+c_att_descs_8	"Improves speed from 170 to 180, 190."
+
+c_att_skill_9	MB_ATT_RESPAWNS
+c_att_names_9	"Reinforcements"
+c_att_ranks_9	4,12
+c_att_descs_9	"1 Default"
 }
 WeaponInfo0
 {
-WeaponToReplace	WP_BLASTER_PISTOL
-WeaponBasedOff	WP_BLASTER_PISTOL
-NewWorldModel	"models/weapons2/scout_pistol/blaster_pistol_w.glm"
-NewViewModel	"models/weapons2/scout_pistol/blaster_pistol.md3"
-Icon	"gfx/hud/w_icon_scout_pistol"
-WeaponName	"EC-17 Hold-out Blaster Pistol"
-clipSize 14
-customAmmo 500
-FPChargeMult	1.0
+WeaponToReplace	WP_CLONE_PISTOL
+WeaponBasedOff	WP_CLONE_PISTOL
+NewWorldModel		"models/weapons2/se-14c_pistol/blaster_pistol_w.glm"
+NewViewModel		"models/weapons2/se-14c_pistol/blaster_pistol.md3"
+Icon				"gfx/hud/w_icon_se-14c"
+WeaponName			"Lightweight SE-14C Pistol"
+FlashSound0			"sound/weapons/SE-14c/fire.wav"
+altFlashSound0		"sound/weapons/SE-14c/fire.wav"
+ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+MuzzleEffect				"Blaster/MuzzleFlash01R"
+AltMuzzleEffect				"Blaster/MuzzleFlash01R"
+MissileEffect				"Blaster/Shot02r"
+Missile3Effect				"Blaster/Shot04r"
+AltMissileEffect			"Blaster/Shot04r"
+PowerupShotEffect			"Blaster/Shot04r"
+ChargeEffect				"gfx/effects/bryarfrontflash"
+MissileMissEffect			"Blaster/Impact_Wall01"
+MissileHitHumanEffect		"Blaster/Impact_Wall01"
+MissileHitDroidEffect		"Blaster/Impact_Wall01"
+altMissileMissEffect		"Blaster/Impact_Wall01"
+altMissileHitHumanEffect	"Blaster/Impact_Wall01"
+altMissileHitDroidEffect	"Blaster/Impact_Wall01"
+damagemod	.90
+ratemod		1.10
+velocitymod	.9
+fpmult		.9
 }
+
 
 description	"Imperial Jet-Trooper
 
@@ -104,12 +127,15 @@ An agile and versatile jetpack infantry equipped With A wide variety of tools
 
 ^2Weaponry:
 - Melee (15 Percent Faster Movement)
-- EC-17 Hold-out Blaster Pistol
--- Mag Reload, Low Clip Size
+- Lightweight SE-14C Pistol (1)
+-- Clone Pistol
+-- 10%- Velocity/Damage/FP Drain/RoF
+-- Mag Reload
 
 ^8Attributes:
 - Reinforcement (1)
 - Assemble (3)
+- Fuel (3)
 
 ^3Abilities:
 - Jetpack"
