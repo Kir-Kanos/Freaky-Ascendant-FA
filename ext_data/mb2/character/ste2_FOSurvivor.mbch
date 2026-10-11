@@ -1,0 +1,102 @@
+
+ClassInfo
+{
+	name				"ste2_FOSurvivor"
+	MBClass				MB_CLASS_HERO
+	classNumberLimit	1
+
+	weapons				WP_MELEE|WP_CLONE_PISTOL|WP_CONC_NADE
+
+	attributes			MB_ATT_CLONE_PISTOL,3|MB_ATT_AMMO,3|MB_ATT_BLAST_ARMOUR,1|MB_ATT_GETUPS,3|MB_ATT_DASH,1|MB_ATT_DEXTERITY,1|MB_ATT_CLOAK,1|MB_ATT_DODGE,2|MB_ATT_WRISTLASER|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_FLOAT_HOP|MB_ATT_BUNNY_HOP,0|MB_ATT_GRAPPLE_HOP|MB_ATT_ASSEMBLE,1|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_ANTI_MT,1|MB_ATT_MICRO_GRENADES,1
+
+	AB_WLaserFlags	HELD_CRIPPLE|HELD_LOWDAMAGE
+
+	skilltimermod		1.4
+
+	maxhealth			80
+	maxarmor			80
+	baseSpeed			220
+
+	extralives			1
+
+	classflags	CFL_SEEING_STEALTH
+
+	model				"stormie_tfa"
+	skin				"finn"
+	uishader			"models/players/stormie_tfa/mb2_icon_finn"
+
+	special1			EAS_HI_WRIST
+	special2			EAS_HI_DASH
+	special3			EAS_HI_DEX
+	special4			EAS_HI_KICK
+	meleespecial4			EAS_HI_GRAPPLEHOOK
+
+	WP_ClonePistolFlags	HELD_ALTRELOAD
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_CLONE_PISTOL
+	WeaponBasedOff		WP_CLONE_PISTOL
+	NewWorldModel		"models/weapons2/SE-44C/se-44c_phasma_w.glm"
+	NewViewModel		"models/weapons2/SE-44C/se-44c_phasma.md3"
+	Icon				"gfx/hud/w_icon_se-44c_p"
+	WeaponName			"SE-44C Blaster Pistol"
+	FlashSound0			"sound/weapons/se-44c/fire.wav"
+	AltFlashSound0		"sound/weapons/se-44c/alt_fire.wav"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	customAmmo			900
+	clipSize			30
+	damageMod			0.75
+	rateMod				0.80
+	FPMult				0.75
+	MuzzleEffect				"Blaster/MuzzleFlash01R"
+	AltMuzzleEffect				"Blaster/MuzzleFlash01R"
+	MissileEffect				"Blaster/Shot02r"
+	Missile3Effect				"Blaster/Shot04r"
+	AltMissileEffect			"Blaster/Shot04r"
+	PowerupShotEffect			"Blaster/Shot04r"
+	ChargeEffect				"gfx/effects/bryarfrontflash"
+	MissileMissEffect			"Blaster/Impact_Wall01"
+	MissileHitHumanEffect		"Blaster/Impact_Wall01"
+	MissileHitDroidEffect		"Blaster/Impact_Wall01"
+	altMissileMissEffect		"Blaster/Impact_Wall01"
+	altMissileHitHumanEffect	"Blaster/Impact_Wall01"
+	altMissileHitDroidEffect	"Blaster/Impact_Wall01"
+}
+
+
+description	"First Order Survivor
+
+A battle-worn stormtrooper relying on dual auto-pistols, high mobility, and pure grit.
+
+^2Weaponry:
+- Melee
+- Dual SE-44C Auto Pistols (3)
+-- Clone Pistols
+-- 25%- Damage/FP Drain
+-- 20%+ RoF
+-- Mag Reload
+- Concussion Grenade (1)
+
+^8Attributes:
+- Reinforcement (1)
+- Blast Armor
+- Getups (3)
+- Dexterity (1)
+- Slow Faller
+- Bunny Hop (0)
+- Sense Immunity
+- Grapple Hop
+- Assemble (1)
+- Anti MT (1)
+- Knockdown Roll
+- 40% Slower Skill Cooldowns
+
+^3Abilities:
+- Wrist Laser ^3[CS1]
+-- Cripples On Hit, 50% Less Damage
+- Dash (1) ^3[CS2]
+- Dex Roll ^3[CS3]
+- Grapple Hook (2) ^3[CS4 Melee]
+- Gunkick ^3[CS4]"
