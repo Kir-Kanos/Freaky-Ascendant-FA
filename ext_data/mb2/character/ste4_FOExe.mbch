@@ -1,0 +1,169 @@
+
+ClassInfo
+{
+	name				"ste4_FOExe"
+	MBClass				MB_CLASS_HERO
+	classNumberLimit	2
+
+	weapons				WP_MELEE|WP_SABER|WP_BLASTER_PISTOL|WP_FRAG_NADE
+
+	extralives	1
+
+	WP_MeleeFlags	HELD_CRIPPLE
+	WP_SaberFlags	HELD_CRIPPLE|HELD_PULSE
+	WP_BlasterPistolFlags	HELD_ALTRELOAD
+
+	saber1				electro1h_blu_legends
+	saberstyle			SS_DESANN|SS_STRONG|SS_STAFF
+
+	forcepowers			FP_RAGE,2|FP_SABER_OFFENSE,3|FP_SABER_DEFENSE,1
+
+	attributes			MB_ATT_PISTOL,1|MB_ATT_AMMO,2|MB_ATT_GETUPS,3|MB_ATT_BLAST_ARMOUR,1|MB_ATT_DEXTERITY,1|MB_ATT_BESKAR,1|MB_ATT_CORTOSIS,1|MB_ATT_WOOKIE_STRENGTH,1|MB_ATT_BLAST_ARMOUR|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_TRACKING_BEACON|MB_ATT_ASSEMBLE,3|MB_ATT_STAMINA,1|MB_ATT_QUICKTHROW,3|MB_ATT_FRAGS,2|MB_ATT_WOOKIEE_FURY,3
+
+	maxhealth			100
+	maxarmor			80
+
+	baseSpeed			205
+
+	knockbackTaken		0.80
+
+	resource			RESOURCE_STAMINA
+	forcepool			110
+	forceregen			1.2
+	
+	ASmultiplier		.85
+	BPmultiplier		.95
+	APmultiplier		1.2
+	CSmultiplier		1.2
+
+	saberMaxChain		4
+
+	saberdamage		100
+
+	saberStanceAnim		BOTH_STAND9
+
+	model				"stormie_tfa"
+	skin				"exe"
+	uishader			"models/players/stormie_tfa/mb2_icon_exe"
+
+	special1			EAS_HI_SPRINT
+	special2			EAS_HI_QUICKTHROW
+	special3			EAS_HI_DEX
+	special4			EAS_HI_KICK
+
+	classflags			CFL_HEAVYMELEE|CFL_STRONGAGAINSTPHYSICAL
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_SABER
+	WeaponBasedOff		WP_SABER
+	NewWorldModel		"models/weapons2/electrostaff/electrostaff.glm"
+	NewViewModel		"models/weapons2/dummy/dummy.md3"
+	Icon				"gfx/hud/w_icon_purgesticks"
+	WeaponName			"Execution Stun Baton"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/SE-44C/se-44c_phasma_w.glm"
+	NewViewModel		"models/weapons2/SE-44C/se-44c_phasma.md3"
+	Icon				"gfx/hud/w_icon_se-44c"
+	WeaponName			"SE-44C Backup Pistol"
+	customAmmo			200
+	clipSize			20
+	FlashSound0			"sound/weapons/se-44c/fire.wav"
+	AltFlashSound0		"sound/weapons/se-44c/alt_fire.wav"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_JANGO_PISTOL_IDLE
+	animReady			BOTH_JANGO_PISTOL_IDLE
+	animReadyWalk		TORSO_WEAPONIDLE2
+	animReadyNoAmmo		BOTH_ATTACK2
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_FRAG_NADE
+	WeaponBasedOff		WP_FRAG_NADE
+	NewWorldModel		"models/weapons2/Stormi_TD/stormiTD_w.glm"
+	NewViewModel		"models/weapons2/Stormi_TD/stormiTD.md3"
+	MissileModel		"models/weapons2/Stormi_TD/stormiTD_proj.md3"
+	AltMissileModel		"models/weapons2/Stormi_TD/stormiTD_proj.md3"
+	WeaponName			"Quickthrow Smoke Emitter"
+	Icon				"gfx/hud/w_icon_StormiTD"
+	MissileEffect				"stone/missile1"
+	AltMissileEffect			"stone/missile1"
+	MissileMissEffect			"smokenadeleg/explode_vol"
+	MissileHitHumanEffect		"smokenadeleg/explode_vol"
+	MissileHitDroidEffect		"smokenadeleg/explode_vol"
+	AltMissileMissEffect		"smokenadeleg/explode_vol"
+	AltMissileHitHumanEffect	"smokenadeleg/explode_vol"
+	AltMissileHitDroidEffect	"smokenadeleg/explode_vol"
+	FlashSound0			"sound/weapons/stone/fire.mp3"
+	FlashSound1			"sound/weapons/stone/fire.mp3"
+	FlashSound2			"sound/weapons/stone/fire.mp3"
+	FlashSound3			"sound/weapons/stone/fire.mp3"
+	AltFlashSound0		"sound/weapons/stone/fire.mp3"
+	AltFlashSound1		"sound/weapons/stone/fire.mp3"
+	AltFlashSound2		"sound/weapons/stone/fire.mp3"
+	AltFlashSound3		"sound/weapons/stone/fire.mp3"
+	MuzzleEffect		null
+	AltMuzzleEffect		null
+	damagemod			0.000
+	ratemod				0.3
+}
+
+ForceInfo0
+{
+	ForceToReplace		FP_RAGE
+	Icon				"gfx/menus/alpha/icon_weap_run"
+	ForcePowerName		"Berserk"
+}
+
+description	"First Order Executioner
+
+A rushdown fanatic with heavy strikes.
+
+^2Weaponry:
+- Heavy Melee
+-- Cripples On Hit
+- Execution Stun Baton (Red/Purple/Staff Style Saber)
+-- Saber Defense (1)
+-- No Blaster Deflect/Defense
+-- Cripple/Pulse On Hit
+- SE-44C Blaster Pistol (1)
+-- Mag Reload
+- Quickthrow Smoke Grenade (2)
+-- Frag Grenade
+-- 0 Damage, Smoke Screen On Hit
+-- 70% Faster RoF
+
+^3Powers:
+- Berserk (Rage 2)
+
+^8Attributes:
+- Reinforcements (1)
+- Blast Armor
+- 20% Less Knockback Taken
+- Getups (3)
+- Melee Resist
+- Knockdown Roll
+- Fury (3)
+- Ammo (2)
+- Dexterity (1)
+- Beskar (1)
+- Cortosis (1)
+- Strength (1)
+- Tracking Beacon
+- Assemble (3)
+
+^3Abilities:
+- Dex Roll ^3[CS3]
+- Gunkick ^3[CS4]
+- Sprint ^3[CS1]
+- Quickthrow (3) ^3[CS2]"
