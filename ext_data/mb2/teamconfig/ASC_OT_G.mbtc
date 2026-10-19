@@ -35,6 +35,8 @@ SubclassesForClass1
 	Subclass17	"otg2_Kyle"
 	Subclass18	"otg1_RebPilot"
 	Subclass19	"otg1_Bespin"
+	Subclass20	"otg3_RebVanguard"
+	Subclass21	"otg2_RebOut"
 }
 
 SubclassesForClass2
