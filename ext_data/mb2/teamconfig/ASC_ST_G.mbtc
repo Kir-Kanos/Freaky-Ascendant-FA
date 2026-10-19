@@ -52,9 +52,9 @@ SubclassesForClass4
 	Subclass3	"stg7_Hera"
 	Subclass4	"stg7_IG11"
 	Subclass5	"stg7_Scavenge"
-	Subclass7	"stg7_Tyria"
-	Subclass8	"stg7_Poe"
-	Subclass9	"stg6_Dia"
+	Subclass6	"stg7_Tyria"
+	Subclass7	"stg7_Poe"
+	Subclass8	"stg6_Dia"
 }
 
 SubclassesForClass5

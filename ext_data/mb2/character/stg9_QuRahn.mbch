@@ -32,6 +32,8 @@ ClassInfo
 
 	saberStanceAnim BOTH_B1_TR___
 
+	classflags			CFL_NOPICKUPS
+
 	forcepool			120
 	forceregen			1.15
 

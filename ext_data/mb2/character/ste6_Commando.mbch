@@ -2,7 +2,7 @@ ClassInfo
 {
 	name	"ste6_Commando"
 	MBClass	MB_CLASS_HERO
-	classNumberLimit	3
+	classNumberLimit	2
 	extralives	1
 	weapons	WP_MELEE|WP_SABER|WP_THERMAL
 
