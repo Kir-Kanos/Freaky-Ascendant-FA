@@ -44,6 +44,7 @@ Subclass17   "ptg3_Hunter"
 Subclass18   "ptg3_Echo"
 Subclass19   "ptg4_SenGuard"
 Subclass20   "ptg3_BossNass"
+Subclass21   "ptg3_CloneOff"
 }
 
 SubclassesForClass3
