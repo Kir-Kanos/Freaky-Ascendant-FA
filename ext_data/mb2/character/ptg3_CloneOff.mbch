@@ -1,0 +1,351 @@
+
+ClassInfo
+{
+	name				"ptg3_CloneOff"
+	weapons				WP_MELEE
+	attributes			MB_ATT_AMMO,3|MB_ATT_SPRINT|MB_ATT_ANTI_MT,1|MB_ATT_DEXTERITY,1|MB_ATT_TRACKING_BEACON|MB_ATT_GRAPPLE_HOP|MB_ATT_BUNNY_HOP,0|MB_ATT_FLOAT_HOP
+
+	classNumberLimit	2
+
+	MBClass				MB_CLASS_CLONETROOPER
+
+	resource			RESOURCE_STAMINA
+	forcepool			115
+
+	modelscale			1.02
+
+	extralives			1
+
+	maxhealth			80
+
+	maxArmor			40
+
+	knockbacktaken		0.95
+
+	saber1				arc_shiv_legends
+	saberstyle			SS_TAVION
+
+	special1			EAS_HI_DODGE
+	special2			EAS_HI_SPRINT
+	special3			EAS_HI_WRIST
+	special4			EAS_HI_DEX
+	meleespecial4		EAS_HI_GRAPPLEHOOK
+	flourishAnim		BOTH_MELEE1
+
+	uioverlay_r			"gfx/icons/heavy"
+
+model				"clonetrooper_p2"
+skin				"rc_lieutenant"
+uishader			"models/players/clonetrooper_p2/mb2_icon_rc_lieutenant"
+
+model_1				"clonetrooper_p2"
+skin_1				"rc_security"
+uishader_1			"models/players/clonetrooper_p2/mb2_icon_rc_security"
+
+model_2				"clonetrooper_p2"
+skin_2				"rc_sergeant"
+uishader_2			"models/players/clonetrooper_p2/mb2_icon_rc_sergeant"
+
+model_3				"clonetrooper_p2"
+skin_3				"rc_shotgun"
+uishader_3			"models/players/clonetrooper_p2/mb2_icon_rc_shotgun"
+
+	isCustomBuild		1
+	mbPoints			60
+	hasCustomSpec		2
+	isOnlyOneSpec		1
+
+	customSpecName_1	"Single Pistol"
+	customSpecIcon_1	"gfx/menus/alpha/icon_weap_accuracy"
+
+	customSpecName_2	"Dual Pistol"
+	customSpecIcon_2	"gfx/menus/alpha/icon_weap_stun"
+
+	c_att_skill_0		MB_ATT_PISTOL
+	c_att_names_0		"DC-15s Officer Pistol"
+	c_att_ranks_0		0,0,4
+	c_att_descs_0		"Blaster Pistol"
+
+	c_att_skill_1		MB_ATT_BLASTER
+	c_att_names_1		"DC-15S Officer Carbine"
+	c_att_ranks_1		2,0,2
+	c_att_descs_1		"E-11"
+
+	c_att_skill_2		MB_ATT_DLT20A
+	c_att_names_2		"DC-17m Officer Rifle"
+	c_att_ranks_2		2,4,2
+	c_att_descs_2		"DLT-20A Rifle, 10%+ RoF, 10%- Damage/FP Drain"
+
+	c_att_skill_3		MB_ATT_PULSE_GRENADES
+	c_att_names_3		"Pulse Grenade"
+	c_att_ranks_3		4
+
+	c_att_skill_4		MB_ATT_RESPAWNS
+	c_att_names_4		"Reinforcement"
+	c_att_ranks_4		30
+	c_att_descs_4		"1 default"
+
+	c_att_skill_5		MB_ATT_ASSEMBLE
+	c_att_names_5		"Assemble"
+	c_att_ranks_5		2,0,2
+
+	c_att_skill_6		MB_ATT_RALLY
+	c_att_names_6		"Rally"
+	c_att_ranks_6		4
+
+	c_att_skill_7		MB_ATT_STAMINA
+	c_att_names_7		"Stamina"
+	c_att_ranks_7		2,2,2
+
+	c_att_skill_8		MB_ATT_DODGE
+	c_att_names_8		"Dodge"
+	c_att_ranks_8		2,2,4
+	c_att_descs_8		"^3[CS1]"
+
+	c_att_skill_9		MB_ATT_GRAPPLE_HOOK
+	c_att_names_9		"Grappling Hook"
+	c_att_ranks_9		2,2
+	c_att_descs_9		"^3[CS4 Melee]"
+
+	c_att_skill_10		MB_ATT_WRISTLASER
+	c_att_names_10		"Wrist Laser"
+	c_att_ranks_10		4
+	c_att_descs_10		"^3[CS3]"
+
+	c_att_skill_11		MB_ATT_FORCEFIELD
+	c_att_names_11		"Deployable Force Field"
+	c_att_ranks_11		4
+
+	c_att_skill_12		MB_ATT_PSHIELD
+	c_att_names_12		"Personal Shield"
+	c_att_ranks_12		6
+
+	c_att_skill_13		MB_ATT_SENTRY
+	c_att_names_13		"Deployable Sentry Gun"
+	c_att_ranks_13		6
+
+
+	c_att_skill_15		MB_ATT_CLONE_PISTOL
+	c_att_names_15		"DC-15s Clone Pistol"
+	c_att_ranks_15		0,0,4
+
+	c_att_skill_16		MB_ATT_DC_CARBINE
+	c_att_names_16		"DC-15S Clone Carbine"
+	c_att_ranks_16		2,0,2
+
+	c_att_skill_17		MB_ATT_DLT20A
+	c_att_names_17		"DC-17m Officer Rifle"
+	c_att_ranks_17		2,4,2
+	c_att_descs_17		"DLT-20A Rifle, 10%+ RoF, 10%- Damage/FP Drain"
+
+	c_att_skill_18		MB_ATT_PULSE_GRENADES
+	c_att_names_18		"Pulse Grenade"
+	c_att_ranks_18		4
+
+	c_att_skill_19		MB_ATT_RESPAWNS
+	c_att_names_19		"Reinforcement"
+	c_att_ranks_19		30
+	c_att_descs_19		"1 default"
+
+	c_att_skill_20		MB_ATT_ASSEMBLE
+	c_att_names_20		"Assemble"
+	c_att_ranks_20		2,0,2
+
+	c_att_skill_21		MB_ATT_RALLY
+	c_att_names_21		"Rally"
+	c_att_ranks_21		4
+
+	c_att_skill_22		MB_ATT_STAMINA
+	c_att_names_22		"Stamina"
+	c_att_ranks_22		2,0,2
+
+	c_att_skill_23		MB_ATT_DODGE
+	c_att_names_23		"Dodge"
+	c_att_ranks_23		2,2,4
+	c_att_descs_23		"^3[CS1]"
+
+	c_att_skill_24		MB_ATT_GRAPPLE_HOOK
+	c_att_names_24		"Grappling Hook"
+	c_att_ranks_24		2,2
+	c_att_descs_24		"^3[CS4 Melee]"
+
+	c_att_skill_25		MB_ATT_WRISTLASER
+	c_att_names_25		"Wrist Laser"
+	c_att_ranks_25		4
+	c_att_descs_25		"^3[CS3]"
+
+	c_att_skill_26		MB_ATT_FORCEFIELD
+	c_att_names_26		"Deployable Force Field"
+	c_att_ranks_26		4
+
+	c_att_skill_27		MB_ATT_PSHIELD
+	c_att_names_27		"Personal Shield"
+	c_att_ranks_27		6
+
+	c_att_skill_28		MB_ATT_SENTRY
+	c_att_names_28		"Deployable Sentry Gun"
+	c_att_ranks_28		6
+
+}
+WeaponInfo0
+{
+	WeaponToReplace		WP_DLT20A
+	WeaponBasedOff		WP_DLT20A
+	NewWorldModel		"models/weapons2/DC-17m/sniper.glm"
+	NewViewModel		"models/weapons2/DC-17m/sniper.md3"
+	FlashSound0			"sound/weapons/dc17m/fire.wav"
+	FlashSound1			"sound/weapons/dc17m/fire.wav"
+	FlashSound2			"sound/weapons/dc17m/fire.wav"
+	FlashSound3			"sound/weapons/dc17m/fire.wav"
+	AltFlashSound0			"sound/weapons/RC_Sniper/fire.mp3"
+	AltFlashSound1			"sound/weapons/RC_Sniper/fire.mp3"
+	AltFlashSound2			"sound/weapons/RC_Sniper/fire.mp3"
+	AltFlashSound3			"sound/weapons/RC_Sniper/fire.mp3"
+	MuzzleEffect			"Blaster/MuzzleFlash01B"
+	AltMuzzleEffect			"Blaster/MuzzleFlash01B"
+	MissileEffect			"blaster/Shot01b"
+	AltMissileEffect			"blaster/Shot03b"
+	Missile3Effect			"blaster/Shot03b"
+	MissileMissEffect			"Blaster/Impact_Wall01B"
+	MissileHitHumanEffect		"Blaster/Impact_Wall01B"
+	MissileHitDroidEffect		"Blaster/Impact_Wall01B"
+	altMissileMissEffect		"Blaster/Impact_Wall01B"
+	altMissileHitHumanEffect	"Blaster/Impact_Wall01B"
+	altMissileHitDroidEffect	"Blaster/Impact_Wall01B"
+	Icon				"gfx/hud/w_icon_dc-17mB"
+	WeaponName			"DC-17m Officer Rifle"
+	customAmmo			1200
+	clipSize			60
+	Damagemod			.9
+	FPMult				.9
+	rateMod				.9
+	ReloadTimeModifier	1.25
+	hasAnimOverrides	1
+	animReadyRun		BOTH_WESTARM5_RUN1
+	animReady			BOTH_WESTARM5_READY
+	animReadyWalk		BOTH_WESTARM5_READY
+	animReadyNoAmmo		BOTH_WESTARM5_ATTACK
+	animAttackRun		BOTH_WESTARM5_ATTACK
+	animAttack			BOTH_WESTARM5_ATTACK
+	animAttackWalk		BOTH_WESTARM5_SCOPED_ATTACK
+	selectSound			"sound/weapons/dc17m/select.mp3"
+}
+
+WeaponInfo1
+{
+	WeaponToReplace		WP_BLASTER_PISTOL
+	WeaponBasedOff		WP_BLASTER_PISTOL
+	NewWorldModel		"models/weapons2/dc-17/dc-17_w.glm"
+	NewViewModel		"models/weapons2/dc-17/dc-17.md3"
+	NewHandsModel		"models/weapons2/dc-17/dc-17_hand.md3"
+	Icon				"gfx/hud/w_icon_dc-17_dual"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	altMuzzleEffect		"Blaster/MuzzleFlash01B"
+	FlashSound0			"sound/weapons/dc-15s/fire.wav"
+	AltFlashSound0		"sound/weapons/dc-15s/fire.wav"
+	ChargeSound			"sound/weapons/demp2/altCharge.mp3"
+	ChargeEffect		"gfx/effects/cloneFrontFlash"
+	OverchargeEffect	"gfx/effects/cloneFrontFlash"
+	MissileMissEffect			"Blaster/Impact_Wall01B"
+	MissileHitHumanEffect		"Blaster/Impact_Wall01B"
+	MissileHitDroidEffect		"Blaster/Impact_Wall01B"
+	altMissileMissEffect		"Blaster/Impact_Wall01B"
+	altMissileHitHumanEffect	"Blaster/Impact_Wall01B"
+	altMissileHitDroidEffect	"Blaster/Impact_Wall01B"
+	missileEffect		"Blaster/Shot03B"
+	altMissileEffect	"Blaster/Shot03B"
+	Missile3Effect		"Blaster/Shot03B"
+	PowerupShotEffect	"Blaster/Shot04B"
+	WeaponName			"DC-17s Officer Pistol"
+	hasAnimOverrides	1
+	animReadyRun		BOTH_JANGO_PISTOL_IDLE
+	animReady			BOTH_JANGO_PISTOL_IDLE
+	animReadyWalk		TORSO_WEAPONIDLE2
+	animReadyNoAmmo		BOTH_ATTACK2
+	animAttackRun		BOTH_ATTACK2
+	animAttack			BOTH_ATTACK2
+	animAttackWalk		BOTH_ATTACK2
+	AnimCharge		BOTH_ATTACK2
+}
+
+WeaponInfo2
+{
+	WeaponToReplace		WP_CLONE_PISTOL
+	WeaponBasedOff		WP_CLONE_PISTOL
+	NewWorldModel		"models/weapons2/dc-15/dc-15_w.glm"
+	NewViewModel		"models/weapons2/dc-15/dc-15.md3"
+	NewHandsModel		"models/weapons2/dc-15/dc-15_hand.md3"
+	Icon				"gfx/hud/w_icon_clonepistol"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	altMuzzleEffect		"Blaster/MuzzleFlash01B"
+	MissileMissEffect			"Blaster/Impact_Wall01B"
+	MissileHitHumanEffect		"Blaster/Impact_Wall01B"
+	MissileHitDroidEffect		"Blaster/Impact_Wall01B"
+	altMissileMissEffect		"Blaster/Impact_Wall01B"
+	altMissileHitHumanEffect	"Blaster/Impact_Wall01B"
+	altMissileHitDroidEffect	"Blaster/Impact_Wall01B"
+	FlashSound0			"sound/weapons/dc-15s/fire.wav"
+	AltFlashSound0		"sound/weapons/dc-15s/fire.wav"
+	ChargeSound			"sound/weapons/demp2/altCharge.mp3"
+	ChargeEffect		"gfx/effects/cloneFrontFlash"
+	OverchargeEffect	"gfx/effects/cloneFrontFlash"
+	missileEffect		"Blaster/Shot02B"
+	altMissileEffect	"Blaster/Shot02B"
+	Missile3Effect		"Blaster/Shot02B"
+	PowerupShotEffect	"Blaster/Shot03B"
+	WeaponName			"DC-17 Clone Pistol"
+
+}
+
+WeaponInfo3
+{
+	WeaponToReplace		WP_BLASTER
+	WeaponBasedOff		WP_BLASTER
+	NewWorldModel		"models/weapons2/dc-15s/dc-15s_w.glm"
+	NewViewModel		"models/weapons2/dc-15s/dc-15s.md3"
+	Icon				"gfx/hud/w_icon_dc-15s"
+	WeaponName			"DC-15S Officer Carbine"
+	FlashSound0			"sound/weapons/clonecarbine/fire.mp3"
+	FlashSound1			"sound/weapons/clonecarbine/fire.mp3"
+	FlashSound2			"sound/weapons/clonecarbine/fire.mp3"
+	FlashSound3			"sound/weapons/clonecarbine/fire.mp3"
+	FlashSound4			"sound/weapons/clonecarbine/fire.mp3"
+	AltFlashSound0		"sound/weapons/clonecarbine/fire1.mp3"
+	AltFlashSound1		"sound/weapons/clonecarbine/fire1.mp3"
+	AltFlashSound2		"sound/weapons/clonecarbine/fire1.mp3"
+	AltFlashSound3		"sound/weapons/clonecarbine/fire1.mp3"
+	AltFlashSound4		"sound/weapons/clonecarbine/fire1.mp3"
+	MissileMissEffect			"Blaster/Impact_Wall01B"
+	MissileHitHumanEffect		"Blaster/Impact_Wall01B"
+	MissileHitDroidEffect		"Blaster/Impact_Wall01B"
+	altMissileMissEffect		"Blaster/Impact_Wall01B"
+	altMissileHitHumanEffect	"Blaster/Impact_Wall01B"
+	altMissileHitDroidEffect	"Blaster/Impact_Wall01B"
+	MissileEffect		"Blaster/Shot01B"
+	AltMissileEffect	"Blaster/Shot01B"
+	MuzzleEffect		"Blaster/MuzzleFlash01B"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01B"
+
+}
+
+description	"Clone Trooper Officer
+
+Soldiers bred for leadership among the ranks of the Republic.
+
+^2Weaponry:
+- Melee
+- DC-15s Clone Pistol (1)
+
+^8Attributes:
+- Reinforcement (1)
+- Bunny Hop (0)
+- Stamina (0)
+- 5% less knockback taken
+- Grapple Hop
+- Tracking Beacon
+- Dexterity (1)
+- Anti MT (1)
+
+^3Abilities:
+- Sprint ^3[CS1]
+- Dex Roll ^3[CS4 Weapon Out]"

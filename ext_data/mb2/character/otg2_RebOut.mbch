@@ -1,0 +1,103 @@
+ClassInfo
+{
+	name				"otg2_RebOut"
+	MBClass				MB_CLASS_HERO
+	classNumberLimit	1
+
+	weapons				WP_MELEE|WP_CLONE_PISTOL|WP_CONC_NADE
+
+	attributes			MB_ATT_CLONE_PISTOL,3|MB_ATT_AMMO,3|MB_ATT_BLAST_ARMOUR,1|MB_ATT_GETUPS,3|MB_ATT_DASH,1|MB_ATT_DEXTERITY,1|MB_ATT_CLOAK,1|MB_ATT_DODGE,2|MB_ATT_WRISTLASER|MB_ATT_GRAPPLE_HOOK,2|MB_ATT_FLOAT_HOP|MB_ATT_BUNNY_HOP,0|MB_ATT_GRAPPLE_HOP|MB_ATT_ASSEMBLE,1|MB_ATT_KNOCKDOWN_ROLL|MB_ATT_ANTI_MT,1|MB_ATT_MICRO_GRENADES,1
+
+	AB_WLaserFlags	HELD_CRIPPLE|HELD_LOWDAMAGE
+
+	skilltimermod		1.4
+
+	maxhealth			80
+	maxarmor			80
+	baseSpeed			220
+
+	extralives			1
+
+	classflags			CFL_SEEING_STEALTH
+
+	model				"gwethenea"
+	skin				"rebel_jacket"
+	uishader			"models/players/gwethenea/mb2_icon_rebel_jacket"
+
+	special1			EAS_HI_WRIST
+	special2			EAS_HI_DASH
+	special3			EAS_HI_DEX
+	special4			EAS_HI_KICK
+	meleespecial4			EAS_HI_GRAPPLEHOOK
+
+	WP_ClonePistolFlags	HELD_ALTRELOAD
+}
+
+WeaponInfo0
+{
+	WeaponToReplace		WP_CLONE_PISTOL
+	WeaponBasedOff		WP_CLONE_PISTOL
+	NewWorldModel		"models/weapons2/dh-17/dh-17_w.glm"
+	NewViewModel		"models/weapons2/dh-17/dh-17_FA.md3"
+	Icon				"gfx/hud/w_icon_dh-17"
+	WeaponName			"Dual DH-17 Blaster Pistols"
+	FlashSound0		"sound/weapons/blaster/fire.mp3"
+	AltFlashSound0		"sound/weapons/blaster/fire.mp3"
+	ChargeSound			"sound/weapons/bryar/altcharge.mp3"
+	customAmmo			900
+	clipSize			45
+	damageMod			0.80
+	rateMod				0.75
+	FPMult				0.80
+	Velocitymod			0.75
+	ReloadTimeModifier	1.6
+	MuzzleEffect		"Blaster/MuzzleFlash01R"
+	AltMuzzleEffect		"Blaster/MuzzleFlash01R"
+	MissileEffect		"Blaster/Shot01r"
+	Missile3Effect		"Blaster/Shot01r"
+	AltMissileEffect	"Blaster/Shot01r"
+	ChargeEffect		"gfx/effects/bryarfrontflash"
+	MissileMissEffect	"Blaster/Impact_Wall01"
+	MissileHitHumanEffect	"Blaster/Impact_Wall01"
+	MissileHitDroidEffect	"Blaster/Impact_Wall01"
+	altMissileMissEffect	"Blaster/Impact_Wall01"
+	altMissileHitHumanEffect	"Blaster/Impact_Wall01"
+	altMissileHitDroidEffect	"Blaster/Impact_Wall01"
+}
+
+description	"Rebel Outrider
+
+An elite Special Forces operative relying on custom dual-wielded DH-17 carbines, high evasive mobility, and pure combat grit.
+
+^2Weaponry:
+- Melee
+- Dual DH-17 Blaster Pistols (3)
+-- Clone Pistols
+-- 20%- Damage/FP Drain
+-- 25%+ RoF
+-- 25%- Velocity
+-- 60% Slower Mag Reload
+-- Mag Reload
+- Concussion Grenade (1)
+
+^8Attributes:
+- Reinforcement (1)
+- Blast Armor
+- Getups (3)
+- Dexterity (1)
+- Slow Faller
+- Bunny Hop (0)
+- Sense Immunity
+- Grapple Hop
+- Assemble (1)
+- Anti MT (1)
+- Knockdown Roll
+- 40% Slower Skill Cooldowns
+
+^3Abilities:
+- Wrist Laser ^3[CS1]
+-- Cripples On Hit, 50% Less Damage
+- Dash (1) ^3[CS2]
+- Dex Roll ^3[CS3]
+- Grapple Hook (2) ^3[CS4 Melee]
+- Gunkick ^3[CS4]"
