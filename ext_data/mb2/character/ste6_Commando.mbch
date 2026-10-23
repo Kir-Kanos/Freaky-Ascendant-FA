@@ -209,7 +209,8 @@ ClassInfo
 	c_att_skill_35	MB_ATT_T21
 	c_att_names_35	"Seismic Hand Cannon"
 	c_att_ranks_35	6
-	c_att_descs_35	"T21, 35%+ RoF, 10%- Damage/FP Drain/Velocity, Cripples On Hit, Mag Reload"
+	c_att_descs_35	"T21, 35%+ RoF, 10%- Damage/FP Drain/Velocity
+Cripples On Hit, Mag Reload"
 
 	c_att_skill_36	MB_ATT_EWEB
 	c_att_names_36	"E-WEB Heavy Repeater"
