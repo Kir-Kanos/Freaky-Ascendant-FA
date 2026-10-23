@@ -28,7 +28,7 @@ ClassInfo
 	AB_WLaserFlags			HELD_LOWDAMAGE|HELD_CRIPPLE|HELD_POISON
 	WP_ProjFlags			HELD_ALTRELOAD|HELD_SLOW
 	WP_TripMineFlags		HELD_FLASH|HELD_SLIPPERY|HELD_TRACKING
-	WP_FragNadeFlags		HELD_SONIC|HELD_CRIPPLE|HELD_TRACKING
+	WP_ImpactNadeFlags		HELD_SONIC|HELD_CRIPPLE|HELD_TRACKING
 	WP_ConcNadeFlags		HELD_CRIPPLE|HELD_TRACKING|HELD_STUN
 
 	special1			EAS_HI_WRIST
@@ -96,10 +96,10 @@ ClassInfo
 	c_att_ranks_9		2,0
 	c_att_descs_9		"Conc Grenade, 0 Damage, Stuns/Tracks/Cripples On Hit, Smoke Screen"
 	
-	c_att_skill_10		MB_ATT_FRAGS
+	c_att_skill_10		MB_ATT_IMPACT_NADE
 	c_att_names_10		"Sonic Screamer"
 	c_att_ranks_10		2,2
-	c_att_descs_10		"Frag Grenade, 0 Damage, Cripples/Tracks/Sonics On Hit"
+	c_att_descs_10		"Impact Grenade, 0 Damage, Cripples/Tracks/Sonics On Hit"
 
 	c_att_skill_11		MB_ATT_TRIP_MINES
 	c_att_names_11		"Flash Mine"
@@ -249,7 +249,7 @@ WeaponInfo4
 	AltMissileHitDroidEffect	"smokenadeleg/explode_vol"
 	FlashSound0			"sound/weapons/smokenade/select.mp3"
 	AltFlashSound0		"sound/weapons/smokenade/select.mp3"
-	WeaponName			"Smoke Grenade"
+	WeaponName			"Concealment Grenade"
 	hasAnimOverrides	1
 	animAttackRun		BOTH_THERMAL_THROW2
 	animAttack			BOTH_THERMAL_THROW2
@@ -264,8 +264,8 @@ WeaponInfo4
 
 WeaponInfo5
 {
-	WeaponToReplace		WP_FRAG_NADE
-	WeaponBasedOff		WP_FRAG_NADE
+	WeaponToReplace		WP_IMPACT_NADE
+	WeaponBasedOff		WP_IMPACT_NADE
 	NewWorldModel		"models/weapons2/kes_pgren/laser_trap_w.glm"
 	NewViewModel		"models/weapons2/kes_pgren/laser_trap.md3"
 	MissileModel		"models/weapons2/kes_pgren/laser_trap_proj.md3"
